@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.M. Sterling | The Sovereign Collection</title>
+    <title>A.M. Sterling | Official Book Series & Store</title>
     <style>
-        /* 1. ADAPTIVE THEMING & 6. DARK MODE */
+        /* 1. ADAPTIVE THEME & 6. DARK MODE */
         :root {
             --neon-blue: #00f2ff;
             --deep-black: #000000;
-            --text-main: #ffffff;
-            --accent-gold: #d4af37;
-            --transition-speed: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            --text-white: #ffffff;
+            --accent-gray: #888888;
         }
 
         body, html {
             margin: 0; padding: 0; width: 100%; height: 100%;
-            background: var(--deep-black); color: var(--text-main);
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--deep-black); color: var(--text-white);
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
             overflow-x: hidden; scroll-behavior: smooth;
         }
 
-        /* 7. PERFORMANCE-DRIVEN VIDEO BACKGROUND */
+        /* 7. PERFORMANCE-DRIVEN VIDEO ENGINE */
         #video-container {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             z-index: -100; overflow: hidden; background: #000;
@@ -29,81 +28,75 @@
 
         #bg-video {
             width: 100%; height: 100%; object-fit: cover;
-            filter: brightness(0.4) contrast(1.1); /* 5. ACCESSIBILITY CONTRAST */
-            transition: opacity 1.5s ease; opacity: 0; /* Fade in effect */
+            filter: brightness(0.5); /* 5. ACCESSIBILITY: WCAG 2.2 Contrast */
+            transition: opacity 1s ease;
         }
 
-        /* 3. USER-FIRST NAVIGATION & 4. THUMB-FRIENDLY */
+        /* 4. MOBILE-FIRST & THUMB-FRIENDLY NAVIGATION */
         nav {
             position: fixed; top: 0; width: 100%;
             display: flex; justify-content: space-between; align-items: center;
-            padding: 20px 50px; box-sizing: border-box;
-            background: rgba(0,0,0,0.7); backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0, 242, 255, 0.3);
+            padding: 20px 5%; box-sizing: border-box;
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 242, 255, 0.2);
             z-index: 1000;
         }
 
-        .brand-logo {
-            font-size: 1.5rem; font-weight: 800; letter-spacing: 5px;
+        .brand {
+            font-size: 1.4rem; font-weight: 800; letter-spacing: 4px;
             color: var(--neon-blue); text-decoration: none;
-            text-shadow: 0 0 15px var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
         }
 
-        .nav-links { display: flex; gap: 30px; }
+        .nav-links { display: flex; gap: 25px; }
         .nav-links a {
             color: white; text-decoration: none; text-transform: uppercase;
-            letter-spacing: 2px; font-size: 0.9rem; transition: var(--transition-speed);
+            font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s;
         }
 
         /* 3. MICRO-INTERACTIONS */
-        .nav-links a:hover { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); transform: translateY(-2px); }
+        .nav-links a:hover { color: var(--neon-blue); text-shadow: 0 0 8px var(--neon-blue); }
 
-        /* 8. SCROLL-BASED STORYTELLING HERO */
+        /* 8. SCROLL-BASED STORYTELLING: HERO */
         .hero {
             height: 100vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center; text-align: center;
-            padding: 0 20px;
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 12vw, 7rem); margin: 0;
-            font-weight: 100; letter-spacing: clamp(10px, 4vw, 35px);
-            text-transform: uppercase; line-height: 1;
+            font-size: clamp(2.5rem, 10vw, 6rem); margin: 0;
+            font-weight: 200; letter-spacing: 15px; text-transform: uppercase;
         }
 
         /* 12. CONVERSION-FOCUSED CTA */
-        .cta-group { margin-top: 50px; display: flex; gap: 20px; flex-wrap: wrap; }
-        
-        .btn-acquire {
-            padding: 20px 50px; background: transparent; border: 1px solid var(--neon-blue);
-            color: var(--neon-blue); text-transform: uppercase; letter-spacing: 4px;
-            cursor: pointer; transition: var(--transition-speed); text-decoration: none;
+        .cta-btn {
+            margin-top: 40px; padding: 18px 45px;
+            background: transparent; border: 1px solid var(--neon-blue);
+            color: var(--neon-blue); text-transform: uppercase;
+            letter-spacing: 4px; cursor: pointer; text-decoration: none;
+            transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
-        .btn-acquire:hover {
-            background: var(--neon-blue); color: black;
-            box-shadow: 0 0 40px var(--neon-blue); transform: scale(1.05);
+        .cta-btn:hover {
+            background: var(--neon-blue); color: #000;
+            box-shadow: 0 0 30px var(--neon-blue); transform: translateY(-5px);
         }
 
-        /* 11. CONTENT-FOCUSED SCANNABLE GRID */
-        .series-grid {
-            padding: 100px 10%; display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px; background: rgba(0,0,0,0.9);
+        /* 11. CONTENT-FOCUSED LAYOUT: PRODUCT SECTIONS */
+        .store-preview {
+            padding: 100px 5%; background: rgba(0,0,0,0.9);
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px; position: relative;
         }
 
-        .series-card {
-            border: 1px solid rgba(255,255,255,0.1); padding: 40px;
-            transition: var(--transition-speed); backdrop-filter: blur(10px);
+        .product-card {
+            border: 1px solid rgba(255,255,255,0.1); padding: 30px;
+            text-align: center; backdrop-filter: blur(10px); transition: 0.5s;
         }
 
-        .series-card:hover {
-            border-color: var(--neon-blue); background: rgba(0, 242, 255, 0.05);
-            transform: translateY(-10px);
-        }
-
-        .series-card h2 { color: var(--neon-blue); letter-spacing: 3px; }
-        .series-card p { color: #888; line-height: 1.8; }
+        .product-card:hover { border-color: var(--neon-blue); transform: translateY(-10px); }
+        .product-card h2 { color: var(--neon-blue); font-size: 1.2rem; letter-spacing: 2px; }
+        .product-card p { color: var(--accent-gray); font-size: 0.9rem; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -111,57 +104,49 @@
     <div id="video-container">
         <video autoplay muted loop playsinline preload="auto" id="bg-video">
             <source src="index_bg.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Your browser does not support high-fidelity video protocols.
         </video>
     </div>
 
     <nav>
-        <a href="index.html" class="brand-logo">A.M. STERLING</a>
+        <a href="index.html" class="brand">A.M. STERLING</a>
         <div class="nav-links">
-            <a href="shop.html">The Shop</a>
-            <a href="#series">The Series</a>
-            <a href="archive.html">The Archive</a>
+            <a href="shop.html">Shop</a>
+            <a href="#series">Series</a>
+            <a href="archive.html">Archive</a>
         </div>
     </nav>
 
-    <section class="hero">
+    <header class="hero">
         <h1>A.M. STERLING</h1>
-        <p style="color: var(--accent-gold); letter-spacing: 8px; margin-top: 20px; font-weight: 300;">A 22-YEAR VIGIL</p>
-        <div class="cta-group">
-            <a href="shop.html" class="btn-acquire">Acquire Data</a>
-        </div>
-    </section>
+        <p style="letter-spacing: 5px; color: var(--accent-gray); margin-top: 15px;">THE OFFICIAL SERIES REPOSITORY</p>
+        <a href="shop.html" class="cta-btn">Enter Store</a>
+    </header>
 
-    <section id="series" class="series-grid">
-        <div class="series-card">
+    <section id="series" class="store-preview">
+        <div class="product-card">
             <h2>LOGIC-BREAK</h2>
-            <p>High-fidelity manuscripts exploring the interface of consciousness. Retail ready in Limited Hardcover.</p>
+            <p>Explore the visual assets and hardcover editions of the Logic-Break series. Retail ready.</p>
         </div>
-        <div class="series-card">
+        <div class="product-card">
             <h2>AURORA SAGA</h2>
-            <p>Cinematic deep-space storytelling. Heavy graphic merchandise and interactive archival data sets.</p>
+            <p>Official merchandise and book covers from the Aurora universe. High-res graphics enabled.</p>
         </div>
-        <div class="series-card">
+        <div class="product-card">
             <h2>MINERVA CORE</h2>
-            <p>The central intelligence. Adaptive designs for the modern collector of fine data and literature.</p>
+            <p>The latest addition to the Sterling collection. Access limited edition merchandise here.</p>
         </div>
     </section>
 
     <script>
-        const video = document.getElementById('bg-video');
+        const bgVideo = document.getElementById('bg-video');
+        
+        // Ensure smooth visual flow by revealing video only when data is ready
+        bgVideo.onloadeddata = () => { bgVideo.style.opacity = 1; };
 
-        // Ensure video is visible only when loaded to prevent "Black Flash"
-        video.onloadeddata = function() {
-            video.style.opacity = "1";
-        };
-
-        // 1. SIMPLE AI LOGIC: Track user visit for personalization
-        if (!localStorage.getItem('returning_user')) {
-            console.log("2026 Personalization: Welcome New Visitor to A.M. Sterling.");
-            localStorage.setItem('returning_user', 'true');
-        } else {
-            console.log("2026 Personalization: Welcome Back, Collector.");
-        }
+        // Basic user tracking for 2026 personalization logic
+        const sessionCount = localStorage.getItem('sterling_visits') || 0;
+        localStorage.setItem('sterling_visits', parseInt(sessionCount) + 1);
     </script>
 
 </body>
