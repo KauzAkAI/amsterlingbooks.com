@@ -3,157 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.M. Sterling | The Official Collection</title>
+    <title>A.M. Sterling | Official Hub</title>
     <style>
-        :root {
-            --neon-blue: #00f2ff;
-            --deep-black: #050505;
-            --text-gray: #b0b0b0;
-            --gold-accent: #d4af37;
-        }
-
+        /* 1. MINIMALIST DESIGN: Removing distractions, focusing on content */
         body, html { 
             margin: 0; padding: 0; width: 100%; height: 100%; 
-            background: var(--deep-black); color: white;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            overflow-x: hidden; scroll-behavior: smooth;
+            overflow-x: hidden; background: #000; color: #fff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* 7. PERFORMANCE-DRIVEN DESIGN: Optimized Video Container */
-        #video-container {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1; background: var(--deep-black);
-            overflow: hidden;
+        /* 7. PERFORMANCE-DRIVEN: Responsive Video Background */
+        #video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            object-fit: cover; /* Ensures 16:9 aspect ratio fits any screen */
+            filter: brightness(0.4); /* 5. ACCESSIBILITY: Ensures text contrast */
         }
 
-        #bg-video {
-            width: 100%; height: 100%; object-fit: cover;
-            filter: brightness(0.4) contrast(1.1);
-            transition: opacity 1s ease-in-out;
-        }
-
-        /* 4. MOBILE-FIRST & THUMB-FRIENDLY: Responsive Nav */
+        /* 4. MOBILE-FIRST: Thumb-friendly navigation */
         nav {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 1.5rem 5%; background: rgba(0,0,0,0.8);
-            backdrop-filter: blur(15px); border-bottom: 1px solid rgba(0, 242, 255, 0.2);
-            position: fixed; top: 0; width: 90%; z-index: 1000;
+            display: flex; justify-content: center; padding: 25px;
+            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(15px);
+            border-bottom: 1px solid #00f2ff;
+            position: sticky; top: 0; z-index: 100;
         }
 
-        .logo { font-weight: 800; letter-spacing: 5px; color: var(--neon-blue); font-size: 1.2rem; }
-
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a { 
-            text-decoration: none; color: white; font-size: 0.85rem; 
-            text-transform: uppercase; letter-spacing: 2px; transition: 0.3s;
+        nav a {
+            color: #00f2ff; text-decoration: none; margin: 0 20px;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 3px;
+            text-shadow: 0 0 10px #00f2ff; transition: 0.3s ease;
         }
-        
-        /* 3. MICRO-INTERACTIONS: Hover States */
-        .nav-links a:hover { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
 
-        /* 8. SCROLL-BASED STORYTELLING: Hero Section */
+        /* 3. MICRO-INTERACTIONS: Instant feedback on hover */
+        nav a:hover { color: #fff; text-shadow: 0 0 20px #00f2ff; transform: scale(1.05); }
+
+        /* 8. SCROLL-BASED STORYTELLING: Hero Layout */
         .hero {
-            height: 100vh; display: flex; flex-direction: column;
+            height: 80vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center; text-align: center;
-            padding: 0 10%;
         }
 
-        .hero h1 {
-            font-size: clamp(2.5rem, 8vw, 6rem); margin: 0;
-            font-weight: 200; letter-spacing: clamp(10px, 3vw, 30px);
-            text-transform: uppercase;
+        h1 {
+            font-size: clamp(2.5rem, 10vw, 6rem); margin: 0;
+            letter-spacing: 15px; font-weight: 200;
+            animation: pulse 4s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; text-shadow: 0 0 20px #00f2ff; }
+            50% { opacity: 1; text-shadow: 0 0 50px #00f2ff; }
         }
 
         /* 12. CONVERSION-FOCUSED CTA */
-        .cta-container { margin-top: 3rem; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-        
-        .btn-primary {
-            padding: 18px 40px; background: transparent; border: 1px solid var(--neon-blue);
-            color: var(--neon-blue); text-transform: uppercase; letter-spacing: 3px;
-            cursor: pointer; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-decoration: none; font-size: 0.9rem;
+        .series-tabs {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; padding: 50px; max-width: 1200px; margin: 0 auto;
         }
 
-        .btn-primary:hover { 
-            background: var(--neon-blue); color: black; 
-            box-shadow: 0 0 30px var(--neon-blue); transform: translateY(-5px);
+        .tab-box {
+            background: rgba(0, 242, 255, 0.05); border: 1px solid #00f2ff;
+            padding: 30px; text-align: center; color: white;
+            text-decoration: none; text-transform: uppercase;
+            letter-spacing: 2px; transition: 0.4s; backdrop-filter: blur(5px);
         }
 
-        /* 11. CONTENT-FOCUSED LAYOUT: Product Grid */
-        .grid-section {
-            padding: 100px 5%; background: var(--deep-black);
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px; position: relative; z-index: 10;
-        }
-
-        .product-card {
-            background: rgba(255,255,255,0.03); padding: 40px;
-            border: 1px solid rgba(255,255,255,0.1); transition: 0.5s;
-            text-align: center;
-        }
-
-        .product-card:hover { border-color: var(--neon-blue); background: rgba(0, 242, 255, 0.05); }
-
-        .product-card h3 { color: var(--neon-blue); letter-spacing: 2px; margin-bottom: 10px; }
-        .product-card p { color: var(--text-gray); line-height: 1.6; font-size: 0.9rem; }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; } /* Simplified for mobile thumb-access later */
-            .hero h1 { letter-spacing: 10px; }
-        }
+        .tab-box:hover { background: rgba(0, 242, 255, 0.2); box-shadow: 0 0 30px #00f2ff; }
     </style>
 </head>
 <body>
 
-    <div id="video-container">
-        <video autoplay muted loop playsinline preload="auto" id="bg-video">
-            <source src="index_bg.mp4" type="video/mp4">
-        </video>
-    </div>
+    <video autoplay muted loop playsinline id="video-background" poster="assets/fallback-still.jpg">
+        <source src="index_bg.mp4" type="video/mp4">
+        <source src="index_bg.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
 
     <nav>
-        <div class="logo">A.M. STERLING</div>
-        <div class="nav-links">
-            <a href="#series">Series</a>
-            <a href="shop.html">Shop</a>
-            <a href="#archive">Archive</a>
-        </div>
+        <a href="series.html">The Series</a>
+        <a href="shop.html">The Shop</a>
+        <a href="archive.html">The Archive</a>
     </nav>
 
-    <section class="hero">
+    <div class="hero">
         <h1>A.M. STERLING</h1>
-        <p style="max-width: 600px; color: var(--text-gray); letter-spacing: 2px; margin-top: 20px;">
-            A 22-YEAR VIGIL. THE SOVEREIGN COLLECTION OF MODERN CLASSICS.
-        </p>
-        <div class="cta-container">
-            <a href="shop.html" class="btn-primary">Acquire Data</a>
-            <a href="#series" class="btn-secondary" style="color: white; text-decoration: none; letter-spacing: 2px; font-size: 0.8rem; align-self: center;">Explore Series</a>
-        </div>
-    </section>
+        <p style="letter-spacing: 5px; color: #b0b0b0; margin-top: 20px;">ACQUIRE THE LEGACY</p>
+    </div>
 
-    <section id="series" class="grid-section">
-        <div class="product-card">
-            <h3>LOGIC-BREAK</h3>
-            <p>The foundation of the protocol. A high-fidelity exploration of the interface between man and machine.</p>
-        </div>
-        <div class="product-card">
-            <h3>AURORA SAGA</h3>
-            <p>A cinematic voyage through deep space, rendered with the weight of 22 years of storytelling.</p>
-        </div>
-        <div class="product-card">
-            <h3>MINERVA CORE</h3>
-            <p>The intelligence at the center. An adaptive narrative that challenges the standard of retail storytelling.</p>
-        </div>
-    </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('bg-video');
-            video.addEventListener('loadeddata', () => {
-                video.style.opacity = 1;
-            });
-        });
-    </script>
+    <div class="series-tabs">
+        <a href="logic-break.html" class="tab-box">Logic-Break</a>
+        <a href="aurora.html" class="tab-box">Aurora Saga</a>
+        <a href="minerva.html" class="tab-box">Minerva Core</a>
+    </div>
 
 </body>
 </html>
