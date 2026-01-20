@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.M. Sterling | Official Repository</title>
-    <meta name="description" content="Official repository for A.M. Sterling books and merchandise.">
+    <title>A.M. Sterling | Official Book Series & Store</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Inter:wght@300;800&display=swap" rel="stylesheet">
     
     <style>
-        /* 2. MINIMALIST DESIGN WITH PURPOSE */
+        /* 1. ADAPTIVE THEME & 6. DARK MODE */
         :root {
-            --neon: #00f2ff;
+            --neon-blue: #00f2ff;
+            --gold: #d4af37;
             --dark: #000000;
             --glass: rgba(255, 255, 255, 0.05);
         }
@@ -17,23 +19,22 @@
         body, html {
             margin: 0; padding: 0; width: 100%; height: 100%;
             background: var(--dark); color: #fff;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            overflow-x: hidden;
+            font-family: 'Inter', sans-serif; overflow-x: hidden;
         }
 
-        /* 7. PERFORMANCE-DRIVEN VIDEO ENGINE */
-        #video-layer {
+        /* 7. PERFORMANCE-DRIVEN VIDEO ENGINE (RE-ENGINEERED) */
+        #video-container {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -100; background: #000;
+            z-index: -100; overflow: hidden; background: #000;
         }
 
-        video {
+        #bg-video {
             width: 100%; height: 100%; object-fit: cover;
-            filter: brightness(0.4) contrast(1.1); /* 5. ACCESSIBILITY CONTRAST */
+            filter: brightness(0.35) contrast(1.2); /* 5. ACCESSIBILITY CONTRAST */
             opacity: 0; transition: opacity 2s ease;
         }
 
-        /* 4. THUMB-FRIENDLY & 3. USER-FIRST NAVIGATION */
+        /* 4. MOBILE-FIRST & 3. USER-FIRST NAVIGATION */
         nav {
             position: fixed; top: 0; width: 100%; z-index: 1000;
             display: flex; justify-content: space-between; align-items: center;
@@ -42,114 +43,133 @@
             border-bottom: 1px solid rgba(0, 242, 255, 0.2);
         }
 
+        /* BLACKPAST LOGO RECREATION */
         .brand {
-            font-size: 1.5rem; font-weight: 800; letter-spacing: 6px;
-            color: var(--neon); text-decoration: none;
-            text-shadow: 0 0 15px var(--neon);
+            font-family: 'Orbitron', sans-serif; font-weight: 900;
+            font-size: 1.5rem; letter-spacing: 5px; color: #fff;
+            text-decoration: none; text-transform: uppercase;
+            position: relative;
+        }
+        
+        /* The signature "Blackpast" diagonal slice */
+        .brand::after {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(115deg, transparent 48%, #000 49%, #000 51%, transparent 52%);
+            pointer-events: none; mix-blend-mode: multiply;
         }
 
         .nav-links { display: flex; gap: 30px; }
         .nav-links a {
             color: #fff; text-decoration: none; text-transform: uppercase;
-            font-size: 0.85rem; letter-spacing: 2px; transition: 0.3s;
+            font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s;
         }
-
-        .nav-links a:hover { color: var(--neon); text-shadow: 0 0 10px var(--neon); }
+        .nav-links a:hover { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
 
         /* 8. SCROLL-BASED STORYTELLING HERO */
-        .viewport-section {
+        .hero {
             height: 100vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center; text-align: center;
         }
 
-        h1 {
-            font-size: clamp(3rem, 12vw, 7rem); margin: 0;
-            font-weight: 200; letter-spacing: 25px; text-transform: uppercase;
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif; font-weight: 900;
+            font-size: clamp(3rem, 15vw, 8rem); letter-spacing: 1rem;
+            text-transform: uppercase; margin: 0; position: relative;
+        }
+
+        .hero h1::after {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(115deg, transparent 48%, #000 48.5%, #000 51.5%, transparent 52%);
+            pointer-events: none;
+        }
+
+        .sub-brand {
+            font-family: 'Orbitron', sans-serif; font-size: 0.9rem;
+            color: var(--gold); letter-spacing: 0.6rem; margin-top: -10px;
+            text-transform: uppercase; border-top: 1px solid var(--gold);
+            padding-top: 15px; width: fit-content;
         }
 
         /* 12. CONVERSION-FOCUSED CTA */
         .cta-btn {
-            margin-top: 50px; padding: 22px 65px;
-            background: transparent; border: 1px solid var(--neon);
-            color: var(--neon); text-transform: uppercase; letter-spacing: 5px;
-            cursor: pointer; text-decoration: none; transition: 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+            margin-top: 60px; padding: 22px 60px;
+            background: transparent; border: 1px solid var(--neon-blue);
+            color: var(--neon-blue); text-transform: uppercase; letter-spacing: 5px;
+            cursor: pointer; text-decoration: none; transition: 0.5s;
         }
 
         .cta-btn:hover {
-            background: var(--neon); color: #000;
-            box-shadow: 0 0 50px var(--neon); transform: scale(1.05);
+            background: var(--neon-blue); color: #000;
+            box-shadow: 0 0 50px var(--neon-blue); transform: scale(1.05);
         }
 
-        /* 11. CONTENT-FOCUSED LAYOUT: PREVIEW GRID */
-        #series {
-            padding: 150px 10%; background: rgba(0,0,0,0.95);
+        /* 11. CONTENT-FOCUSED STORE PREVIEW */
+        .store-preview {
+            padding: 150px 10%; background: rgba(0,0,0,0.96);
             display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 60px; position: relative; z-index: 10;
         }
 
-        .card {
+        .product-card {
             background: var(--glass); border: 1px solid rgba(255,255,255,0.1);
-            padding: 50px; text-align: center; transition: 0.6s;
-            backdrop-filter: blur(10px);
+            padding: 60px 40px; text-align: center; transition: 0.6s;
+            backdrop-filter: blur(15px);
         }
 
-        .card:hover {
-            border-color: var(--neon); transform: translateY(-15px);
+        .product-card:hover {
+            border-color: var(--neon-blue); transform: translateY(-20px);
             background: rgba(0, 242, 255, 0.05);
         }
 
-        .card h3 { color: var(--neon); letter-spacing: 3px; font-size: 1.5rem; }
-        .card p { color: #aaa; line-height: 1.8; font-size: 0.95rem; }
+        .product-card h3 { color: var(--neon-blue); letter-spacing: 3px; font-size: 1.4rem; }
     </style>
 </head>
 <body>
 
-    <div id="video-layer">
+    <div id="video-container">
         <video id="hero-video" autoplay muted loop playsinline preload="auto">
             <source src="index_bg.mp4" type="video/mp4">
-            Your browser does not support the 2026 video handshake.
+            Your browser does not support the high-fidelity video handshake.
         </video>
     </div>
 
     <nav>
-        <a href="index.html" class="brand">A.M. STERLING</a>
+        <a href="index.html" class="brand">Sterling</a>
         <div class="nav-links">
             <a href="shop.html">The Shop</a>
             <a href="#series">The Series</a>
         </div>
     </nav>
 
-    <header class="viewport-section">
-        <h1>A.M. STERLING</h1>
-        <a href="shop.html" class="cta-btn">Enter Store</a>
+    <header class="hero">
+        <h1>Sterling</h1>
+        <div class="sub-brand">Official Book Series</div>
+        <a href="shop.html" class="cta-btn">Acquire Artifacts</a>
     </header>
 
-    <section id="series">
-        <div class="card">
+    <section id="series" class="store-preview">
+        <div class="product-card">
             <h3>LOGIC-BREAK</h3>
-            <p>The definitive collection. Explore the visual history and limited-edition manuscripts.</p>
+            <p style="color:#888; line-height: 1.8;">Manuscripts and limited edition hardcovers.</p>
         </div>
-        <div class="card">
+        <div class="product-card">
             <h3>AURORA SAGA</h3>
-            <p>Interstellar narratives rendered for the modern collector. Access the archive here.</p>
+            <p style="color:#888; line-height: 1.8;">Interstellar merchandise and visual archives.</p>
         </div>
     </section>
 
     <script>
         const v = document.getElementById('hero-video');
         
-        // 1. ADAPTIVE LOGIC: Force video play and fade in to prevent black screen
+        // 7. PERFORMANCE-DRIVEN: Only reveal video when data is ready
         window.addEventListener('load', () => {
             v.play().then(() => {
                 v.style.opacity = "1";
             }).catch(err => {
-                console.warn("Autoplay blocked. User interaction may be required.");
-                v.style.opacity = "1"; // Reveal anyway
+                console.warn("Autoplay protocol requiring user handshake.");
+                v.style.opacity = "1";
             });
         });
-
-        // 9. TRUST-FOCUSED: Simple console verification
-        console.log("A.M. Sterling Retail Protocol: Online.");
     </script>
 
 </body>
