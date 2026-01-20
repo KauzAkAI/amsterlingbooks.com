@@ -4,66 +4,88 @@
     <meta charset="UTF-8">
     <title>A.M. Sterling | Official Hub</title>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #050505; font-family: 'Segoe UI', sans-serif; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', sans-serif; }
         
-        /* THE GLOWING GRID BACKGROUND */
-        #space-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+        /* THE CINEMATIC VIDEO BACKGROUND */
+        #bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            filter: brightness(0.6); /* Makes the neon text pop more */
+        }
 
         /* NEON TABS */
         nav {
-            display: flex; justify-content: center; padding: 20px;
-            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px);
+            display: flex; justify-content: center; padding: 25px;
+            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(15px);
             border-bottom: 1px solid #00f2ff;
-            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            position: relative; z-index: 100;
         }
 
         nav a {
-            color: #00f2ff; text-decoration: none; margin: 0 25px;
-            font-weight: bold; text-transform: uppercase; letter-spacing: 3px;
-            text-shadow: 0 0 10px #00f2ff; transition: 0.5s;
+            color: #00f2ff; text-decoration: none; margin: 0 30px;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 4px;
+            text-shadow: 0 0 15px #00f2ff; transition: 0.5s;
         }
 
-        nav a:hover { color: #fff; text-shadow: 0 0 25px #00f2ff, 0 0 50px #00f2ff; transform: scale(1.1); }
+        nav a:hover { color: #fff; text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; transform: scale(1.1); }
 
         /* PULSING HERO TEXT */
         .hero {
-            position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
-            text-align: center; pointer-events: none;
+            position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);
+            text-align: center; width: 100%;
         }
 
         h1 {
-            font-size: 5em; color: white; margin: 0; letter-spacing: 15px;
+            font-size: 5.5em; color: white; margin: 0; letter-spacing: 20px;
             animation: glowPulse 4s infinite ease-in-out;
+            font-weight: 200;
         }
 
         @keyframes glowPulse {
-            0%, 100% { text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff; opacity: 0.8; }
-            50% { text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; opacity: 1; }
+            0%, 100% { text-shadow: 0 0 15px #00f2ff, 0 0 30px #00f2ff; opacity: 0.9; }
+            50% { text-shadow: 0 0 40px #00f2ff, 0 0 80px #00f2ff; opacity: 1; }
         }
 
         /* SERIES CARDS */
         .series-tabs {
-            position: absolute; bottom: 10%; width: 100%;
-            display: flex; justify-content: center; gap: 30px;
+            position: absolute; bottom: 12%; width: 100%;
+            display: flex; justify-content: center; gap: 40px;
         }
 
         .tab-box {
             background: rgba(0, 242, 255, 0.05);
-            border: 1px solid #00f2ff; padding: 20px; width: 200px;
-            border-radius: 5px; cursor: pointer; transition: 0.3s;
-            text-align: center; color: white;
+            border: 1px solid #00f2ff; padding: 20px 40px;
+            color: white; text-decoration: none; font-weight: bold;
+            letter-spacing: 3px; backdrop-filter: blur(5px);
+            transition: 0.4s; text-align: center; min-width: 180px;
         }
 
-        .tab-box:hover { background: rgba(0, 242, 255, 0.2); box-shadow: 0 0 30px #00f2ff; }
+        .tab-box:hover { 
+            background: rgba(0, 242, 255, 0.2); 
+            box-shadow: 0 0 40px #00f2ff; 
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
 
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="index_bg.mp4" type="video/mp4">
+    </video>
+
     <nav>
-        <a href="#">The Series</a>
-        <a href="#">The Author</a>
-        <a href="#">The Shop</a>
-        <a href="#">The Archive</a>
+        <a href="series.html">The Series</a>
+        <a href="author.html">The Author</a>
+        <a href="shop.html">The Shop</a>
+        <a href="archive.html">The Archive</a>
     </nav>
 
     <div class="hero">
@@ -71,51 +93,10 @@
     </div>
 
     <div class="series-tabs">
-        <div class="tab-box">LOGIC-BREAK</div>
-        <div class="tab-box">AURORA SAGA</div>
-        <div class="tab-box">MINERVA CORE</div>
+        <a href="logic-break.html" class="tab-box">LOGIC-BREAK</a>
+        <a href="aurora.html" class="tab-box">AURORA SAGA</a>
+        <a href="minerva.html" class="tab-box">MINERVA CORE</a>
     </div>
 
-    <canvas id="space-canvas"></canvas>
-
-    <script>
-        // DEEP SPACE STARFIELD SCRIPT
-        const canvas = document.getElementById('space-canvas');
-        const ctx = canvas.getContext('2d');
-        let stars = [];
-
-        function init() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            stars = [];
-            for (let i = 0; i < 200; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    size: Math.random() * 2,
-                    speed: Math.random() * 0.5 + 0.1
-                });
-            }
-        }
-
-        function draw() {
-            ctx.fillStyle = '#050505';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            ctx.fillStyle = '#00f2ff';
-            stars.forEach(s => {
-                ctx.beginPath();
-                ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
-                ctx.fill();
-                s.y -= s.speed; // Move stars upward for a "flying" effect
-                if (s.y < 0) s.y = canvas.height;
-            });
-            requestAnimationFrame(draw);
-        }
-
-        window.addEventListener('resize', init);
-        init();
-        draw();
-    </script>
 </body>
 </html>
