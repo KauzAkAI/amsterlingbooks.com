@@ -6,7 +6,7 @@
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', sans-serif; }
         
-        /* THE CINEMATIC VIDEO BACKGROUND */
+        /* THE VIDEO BACKGROUND ENGINE */
         #bg-video {
             position: fixed;
             top: 50%;
@@ -18,66 +18,63 @@
             z-index: -100;
             transform: translate(-50%, -50%);
             object-fit: cover;
-            filter: brightness(0.6); /* Makes the neon text pop more */
+            filter: brightness(0.5); /* Deepens the space blacks to make neon pop */
         }
 
         /* NEON TABS */
         nav {
-            display: flex; justify-content: center; padding: 25px;
-            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(15px);
+            display: flex; justify-content: center; padding: 20px;
+            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px);
             border-bottom: 1px solid #00f2ff;
-            position: relative; z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            position: relative; z-index: 10;
         }
 
         nav a {
-            color: #00f2ff; text-decoration: none; margin: 0 30px;
-            font-weight: bold; text-transform: uppercase; letter-spacing: 4px;
-            text-shadow: 0 0 15px #00f2ff; transition: 0.5s;
+            color: #00f2ff; text-decoration: none; margin: 0 25px;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 3px;
+            text-shadow: 0 0 10px #00f2ff; transition: 0.5s;
         }
 
-        nav a:hover { color: #fff; text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; transform: scale(1.1); }
+        nav a:hover { color: #fff; text-shadow: 0 0 25px #00f2ff, 0 0 50px #00f2ff; transform: scale(1.1); }
 
         /* PULSING HERO TEXT */
         .hero {
-            position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);
-            text-align: center; width: 100%;
+            position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
+            text-align: center; pointer-events: none; width: 100%;
         }
 
         h1 {
-            font-size: 5.5em; color: white; margin: 0; letter-spacing: 20px;
+            font-size: 5em; color: white; margin: 0; letter-spacing: 15px;
             animation: glowPulse 4s infinite ease-in-out;
             font-weight: 200;
         }
 
         @keyframes glowPulse {
-            0%, 100% { text-shadow: 0 0 15px #00f2ff, 0 0 30px #00f2ff; opacity: 0.9; }
-            50% { text-shadow: 0 0 40px #00f2ff, 0 0 80px #00f2ff; opacity: 1; }
+            0%, 100% { text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff; opacity: 0.8; }
+            50% { text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; opacity: 1; }
         }
 
         /* SERIES CARDS */
         .series-tabs {
-            position: absolute; bottom: 12%; width: 100%;
-            display: flex; justify-content: center; gap: 40px;
+            position: absolute; bottom: 10%; width: 100%;
+            display: flex; justify-content: center; gap: 30px;
         }
 
         .tab-box {
             background: rgba(0, 242, 255, 0.05);
-            border: 1px solid #00f2ff; padding: 20px 40px;
-            color: white; text-decoration: none; font-weight: bold;
-            letter-spacing: 3px; backdrop-filter: blur(5px);
-            transition: 0.4s; text-align: center; min-width: 180px;
+            border: 1px solid #00f2ff; padding: 20px; width: 200px;
+            border-radius: 5px; cursor: pointer; transition: 0.3s;
+            text-align: center; color: white; text-decoration: none;
+            backdrop-filter: blur(5px);
         }
 
-        .tab-box:hover { 
-            background: rgba(0, 242, 255, 0.2); 
-            box-shadow: 0 0 40px #00f2ff; 
-            transform: translateY(-5px);
-        }
+        .tab-box:hover { background: rgba(0, 242, 255, 0.2); box-shadow: 0 0 30px #00f2ff; transform: translateY(-5px); }
     </style>
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="bg-video">
+    <video autoplay muted loop playsinline preload="auto" id="bg-video">
         <source src="index_bg.mp4" type="video/mp4">
     </video>
 
