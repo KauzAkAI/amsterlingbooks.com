@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A.M. Sterling | Official Hub</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #050505; font-family: 'Segoe UI', sans-serif; }
+        
+        /* THE GLOWING GRID BACKGROUND */
+        #space-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+
+        /* NEON TABS */
+        nav {
+            display: flex; justify-content: center; padding: 20px;
+            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px);
+            border-bottom: 1px solid #00f2ff;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+        }
+
+        nav a {
+            color: #00f2ff; text-decoration: none; margin: 0 25px;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 3px;
+            text-shadow: 0 0 10px #00f2ff; transition: 0.5s;
+        }
+
+        nav a:hover { color: #fff; text-shadow: 0 0 25px #00f2ff, 0 0 50px #00f2ff; transform: scale(1.1); }
+
+        /* PULSING HERO TEXT */
+        .hero {
+            position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
+            text-align: center; pointer-events: none;
+        }
+
+        h1 {
+            font-size: 5em; color: white; margin: 0; letter-spacing: 15px;
+            animation: glowPulse 4s infinite ease-in-out;
+        }
+
+        @keyframes glowPulse {
+            0%, 100% { text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff; opacity: 0.8; }
+            50% { text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; opacity: 1; }
+        }
+
+        /* SERIES CARDS */
+        .series-tabs {
+            position: absolute; bottom: 10%; width: 100%;
+            display: flex; justify-content: center; gap: 30px;
+        }
+
+        .tab-box {
+            background: rgba(0, 242, 255, 0.05);
+            border: 1px solid #00f2ff; padding: 20px; width: 200px;
+            border-radius: 5px; cursor: pointer; transition: 0.3s;
+            text-align: center; color: white;
+        }
+
+        .tab-box:hover { background: rgba(0, 242, 255, 0.2); box-shadow: 0 0 30px #00f2ff; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">The Series</a>
+        <a href="#">The Author</a>
+        <a href="#">The Shop</a>
+        <a href="#">The Archive</a>
+    </nav>
+
+    <div class="hero">
+        <h1>A.M. STERLING</h1>
+    </div>
+
+    <div class="series-tabs">
+        <div class="tab-box">LOGIC-BREAK</div>
+        <div class="tab-box">AURORA SAGA</div>
+        <div class="tab-box">MINERVA CORE</div>
+    </div>
+
+    <canvas id="space-canvas"></canvas>
+
+    <script>
+        // DEEP SPACE STARFIELD SCRIPT
+        const canvas = document.getElementById('space-canvas');
+        const ctx = canvas.getContext('2d');
+        let stars = [];
+
+        function init() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            stars = [];
+            for (let i = 0; i < 200; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 2,
+                    speed: Math.random() * 0.5 + 0.1
+                });
+            }
+        }
+
+        function draw() {
+            ctx.fillStyle = '#050505';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00f2ff';
+            stars.forEach(s => {
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                ctx.fill();
+                s.y -= s.speed; // Move stars upward for a "flying" effect
+                if (s.y < 0) s.y = canvas.height;
+            });
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('resize', init);
+        init();
+        draw();
+    </script>
+</body>
+</html>
