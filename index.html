@@ -99,4 +99,70 @@
 
         .series-card:hover {
             border-color: var(--neon-blue); background: rgba(0, 242, 255, 0.05);
-            transform: translateY(-10
+            transform: translateY(-10px);
+        }
+
+        .series-card h2 { color: var(--neon-blue); letter-spacing: 3px; }
+        .series-card p { color: #888; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <div id="video-container">
+        <video autoplay muted loop playsinline preload="auto" id="bg-video">
+            <source src="index_bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <nav>
+        <a href="index.html" class="brand-logo">A.M. STERLING</a>
+        <div class="nav-links">
+            <a href="shop.html">The Shop</a>
+            <a href="#series">The Series</a>
+            <a href="archive.html">The Archive</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>A.M. STERLING</h1>
+        <p style="color: var(--accent-gold); letter-spacing: 8px; margin-top: 20px; font-weight: 300;">A 22-YEAR VIGIL</p>
+        <div class="cta-group">
+            <a href="shop.html" class="btn-acquire">Acquire Data</a>
+        </div>
+    </section>
+
+    <section id="series" class="series-grid">
+        <div class="series-card">
+            <h2>LOGIC-BREAK</h2>
+            <p>High-fidelity manuscripts exploring the interface of consciousness. Retail ready in Limited Hardcover.</p>
+        </div>
+        <div class="series-card">
+            <h2>AURORA SAGA</h2>
+            <p>Cinematic deep-space storytelling. Heavy graphic merchandise and interactive archival data sets.</p>
+        </div>
+        <div class="series-card">
+            <h2>MINERVA CORE</h2>
+            <p>The central intelligence. Adaptive designs for the modern collector of fine data and literature.</p>
+        </div>
+    </section>
+
+    <script>
+        const video = document.getElementById('bg-video');
+
+        // Ensure video is visible only when loaded to prevent "Black Flash"
+        video.onloadeddata = function() {
+            video.style.opacity = "1";
+        };
+
+        // 1. SIMPLE AI LOGIC: Track user visit for personalization
+        if (!localStorage.getItem('returning_user')) {
+            console.log("2026 Personalization: Welcome New Visitor to A.M. Sterling.");
+            localStorage.setItem('returning_user', 'true');
+        } else {
+            console.log("2026 Personalization: Welcome Back, Collector.");
+        }
+    </script>
+
+</body>
+</html>
