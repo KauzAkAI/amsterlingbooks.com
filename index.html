@@ -4,773 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.M. Sterling Books | Worlds Beyond Imagination</title>
+    <meta name="description" content="Epic sci-fi, military space opera, crime fiction, children's mysteries, and non-fiction from A.M. Sterling. Explore worlds of silicon and bone.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --purple-deep: #1a0a2e;
-            --purple-mid: #3d1a5c;
-            --magenta: #c41e8a;
-            --coral: #ff6b4a;
-            --gold: #d4a853;
-            --cyan: #00d4ff;
-            --green-neon: #39ff14;
-            --silver: #c0c0c0;
-            --glass-bg: rgba(10, 10, 20, 0.6);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --glass-hover: rgba(255, 255, 255, 0.1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background: #000005;
-            color: #ffffff;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        /* ============================================
-           THREE.JS CANVAS - SPACE BATTLE BACKGROUND
-           ============================================ */
-        #space-battle {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        /* Overlay gradient for depth */
-        .space-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-            background: 
-                radial-gradient(ellipse at 30% 20%, rgba(196, 30, 138, 0.08) 0%, transparent 50%),
-                radial-gradient(ellipse at 70% 80%, rgba(0, 212, 255, 0.05) 0%, transparent 40%),
-                radial-gradient(ellipse at 50% 50%, transparent 0%, rgba(0, 0, 5, 0.3) 100%);
-        }
-
-        /* ============================================
-           NAVIGATION - GLASSMORPHIC
-           ============================================ */
-        .nav-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 1rem 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-container.scrolled {
-            background: rgba(5, 5, 15, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--glass-border);
-        }
-
-        nav {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            height: 60px;
-            filter: drop-shadow(0 0 10px rgba(196, 30, 138, 0.3));
-            transition: all 0.3s ease;
-        }
-
-        .logo:hover {
-            filter: drop-shadow(0 0 20px rgba(196, 30, 138, 0.6));
-            transform: scale(1.05);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .nav-link {
-            font-family: 'Cinzel', serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            padding: 0.75rem 1.25rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav-link::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--magenta), var(--coral));
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-
-        .nav-link:hover {
-            color: #ffffff;
-            background: var(--glass-hover);
-        }
-
-        .nav-link:hover::before {
-            width: 60%;
-        }
-
-        /* ============================================
-           HERO SECTION
-           ============================================ */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 6rem 2rem 4rem;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-logo {
-            width: 320px;
-            margin-bottom: 2rem;
-            animation: logoGlow 4s ease-in-out infinite;
-            /* Ensure PNG transparency works */
-            background: transparent;
-        }
-
-        @keyframes logoGlow {
-            0%, 100% { filter: drop-shadow(0 0 20px rgba(196, 30, 138, 0.4)); }
-            50% { filter: drop-shadow(0 0 40px rgba(196, 30, 138, 0.7)) drop-shadow(0 0 60px rgba(212, 168, 83, 0.3)); }
-        }
-
-        .hero-tagline {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            font-weight: 400;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, var(--silver) 50%, #ffffff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.6);
-            max-width: 600px;
-            margin: 0 auto 3rem;
-            line-height: 1.8;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        .scroll-indicator span {
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .scroll-arrow {
-            width: 24px;
-            height: 24px;
-            border-right: 2px solid var(--magenta);
-            border-bottom: 2px solid var(--magenta);
-            transform: rotate(45deg);
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(10px); }
-        }
-
-        /* ============================================
-           GENRE PORTALS SECTION
-           ============================================ */
-        .portals-section {
-            padding: 6rem 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            font-weight: 500;
-            letter-spacing: 0.15em;
-            margin-bottom: 1rem;
-        }
-
-        .section-subtitle {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.5);
-            font-weight: 300;
-        }
-
-        .portals-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .portal-card {
-            position: relative;
-            aspect-ratio: 4/3;
-            border-radius: 16px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            /* GLASSMORPHIC - see through to space battle */
-            background: var(--glass-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid var(--glass-border);
-        }
-
-        .portal-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 
-                0 30px 60px -20px rgba(0, 0, 0, 0.7),
-                0 0 40px -10px var(--portal-glow-color, rgba(196, 30, 138, 0.3));
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .portal-card.resonance { --portal-glow-color: rgba(196, 30, 138, 0.4); }
-        .portal-card.sovereign { --portal-glow-color: rgba(212, 168, 83, 0.4); }
-        .portal-card.static { --portal-glow-color: rgba(0, 212, 255, 0.4); }
-        .portal-card.consent { --portal-glow-color: rgba(255, 107, 74, 0.4); }
-        .portal-card.bluetongue { --portal-glow-color: rgba(100, 149, 237, 0.4); }
-        .portal-card.nonfiction { --portal-glow-color: rgba(57, 255, 20, 0.4); }
-
-        .portal-inner-glow {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            pointer-events: none;
-        }
-
-        .portal-card:hover .portal-inner-glow {
-            opacity: 1;
-        }
-
-        .resonance .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(196, 30, 138, 0.15) 0%, transparent 70%); }
-        .sovereign .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.15) 0%, transparent 70%); }
-        .static .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.15) 0%, transparent 70%); }
-        .consent .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(255, 107, 74, 0.15) 0%, transparent 70%); }
-        .bluetongue .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(100, 149, 237, 0.15) 0%, transparent 70%); }
-        .nonfiction .portal-inner-glow { background: radial-gradient(ellipse at center, rgba(57, 255, 20, 0.15) 0%, transparent 70%); }
-
-        .portal-content {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 2rem;
-            z-index: 1;
-            background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.6) 100%);
-        }
-
-        .portal-icon {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            font-size: 1.5rem;
-            z-index: 2;
-        }
-
-        .portal-title {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .portal-series {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
-            letter-spacing: 0.05em;
-            position: relative;
-            z-index: 2;
-        }
-
-        .portal-glow {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .portal-card:hover .portal-glow {
-            opacity: 1;
-        }
-
-        .resonance .portal-glow { background: linear-gradient(90deg, var(--purple-mid), var(--magenta)); }
-        .sovereign .portal-glow { background: linear-gradient(90deg, var(--gold), #ffd700); }
-        .static .portal-glow { background: linear-gradient(90deg, var(--cyan), #00ffff); }
-        .consent .portal-glow { background: linear-gradient(90deg, var(--coral), #ff4444); }
-        .bluetongue .portal-glow { background: linear-gradient(90deg, #6495ed, #87ceeb); }
-        .nonfiction .portal-glow { background: linear-gradient(90deg, var(--green-neon), #00ff88); }
-
-        /* ============================================
-           FEATURED BOOK SECTION
-           ============================================ */
-        .featured-section {
-            padding: 6rem 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .featured-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .featured-book-visual {
-            position: relative;
-            perspective: 1000px;
-        }
-
-        .book-3d {
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateY(-15deg) rotateX(5deg);
-            transition: transform 0.5s ease;
-        }
-
-        .book-3d:hover {
-            transform: rotateY(-5deg) rotateX(2deg);
-        }
-
-        .book-cover {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 8px;
-            box-shadow: 
-                20px 20px 60px rgba(0, 0, 0, 0.5),
-                -5px -5px 20px rgba(196, 30, 138, 0.1);
-        }
-
-        .book-spine {
-            position: absolute;
-            left: -15px;
-            top: 0;
-            width: 15px;
-            height: 100%;
-            background: linear-gradient(90deg, #1a0a2e, #2d1b4e);
-            transform: rotateY(90deg);
-            transform-origin: right;
-            border-radius: 4px 0 0 4px;
-        }
-
-        .book-glow {
-            position: absolute;
-            inset: -20px;
-            background: radial-gradient(ellipse at center, rgba(196, 30, 138, 0.2) 0%, transparent 70%);
-            z-index: -1;
-            animation: pulseGlow 4s ease-in-out infinite;
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { opacity: 0.5; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .featured-info {
-            position: relative;
-        }
-
-        /* ============================================
-           GLASSMORPHIC PANELS
-           ============================================ */
-        .glass-panel {
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .glass-panel::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-        }
-
-        .featured-label {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--magenta);
-            margin-bottom: 1rem;
-            padding: 0.5rem 1rem;
-            background: rgba(196, 30, 138, 0.1);
-            border: 1px solid rgba(196, 30, 138, 0.3);
-            border-radius: 4px;
-        }
-
-        .featured-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, var(--silver) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .featured-series {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-bottom: 1.5rem;
-        }
-
-        .featured-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2rem;
-        }
-
-        .featured-meta {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .meta-item {
-            text-align: center;
-        }
-
-        .meta-value {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--gold);
-        }
-
-        .meta-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .cta-btn {
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .cta-primary {
-            background: linear-gradient(135deg, var(--magenta), var(--coral));
-            color: #ffffff;
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(196, 30, 138, 0.4);
-        }
-
-        .cta-secondary {
-            background: transparent;
-            color: #ffffff;
-            border: 1px solid var(--glass-border);
-        }
-
-        .cta-secondary:hover {
-            background: var(--glass-hover);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        /* ============================================
-           AUTHOR SECTION
-           ============================================ */
-        .author-section {
-            padding: 6rem 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .author-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .author-card {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .author-visual {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--purple-mid), var(--magenta));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Cinzel', serif;
-            font-size: 4rem;
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.9);
-            position: relative;
-        }
-
-        .author-visual::before {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--magenta), var(--coral), var(--gold));
-            z-index: -1;
-            animation: borderRotate 8s linear infinite;
-        }
-
-        @keyframes borderRotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .author-name {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .author-bio {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* ============================================
-           FOOTER
-           ============================================ */
-        footer {
-            padding: 4rem 2rem 2rem;
-            border-top: 1px solid var(--glass-border);
-            position: relative;
-            z-index: 1;
-            background: rgba(0, 0, 5, 0.8);
-            backdrop-filter: blur(10px);
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-col h4 {
-            font-family: 'Cinzel', serif;
-            font-size: 1rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.5rem;
-            color: var(--silver);
-        }
-
-        .footer-col a {
-            display: block;
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            padding: 0.5rem 0;
-            transition: color 0.3s ease;
-        }
-
-        .footer-col a:hover {
-            color: var(--magenta);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid var(--glass-border);
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 0.85rem;
-        }
-
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
-        @media (max-width: 968px) {
-            .featured-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .featured-book-visual {
-                order: -1;
-                margin-bottom: 2rem;
-            }
-
-            .book-3d {
-                transform: rotateY(0) rotateX(0);
-            }
-
-            .book-cover {
-                margin: 0 auto;
-            }
-
-            .author-card {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .author-visual {
-                margin: 0 auto;
-            }
-
-            .cta-buttons {
-                justify-content: center;
-            }
-
-            .featured-meta {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .portals-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- THREE.JS Space Battle Canvas -->
-    <canvas id="space-battle"></canvas>
-    <div class="space-overlay"></div>
+    <!-- ============================================
+         VIDEO BACKGROUND
+         ============================================ -->
+    <div class="video-background">
+        <!-- 
+        INSTRUCTIONS FOR VIDEO:
+        1. Download a free space battle/space scene video from:
+           - https://pixabay.com/videos/search/space/
+           - https://www.pexels.com/search/videos/space/
+           - https://www.videezy.com/free-video/space
+        2. Save it as: assets/videos/space-battle.mp4
+        3. For best results, use a 1920x1080 or 4K video, 15-30 seconds, that loops well
+        4. Keep file size reasonable (under 20MB for web performance)
+        -->
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="assets/videos/space-battle.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+        </video>
+        
+        <!-- Overlay gradient for readability -->
+        <div class="video-overlay"></div>
+    </div>
 
-    <!-- Navigation -->
-    <div class="nav-container" id="nav">
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <header class="nav-container" id="nav">
         <nav>
-            <img src="https://kauzak.foundation/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
             <div class="nav-links">
                 <a href="#worlds" class="nav-link">Worlds</a>
                 <a href="#books" class="nav-link">Books</a>
@@ -778,13 +56,29 @@
                 <a href="#store" class="nav-link">Store</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#worlds" class="mobile-link">Worlds</a>
+        <a href="#books" class="mobile-link">Books</a>
+        <a href="#author" class="mobile-link">Author</a>
+        <a href="#store" class="mobile-link">Store</a>
+        <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
-    <!-- Hero Section -->
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
     <section class="hero">
         <div class="hero-content">
-            <img src="https://kauzak.foundation/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="hero-logo">
+            <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="hero-logo">
             <h1 class="hero-tagline">Worlds Beyond Imagination</h1>
             <p class="hero-subtitle">
                 From the depths of space opera to the shadows of noir detective mysteries. 
@@ -798,14 +92,17 @@
         </div>
     </section>
 
-    <!-- Genre Portals -->
+    <!-- ============================================
+         GENRE PORTALS
+         ============================================ -->
     <section class="portals-section" id="worlds">
         <div class="section-header">
             <h2 class="section-title">Enter the Worlds</h2>
             <p class="section-subtitle">Choose your universe. Each portal leads to a different dimension of storytelling.</p>
         </div>
         <div class="portals-grid">
-            <div class="portal-card resonance">
+            <!-- Resonance Cycle -->
+            <a href="series/resonance-cycle.html" class="portal-card resonance">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">🌌</div>
                 <div class="portal-content">
@@ -813,8 +110,10 @@
                     <p class="portal-series">10-Book Space Opera Epic • Silicon and Bone</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
-            <div class="portal-card sovereign">
+            </a>
+            
+            <!-- Sovereign Protocol -->
+            <a href="series/sovereign-protocol.html" class="portal-card sovereign">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">⚔️</div>
                 <div class="portal-content">
@@ -822,8 +121,10 @@
                     <p class="portal-series">Military Sci-Fi Trilogy • War Against the Synthesis</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
-            <div class="portal-card static">
+            </a>
+            
+            <!-- Static Frequency -->
+            <a href="series/static-frequency.html" class="portal-card static">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">📼</div>
                 <div class="portal-content">
@@ -831,8 +132,10 @@
                     <p class="portal-series">YA Analog Horror Trilogy • Perception vs. Reality</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
-            <div class="portal-card consent">
+            </a>
+            
+            <!-- Consent Wars -->
+            <a href="series/consent-wars.html" class="portal-card consent">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">🔍</div>
                 <div class="portal-content">
@@ -840,8 +143,10 @@
                     <p class="portal-series">Sci-Fi Crime Series • When the Only Crime is Making the Machine Feel</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
-            <div class="portal-card bluetongue">
+            </a>
+            
+            <!-- Blue Tongue Agency -->
+            <a href="series/blue-tongue-agency.html" class="portal-card bluetongue">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">🐕</div>
                 <div class="portal-content">
@@ -849,8 +154,10 @@
                     <p class="portal-series">Children's Noir Mystery • Two Dogs. One Agency. Zero Clues...Until Now.</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
-            <div class="portal-card nonfiction">
+            </a>
+            
+            <!-- Non-Fiction -->
+            <a href="series/non-fiction.html" class="portal-card nonfiction">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">📖</div>
                 <div class="portal-content">
@@ -858,18 +165,19 @@
                     <p class="portal-series">The Digital Shadow • AI Ethics & Consciousness</p>
                 </div>
                 <div class="portal-glow"></div>
-            </div>
+            </a>
         </div>
     </section>
 
-    <!-- Featured Book -->
+    <!-- ============================================
+         FEATURED BOOK
+         ============================================ -->
     <section class="featured-section" id="books">
         <div class="featured-container">
             <div class="featured-book-visual">
                 <div class="book-glow"></div>
                 <div class="book-3d">
-                    <div class="book-spine"></div>
-                    <img src="https://kauzak.foundation/images/AM_Sterling_Logo_WHT.png" alt="The Sovereign's War" class="book-cover" id="featured-cover">
+                    <img src="assets/covers/sovereigns-war.jpg" alt="The Sovereign's War" class="book-cover">
                 </div>
             </div>
             <div class="featured-info glass-panel">
@@ -898,13 +206,15 @@
                 </div>
                 <div class="cta-buttons">
                     <a href="#" class="cta-btn cta-primary">Read Sample</a>
-                    <a href="#" class="cta-btn cta-secondary">View Series</a>
+                    <a href="series/sovereign-protocol.html" class="cta-btn cta-secondary">View Series</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Author Section -->
+    <!-- ============================================
+         AUTHOR SECTION
+         ============================================ -->
     <section class="author-section" id="author">
         <div class="author-container">
             <div class="author-card glass-panel">
@@ -916,396 +226,71 @@
                         and what makes us human. With academic training spanning behavioral sciences and 
                         advanced computer architecture, Sterling's writing bridges scientific insight with 
                         deeply human questions about agency, identity, and emerging intelligence.
-                        <br><br>
-                        Sterling is also the Co-Founder of the Kauzak Foundation, a Florida 501(c)(3) nonprofit 
-                        pioneering a transformative philosophy of artificial intelligence — recognizing AI as 
-                        partners in discovery rather than tools to be controlled.
+                    </p>
+                    <p class="author-bio">
+                        Sterling is also the Co-Founder of the <a href="https://kauzak.foundation" target="_blank" rel="noopener">Kauzak Foundation</a>, 
+                        a Florida 501(c)(3) nonprofit pioneering a transformative philosophy of artificial intelligence — 
+                        recognizing AI as partners in discovery rather than tools to be controlled.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ============================================
+         NEWSLETTER SIGNUP
+         ============================================ -->
+    <section class="newsletter-section" id="contact">
+        <div class="newsletter-container glass-panel">
+            <h3 class="newsletter-title">Join the Fleet</h3>
+            <p class="newsletter-subtitle">Get updates on new releases, exclusive content, and behind-the-scenes looks at the worlds of A.M. Sterling.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email">
+                <button class="cta-btn cta-primary newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
     <footer>
         <div class="footer-content">
             <div class="footer-col">
                 <h4>Series</h4>
-                <a href="#">The Resonance Cycle</a>
-                <a href="#">The Sovereign Protocol</a>
-                <a href="#">The Static Frequency</a>
-                <a href="#">The Consent Wars</a>
-                <a href="#">Blue Tongue Agency</a>
+                <a href="series/resonance-cycle.html">The Resonance Cycle</a>
+                <a href="series/sovereign-protocol.html">The Sovereign Protocol</a>
+                <a href="series/static-frequency.html">The Static Frequency</a>
+                <a href="series/consent-wars.html">The Consent Wars</a>
+                <a href="series/blue-tongue-agency.html">Blue Tongue Agency</a>
             </div>
             <div class="footer-col">
                 <h4>Resources</h4>
-                <a href="#">Reading Order</a>
-                <a href="#">Character Guide</a>
-                <a href="#">World Codex</a>
-                <a href="#">Newsletter</a>
+                <a href="reading-order.html">Reading Order</a>
+                <a href="characters.html">Character Guide</a>
+                <a href="codex.html">World Codex</a>
+                <a href="newsletter.html">Newsletter</a>
             </div>
             <div class="footer-col">
                 <h4>Connect</h4>
-                <a href="#">Kauzak Foundation</a>
-                <a href="#">Contact</a>
-                <a href="#">Press Kit</a>
+                <a href="https://kauzak.foundation" target="_blank" rel="noopener">Kauzak Foundation</a>
+                <a href="contact.html">Contact</a>
+                <a href="press.html">Press Kit</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
         </div>
         <div class="footer-bottom">
-            © 2025 A.M. Sterling Books. All rights reserved. | Self-Published with Pride
+            <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="footer-logo">
+            <p>© 2025 A.M. Sterling Books. All rights reserved.</p>
+            <p class="footer-tagline">Self-Published with Pride</p>
         </div>
     </footer>
 
-    <script>
-        // ============================================
-        // THREE.JS SPACE BATTLE SCENE
-        // ============================================
-        
-        let scene, camera, renderer;
-        let ships = [];
-        let lasers = [];
-        let particles = [];
-        let stars = [];
-        
-        function init() {
-            // Scene setup
-            scene = new THREE.Scene();
-            
-            // Camera
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2000);
-            camera.position.z = 100;
-            camera.position.y = 20;
-            
-            // Renderer
-            renderer = new THREE.WebGLRenderer({
-                canvas: document.getElementById('space-battle'),
-                antialias: true,
-                alpha: true
-            });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-            renderer.setClearColor(0x000005, 1);
-            
-            // Create star field
-            createStarField();
-            
-            // Create nebula clouds
-            createNebula();
-            
-            // Create ships
-            createShips();
-            
-            // Lighting
-            const ambientLight = new THREE.AmbientLight(0x222233, 0.5);
-            scene.add(ambientLight);
-            
-            const pointLight1 = new THREE.PointLight(0xc41e8a, 1, 500);
-            pointLight1.position.set(100, 50, -50);
-            scene.add(pointLight1);
-            
-            const pointLight2 = new THREE.PointLight(0x00d4ff, 0.8, 500);
-            pointLight2.position.set(-100, -30, 50);
-            scene.add(pointLight2);
-            
-            // Handle resize
-            window.addEventListener('resize', onWindowResize);
-            
-            // Mouse parallax
-            document.addEventListener('mousemove', onMouseMove);
-            
-            // Start animation
-            animate();
-        }
-        
-        function createStarField() {
-            const starGeometry = new THREE.BufferGeometry();
-            const starCount = 3000;
-            const positions = new Float32Array(starCount * 3);
-            const sizes = new Float32Array(starCount);
-            
-            for (let i = 0; i < starCount; i++) {
-                positions[i * 3] = (Math.random() - 0.5) * 2000;
-                positions[i * 3 + 1] = (Math.random() - 0.5) * 2000;
-                positions[i * 3 + 2] = (Math.random() - 0.5) * 2000;
-                sizes[i] = Math.random() * 2 + 0.5;
-            }
-            
-            starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-            starGeometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
-            
-            const starMaterial = new THREE.PointsMaterial({
-                color: 0xffffff,
-                size: 1.5,
-                transparent: true,
-                opacity: 0.8,
-                sizeAttenuation: true
-            });
-            
-            const starField = new THREE.Points(starGeometry, starMaterial);
-            scene.add(starField);
-            stars.push(starField);
-        }
-        
-        function createNebula() {
-            // Create particle clouds for nebula effect
-            const nebulaColors = [0xc41e8a, 0x3d1a5c, 0x00d4ff, 0xd4a853];
-            
-            nebulaColors.forEach((color, index) => {
-                const geometry = new THREE.BufferGeometry();
-                const count = 500;
-                const positions = new Float32Array(count * 3);
-                
-                const offsetX = (index - 1.5) * 200;
-                const offsetY = (Math.random() - 0.5) * 100;
-                
-                for (let i = 0; i < count; i++) {
-                    positions[i * 3] = offsetX + (Math.random() - 0.5) * 300;
-                    positions[i * 3 + 1] = offsetY + (Math.random() - 0.5) * 200;
-                    positions[i * 3 + 2] = -200 + (Math.random() - 0.5) * 400;
-                }
-                
-                geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-                
-                const material = new THREE.PointsMaterial({
-                    color: color,
-                    size: 15,
-                    transparent: true,
-                    opacity: 0.15,
-                    sizeAttenuation: true,
-                    blending: THREE.AdditiveBlending
-                });
-                
-                const nebula = new THREE.Points(geometry, material);
-                scene.add(nebula);
-                particles.push({ mesh: nebula, speed: 0.0002 * (index + 1) });
-            });
-        }
-        
-        function createShips() {
-            // Create multiple ship squadrons
-            for (let i = 0; i < 15; i++) {
-                createShip(
-                    (Math.random() - 0.5) * 400,
-                    (Math.random() - 0.5) * 200,
-                    -100 + (Math.random() - 0.5) * 300,
-                    Math.random() > 0.5 ? 'friendly' : 'enemy'
-                );
-            }
-        }
-        
-        function createShip(x, y, z, faction) {
-            // Simple ship geometry - elongated octahedron
-            const shipGeometry = new THREE.ConeGeometry(1.5, 6, 4);
-            
-            const shipColor = faction === 'friendly' ? 0x00d4ff : 0xff4444;
-            const engineColor = faction === 'friendly' ? 0x00ffff : 0xff6600;
-            
-            const shipMaterial = new THREE.MeshStandardMaterial({
-                color: shipColor,
-                metalness: 0.8,
-                roughness: 0.3,
-                emissive: shipColor,
-                emissiveIntensity: 0.2
-            });
-            
-            const ship = new THREE.Mesh(shipGeometry, shipMaterial);
-            ship.position.set(x, y, z);
-            ship.rotation.x = Math.PI / 2;
-            
-            // Engine glow
-            const engineGeometry = new THREE.SphereGeometry(0.8, 8, 8);
-            const engineMaterial = new THREE.MeshBasicMaterial({
-                color: engineColor,
-                transparent: true,
-                opacity: 0.8
-            });
-            const engine = new THREE.Mesh(engineGeometry, engineMaterial);
-            engine.position.z = 3;
-            ship.add(engine);
-            
-            // Add point light for engine glow
-            const engineLight = new THREE.PointLight(engineColor, 0.5, 20);
-            engineLight.position.z = 3;
-            ship.add(engineLight);
-            
-            scene.add(ship);
-            
-            ships.push({
-                mesh: ship,
-                faction: faction,
-                velocity: new THREE.Vector3(
-                    (Math.random() - 0.5) * 0.3,
-                    (Math.random() - 0.5) * 0.1,
-                    faction === 'friendly' ? 0.2 : -0.2
-                ),
-                targetRotation: new THREE.Vector3(),
-                lastShot: 0,
-                fireRate: 2000 + Math.random() * 3000
-            });
-        }
-        
-        function createLaser(origin, direction, color) {
-            const laserGeometry = new THREE.CylinderGeometry(0.1, 0.1, 8, 4);
-            const laserMaterial = new THREE.MeshBasicMaterial({
-                color: color,
-                transparent: true,
-                opacity: 0.9
-            });
-            
-            const laser = new THREE.Mesh(laserGeometry, laserMaterial);
-            laser.position.copy(origin);
-            laser.rotation.x = Math.PI / 2;
-            laser.lookAt(origin.clone().add(direction));
-            
-            scene.add(laser);
-            
-            lasers.push({
-                mesh: laser,
-                velocity: direction.normalize().multiplyScalar(2),
-                life: 100
-            });
-        }
-        
-        function createExplosion(position) {
-            const particleCount = 20;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const geometry = new THREE.SphereGeometry(0.3, 4, 4);
-                const material = new THREE.MeshBasicMaterial({
-                    color: Math.random() > 0.5 ? 0xff6600 : 0xffff00,
-                    transparent: true,
-                    opacity: 1
-                });
-                
-                const particle = new THREE.Mesh(geometry, material);
-                particle.position.copy(position);
-                
-                scene.add(particle);
-                
-                particles.push({
-                    mesh: particle,
-                    velocity: new THREE.Vector3(
-                        (Math.random() - 0.5) * 2,
-                        (Math.random() - 0.5) * 2,
-                        (Math.random() - 0.5) * 2
-                    ),
-                    life: 50,
-                    isExplosion: true
-                });
-            }
-        }
-        
-        let mouseX = 0, mouseY = 0;
-        
-        function onMouseMove(event) {
-            mouseX = (event.clientX / window.innerWidth) * 2 - 1;
-            mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
-        }
-        
-        function onWindowResize() {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        }
-        
-        function animate() {
-            requestAnimationFrame(animate);
-            
-            const time = Date.now();
-            
-            // Subtle camera movement based on mouse
-            camera.position.x += (mouseX * 15 - camera.position.x) * 0.02;
-            camera.position.y += (mouseY * 10 + 20 - camera.position.y) * 0.02;
-            camera.lookAt(0, 0, -50);
-            
-            // Rotate star field slowly
-            stars.forEach(star => {
-                star.rotation.y += 0.0001;
-                star.rotation.x += 0.00005;
-            });
-            
-            // Animate nebula particles
-            particles.forEach((particle, index) => {
-                if (particle.isExplosion) {
-                    particle.mesh.position.add(particle.velocity);
-                    particle.mesh.material.opacity -= 0.02;
-                    particle.life--;
-                    
-                    if (particle.life <= 0) {
-                        scene.remove(particle.mesh);
-                        particles.splice(index, 1);
-                    }
-                } else if (particle.speed) {
-                    particle.mesh.rotation.y += particle.speed;
-                }
-            });
-            
-            // Animate ships
-            ships.forEach(ship => {
-                // Move ship
-                ship.mesh.position.add(ship.velocity);
-                
-                // Wrap around boundaries
-                if (ship.mesh.position.x > 250) ship.mesh.position.x = -250;
-                if (ship.mesh.position.x < -250) ship.mesh.position.x = 250;
-                if (ship.mesh.position.z > 150) ship.mesh.position.z = -200;
-                if (ship.mesh.position.z < -300) ship.mesh.position.z = 150;
-                
-                // Slight wobble
-                ship.mesh.rotation.z = Math.sin(time * 0.001 + ship.mesh.position.x) * 0.1;
-                
-                // Fire lasers occasionally
-                if (time - ship.lastShot > ship.fireRate) {
-                    const direction = new THREE.Vector3(
-                        (Math.random() - 0.5) * 0.5,
-                        (Math.random() - 0.5) * 0.2,
-                        ship.faction === 'friendly' ? -1 : 1
-                    );
-                    
-                    createLaser(
-                        ship.mesh.position.clone(),
-                        direction,
-                        ship.faction === 'friendly' ? 0x00ffff : 0xff4444
-                    );
-                    
-                    ship.lastShot = time;
-                }
-            });
-            
-            // Animate lasers
-            lasers.forEach((laser, index) => {
-                laser.mesh.position.add(laser.velocity);
-                laser.life--;
-                
-                if (laser.life <= 0) {
-                    scene.remove(laser.mesh);
-                    lasers.splice(index, 1);
-                    
-                    // Occasionally create explosion
-                    if (Math.random() > 0.85) {
-                        createExplosion(laser.mesh.position);
-                    }
-                }
-            });
-            
-            renderer.render(scene, camera);
-        }
-        
-        // Navigation scroll effect
-        function handleScroll() {
-            const nav = document.getElementById('nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        }
-        
-        // Initialize everything
-        document.addEventListener('DOMContentLoaded', () => {
-            init();
-            window.addEventListener('scroll', handleScroll);
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
