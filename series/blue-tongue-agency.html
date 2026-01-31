@@ -338,17 +338,20 @@
         }
 
         .detective-avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            position: relative;
-        }
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.detective-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
 
         .detective-avatar::before {
             content: '';
