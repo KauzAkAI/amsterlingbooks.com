@@ -1,4 +1,4 @@
-# A.M. Sterling Books Website
+# A.M. Sterling Books Website-
 
 A cutting-edge author website featuring glassmorphic UI, video backgrounds, and immersive design.
 
