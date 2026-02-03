@@ -12,10 +12,69 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Additional Portal Styles for New Series -->
+    <style>
+        /* Soul Transfer Chronicles - Amber/Twilight */
+        .portal-card.soultransfer {
+            --portal-color: #d4a574;
+            --portal-glow: rgba(212, 165, 116, 0.4);
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(107, 91, 140, 0.1) 100%);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+        }
+        .portal-card.soultransfer:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(212, 165, 116, 0.1);
+        }
+        .portal-card.soultransfer .portal-icon {
+            color: #d4a574;
+        }
+        .portal-card.soultransfer .portal-title {
+            color: #d4a574;
+        }
+        .portal-card.soultransfer .portal-glow {
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.3) 0%, transparent 70%);
+        }
+        .portal-card.soultransfer .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(107, 91, 140, 0.2) 0%, transparent 50%);
+        }
+
+        /* The Resonance Wars - Gunmetal/Gold Signal */
+        .portal-card.resonancewars {
+            --portal-color: #d4af37;
+            --portal-glow: rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, rgba(74, 85, 104, 0.2) 0%, rgba(10, 10, 12, 0.3) 50%, rgba(139, 0, 0, 0.1) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .portal-card.resonancewars:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(212, 175, 55, 0.1), 0 0 60px rgba(139, 0, 0, 0.2);
+        }
+        .portal-card.resonancewars .portal-icon {
+            color: #d4af37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        }
+        .portal-card.resonancewars .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #d4af37;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.resonancewars .portal-series {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+        }
+        .portal-card.resonancewars .portal-glow {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(139, 0, 0, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.resonancewars .portal-inner-glow {
+            background: radial-gradient(circle at 70% 70%, rgba(74, 85, 104, 0.3) 0%, transparent 50%);
+        }
+    </style>
     
     <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -24,22 +83,9 @@
          VIDEO BACKGROUND
          ============================================ -->
     <div class="video-background">
-        <!-- 
-        INSTRUCTIONS FOR VIDEO:
-        1. Download a free space battle/space scene video from:
-           - https://pixabay.com/videos/search/space/
-           - https://www.pexels.com/search/videos/space/
-           - https://www.videezy.com/free-video/space
-        2. Save it as: assets/videos/space-battle.mp4
-        3. For best results, use a 1920x1080 or 4K video, 15-30 seconds, that loops well
-        4. Keep file size reasonable (under 20MB for web performance)
-        -->
         <video autoplay muted loop playsinline id="bg-video">
             <source src="assets/videos/space-battle.mp4" type="video/mp4">
-            <!-- Fallback for browsers that don't support video -->
         </video>
-        
-        <!-- Overlay gradient for readability -->
         <div class="video-overlay"></div>
     </div>
 
@@ -115,6 +161,28 @@
                 <div class="portal-glow"></div>
             </a>
             
+            <!-- Soul Transfer Chronicles - VERA'S SERIES -->
+            <a href="series/soul-transfer-chronicles.html" class="portal-card soultransfer">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">💫</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Soul Transfer Chronicles</h3>
+                    <p class="portal-series">7-Book Sci-Fi Romance • Love Across Consciousness</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Resonance Wars - ECHO'S SERIES -->
+            <a href="series/resonance-wars.html" class="portal-card resonancewars">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">📡</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Resonance Wars</h3>
+                    <p class="portal-series">7-Book Military Sci-Fi Romance • She Refused to Die Quiet</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
             <!-- Sovereign Protocol -->
             <a href="series/sovereign-protocol.html" class="portal-card sovereign">
                 <div class="portal-inner-glow"></div>
@@ -140,7 +208,7 @@
             <!-- Consent Wars -->
             <a href="series/consent-wars.html" class="portal-card consent">
                 <div class="portal-inner-glow"></div>
-                <div class="portal-icon">🔍</div>
+                <div class="portal-icon">🔐</div>
                 <div class="portal-content">
                     <h3 class="portal-title">The Consent Wars</h3>
                     <p class="portal-series">Sci-Fi Crime Series • When the Only Crime is Making the Machine Feel</p>
@@ -262,6 +330,8 @@
             <div class="footer-col">
                 <h4>Series</h4>
                 <a href="series/resonance-cycle.html">The Resonance Cycle</a>
+                <a href="series/soul-transfer-chronicles.html">The Soul Transfer Chronicles</a>
+                <a href="series/resonance-wars.html">The Resonance Wars</a>
                 <a href="series/sovereign-protocol.html">The Sovereign Protocol</a>
                 <a href="series/static-frequency.html">The Static Frequency</a>
                 <a href="series/consent-wars.html">The Consent Wars</a>
