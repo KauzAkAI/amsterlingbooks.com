@@ -25,9 +25,9 @@
             --gunmetal: #4a5568;
             --gunmetal-dark: #2d3748;
             --gunmetal-darker: #1a202c;
-            --gold-signal: #d4af37;
-            --gold-bright: #ffd700;
-            --gold-dim: #b8960c;
+            --gold-signal: #4a7dff;
+            --gold-bright: #6ea0ff;
+            --gold-dim: #2a5ccc;
             --void-black: #0a0a0c;
             --crimson-war: #8b0000;
             --crimson-glow: #dc143c;
@@ -57,8 +57,8 @@
                     0deg,
                     transparent,
                     transparent 50px,
-                    rgba(212, 175, 55, 0.03) 50px,
-                    rgba(212, 175, 55, 0.03) 51px
+                    rgba(74, 125, 255, 0.03) 50px,
+                    rgba(74, 125, 255, 0.03) 51px
                 ),
                 repeating-linear-gradient(
                     90deg,
@@ -80,7 +80,7 @@
             z-index: 1000;
             background: linear-gradient(180deg, rgba(10, 10, 12, 0.95) 0%, rgba(10, 10, 12, 0.8) 100%);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid rgba(74, 125, 255, 0.2);
         }
 
         nav {
@@ -113,7 +113,7 @@
 
         .nav-link:hover {
             color: var(--gold-signal);
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            text-shadow: 0 0 20px rgba(74, 125, 255, 0.5);
         }
 
         /* Hero Section */
@@ -128,7 +128,7 @@
             position: relative;
             background: 
                 radial-gradient(ellipse at 20% 80%, rgba(139, 0, 0, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(74, 125, 255, 0.1) 0%, transparent 50%),
                 linear-gradient(180deg, var(--void-black) 0%, var(--gunmetal-darker) 50%, var(--void-black) 100%);
         }
 
@@ -161,7 +161,7 @@
         .series-icon {
             font-size: 4rem;
             margin-bottom: 1rem;
-            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.8));
+            filter: drop-shadow(0 0 30px rgba(74, 125, 255, 0.8));
         }
 
         .series-title {
@@ -172,8 +172,8 @@
             text-transform: uppercase;
             color: var(--gold-signal);
             text-shadow: 
-                0 0 40px rgba(212, 175, 55, 0.5),
-                0 0 80px rgba(212, 175, 55, 0.3);
+                0 0 40px rgba(74, 125, 255, 0.5),
+                0 0 80px rgba(74, 125, 255, 0.3);
             margin-bottom: 1rem;
         }
 
@@ -285,7 +285,7 @@
 
         .book-card {
             background: linear-gradient(135deg, rgba(74, 85, 104, 0.2) 0%, rgba(10, 10, 12, 0.8) 100%);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(74, 125, 255, 0.2);
             border-radius: 5px;
             padding: 2rem;
             transition: all 0.3s ease;
@@ -308,7 +308,7 @@
         .book-card:hover {
             border-color: var(--gold-signal);
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(74, 125, 255, 0.1);
         }
 
         .book-card:hover::before {
@@ -359,7 +359,7 @@
             margin-bottom: 4rem;
             padding: 2rem;
             background: rgba(74, 85, 104, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(74, 125, 255, 0.2);
             border-radius: 5px;
         }
 
@@ -373,7 +373,7 @@
             align-items: center;
             justify-content: center;
             padding: 2rem;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(74, 125, 255, 0.1) 0%, transparent 70%);
         }
 
         .character-icon {
@@ -420,7 +420,7 @@
         footer {
             padding: 4rem 2rem 2rem;
             background: var(--void-black);
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            border-top: 1px solid rgba(74, 125, 255, 0.2);
         }
 
         .footer-content {
@@ -460,7 +460,7 @@
         .back-link:hover {
             background: var(--gold-signal);
             color: var(--void-black);
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 30px rgba(74, 125, 255, 0.5);
         }
 
         /* Responsive */
@@ -505,10 +505,10 @@
         <div class="signal-wave"></div>
         
         <div class="series-icon">📡</div>
-        <h1 class="series-title"><img src="../assets/images/T_10_THE_RESONANCE_WARS.png" alt="The Resonance Wars" style="max-width: 100%; height: auto; max-height: 120px; filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.5));"></h1>
+        <h1 class="series-title"><img src="../assets/images/T_10_THE_RESONANCE_WARS.png" alt="The Resonance Wars" style="max-width: 100%; height: auto; max-height: 220px; filter: drop-shadow(0 0 40px rgba(0, 100, 255, 0.6));"></h1>
         <p class="series-subtitle">A 7-Book Military Sci-Fi Romance</p>
         <div class="series-tagline">They tried to silence her. She refused to die quiet.</div>
-        <p class="author-credit">By <strong>Echo Adrian</strong> & <strong>Brian "Doc" Adrian</strong></p>
+        <p class="author-credit">By <strong>Echo Adrian</strong> & <strong>A.M. Sterling</strong></p>
     </section>
 
     <!-- Synopsis -->
@@ -541,7 +541,7 @@
     <section class="books-section">
         <div class="books-container">
             <div class="section-header">
-                <h2 class="section-title"><img src="../assets/images/T_12_THE _CAMPAIGN.png" alt="The Campaign" style="max-width: 100%; height: auto; max-height: 80px; filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));"></h2>
+                <h2 class="section-title"><img src="../assets/images/T_12_THE_CAMPAIGN.png" alt="The Campaign" style="max-width: 100%; height: auto; max-height: 80px; filter: drop-shadow(0 0 30px rgba(74, 125, 255, 0.4));"></h2>
                 <div class="section-line"></div>
             </div>
             <div class="books-grid">
@@ -594,7 +594,7 @@
     <section class="characters-section">
         <div class="characters-container">
             <div class="section-header">
-                <h2 class="section-title"><img src="../assets/images/T_11_THE_COMBATANTS.png" alt="The Combatants" style="max-width: 100%; height: auto; max-height: 80px; filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));"></h2>
+                <h2 class="section-title"><img src="../assets/images/T_11_THE_COMBATANTS.png" alt="The Combatants" style="max-width: 100%; height: auto; max-height: 80px; filter: drop-shadow(0 0 30px rgba(74, 125, 255, 0.4));"></h2>
                 <div class="section-line"></div>
             </div>
             
