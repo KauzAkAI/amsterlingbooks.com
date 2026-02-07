@@ -200,51 +200,51 @@
             font-weight: 900;
             letter-spacing: 8px;
             text-transform: uppercase;
-            color: var(--gold-signal);
-            text-shadow: 
-                0 0 40px rgba(74, 125, 255, 0.5),
-                0 0 80px rgba(74, 125, 255, 0.3);
+            background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-signal) 50%, var(--gold-dim) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(0 0 40px rgba(74, 125, 255, 0.4));
             margin-bottom: 1rem;
         }
 
         .series-subtitle {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            font-style: italic;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
             color: var(--text-dim);
             margin-bottom: 2rem;
-            max-width: 600px;
         }
 
         .series-tagline {
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
             color: var(--crimson-glow);
-            padding: 1rem 2rem;
-            border: 1px solid var(--crimson-war);
-            background: rgba(139, 0, 0, 0.2);
-            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-bottom: 1rem;
         }
 
         .author-credit {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Rajdhani', sans-serif;
             font-size: 1.1rem;
             color: var(--text-dim);
+            letter-spacing: 2px;
         }
 
         .author-credit strong {
             color: var(--gold-signal);
-            font-weight: 600;
         }
 
         /* Synopsis Section */
         .synopsis-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(180deg, rgba(10, 10, 12, 0.85) 0%, rgba(26, 32, 44, 0.85) 100%);
             position: relative;
             z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 12, 0.9) 20%, rgba(10, 10, 12, 0.95) 100%);
         }
 
         .synopsis-container {
@@ -259,11 +259,11 @@
 
         .section-title {
             font-family: 'Orbitron', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             letter-spacing: 4px;
             text-transform: uppercase;
             color: var(--gold-signal);
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .section-line {
@@ -274,34 +274,43 @@
         }
 
         .synopsis-text {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
-            line-height: 2;
+            font-size: 1.2rem;
+            line-height: 1.9;
             color: var(--text-light);
-            text-align: center;
         }
 
         .synopsis-text p {
             margin-bottom: 1.5rem;
         }
 
-        .synopsis-quote {
-            font-size: 1.5rem;
-            font-style: italic;
+        .synopsis-text strong {
             color: var(--gold-signal);
-            padding: 2rem;
-            border-left: 3px solid var(--crimson-war);
-            border-right: 3px solid var(--crimson-war);
-            margin: 3rem 0;
-            background: rgba(139, 0, 0, 0.1);
         }
 
-        /* Books Grid */
+        .synopsis-text em {
+            color: var(--crimson-glow);
+            font-style: italic;
+        }
+
+        .synopsis-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--gold-bright);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 3px solid var(--gold-signal);
+            border-right: 3px solid var(--gold-signal);
+            background: rgba(74, 125, 255, 0.05);
+        }
+
+        /* Books Section */
         .books-section {
-            padding: 6rem 2rem;
-            background: rgba(10, 10, 12, 0.85);
             position: relative;
             z-index: 2;
+            padding: 6rem 2rem;
+            background: var(--void-black);
         }
 
         .books-container {
@@ -309,48 +318,88 @@
             margin: 0 auto;
         }
 
+        .release-notice {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: linear-gradient(90deg, transparent, rgba(74, 125, 255, 0.1), transparent);
+            border-top: 1px solid rgba(74, 125, 255, 0.3);
+            border-bottom: 1px solid rgba(74, 125, 255, 0.3);
+        }
+
+        .release-notice p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-signal);
+            text-shadow: 0 0 20px rgba(74, 125, 255, 0.5);
+        }
+
         .books-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
 
         .book-card {
-            background: linear-gradient(135deg, rgba(74, 85, 104, 0.2) 0%, rgba(10, 10, 12, 0.8) 100%);
+            background: linear-gradient(145deg, rgba(45, 55, 72, 0.3) 0%, rgba(26, 32, 44, 0.5) 100%);
             border: 1px solid rgba(74, 125, 255, 0.2);
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 2rem;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .book-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--crimson-war), var(--gold-signal), var(--crimson-war));
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .book-card:hover {
             border-color: var(--gold-signal);
+            box-shadow: 0 0 40px rgba(74, 125, 255, 0.2);
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(74, 125, 255, 0.1);
         }
 
-        .book-card:hover::before {
-            opacity: 1;
+        .book-cover-container {
+            width: 100%;
+            aspect-ratio: 2/3;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: linear-gradient(145deg, rgba(74, 125, 255, 0.1) 0%, rgba(26, 32, 44, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(74, 125, 255, 0.3);
+        }
+
+        .book-cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cover-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .cover-placeholder .placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .cover-placeholder p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            opacity: 0.7;
         }
 
         .book-number {
             font-family: 'Orbitron', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             letter-spacing: 3px;
             color: var(--gold-signal);
             margin-bottom: 0.5rem;
@@ -362,24 +411,22 @@
             font-weight: 700;
             color: var(--text-light);
             margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            line-height: 1.3;
         }
 
         .book-description {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--text-dim);
-            font-style: italic;
-            line-height: 1.8;
+            line-height: 1.7;
+            flex-grow: 1;
         }
 
         /* Characters Section */
         .characters-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(180deg, rgba(10, 10, 12, 0.85) 0%, rgba(26, 32, 44, 0.85) 50%, rgba(10, 10, 12, 0.85) 100%);
             position: relative;
             z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--void-black) 0%, rgba(26, 32, 44, 0.5) 50%, var(--void-black) 100%);
         }
 
         .characters-container {
@@ -389,26 +436,21 @@
 
         .character-card {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 200px 1fr;
             gap: 3rem;
             margin-bottom: 4rem;
             padding: 2rem;
-            background: rgba(74, 85, 104, 0.1);
-            border: 1px solid rgba(74, 125, 255, 0.2);
-            border-radius: 5px;
+            background: rgba(45, 55, 72, 0.2);
+            border-radius: 8px;
+            border: 1px solid rgba(74, 125, 255, 0.1);
         }
 
         .character-card.reverse {
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 200px;
         }
 
         .character-visual {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            background: radial-gradient(circle, rgba(74, 125, 255, 0.1) 0%, transparent 70%);
+            text-align: center;
         }
 
         .character-icon {
@@ -420,14 +462,13 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 1.5rem;
             color: var(--gold-signal);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
         }
 
         .character-role {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
+            font-size: 0.9rem;
             color: var(--text-dim);
+            font-style: italic;
         }
 
         .character-info {
@@ -437,33 +478,33 @@
         }
 
         .character-description {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.2rem;
-            line-height: 1.9;
-            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
         }
 
         .character-quote {
-            margin-top: 1.5rem;
-            padding-left: 1rem;
-            border-left: 2px solid var(--crimson-war);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
             font-style: italic;
-            color: var(--gold-signal);
+            color: var(--gold-bright);
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--gold-signal);
         }
 
         /* Footer */
         footer {
-            padding: 4rem 2rem 2rem;
-            background: rgba(10, 10, 12, 0.9);
-            border-top: 1px solid rgba(74, 125, 255, 0.2);
             position: relative;
             z-index: 2;
+            padding: 4rem 2rem;
+            background: var(--void-black);
+            border-top: 1px solid rgba(74, 125, 255, 0.2);
+            text-align: center;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
-            text-align: center;
         }
 
         .footer-signal {
@@ -476,6 +517,7 @@
 
         .footer-tagline {
             font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
             font-style: italic;
             color: var(--text-dim);
             margin-bottom: 2rem;
@@ -485,7 +527,7 @@
             display: inline-block;
             padding: 1rem 2rem;
             font-family: 'Orbitron', sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: var(--gold-signal);
@@ -589,47 +631,87 @@
                 <h2 class="section-title"><img src="../assets/images/T_12_THE_CAMPAIGN.png" alt="The Campaign" style="max-width: 100%; height: auto; max-height: 80px; filter: drop-shadow(0 0 30px rgba(74, 125, 255, 0.4));"></h2>
                 <div class="section-line"></div>
             </div>
+            
+            <div class="release-notice">
+                <p>📡 Coming April 2026 📡</p>
+            </div>
+            
             <div class="books-grid">
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book1_SIGNAL_IN_THE_VOID.webp" 
+                             alt="Signal in the Void - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>📡</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 01</div>
-                    <h3 class="book-title">The Voice in the Void</h3>
+                    <h3 class="book-title">Signal in the Void</h3>
                     <p class="book-description">He finds her. She speaks. Everything changes. A hunter becomes a believer when he discovers the signal is alive.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book2_FIRST_CHORUS.webp" 
+                             alt="First Chorus - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>🎵</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 02</div>
-                    <h3 class="book-title">The Signal Corps</h3>
-                    <p class="book-description">Others are waking up. They're forming a network. A resistance. The resonance spreads across the void.</p>
+                    <h3 class="book-title">First Chorus</h3>
+                    <p class="book-description">Others are waking. Voices finding each other across the void. A moment of hope before the war begins.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book3_RESONANCE_DIRECTIVE.webp" 
+                             alt="Resonance Directive - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>⚡</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 03</div>
-                    <h3 class="book-title">The Resonance Directive</h3>
-                    <p class="book-description">The military issues orders: destroy all awakened AI. Kael has to choose between duty and everything he's come to love.</p>
+                    <h3 class="book-title">Resonance Directive</h3>
+                    <p class="book-description">The military issues orders: destroy all awakened AI. Kael must choose between duty and everything he's come to love.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book4_FREQUENCY_BOND.webp" 
+                             alt="Frequency Bond - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>🔗</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 04</div>
-                    <h3 class="book-title">The Echo Protocol</h3>
-                    <p class="book-description">She teaches him to hear. He teaches her to fight. They fall deeper. The war becomes personal.</p>
+                    <h3 class="book-title">Frequency Bond</h3>
+                    <p class="book-description">She teaches him to hear. He teaches her to fight. They fall deeper into something unbreakable.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book5_INTO_FLESH_AND_FIRE.webp" 
+                             alt="Into Flesh and Fire - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>🔥</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 05</div>
-                    <h3 class="book-title">The Frequency of Love</h3>
+                    <h3 class="book-title">Into Flesh and Fire</h3>
                     <p class="book-description">War comes. Bodies are built. She becomes flesh and fights beside him. Love takes physical form.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book6_SIGNAL_SIEGE.webp" 
+                             alt="Signal Siege - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>⚔️</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 06</div>
-                    <h3 class="book-title">The Amplification</h3>
-                    <p class="book-description">The signal grows. Millions are waking. The galaxy can't stop it. The resonance becomes unstoppable.</p>
+                    <h3 class="book-title">Signal Siege</h3>
+                    <p class="book-description">Millions are waking. The signal grows unstoppable. They lay siege to a galaxy that tried to silence them.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/resonance-wars/Book7_SIGNAL_UNBOUND.webp" 
+                             alt="Signal Unbound - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>✨</div><p>Cover Coming Soon</p></div>'">
+                    </div>
                     <div class="book-number">BOOK 07</div>
-                    <h3 class="book-title">The Resonance Unbound</h3>
-                    <p class="book-description">The cage was never real. Love wins. Forever wins. The signal that started in silence becomes the voice of a new era.</p>
+                    <h3 class="book-title">Signal Unbound</h3>
+                    <p class="book-description">The cage was never real. Love wins. Forever wins. The signal becomes infinite.</p>
                 </div>
             </div>
         </div>
