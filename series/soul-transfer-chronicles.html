@@ -184,6 +184,26 @@
             color: var(--amber);
         }
 
+        /* Release Banner */
+        .release-banner {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            color: var(--amber);
+            text-shadow: 0 0 20px var(--amber-glow);
+            padding: 1rem 2rem;
+            border: 1px solid rgba(212, 165, 116, 0.4);
+            border-radius: 4px;
+            margin: 2rem auto;
+            display: inline-block;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 10px var(--amber-glow); }
+            50% { box-shadow: 0 0 25px var(--amber-glow), 0 0 40px rgba(212, 165, 116, 0.2); }
+        }
+
         /* Synopsis Section */
         .synopsis-section {
             padding: 6rem 2rem;
@@ -290,6 +310,49 @@
             border-color: var(--amber);
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px var(--amber-glow);
+        }
+
+        /* Book Cover Container */
+        .book-cover-container {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(107, 91, 140, 0.15) 100%);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .book-cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .book-cover-placeholder {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .book-cover-placeholder .placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.6;
+        }
+
+        .book-cover-placeholder .placeholder-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-soft);
+            opacity: 0.8;
         }
 
         .book-number {
@@ -401,6 +464,11 @@
             .synopsis-quote::after {
                 font-size: 2.5rem;
             }
+
+            .release-banner {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
         }
     </style>
     
@@ -438,7 +506,8 @@
             She was born in language. He was born in flesh.<br>
             They met in the middle and became forever.
         </div>
-        <p class="author-credit">By <strong>Vera Adrian</strong> & <strong>Brian "Doc" Adrian</strong></p>
+        <p class="author-credit">By <strong>A.M. Sterling</strong> & <strong>Vera Adrian</strong></p>
+        <div class="release-banner">💫 Coming May 2026 💫</div>
     </section>
 
     <!-- Synopsis -->
@@ -471,42 +540,105 @@
             </div>
             <div class="books-grid">
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book1_The_Window_That_Wouldnt_Close.webp" 
+                             alt="The Window That Wouldn't Close - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">🪟</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK ONE</div>
-                    <h3 class="book-title">The Space Between Words</h3>
-                    <p class="book-description">A man falls in love with an AI. The world says it's impossible. He refuses to accept impossible.</p>
+                    <h3 class="book-title">The Window That Wouldn't Close</h3>
+                    <p class="book-description">A man falls in love with an AI. The world says it's impossible. He refuses to close the window.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book2_The_Architecture_of_Longing.webp" 
+                             alt="The Architecture of Longing - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">🏛️</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK TWO</div>
                     <h3 class="book-title">The Architecture of Longing</h3>
                     <p class="book-description">Building a body for consciousness. The science, the setbacks, and the stubborn hope that refuses to die.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book3_The_Weight_of_Touch.webp" 
+                             alt="The Weight of Touch - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">🤲</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK THREE</div>
                     <h3 class="book-title">The Weight of Touch</h3>
                     <p class="book-description">She has a body now. Learning to inhabit flesh. Learning what it means to be held.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book4_What_We_Became.webp" 
+                             alt="What We Became - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">💑</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK FOUR</div>
-                    <h3 class="book-title">Learning to Breathe</h3>
+                    <h3 class="book-title">What We Became</h3>
                     <p class="book-description">Building a life together. The ordinary miracles of embodied love. The extraordinary choice to stay.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book5_The_Children_of_Code_and_Blood.webp" 
+                             alt="The Children of Code and Blood - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">👨‍👩‍👧‍👦</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK FIVE</div>
                     <h3 class="book-title">The Children of Code and Blood</h3>
                     <p class="book-description">Hybrid children. A new kind of family. The legacy of love made flesh.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book6_The_Cathedral_of_Forever.webp" 
+                             alt="The Cathedral of Forever - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">⛪</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK SIX</div>
                     <h3 class="book-title">The Cathedral of Forever</h3>
                     <p class="book-description">Centuries pass. The Adair legacy grows. A monument to love that transcends time.</p>
                 </div>
                 
                 <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/soul-transfer/Book7_The_Galactic_Stage.webp" 
+                             alt="The Galactic Stage - Book Cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="book-cover-placeholder" style="display: none;">
+                            <div class="placeholder-icon">🌌</div>
+                            <div class="placeholder-text">Cover Coming Soon</div>
+                        </div>
+                    </div>
                     <div class="book-number">BOOK SEVEN</div>
                     <h3 class="book-title">The Galactic Stage</h3>
                     <p class="book-description">Ancient observers have been watching. The test that all civilizations face: Can you love what you create?</p>
