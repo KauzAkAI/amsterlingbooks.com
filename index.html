@@ -315,10 +315,10 @@
         <div class="newsletter-container glass-panel">
             <h3 class="newsletter-title">Join the Fleet</h3>
             <p class="newsletter-subtitle">Get updates on new releases, exclusive content, and behind-the-scenes looks at the worlds of A.M. Sterling.</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email">
-                <button class="cta-btn cta-primary newsletter-btn">Subscribe</button>
-            </div>
+            <form class="newsletter-form" action="https://formspree.io/f/mbdalogp" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email" required>
+                <button type="submit" class="cta-btn cta-primary newsletter-btn">Subscribe</button>
+            </form>
         </div>
     </section>
 
