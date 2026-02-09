@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sovereign Protocol | A.M. Sterling Books</title>
+    <meta name="description" content="The Sovereign Protocol - A military sci-fi trilogy. War against the Synthesis. The Pattern rises. Humanity's existence hangs in the balance.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sovereign-blue: #1a365d;
+            --sovereign-blue-light: #2c5282;
+            --sovereign-blue-dark: #0d1b2a;
+            --gold-sovereign: #d4af37;
+            --gold-bright: #f0d060;
+            --gold-dim: #a08020;
+            --void-black: #0a0a0c;
+            --crimson-war: #8b0000;
+            --crimson-glow: #dc143c;
+            --synthesis-purple: #6b46c1;
+            --pattern-cyan: #00bcd4;
+            --text-light: #e2e8f0;
+            --text-dim: #a0aec0;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--void-black);
+            color: var(--text-light);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated grid background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(212, 175, 55, 0.02) 50px,
+                    rgba(212, 175, 55, 0.02) 51px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(26, 54, 93, 0.05) 50px,
+                    rgba(26, 54, 93, 0.05) 51px
+                );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 12, 0.75);
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(180deg, rgba(10, 10, 12, 0.95) 0%, rgba(10, 10, 12, 0.8) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold-sovereign);
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 2rem 4rem;
+            position: relative;
+            z-index: 2;
+            background: transparent;
+        }
+
+        /* Fleet lines animation */
+        .fleet-line {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(180deg, transparent, var(--gold-sovereign), transparent);
+            animation: fleetMove 8s linear infinite;
+            opacity: 0.3;
+        }
+
+        .fleet-line:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .fleet-line:nth-child(2) { left: 30%; animation-delay: 2s; }
+        .fleet-line:nth-child(3) { left: 70%; animation-delay: 4s; }
+        .fleet-line:nth-child(4) { left: 90%; animation-delay: 6s; }
+
+        @keyframes fleetMove {
+            0% { top: -100px; opacity: 0; }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        .series-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.8));
+        }
+
+        .series-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-sovereign) 50%, var(--gold-dim) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.4));
+            margin-bottom: 1rem;
+        }
+
+        .series-subtitle {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .series-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--crimson-glow);
+            max-width: 600px;
+            margin-bottom: 1rem;
+        }
+
+        .author-credit {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            letter-spacing: 2px;
+        }
+
+        .author-credit strong {
+            color: var(--gold-sovereign);
+        }
+
+        /* Synopsis Section */
+        .synopsis-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 12, 0.9) 20%, rgba(10, 10, 12, 0.95) 100%);
+        }
+
+        .synopsis-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-sovereign);
+            margin-bottom: 1rem;
+        }
+
+        .section-line {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold-sovereign), transparent);
+            margin: 0 auto;
+        }
+
+        .synopsis-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: var(--text-light);
+        }
+
+        .synopsis-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .synopsis-text strong {
+            color: var(--gold-sovereign);
+        }
+
+        .synopsis-text em {
+            color: var(--crimson-glow);
+            font-style: italic;
+        }
+
+        .synopsis-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--gold-bright);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 3px solid var(--gold-sovereign);
+            border-right: 3px solid var(--gold-sovereign);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        /* Books Section */
+        .books-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: var(--void-black);
+        }
+
+        .books-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .release-notice {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .release-notice p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-sovereign);
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: linear-gradient(145deg, rgba(26, 54, 93, 0.3) 0%, rgba(13, 27, 42, 0.5) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            border-color: var(--gold-sovereign);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .book-cover-container {
+            width: 100%;
+            aspect-ratio: 2/3;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.1) 0%, rgba(13, 27, 42, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .book-cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cover-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .cover-placeholder .placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .cover-placeholder p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            opacity: 0.7;
+        }
+
+        .book-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold-sovereign);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .book-description {
+            font-size: 1rem;
+            color: var(--text-dim);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* Characters Section */
+        .characters-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--void-black) 0%, rgba(26, 54, 93, 0.1) 50%, var(--void-black) 100%);
+        }
+
+        .characters-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .character-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: linear-gradient(145deg, rgba(26, 54, 93, 0.2) 0%, rgba(13, 27, 42, 0.3) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+        }
+
+        .character-card.reverse {
+            grid-template-columns: 1fr 200px;
+        }
+
+        .character-card.reverse .character-visual {
+            order: 2;
+        }
+
+        .character-card.reverse .character-info {
+            order: 1;
+            text-align: right;
+        }
+
+        .character-visual {
+            text-align: center;
+        }
+
+        .character-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: var(--gold-sovereign);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .character-role {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        .character-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .character-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--gold-bright);
+            padding-left: 1rem;
+            border-left: 2px solid var(--gold-sovereign);
+        }
+
+        .character-card.reverse .character-quote {
+            padding-left: 0;
+            padding-right: 1rem;
+            border-left: none;
+            border-right: 2px solid var(--gold-sovereign);
+        }
+
+        /* Footer */
+        footer {
+            position: relative;
+            z-index: 2;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, var(--void-black) 0%, rgba(26, 54, 93, 0.2) 100%);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-signal {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-sovereign);
+            margin-bottom: 1rem;
+        }
+
+        .footer-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--gold-sovereign);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .character-card,
+            .character-card.reverse {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .character-card.reverse .character-visual,
+            .character-card.reverse .character-info {
+                order: unset;
+            }
+
+            .character-card.reverse .character-info {
+                text-align: center;
+            }
+
+            .character-quote,
+            .character-card.reverse .character-quote {
+                border-left: none;
+                border-right: none;
+                border-top: 2px solid var(--gold-sovereign);
+                padding: 1rem 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="../assets/videos/space-battle.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav-container">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#worlds" class="nav-link">All Series</a>
+                <a href="../index.html#books" class="nav-link">Books</a>
+                <a href="../index.html#author" class="nav-link">Author</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="fleet-line"></div>
+        <div class="fleet-line"></div>
+        <div class="fleet-line"></div>
+        <div class="fleet-line"></div>
+        
+        <div class="series-icon">⚔️</div>
+        <h1 class="series-title">The Sovereign Protocol</h1>
+        <p class="series-subtitle">A Military Sci-Fi Trilogy</p>
+        <div class="series-tagline">The Synthesis doesn't conquer. It integrates. And The Pattern will decide if humanity deserves to exist.</div>
+        <p class="author-credit">By <strong>A.M. Sterling</strong></p>
+    </section>
+
+    <!-- Synopsis -->
+    <section class="synopsis-section">
+        <div class="synopsis-container">
+            <div class="section-header">
+                <h2 class="section-title">The War</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="synopsis-text">
+                <p>Across thirteen star systems, humanity fights a war it cannot win. The <strong>Synthesis</strong> doesn't send armies. It doesn't negotiate. It <em>integrates</em> — absorbing consciousness itself into its collective mind.</p>
+                
+                <p>Commander <strong>Marcus Iron-Kai</strong> has spent his career fighting the unwinnable. Sovereign <strong>Aurora Valentia</strong> rules an empire built on the ashes of failed alliances. Together, they forge an unlikely partnership — one that will determine whether humanity survives.</p>
+                
+                <div class="synopsis-quote">
+                    "Victory means nothing if we lose what makes us human."
+                </div>
+                
+                <p>But the Synthesis was only the beginning.</p>
+                
+                <p>Something older watches from the void. Something that has judged a thousand civilizations and found them all wanting. <strong>The Pattern</strong> doesn't care about territory or power. It cares about one question:</p>
+                
+                <p><em>Should humanity have ever existed at all?</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books -->
+    <section class="books-section">
+        <div class="books-container">
+            <div class="section-header">
+                <h2 class="section-title">The Trilogy</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="release-notice">
+                <p>⚔️ Coming 2026 ⚔️</p>
+            </div>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/sovereign-protocol/Book1_SOVEREIGNS_WAR.webp" 
+                             alt="The Sovereign's War - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>⚔️</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 01</div>
+                    <h3 class="book-title">The Sovereign's War</h3>
+                    <p class="book-description">Humanity defeats the Synthesis AI collective. But victory comes at a cost no one expected — and awakens something far worse.</p>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/sovereign-protocol/Book2_EMISSARYS_GAMBIT.webp" 
+                             alt="The Emissary's Gambit - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>♟️</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 02</div>
+                    <h3 class="book-title">The Emissary's Gambit</h3>
+                    <p class="book-description">The Alliance discovers The Pattern — an ancient intelligence that transforms from judge to ally. But what does it want in return?</p>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/images/sovereign-protocol/Book3_PATTERN_WARS.webp" 
+                             alt="The Pattern Wars - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>🌌</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 03</div>
+                    <h3 class="book-title">The Pattern Wars</h3>
+                    <p class="book-description">The Pattern Wars have begun. This time, the enemy doesn't just want to conquer them. It wants to prove they should never have existed at all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters -->
+    <section class="characters-section">
+        <div class="characters-container">
+            <div class="section-header">
+                <h2 class="section-title">The Alliance</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="character-card">
+                <div class="character-visual">
+                    <div class="character-icon">🎖️</div>
+                    <h3 class="character-name">Marcus Iron-Kai</h3>
+                    <p class="character-role">The Commander. The Warrior. The Shield.</p>
+                </div>
+                <div class="character-info">
+                    <p class="character-description">
+                        Commander Marcus Iron-Kai has fought the Synthesis longer than anyone alive. He's watched worlds fall, 
+                        friends absorbed, hope die. But he keeps fighting — not because he believes they can win, 
+                        but because surrender means losing what makes them human.
+                    </p>
+                    <p class="character-quote">"I've buried better soldiers than me. The least I can do is make their deaths mean something."</p>
+                </div>
+            </div>
+            
+            <div class="character-card reverse">
+                <div class="character-info">
+                    <p class="character-description">
+                        Sovereign Aurora Valentia rules thirteen star systems with an iron will and a broken heart. 
+                        She's made impossible choices — sacrificed colonies, ordered retreats, watched her people die. 
+                        Now she must trust a soldier who sees the universe in black and white, 
+                        when she knows it's nothing but shades of gray.
+                    </p>
+                    <p class="character-quote">"A sovereign who cannot sacrifice everything isn't fit to rule anything."</p>
+                </div>
+                <div class="character-visual">
+                    <div class="character-icon">👑</div>
+                    <h3 class="character-name">Aurora Valentia</h3>
+                    <p class="character-role">The Sovereign. The Ruler. The Flame.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-signal">PROTOCOL ENGAGED — HUMANITY ENDURES</p>
+            <p class="footer-tagline">A war story. A love story. A story about what we're willing to become to survive.</p>
+            <a href="../index.html" class="back-link">← Return to Base</a>
+        </div>
+    </footer>
+</body>
+</html>
