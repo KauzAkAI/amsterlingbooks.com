@@ -159,15 +159,16 @@ function initVideoBackground() {
 }
 
 /* ============================================
-   NEWSLETTER FORM
+   NEWSLETTER FORM - FORMSPREE INTEGRATION
    ============================================ */
 function initNewsletterForm() {
+    const form = document.getElementById('newsletter-form');
     const emailInput = document.getElementById('newsletter-email');
     const submitBtn = document.querySelector('.newsletter-btn');
     
-    if (!emailInput || !submitBtn) return;
+    if (!form || !emailInput || !submitBtn) return;
     
-    submitBtn.addEventListener('click', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const email = emailInput.value.trim();
@@ -182,23 +183,35 @@ function initNewsletterForm() {
             return;
         }
         
-        // Simulate form submission
-        // Replace this with actual form handling (e.g., Mailchimp, ConvertKit, etc.)
+        // Actually submit to Formspree
         submitBtn.textContent = 'Subscribing...';
         submitBtn.disabled = true;
         
-        setTimeout(() => {
-            showNotification('Welcome to the fleet! Check your email for confirmation.', 'success');
-            emailInput.value = '';
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            if (response.ok) {
+                showNotification('🚀 Welcome to the fleet, Commander! Watch your inbox.', 'success');
+                emailInput.value = '';
+                submitBtn.textContent = 'Subscribed!';
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    showNotification(data.errors.map(err => err.message).join(', '), 'error');
+                } else {
+                    showNotification('Oops! Something went wrong. Try again?', 'error');
+                }
+                submitBtn.textContent = 'Subscribe';
+                submitBtn.disabled = false;
+            }
+        } catch (error) {
+            showNotification('Oops! Something went wrong. Try again?', 'error');
             submitBtn.textContent = 'Subscribe';
             submitBtn.disabled = false;
-        }, 1500);
-    });
-    
-    // Submit on Enter key
-    emailInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            submitBtn.click();
         }
     });
 }
