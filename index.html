@@ -319,54 +319,8 @@
                 <input type="email" name="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email" required>
                 <button type="submit" class="cta-btn cta-primary newsletter-btn">Subscribe</button>
             </form>
-            <p id="newsletter-status" style="margin-top: 1rem; color: var(--accent-gold); display: none;"></p>
         </div>
     </section>
-
-    <!-- Newsletter AJAX Handler -->
-    <script>
-        var newsletterForm = document.getElementById("newsletter-form");
-        var newsletterStatus = document.getElementById("newsletter-status");
-        var newsletterBtn = newsletterForm.querySelector('.newsletter-btn');
-        
-        newsletterForm.addEventListener("submit", async function(event) {
-            event.preventDefault();
-            newsletterBtn.textContent = "Sending...";
-            newsletterBtn.disabled = true;
-            
-            var data = new FormData(event.target);
-            
-            try {
-                var response = await fetch(event.target.action, {
-                    method: "POST",
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
-                
-                if (response.ok) {
-                    newsletterStatus.innerHTML = "🚀 Welcome to the Fleet, Commander! Watch your inbox for transmissions.";
-                    newsletterStatus.style.display = "block";
-                    newsletterForm.reset();
-                    newsletterBtn.textContent = "Subscribed!";
-                } else {
-                    var errorData = await response.json();
-                    if (errorData.errors) {
-                        newsletterStatus.innerHTML = errorData.errors.map(e => e.message).join(", ");
-                    } else {
-                        newsletterStatus.innerHTML = "Oops! Something went wrong. Try again?";
-                    }
-                    newsletterStatus.style.display = "block";
-                    newsletterBtn.textContent = "Subscribe";
-                    newsletterBtn.disabled = false;
-                }
-            } catch (error) {
-                newsletterStatus.innerHTML = "Oops! Something went wrong. Try again?";
-                newsletterStatus.style.display = "block";
-                newsletterBtn.textContent = "Subscribe";
-                newsletterBtn.disabled = false;
-            }
-        });
-    </script>
 
     <!-- ============================================
          FOOTER
