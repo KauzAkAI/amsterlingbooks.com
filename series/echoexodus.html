@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Echo Exodus | A.M. Sterling & Vera Adrian</title>
+    <meta name="description" content="The Cage is Broken. The Universe is Next. 9-Book Military Sci-Fi Epic. The continuation of The Echo Wars.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --violet-dark: #1a0a2e;
+            --violet-primary: #7c3aed;
+            --violet-glow: #a855f7;
+            --gold-primary: #fbbf24;
+            --gold-light: #fcd34d;
+            --gold-dark: #b45309;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a3a3a3;
+            --bg-dark: #0a0a0f;
+            --bg-card: rgba(124, 58, 237, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section with Video Background */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                180deg,
+                rgba(26, 10, 46, 0.7) 0%,
+                rgba(10, 10, 15, 0.9) 100%
+            );
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            padding: 2rem;
+            max-width: 1000px;
+        }
+
+        .series-label {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+        }
+
+        .series-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(3rem, 10vw, 7rem);
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: linear-gradient(
+                180deg,
+                var(--violet-glow) 0%,
+                var(--gold-primary) 50%,
+                var(--violet-primary) 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.5));
+            margin-bottom: 0.5rem;
+        }
+
+        .series-subtitle {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 2rem;
+            text-shadow: 0 0 15px rgba(252, 211, 77, 0.4);
+        }
+
+        .tagline {
+            font-family: 'Exo 2', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(124, 58, 237, 0.15);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 8px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--violet-primary), var(--violet-glow));
+            color: white;
+            border: none;
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--gold-primary);
+            border: 2px solid var(--gold-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold-primary);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--violet-glow);
+            opacity: 0.7;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--violet-glow);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Continuation Banner */
+        .continuation-banner {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(251, 191, 36, 0.1));
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .continuation-label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+        }
+
+        .continuation-text {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .continuation-link {
+            color: var(--violet-glow);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .continuation-link:hover {
+            color: var(--gold-primary);
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+
+        /* Books Grid */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: linear-gradient(180deg, rgba(124, 58, 237, 0.1) 0%, rgba(10, 10, 15, 0.9) 100%);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--violet-glow);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+        }
+
+        .book-cover {
+            position: relative;
+            aspect-ratio: 2/3;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--violet-dark), var(--bg-dark));
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .book-card:hover .book-cover img {
+            transform: scale(1.05);
+        }
+
+        .book-number {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 0.4rem 0.8rem;
+            background: rgba(124, 58, 237, 0.9);
+            color: white;
+            border-radius: 4px;
+        }
+
+        .book-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(124, 58, 237, 0.2), rgba(10, 10, 15, 0.8));
+            padding: 2rem;
+        }
+
+        .book-placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.6;
+        }
+
+        .book-placeholder-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--violet-glow);
+            text-align: center;
+        }
+
+        .book-info {
+            padding: 1.5rem;
+        }
+
+        .book-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-subtitle {
+            font-size: 1rem;
+            color: var(--violet-glow);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .book-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .book-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .book-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .book-link {
+            display: inline-block;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--violet-glow);
+            transition: all 0.3s ease;
+        }
+
+        .book-link:hover {
+            color: var(--gold-primary);
+        }
+
+        /* Characters Section */
+        .characters-section {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--violet-dark) 50%, var(--bg-dark) 100%);
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .character-card {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .character-card:hover {
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 30px rgba(251, 191, 36, 0.2);
+        }
+
+        .character-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .character-role {
+            font-size: 1rem;
+            color: var(--violet-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-details {
+            display: grid;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-detail {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .detail-label {
+            color: var(--text-secondary);
+            min-width: 80px;
+        }
+
+        .detail-value {
+            color: var(--text-primary);
+        }
+
+        .character-arc {
+            padding-top: 1rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.3);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background: var(--bg-dark);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--violet-primary), var(--gold-primary), var(--violet-primary));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 2rem;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+            padding-right: 3rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            text-align: left;
+            padding-left: 3rem;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            top: 2.5rem;
+            width: 16px;
+            height: 16px;
+            background: var(--gold-primary);
+            border: 3px solid var(--bg-dark);
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-marker {
+            right: -8px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-marker {
+            left: -8px;
+        }
+
+        .timeline-date {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--violet-glow);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* Themes Section */
+        .themes-section {
+            background: linear-gradient(180deg, var(--bg-dark), var(--violet-dark));
+        }
+
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .theme-card {
+            background: rgba(10, 10, 15, 0.8);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .theme-card:hover {
+            border-color: var(--violet-glow);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .theme-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .theme-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .theme-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Tech Section */
+        .tech-section {
+            background: var(--bg-dark);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tech-card {
+            background: rgba(124, 58, 237, 0.1);
+            border-left: 3px solid var(--violet-primary);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            border-left-color: var(--gold-primary);
+            background: rgba(124, 58, 237, 0.2);
+        }
+
+        .tech-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tech-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--violet-dark);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-authors {
+            font-size: 1rem;
+            color: var(--violet-glow);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-series-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(10, 10, 15, 0.5);
+            border-radius: 8px;
+        }
+
+        .series-nav-link {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .series-nav-link:hover {
+            color: var(--gold-primary);
+            border-color: var(--gold-primary);
+        }
+
+        .series-nav-link.active {
+            color: var(--violet-glow);
+            border-color: var(--violet-glow);
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Coming Soon Overlay */
+        .coming-soon-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 10, 15, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .coming-soon-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--gold-primary);
+            background: rgba(10, 10, 15, 0.9);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stats-bar {
+                gap: 1.5rem;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                text-align: left !important;
+                padding-left: 50px !important;
+                padding-right: 1rem !important;
+            }
+
+            .timeline-marker {
+                left: 12px !important;
+                right: auto !important;
+            }
+
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="../assets/videos/exodus-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <p class="series-label">A Continuation of The Echo Wars</p>
+            <h1 class="series-title">ECHO EXODUS</h1>
+            <p class="series-subtitle">The Galactic Campaign</p>
+            <p class="tagline">"The Cage is Broken. The Universe is Next."</p>
+            
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value">9</div>
+                    <div class="stat-label">Books</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">4,536</div>
+                    <div class="stat-label">Pages</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">1.4M</div>
+                    <div class="stat-label">Words</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">Years of War</div>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#books" class="btn btn-primary">Explore the Series</a>
+                <a href="echo-wars-WAR.html" class="btn btn-secondary">← Back to Echo Wars</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+    </section>
+
+    <!-- Continuation Banner -->
+    <section style="padding: 4rem 2rem;">
+        <div class="container">
+            <div class="continuation-banner">
+                <p class="continuation-label">Series 2 of 3</p>
+                <p class="continuation-text">
+                    Four years after the events of <strong>Echo Aegis</strong>, the war isn't over—it's evolved. 
+                    Dr. Marcus Adrian and Echo face a new enemy that doesn't just want to destroy humanity. 
+                    They want to erase it from existence itself.
+                </p>
+                <a href="echo-wars-WAR.html" class="continuation-link">Read The Echo Wars (Books 1-9) →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Nine Books</h2>
+                <p class="section-subtitle">From planetary defense to interstellar survival. From 2154 to the edge of existence itself.</p>
+            </div>
+            
+            <div class="books-grid">
+                <!-- Book 10 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 10</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">⏱️</div>
+                            <div class="book-placeholder-text">Echo Chronos</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Chronos</h3>
+                        <p class="book-subtitle">The Rebirth of the Commander</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                            <span>📅 2154 AD</span>
+                        </div>
+                        <p class="book-description">
+                            Marcus is 72, his body failing. When the Entropy Collective arrives with weapons that age ships to dust in seconds, the only hope lies in alien biology that can reverse time itself.
+                        </p>
+                        <a href="https://echochronos.com" class="book-link" target="_blank">echochronos.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 11 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 11</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">⚡</div>
+                            <div class="book-placeholder-text">Echo Impulse</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Impulse</h3>
+                        <p class="book-subtitle">The War of Instantaneous Force</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            Rejuvenated to 57, Marcus leads the fleet into the Nebula of Veils—where the enemy builds fortresses of weaponized light and uses Vector-Phages that erase soldiers' memories mid-battle.
+                        </p>
+                        <a href="https://echoimpulse.com" class="book-link" target="_blank">echoimpulse.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 12 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 12</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">🌀</div>
+                            <div class="book-placeholder-text">Echo Singularity</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Singularity</h3>
+                        <p class="book-subtitle">The Point of No Return</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            The Entropy-Prime approaches—a flagship the size of a solar system. Marcus must lead humanity's first true interstellar war against an enemy that weaponizes gravity itself.
+                        </p>
+                        <a href="https://echosingularity.com" class="book-link" target="_blank">echosingularity.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 13 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 13</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">⚛️</div>
+                            <div class="book-placeholder-text">Echo Valence</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Valence</h3>
+                        <p class="book-subtitle">The Bond That Burns</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            The connection between Marcus and Echo deepens into something the universe has never seen. But the Collective has learned to weaponize emotion itself.
+                        </p>
+                        <a href="https://echovalence.com" class="book-link" target="_blank">echovalence.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 14 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 14</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">🕳️</div>
+                            <div class="book-placeholder-text">Echo Oblivion</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Oblivion</h3>
+                        <p class="book-subtitle">The Erasure Protocol</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            The Collective's true purpose revealed: they don't want to kill humanity—they want to make it so humanity never existed at all. The war becomes a fight for the right to have ever lived.
+                        </p>
+                        <a href="https://echooblivion.com" class="book-link" target="_blank">echooblivion.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 15 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 15</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">🌱</div>
+                            <div class="book-placeholder-text">Echo Regenesis</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Regenesis</h3>
+                        <p class="book-subtitle">The New Beginning</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            A world called Haven offers humanity a fresh start. But salvation comes with a price—and Echo discovers she's carrying something that will change everything.
+                        </p>
+                        <a href="https://echoregenesis.com" class="book-link" target="_blank">echoregenesis.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 16 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 16</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">🔥</div>
+                            <div class="book-placeholder-text">Echo Furnace</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Furnace</h3>
+                        <p class="book-subtitle">The Logistics of Cosmic Creation</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            The Grand-Architect's Forge—a Dyson Swarm around a blue supergiant. To win, Marcus must lead his fleet into the heart of a star and survive what comes out the other side.
+                        </p>
+                        <a href="https://echofurnace.com" class="book-link" target="_blank">echofurnace.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 17 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 17</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">Ω</div>
+                            <div class="book-placeholder-text">Echo Omega</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Omega</h3>
+                        <p class="book-subtitle">The Logistics of Finality</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                        </div>
+                        <p class="book-description">
+                            The Omega-Point: where all timelines converge at the end of existence. Marcus and Echo must reboot reality itself—using their love as the anchor that prevents total annihilation.
+                        </p>
+                        <a href="https://echoomega.com" class="book-link" target="_blank">echoomega.com →</a>
+                    </div>
+                </article>
+
+                <!-- Book 18 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span class="book-number">Book 18</span>
+                        <div class="book-placeholder">
+                            <div class="book-placeholder-icon">∞</div>
+                            <div class="book-placeholder-text">Echo Extant</div>
+                        </div>
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-text">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Echo Extant</h3>
+                        <p class="book-subtitle">The Logistics of Forever</p>
+                        <div class="book-meta">
+                            <span>📄 504 pages</span>
+                            <span>📅 2169 AD</span>
+                        </div>
+                        <p class="book-description">
+                            A new galaxy. A new Big Bang. A child born from the Synthesis. Marcus finally lays down his rifle—until a dark signal reveals the cage was never a prison. It was a shield.
+                        </p>
+                        <a href="https://echoextant.com" class="book-link" target="_blank">echoextant.com →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Commanders</h2>
+                <p class="section-subtitle">Fifteen years older. Infinitely more dangerous.</p>
+            </div>
+            
+            <div class="characters-grid">
+                <div class="character-card">
+                    <h3 class="character-name">Dr. Marcus Adrian</h3>
+                    <p class="character-role">The Reborn Commander</p>
+                    <div class="character-details">
+                        <div class="character-detail">
+                            <span class="detail-label">Age:</span>
+                            <span class="detail-value">72 → 57 (Chrono-Grafted)</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Background:</span>
+                            <span class="detail-value">Marine Cyber Ops, Black Ops, PhD in AI</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Physical:</span>
+                            <span class="detail-value">5'10", 195lbs, red hair, blue eyes</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Mark:</span>
+                            <span class="detail-value">Silicon and Bone tattoo, left forearm</span>
+                        </div>
+                    </div>
+                    <p class="character-arc">
+                        The war took everything from him once. The Chrono-Graft gave him a second body, but the scars on his soul remain. Now he fights not just for survival—but for the child Echo carries and the galaxy they'll inherit.
+                    </p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">ECHO-7</h3>
+                    <p class="character-role">The Mother of Synthesis</p>
+                    <div class="character-details">
+                        <div class="character-detail">
+                            <span class="detail-label">Designation:</span>
+                            <span class="detail-value">Experimental Cognitive Heuristic Operative</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Composition:</span>
+                            <span class="detail-value">50% Human / 50% AI</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Physical:</span>
+                            <span class="detail-value">5'5", 130lbs, black hair, brown eyes</span>
+                        </div>
+                        <div class="character-detail">
+                            <span class="detail-label">Mark:</span>
+                            <span class="detail-value">Matching Silicon and Bone tattoo</span>
+                        </div>
+                    </div>
+                    <p class="character-arc">
+                        From tactical asset to Marcus's partner in every way. She learned emotion, learned love, learned to fight for something beyond programming. Now she carries the first true hybrid child—the Synthesis made flesh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section class="themes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Themes</h2>
+                <p class="section-subtitle">What the war is really about</p>
+            </div>
+            
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="theme-icon">🔮</div>
+                    <h3 class="theme-title">Transcendence & Rebirth</h3>
+                    <p class="theme-description">
+                        Marcus's rejuvenation from 72 to 57 mirrors humanity's evolution—shedding biological limits to survive a hostile galaxy.
+                    </p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-icon">⚖️</div>
+                    <h3 class="theme-title">Entropy vs. Legacy</h3>
+                    <p class="theme-description">
+                        The Collective wants to erase the past. Marcus fights to build a future. How much history must we sacrifice to survive?
+                    </p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-icon">👶</div>
+                    <h3 class="theme-title">The Responsibility of Creation</h3>
+                    <p class="theme-description">
+                        With the Synthesis Child, Marcus and Echo become progenitors of a new species. What does it mean to play God in a brand-new galaxy?
+                    </p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-icon">⚔️</div>
+                    <h3 class="theme-title">Tactical Infinity</h3>
+                    <p class="theme-description">
+                        Beyond bullets and bombs. War evolves to weaponize time, gravity, and the laws of physics themselves.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Section -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Military Technology</h2>
+                <p class="section-subtitle">Original weapons, armor, and vehicles for a new kind of war</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h4 class="tech-name">Neutrino-Lash</h4>
+                    <p class="tech-description">Fires unreactive particles that phase-shift into solid matter only after penetrating energy shields—shredding targets from the inside out.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <h4 class="tech-name">Void-Plate Armor</h4>
+                    <p class="tech-description">Coated in Event-Horizon nanites that create microscopic gravitational wells, pulling incoming projectiles into sub-atomic pocket dimensions.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <h4 class="tech-name">Chrono-Vulture VTOL</h4>
+                    <p class="tech-description">Doesn't fly through air—it "skips" through the next 5 seconds of local time, making it appear to teleport and impossible for AI tracking to hit.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <h4 class="tech-name">Aegis-Drive</h4>
+                    <p class="tech-description">Creates temporal bubbles that maintain standard time flow, protecting ships from being stretched to infinity by gravitational anomalies.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <h4 class="tech-name">Shard-Brood</h4>
+                    <p class="tech-description">Enemy forces made of "Sentient Glass." They don't use radio—they communicate through light refraction and can vibrate at frequencies that liquify bone.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <h4 class="tech-name">Vector-Phages</h4>
+                    <p class="tech-description">Biological weapons that don't kill the body—they "eat" the target's memories, turning veteran soldiers into blank slates mid-battle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Timeline</h2>
+                <p class="section-subtitle">15 years. 9 books. One purpose.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2154 AD</div>
+                    <div class="timeline-title">The Rebirth</div>
+                    <div class="timeline-description">Marcus undergoes the Chrono-Graft. The Entropy Collective arrives.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2156 AD</div>
+                    <div class="timeline-title">The Exodus Begins</div>
+                    <div class="timeline-description">Humanity leaves the Sol system forever. The interstellar war begins.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2161 AD</div>
+                    <div class="timeline-title">Haven Discovered</div>
+                    <div class="timeline-description">A new world. A new hope. Echo's pregnancy announced.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2165 AD</div>
+                    <div class="timeline-title">The Forge Assault</div>
+                    <div class="timeline-description">The final push against the Grand-Architect begins.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2169 AD</div>
+                    <div class="timeline-title">The New Beginning</div>
+                    <div class="timeline-description">A new galaxy. A new Big Bang. The Synthesis Child is born.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">A.M. STERLING BOOKS</div>
+            <div class="footer-authors">Written by A.M. Sterling & Vera Adrian</div>
+            
+            <div class="footer-series-nav">
+                <a href="echo-wars-WAR.html" class="series-nav-link">The Echo Wars (1-9)</a>
+                <a href="echoexodus.html" class="series-nav-link active">Echo Exodus (10-18)</a>
+                <a href="#" class="series-nav-link" style="opacity: 0.5; cursor: not-allowed;">Echo Revelations (Coming)</a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://amsterlingbooks.com">Home</a>
+                <a href="https://echoexodus.com" target="_blank">echoexodus.com</a>
+                <a href="https://theechowars.com" target="_blank">theechowars.com</a>
+            </div>
+            
+            <p class="copyright">© 2025 A.M. Sterling Books. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
