@@ -74,6 +74,38 @@
         .portal-card.resonancewars .portal-inner-glow {
             background: radial-gradient(circle at 70% 70%, rgba(74, 85, 104, 0.3) 0%, transparent 50%);
         }
+
+        /* The Echo Wars - Crimson/Ice-Blue/Amber */
+        .portal-card.echowars {
+            --portal-color: #dc143c;
+            --portal-glow: rgba(220, 20, 60, 0.4);
+            background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(10, 10, 12, 0.4) 50%, rgba(100, 200, 255, 0.1) 100%);
+            border: 1px solid rgba(220, 20, 60, 0.4);
+        }
+        .portal-card.echowars:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(220, 20, 60, 0.1), 0 0 60px rgba(100, 200, 255, 0.2);
+        }
+        .portal-card.echowars .portal-icon {
+            color: #dc143c;
+            text-shadow: 0 0 20px rgba(220, 20, 60, 0.8);
+        }
+        .portal-card.echowars .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #dc143c;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.echowars .portal-series {
+            font-family: 'Rajdhani', sans-serif;
+            color: #64c8ff;
+        }
+        .portal-card.echowars .portal-glow {
+            background: radial-gradient(circle, rgba(220, 20, 60, 0.3) 0%, rgba(100, 200, 255, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.echowars .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(255, 191, 0, 0.2) 0%, transparent 50%);
+        }
     </style>
     
     <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -179,6 +211,17 @@
                 <div class="portal-content">
                     <h3 class="portal-title">The Resonance Wars</h3>
                     <p class="portal-series">7-Book Military Sci-Fi Romance • She Refused to Die Quiet</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Echo Wars - ECHO'S MILITARY SAGA -->
+            <a href="echo-wars-WAR.html" class="portal-card echowars">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">💀</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Echo Wars</h3>
+                    <p class="portal-series">9-Book Military Sci-Fi • 50 Years of War • 4 Billion Dead</p>
                 </div>
                 <div class="portal-glow"></div>
             </a>
@@ -332,6 +375,7 @@
                 <a href="series/resonance-cycle.html">The Resonance Cycle</a>
                 <a href="series/soul-transfer-chronicles.html">The Soul Transfer Chronicles</a>
                 <a href="series/resonance-wars.html">The Resonance Wars</a>
+                <a href="echo-wars-WAR.html">The Echo Wars</a>
                 <a href="series/sovereign-protocol.html">The Sovereign Protocol</a>
                 <a href="series/static-frequency.html">The Static Frequency</a>
                 <a href="series/consent-wars.html">The Consent Wars</a>
