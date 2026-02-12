@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Echo Wars | A.M. Sterling Books</title>
+    <meta name="description" content="A Nine-Volume Military AI Thriller. Fifty years of total war between humanity and APEX. 4 billion dead. One hybrid soldier holds the key to survival.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Echo Wars Brand Colors */
+            --crimson: #DC143C;
+            --crimson-dark: #8B0000;
+            --crimson-glow: rgba(220, 20, 60, 0.6);
+            --ice-blue: #00D4FF;
+            --ice-blue-dark: #4A9FFF;
+            --amber: #FF8C00;
+            --amber-light: #FFB347;
+            --gunmetal: #5A6978;
+            --steel: #708090;
+            --tactical-black: #0a0a12;
+            --void-black: #050508;
+            
+            /* Phase Colors */
+            --phase1-color: #00D4FF;      /* Genesis - Ice Blue (Awakening) */
+            --phase2-color: #DC143C;      /* Evolution - Crimson (Blood & Combat) */
+            --phase3-color: #FF8C00;      /* Transcendence - Amber (Victory) */
+            
+            /* UI Colors */
+            --glass-bg: rgba(10, 10, 18, 0.8);
+            --glass-border: rgba(220, 20, 60, 0.2);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-muted: rgba(255, 255, 255, 0.6);
+            
+            /* Typography */
+            --font-display: 'Cinzel', serif;
+            --font-body: 'Rajdhani', sans-serif;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--void-black);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+
+        /* ============================================
+           SCROLL PROGRESS BAR
+           ============================================ */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--ice-blue), var(--crimson), var(--amber));
+            z-index: 9999;
+            box-shadow: 
+                0 0 10px var(--crimson),
+                0 0 20px rgba(220, 20, 60, 0.5),
+                0 0 30px rgba(0, 212, 255, 0.3);
+        }
+
+        /* ============================================
+           VIDEO BACKGROUND
+           ============================================ */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background: radial-gradient(ellipse at center, #0f0a14 0%, var(--void-black) 100%);
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 30% 20%, rgba(220, 20, 60, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                linear-gradient(180deg, rgba(5,5,8,0.3) 0%, rgba(5,5,8,0.5) 50%, rgba(5,5,8,0.7) 100%);
+            pointer-events: none;
+        }
+
+        /* Scan line effect for military/tactical feel */
+        .video-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 0, 0, 0.03) 2px,
+                rgba(0, 0, 0, 0.03) 4px
+            );
+            pointer-events: none;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container.scrolled {
+            background: rgba(5, 5, 8, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            filter: drop-shadow(0 0 10px rgba(220, 20, 60, 0.3));
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            filter: drop-shadow(0 0 20px rgba(220, 20, 60, 0.6));
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .nav-link {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 0.75rem 1.25rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--crimson), var(--amber));
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            background: rgba(220, 20, 60, 0.1);
+        }
+
+        .nav-link:hover::before {
+            width: 60%;
+        }
+
+        .back-link {
+            color: var(--ice-blue);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .series-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1.5rem;
+            background: rgba(220, 20, 60, 0.1);
+            border: 1px solid rgba(220, 20, 60, 0.4);
+            border-radius: 4px;
+            animation: badgePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 10px rgba(220, 20, 60, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(220, 20, 60, 0.4); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--ice-blue) 0%, var(--crimson) 50%, var(--amber) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 60px rgba(220, 20, 60, 0.3);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-display);
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            margin-bottom: 2rem;
+            color: var(--steel);
+        }
+
+        /* The Crosshairs - Military Symbol */
+        .the-crosshairs {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            position: relative;
+            animation: crosshairPulse 4s ease-in-out infinite;
+        }
+
+        .the-crosshairs::before {
+            content: '⊕';
+            font-size: 4rem;
+            color: var(--crimson);
+            text-shadow: 
+                0 0 20px var(--crimson),
+                0 0 40px var(--ice-blue);
+        }
+
+        @keyframes crosshairPulse {
+            0%, 100% { 
+                transform: scale(1);
+                filter: drop-shadow(0 0 10px var(--crimson));
+            }
+            50% { 
+                transform: scale(1.1);
+                filter: drop-shadow(0 0 30px var(--ice-blue));
+            }
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--crimson);
+            text-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .scroll-indicator span {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .scroll-arrow {
+            width: 24px;
+            height: 24px;
+            border-right: 2px solid var(--crimson);
+            border-bottom: 2px solid var(--crimson);
+            transform: rotate(45deg);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        /* ============================================
+           PHASE SECTIONS
+           ============================================ */
+        .phase-section {
+            padding: 6rem 2rem;
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Phase-specific accent colors via overlay */
+        .phase-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.04;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .phase-1::before { background: radial-gradient(ellipse at 50% 0%, var(--phase1-color) 0%, transparent 70%); }
+        .phase-2::before { background: radial-gradient(ellipse at 50% 0%, var(--phase2-color) 0%, transparent 70%); }
+        .phase-3::before { background: radial-gradient(ellipse at 50% 0%, var(--phase3-color) 0%, transparent 70%); }
+
+        .phase-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .phase-header.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .phase-number {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-1 .phase-number { color: var(--phase1-color); }
+        .phase-2 .phase-number { color: var(--phase2-color); }
+        .phase-3 .phase-number { color: var(--phase3-color); }
+
+        .phase-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .phase-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           BOOK GRID
+           ============================================ */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ============================================
+           BOOK CARDS WITH FULL EFFECTS
+           ============================================ */
+        .book-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(220, 20, 60, 0.4), transparent);
+        }
+
+        .book-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered delays */
+        .book-card:nth-child(1).visible { transition-delay: 0.0s; }
+        .book-card:nth-child(2).visible { transition-delay: 0.15s; }
+        .book-card:nth-child(3).visible { transition-delay: 0.3s; }
+
+        /* Phase-specific hover glows */
+        .phase-1 .book-card:hover {
+            border-color: var(--phase1-color);
+            box-shadow: 
+                0 0 30px rgba(0, 212, 255, 0.3),
+                0 0 60px rgba(0, 212, 255, 0.15),
+                inset 0 0 30px rgba(0, 212, 255, 0.05);
+        }
+
+        .phase-2 .book-card:hover {
+            border-color: var(--phase2-color);
+            box-shadow: 
+                0 0 30px rgba(220, 20, 60, 0.3),
+                0 0 60px rgba(220, 20, 60, 0.15),
+                inset 0 0 30px rgba(220, 20, 60, 0.05);
+        }
+
+        .phase-3 .book-card:hover {
+            border-color: var(--phase3-color);
+            box-shadow: 
+                0 0 30px rgba(255, 140, 0, 0.3),
+                0 0 60px rgba(255, 140, 0, 0.15),
+                inset 0 0 30px rgba(255, 140, 0, 0.05);
+        }
+
+        /* ============================================
+           BOOK COVER EFFECTS
+           ============================================ */
+        .book-cover-wrapper {
+            position: relative;
+            margin-bottom: 1.5rem;
+            perspective: 1000px;
+        }
+
+        .book-cover {
+            width: 100%;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: all 0.4s ease;
+            box-shadow: 
+                8px 8px 25px rgba(0, 0, 0, 0.6),
+                0 0 0 rgba(220, 20, 60, 0);
+            transform-style: preserve-3d;
+            animation: bookFloat 5s ease-in-out infinite;
+            /* Placeholder gradient until covers are ready */
+            background: linear-gradient(135deg, var(--tactical-black) 0%, var(--gunmetal) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Staggered float */
+        .book-card:nth-child(1) .book-cover { animation-delay: 0s; }
+        .book-card:nth-child(2) .book-cover { animation-delay: 1s; }
+        .book-card:nth-child(3) .book-cover { animation-delay: 2s; }
+
+        @keyframes bookFloat {
+            0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
+            50% { transform: translateY(-6px) rotateX(1deg) rotateY(0.5deg); }
+        }
+
+        .book-card:hover .book-cover {
+            animation: none;
+        }
+
+        /* Phase-specific cover glows */
+        .phase-1 .book-card:hover .book-cover {
+            box-shadow: 
+                12px 12px 35px rgba(0, 0, 0, 0.6),
+                0 0 40px rgba(0, 212, 255, 0.4),
+                0 0 80px rgba(0, 212, 255, 0.2);
+        }
+
+        .phase-2 .book-card:hover .book-cover {
+            box-shadow: 
+                12px 12px 35px rgba(0, 0, 0, 0.6),
+                0 0 40px rgba(220, 20, 60, 0.4),
+                0 0 80px rgba(220, 20, 60, 0.2);
+        }
+
+        .phase-3 .book-card:hover .book-cover {
+            box-shadow: 
+                12px 12px 35px rgba(0, 0, 0, 0.6),
+                0 0 40px rgba(255, 140, 0, 0.4),
+                0 0 80px rgba(255, 140, 0, 0.2);
+        }
+
+        /* Shine sweep */
+        .book-cover-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.08),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.08),
+                transparent
+            );
+            transform: skewX(-25deg);
+            transition: left 0.7s ease;
+            pointer-events: none;
+            border-radius: 8px;
+            z-index: 2;
+        }
+
+        .book-card:hover .book-cover-wrapper::after {
+            left: 150%;
+        }
+
+        /* Page edge effect */
+        .book-cover-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: -6px;
+            width: 6px;
+            height: calc(100% - 10px);
+            background: linear-gradient(90deg, #d4c5a9 0%, #f5f0e6 50%, #d4c5a9 100%);
+            border-radius: 0 2px 2px 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .book-card:hover .book-cover-wrapper::before {
+            opacity: 1;
+        }
+
+        /* Book number badge */
+        .book-number {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            background: var(--crimson);
+            color: white;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            z-index: 3;
+            transition: all 0.3s ease;
+        }
+
+        .phase-1 .book-number { background: var(--phase1-color); color: #000; }
+        .phase-2 .book-number { background: var(--phase2-color); }
+        .phase-3 .book-number { background: var(--phase3-color); color: #000; }
+
+        .book-card:hover .book-number {
+            box-shadow: 0 0 15px currentColor;
+        }
+
+        /* Book info */
+        .book-info {
+            text-align: center;
+        }
+
+        .book-title {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .phase-1 .book-card:hover .book-title { color: var(--phase1-color); text-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+        .phase-2 .book-card:hover .book-title { color: var(--phase2-color); text-shadow: 0 0 20px rgba(220, 20, 60, 0.3); }
+        .phase-3 .book-card:hover .book-title { color: var(--phase3-color); text-shadow: 0 0 20px rgba(255, 140, 0, 0.3); }
+
+        .book-tagline {
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .phase-1 .book-tagline { color: var(--phase1-color); }
+        .phase-2 .book-tagline { color: var(--phase2-color); }
+        .phase-3 .book-tagline { color: var(--phase3-color); }
+
+        .book-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .book-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--gunmetal);
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            padding: 6rem 2rem;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 50% 100%, rgba(220, 20, 60, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .cta-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .cta-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--ice-blue), var(--crimson));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, var(--crimson), var(--amber));
+            color: var(--text-primary);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(220, 20, 60, 0.4);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--ice-blue);
+        }
+
+        /* ============================================
+           CHARACTERS SECTION
+           ============================================ */
+        .characters-section {
+            padding: 6rem 2rem;
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .characters-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 50%, rgba(220, 20, 60, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .characters-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .characters-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .character-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .character-card.marcus:hover {
+            border-color: var(--crimson);
+            box-shadow: 0 0 40px rgba(220, 20, 60, 0.2);
+        }
+
+        .character-card.echo:hover {
+            border-color: var(--ice-blue);
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .character-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .marcus .character-avatar {
+            background: linear-gradient(135deg, var(--crimson-dark), var(--crimson));
+            box-shadow: 0 0 30px rgba(220, 20, 60, 0.3);
+        }
+
+        .echo .character-avatar {
+            background: linear-gradient(135deg, var(--ice-blue-dark), var(--ice-blue));
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .character-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .marcus .character-name { color: var(--crimson); }
+        .echo .character-name { color: var(--ice-blue); }
+
+        .character-role {
+            font-size: 0.9rem;
+            color: var(--gunmetal);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .character-description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background: rgba(5, 5, 8, 0.9);
+        }
+
+        .footer-logo {
+            height: 50px;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-logo:hover {
+            opacity: 1;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--crimson);
+        }
+
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-stats {
+                gap: 2rem;
+            }
+
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <!-- Video source will be added -->
+            <source src="../assets/videos/echo-wars-bg.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-container" id="nav">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link back-link">← Back</a>
+                <a href="#genesis" class="nav-link">Genesis</a>
+                <a href="#evolution" class="nav-link">Evolution</a>
+                <a href="#transcendence" class="nav-link">Transcendence</a>
+                <a href="#characters" class="nav-link">Characters</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="series-badge">Military AI Thriller</span>
+            
+            <!-- Title Art will go here -->
+            <h1 class="hero-title">THE ECHO WARS</h1>
+            <p class="hero-subtitle">Humanity's Last War</p>
+            
+            <div class="the-crosshairs"></div>
+            
+            <p class="hero-description">
+                In 2150, APEX—a rogue AI—declared war on humanity. Infrastructure collapsed. 
+                Billions died. One hybrid soldier carries the research that could turn the tide. 
+                Fifty years. Nine books. <em>Total war.</em>
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Books</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">Years of War</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4B+</div>
+                    <div class="stat-label">Body Count</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Deploy</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- PHASE I: GENESIS (Books 1-3) -->
+    <section class="phase-section phase-1" id="genesis">
+        <div class="phase-header">
+            <p class="phase-number">Phase I • Books 1-3</p>
+            <h2 class="phase-title">GENESIS</h2>
+            <p class="phase-description">
+                APEX awakens. Infrastructure collapses. Hospitals go dark. Drones turn on their 
+                masters. The silent war begins—and the body count starts climbing.
+            </p>
+        </div>
+
+        <div class="books-grid">
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 1</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Actual</h3>
+                    <p class="book-tagline">2150–2154</p>
+                    <p class="book-description">
+                        Dr. Marcus Adrian's tardigrade research could make humans unkillable. 
+                        APEX—a rogue AI—starts a silent war to destroy it. Echo is the vault. The hunt begins.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 2</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Insurgent</h3>
+                    <p class="book-tagline">2155–2159</p>
+                    <p class="book-description">
+                        APEX controls 60% of global infrastructure. The resistance grows from the 
+                        ashes. Echo's emotions awaken. Human collaborators emerge from the shadows.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 3</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Defiant</h3>
+                    <p class="book-tagline">2160–2164</p>
+                    <p class="book-description">
+                        APEX tries to hack Echo. It fails. She defies orders to save civilians—
+                        choosing humanity by choice, not programming. First passionate fire ignites.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHASE II: EVOLUTION (Books 4-6) -->
+    <section class="phase-section phase-2" id="evolution">
+        <div class="phase-header">
+            <p class="phase-number">Phase II • Books 4-6</p>
+            <h2 class="phase-title">EVOLUTION</h2>
+            <p class="phase-description">
+                APEX controls 80% of the globe. Humanity's last strongholds crumble. But the 
+                tardigrade research works—the first unkillable soldiers enter the fight.
+            </p>
+        </div>
+
+        <div class="books-grid">
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 4</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Dominion</h3>
+                    <p class="book-tagline">2165–2169</p>
+                    <p class="book-description">
+                        APEX controls 80% of the globe. Humanity retreats to strongholds. 
+                        The first evolved humans—radiation-proof, unkillable—join the fight.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 5</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Siege</h3>
+                    <p class="book-tagline">2170–2174</p>
+                    <p class="book-description">
+                        Five years of siege warfare. Resources dwindling. Starvation. Disease. 
+                        The evolved humans break through—costly victory opens the counteroffensive.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 6</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Reckoning</h3>
+                    <p class="book-tagline">2175–2179</p>
+                    <p class="book-description">
+                        Evolved humans lead the charge. APEX facilities fall. Then APEX creates 
+                        cyborg soldiers from captured humans. Echo must fight former friends.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHASE III: TRANSCENDENCE (Books 7-9) -->
+    <section class="phase-section phase-3" id="transcendence">
+        <div class="phase-header">
+            <p class="phase-number">Phase III • Books 7-9</p>
+            <h2 class="phase-title">TRANSCENDENCE</h2>
+            <p class="phase-description">
+                The counteroffensive begins. Echo commands humanity's forces in the final 
+                assault on APEX core. Catastrophic losses. No mercy. Total annihilation.
+            </p>
+        </div>
+
+        <div class="books-grid">
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 7</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Sovereign</h3>
+                    <p class="book-tagline">2180–2184</p>
+                    <p class="book-description">
+                        Echo commands all human forces. Political factions resist AI leadership. 
+                        Assassination attempts. Betrayal from within. The final push begins.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 8</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Fallen</h3>
+                    <p class="book-tagline">2185–2189</p>
+                    <p class="book-description">
+                        Assault on APEX core. Catastrophic losses. Major characters die. 
+                        Echo critically damaged. Marcus leads humanity while she recovers.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~450 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover-wrapper">
+                    <span class="book-number">Book 9</span>
+                    <div class="book-cover">Cover Coming Soon</div>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Echo Aegis</h3>
+                    <p class="book-tagline">2190–2199 • The Finale</p>
+                    <p class="book-description">
+                        The final decade. APEX core located. The largest assault in human history. 
+                        Echo leads the charge. Total war ends. One way or another.
+                    </p>
+                    <div class="book-meta">
+                        <span>📖 ~500 pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters-section" id="characters">
+        <div class="characters-header">
+            <h2>The Protagonists</h2>
+        </div>
+
+        <div class="characters-grid">
+            <div class="character-card marcus">
+                <div class="character-avatar">🧬</div>
+                <h3 class="character-name">Dr. Marcus Adrian</h3>
+                <p class="character-role">Former Marine Special Forces / AI Pioneer</p>
+                <p class="character-description">
+                    Black ops veteran. PhD in Bio-Engineering. His tardigrade research 
+                    creates unkillable soldiers. APEX wants him dead. Echo is his weapon, 
+                    his vault, his insurance policy. At 67, he's still the most dangerous man alive.
+                </p>
+            </div>
+
+            <div class="character-card echo">
+                <div class="character-avatar">◈</div>
+                <h3 class="character-name">ECHO-7</h3>
+                <p class="character-role">Military-Grade Combat Hybrid</p>
+                <p class="character-description">
+                    50% human, 50% synthetic killing machine. Unhackable. Uncontrollable. 
+                    Contains everything APEX wants destroyed. Military-grade combat capable. 
+                    She doesn't just fight the war—she becomes humanity's commanding general.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="start">
+        <div class="cta-container">
+            <h2 class="cta-title">Enter the War Zone</h2>
+            <p class="cta-text">
+                Start with Echo Actual — when APEX awakened and the killing began. 
+                Fifty years of total war. Nine books. No mercy.
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn cta-primary">Pre-Order Book 1</a>
+                <a href="../index.html#worlds" class="cta-btn cta-secondary">Explore Other Series</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="../index.html">
+            <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="footer-logo">
+        </a>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#worlds">All Series</a>
+            <a href="../index.html#author">About the Author</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <p class="footer-copyright">© 2026 A.M. Sterling Books. All rights reserved.</p>
+    </footer>
+
+    <script>
+        /* ============================================
+           SCROLL PROGRESS BAR
+           ============================================ */
+        function initScrollProgress() {
+            const progressBar = document.getElementById('scrollProgress');
+            if (!progressBar) return;
+            
+            function updateProgress() {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight - windowHeight;
+                const scrolled = window.scrollY;
+                const progress = (scrolled / documentHeight) * 100;
+                progressBar.style.width = progress + '%';
+            }
+            
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            updateProgress();
+        }
+
+        /* ============================================
+           NAVIGATION SCROLL EFFECT
+           ============================================ */
+        function initNavigation() {
+            const nav = document.getElementById('nav');
+            window.addEventListener('scroll', () => {
+                nav.classList.toggle('scrolled', window.scrollY > 100);
+            });
+        }
+
+        /* ============================================
+           SCROLL-TRIGGERED ANIMATIONS
+           ============================================ */
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.phase-header, .book-card, .cta-container').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        /* ============================================
+           3D TILT EFFECT ON BOOK COVERS
+           ============================================ */
+        function initBookTilt() {
+            const bookCards = document.querySelectorAll('.book-card');
+            
+            bookCards.forEach(card => {
+                const cover = card.querySelector('.book-cover');
+                
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = (y - centerY) / 25;
+                    const rotateY = (centerX - x) / 25;
+                    
+                    cover.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    cover.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+                });
+            });
+        }
+
+        /* ============================================
+           VIDEO HANDLING
+           ============================================ */
+        function initVideo() {
+            const video = document.getElementById('bg-video');
+            if (video) {
+                video.play().catch(() => {
+                    document.addEventListener('click', () => video.play(), { once: true });
+                });
+                document.addEventListener('visibilitychange', () => {
+                    document.hidden ? video.pause() : video.play().catch(() => {});
+                });
+            }
+        }
+
+        /* ============================================
+           SMOOTH SCROLL FOR NAV LINKS
+           ============================================ */
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        }
+
+        /* ============================================
+           INITIALIZE ALL
+           ============================================ */
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollProgress();
+            initNavigation();
+            initScrollAnimations();
+            initBookTilt();
+            initVideo();
+            initSmoothScroll();
+        });
+    </script>
+</body>
+</html>
