@@ -106,6 +106,38 @@
         .portal-card.echowars .portal-inner-glow {
             background: radial-gradient(circle at 30% 30%, rgba(255, 191, 0, 0.2) 0%, transparent 50%);
         }
+
+        /* Echo Exodus - Violet/Gold */
+        .portal-card.echoexodus {
+            --portal-color: #7c3aed;
+            --portal-glow: rgba(124, 58, 237, 0.4);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(10, 10, 12, 0.4) 50%, rgba(251, 191, 36, 0.1) 100%);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+        }
+        .portal-card.echoexodus:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(124, 58, 237, 0.1), 0 0 60px rgba(251, 191, 36, 0.2);
+        }
+        .portal-card.echoexodus .portal-icon {
+            color: #a855f7;
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+        }
+        .portal-card.echoexodus .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #a855f7;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.echoexodus .portal-series {
+            font-family: 'Rajdhani', sans-serif;
+            color: #fbbf24;
+        }
+        .portal-card.echoexodus .portal-glow {
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, rgba(251, 191, 36, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.echoexodus .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(251, 191, 36, 0.2) 0%, transparent 50%);
+        }
     </style>
     
     <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -216,12 +248,23 @@
             </a>
             
             <!-- The Echo Wars - ECHO'S MILITARY SAGA -->
-            <a href="series/echo-wars-WAR.html" class="portal-card echowars">
+            <a href="echo-wars-WAR.html" class="portal-card echowars">
                 <div class="portal-inner-glow"></div>
                 <div class="portal-icon">💀</div>
                 <div class="portal-content">
                     <h3 class="portal-title">The Echo Wars</h3>
                     <p class="portal-series">9-Book Military Sci-Fi • 50 Years of War • 4 Billion Dead</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Echo Exodus - CONTINUATION OF ECHO WARS -->
+            <a href="echoexodus.html" class="portal-card echoexodus">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🌌</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">Echo Exodus</h3>
+                    <p class="portal-series">9-Book Sequel Series • The Cage is Broken • The Universe is Next</p>
                 </div>
                 <div class="portal-glow"></div>
             </a>
@@ -375,7 +418,8 @@
                 <a href="series/resonance-cycle.html">The Resonance Cycle</a>
                 <a href="series/soul-transfer-chronicles.html">The Soul Transfer Chronicles</a>
                 <a href="series/resonance-wars.html">The Resonance Wars</a>
-                <a href="series/echo-wars-WAR.html">The Echo Wars</a>
+                <a href="echo-wars-WAR.html">The Echo Wars</a>
+                <a href="echoexodus.html">Echo Exodus</a>
                 <a href="series/sovereign-protocol.html">The Sovereign Protocol</a>
                 <a href="series/static-frequency.html">The Static Frequency</a>
                 <a href="series/consent-wars.html">The Consent Wars</a>
