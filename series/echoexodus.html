@@ -43,6 +43,91 @@
             overflow-x: hidden;
         }
 
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container.scrolled {
+            padding: 0.7rem 2rem;
+            background: rgba(10, 10, 15, 0.95);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--violet-primary), var(--gold-primary));
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold-primary);
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        .nav-link.back-link {
+            color: var(--violet-glow);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            .nav-link {
+                font-size: 0.8rem;
+            }
+        }
+
         /* Hero Section with Video Background */
         .hero {
             position: relative;
@@ -811,6 +896,23 @@
 </head>
 <body>
 
+    <!-- Navigation -->
+    <div class="nav-container" id="nav">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link back-link">← Back</a>
+                <a href="#books" class="nav-link">Books</a>
+                <a href="#characters" class="nav-link">Characters</a>
+                <a href="#themes" class="nav-link">Themes</a>
+                <a href="#tech" class="nav-link">Tech</a>
+                <a href="echo-wars-WAR.html" class="nav-link">Echo Wars</a>
+            </div>
+        </nav>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <video class="hero-video" autoplay muted loop playsinline>
@@ -1109,7 +1211,7 @@
     </section>
 
     <!-- Characters Section -->
-    <section class="characters-section">
+    <section class="characters-section" id="characters">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">The Commanders</h2>
@@ -1173,7 +1275,7 @@
     </section>
 
     <!-- Themes Section -->
-    <section class="themes-section">
+    <section class="themes-section" id="themes">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Core Themes</h2>
@@ -1217,7 +1319,7 @@
     </section>
 
     <!-- Tech Section -->
-    <section class="tech-section">
+    <section class="tech-section" id="tech">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">New Military Technology</h2>
@@ -1318,7 +1420,7 @@
             </div>
             
             <div class="footer-links">
-                <a href="https://amsterlingbooks.com">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="https://echoexodus.com" target="_blank">echoexodus.com</a>
                 <a href="https://theechowars.com" target="_blank">theechowars.com</a>
             </div>
@@ -1326,6 +1428,14 @@
             <p class="copyright">© 2025 A.M. Sterling Books. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Nav scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 100);
+        });
+    </script>
 
 </body>
 </html>
