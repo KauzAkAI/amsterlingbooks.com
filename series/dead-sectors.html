@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dead Sectors | A.M. Sterling Books</title>
+    <meta name="description" content="The Dead Sectors - A Sci-Fi Romantic Thriller Trilogy. Twenty-five years ago, she was his raw recruit and forbidden obsession. Now she's the most dangerous woman in the Dead Sectors. Someone wanted them back together.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --obsidian: #0a0a0f;
+            --obsidian-mid: #1a1a24;
+            --obsidian-light: #2a2a3a;
+            --crimson: #cc0000;
+            --crimson-bright: #ff2222;
+            --crimson-dim: #8b0000;
+            --crimson-glow: rgba(204, 0, 0, 0.6);
+            --steel: #4a5568;
+            --steel-light: #718096;
+            --silver: #a0aec0;
+            --text-light: #e2e8f0;
+            --text-dim: #a0aec0;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--obsidian);
+            color: var(--text-light);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated pulse lines background - like the Obsidian Pulse armor */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(204, 0, 0, 0.02) 50px,
+                    rgba(204, 0, 0, 0.02) 51px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(74, 85, 104, 0.03) 50px,
+                    rgba(74, 85, 104, 0.03) 51px
+                );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 15, 0.8);
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(180deg, rgba(10, 10, 15, 0.95) 0%, rgba(10, 10, 15, 0.8) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(204, 0, 0, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--crimson);
+            text-shadow: 0 0 20px var(--crimson-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 2rem 4rem;
+            position: relative;
+            z-index: 2;
+            background: transparent;
+        }
+
+        /* Obsidian Pulse animation - heartbeat lines */
+        .pulse-wave {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+            top: 50%;
+            animation: pulseBeat 2s ease-in-out infinite;
+            opacity: 0.4;
+        }
+
+        .pulse-wave:nth-child(2) {
+            animation-delay: 0.5s;
+            top: 48%;
+            height: 2px;
+        }
+
+        .pulse-wave:nth-child(3) {
+            animation-delay: 1s;
+            top: 52%;
+            height: 2px;
+        }
+
+        @keyframes pulseBeat {
+            0%, 100% { transform: scaleX(0); opacity: 0; }
+            30% { transform: scaleX(0.3); opacity: 0.8; }
+            50% { transform: scaleX(1); opacity: 0.4; }
+            70% { transform: scaleX(0.3); opacity: 0.8; }
+        }
+
+        .series-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 30px var(--crimson-glow));
+        }
+
+        .series-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #ffffff 0%, var(--silver) 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 40px rgba(204, 0, 0, 0.3));
+            margin-bottom: 1rem;
+        }
+
+        .series-subtitle {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 2rem;
+        }
+
+        .series-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--text-dim);
+            max-width: 700px;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .series-tagline strong {
+            color: var(--crimson-bright);
+        }
+
+        .author-credit {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            letter-spacing: 2px;
+        }
+
+        .author-credit strong {
+            color: var(--crimson);
+        }
+
+        /* Synopsis Section */
+        .synopsis-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 15, 0.9) 20%, rgba(10, 10, 15, 0.95) 100%);
+        }
+
+        .synopsis-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+        }
+
+        .section-line {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+            margin: 0 auto;
+        }
+
+        .synopsis-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: var(--text-light);
+        }
+
+        .synopsis-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .synopsis-text strong {
+            color: var(--crimson);
+        }
+
+        .synopsis-text em {
+            color: var(--crimson-bright);
+            font-style: italic;
+        }
+
+        .synopsis-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--silver);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 3px solid var(--crimson);
+            border-right: 3px solid var(--crimson);
+            background: rgba(204, 0, 0, 0.05);
+        }
+
+        /* Books Section */
+        .books-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: var(--obsidian);
+        }
+
+        .books-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .release-notice {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: linear-gradient(90deg, transparent, rgba(204, 0, 0, 0.1), transparent);
+            border-top: 1px solid rgba(204, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(204, 0, 0, 0.3);
+        }
+
+        .release-notice p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            text-shadow: 0 0 20px var(--crimson-glow);
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: linear-gradient(145deg, rgba(42, 42, 58, 0.3) 0%, rgba(26, 26, 36, 0.5) 100%);
+            border: 1px solid rgba(204, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            border-color: var(--crimson);
+            box-shadow: 0 0 40px rgba(204, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .book-cover-container {
+            width: 100%;
+            aspect-ratio: 2/3;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: linear-gradient(145deg, rgba(204, 0, 0, 0.1) 0%, rgba(26, 26, 36, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(204, 0, 0, 0.3);
+        }
+
+        .book-cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cover-placeholder {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .cover-placeholder .placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .cover-placeholder p {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            opacity: 0.7;
+        }
+
+        .book-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            color: var(--crimson);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .book-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--steel-light);
+            margin-bottom: 1rem;
+        }
+
+        .book-description {
+            font-size: 1rem;
+            color: var(--text-dim);
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+
+        /* Characters Section */
+        .characters-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--obsidian) 0%, rgba(42, 42, 58, 0.3) 50%, var(--obsidian) 100%);
+        }
+
+        .characters-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .character-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: rgba(42, 42, 58, 0.2);
+            border-radius: 8px;
+            border: 1px solid rgba(204, 0, 0, 0.1);
+        }
+
+        .character-card.reverse {
+            grid-template-columns: 1fr 200px;
+        }
+
+        .character-visual {
+            text-align: center;
+        }
+
+        .character-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        .character-card.nicole .character-icon {
+            background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dim) 100%);
+            color: #fff;
+            box-shadow: 0 0 30px var(--crimson-glow);
+        }
+
+        .character-card.marcus .character-icon {
+            background: linear-gradient(135deg, var(--steel) 0%, var(--obsidian-light) 100%);
+            color: var(--silver);
+            box-shadow: 0 0 30px rgba(74, 85, 104, 0.4);
+        }
+
+        .character-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .character-role {
+            font-size: 0.9rem;
+            color: var(--crimson);
+            font-style: italic;
+        }
+
+        .character-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .character-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--silver);
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--crimson);
+        }
+
+        /* World Section */
+        .world-section {
+            position: relative;
+            z-index: 2;
+            padding: 6rem 2rem;
+            background: var(--obsidian);
+        }
+
+        .world-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .world-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .world-card {
+            background: rgba(42, 42, 58, 0.2);
+            border: 1px solid rgba(204, 0, 0, 0.15);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .world-card:hover {
+            border-color: rgba(204, 0, 0, 0.4);
+            background: rgba(204, 0, 0, 0.05);
+        }
+
+        .world-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+        }
+
+        .world-card p {
+            font-size: 1rem;
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            position: relative;
+            z-index: 2;
+            padding: 4rem 2rem;
+            background: var(--obsidian);
+            border-top: 1px solid rgba(204, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-signal {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+        }
+
+        .footer-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            text-decoration: none;
+            border: 1px solid var(--crimson);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--crimson);
+            color: var(--obsidian);
+            box-shadow: 0 0 30px var(--crimson-glow);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .character-card,
+            .character-card.reverse {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .character-info {
+                order: 2;
+            }
+
+            .character-visual {
+                order: 1;
+            }
+
+            .character-quote {
+                border-left: none;
+                border-top: 2px solid var(--crimson);
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .series-title {
+                letter-spacing: 4px;
+            }
+        }
+    </style>
+    
+    <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="../assets/videos/dead-sectors-bg.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav-container">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#worlds" class="nav-link">All Series</a>
+                <a href="../index.html#author" class="nav-link">Author</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="pulse-wave"></div>
+        <div class="pulse-wave"></div>
+        <div class="pulse-wave"></div>
+        
+        <div class="series-icon">🔥</div>
+        <!-- Replace with title image when ready: -->
+        <!-- <h1 class="series-title"><img src="../assets/images/T_XX_THE_DEAD_SECTORS.png" alt="The Dead Sectors" style="max-width: 100%; height: auto; max-height: 220px; filter: drop-shadow(0 0 40px rgba(204, 0, 0, 0.6));"></h1> -->
+        <h1 class="series-title">The Dead Sectors</h1>
+        <p class="series-subtitle">A Sci-Fi Romantic Thriller Trilogy</p>
+        <div class="series-tagline">Twenty-five years ago, she was his raw recruit and <strong>forbidden obsession</strong>. Now she's the most dangerous woman in the Dead Sectors—and she just broke him out of a black-site prison. <strong>Someone wanted them back together.</strong> The question is whether it's to save them or destroy them.</div>
+        <p class="author-credit">By <strong>A.M. Sterling</strong></p>
+    </section>
+
+    <!-- Synopsis -->
+    <section class="synopsis-section">
+        <div class="synopsis-container">
+            <div class="section-header">
+                <h2 class="section-title">The Breach</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="synopsis-text">
+                <p>In a galaxy ruled by the Meridian Compact, where corporations and governments have merged into something ruthless and absolute, there are places even they don't go.</p>
+                <p>They call them <strong>The Dead Sectors</strong>.</p>
+                <p>Eleven star systems. Officially uninhabitable. Actually home to outcasts, criminals, revolutionaries—and one woman who became legend.</p>
+                
+                <div class="synopsis-quote">
+                    "The strongest walls are the ones we build inside ourselves."
+                </div>
+                
+                <p><em>Nicole Bastion</em> is the Breach Architect—the woman who gets into places that can't be breached. For twenty-five years, she's built her reputation on cold efficiency and colder walls. She doesn't do rescue missions. She doesn't do emotions.</p>
+                <p>Then a job comes in. Extraction from Carcosa-7, a black-site prison that officially doesn't exist. The pay is astronomical. The target profile matches someone who's been dead for a quarter century.</p>
+                <p><em>Dr. Marcus Vane</em> didn't die in that lab explosion. He was captured, imprisoned, erased—because of what he knows. What he helped build. A weapon called <strong>ARCHON</strong> that could enslave humanity.</p>
+                <p>Someone orchestrated their reunion. The question is whether it's to save them—or destroy everything they might become together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books -->
+    <section class="books-section">
+        <div class="books-container">
+            <div class="section-header">
+                <h2 class="section-title">The Trilogy</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="release-notice">
+                <p>🔥 Coming 2026 🔥</p>
+            </div>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/covers/dead-sectors/Book1_BASTIONS_BREACH.webp" 
+                             alt="Bastion's Breach - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>🔓</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 01</div>
+                    <h3 class="book-title">Bastion's Breach</h3>
+                    <p class="book-tagline">"The walls we build. The walls that break us."</p>
+                    <p class="book-description">She breaks into the impossible prison. She finds him alive. Twenty-five years collapse into one moment—and everything she buried comes roaring back.</p>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/covers/dead-sectors/Book2_THE_VANE_DIRECTIVE.webp" 
+                             alt="The Vane Directive - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>📡</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 02</div>
+                    <h3 class="book-title">The Vane Directive</h3>
+                    <p class="book-tagline">"Some secrets are worth dying for. Some are worth killing for."</p>
+                    <p class="book-description">They're hunted. They're outgunned. And the conspiracy goes deeper than either imagined. Time to build an army from the Dead Sectors' outcasts.</p>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover-container">
+                        <img src="../assets/covers/dead-sectors/Book3_LATTICEBURN.webp" 
+                             alt="Latticeburn - Book Cover"
+                             onerror="this.parentElement.innerHTML='<div class=\'cover-placeholder\'><div class=\'placeholder-icon\'>💥</div><p>Cover Coming Soon</p></div>'">
+                    </div>
+                    <div class="book-number">BOOK 03</div>
+                    <h3 class="book-title">Latticeburn</h3>
+                    <p class="book-tagline">"The only way out is through."</p>
+                    <p class="book-description">The final assault. Marcus must destroy ARCHON—or become it. Nicole must lead an impossible mission. Their love becomes humanity's last defense.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters -->
+    <section class="characters-section">
+        <div class="characters-container">
+            <div class="section-header">
+                <h2 class="section-title">Silicon and Bone</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="character-card nicole">
+                <div class="character-visual">
+                    <div class="character-icon">NB</div>
+                    <h3 class="character-name">Nicole Bastion</h3>
+                    <p class="character-role">The Breach Architect • Age 47</p>
+                </div>
+                <div class="character-info">
+                    <p class="character-description">
+                        The Dead Sectors' most feared infiltration specialist. Twenty-five years of walls built specifically 
+                        to survive losing the one person she couldn't forget. Her armor—the Obsidian Pulse—responds to emotion. 
+                        Around Marcus, it betrays everything she tries to hide. The crimson glow pulses like a heartbeat she 
+                        thought she'd killed.
+                    </p>
+                    <p class="character-quote">"I just walk into places like I own them. By the time anyone realizes I don't, I'm already gone with whatever I came for."</p>
+                </div>
+            </div>
+            
+            <div class="character-card marcus reverse">
+                <div class="character-info">
+                    <p class="character-description">
+                        Neural engineering genius. Creator of the Obsidian Pulse. Former Director of Prometheus Division's 
+                        darkest projects. Twenty-five years in a black-site cell couldn't break him—because every day, he 
+                        survived on one thought: that Nicole was safe because she believed him dead. He was wrong about 
+                        everything except loving her.
+                    </p>
+                    <p class="character-quote">"The human mind isn't designed for isolation. It becomes a torture chamber decorated with everything you've lost."</p>
+                </div>
+                <div class="character-visual">
+                    <div class="character-icon">MV</div>
+                    <h3 class="character-name">Dr. Marcus Vane</h3>
+                    <p class="character-role">Former Prometheus Director • Age 67</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Building -->
+    <section class="world-section">
+        <div class="world-container">
+            <div class="section-header">
+                <h2 class="section-title">The World of 2387</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="world-grid">
+                <div class="world-card">
+                    <h3>The Meridian Compact</h3>
+                    <p>Corporate-state hybrid controlling 73 colonized systems. Part democracy, part oligarchy, entirely ruthless. Peace maintained through economic control and military supremacy.</p>
+                </div>
+                
+                <div class="world-card">
+                    <h3>The Dead Sectors</h3>
+                    <p>Eleven abandoned star systems. Officially uninhabitable. Actually home to those who prefer freedom to safety. No law but what you enforce yourself.</p>
+                </div>
+                
+                <div class="world-card">
+                    <h3>The Obsidian Pulse</h3>
+                    <p>Nicole's unique combat skin. Matte-black crystalline plates that respond to emotion. Around Marcus, crimson light pulses through the material like a heartbeat.</p>
+                </div>
+                
+                <div class="world-card">
+                    <h3>Project ARCHON</h3>
+                    <p>The weapon Marcus helped build. AI system capable of direct neural control of human populations. The Directorate's endgame. The key is locked in Marcus's mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-signal">SILICON AND BONE — LOVE FORGED IN WAR</p>
+            <p class="footer-tagline">A second-chance romance wrapped in a conspiracy thriller.</p>
+            <a href="../index.html" class="back-link">← Return to Base</a>
+        </div>
+    </footer>
+</body>
+</html>
