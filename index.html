@@ -138,6 +138,39 @@
         .portal-card.echoexodus .portal-inner-glow {
             background: radial-gradient(circle at 30% 30%, rgba(251, 191, 36, 0.2) 0%, transparent 50%);
         }
+
+        /* The Dead Sectors - Crimson/Obsidian Military Romance */
+        .portal-card.deadsectors {
+            --portal-color: #cc0000;
+            --portal-glow: rgba(204, 0, 0, 0.4);
+            background: linear-gradient(135deg, rgba(204, 0, 0, 0.12) 0%, rgba(10, 10, 15, 0.4) 50%, rgba(74, 85, 104, 0.1) 100%);
+            border: 1px solid rgba(204, 0, 0, 0.4);
+        }
+        .portal-card.deadsectors:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(204, 0, 0, 0.1), 0 0 60px rgba(74, 85, 104, 0.2);
+        }
+        .portal-card.deadsectors .portal-icon {
+            color: #cc0000;
+            text-shadow: 0 0 20px rgba(204, 0, 0, 0.8);
+        }
+        .portal-card.deadsectors .portal-title {
+            font-family: 'Cinzel', serif;
+            color: #ff2222;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .portal-card.deadsectors .portal-series {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: #a0aec0;
+        }
+        .portal-card.deadsectors .portal-glow {
+            background: radial-gradient(circle, rgba(204, 0, 0, 0.4) 0%, rgba(74, 85, 104, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.deadsectors .portal-inner-glow {
+            background: radial-gradient(circle at 30% 70%, rgba(204, 0, 0, 0.2) 0%, transparent 50%);
+        }
     </style>
     
     <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -265,6 +298,17 @@
                 <div class="portal-content">
                     <h3 class="portal-title">Echo Exodus</h3>
                     <p class="portal-series">9-Book Sequel Series • The Cage is Broken • The Universe is Next</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Dead Sectors - SCI-FI ROMANTIC THRILLER -->
+            <a href="series/dead-sectors.html" class="portal-card deadsectors">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🔥</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Dead Sectors</h3>
+                    <p class="portal-series">Sci-Fi Romantic Thriller Trilogy • 25 Years Apart. One Last Chance.</p>
                 </div>
                 <div class="portal-glow"></div>
             </a>
@@ -413,6 +457,7 @@
                 <h4>Series</h4>
                 <a href="series/resonance-cycle.html">The Resonance Cycle</a>
                 <a href="series/soul-transfer-chronicles.html">The Soul Transfer Chronicles</a>
+                <a href="series/dead-sectors.html">The Dead Sectors</a>
                 <a href="series/resonance-wars.html">The Resonance Wars</a>
                 <a href="series/echo-wars-WAR.html">The Echo Wars</a>
                 <a href="series/echoexodus.html">Echo Exodus</a>
@@ -430,7 +475,7 @@
             </div>
             <div class="footer-col">
                 <h4>Connect</h4>
-                <a href="mailto:amsterling@amsterlingbooks.com">Contact</a>
+                <a href="/cdn-cgi/l/email-protection#b0d1ddc3c4d5c2dcd9ded7f0d1ddc3c4d5c2dcd9ded7d2dfdfdbc39ed3dfdd">Contact</a>
                 <a href="press.html">Press Kit</a>
             </div>
             <div class="footer-col">
@@ -447,6 +492,4 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+  
