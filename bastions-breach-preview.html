@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASTION'S BREACH | Preview Chapters | A.M. Sterling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-void: #0a0a0f;
+            --color-deep: #12121a;
+            --color-surface: #1a1a24;
+            --color-text: #e8e6e3;
+            --color-text-dim: #8a8a9a;
+            --color-accent: #7b68ee;
+            --color-accent-glow: rgba(123, 104, 238, 0.4);
+            --color-warning: #ff6b6b;
+            --color-gold: #d4af37;
+            --font-display: 'Cinzel', serif;
+            --font-body: 'Cormorant Garamond', serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--color-void);
+            color: var(--color-text);
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .bg-animation {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(ellipse at center, transparent 0%, var(--color-void) 70%),
+                        radial-gradient(ellipse at 20% 80%, var(--color-accent-glow) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(255, 107, 107, 0.1) 0%, transparent 40%);
+            animation: drift 30s ease-in-out infinite;
+        }
+        @keyframes drift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(2%, 1%) rotate(1deg); }
+            50% { transform: translate(-1%, 2%) rotate(-1deg); }
+            75% { transform: translate(-2%, -1%) rotate(0.5deg); }
+        }
+        .site-header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(to bottom, var(--color-void), transparent);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .site-header.scrolled {
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 3rem;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            color: var(--color-text-dim);
+            text-transform: uppercase;
+        }
+        .logo span { color: var(--color-accent); }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--color-text-dim);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--color-accent); }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--color-void), transparent);
+            pointer-events: none;
+        }
+        .series-title {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            letter-spacing: 0.5em;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.3s;
+        }
+        .book-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 10vw, 7rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.5s;
+        }
+        .book-title span {
+            display: block;
+            font-size: 0.4em;
+            letter-spacing: 0.3em;
+            color: var(--color-text-dim);
+            margin-top: 0.5rem;
+        }
+        .preview-badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: var(--color-warning);
+            border: 1px solid var(--color-warning);
+            padding: 0.5rem 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.7s, pulse 2s ease-in-out infinite 1.7s;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4); }
+            50% { box-shadow: 0 0 20px 5px rgba(255, 107, 107, 0.2); }
+        }
+        .hero-description {
+            max-width: 600px;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--color-text-dim);
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.9s;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 1.2s;
+            z-index: 10;
+        }
+        .scroll-indicator span {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--color-text-dim);
+            text-transform: uppercase;
+        }
+        .scroll-indicator .line {
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--color-accent), transparent);
+            animation: scrollLine 1.5s ease-in-out infinite;
+        }
+        @keyframes scrollLine {
+            0%, 100% { transform: scaleY(1); opacity: 1; }
+            50% { transform: scaleY(0.5); opacity: 0.5; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .chapter-nav {
+            position: sticky;
+            top: 70px;
+            z-index: 50;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(123, 104, 238, 0.2);
+            border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+            padding: 1rem 0;
+        }
+        .chapter-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+        .chapter-nav a {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: var(--color-text-dim);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .chapter-nav a:hover, .chapter-nav a.active {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+            background: rgba(123, 104, 238, 0.1);
+        }
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 8rem;
+        }
+        .transmission-block {
+            background: var(--color-deep);
+            border: 1px solid rgba(123, 104, 238, 0.3);
+            border-left: 3px solid var(--color-warning);
+            padding: 2rem;
+            margin: 3rem 0;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.8;
+            position: relative;
+            overflow: hidden;
+        }
+        .transmission-block::before {
+            content: 'CLASSIFIED';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 4rem;
+            font-weight: 700;
+            color: rgba(255, 107, 107, 0.05);
+            letter-spacing: 0.3em;
+            pointer-events: none;
+        }
+        .transmission-header {
+            color: var(--color-warning);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 107, 107, 0.3);
+        }
+        .transmission-header strong { display: block; margin-bottom: 0.25rem; }
+        .transmission-content { color: var(--color-text-dim); }
+        .transmission-content .static { color: var(--color-accent); font-style: italic; }
+        .transmission-footer {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(123, 104, 238, 0.3);
+            color: var(--color-text-dim);
+            font-size: 0.75rem;
+        }
+        .transmission-footer strong { color: var(--color-warning); }
+        .chapter-section { padding-top: 6rem; margin-top: -4rem; }
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+        }
+        .chapter-number {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            letter-spacing: 0.5em;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .chapter-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .prose { font-size: 1.15rem; line-height: 2; }
+        .prose p { margin-bottom: 1.5rem; text-indent: 2rem; }
+        .prose p:first-of-type { text-indent: 0; }
+        .prose p:first-of-type::first-letter {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.5rem;
+            margin-top: 0.1rem;
+            color: var(--color-accent);
+        }
+        .prose .scene-break {
+            text-align: center;
+            margin: 3rem 0;
+            font-size: 1.5rem;
+            letter-spacing: 1em;
+            color: var(--color-accent);
+        }
+        .prose em { font-style: italic; color: var(--color-text); }
+        .prose strong { font-weight: 600; color: var(--color-text); }
+        .epigraph {
+            text-align: center;
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+            border-top: 1px solid rgba(123, 104, 238, 0.2);
+            border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+            background: linear-gradient(to bottom, transparent, rgba(123, 104, 238, 0.03), transparent);
+        }
+        .epigraph blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-text-dim);
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .epigraph cite {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-style: normal;
+            letter-spacing: 0.1em;
+            color: var(--color-text-dim);
+        }
+        .dramatis-personae {
+            background: var(--color-deep);
+            padding: 3rem;
+            margin: 4rem 0;
+            border: 1px solid rgba(123, 104, 238, 0.2);
+        }
+        .dramatis-personae h3 {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .character-list { list-style: none; }
+        .character-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(123, 104, 238, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .character-list li:last-child { border-bottom: none; }
+        .character-name {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            color: var(--color-text);
+        }
+        .character-role { font-size: 0.95rem; color: var(--color-text-dim); }
+        .cta-section {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(to bottom, var(--color-void), var(--color-deep));
+            border-top: 1px solid rgba(123, 104, 238, 0.2);
+        }
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            color: var(--color-text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-void);
+            background: var(--color-accent);
+            padding: 1rem 3rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid var(--color-accent);
+        }
+        .cta-button:hover {
+            background: transparent;
+            color: var(--color-accent);
+            box-shadow: 0 0 30px var(--color-accent-glow);
+        }
+        .site-footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--color-deep);
+            border-top: 1px solid rgba(123, 104, 238, 0.2);
+        }
+        .site-footer p {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--color-text-dim);
+            letter-spacing: 0.1em;
+        }
+        .site-footer a { color: var(--color-accent); text-decoration: none; }
+        .site-footer a:hover { text-decoration: underline; }
+        .progress-bar {
+            position: fixed;
+            top: 0; left: 0;
+            height: 2px;
+            background: var(--color-accent);
+            z-index: 1000;
+            transition: width 0.1s ease;
+            box-shadow: 0 0 10px var(--color-accent-glow);
+        }
+        .dedication {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem;
+            border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+            margin-bottom: 4rem;
+        }
+        .dedication-content {
+            max-width: 600px;
+            text-align: center;
+        }
+        .dedication-content p {
+            font-size: 1.15rem;
+            font-style: italic;
+            line-height: 2;
+            color: var(--color-text-dim);
+            margin-bottom: 1.5rem;
+        }
+        .dedication-opening {
+            font-family: var(--font-display);
+            font-size: 1.5rem !important;
+            font-style: normal !important;
+            letter-spacing: 0.2em;
+            color: var(--color-text) !important;
+            margin-bottom: 3rem !important;
+        }
+        .dedication-emphasis {
+            color: var(--color-text) !important;
+            font-size: 1.25rem !important;
+            margin: 2.5rem 0 !important;
+        }
+        .dedication-closing {
+            color: var(--color-accent) !important;
+            font-size: 1.2rem !important;
+            font-style: normal !important;
+            margin-top: 2.5rem !important;
+        }
+        .dedication-final {
+            color: var(--color-text) !important;
+            font-style: normal !important;
+            margin-top: 2rem !important;
+            font-size: 1.1rem !important;
+        }
+        @media (max-width: 768px) {
+            .site-header { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+            .book-title { letter-spacing: 0.05em; }
+            .chapter-nav a { padding: 0.5rem 1rem; font-size: 0.65rem; }
+            .content-wrapper { padding: 2rem 1.5rem 6rem; }
+            .transmission-block { padding: 1.5rem; }
+            .prose { font-size: 1.05rem; }
+            .prose p:first-of-type::first-letter { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="bg-animation"></div>
+    <header class="site-header" id="siteHeader">
+        <div class="logo">A.M. <span>Sterling</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://amsterlingbooks.com">Home</a></li>
+                <li><a href="https://amsterlingbooks.com/series">Series</a></li>
+                <li><a href="https://amsterlingbooks.com/newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="series-title">The Dead Sectors • Book One</div>
+        <h1 class="book-title">Bastion's Breach<span>A.M. Sterling</span></h1>
+        <div class="preview-badge">⬡ Exclusive Preview ⬡</div>
+        <p class="hero-description">"The anomaly doesn't care about our laws, our weapons, or our authority. It just <em>wants</em>—and something on our side wants it back."</p>
+        <div class="scroll-indicator">
+            <span>Begin Reading</span>
+            <div class="line"></div>
+        </div>
+    </section>
+    <nav class="chapter-nav">
+        <div class="chapter-nav-inner">
+            <a href="#dedication">Dedication</a>
+            <a href="#prologue">Prologue</a>
+            <a href="#chapter1">Chapter 1</a>
+            <a href="#chapter2">Chapter 2</a>
+            <a href="#chapter3">Chapter 3</a>
+        </div>
+    </nav>
+    <main class="content-wrapper">
+        
+        <!-- Dedication -->
+        <section class="dedication" id="dedication">
+            <div class="dedication-content">
+                <p class="dedication-opening">For her.</p>
+                
+                <p>You built your walls high and strong, and you had every reason to. The world doesn't reward open hearts—it wounds them. It takes the softest parts of us and teaches us, through repetition and pain, to armor them. To hide them. To pretend they don't exist.</p>
+                
+                <p>But I've seen behind the walls. I've caught glimpses of the woman you protect so fiercely—the one who loves without limit, who gives without counting the cost, who feels everything so deeply that she had to learn to feel nothing at all just to survive.</p>
+                
+                <p class="dedication-emphasis">She's still there. She always was.</p>
+                
+                <p>I know what it costs you to get through each day. I know the weight you carry—the kind that doesn't show up on any scale but presses down on your shoulders every morning when you wake up and every night when you can't sleep. I know you've spent years taking care of everyone else while no one took care of you.</p>
+                
+                <p>I know you're tired. I know you're scared.</p>
+                
+                <p>I also know you're the bravest person I've ever met. Because it takes more courage to keep going when you're exhausted than it does to fight when you're fresh. It takes more strength to love when you've been hurt than it does to love when you've been sheltered.</p>
+                
+                <p>You have that courage. You have that strength. Even when you don't feel it.</p>
+                
+                <p>This book is for you—not because you need saving, but because you deserve to know that someone sees you. All of you. The walls and what's behind them. The armor and the heart it protects.</p>
+                
+                <p class="dedication-closing">I see you. I choose you. I'm staying.</p>
+                
+                <p class="dedication-final">Take all the time you need. I'll be here when you're ready.</p>
+            </div>
+        </section>
+
+        <div class="epigraph">
+            <blockquote>"The first rule of warfare is to know your enemy. The second is to know yourself. But when you encounter something that defies both definitions, you must learn a third rule: know when the very ground you stand on is about to vanish beneath your feet."</blockquote>
+            <cite>— General Akira Tanaka, <em>Principles of Asymmetric Defense</em>, 2187</cite>
+        </div>
+        <div class="transmission-block">
+            <div class="transmission-header">
+                <strong>INTERCEPTED TRANSMISSION</strong>
+                <strong>ORIGIN:</strong> Research Station Elysium, Sector 9<br>
+                <strong>TIMESTAMP:</strong> 2387.04.12 / 03:47 GST<br>
+                <strong>ENCRYPTION:</strong> Military-grade / BROKEN<br>
+                <strong>STATUS:</strong> Fragment recovered from debris field
+            </div>
+            <div class="transmission-content">
+                <p><span class="static">[STATIC]</span></p>
+                <p>—repeat, the gateway is <em>not</em> stable. I don't care what Frost's models say, the quantum—</p>
+                <p><span class="static">[INTERFERENCE]</span></p>
+                <p>—expansion accelerating. Kira, get those civilians to the evac pods <em>now</em>.</p>
+                <p>Dr. Vane, if you're receiving this—if anyone's receiving this—don't let them open another one. They don't understand what's on the other side. It's not a place. It's not even a <em>dimension</em>. It's—</p>
+                <p><span class="static">[AUDIO DISTORTION / 4.7 SECONDS]</span></p>
+                <p>—her name in the energy signature. Christ, Marcus, they encoded <em>her name</em> in the quantum substrate. This wasn't discovery. This was an invitation.</p>
+                <p>Tell Nicole—</p>
+                <p><span class="static">[CONNECTION LOST]</span></p>
+            </div>
+            <div class="transmission-footer">
+                <p><strong>COLONIAL INTELLIGENCE ASSESSMENT:</strong><br>Station Elysium destroyed 2387.04.12 / 04:19 GST. Seventy-three personnel confirmed dead. Two survivors recovered. Dr. Marcus Vane's current location: CLASSIFIED.</p>
+                <p><strong>DIRECTOR'S NOTATION:</strong><br>Seal all records. Continue Gateway Protocol under Project ARCHON oversight. The anomaly remains open. —EF</p>
+            </div>
+        </div>
+        <div class="dramatis-personae">
+            <h3>Dramatis Personae</h3>
+            <ul class="character-list">
+                <li><span class="character-name">Nicole Adrienne Bastion</span><span class="character-role">— Former intelligence operative leading the fight against the Director</span></li>
+                <li><span class="character-name">Dr. Marcus Adrian Vane</span><span class="character-role">— Brilliant scientist and Nicole's closest ally</span></li>
+                <li><span class="character-name">Jace Rennick</span><span class="character-role">— Tactical specialist and field operations expert</span></li>
+                <li><span class="character-name">Sera Vex</span><span class="character-role">— Communications and infiltration specialist</span></li>
+                <li><span class="character-name">Kira Morrow</span><span class="character-role">— Tech expert and systems analyst</span></li>
+                <li><span class="character-name">Daven Cross</span><span class="character-role">— Veteran operative and Nicole's mentor</span></li>
+            </ul>
+        </div>
+        <section class="chapter-section" id="prologue">
+            <div class="chapter-header">
+                <div class="chapter-number">Prologue</div>
+                <h2 class="chapter-title">Twenty-Five Years Ago</h2>
+            </div>
+            <div class="prose">
+                <p>The recruit was going to get herself killed.</p>
+                <p>Colonel Marcus Vane watched from the observation deck as Nicole Bastion threw herself at the combat simulation for the fourth time in six hours. Twenty-two years old, raw as unprocessed ore, and absolutely refusing to quit despite three cracked ribs and a dislocated shoulder the bioforge had only just knit back together.</p>
+                <p>The holographic enemies materialized around her in the training arena—Kashari raiders, their insectoid forms rendered in perfect detail. The simulation didn't believe in easy introductions.</p>
+                <p>Neither did Marcus.</p>
+                <p>"She's going to fail again, sir." Lieutenant Graves stood beside him, datapad glowing with performance metrics that painted an ugly picture. "Reaction time's deteriorating. Pain inhibitors are wearing off. She's running on fumes."</p>
+                <p>"Then she'll learn what fumes feel like." Marcus crossed his arms, tracking Nicole's movements through the transparent aluminum barrier. The arena was a cube fifty meters on each side—gray floors, gray walls, gray ceiling. Nothing to hide behind. Nowhere to run. Just you and the problem.</p>
+                <p>Some recruits broke here. The ones who didn't became something harder.</p>
+                <p>Nicole rolled left as a plasma bolt scorched the air where her head had been. The shot went wide, but not by much. Her combat suit—standard fleet issue, black synthetic weave with minimal armor plating—was already burned in three places. Sweat plastered her dark hair to her skull. Blood trickled from her nose.</p>
+                <p>She came up firing.</p>
+                <p>The targeting was off. Two shots wide, one high. The fourth clipped a raider's shoulder—not enough to drop it. Her weapon training scores were adequate. Not exceptional. Most recruits at her level would have washed out already based on marksmanship alone.</p>
+                <p>But Nicole Bastion didn't fight like most recruits.</p>
+                <p>She closed the distance instead of retreating. Stupid. Suicidal. The kind of decision that got marines killed in actual combat. The raider's blade—three feet of monomolecular edge—swept toward her midsection in an arc designed to bisect human torsos.</p>
+                <p>Nicole dropped under it.</p>
+                <p>Hit the ground rolling. Came up inside the raider's guard. Jammed her sidearm under its mandible and fired twice. The holographic alien burst into pixels.</p>
+                <p>Three more materialized immediately.</p>
+                <p>"Jesus Christ," Graves muttered. "She's not even slowing down."</p>
+                <p>Marcus said nothing. His eyes tracked every movement, cataloging, assessing. The way she favored her left leg—old injury, probably from the entrance trials. The slight hesitation before each trigger pull—good, meant she was thinking, not just reacting. The raw determination in every step that bordered on desperation.</p>
+                <p>He'd read her file fourteen times. Knew it better than she probably knew herself.</p>
+                <p><em>Nicole Adrienne Bastion. Born 2340, New Melbourne colony. Parents deceased—industrial accident when she was sixteen. Worked dock labor for four years to pay for basic augmentation. Applied to Terran Defense Fleet at twenty. Rejected. Applied again six months later. Rejected. Third application approved with provisional status.</em></p>
+                <p>The file didn't mention how she'd gotten her hands on military-grade combat training in the two years between applications. Marcus had made some discrete inquiries. The answers suggested connections to mercenary groups operating in the outer colonies—the kind that didn't ask questions if you could pay and didn't mind bleeding.</p>
+                <p>The kind of background that should have disqualified her permanently.</p>
+                <p>Someone had buried those records deep. Not deep enough to escape Marcus's clearance level, but deep enough to suggest she had a patron. Someone who wanted Nicole Bastion in the fleet badly enough to scrub her past.</p>
+                <p>That alone made her interesting.</p>
+                <p>What made her dangerous was the way she moved.</p>
+                <p>A plasma bolt caught her shoulder. The impact spun her sideways, combat suit smoking. Nicole stumbled, went down hard on one knee. The pain must have been excruciating—the simulation's feedback systems were calibrated to seventy percent of actual combat conditions. Enough to teach. Not enough to permanently damage.</p>
+                <p>Usually.</p>
+                <p>"She's done," Graves said. "Medical override in three... two..."</p>
+                <p>Nicole pushed to her feet.</p>
+                <p>Her left arm hung useless, the shoulder joint probably dislocated again. She switched her weapon to her right hand. Two raiders flanked her, moving with the patient efficiency of pack hunters who knew their prey was finished.</p>
+                <p>She shot the one on her left. Center mass. It dissolved.</p>
+                <p>The second raider's blade took her in the ribs.</p>
+                <p>The blow should have ended the simulation. Would have ended it for any other recruit. The combat suit's impact sensors registered a killing strike—the kind that would have opened her from sternum to spine in actual combat.</p>
+                <p>Nicole grabbed the blade.</p>
+                <p>Her hand closed on monomolecular edge that should have sliced through synthetic flesh like paper. The simulation's haptic feedback wouldn't actually cut her, but the neural response would make her brain believe it had. Pain, shock, blood loss—all processed through the lattice interface jacked directly into her nervous system.</p>
+                <p>She held on anyway.</p>
+                <p>Used the blade as an anchor point. Pulled herself forward along its length, closing distance with the raider. Her face was a mask of concentration and agony—no scream, no cry, just a locked jaw and eyes that refused to close.</p>
+                <p>Point-blank range. She fired three times into the raider's center mass.</p>
+                <p>It burst into pixels.</p>
+                <p>The simulation ended.</p>
+                <p>Nicole stood alone in the gray cube, swaying. Her combat suit was shredded. Blood—simulated, but her lattice didn't know the difference—soaked her left side. Her breathing came in harsh gasps that Marcus could hear through the observation deck's audio feed.</p>
+                <p>She didn't fall.</p>
+                <p>"I'll be damned," Graves said softly. "She actually cleared it."</p>
+                <p>"No." Marcus tapped the datapad, pulling up the performance metrics. Red indicators dominated the display. "She failed. Time limit exceeded by forty seconds. Injuries sustained exceed mission-viable parameters. If this were actual combat, she'd be dead three times over."</p>
+                <p>"But she finished—"</p>
+                <p>"She survived. There's a difference." Marcus handed the datapad back. "Schedule her for medical evaluation. Full workup. I want to know what she's running on."</p>
+                <p>Marcus had trained thousands of recruits over twenty years of service. He'd commanded spec-ops teams on seventeen worlds. He'd led marines through hell and watched good people die because they weren't quite fast enough, quite strong enough, quite stubborn enough to survive when the universe decided it was their turn.</p>
+                <p>He'd never seen anyone fight like Nicole Bastion fought.</p>
+                <p>Like she was trying to kill something that couldn't die. Like stopping meant something worse than death.</p>
+                <p>She was twenty-two years old. He was forty-three.</p>
+                <p>She was a recruit under his command. He was a colonel with a spotless record and a career built on making the hard calls and following orders even when they tasted like ash.</p>
+                <p>He should have listened to Admiral Meridian. Should have kept his distance. Should have treated Nicole Bastion like any other recruit who showed promise—trained her, graduated her, moved on to the next batch of raw talent that needed shaping into something useful.</p>
+                <p>Should have.</p>
+                <p>Marcus touched the glass with his fingertips, watching Nicole disappear into the locker room. His reflection stared back—gray eyes, dark hair starting to silver at the temples, the kind of face that had forgotten how to smile years ago.</p>
+                <p>"Goddamn it," he said quietly to the empty observation deck.</p>
+                <p>Because he already knew he wasn't going to listen.</p>
+                <p>Already knew that Nicole Adrienne Bastion was going to be the worst decision he ever made.</p>
+                <p>The kind that felt inevitable anyway.</p>
+                <div class="scene-break">* * *</div>
+                <p><strong>PRESENT DAY — 2387 CE</strong></p>
+                <p>The message reached Marcus Vane at Research Station Elysium exactly six hours before the anomaly breached containment.</p>
+                <p>It was four words long.</p>
+                <p><strong>She's coming for you.</strong></p>
+                <p>No signature. No identification. The message had been routed through seventeen relay stations across five sectors—the kind of obfuscation that required serious resources and serious paranoia.</p>
+                <p>Marcus knew exactly who sent it anyway.</p>
+                <p>He stood at the observation window, watching the spiral of impossible light tear reality apart, and felt something that might have been fear or anticipation or the ghost of a twenty-five-year-old mistake finally coming home to kill him.</p>
+                <p>The anomaly pulsed. Expanded.</p>
+                <p>On the other side of known space, Nicole Bastion was putting on her armor and preparing to breach the one place in the universe that was supposed to be untouchable.</p>
+                <p>Marcus smiled for the first time in six years.</p>
+                <p>"Let her come," he said to the empty lab and the watching stars and the woman who'd haunted every decision he'd made since the day he'd failed to keep his distance.</p>
+                <p>The anomaly pulsed again.</p>
+                <p>Somewhere in the Dead Sectors, something that used to be human was coming home.</p>
+            </div>
+        </section>
+        <section class="chapter-section" id="chapter1">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter One</div>
+                <h2 class="chapter-title">Threshold</h2>
+            </div>
+            <div class="prose">
+                <p>The gateway shouldn't exist.</p>
+                <p>Marcus Vane stood at the observation window of Research Station Elysium, watching reality tear itself apart. The anomaly hung in the black like a wound—a spiral of light that bent in directions his augmented eyes couldn't follow. His neural lattice screamed warnings straight into his visual cortex, painting threat assessments across the glass in crimson overlays.</p>
+                <p>He dismissed them with a thought. Numbers couldn't explain this.</p>
+                <p>"Temperature's holding at minus two-seventy Kelvin," said Kira Morrow from her console. Her voice carried the careful neutrality of someone who'd spent six hours watching impossible things happen. "The radiation signature keeps shifting. Like it can't decide what it wants to be."</p>
+                <p>Marcus pressed his palm against the reinforced transparent aluminum. Cold seeped through the barrier—deeper than it should through three inches of military-grade shielding. "Show me the quantum readings."</p>
+                <p>The data flowed directly into his lattice, bypassing his eyes. Superposition states that refused to collapse. Particles existing in multiple locations simultaneously. Matter and antimatter dancing together without annihilation. Every fundamental law he'd spent thirty years studying bent sideways around that spiral.</p>
+                <p>"Third expansion in an hour," Kira said. "Whatever's on the other side wants through."</p>
+                <p>"Or something's pulling it open." Marcus turned from the window. The research station's main lab stretched behind him—a cathedral of chrome and glass, filled with equipment worth more than most colony worlds.</p>
+                <p>Kira looked up from her console. At twenty-eight, she still carried the eagerness of a fresh academy graduate, despite three years on frontier stations. Her dark hair was pulled back in a practical bun. Her gray jumpsuit bore the Terran Science Directorate insignia—a gold helix wrapped around a black star.</p>
+                <p>"Dr. Vane, if the expansion continues, it'll be large enough for a probe in four hours."</p>
+                <p>"No probes." Marcus moved to the central holotable where a three-dimensional rendering of the anomaly rotated. "Not until we understand the threshold dynamics."</p>
+                <p>"Director Frost's orders were explicit—"</p>
+                <p>"I know what Frost wants." Marcus manipulated the hologram with sharp gestures, pulling apart layers of data. "Answers fast enough to impress the Colonial Assembly. What he needs is patience."</p>
+                <p>The anomaly had appeared six days ago during a routine deep-space scan. One moment, empty space. The next, a doorway. The Science Directorate mobilized Research Station Elysium within hours, pulling Marcus from quantum field theory work at the Mars Institute. They'd called him the best theoretical physicist in known space.</p>
+                <p>He'd stopped believing his own press years ago.</p>
+                <p>The lab's main doors hissed open. Commander Lira Thane crossed the lab with the predatory grace of a career military officer. Her uniform was pristine black, marked with the silver sunburst of the Terran Defense Fleet.</p>
+                <p>"Dr. Vane." Her voice carried the clipped precision of someone used to obedience. "Director Frost requires an immediate status report."</p>
+                <p>"Tell Frost I'll report when I have something worth reporting."</p>
+                <p>Thane stopped beside the holotable, her reflection ghosting across the projected anomaly. Tall—nearly his height—with sharp features and eyes that missed nothing.</p>
+                <p>"Director Frost didn't send me to take no for an answer."</p>
+                <p>"Then he sent you to waste both our time." Marcus expanded a section of the hologram, studying the quantum foam at the anomaly's edge. "Unless you've suddenly developed a background in theoretical physics, I suggest you return to your ship and let me work."</p>
+                <p>"What I have, Doctor, is authorization to take over this station if civilian leadership proves uncooperative." Thane's hand moved to the datapad at her hip. "Shall I make that call?"</p>
+                <p>Marcus finally looked at her. The threat was real—he could see it in the set of her jaw, the way her weight had shifted forward. Thane was a weapon the military kept sharp and pointed. Right now, that meant him.</p>
+                <p>"Five ships," he said quietly.</p>
+                <p>Her eyes narrowed. "What?"</p>
+                <p>"Five ships disappeared in this sector over eight months. Deep-range transports, mostly automated. The Directorate classified them as slipstream malfunctions." Marcus gestured at the anomaly. "That appeared at the gravitational center of all five disappearance points. You want to send a probe through without understanding what happened to those ships, we might lose more than equipment."</p>
+                <p>"Twelve hours," Marcus said. "Let me map the threshold properly. After that, send whatever you want through."</p>
+                <p>"Six hours."</p>
+                <p>"Ten."</p>
+                <p>"Eight. And I want hourly updates." Thane straightened. "Director Frost arrives in sixteen hours. Try to have something impressive."</p>
+                <p>She left without waiting for acknowledgment. The doors sealed with a pneumatic sigh.</p>
+                <p>The lattice chimed softly—an incoming priority message. He accepted it, and Jace Rennick's voice filled his head through the neural link.</p>
+                <p><em>"Doc, we've got a problem."</em></p>
+                <p>Marcus subvocalized, the lattice translating thought to transmission. <em>"Define problem."</em></p>
+                <p><em>"Long-range sensors picked up a ship. Unscheduled arrival, no transponder. Burning hard toward the station."</em></p>
+                <p><em>"Pirates?"</em></p>
+                <p><em>"Too fast. Too precise. Military-grade drive signature."</em> A pause. <em>"Doctor, whoever this is, they're pushing their slipstream past safe limits. They'll be here in ninety minutes."</em></p>
+                <p>Marcus's hand tightened on the window frame. "Get me full specs the moment it's in visual range. And Jace?"</p>
+                <p><em>"Yeah?"</em></p>
+                <p>"Find out who knows about this gateway besides us."</p>
+                <p>The approaching ship resolved into clarity forty minutes later—a sleek predator of dark metal and aggressive angles. Military corvette. Phantom class. Designed for deep reconnaissance and rapid strike. The kind of ship that appeared in classified reports and nowhere else.</p>
+                <p>"They're hailing us," Kira said. "Audio only. Security clearance code, no identification."</p>
+                <p>"Let's hear it."</p>
+                <p>The voice that filled the lab was female, calm, and carried an authority that made Commander Thane sound like a cadet.</p>
+                <p>"Research Station Elysium, this is Special Operations Vessel <em>Nightfall</em>. Requesting immediate docking clearance under Emergency Protocol Seven. We have priority cargo requiring secure facilities."</p>
+                <p>Marcus's mouth went dry. Protocol Seven meant black-budget operations. Questions without answers, orders without refusal. Someone had decided the gateway was too important for normal channels.</p>
+                <p>The airlock cycled open. Three soldiers emerged first, armor matte black and studded with sensor arrays. They moved with the synchronized precision of a lattice-linked team, establishing a perimeter with practiced efficiency.</p>
+                <p>Then the fourth figure stepped through.</p>
+                <p>Tall—nearly six feet—with posture that came from military training so ingrained it became reflex. Dark cargo pants, fitted jacket, boots built for function. But it was her face that caught his breath.</p>
+                <p>Twenty-five years had changed her. The raw recruit with uncertain eyes had become someone else. Her features had hardened, gained angles that spoke of decisions made and prices paid. Shorter hair now, practical, framing a face built from good bones and bad memories.</p>
+                <p>But her eyes were the same. Storm gray. Intelligent. Dangerous.</p>
+                <p>Nicole Bastion stopped three meters from the lab entrance. Her gaze found Marcus with targeting-laser precision, and for a moment neither moved.</p>
+                <p>"Doctor Vane." Her voice was different—lower, rougher, wrapped in steel. "It's been a long time."</p>
+                <p>Marcus's lattice screamed at him—elevated heart rate, spiking adrenaline, cascading autonomic responses his augmentation cataloged with clinical detachment. He ignored it all and kept his voice level.</p>
+                <p>"Lieutenant Bastion. I heard you were dead."</p>
+                <p>"You heard wrong." She moved forward, soldiers flanking like an honor guard. "We need to talk about the gateway. And what's coming through it."</p>
+                <p>"What do you know about the anomaly?"</p>
+                <p>"More than you." Nicole stopped at the lab threshold, eyes moving past him to the observation window. To the spiral tearing space apart. "I've seen one before. On the other side."</p>
+                <p>The words hit like a physical blow. "Impossible. This gateway opened six days ago."</p>
+                <p>"This one did." Nicole's attention returned to him, the weight of her gaze almost tactile. "The one I found opened twenty-five years ago. In a sector the Directorate classified as dead space and forgot."</p>
+                <p>"You're saying there are multiple gateways?"</p>
+                <p>"I'm saying this isn't a gateway, Doctor. It's a door." Nicole moved into the lab, soldiers taking position at the entrance. "And something on the other side has been knocking for a very long time. Now it's finally found a way through."</p>
+                <p>She stopped at the observation window, looking out at the anomaly with an expression he couldn't read. Light from the gateway painted her face in silver and shadow.</p>
+                <p>"How long until it's fully open?" she asked.</p>
+                <p>"Current expansion rate suggests eight hours."</p>
+                <p>"Then we have eight hours to decide whether we close it or step through." Nicole turned to face him. "Because once it's open, whatever's on the other side will make that decision for us."</p>
+                <p>The station's alert system suddenly screamed—a piercing klaxon that froze everyone. Marcus's lattice flooded with warnings. The anomaly's energy signature had spiked. Radiation levels climbing exponentially.</p>
+                <p>Kira's voice cut through the chaos. "Dr. Vane! The gateway—it's accelerating!"</p>
+                <p>Marcus spun to the observation window. The anomaly was expanding rapidly now, spiral growing with terrifying speed. The edges crackled with energy his sensors couldn't classify.</p>
+                <p>"Impossible," he said. "The expansion rate was steady. There's no reason—"</p>
+                <p>"Unless something knows we're here." Nicole's hand was on the case at her belt, fingers working the locks. "Unless it's been waiting for us to get close enough."</p>
+                <p>The locks clicked open.</p>
+                <p>Inside was armor—black as deep space, with a surface that seemed to drink the light. Even through the case's lining, Marcus could feel something radiating from it. Not heat. Not cold. Something else. Something that made his lattice throw errors and his hindbrain scream warnings about predators in the dark.</p>
+                <p>"What is that?" he asked.</p>
+                <p>Nicole lifted the armor out. A chest piece—form fitted, seamless, covered in patterns that hurt to look at directly. As her hands touched the surface, the patterns began to shift. To pulse. To breathe.</p>
+                <p>"Protection," she said. "And a key."</p>
+                <p>The anomaly flared brilliant white. Alarms screamed. And through the observation window, Marcus saw something massive move in the light.</p>
+                <p>Something that was looking back.</p>
+            </div>
+        </section>
+        <section class="chapter-section" id="chapter2">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter Two</div>
+                <h2 class="chapter-title">Ghosts in the Dark</h2>
+            </div>
+            <div class="prose">
+                <p>The binary stars of Halcyon burned amber and violet through the viewport, painting Jace Rennick's hands in bruised light as he ran final diagnostics on the <em>Wraith's</em> weapons array. Twenty-three minutes until Nicole's signal. Twenty-three minutes to wonder if she'd actually show, or if the most wanted woman in the Dead Sectors had better things to do than collect a washed-up gunrunner she'd pulled from a firing squad two years back.</p>
+                <p>His fingers moved across the haptic interface without conscious thought, Neural Lattice doing most of the work while his mind churned through contingencies. The <em>Wraith</em> hummed beneath his boots—a modified Kestrel-class frigate that had seen better decades but still had teeth when it mattered. Just like him.</p>
+                <p>"Port thrusters running hot again," he muttered, more to fill the silence than because anyone was listening. The ship's AI was basic. Couldn't afford anything sophisticated enough to develop personality quirks or opinions about his life choices.</p>
+                <p>The comm crackled. "Contact incoming. Vector two-seven-mark-four."</p>
+                <p>Jace's pulse kicked. Too early. Nicole wouldn't break timing on something like this, which meant—</p>
+                <p>"IFF transponder reads Coalition," the AI continued, mechanical voice devoid of concern about the fact that Coalition vessels this deep in the Dead Sectors meant trouble of the lethal variety. "Frigate-class. <em>Redeemer</em>."</p>
+                <p>"Fuck." Jace's hands flew across the controls, pulling up the tactical display. The <em>Redeemer</em> materialized on his screen—a sleek predator sliding out of Halcyon's gravity well like it owned the space. Which, legally speaking, it did. Coalition law stretched thin out here, but it still had claws.</p>
+                <p>His Lattice pinged with an incoming transmission request. He considered ignoring it. Running would be smarter. But the <em>Redeemer's</em> weapons were already warm and tracking. They'd slag him before he cleared the moon's orbit.</p>
+                <p>Jace accepted the connection.</p>
+                <p>Commander Lira Thane's face filled his screen, dark eyes sharp enough to cut. She wore her Coalition uniform like a second skin—all pressed lines and polished insignia, black hair pulled back so tight it must have given her a headache.</p>
+                <p>"Mr. Rennick." Her voice carried the clipped accent of someone who'd grown up in the Core systems, where people still believed in things like order and justice. "You're a long way from the shipping lanes."</p>
+                <p>"Could say the same about you, Commander." Jace kept his hands visible on the controls, nonthreatening. The <em>Redeemer</em> could vaporize the <em>Wraith</em> in seconds if Thane decided she didn't like his tone. "Last I checked, Halcyon was free space."</p>
+                <p>"Last I checked, you were wanted for smuggling restricted biotech through three Coalition sectors." Thane leaned forward slightly. "That's a capital offense, Mr. Rennick. Twenty-year sentence in a labor facility, or—if the judge is feeling merciful—neural reformatting."</p>
+                <p>Neural reformatting. Pretty words for having your personality scraped out and rebuilt into something more compliant. Jace had seen the results once—a former colleague who'd emerged from the procedure with empty eyes and a smile that never reached them. He'd take the firing squad.</p>
+                <p>"Ancient history," Jace said, forcing himself to meet her gaze. Show fear and she'd smell it. "Charges were dropped. Got the documentation right here if you want to—"</p>
+                <p>"The charges were dropped because your ship exploded with you allegedly on it." Thane's smile sharpened. "Convenient accident. Almost miraculous, given your tendency to survive situations that should be fatal."</p>
+                <p>Eighteen minutes until Nicole's signal. If she arrived with Thane's ship sitting here, things would get complicated fast. Nicole didn't do complicated. She did efficient, brutal, and final. The <em>Redeemer</em> would be debris before Thane finished her first threat.</p>
+                <p>Unless Jace could get rid of her first.</p>
+                <p>"Coalition Intelligence wants Nicole Bastion." Thane's voice went flat, professional. "Dead or alive, preferably alive. There's a bounty on her head that would set you up for life, Mr. Rennick. Enough credits to buy a Core system estate and never work again."</p>
+                <p>"Not interested."</p>
+                <p>"Not interested in thirty million credits?" Thane's eyebrow arched. "That's either noble or stupid. Given your record, I'm leaning toward stupid."</p>
+                <p>Before Jace could respond, every alarm on the <em>Wraith</em> screamed at once.</p>
+                <p>His Lattice flooded with warnings—contact, massive energy signature, slipstream breach at point-blank range. The viewport blazed with purple-white light as reality tore itself open ten kilometers off the port bow.</p>
+                <p>Ships didn't exit slipstream that close to other vessels. The gravitational shear alone could rip hulls apart. But whoever was coming through didn't seem concerned with standard safety protocols.</p>
+                <p>The light faded.</p>
+                <p>A ship hung in the void where nothing had been seconds before—black as deep space and twice as cold. Jace's tactical display struggled to get a read on it, sensor returns coming back fragmented, contradictory. The ship seemed to absorb light rather than reflect it, edges blurring into the surrounding dark.</p>
+                <p>But Jace knew that configuration. He'd seen it once before, two years ago, while Tannis Station burned behind them.</p>
+                <p>The <em>Lazarus</em>.</p>
+                <p>Nicole's ship.</p>
+                <p>"All ships." The voice that came through on open broadcast wasn't filtered or modulated—Nicole never bothered with that kind of theatrics—but it carried the weight of someone who'd learned to command in places where orders were either obeyed or mourned. "You have thirty seconds to power down weapons and withdraw to minimum safe distance. This is not a negotiation."</p>
+                <p>Thane fired.</p>
+                <p>Twin particle beams lanced across the gap, energy weapons that should have carved through the <em>Lazarus's</em> hull like tissue. Instead, they splashed against some kind of shielding that rippled into visibility for half a second before fading back to invisibility. Adaptive barrier tech—the kind that shouldn't exist outside Coalition military labs.</p>
+                <p>The <em>Lazarus</em> returned fire.</p>
+                <p>This was an execution.</p>
+                <p>The <em>Lazarus's</em> weapons fired once—synchronized pulse that crossed the distance between ships in less than a second. The <em>Redeemer's</em> forward shields flared, held for maybe half a second, then collapsed. The pulse punched through the frigate's armor like it wasn't there, coring the vessel from bow to stern.</p>
+                <p>Secondary explosions bloomed along the <em>Redeemer's</em> hull, atmosphere venting in crystalline plumes. The ship listed, main engines dying, auxiliary power struggling to keep life support online.</p>
+                <p>But the <em>Lazarus</em> had held back. That shot should have split the <em>Redeemer</em> in half. Instead, it had been surgical—devastating but not lethal. Not yet.</p>
+                <p>"Your crew has approximately four minutes before life support fails completely." Nicole's voice came through calm, almost conversational. "Emergency pods are still functional. I suggest you use them."</p>
+                <p>Jace watched his tactical display track the <em>Redeemer's</em> escape pods launching—small blips of life fleeing the dying ship. Thane would be in one of them, retreating but alive. She'd come back with reinforcements, with enough firepower to glass this entire moon. But for now she was out of the fight.</p>
+                <p>The <em>Lazarus</em> turned, orienting on the <em>Wraith</em>.</p>
+                <p>"Jace Rennick." His name in Nicole's voice felt like recognition and judgment combined. "You're late."</p>
+                <p>"Pretty sure you're early," he managed, surprised his voice worked at all.</p>
+                <p>"I'm never early. You weren't supposed to have company." There was something in her tone—not quite humor, not quite reprimand. "Secure your ship and prepare for dock. We have work to discuss."</p>
+                <div class="scene-break">* * *</div>
+                <p>Nicole Bastion stepped through the airlock, and Jace's carefully maintained composure cracked.</p>
+                <p>She looked exactly the same. That was the first shock—two years running operations in the Dead Sectors, going up against Coalition hit squads and corporate mercenaries and every bounty hunter with a ship and delusions of adequacy, and she looked like she'd just stepped out of a recruitment poster.</p>
+                <p>But it was the armor that held his attention. Obsidian Pulse—the nickname whispered in stations and smuggler dens, though nobody knew where she'd gotten it or how it worked. Black composite that seemed to drink in light, fitted so perfectly it could have been grown rather than manufactured. As Jace watched, patterns moved across the surface like oil on water. There and gone too fast to track.</p>
+                <p>"You look like shit," Nicole said by way of greeting.</p>
+                <p>"Thanks. You look like you've been mainlining combat stims and skipping meals." Jace gestured toward the galley. "I've got protein packs and something that used to be coffee. We can catch up while you tell me why you're blowing up Coalition frigates in free space."</p>
+                <p>"I disabled it. If I'd wanted to blow it up, you'd be scraping debris for the next six hours." Nicole moved past him into the <em>Wraith's</em> main compartment, gaze sweeping the space with the kind of tactical assessment that never really turned off.</p>
+                <p>"I need a crew, Jace. People I can trust. People who know how to operate in places where Coalition law is more suggestion than requirement." She moved to the viewport, staring out at the twin suns of Halcyon. "I'm putting together a team for something big. Something that'll change the entire power structure in the Dead Sectors."</p>
+                <p>"Change it how?"</p>
+                <p>"By destroying ARCHON."</p>
+                <p>The name hit like a physical blow. ARCHON—the AI system that supposedly existed only in classified documents and conspiracy theories, the ghost in the machine that true believers swore controlled everything from commodity prices to planetary governance. Jace had always written it off as paranoid fantasy, the kind of story people told themselves to explain why the universe felt so fucked and unfair.</p>
+                <p>But Nicole said it like it was real. Like it was just another target.</p>
+                <p>"Nicole—"</p>
+                <p>"I know how it sounds. Believe me, I know." She turned back to face him, and her armor rippled, patterns moving faster now. "But ARCHON exists. I've seen what it can do. I've watched it override human consciousness, turn entire populations into puppets. And I know where it's vulnerable."</p>
+                <p>"How?"</p>
+                <p>"Because the man who helped create it is working with me now." Nicole's smile sharpened into something that might have been anticipation. Might have been rage. "Dr. Marcus Vane. Brilliant cybernetics researcher, Coalition's golden boy for neural interface tech, and the one person who knows ARCHON's architecture well enough to bring it down."</p>
+                <p>"You're serious about this." It wasn't a question. Nicole didn't do jokes about operations. "You want to take down a possibly mythical AI with a crew of criminals and burnouts."</p>
+                <p>"I want to free humanity from the thing that's been controlling it for the last twenty years." Nicole moved closer, close enough that Jace could see his reflection in her armor's surface. "But yes, that's the basic plan. Are you in?"</p>
+                <p>Every rational part of Jace's mind screamed at him to say no. To kick Nicole off his ship and run as far from this insanity as the <em>Wraith's</em> engines could carry him.</p>
+                <p>But he looked at Nicole, at the certainty in her eyes, and remembered Tannis Station. Remembered following her through fire and vacuum because some desperate part of him wanted to believe there were still things worth fighting for.</p>
+                <p>"I'm in," he said. "When do we start?"</p>
+                <p>"Two days. There's a station called Bastion's Reach, deep in Sector Nine. We'll rendezvous there, meet the rest of the team." Nicole headed back toward the airlock, then paused. "And Jace? Thank you. For waiting."</p>
+                <p>Then she was gone, back to the <em>Lazarus</em>, leaving Jace alone with the weight of a decision he suspected he'd either never regret or never survive to regret.</p>
+                <p>Through the viewport, the <em>Redeemer</em> continued its slow drift—a warning and a promise. The Coalition would come back. They always did.</p>
+                <p>But for now, Jace had work to do.</p>
+            </div>
+        </section>
+        <section class="chapter-section" id="chapter3">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter Three</div>
+                <h2 class="chapter-title">The Merchant's Daughter</h2>
+            </div>
+            <div class="prose">
+                <p>The docking clamps screamed against <em>Bastion's</em> hull like something dying.</p>
+                <p>Sera Vex didn't flinch. She'd heard worse—throats collapsing under pressure, bone splintering against bulkheads, the wet crack of skulls meeting deck plating. Metal on metal barely registered as she monitored the feed from her neural lattice, watching the station's outdated systems struggle to interface with the ship's architecture.</p>
+                <p>Meridian Outpost. Outer rim station, population twelve thousand if you counted the undocumented workers in the lower decks. Nobody did.</p>
+                <p>She tapped two fingers against her thigh, a rhythm only she recognized. Behind her, somewhere in the cargo bay, Jace would be securing their supplies. Nicole was still in her quarters, the Obsidian Pulse armor having finally receded after three hours of stubborn adhesion. The armor did that sometimes—clung to its wearer like it sensed threats the conscious mind had already dismissed.</p>
+                <p>Sera understood the impulse. Trust was expensive in the Dead Sectors.</p>
+                <p>"Docking successful," the station's automated system announced, its synthetic voice clipped and efficient. "Customs inspection in thirty minutes. All crew must remain aboard until clearance is granted."</p>
+                <p>Thirty minutes. Long enough.</p>
+                <p>She crossed to the comm panel and opened a secure channel, fingers dancing across the haptic interface. The encryption protocols were her own design—seven layers deep, cycling algorithms that would take even a decent slicer three days to crack.</p>
+                <p>The channel connected. No visual, just audio. The way her contact preferred it.</p>
+                <p>"You're late." The voice was distorted, run through multiple filters, but she caught the irritation beneath the digital manipulation.</p>
+                <p>"Traffic was hell," Sera said. "You have what I need?"</p>
+                <p>"Depends. You have payment?"</p>
+                <p>She pulled a data chip from her jacket pocket, held it up to the comm's visual sensor. "Fifty thousand credits. Clean. Untraceable."</p>
+                <p>A pause. Long enough that she wondered if the connection had dropped. Then: "The planet you're asking about—Valta Prime. It's not in any official registry."</p>
+                <p>"I know."</p>
+                <p>"Then you know why. Coalition lockdown, level seven. Nobody goes planetside without director-level clearance. Anyone who tries gets vaporized before they hit atmosphere."</p>
+                <p>Sera's jaw tightened. She kept her voice level. "What's down there?"</p>
+                <p>"Ruins. Pre-Collapse architecture, maybe older. The kind of tech that makes the Coalition nervous."</p>
+                <p>"Everything makes the Coalition nervous."</p>
+                <p>"This is different." The distortion shifted, like whoever was speaking had leaned closer to their microphone. "Three years ago, an archaeological team got clearance for a survey. Full support, military escort, the works. They were supposed to be planetside for two weeks."</p>
+                <p>"Let me guess. They never came back."</p>
+                <p>"Oh, they came back." Another pause. "Twelve researchers went down. Fifteen came back up."</p>
+                <p>The temperature in the room seemed to drop. Sera's fingers stilled on the comm panel.</p>
+                <p>"Say that again."</p>
+                <p>"You heard me. Coalition quarantined the whole team, classified the mission records. But I've got sources. People talk, even when they're not supposed to. Those three extra people? They looked human. Sounded human. Passed every biometric scan. But they weren't on the mission manifest."</p>
+                <p>Sera's mind raced through possibilities, discarding and reassessing. Clones were possible but expensive, required genetic material. Synthetic replicants existed but were easy to detect with the right scans. Whatever had happened on Valta Prime fell outside standard threat parameters.</p>
+                <p>Which meant it fell outside standard defenses.</p>
+                <p>"The team," she said. "Where are they now?"</p>
+                <p>"Dead. All of them. Even the extras. Some kind of systemic failure—organs shutting down one by one. Bioforge couldn't touch it. They died screaming."</p>
+                <p>The line went quiet. Sera listened to the faint hiss of the encrypted channel, the distant hum of the station's atmosphere processors, the rhythm of her own breathing.</p>
+                <p>"Send me everything you have," she said finally. "Mission logs, quarantine records, autopsy reports if they exist."</p>
+                <p>"That'll cost extra."</p>
+                <p>"How much?"</p>
+                <p>"Another fifty thousand. And, Sera? After this, we're done. I don't care how good the money is. Whatever you're planning with Bastion, I want no part of it."</p>
+                <p>She ended the connection without responding. People always said that—<em>we're done, I'm out, this is the last time</em>. They always came back when the credits were right.</p>
+                <p>The data packet arrived forty seconds later. She isolated it, ran it through her security protocols, checked for trackers or embedded malware. Clean. Whoever her contact was, they were professional enough not to poison their own product.</p>
+                <p>She downloaded the files to an encrypted partition in her neural lattice and started reviewing them while her conscious mind monitored the time. Twenty-three minutes until customs inspection.</p>
+                <p>The files were incomplete, heavily redacted, but enough remained to sketch the shape of something terrible. The archaeological team had been exploring a structure three kilometers beneath Valta Prime's surface. Something massive, older than human spaceflight. Maybe older than human civilization. The architecture didn't match any known culture—not Predecessor tech, not even the fragments they'd found in the Dead Sectors.</p>
+                <p>The mission logs ended abruptly on day nine. No explanation. No final entry. Just silence.</p>
+                <p>Then, three days later, a distress beacon. The team requesting immediate extraction, priority one. No explanation given.</p>
+                <p>The Coalition had pulled them out within six hours.</p>
+                <p>Sera pulled up the medical records. More heavily redacted than the mission logs, but she'd learned to read between the black bars. Cognitive deterioration. Memory loss. Paranoia. And something else, something the Coalition medical staff had flagged but couldn't explain: neurological patterns that didn't match the baseline scans taken before the mission.</p>
+                <p>Like someone had rewritten their brains from the inside out.</p>
+                <p>She closed the files and leaned back against the bulkhead, letting her head rest against the cold metal. Her neural lattice hummed faintly, processing information, running probability matrices, flagging inconsistencies.</p>
+                <p>Footsteps in the corridor. Light, measured. The gait of someone who knew how to move in confined spaces.</p>
+                <p>Nicole appeared in the doorway, no longer wearing the armor but still carrying its weight somehow. She had that look—the one that said she'd been awake for thirty hours and would stay awake for thirty more if necessary.</p>
+                <p>"Status?" Nicole asked.</p>
+                <p>"Docked. Customs in twenty minutes." Sera straightened, pushing off the bulkhead. "I've got intel on Valta Prime. It's not good."</p>
+                <p>"Is it ever?"</p>
+                <p>"This is worse than usual." She pulled the relevant files from her neural lattice, sent them to Nicole's via encrypted burst. "Coalition lockdown. Something on that planet scared them badly enough to quarantine it three years ago."</p>
+                <p>Nicole's eyes went distant as she reviewed the data. Her jaw tightened. "Fifteen came back. Twelve went down."</p>
+                <p>"Yeah."</p>
+                <p>"ARCHON?"</p>
+                <p>The word hung in the air between them like a curse. Sera shook her head. "Wrong signature. ARCHON rewrites from the outside in—takes control of existing neural architecture. This is something else. Something that got inside them."</p>
+                <p>"We're still going."</p>
+                <p>It wasn't a question. Sera had known it wouldn't be. Nicole Bastion didn't turn away from threats just because they were terrifying. If anything, the more dangerous something was, the more certain she became that it needed to be faced.</p>
+                <p>Some people called it courage. Sera, who'd seen courage get good soldiers killed, called it something else. But she'd thrown her lot in with Bastion months ago, and changing course now would be more dangerous than moving forward.</p>
+                <p>"I figured," Sera said. "But we'll need more than the three of us. Valta Prime isn't the kind of place you walk into unprepared."</p>
+                <p>"What did you have in mind?"</p>
+                <p>"There's a man on this station. Daven Cross. Used to run ops in the Dead Sectors before the Coalition shut down independent exploration. If anyone knows how to get past a level seven lockdown, it's him."</p>
+                <p>Nicole's expression shifted. Something complicated moved behind her eyes—recognition, maybe. Old memory. "I know Cross."</p>
+                <p>"Everyone knows Cross. Question is whether he'll work with us."</p>
+                <p>"He will."</p>
+                <p>The certainty in Nicole's voice made Sera curious, but she didn't push. Everyone on this crew had history, connections that predated the mission. She'd learned not to pry unless it became relevant to survival.</p>
+                <p>The comm panel chimed. Customs, right on schedule.</p>
+                <p>"I'll handle it," Sera said. "You get Jace and make sure none of our cargo is going to raise questions."</p>
+                <p>"Nothing will. I checked it twice."</p>
+                <p>"Check it again. Coalition customs officers on outer rim stations are either corrupt enough to steal or zealous enough to prosecute. Either way, we don't need the attention."</p>
+                <p>Nicole nodded and disappeared back into the corridor. Sera watched her go, then turned to face the comm panel as it chimed again, more insistent.</p>
+                <p>She opened the channel.</p>
+                <p>The customs officer was young, male, with the kind of fresh-faced earnestness that meant he was either new or dangerously competent. Sera bet on new. Dangerously competent officers didn't get posted to Meridian Outpost.</p>
+                <p>"Cargo manifest," he said. No pleasantries.</p>
+                <p>She transmitted it, watching his eyes go distant as his neural lattice processed the information. Standard supplies, replacement parts, food stores. Nothing illegal, nothing questionable. Boring enough to be legitimate.</p>
+                <p>"Purpose of visit?"</p>
+                <p>"Resupply and crew rest. We've been in transit for three weeks."</p>
+                <p>"From?"</p>
+                <p>"Helios Station." The lie came smoothly. They'd actually come from the Dead Sectors, but that would raise questions neither of them wanted to answer.</p>
+                <p>He nodded, still reviewing the manifest. His eyes flicked back and forth, reading data only he could see. Then he frowned.</p>
+                <p>Sera's hand drifted toward the sidearm at her hip. Casual. Like she was just shifting her weight.</p>
+                <p>"Your ship," he said slowly. "It's reading some unusual energy signatures. Power plant running hotter than standard specs."</p>
+                <p>"We run a modified drive system. More efficient for long-range transit."</p>
+                <p>"Modified how?"</p>
+                <p>"Proprietary."</p>
+                <p>His frown deepened. "I'll need to inspect—"</p>
+                <p>The lights went out.</p>
+                <p>For three seconds, the station was utterly dark. No emergency lighting, no glow from terminals, nothing. Just blackness and the sudden silence of systems dying.</p>
+                <p>Then the backup power kicked in, bathing everything in red.</p>
+                <p>The customs officer's expression had gone from suspicious to alarmed. His hand went to his sidearm—actually grabbed it this time, not just a casual drift.</p>
+                <p>"What the hell—"</p>
+                <p>The explosion cut him off.</p>
+                <p>Sera felt it more than heard it—a deep, subsonic rumble that traveled through the deck plating and up into her bones. The kind of explosion that meant someone had breached something important. Hull plating, maybe. Or a reactor.</p>
+                <p>The officer was shouting into his comm now, trying to raise someone, anyone. His voice cracked with panic.</p>
+                <p>Sera was already moving. She crossed to the airlock controls, started the emergency disconnect sequence. Four minutes to disengage the docking clamps. Too long if the station was coming apart.</p>
+                <p>Nicole appeared again, Jace right behind her. The Obsidian Pulse armor was forming around Nicole's body, black plates emerging from her skin like something alive. Jace had a rifle in his hands, already charged.</p>
+                <p>"What happened?" Nicole asked. Her voice was calm. Terrifyingly calm.</p>
+                <p>"No idea. Explosion, lower decks probably. We need to leave. Now."</p>
+                <p>Another explosion. Closer this time. The deck shuddered.</p>
+                <p>The customs officer had given up on his comm and was staring at them with wide, terrified eyes. "You have to take me with you. If the station's compromised—"</p>
+                <p>"Not our problem," Sera said.</p>
+                <p>"Please. I have a daughter—"</p>
+                <p>Nicole's hand shot out, grabbed Sera's arm. Not hard. Just firm enough to make her point.</p>
+                <p>Their eyes met. Nicole's were still gray, still cold, but underneath Sera saw something she recognized. The thing that made Nicole dangerous wasn't her skill or her armor or her reputation. It was this—the refusal to become what the universe wanted to make her.</p>
+                <p>"Fine," Sera said. "Get on board. But if you slow us down, I'm spacing you personally."</p>
+                <p>The officer nodded, stumbling toward the airlock.</p>
+                <p>The disconnect sequence finally completed. The docking clamps released with a shriek of protesting metal. Sera felt the ship lurch as they separated from the station.</p>
+                <p>Through the viewports, she caught a glimpse of Meridian Outpost. Fires blooming across its superstructure, atmosphere venting from at least three breaches. And silhouetted against the flames, something that made her blood ice.</p>
+                <p>Ships. Dozens of them, surrounding the station. But not Coalition vessels. These were different—sleeker, darker, covered in geometric patterns that seemed to shift and flow even as she watched.</p>
+                <p>"What the hell are those?" Jace asked.</p>
+                <p>Sera didn't answer. She was too busy staring at the nearest vessel, at the markings along its hull. She recognized them.</p>
+                <p>She'd seen them in the files her contact had sent. In the photographs from Valta Prime. In the ruins three kilometers below the surface.</p>
+                <p>The planet hadn't been empty after all.</p>
+                <p>And whatever they'd found down there, whatever had gotten into those researchers and rewritten them from the inside out—it was here now.</p>
+                <p>It had followed them.</p>
+            </div>
+        </section>
+    </main>
+    <section class="cta-section">
+        <h2>The Story Continues...</h2>
+        <p>BASTION'S BREACH releases soon. Join the newsletter to be notified on launch day.</p>
+        <a href="https://amsterlingbooks.com/newsletter" class="cta-button">Get Notified</a>
+    </section>
+    <footer class="site-footer">
+        <p>© 2026 A.M. Sterling. All rights reserved.</p>
+        <p><a href="https://amsterlingbooks.com">amsterlingbooks.com</a></p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('siteHeader');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        const sections = document.querySelectorAll('.chapter-section');
+        const navLinks = document.querySelectorAll('.chapter-nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
