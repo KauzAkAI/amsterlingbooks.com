@@ -265,6 +265,91 @@
             border-color: var(--color-accent);
             background: rgba(123, 104, 238, 0.1);
         }
+        .book-cover-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .book-cover-frame {
+            position: relative;
+            padding: 12px;
+            background: linear-gradient(135deg, 
+                rgba(123, 104, 238, 0.3) 0%, 
+                rgba(212, 175, 55, 0.2) 25%, 
+                rgba(123, 104, 238, 0.3) 50%, 
+                rgba(212, 175, 55, 0.2) 75%, 
+                rgba(123, 104, 238, 0.3) 100%);
+            border-radius: 4px;
+            box-shadow: 
+                0 0 30px rgba(123, 104, 238, 0.4),
+                0 0 60px rgba(123, 104, 238, 0.2),
+                inset 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .book-cover-frame::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            border-radius: 2px;
+            pointer-events: none;
+        }
+        .book-cover-frame::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid rgba(123, 104, 238, 0.6);
+            border-radius: 6px;
+            pointer-events: none;
+        }
+        .book-cover-inner {
+            position: relative;
+            background: var(--color-void);
+            padding: 8px;
+            border-radius: 2px;
+        }
+        .book-cover-inner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            max-height: 700px;
+            border-radius: 2px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+        .book-cover-corner {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-color: var(--color-gold);
+            border-style: solid;
+        }
+        .book-cover-corner.top-left {
+            top: -4px;
+            left: -4px;
+            border-width: 3px 0 0 3px;
+        }
+        .book-cover-corner.top-right {
+            top: -4px;
+            right: -4px;
+            border-width: 3px 3px 0 0;
+        }
+        .book-cover-corner.bottom-left {
+            bottom: -4px;
+            left: -4px;
+            border-width: 0 0 3px 3px;
+        }
+        .book-cover-corner.bottom-right {
+            bottom: -4px;
+            right: -4px;
+            border-width: 0 3px 3px 0;
+        }
         .content-wrapper {
             max-width: 800px;
             margin: 0 auto;
@@ -607,6 +692,19 @@
     </nav>
     <main class="content-wrapper">
         
+        <!-- Book Cover -->
+        <section class="book-cover-section" id="cover">
+            <div class="book-cover-frame">
+                <div class="book-cover-corner top-left"></div>
+                <div class="book-cover-corner top-right"></div>
+                <div class="book-cover-corner bottom-left"></div>
+                <div class="book-cover-corner bottom-right"></div>
+                <div class="book-cover-inner">
+                    <img src="book-cover.webp" alt="Bastion's Breach - Book 1 of The Dead Sectors by A.M. Sterling">
+                </div>
+            </div>
+        </section>
+
         <!-- Dedication -->
         <section class="dedication" id="dedication">
             <div class="dedication-content">
