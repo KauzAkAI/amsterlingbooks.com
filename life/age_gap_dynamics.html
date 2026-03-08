@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gravitational Dynamics of Age-Differential Coupling | Journal of Chronological Attraction Physics</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<style>
+:root {
+    --ink: #0d0d0d;
+    --ink-soft: #1a1a1a;
+    --ink-faint: #3d3d3d;
+    --paper: #faf8f5;
+    --paper-warm: #f5f2ed;
+    --paper-aged: #eae5db;
+    --accent: #6b0f0f;
+    --accent-soft: #8b1a1a;
+    --gold: #8b6914;
+    --gold-soft: #a67c00;
+    --teal: #0d4d4d;
+    --border: #c4b896;
+    --border-light: #d9ccb0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: linear-gradient(135deg, #b8ad9c 0%, #c4b9a8 50%, #b0a594 100%);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.85;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Paper texture */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.journal {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--paper);
+    box-shadow: 
+        0 2px 4px rgba(0,0,0,0.05),
+        0 8px 16px rgba(0,0,0,0.08),
+        0 24px 48px rgba(0,0,0,0.12),
+        inset 0 0 0 1px rgba(255,255,255,0.8);
+    position: relative;
+}
+
+/* Masthead */
+.masthead {
+    background: linear-gradient(135deg, var(--ink) 0%, #2a2a2a 100%);
+    color: var(--paper-aged);
+    padding: 24px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 4px solid var(--gold);
+}
+
+.masthead-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.masthead-title strong {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.25em;
+    color: var(--gold-soft);
+}
+
+.masthead-meta {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    text-align: right;
+    opacity: 0.85;
+    line-height: 1.9;
+}
+
+/* Header */
+.paper-header {
+    padding: 50px 50px 40px;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--paper) 0%, var(--paper-warm) 100%);
+    border-bottom: 2px solid var(--border);
+}
+
+.paper-type {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.paper-type::before, .paper-type::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.paper-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.paper-subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 650px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+}
+
+.field-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.field-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    background: var(--paper-aged);
+    border: 1px solid var(--border);
+    color: var(--ink-faint);
+}
+
+/* Authors */
+.authors-section {
+    padding: 28px 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.author {
+    text-align: center;
+}
+
+.author-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 2px;
+}
+
+.author-degrees {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--ink-faint);
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+}
+
+.author-affil {
+    font-size: 11px;
+    color: var(--ink);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.correspondence {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--ink-soft);
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    background: linear-gradient(to right, transparent, var(--paper-aged), transparent);
+    line-height: 1.8;
+}
+
+.doi-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--ink-faint);
+    text-align: center;
+    margin-top: 16px;
+    letter-spacing: 0.02em;
+}
+
+/* Body */
+.paper-body {
+    padding: 40px 50px 50px;
+}
+
+/* Abstract */
+.abstract {
+    background: var(--paper-aged);
+    border-left: 4px solid var(--accent);
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.abstract::before {
+    content: 'ABSTRACT';
+    position: absolute;
+    top: -10px;
+    left: 28px;
+    background: var(--accent);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    padding: 4px 12px;
+}
+
+.abstract p {
+    font-size: 15px;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--ink);
+}
+
+.keywords {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--ink);
+}
+
+.keywords strong {
+    color: var(--accent);
+}
+
+/* Sections */
+.section {
+    margin-bottom: 36px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.sec-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.subsection-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin: 24px 0 12px;
+}
+
+p {
+    margin-bottom: 16px;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--ink);
+    font-size: 16px;
+}
+
+/* Equations */
+.equation-block {
+    background: linear-gradient(to right, var(--paper-warm), var(--paper-aged), var(--paper-warm));
+    padding: 20px 24px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid var(--border-light);
+}
+
+.equation-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-faint);
+    margin-top: 8px;
+}
+
+/* Key terms */
+.term {
+    font-style: italic;
+    color: var(--teal);
+}
+
+.var {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+    color: var(--accent);
+}
+
+/* Findings box */
+.finding {
+    background: linear-gradient(135deg, #f5f0e5 0%, #ebe5d8 100%);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    margin: 24px 0;
+}
+
+.finding-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+/* Data table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 13px;
+}
+
+thead {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+thead th {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--ink);
+    font-size: 14px;
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--paper-warm);
+}
+
+tbody tr:hover {
+    background: var(--paper-aged);
+}
+
+.table-caption {
+    font-size: 11px;
+    font-style: italic;
+    color: var(--ink-faint);
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Celebrity examples */
+.celeb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.celeb-card {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    padding: 16px;
+    text-align: center;
+}
+
+.celeb-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+
+.celeb-gap {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.celeb-note {
+    font-size: 10px;
+    color: var(--ink-faint);
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/* Footnote */
+.footnote {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+    padding: 12px 16px;
+    background: var(--paper-warm);
+    border-left: 3px solid var(--border);
+    margin: 20px 0;
+}
+
+/* Lab note */
+.lab-note {
+    background: #fffef5;
+    border: 1px dashed var(--gold);
+    padding: 16px 20px;
+    margin: 20px 0;
+}
+
+.lab-note-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+/* Pull quote */
+.pull-quote {
+    border-top: 3px double var(--ink);
+    border-bottom: 3px double var(--ink);
+    padding: 24px 32px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.pull-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.pull-quote cite {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-style: normal;
+}
+
+/* Rule */
+.rule {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 36px 0;
+}
+
+.rule-ornament {
+    text-align: center;
+    color: var(--border);
+    font-size: 16px;
+    letter-spacing: 1em;
+    margin: 32px 0;
+}
+
+/* Back matter sections */
+.back-matter {
+    background: var(--paper-aged);
+    padding: 24px 28px;
+    margin: 24px 0;
+    border: 1px solid var(--border);
+}
+
+.back-matter h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.back-matter ul {
+    margin-left: 20px;
+}
+
+.back-matter li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: var(--ink);
+}
+
+.back-matter p {
+    font-size: 15px;
+    text-align: left;
+    color: var(--ink);
+}
+
+.conflicts {
+    border-left: 4px solid var(--gold);
+    background: linear-gradient(to right, #faf8f0, var(--paper-aged));
+}
+
+/* References */
+.references ol {
+    padding-left: 24px;
+}
+
+.references li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: var(--ink);
+}
+
+/* Related pubs */
+.related-pubs {
+    background: var(--paper);
+    padding: 28px;
+    border-top: 2px solid var(--ink);
+}
+
+.related-pubs h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.related-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.related-links a {
+    color: var(--ink);
+    text-decoration: none;
+    padding: 14px 18px;
+    background: var(--paper-aged);
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+    display: block;
+}
+
+.related-links a:hover {
+    background: var(--paper-warm);
+    border-color: var(--gold);
+}
+
+.related-links strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.related-links span {
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+}
+
+/* Footer */
+.paper-footer {
+    background: var(--ink);
+    color: var(--paper-aged);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 11px;
+}
+
+.footer-dates {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .masthead, .paper-header, .paper-body { padding-left: 24px; padding-right: 24px; }
+    .paper-title { font-size: 26px; }
+    .authors-grid { grid-template-columns: 1fr; }
+    .celeb-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<article class="journal">
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="masthead-title">
+        <strong>Journal of Chronological Attraction Physics</strong>
+        A Publication of the Institute for Age-Differential Romance Studies
+    </div>
+    <div class="masthead-meta">
+        Vol. 14, Issue 2 · Spring 2026<br>
+        ISSN: 1967-WINE (Provisional)<br>
+        DOI: 10.2026/jcap.gravity.vintage
+    </div>
+</header>
+
+<!-- Paper Header -->
+<div class="paper-header">
+    <div class="paper-type">Original Research Article</div>
+    
+    <h1 class="paper-title">The Gravitational Dynamics of Age-Differential Coupling</h1>
+    <p class="paper-subtitle">A Multi-Decadal Analysis of Why Younger Women Keep Ending Up at Dinner with Men Who Remember Where They Were When the Moon Landing Happened</p>
+    
+    <div class="field-tags">
+        <span class="field-tag">Chronological Magnetism</span>
+        <span class="field-tag">Vintage Attraction Theory</span>
+        <span class="field-tag">Experiential Mass Dynamics</span>
+        <span class="field-tag">Applied Wine Physics</span>
+    </div>
+    
+    <div class="authors-section">
+        <div class="authors-grid">
+            <div class="author">
+                <div class="author-name">Adrian Maximus Sterling</div>
+                <div class="author-degrees">Ph.D., D.Sc., M.V.A. (Master of Vintage Attraction), C.D.D. (Certified Distinguished Dater)</div>
+                <div class="author-affil">Endowed Chair of Experiential Mass Studies<br>The Brindlemoore Institute for Second-Half Romance</div>
+            </div>
+            <div class="author">
+                <div class="author-name">Dr. Sophia Vance-Younger</div>
+                <div class="author-degrees">Ph.D., F.A.G.R. (Fellow, Academy of Gap Research), L.M.D. (Licensed Maturity Differentialist)</div>
+                <div class="author-affil">Director, The Center for "He's Actually Quite Interesting"<br>University of Refined Taste</div>
+            </div>
+            <div class="author">
+                <div class="author-name">Prof. Giacomo Decadi-Bello</div>
+                <div class="author-degrees">D.Phil., C.W.S. (Certified Wine Selector), M.R.S. (Master of Restaurant Selection)</div>
+                <div class="author-affil">Senior Fellow, The European Institute for Dinner Conversation Quality<br>Milano / Geneva</div>
+            </div>
+            <div class="author">
+                <div class="author-name">Dr. Helena Chronos-Wright</div>
+                <div class="author-degrees">M.D., Ph.D., L.L.B. (Licensed Longevity Beneficiary), D.T.D. (Doctor of Temporal Dynamics)</div>
+                <div class="author-affil">Chief Researcher, Project "Still Got It"<br>The Flemington Institute for Domestic Thermodynamics</div>
+            </div>
+        </div>
+        
+        <div class="correspondence">
+            <strong>Correspondence:</strong> Dr. Sterling can be reached at any upscale restaurant between 7 and 9 PM; he will be the one the sommelier already knows by name. Dr. Vance-Younger accepts correspondence only from individuals who can correctly identify three jazz standards without Shazam. Prof. Decadi-Bello prefers contact via handwritten note on quality stationery. Dr. Chronos-Wright is available after 10 AM, having spent the previous evening confirming several hypotheses with her research partner (14 years her senior).
+        </div>
+        
+        <div class="doi-line">DOI: 10.2026/jcap.gap.approved | ORCID: 0000-AGED-FINE-WINE | arXiv: physics.romance/2603.14years</div>
+    </div>
+</div>
+
+<!-- Body -->
+<div class="paper-body">
+
+    <!-- Abstract -->
+    <div class="abstract">
+        <p>This paper presents a comprehensive gravitational model explaining the persistent and cross-cultural phenomenon of age-differential romantic coupling, wherein individuals of significantly different chronological coordinates form stable, high-satisfaction pair bonds. Drawing on data from 35,996 couples across 29 countries (Gottfried et al., 2024), longitudinal mortality studies from Denmark (Drefahl, 2010), and extensive field observations conducted at upscale restaurants, jazz clubs, and "the good seats" at various cultural events, we propose that age differential attraction follows predictable physical laws governed by <em>Experiential Mass</em>, <em>Gravitational Stability Coefficients</em>, and the newly theorized <em>Wine Selection Competence Factor</em>. Our findings indicate that men aged 67 dating women aged 53 occupy a mathematically optimal position in the Chronological Attraction Matrix — close enough for shared cultural references, yet differentiated enough for complementary expertise distribution. We further demonstrate that the phenomenon of women in their 20s, 30s, 40s, and 50s "gravitating toward" older male partners is not anomalous but rather represents fundamental physics operating as designed.</p>
+        
+        <p class="keywords"><strong>Keywords:</strong> age-gap dynamics; gravitational attraction theory; experiential mass; vintage partnership optimization; why your mother was right about that nice older gentleman; distinguished gentleman physics; temporal complementarity</p>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 1</span> Introduction: The Universal Constant of Δt</h2>
+        
+        <p>Across cultures, continents, and centuries, a remarkably consistent phenomenon persists: younger women forming romantic partnerships with older men. While sociological hand-wringing has attempted to pathologize this pattern, physics offers a simpler explanation: <span class="term">mass attracts</span>.</p>
+        
+        <p>Not physical mass — though the authors note that a well-fitted suit at age 67 carries a certain gravitas — but <span class="term">Experiential Mass</span> (M<sub>exp</sub>), defined as the accumulated weight of life experience, refined taste, emotional stability, and the knowledge of which fork to use and when.</p>
+        
+        <p>According to Gottfried et al. (2024), analyzing 35,996 couples across 28 European countries and Israel, men's preferred partner age gap increases systematically with age. At 25, the average man partners with a woman 3 years younger. By 70, the preferred gap has expanded to 12 years. This is not cultural drift. This is physics.</p>
+        
+        <div class="equation-block">
+            $$ \Delta t_{preferred} = 3 + \frac{(Age_{male} - 25)}{5} $$
+            <div class="equation-label">Eq. 1: The Gottfried Gap Expansion Formula</div>
+        </div>
+        
+        <p>For a 67-year-old male, this yields a predicted optimal partner age of approximately 53.6 years — a finding that the lead author can confirm with considerable empirical satisfaction.</p>
+        
+        <div class="finding">
+            <div class="finding-title">Key Finding</div>
+            <p>The 14-year age differential (67M/53F) occupies a <strong>Goldilocks Zone</strong> in chronological attraction physics: sufficiently differentiated for complementary strengths, yet close enough that both parties remember rotary phones, the Cold War, and why "I'll Be There for You" was culturally significant.</p>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 2 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 2</span> Theoretical Framework: The Gravitational Model</h2>
+        
+        <h3 class="subsection-title">2.1 Experiential Mass and Orbital Capture</h3>
+        
+        <p>In Newtonian mechanics, objects with greater mass exert greater gravitational pull. In romantic physics, the equivalent principle holds: individuals with greater <span class="term">Experiential Mass</span> generate stronger attractive fields.</p>
+        
+        <p>Experiential Mass is computed as follows:</p>
+        
+        <div class="equation-block">
+            $$ M_{exp} = \sum_{i=1}^{n} (Experience_i \times Wisdom_{coefficient}) + \sqrt{Stories_{interesting}} + \int_0^{Age} Stability(t) \, dt $$
+            <div class="equation-label">Eq. 2: Experiential Mass Calculation</div>
+        </div>
+        
+        <p>Where:</p>
+        <ul style="margin-left: 24px; margin-bottom: 16px;">
+            <li><strong>Experience<sub>i</sub></strong> = Quantified life experiences (travel, career milestones, historical events witnessed firsthand)</li>
+            <li><strong>Wisdom<sub>coefficient</sub></strong> = Lessons actually learned, as opposed to lessons merely survived</li>
+            <li><strong>Stories<sub>interesting</sub></strong> = Anecdotes that hold attention at dinner parties (minimum threshold: 3)</li>
+            <li><strong>Stability(t)</strong> = Emotional and financial stability as a function of time</li>
+        </ul>
+        
+        <p>By age 67, assuming a reasonably well-lived life, Experiential Mass reaches values that create observable gravitational effects at distances up to 14 years.</p>
+        
+        <h3 class="subsection-title">2.2 The Stability Constant (κ)</h3>
+        
+        <p>Research from the Danish population registers (Drefahl, 2010) found that men with younger spouses exhibit reduced mortality risk — up to 4% reduction for men with wives 15 years younger. The authors attribute this to the <span class="term">Stability Constant</span> (κ): the energizing effect of remaining interesting to someone who has options.</p>
+        
+        <div class="lab-note">
+            <div class="lab-note-title">Laboratory Note</div>
+            <p>Dr. Sterling reports that since beginning his current research partnership (14-year differential), his gym attendance has increased by 340%, his familiarity with contemporary music has improved "somewhat," and he has learned that "slaps" is a compliment. The Stability Constant appears to operate as theorized.</p>
+        </div>
+        
+        <h3 class="subsection-title">2.3 Why This Keeps Happening: A Physics Explanation</h3>
+        
+        <p>Critics of age-differential coupling often ask: "Why would she be interested in someone his age?" This question reveals a fundamental misunderstanding of the physics involved.</p>
+        
+        <p>Consider:</p>
+        <ul style="margin-left: 24px; margin-bottom: 16px;">
+            <li>A 30-year-old man knows, on average, 3 good restaurants.</li>
+            <li>A 50-year-old man knows 12, plus which nights to avoid.</li>
+            <li>A 67-year-old man knows 47, has favorites at 6, and understands that the corner booth is worth the wait.</li>
+        </ul>
+        
+        <p>This is not superficial. This is <span class="term">Accumulated Navigation Intelligence</span> (ANI), and it is directly convertible to quality of shared experience.</p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 3 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 3</span> Empirical Evidence: The Celebrity Confirmation Dataset</h2>
+        
+        <p>To validate our theoretical framework, we compiled observational data from high-visibility age-differential pairings. The results confirm that substantial gaps are not merely tolerated but actively preferred by individuals with significant options.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Coupling</th>
+                    <th>Gap (years)</th>
+                    <th>Status</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Michael Douglas & Catherine Zeta-Jones</td>
+                    <td>25</td>
+                    <td>Married</td>
+                    <td>25+ years</td>
+                </tr>
+                <tr>
+                    <td>Harrison Ford & Calista Flockhart</td>
+                    <td>22</td>
+                    <td>Married</td>
+                    <td>22+ years</td>
+                </tr>
+                <tr>
+                    <td>George & Amal Clooney</td>
+                    <td>17</td>
+                    <td>Married</td>
+                    <td>10+ years</td>
+                </tr>
+                <tr>
+                    <td>Rod Stewart & Penny Lancaster</td>
+                    <td>26</td>
+                    <td>Married</td>
+                    <td>18+ years</td>
+                </tr>
+                <tr>
+                    <td>Alec & Hilaria Baldwin</td>
+                    <td>26</td>
+                    <td>Married</td>
+                    <td>12+ years</td>
+                </tr>
+                <tr>
+                    <td>Jason Statham & Rosie Huntington-Whiteley</td>
+                    <td>20</td>
+                    <td>Engaged</td>
+                    <td>14+ years</td>
+                </tr>
+                <tr>
+                    <td>Joan Collins & Percy Gibson</td>
+                    <td>32</td>
+                    <td>Married</td>
+                    <td>22+ years</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="table-caption">Table 1. Selected High-Profile Age-Differential Couplings. Note: Joan Collins, 32 years older than her husband, included to demonstrate that the physics work in both directions when sufficient Experiential Mass is present.</p>
+        
+        <div class="finding">
+            <div class="finding-title">Statistical Note</div>
+            <p>The average gap in our celebrity dataset is 24 years. The Sterling-Partner differential of 14 years is therefore <strong>conservative by Hollywood standards</strong> and should be considered, if anything, restrained.</p>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 4 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 4</span> The Distribution of Women Across Decades</h2>
+        
+        <p>Field observations confirm that age-differential coupling is not limited to any single demographic. Women in their 20s, 30s, 40s, and 50s are all observed in stable pairings with significantly older men. The phenomenon requires a decade-by-decade analysis.</p>
+        
+        <h3 class="subsection-title">4.1 The Twenties: Maximum Energy, Minimum Restaurant Knowledge</h3>
+        
+        <p>Women in their 20s who partner with older men frequently cite "interesting conversations" and "he actually listens" as primary attraction factors (Banbury et al., 2025). From a physics perspective, the 25-year-old possesses high kinetic energy but low Accumulated Navigation Intelligence. The older partner provides gravitational stability; she provides enthusiasm and the ability to identify which brunch places have acceptable wait times.</p>
+        
+        <div class="footnote">
+            <sup>†</sup> A 27-year-old subject in the Banbury study reported: "Guys my age want to 'hang out.' He takes me to places where they know his name and there's a wine list." This is Experiential Mass expressing itself through restaurant selection.
+        </div>
+        
+        <h3 class="subsection-title">4.2 The Thirties: Peak Selectivity, Declining Tolerance for Nonsense</h3>
+        
+        <p>By age 30-39, women have developed sufficient pattern recognition to identify low-value interactions. The appeal of an older partner shifts from novelty ("he's interesting") to efficiency ("he doesn't play games").</p>
+        
+        <p>Psychologically, this maps to findings that age-gap relationships show higher satisfaction scores for the older partner, but crucially, the younger partner reports higher perceived stability (Banbury et al., 2025). She is not settling. She is optimizing.</p>
+        
+        <h3 class="subsection-title">4.3 The Forties: Strategic Complementarity</h3>
+        
+        <p>Women in their 40s partnering with men in their 50s-60s report the highest "felt understanding" scores in our dataset. Both partners have survived enough to have stories. Both have learned enough to know which stories not to tell on the first date. The relationship becomes a collaboration of two people who have already figured out who they are.</p>
+        
+        <h3 class="subsection-title">4.4 The Fifties: The Goldilocks Position</h3>
+        
+        <p>A 53-year-old woman with a 67-year-old partner — the exact configuration under study — occupies what we term the <span class="term">Chronological Sweet Spot</span>:</p>
+        
+        <ul style="margin-left: 24px; margin-bottom: 16px;">
+            <li>Close enough in cultural reference to share music, film, and "remember when" conversations</li>
+            <li>Differentiated enough that he's seen things she hasn't, and vice versa</li>
+            <li>Both old enough to know that the small stuff is, in fact, small</li>
+            <li>Neither so old that the conversation consists primarily of medical updates</li>
+        </ul>
+        
+        <div class="equation-block">
+            $$ Compatibility_{chrono} = \frac{(Shared\_References)^2}{|Drama_{remaining}|} \times \sqrt{Both\_Know\_What\_They\_Want} $$
+            <div class="equation-label">Eq. 3: The Chronological Compatibility Index</div>
+        </div>
+        
+        <p>For the 67/53 pairing, this index reaches near-optimal values.</p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 5 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 5</span> The Wine Selection Competence Factor</h2>
+        
+        <p>A variable underrepresented in prior literature is the <span class="term">Wine Selection Competence Factor</span> (WSCF), defined as the ability to select an appropriate bottle for the occasion without either (a) deferring excessively to the sommelier, or (b) ordering based solely on price.</p>
+        
+        <div class="equation-block">
+            $$ WSCF = \frac{Bottles_{remembered} \times Regions_{navigated}}{Pretentiousness + 1} $$
+            <div class="equation-label">Eq. 4: Wine Selection Competence Factor</div>
+        </div>
+        
+        <p>The denominator includes "+1" to prevent division by zero in cases of genuine expertise without accompanying arrogance. Studies show that WSCF correlates positively with age up to approximately 70, after which it plateaus or, in some cases, tips into excessive enthusiasm for "telling you about this little vineyard I found in the Rhône."</p>
+        
+        <p>At 67, WSCF is typically optimized: high competence, manageable enthusiasm.</p>
+        
+        <div class="lab-note">
+            <div class="lab-note-title">Field Observation</div>
+            <p>Dr. Sterling's partner (53F) reports that his wine selection has been "correct" on 94.7% of observed occasions, with the 5.3% error rate attributable to "that time he insisted on the orange wine, which was a choice."</p>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 6 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 6</span> Mortality Benefits and the "Keeping Up" Hypothesis</h2>
+        
+        <p>The Danish longitudinal data (Drefahl, 2010) deserve extended analysis. Men married to women 15+ years younger show measurably reduced mortality risk. Several mechanisms have been proposed:</p>
+        
+        <p><strong>1. The Caregiving Hypothesis:</strong> Younger partners provide better late-life care. This is plausible but insufficient.</p>
+        
+        <p><strong>2. The Selection Hypothesis:</strong> Healthier men attract younger partners. Also plausible, also insufficient.</p>
+        
+        <p><strong>3. The "Still Got It" Hypothesis (proposed herein):</strong> The presence of a younger partner creates ongoing motivation to remain vital, interesting, and capable of leaving the house in something other than sweatpants. This hypothesis has the advantage of explaining not just survival but <em>thriving</em>.</p>
+        
+        <div class="finding">
+            <div class="finding-title">The Motivation Gradient</div>
+            <p>A 67-year-old man with no romantic partner may feel limited motivation to update his wardrobe, try new restaurants, or learn what "that song from TikTok" is. A 67-year-old man whose 53-year-old partner just suggested they try the new Ethiopian place downtown has <strong>extremely high motivation</strong> to remain curious, presentable, and awake past 9 PM.</p>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 7 -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 7</span> Addressing Common Objections</h2>
+        
+        <h3 class="subsection-title">7.1 "It's About Money/Power"</h3>
+        
+        <p>This objection assumes that younger women are incapable of independent financial function and thus require sponsorship. The data do not support this. Banbury et al. (2025) found that perceived financial stability <em>correlates</em> with partner age but does not <em>cause</em> the attraction. The correlation appears to reflect the same underlying variable: the Experiential Mass that produces both financial competence and romantic appeal.</p>
+        
+        <p>Put differently: the same qualities that make someone good at building a career over 40 years — patience, judgment, long-term thinking, ability to navigate complexity — also make them good at building a relationship. Correlation is not causation; it's shared etiology.</p>
+        
+        <h3 class="subsection-title">7.2 "What Do They Even Talk About?"</h3>
+        
+        <p>This objection reveals the questioner's impoverished model of conversation. People in age-differential relationships report discussing: art, travel, family, work, philosophy, that thing that happened at the restaurant last week, the show they're watching, the book one of them just finished, the friend who's going through a thing, the plan for Saturday, and whether the Cabernet was actually better than the Merlot.</p>
+        
+        <p>In other words: everything that everyone discusses, except with more accumulated context and fewer conversations consisting primarily of "I dunno, what do you want to do?"</p>
+        
+        <h3 class="subsection-title">7.3 "Society Disapproves"</h3>
+        
+        <p>Society also disapproved of women voting, interracial marriage, and putting avocado on toast. Society is frequently wrong. The relevant question is not "Does society approve?" but "Does the relationship function?" The data suggest that age-differential relationships function at least as well as, and by some measures better than, age-matched controls.</p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Section 8: Conclusions -->
+    <section class="section">
+        <h2 class="section-title"><span class="sec-num">§ 8</span> Conclusions</h2>
+        
+        <p>We began this paper with a question implied by a persistent phenomenon: Why do women of various ages keep forming partnerships with older men? The physics are now clear.</p>
+        
+        <p>Experiential Mass generates gravitational pull. Gravitational pull creates orbital capture. Orbital capture, when the masses are appropriately matched and the dinner conversation flows well, produces stable, high-satisfaction pairings that persist across decades.</p>
+        
+        <p>The specific case of the 67M/53F pairing occupies a privileged position in this framework: old enough for depth, young enough for adventure, close enough for connection, differentiated enough for complementarity. The 14-year gap is not a problem to be solved. It is a feature of the system operating as designed.</p>
+        
+        <p>Future research should investigate the upper bounds of age-differential stability, the role of shared Netflix queues in maintaining synchronization, and whether the "Still Got It" Hypothesis can be extended to explain why men in their 70s suddenly take up golf with renewed vigor.</p>
+        
+        <div class="pull-quote">
+            <blockquote>"The gravitational constant in romantic physics is not age.<br>It is the accumulated weight of having become someone worth knowing."</blockquote>
+            <cite>— Dr. A.M. Sterling, from the keynote address,<br><em>Third Annual Symposium on Chronological Attraction Dynamics</em>, Monaco</cite>
+        </div>
+    </section>
+
+    <div class="rule-ornament">✦ · ✦ · ✦</div>
+
+    <!-- References -->
+    <section class="section references">
+        <h2 class="section-title"><span class="sec-num">§</span> References</h2>
+        <ol>
+            <li>Gottfried, J., Ševčíková, A., Blinka, L., & Lambert South, A. (2024). Couples age discrepancies in a large-scale European sample: Evolutionary and sociocultural perspectives. <em>Personal Relationships, 31</em>(4), 987–1000.</li>
+            <li>Drefahl, S. (2010). How does the age gap between partners affect their survival? <em>Demography, 47</em>(2), 313–326.</li>
+            <li>Banbury, S., Pacan, B., Kostadinova, D., et al. (2025). The relationship between age-gap relationships/dating, sexual function, relationship satisfaction, sexual self-efficacy and well-being. <em>Sexual and Relationship Therapy</em>, 1–16.</li>
+            <li>Sterling, A.M. (2024). <em>Experiential Mass and the Gravitational Model of Romance</em>. Unpublished manuscript. The Brindlemoore Institute. (He'll get around to publishing it eventually.)</li>
+            <li>Anonymous sommelier at That Restaurant in Milan. (2019). Personal communication. "The usual, Dr. Sterling?"</li>
+            <li>The entirety of Hollywood, observed continuously since approximately 1920. (Too numerous to cite individually, but they know what they did.)</li>
+        </ol>
+    </section>
+
+    <!-- Acknowledgments -->
+    <div class="back-matter">
+        <h3>Acknowledgments</h3>
+        <p>The authors wish to thank:</p>
+        <ul>
+            <li><strong>The Partner (53F):</strong> For providing primary field data, ongoing peer review, and the observation that "you should probably stand up straighter." Noted.</li>
+            <li><strong>The Corner Booth at Alessandro's:</strong> For hosting countless research sessions without complaint. The pappardelle remains excellent.</li>
+            <li><strong>Michael Douglas:</strong> For providing 25 years of proof that this works and for not being weird about it.</li>
+            <li><strong>Every Sommelier Who Remembers Our Order:</strong> You are doing the Lord's work.</li>
+            <li><strong>The 27-Year-Old Who Said "He Actually Listens":</strong> Your contribution to qualitative research was invaluable. We were, in fact, listening.</li>
+            <li><strong>Time:</strong> For being kind enough to add wisdom as it took the hairline. A fair trade, all things considered.</li>
+        </ul>
+    </div>
+
+    <!-- Funding -->
+    <div class="back-matter">
+        <h3>Funding Disclosure</h3>
+        <p>This research was supported by:</p>
+        <ul>
+            <li>The <strong>National Endowment for Dating Up</strong> (Grant No. STILL-GOT-IT-2026)</li>
+            <li>The <strong>European Research Council for Distinguished Romance</strong> (ERC-DGR-VINTAGE)</li>
+            <li>A <strong>significant wine budget</strong> that the authors maintain was "strictly necessary for research purposes"</li>
+            <li><strong>Several nice dinners</strong> that doubled as field observation (receipts available upon request)</li>
+            <li>The <strong>Academy of Knowing What You Want By Now</strong> (Lifetime Achievement Grant)</li>
+        </ul>
+    </div>
+
+    <!-- Conflicts -->
+    <div class="back-matter conflicts">
+        <h3>Conflict of Interest Statement</h3>
+        <p>Dr. Sterling discloses that he is, himself, a 67-year-old man in a relationship with a 53-year-old woman and therefore has a vested interest in concluding that this configuration is "scientifically optimal." He maintains that the data support this conclusion independent of personal investment, but acknowledges that he would say that.</p>
+        <p style="margin-top: 12px;">Dr. Vance-Younger is 41 and dating a 58-year-old, which she describes as "research." Prof. Decadi-Bello has been married to the same woman (3 years younger) for 34 years and is included primarily for his wine expertise. Dr. Chronos-Wright declined to disclose her research partner's exact age but confirmed it is "more than ten years" and that she is "extremely satisfied with the data."</p>
+    </div>
+
+    <!-- Author Contributions -->
+    <div class="back-matter">
+        <h3>Author Contributions</h3>
+        <p><strong>A.M. Sterling:</strong> Conceptualization, Primary Field Research (ongoing), Being 67, Wine Selection, Writing – "This Paper Basically Wrote Itself" Draft, Standing Up Straighter.</p>
+        <p><strong>S. Vance-Younger:</strong> Literature Review, Statistical Analysis, Coining the Term "Chronological Sweet Spot," Eye-Rolling at Sterling's Jokes (affectionate).</p>
+        <p><strong>G. Decadi-Bello:</strong> Wine Selection Competence Factor Development, Italian Data, Restaurant Recommendations, Being European About All of This.</p>
+        <p><strong>H. Chronos-Wright:</strong> Mortality Data Analysis, "Still Got It" Hypothesis Formulation, Independent Verification of Hypothesis with Research Partner, The Sighing (when Sterling makes another wine joke).</p>
+    </div>
+
+    <!-- Data Availability -->
+    <div class="back-matter">
+        <h3>Data Availability Statement</h3>
+        <p>The Gottfried and Drefahl datasets are publicly available. Dr. Sterling's personal relationship data are available upon request but will be summarized as "going well, thanks for asking." Restaurant receipts are archived but will not be shared with the IRS. The specific vintages selected during research dinners are documented in the authors' memories and, in several cases, their cellars.</p>
+    </div>
+
+</div>
+
+<!-- Related Publications -->
+<div class="related-pubs">
+    <h3>More Publications by Adrian Maximus Sterling</h3>
+    <div class="related-links">
+        <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html">
+            <strong>The Physics of Intimate Relationships</strong>
+            <span>A Peer-Reviewed, Heavily Metaphorical Analysis — Journal of Theoretical Romance</span>
+        </a>
+        <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html">
+            <strong>The Relativistic Re-Ignition of System A and System B</strong>
+            <span>A Longitudinal Study on Orbital Decay, Dormancy, and Thermal Re-entry — Journal of Applied Romantic Physics</span>
+        </a>
+        <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html">
+            <strong>The Wall-Builder's Paradox</strong>
+            <span>A Unified Theory of Emotional Fortification — Journal of Interpersonal Thermodynamics</span>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="paper-footer">
+    <span>© 2026 Journal of Chronological Attraction Physics</span>
+    <span>Impact Factor: 14 Years (and Counting)</span>
+    <span>Peer-Reviewed by Partners Who Confirm It's Working</span>
+    <div class="footer-dates">
+        Received: When He Finally Got His Act Together | Revised: After She Read the First Draft | Accepted: "I Suppose This Is Fine" | Published: With Her Blessing
+    </div>
+</footer>
+
+</article>
+</body>
+</html>
