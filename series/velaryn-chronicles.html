@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velaryn Chronicles | A.M. Sterling Books</title>
+    <meta name="description" content="The Velaryn Chronicles - A military sci-fi trilogy following two sisters who inherit twin thrones and must navigate war, conspiracy, and the forging of an empire across forty years.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Velaryn Chronicles Series Styles -->
+    <style>
+        :root {
+            --velaryn-gold: #d4af37;
+            --velaryn-gold-light: #f0d78c;
+            --velaryn-navy-dark: #020617;
+            --velaryn-navy: #0f172a;
+            --velaryn-navy-light: #1e293b;
+            --velaryn-blue-deep: #1e3a8a;
+        }
+
+        /* Override body for series page */
+        body {
+            background: linear-gradient(180deg, #000000 0%, #020617 20%, #0f172a 50%, #020617 80%, #000000 100%);
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .series-hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, #000000 0%, #020617 30%, #0f172a 50%, #020617 70%, #000000 100%);
+        }
+
+        .series-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 25%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.15) 0%, transparent 70%);
+            filter: blur(60px);
+            animation: pulse 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .series-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 25%;
+            right: 25%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            filter: blur(60px);
+            animation: pulse 12s ease-in-out infinite;
+            animation-delay: 2s;
+            pointer-events: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* Crown Icon */
+        .crown-icon {
+            width: 100px;
+            height: 75px;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .crown-icon::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -30px;
+            right: -30px;
+            bottom: -20px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+            pointer-events: none;
+        }
+
+        .crown-icon svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
+        }
+
+        .series-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .series-title .gold {
+            background: linear-gradient(135deg, var(--velaryn-gold-light) 0%, var(--velaryn-gold) 50%, #c9a227 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .series-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .series-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-style: italic;
+            color: #94a3b8;
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Queens Display */
+        .queens-display {
+            display: flex;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .queen-card {
+            text-align: center;
+        }
+
+        .queen-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            box-shadow: 
+                0 0 25px rgba(59, 130, 246, 0.4),
+                0 0 50px rgba(59, 130, 246, 0.2),
+                inset 0 0 15px rgba(59, 130, 246, 0.15);
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: #93c5fd;
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+        }
+
+        .queen-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            color: var(--velaryn-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .queen-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+
+        /* Scroll indicator */
+        .scroll-down {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-down svg {
+            width: 24px;
+            height: 24px;
+            color: #475569;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Premise Section */
+        .premise-section {
+            padding: 6rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .premise-content {
+            border-left: 2px solid rgba(212, 175, 55, 0.5);
+            padding-left: 2rem;
+        }
+
+        .premise-content p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+
+        .premise-content p:last-child {
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        .premise-content .highlight {
+            color: var(--velaryn-gold);
+        }
+
+        /* Divider - crystalline angular design */
+        .section-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .divider-line {
+            height: 1px;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
+        }
+
+        .divider-icon {
+            margin: 0 1.5rem;
+            color: rgba(212, 175, 55, 0.7);
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+        }
+
+        /* Books Section */
+        .books-section {
+            padding: 4rem 2rem 6rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .books-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .books-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            color: #e2e8f0;
+            margin-bottom: 0.5rem;
+        }
+
+        .books-header p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #64748b;
+        }
+
+        /* Book Cards - crystalline angular design */
+        .books-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.7) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 2.5rem;
+            position: relative;
+            transition: all 0.4s ease;
+            clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px));
+        }
+
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, transparent 50%, rgba(212, 175, 55, 0.3) 50%);
+            pointer-events: none;
+        }
+
+        .book-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(-45deg, transparent 50%, rgba(212, 175, 55, 0.3) 50%);
+            pointer-events: none;
+        }
+
+        .book-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.15), 0 0 80px rgba(59, 130, 246, 0.05);
+        }
+
+        .book-number {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            font-family: 'Cinzel', serif;
+            font-size: 5rem;
+            font-weight: 300;
+            color: rgba(71, 85, 105, 0.2);
+            line-height: 1;
+        }
+
+        .book-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: rgba(212, 175, 55, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            color: #e2e8f0;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.125rem;
+            font-style: italic;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-years {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        .book-description {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .book-arc {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .arc-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #475569;
+        }
+
+        .arc-value {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            color: #93c5fd;
+            text-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+        }
+
+        /* World Section */
+        .world-section {
+            padding: 4rem 2rem 6rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.5) 30%, rgba(15, 23, 42, 0.5) 70%, transparent 100%);
+        }
+
+        .world-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .world-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .world-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            color: #e2e8f0;
+        }
+
+        .factions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .faction-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+            position: relative;
+        }
+
+        .faction-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, transparent 50%, rgba(212, 175, 55, 0.25) 50%);
+            pointer-events: none;
+        }
+
+        .faction-card:hover {
+            border-color: rgba(212, 175, 55, 0.35);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .faction-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.125rem;
+            color: var(--velaryn-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .faction-stats {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            color: #64748b;
+            margin-bottom: 0.75rem;
+        }
+
+        .faction-desc {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        /* Author Section */
+        .author-section-series {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .author-section-series p {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-section-series h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.75rem;
+            letter-spacing: 0.1em;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+        }
+
+        .author-section-series .bio {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.125rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            font-family: 'Cinzel', serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--velaryn-gold);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+        }
+
+        .back-link:hover {
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            border-color: rgba(212, 175, 55, 0.6);
+        }
+
+        /* Footer */
+        .series-footer {
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-brand svg {
+            width: 24px;
+            height: 18px;
+            color: rgba(212, 175, 55, 0.5);
+        }
+
+        .footer-brand span {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            color: #64748b;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.875rem;
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--velaryn-gold);
+        }
+
+        .footer-copy {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .queens-display {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .book-number {
+                font-size: 4rem;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .queen-modal-content {
+                width: 95%;
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Queen Cards Clickable */
+        .queen-card {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .queen-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .queen-card:hover .queen-avatar {
+            box-shadow: 
+                0 0 35px rgba(59, 130, 246, 0.5),
+                0 0 60px rgba(59, 130, 246, 0.3),
+                inset 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Queen Modal */
+        .queen-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .queen-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .queen-modal-content {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            max-width: 600px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 3rem;
+            position: relative;
+            clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+        }
+
+        .queen-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, transparent 50%, rgba(212, 175, 55, 0.3) 50%);
+            pointer-events: none;
+        }
+
+        .queen-modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--velaryn-gold);
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .queen-modal-close:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--velaryn-gold);
+        }
+
+        .queen-modal-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            box-shadow: 
+                0 0 30px rgba(59, 130, 246, 0.4),
+                0 0 60px rgba(59, 130, 246, 0.2),
+                inset 0 0 20px rgba(59, 130, 246, 0.15);
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #93c5fd;
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+        }
+
+        .queen-modal-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.75rem;
+            letter-spacing: 0.1em;
+            color: var(--velaryn-gold);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .queen-modal-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-style: italic;
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .queen-modal-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .queen-modal-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(212, 175, 55, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .queen-modal-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #94a3b8;
+        }
+
+        .queen-modal-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .queen-modal-stat {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 1rem;
+            border-left: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .queen-modal-stat-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 0.25rem;
+        }
+
+        .queen-modal-stat-value {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: #e2e8f0;
+        }
+    </style>
+    
+    <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <header class="nav-container" id="nav">
+        <nav>
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#worlds" class="nav-link">Worlds</a>
+                <a href="../index.html#books" class="nav-link">Books</a>
+                <a href="../index.html#author" class="nav-link">Author</a>
+                <a href="../index.html#store" class="nav-link">Store</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         SERIES HERO
+         ============================================ -->
+    <section class="series-hero">
+        <!-- Crown Icon -->
+        <div class="crown-icon">
+            <svg viewBox="0 0 100 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 62 L18 25 L32 42 L50 6 L68 42 L82 25 L94 62 L88 68 L12 68 Z" 
+                      stroke="#d4af37" stroke-width="2" fill="none"/>
+                <circle cx="50" cy="18" r="4" fill="#d4af37"/>
+                <circle cx="32" cy="36" r="3" fill="#d4af37"/>
+                <circle cx="68" cy="36" r="3" fill="#d4af37"/>
+            </svg>
+        </div>
+
+        <h1 class="series-title">
+            THE <span class="gold">VELARYN</span> CHRONICLES
+        </h1>
+        
+        <p class="series-subtitle">A Complete Trilogy</p>
+        
+        <p class="series-tagline">
+            Two sisters. Twin thrones. Forty years of war, conspiracy, and the forging of an empire.
+        </p>
+
+        <!-- The Queens -->
+        <div class="queens-display">
+            <div class="queen-card" onclick="openQueenModal('kelsey')">
+                <div class="queen-avatar">K</div>
+                <div class="queen-name">Kelsey Velaryn</div>
+                <div class="queen-title">Queen of the Sovereign Council</div>
+            </div>
+            <div class="queen-card" onclick="openQueenModal('lauran')">
+                <div class="queen-avatar">L</div>
+                <div class="queen-name">Lauran Velaryn</div>
+                <div class="queen-title">Queen of the Sovereign Armada</div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PREMISE
+         ============================================ -->
+    <section class="premise-section">
+        <div class="premise-content">
+            <p>
+                In the year 2359, the Velaryn Sovereignty—a forty-seven system interstellar nation governed 
+                by a beloved royal dynasty—is thrown into crisis when its king and queen are killed in what 
+                appears to be a fold-drive accident.
+            </p>
+            <p>
+                Their daughters, <span class="highlight">Kelsey</span> and <span class="highlight">Lauran</span>, 
+                inherit twin thrones at the worst possible moment: the corrupt senate is poised to seize power, 
+                the galaxy's most dangerous empire is preparing for war, and the truth behind their parents' 
+                deaths is more devastating than either sister can imagine.
+            </p>
+            <p>
+                Neither sister is the main character. Neither is the supporting character. They are co-leads of 
+                identical standing—two halves of one sovereign force.
+            </p>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <svg class="divider-icon" width="40" height="20" viewBox="0 0 40 20">
+            <path d="M0 10 L15 5 L20 10 L25 5 L40 10 L25 15 L20 10 L15 15 Z" fill="currentColor"/>
+        </svg>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- ============================================
+         THE BOOKS
+         ============================================ -->
+    <section class="books-section">
+        <div class="books-header">
+            <h2>The Trilogy</h2>
+            <p>2359 – 2399 • Forty Years</p>
+        </div>
+
+        <div class="books-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <div class="book-number">1</div>
+                <div class="book-label">Book One</div>
+                <h3 class="book-title">Blood Queens</h3>
+                <p class="book-tagline">Origin. Rise. First blood.</p>
+                <p class="book-years">2359 – 2362</p>
+                <p class="book-description">
+                    When their parents are murdered, two sisters inherit twin thrones at the worst possible moment. 
+                    The senate moves to seize power. An empire prepares for war. And the truth behind their parents' 
+                    deaths is more devastating than either can imagine.
+                </p>
+                <div class="book-arc">
+                    <span class="arc-label">Arc:</span>
+                    <span class="arc-value">GRIEF → SURVIVAL → POWER</span>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card">
+                <div class="book-number">2</div>
+                <div class="book-label">Book Two</div>
+                <h3 class="book-title">Queens at War</h3>
+                <p class="book-tagline">Full war. Internal collapse. Survival.</p>
+                <p class="book-years">2365 – 2372</p>
+                <p class="book-description">
+                    The Null Dominion launches a twelve-system invasion. Kelsey manages a wartime coalition on the 
+                    edge of fracture. Lauran fights on three fronts—until the enemy takes her. The price of rescue 
+                    will cost them everything they've built.
+                </p>
+                <div class="book-arc">
+                    <span class="arc-label">Arc:</span>
+                    <span class="arc-value">POWER → CRISIS → ENDURANCE</span>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card">
+                <div class="book-number">3</div>
+                <div class="book-label">Book Three</div>
+                <h3 class="book-title">Shadow Crowns</h3>
+                <p class="book-tagline">Conspiracy revealed. Final reckoning. Legacy secured.</p>
+                <p class="book-years">2375 – 2399</p>
+                <p class="book-description">
+                    The deep conspiracy is finally exposed. A dynastic claim threatens everything they've fought for. 
+                    And in the war's final hours, Kelsey must decide what kind of victory is worth winning—while Lauran 
+                    learns that restraint is the hardest battle she's ever fought.
+                </p>
+                <div class="book-arc">
+                    <span class="arc-label">Arc:</span>
+                    <span class="arc-value">ENDURANCE → REVELATION → LEGACY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         THE WORLD
+         ============================================ -->
+    <section class="world-section">
+        <div class="world-container">
+            <div class="world-header">
+                <h2>The Velaryn Expanse</h2>
+            </div>
+
+            <div class="factions-grid">
+                <div class="faction-card">
+                    <h3 class="faction-name">The Velaryn Sovereignty</h3>
+                    <p class="faction-stats">47 Systems • 18 Billion</p>
+                    <p class="faction-desc">The dominant power. Twin thrones. A dynasty beloved by its people.</p>
+                </div>
+                <div class="faction-card">
+                    <h3 class="faction-name">The Null Dominion</h3>
+                    <p class="faction-stats">84 Systems • 32 Billion</p>
+                    <p class="faction-desc">The enemy. Autocratic empire. Expansion without end.</p>
+                </div>
+                <div class="faction-card">
+                    <h3 class="faction-name">The Tharion Collective</h3>
+                    <p class="faction-stats">6 Systems • 1.1 Billion</p>
+                    <p class="faction-desc">Democratic alliance. Master engineers. Shield technology.</p>
+                </div>
+                <div class="faction-card">
+                    <h3 class="faction-name">The Ember Reach</h3>
+                    <p class="faction-stats">8 Systems • 2.4 Billion</p>
+                    <p class="faction-desc">Tribal confederation. Fire-forged warriors. Unbreakable loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         AUTHOR
+         ============================================ -->
+    <section class="author-section-series">
+        <p>Written by</p>
+        <h3>A.M. Sterling</h3>
+        <p class="bio">
+            Hard military science fiction. Space opera at scale. Characters who earn their victories.
+        </p>
+        <a href="../index.html" class="back-link">← Back to All Series</a>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="series-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <svg viewBox="0 0 100 75" fill="none">
+                    <path d="M6 62 L18 25 L32 42 L50 6 L68 42 L82 25 L94 62 L88 68 L12 68 Z" 
+                          stroke="currentColor" stroke-width="3" fill="none"/>
+                </svg>
+                <span>The Velaryn Chronicles</span>
+            </div>
+            <div class="footer-links">
+                <a href="bloodqueens.html">Blood Queens</a>
+                <a href="queensatwar.html">Queens at War</a>
+                <a href="shadowcrowns.html">Shadow Crowns</a>
+            </div>
+            <p class="footer-copy">© A.M. Sterling Books</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         QUEEN MODALS
+         ============================================ -->
+    
+    <!-- Kelsey Modal -->
+    <div class="queen-modal" id="kelsey-modal">
+        <div class="queen-modal-content">
+            <button class="queen-modal-close" onclick="closeQueenModal('kelsey')">&times;</button>
+            <div class="queen-modal-avatar">K</div>
+            <h2 class="queen-modal-name">Kelsey Velaryn</h2>
+            <p class="queen-modal-title">Her Sovereign Grace, Queen of the Sovereign Council</p>
+            
+            <div class="queen-modal-stats">
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Height</div>
+                    <div class="queen-modal-stat-value">5'0" (152cm)</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Age at Coronation</div>
+                    <div class="queen-modal-stat-value">21 years</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Personal Weapon</div>
+                    <div class="queen-modal-stat-value">The Velaryn Sidearm</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Bloodline Trait</div>
+                    <div class="queen-modal-stat-value">Luminous Blue Irises</div>
+                </div>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Domain</div>
+                <p class="queen-modal-text">Senate oversight, foreign diplomacy, intelligence services, judiciary, trade, taxation, internal security.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Character</div>
+                <p class="queen-modal-text">The blade in a velvet sheath. Measured and precise, Kelsey says less than she knows in virtually every interaction. Her empathic resonance is the strongest in the Velaryn bloodline in a generation—she is almost never surprised by what people want. Only by what they are willing to do to get it.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Strengths</div>
+                <p class="queen-modal-text">Master negotiator. Near-perfect emotional intelligence. Long-game thinking—she plays three political moves ahead in every interaction. Commands complete loyalty from those who serve her closely.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Appearance</div>
+                <p class="queen-modal-text">Small-framed, fit and agile. Black hair worn in formal coils in public, loose in private. Pale complexion with light freckles across the nose and cheekbones. Favors black formal attire and black diplomatic armor. She moves with complete stillness and economy—no wasted gesture.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lauran Modal -->
+    <div class="queen-modal" id="lauran-modal">
+        <div class="queen-modal-content">
+            <button class="queen-modal-close" onclick="closeQueenModal('lauran')">&times;</button>
+            <div class="queen-modal-avatar">L</div>
+            <h2 class="queen-modal-name">Lauran Velaryn</h2>
+            <p class="queen-modal-title">Her Sovereign Grace, Queen of the Sovereign Armada</p>
+            
+            <div class="queen-modal-stats">
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Height</div>
+                    <div class="queen-modal-stat-value">5'2" (157cm)</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Age at Coronation</div>
+                    <div class="queen-modal-stat-value">18 years</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Personal Weapons</div>
+                    <div class="queen-modal-stat-value">The Armada's Edge</div>
+                </div>
+                <div class="queen-modal-stat">
+                    <div class="queen-modal-stat-label">Bloodline Trait</div>
+                    <div class="queen-modal-stat-value">Bioluminescent Shimmer</div>
+                </div>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Domain</div>
+                <p class="queen-modal-text">Sovereign Armada (full fleet), ground forces, military intelligence, weapons development, border security.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Character</div>
+                <p class="queen-modal-text">Lauran leads with her whole body. She is physically present in every room she enters, her energy forward-leaning, her attention total. In combat she is supernaturally focused—the bioluminescent shimmer at her temples and collarbone during peak intensity is the only external sign of the level she operates at.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Strengths</div>
+                <p class="queen-modal-text">Zero-gravity and atmospheric combat specialist. Fleet tactical genius—thinks in three-dimensional space intuitively. Hand-to-hand combat at a level that regularly surprises those who witness it. Commands absolute loyalty from her troops.</p>
+            </div>
+
+            <div class="queen-modal-section">
+                <div class="queen-modal-label">Appearance</div>
+                <p class="queen-modal-text">Small-framed but visibly muscular build. Black hair cropped shorter on the sides with a longer top tied back in the field. Luminous blue irises with more pronounced glow than Kelsey's. Combat scar across the left jaw. Tattoo reading "First the people, then the throne" on her inner right wrist. Favors black combat gear and black command armor.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    
+    <script>
+        function openQueenModal(queen) {
+            const modal = document.getElementById(queen + '-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQueenModal(queen) {
+            const modal = document.getElementById(queen + '-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside content
+        document.querySelectorAll('.queen-modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.queen-modal.active').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+</body>
+</html>
