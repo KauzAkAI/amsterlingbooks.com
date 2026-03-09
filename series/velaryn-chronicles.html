@@ -149,13 +149,11 @@
         .queen-portrait {
             width: 110px; height: 110px; border-radius: 50%;
             overflow: hidden; position: relative;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Cinzel', serif; font-size: 2.2rem; font-weight: 700;
+            color: var(--text-primary);
         }
-        .queen-portrait img {
-            width: 100%; height: 100%;
-            object-fit: cover; object-position: center top;
-            transition: transform 0.4s;
-        }
-        .queen-chip:hover .queen-portrait img { transform: scale(1.05); }
+        
         .queen-portrait.kelsey {
             border: 2px solid var(--gold);
             box-shadow: 0 0 25px var(--gold-glow), inset 0 0 20px rgba(201,168,76,0.1);
@@ -400,16 +398,12 @@
         </p>
         <div class="queen-duo fade-in fade-in-delay-3">
             <div class="queen-chip" onclick="openModal('kelsey')">
-                <div class="queen-portrait kelsey">
-                    <img src="../assets/images/Kelseyv1.png" alt="Kelsey Velaryn">
-                </div>
+                <div class="queen-portrait kelsey">K</div>
                 <span class="queen-chip-name">Kelsey Velaryn</span>
                 <span class="queen-chip-title">Queen of the Sovereign Council</span>
             </div>
             <div class="queen-chip" onclick="openModal('lauren')">
-                <div class="queen-portrait lauren">
-                    <img src="../assets/images/Lauren.png" alt="Lauren Velaryn">
-                </div>
+                <div class="queen-portrait lauren">L</div>
                 <span class="queen-chip-name">Lauren Velaryn</span>
                 <span class="queen-chip-title">Queen of the Sovereign Armada</span>
             </div>
