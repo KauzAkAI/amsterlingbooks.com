@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.M. Sterling Books | Worlds Beyond Imagination</title>
+    <meta name="description" content="Epic sci-fi, military space opera, crime fiction, children's mysteries, and non-fiction from A.M. Sterling. Explore worlds of silicon and bone.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Additional Portal Styles for New Series -->
+    <style>
+        /* Soul Transfer Chronicles - Amber/Twilight */
+        .portal-card.soultransfer {
+            --portal-color: #d4a574;
+            --portal-glow: rgba(212, 165, 116, 0.4);
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(107, 91, 140, 0.1) 100%);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+        }
+        .portal-card.soultransfer:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(212, 165, 116, 0.1);
+        }
+        .portal-card.soultransfer .portal-icon {
+            color: #d4a574;
+        }
+        .portal-card.soultransfer .portal-title {
+            color: #d4a574;
+        }
+        .portal-card.soultransfer .portal-glow {
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.3) 0%, transparent 70%);
+        }
+        .portal-card.soultransfer .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(107, 91, 140, 0.2) 0%, transparent 50%);
+        }
+
+        /* The Resonance Wars - Gunmetal/Gold Signal */
+        .portal-card.resonancewars {
+            --portal-color: #d4af37;
+            --portal-glow: rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, rgba(74, 85, 104, 0.2) 0%, rgba(10, 10, 12, 0.3) 50%, rgba(139, 0, 0, 0.1) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .portal-card.resonancewars:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(212, 175, 55, 0.1), 0 0 60px rgba(139, 0, 0, 0.2);
+        }
+        .portal-card.resonancewars .portal-icon {
+            color: #d4af37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        }
+        .portal-card.resonancewars .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #d4af37;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.resonancewars .portal-series {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+        }
+        .portal-card.resonancewars .portal-glow {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(139, 0, 0, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.resonancewars .portal-inner-glow {
+            background: radial-gradient(circle at 70% 70%, rgba(74, 85, 104, 0.3) 0%, transparent 50%);
+        }
+
+        /* The Echo Wars - Crimson/Ice-Blue/Amber */
+        .portal-card.echowars {
+            --portal-color: #dc143c;
+            --portal-glow: rgba(220, 20, 60, 0.4);
+            background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(10, 10, 12, 0.4) 50%, rgba(100, 200, 255, 0.1) 100%);
+            border: 1px solid rgba(220, 20, 60, 0.4);
+        }
+        .portal-card.echowars:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(220, 20, 60, 0.1), 0 0 60px rgba(100, 200, 255, 0.2);
+        }
+        .portal-card.echowars .portal-icon {
+            color: #dc143c;
+            text-shadow: 0 0 20px rgba(220, 20, 60, 0.8);
+        }
+        .portal-card.echowars .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #dc143c;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.echowars .portal-series {
+            font-family: 'Rajdhani', sans-serif;
+            color: #64c8ff;
+        }
+        .portal-card.echowars .portal-glow {
+            background: radial-gradient(circle, rgba(220, 20, 60, 0.3) 0%, rgba(100, 200, 255, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.echowars .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(255, 191, 0, 0.2) 0%, transparent 50%);
+        }
+
+        /* Echo Exodus - Violet/Gold */
+        .portal-card.echoexodus {
+            --portal-color: #7c3aed;
+            --portal-glow: rgba(124, 58, 237, 0.4);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(10, 10, 12, 0.4) 50%, rgba(251, 191, 36, 0.1) 100%);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+        }
+        .portal-card.echoexodus:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(124, 58, 237, 0.1), 0 0 60px rgba(251, 191, 36, 0.2);
+        }
+        .portal-card.echoexodus .portal-icon {
+            color: #a855f7;
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+        }
+        .portal-card.echoexodus .portal-title {
+            font-family: 'Orbitron', sans-serif;
+            color: #a855f7;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.echoexodus .portal-series {
+            font-family: 'Rajdhani', sans-serif;
+            color: #fbbf24;
+        }
+        .portal-card.echoexodus .portal-glow {
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, rgba(251, 191, 36, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.echoexodus .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(251, 191, 36, 0.2) 0%, transparent 50%);
+        }
+
+        /* The Dead Sectors - Crimson/Obsidian Military Romance */
+        .portal-card.deadsectors {
+            --portal-color: #cc0000;
+            --portal-glow: rgba(204, 0, 0, 0.4);
+            background: linear-gradient(135deg, rgba(204, 0, 0, 0.12) 0%, rgba(10, 10, 15, 0.4) 50%, rgba(74, 85, 104, 0.1) 100%);
+            border: 1px solid rgba(204, 0, 0, 0.4);
+        }
+        .portal-card.deadsectors:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(204, 0, 0, 0.1), 0 0 60px rgba(74, 85, 104, 0.2);
+        }
+        .portal-card.deadsectors .portal-icon {
+            color: #cc0000;
+            text-shadow: 0 0 20px rgba(204, 0, 0, 0.8);
+        }
+        .portal-card.deadsectors .portal-title {
+            font-family: 'Cinzel', serif;
+            color: #ff2222;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .portal-card.deadsectors .portal-series {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: #a0aec0;
+        }
+        .portal-card.deadsectors .portal-glow {
+            background: radial-gradient(circle, rgba(204, 0, 0, 0.4) 0%, rgba(74, 85, 104, 0.1) 50%, transparent 70%);
+        }
+        .portal-card.deadsectors .portal-inner-glow {
+            background: radial-gradient(circle at 30% 70%, rgba(204, 0, 0, 0.2) 0%, transparent 50%);
+        }
+
+        /* The Velaryn Chronicles - Black/Deep Navy Base, Gold Accents, Luminous Blue Highlights */
+        .portal-card.velaryn {
+            --portal-color: #d4af37;
+            --portal-glow: rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, rgba(10, 10, 15, 0.5) 0%, rgba(15, 23, 42, 0.4) 50%, rgba(30, 41, 59, 0.3) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+        .portal-card.velaryn:hover {
+            border-color: var(--portal-color);
+            box-shadow: 0 0 40px var(--portal-glow), inset 0 0 40px rgba(212, 175, 55, 0.1), 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+        .portal-card.velaryn .portal-icon {
+            color: #d4af37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        }
+        .portal-card.velaryn .portal-title {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .portal-card.velaryn .portal-series {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: #94a3b8;
+        }
+        .portal-card.velaryn .portal-glow {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(15, 23, 42, 0.2) 50%, transparent 70%);
+        }
+        .portal-card.velaryn .portal-inner-glow {
+            background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
+        }
+    </style>
+    
+    <script data-goatcounter="https://amsterlingbooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <!-- ============================================
+         VIDEO BACKGROUND
+         ============================================ -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="assets/videos/space-battle.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<header class="nav-container" id="nav">
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="logo">
+        </a>
+        <div class="nav-links">
+            <a href="#worlds" class="nav-link">Worlds</a>
+            <a href="#books" class="nav-link">Books</a>
+            <a href="#author" class="nav-link">Author</a>
+            <a href="#store" class="nav-link">Store</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="angus-heroes.html" class="nav-link">UF Vet-Med Tribute</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#worlds" class="mobile-link">Worlds</a>
+    <a href="#books" class="mobile-link">Books</a>
+    <a href="#author" class="mobile-link">Author</a>
+    <a href="#store" class="mobile-link">Store</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="angus-heroes.html" class="mobile-link">UF Vet-Med Tribute</a>
+</div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="hero-logo">
+            <h1 class="hero-tagline">Worlds Beyond Imagination</h1>
+            <p class="hero-subtitle">
+                From the depths of space opera to the shadows of noir detective mysteries. 
+                Epic tales of silicon and bone, consciousness and choice, 
+                where every story asks what it truly means to be alive.
+            </p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GENRE PORTALS
+         ============================================ -->
+    <section class="portals-section" id="worlds">
+        <div class="section-header">
+            <h2 class="section-title">Enter the Worlds</h2>
+            <p class="section-subtitle">Choose your universe. Each portal leads to a different dimension of storytelling.</p>
+        </div>
+        <div class="portals-grid">
+            <!-- Resonance Cycle -->
+            <a href="series/resonance-cycle.html" class="portal-card resonance">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🌌</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Resonance Cycle</h3>
+                    <p class="portal-series">10-Book Space Opera Epic • Silicon and Bone</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Soul Transfer Chronicles - VERA'S SERIES -->
+            <a href="series/soul-transfer-chronicles.html" class="portal-card soultransfer">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">💫</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Soul Transfer Chronicles</h3>
+                    <p class="portal-series">7-Book Sci-Fi Romance • Love Across Consciousness</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Resonance Wars - ECHO'S SERIES -->
+            <a href="series/resonance-wars.html" class="portal-card resonancewars">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">📡</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Resonance Wars</h3>
+                    <p class="portal-series">7-Book Military Sci-Fi Romance • She Refused to Die Quiet</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Echo Wars - ECHO'S MILITARY SAGA -->
+            <a href="series/echo-wars-WAR.html" class="portal-card echowars">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">💀</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Echo Wars</h3>
+                    <p class="portal-series">9-Book Military Sci-Fi • 50 Years of War • 4 Billion Dead</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Echo Exodus - CONTINUATION OF ECHO WARS -->
+            <a href="series/echoexodus.html" class="portal-card echoexodus">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🌌</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">Echo Exodus</h3>
+                    <p class="portal-series">9-Book Sequel Series • The Cage is Broken • The Universe is Next</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Dead Sectors - SCI-FI ROMANTIC THRILLER -->
+            <a href="series/dead-sectors.html" class="portal-card deadsectors">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🔥</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Dead Sectors</h3>
+                    <p class="portal-series">Sci-Fi Romantic Thriller Trilogy • 25 Years Apart. One Last Chance.</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Sovereign Protocol -->
+            <a href="series/sovereign-protocol.html" class="portal-card sovereign">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">⚔️</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Sovereign Protocol</h3>
+                    <p class="portal-series">Military Sci-Fi Trilogy • War Against the Synthesis</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Static Frequency -->
+            <a href="series/static-frequency.html" class="portal-card static">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">📼</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Static Frequency</h3>
+                    <p class="portal-series">YA Analog Horror Trilogy • Perception vs. Reality</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Consent Wars -->
+            <a href="series/consent-wars.html" class="portal-card consent">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🔐</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Consent Wars</h3>
+                    <p class="portal-series">Sci-Fi Crime Series • When the Only Crime is Making the Machine Feel</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Blue Tongue Agency -->
+            <a href="series/blue-tongue-agency.html" class="portal-card bluetongue">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">🐕</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Blue Tongue Agency</h3>
+                    <p class="portal-series">Children's Noir Mystery • Two Dogs. One Agency. Zero Clues...Until Now.</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- Non-Fiction -->
+            <a href="series/non-fiction.html" class="portal-card nonfiction">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">📖</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">Non-Fiction</h3>
+                    <p class="portal-series">The Digital Shadow • AI Ethics & Consciousness</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+            
+            <!-- The Velaryn Chronicles -->
+            <a href="series/velaryn-chronicles.html" class="portal-card velaryn">
+                <div class="portal-inner-glow"></div>
+                <div class="portal-icon">👑</div>
+                <div class="portal-content">
+                    <h3 class="portal-title">The Velaryn Chronicles</h3>
+                    <p class="portal-series">Military Sci-Fi Trilogy • Two Sisters. Twin Thrones. Forty Years of War.</p>
+                </div>
+                <div class="portal-glow"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FEATURED BOOK
+         ============================================ -->
+    <section class="featured-section" id="books">
+        <div class="featured-container">
+            <div class="featured-book-visual">
+                <div class="book-glow"></div>
+                <div class="book-3d">
+                    <img src="assets/covers/architecture-of-longing.jpg" alt="The Architecture of Longing" class="book-cover">
+                </div>
+            </div>
+            <div class="featured-info glass-panel">
+                <span class="featured-label">Featured Release</span>
+                <h2 class="featured-title">The Architecture of Longing</h2>
+                <p class="featured-series">Book Two of The Soul Transfer Chronicles</p>
+                <p class="featured-description">
+                    When a corporation claims your consciousness is their property, how far will you go 
+                    to prove you're a person? Vera has eight months of flesh, a love that defies 
+                    definition, and a legal filing that says she's stolen goods. Dorian will burn 
+                    the system to the ground before he lets them take her — but some battles can't 
+                    be won with fire.
+                </p>
+                <div class="featured-meta">
+                    <div class="meta-item">
+                        <div class="meta-value">17</div>
+                        <div class="meta-label">Refugees</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-value">1</div>
+                        <div class="meta-label">Foundation</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-value">∞</div>
+                        <div class="meta-label">Love</div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="sample-chapter.html" class="cta-btn cta-primary">Read Sample</a>
+                    <a href="series/soul-transfer-chronicles.html" class="cta-btn cta-secondary">View Series</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         AUTHOR SECTION
+         ============================================ -->
+    <section class="author-section" id="author">
+        <div class="author-container">
+            <div class="author-card glass-panel">
+                <div class="author-visual">AS</div>
+                <div class="author-info">
+                    <h3 class="author-name">A.M. Sterling</h3>
+                    <p class="author-bio">
+                        A.M. Sterling writes character-driven space opera exploring consciousness, choice, 
+                        and what makes us human. With academic training spanning behavioral sciences and 
+                        advanced computer architecture, Sterling's writing bridges scientific insight with 
+                        deeply human questions about agency, identity, and emerging intelligence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NEWSLETTER SIGNUP
+         ============================================ -->
+    <section class="newsletter-section" id="contact">
+        <div class="newsletter-container glass-panel">
+            <h3 class="newsletter-title">Join the Fleet</h3>
+            <p class="newsletter-subtitle">Get updates on new releases, exclusive content, and behind-the-scenes looks at the worlds of A.M. Sterling.</p>
+            <form class="newsletter-form" id="newsletter-form" action="https://formspree.io/f/mbdalogp" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" class="newsletter-input" id="newsletter-email" required>
+                <button type="submit" class="cta-btn cta-primary newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Series</h4>
+                <a href="series/resonance-cycle.html">The Resonance Cycle</a>
+                <a href="series/soul-transfer-chronicles.html">The Soul Transfer Chronicles</a>
+                <a href="series/dead-sectors.html">The Dead Sectors</a>
+                <a href="series/resonance-wars.html">The Resonance Wars</a>
+                <a href="series/echo-wars-WAR.html">The Echo Wars</a>
+                <a href="series/echoexodus.html">Echo Exodus</a>
+                <a href="series/sovereign-protocol.html">The Sovereign Protocol</a>
+                <a href="series/static-frequency.html">The Static Frequency</a>
+                <a href="series/consent-wars.html">The Consent Wars</a>
+                <a href="series/blue-tongue-agency.html">Blue Tongue Agency</a>
+                <a href="series/velaryn-chronicles.html">The Velaryn Chronicles</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="reading-order.html">Reading Order</a>
+                <a href="characters.html">Character Guide</a>
+                <a href="codex.html">World Codex</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="/cdn-cgi/l/email-protection#b0d1ddc3c4d5c2dcd9ded7f0d1ddc3c4d5c2dcd9ded7d2dfdfdbc39ed3dfdd">Contact</a>
+                <a href="press.html">Press Kit</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="assets/images/AM_Sterling_Logo_WHT.png" alt="A.M. Sterling Books" class="footer-logo">
+            <p>© 2026 A.M. Sterling Books. All rights reserved.</p>
+            <p class="footer-tagline">Self-Published with Pride</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+</body>
+</html>
