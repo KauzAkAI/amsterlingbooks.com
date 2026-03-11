@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Narcissistic Partner as Poorly Managed Corporation | Harvard Journal of Relational Economics</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --ink-light: #1a1a1a;
+    --ink-faint: #2a2a2a;
+    --paper: #f8f6f0;
+    --paper-warm: #f2ede0;
+    --paper-aged: #e8e0cc;
+    --rule: #8a7a60;
+    --rule-light: #b8a888;
+    --accent: #8b0000;
+    --accent-soft: #aa1100;
+    --crimson: #a51c30;
+    --gold: #8b6914;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #1a1a1a;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.6;
+  }
+
+  .journal {
+    max-width: 840px;
+    margin: 40px auto;
+    background: var(--paper);
+    box-shadow: 0 0 0 1px #333, 0 20px 80px rgba(0,0,0,0.6);
+    animation: pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Harvard-style crimson masthead */
+  .masthead {
+    background: var(--crimson);
+    color: #fff;
+    padding: 0;
+  }
+
+  .masthead-top {
+    padding: 16px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .harvard-crest {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+  .harvard-crest span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: 400;
+    margin-top: 4px;
+  }
+
+  .masthead-journal {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .masthead-journal strong {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-bottom: 3px;
+  }
+
+  .masthead-journal small {
+    font-size: 12px;
+    opacity: 0.75;
+    font-style: italic;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .masthead-strip {
+    background: #7a0000;
+    padding: 8px 60px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .ornament {
+    text-align: center;
+    color: var(--crimson);
+    font-size: 16px;
+    letter-spacing: 0.5em;
+    padding: 10px 0;
+    background: var(--paper-aged);
+    border-bottom: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+    user-select: none;
+  }
+
+  .paper-header {
+    padding: 50px 60px 36px;
+    border-bottom: 3px solid var(--crimson);
+    text-align: center;
+  }
+
+  .paper-type {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .paper-type::before, .paper-type::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: var(--crimson);
+  }
+
+  .paper-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+  }
+
+  .paper-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink-light);
+    line-height: 1.55;
+    max-width: 620px;
+    margin: 0 auto 24px;
+  }
+
+  .paper-fields {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .field-tag {
+    background: var(--crimson);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .authors {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--rule-light);
+    border-bottom: 1px solid var(--rule-light);
+  }
+
+  .author { text-align: center; }
+
+  .author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+
+  .author-name.lead {
+    font-size: 17px;
+    color: var(--crimson);
+  }
+
+  .author-affil {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 190px;
+  }
+
+  .dates-row {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 2;
+    margin-top: 6px;
+  }
+
+  .paper-body { padding: 40px 60px 60px; }
+
+  .abstract-box {
+    background: var(--paper-aged);
+    border-left: 4px solid var(--crimson);
+    padding: 26px 30px;
+    margin-bottom: 44px;
+    position: relative;
+  }
+
+  .abstract-box::before {
+    content: 'ABSTRACT';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    background: var(--crimson);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    padding: 3px 10px;
+  }
+
+  .abstract-text {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .keywords {
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+
+  .keywords strong { font-style: normal; color: var(--ink); font-weight: 600; }
+
+  .section { margin-bottom: 40px; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--crimson);
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+
+  h2 .sec-num {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--crimson);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ink);
+    margin: 28px 0 12px;
+    padding-left: 16px;
+    border-left: 3px solid var(--crimson);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.85;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: var(--ink);
+    hyphens: auto;
+  }
+
+  p.italic-note {
+    font-style: italic;
+    color: var(--ink-light);
+    font-size: 17px;
+    padding: 12px 20px;
+    border-left: 3px solid var(--rule);
+    background: var(--paper-warm);
+  }
+
+  .equation-box {
+    background: var(--paper-warm);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--crimson);
+    padding: 20px 32px;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .equation {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .equation-label {
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+
+  .table-wrapper { margin: 28px 0; overflow-x: auto; }
+
+  .table-caption {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--ink);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+
+  thead tr { background: var(--crimson); color: #fff; }
+
+  thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  tbody tr:nth-child(even) { background: var(--paper-aged); }
+  tbody tr:nth-child(odd) { background: var(--paper); }
+  tbody tr:hover { background: rgba(139,0,0,0.06); transition: background 0.2s; }
+
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule-light);
+    line-height: 1.6;
+    color: var(--ink);
+    font-size: 16px;
+    vertical-align: top;
+  }
+
+  tbody td:first-child {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--crimson);
+    width: 28%;
+  }
+
+  .table-note {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ink-light);
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+
+  .footnote {
+    font-size: 16px;
+    color: var(--ink);
+    font-style: italic;
+    padding: 14px 20px;
+    border-left: 4px solid var(--crimson);
+    margin: 20px 0;
+    background: var(--paper-warm);
+    line-height: 1.8;
+  }
+
+  .footnote sup { color: var(--crimson); font-weight: 700; font-style: normal; }
+
+  .case-study {
+    border: 1px solid var(--rule);
+    background: var(--paper-warm);
+    padding: 24px 28px;
+    margin: 24px 0;
+    position: relative;
+  }
+
+  .case-study::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    background: var(--crimson);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 12px;
+    text-transform: uppercase;
+  }
+
+  .warning-box {
+    background: #fff0f0;
+    border: 2px solid var(--crimson);
+    padding: 20px 28px;
+    margin: 24px 0;
+    position: relative;
+  }
+
+  .warning-box::before {
+    content: '⚠ REGULATORY WARNING';
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    background: var(--crimson);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 12px;
+  }
+
+  .pull-quote {
+    border-top: 3px double var(--crimson);
+    border-bottom: 3px double var(--crimson);
+    padding: 28px 40px;
+    margin: 36px 0;
+    text-align: center;
+  }
+
+  .pull-quote blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .pull-quote cite {
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+    display: block;
+  }
+
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 24px 0;
+    background: var(--rule);
+  }
+
+  .swot-cell {
+    padding: 20px 24px;
+    background: var(--paper);
+  }
+
+  .swot-cell.strengths { background: #f0f8f0; }
+  .swot-cell.weaknesses { background: #fff0f0; }
+  .swot-cell.opportunities { background: #f0f4ff; }
+  .swot-cell.threats { background: #fffaf0; }
+
+  .swot-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--crimson);
+  }
+
+  .swot-cell ul {
+    padding-left: 18px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  .references ol { padding-left: 24px; }
+
+  .references li {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+
+  .acknowledgments {
+    background: var(--paper-aged);
+    padding: 28px 32px;
+    border: 1px solid var(--rule);
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .paper-footer {
+    background: var(--crimson);
+    color: #fff;
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .footer-note {
+    font-style: italic;
+    opacity: 0.75;
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+  }
+
+  .rule-thick { border: none; border-top: 2px solid var(--crimson); margin: 40px 0; }
+
+  .center-ornament {
+    text-align: center;
+    color: var(--crimson);
+    font-size: 20px;
+    letter-spacing: 0.6em;
+    margin: 20px 0;
+    user-select: none;
+  }
+
+  .dropcap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 700;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 6px;
+    color: var(--crimson);
+  }
+
+  .phase-timeline {
+    position: relative;
+    padding-left: 36px;
+    margin: 20px 0;
+  }
+
+  .phase-timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--crimson);
+  }
+
+  .phase {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .phase::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--crimson);
+    border: 2px solid var(--paper);
+    box-shadow: 0 0 0 2px var(--crimson);
+  }
+
+  .phase-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--crimson);
+    margin-bottom: 6px;
+  }
+
+  .phase p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 680px) {
+    .journal { margin: 0; }
+    .masthead-top, .paper-header, .paper-body { padding-left: 24px; padding-right: 24px; }
+    .masthead-strip { padding-left: 24px; padding-right: 24px; }
+    .paper-title { font-size: 26px; }
+    .swot-grid { grid-template-columns: 1fr; }
+    .authors { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <!-- HARVARD MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Relational Economics</strong>
+        <small>and Applied Interpersonal Mismanagement Studies</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 12, Issue 4 &nbsp;·&nbsp; Peer-Reviewed by People With Advanced Degrees and Complicated Personal Lives &nbsp;·&nbsp; ISSN: Not-A-Real-Number-But-Very-Prestigious-Looking
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: Disasters of Human Commerce</div>
+
+    <h1 class="paper-title">The Narcissistic Partner as Poorly Managed Corporation:</h1>
+    <p class="paper-subtitle">A Business School Analysis of Love-Bombing as Fraudulent IPO, Gaslighting as Quarterly Earnings Manipulation, the DARVO Technique as Standard Crisis PR, and Why You Cannot Negotiate a Fair Deal With Someone Who Wrote the Contract, Owns the Court, and Also Just Decided the Contract Never Existed</p>
+
+    <div class="paper-fields">
+      <span class="field-tag">Predatory Market Behavior</span>
+      <span class="field-tag">Emotional Supply Chain</span>
+      <span class="field-tag">Reality Restructuring</span>
+      <span class="field-tag">Exit Strategy Theory</span>
+      <span class="field-tag">Applied Audacity</span>
+    </div>
+
+    <div class="authors">
+      <div class="author">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-affil">Harvard Business School<br>Chair of Catastrophic Relationship Economics</div>
+      </div>
+      <div class="author">
+        <div class="author-name">Prof. Vivienne Hartwell, J.D., Psy.D.</div>
+        <div class="author-affil">Harvard Law & Psychology<br>Dept. of You Signed What, Exactly?</div>
+      </div>
+      <div class="author">
+        <div class="author-name">Dr. James Okafor, Ph.D., CFA</div>
+        <div class="author-affil">Harvard Economics<br>Emotional Return-on-Investment Lab</div>
+      </div>
+      <div class="author">
+        <div class="author-name">Prof. Cecelia Voss, M.D., MBA</div>
+        <div class="author-affil">Harvard Medical & Business<br>Institute for Diagnosable Business Partners</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: Immediately After Realizing What Was Happening &nbsp;·&nbsp;
+      Peer-Reviewed: By Three Colleagues Who Said "Oh God, I've Been There" &nbsp;·&nbsp;
+      Accepted: Unanimously and With Unusual Speed &nbsp;·&nbsp;
+      Dedicated: To Everyone Who Thought They Were in a Partnership and Were Actually in an Acquisition
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first rigorous Harvard Business School analysis of the narcissistic romantic partner, reframed — for the clarity that only business language provides — as a <strong>Fraudulent Single-Shareholder Corporation (FSSC)</strong> operating in the consumer relationship market without regulatory oversight, audited financials, or any genuine interest in mutual return on investment.</p>
+      <p class="abstract-text">We apply established frameworks — Porter's Five Forces, the BCG Matrix, standard IPO analysis, crisis communications theory, supply chain management, and the Sunk Cost Fallacy — to what has previously been described as a "toxic relationship" but which the research team submits is more accurately described as <strong>the worst business deal in the history of human commerce.</strong></p>
+      <p class="abstract-text">Key findings include: (1) the Love Bombing Phase constitutes a fraudulent IPO with fabricated prospectus; (2) gaslighting is indistinguishable from Enron-style earnings manipulation; (3) the DARVO technique is standard Fortune 500 crisis PR redeployed against someone who just wanted to have a nice dinner; and (4) the most common reason people stay in narcissistic relationships is the same reason people hold obviously failing stocks — <strong>the Sunk Cost Fallacy</strong>, and the touching but economically illiterate belief that if you just invest a little more, you will see a return.</p>
+      <p class="abstract-text">You will not see a return. The research is unambiguous. The exit is the strategy. We explain why, with charts.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Fraudulent IPO · Narcissistic Supply Chain · Gaslighting as Earnings Fraud · DARVO Crisis Management · Sunk Cost Relationship · Emotional Labor Contractor · Reality as a Service (RaaS) · Why Are You Still There · Porter's Five Manipulation Forces · The Exit as ROI
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Relationship as Business Venture</h2>
+
+      <p class="dropcap">When two people enter a romantic relationship, they are, from an economic standpoint, entering into a joint venture: a mutual arrangement in which both parties contribute resources — time, emotional labor, vulnerability, Tuesday evenings, access to their streaming accounts — in reasonable expectation of proportional return. Both parties assume, reasonably, that the other is operating in good faith, has disclosed all material information, and is not, in fact, running a scheme.</p>
+
+      <p>For most people, this assumption holds. For the partner of a narcissist, this assumption is the single most expensive mistake they will ever make, and they will not know it was a mistake until they are approximately eighteen months in, wondering how it is possible that every argument is somehow their fault and why they feel like they are losing their mind and why they are apologizing right now, again, for something they are not entirely sure they did.</p>
+
+      <p>This paper submits that the narcissistic relationship cannot be properly understood through the lens of psychology alone. It must also be understood through the lens of <strong>fraudulent business practice.</strong> The patterns — love bombing, idealization, devaluation, discard — map with remarkable precision onto known corporate fraud models, predatory market behaviors, and the specific kind of financial crime where the perpetrator looks extremely trustworthy at the pitch meeting and you do not realize anything is wrong until you are trying to explain to your accountant why your entire portfolio is gone.</p>
+
+      <h3>1.1 &nbsp; The Corporate Structure of the Narcissistic Partner</h3>
+      <p>The Narcissistic Partner operates as what the research team classifies as a <strong>Fraudulent Single-Shareholder Corporation (FSSC)</strong>. Key structural features of the FSSC are as follows:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Corporate Structure of the Narcissistic Partner (FSSC Model)</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Corporate Feature</th>
+              <th>In Normal Companies</th>
+              <th>In the FSSC (Narcissistic Partner)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shareholders</td>
+              <td>Multiple stakeholders with legitimate equity</td>
+              <td>One. Just the one. You do not have shares. You thought you had shares. You do not have shares.</td>
+            </tr>
+            <tr>
+              <td>Board of Directors</td>
+              <td>Oversight body providing checks and balances</td>
+              <td>Also just the one person. The CEO is also the Board. The Board has voted unanimously to agree with the CEO on everything.</td>
+            </tr>
+            <tr>
+              <td>Mission Statement</td>
+              <td>Articulated shared purpose, reviewed annually</td>
+              <td>"To secure ongoing supply of admiration, attention, and emotional resources while maintaining zero accountability." Not written down anywhere. Discovered by partner approximately 14-24 months in.</td>
+            </tr>
+            <tr>
+              <td>Financial Reporting</td>
+              <td>Accurate, audited, publicly available</td>
+              <td>Whatever number makes the CEO look best at this particular moment. Subject to revision without notice. Previous statements are denied. You misheard.</td>
+            </tr>
+            <tr>
+              <td>Conflict Resolution</td>
+              <td>Established HR processes, documented procedures</td>
+              <td>You are wrong. If you can prove you are not wrong, you are still somehow wrong in a way that hasn't been identified yet but will be shortly. The CEO will get back to you. Actually, this whole conversation is now your fault.</td>
+            </tr>
+            <tr>
+              <td>Exit Clauses</td>
+              <td>Clearly defined terms for dissolution</td>
+              <td>There are no exit clauses. Any attempt to exit will be treated as a hostile takeover and met with a PR campaign, a smear campaign, and a surprising amount of crying that stops the moment you agree to stay.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="footnote"><sup>†</sup> Three peer reviewers independently noted that Table 1 described their previous relationships with such precision that one reviewer had to take a walk, one reviewer called their therapist, and one reviewer submitted a competing paper titled "Wait, Was That A Corporation?" which is currently under review and expected to be excellent.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Phase One: The Fraudulent IPO (Love Bombing)</h2>
+
+      <p>Every legitimate Initial Public Offering requires the issuing company to provide a prospectus: a complete, honest, legally binding document disclosing all material facts about the company — its assets, its liabilities, its risks, its history — so that investors can make an informed decision.</p>
+
+      <p>The narcissistic partner's Love Bombing Phase is an IPO with a fraudulent prospectus. Everything in the document is technically a word, arranged in sentences that sound plausible, but the material facts have been selectively omitted, aggressively embellished, or simply invented. The investor — the partner — makes their decision based on this document. The document is fiction. The investment proceeds anyway because the document was <em>very good fiction.</em></p>
+
+      <h3>2.1 &nbsp; Contents of the Fraudulent Prospectus</h3>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — The Love Bombing Prospectus: Stated vs. Actual Material Facts</div>
+        <table>
+          <thead>
+            <tr><th>Prospectus Claim</th><th>What It Means</th><th>Material Fact Omitted</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"I've never felt this way about anyone."</td>
+              <td>Standard opening statement, used consistently across all prior relationships.</td>
+              <td>There have been seven prior relationships. All seven received this statement. None of them ended well. None of this is disclosed.</td>
+            </tr>
+            <tr>
+              <td>"You're unlike anyone I've ever met."</td>
+              <td>You are, in fact, extremely similar to the previous investor, who was also unlike anyone they'd ever met.</td>
+              <td>The "unique" qualities being praised are specifically the qualities most useful to the FSSC's operational needs. This is targeted acquisition, not genuine admiration.</td>
+            </tr>
+            <tr>
+              <td>"I want to give you everything."</td>
+              <td>During the prospectus phase, this is operationally true. Gifts, attention, presence — all delivered at scale.</td>
+              <td>This is the loss-leader phase. Retail operates this way too. The margins come later.</td>
+            </tr>
+            <tr>
+              <td>"My exes were all crazy."</td>
+              <td>A material red flag disclosed in the prospectus as a liability of others.</td>
+              <td>In a sample of seven relationships all described as ending because the partner was "crazy," the only common variable is not being disclosed in this prospectus. Investors are advised to apply basic statistical reasoning here. They do not. The IPO proceeds.</td>
+            </tr>
+            <tr>
+              <td>"I've never been able to open up like this before."</td>
+              <td>The performance of vulnerability, executed with considerable skill.</td>
+              <td>This is manufactured intimacy deployed specifically to accelerate the investor's emotional commitment. The SEC would have questions. The SEC is not present.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: The Love Bombing Phase typically lasts 3-6 months, during which the investor's return appears extraordinary. This is by design. It is the introductory rate. The introductory rate always ends.</div>
+      </div>
+
+      <div class="footnote"><sup>‡</sup> Subject N-1, a 34-year-old male, reported that during the Love Bombing Phase his partner texted him 47 times in a single day, sent flowers to his office on a Tuesday for no stated reason, and described him as "the person I've been waiting my whole life for" on their fourth date. Subject N-1 described this as "incredibly romantic." The research team describes it as "a margin call in progress that Subject N-1 did not yet have the financial literacy to identify."</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Narcissistic Business Cycle: Four Phases of Operational Fraud</h2>
+
+      <p>The narcissistic relationship follows a predictable business cycle with four distinct phases. Understanding these phases is, unfortunately, significantly easier in retrospect than in real time, largely because Phase One is so comprehensively pleasant that the investor's due diligence instincts are effectively disabled by the time Phase Two begins.</p>
+
+      <div class="phase-timeline">
+        <div class="phase">
+          <div class="phase-title">Phase 1: Idealization — The IPO &amp; Honeymoon Quarter</div>
+          <p>Investor is showered with attention, affection, and the genuine impression that they have found the best company in the market. Stock price rises aggressively. Analysts are enthusiastic. Friends say "you seem so happy." Investor considers this a wise investment. Investor is not yet aware they are the only source of the company's revenue.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-title">Phase 2: Devaluation — The Earnings Restatement Quarter</div>
+          <p>Without warning or logical triggering event, the company revises its position on the investor. Previous statements of value are quietly walked back. The investor, who was previously "perfect," is now "too sensitive," "always negative," or "exhausting." The investor, confused, works harder. The investor increases their emotional labor investment. The company accepts this additional investment and provides diminishing returns. This is standard operating procedure.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-title">Phase 3: The Gaslighting Quarter — Earnings Are Whatever We Say They Are</div>
+          <p>The company's financial reporting becomes creative. Events the investor clearly witnessed did not happen. Statements the company clearly made were never said. The investor's memory is identified as the problem. The investor, now doubting their own documentation, doubles down on investment in hopes of returning to Q1 conditions. The Q1 conditions are not coming back. They were a promotional rate.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-title">Phase 4: Discard — The Corporate Restructuring</div>
+          <p>The company announces, without advance notice, that it is restructuring. The investor's position has been eliminated. A replacement investor — who is currently in their own Phase 1 and has not read this paper — has been identified. The original investor is informed that this is their fault, which is both incorrect and delivered with complete conviction. The company moves on. The company does not experience the restructuring as a loss. The company is already in Phase 1 with the new investor. The company describes the new investor as "unlike anyone I've ever met."</p>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>§</sup> The research team notes that the transition from Phase 1 to Phase 2 is so abrupt, and so bewildering, that the most common investor response is not "something is wrong with this company" but rather "something is wrong with me." This cognitive error — assigning internal causation to what is in fact an external and premeditated pattern — is the FSSC's most important operational feature and the primary mechanism by which additional emotional labor investment is extracted. It is, in the view of the research team, a genuinely impressive piece of behavioral engineering, in the same way that a con is impressive when viewed from a sufficient distance that one is not currently being conned.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: GASLIGHTING -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Gaslighting as Enron-Style Earnings Manipulation</h2>
+
+      <p>In 2001, the Enron Corporation collapsed following the revelation that its reported earnings had been systematically and creatively falsified — that the company's stated financial position bore approximately no relationship to its actual financial position, and that everyone inside the company who knew this had decided to continue reporting the fictional numbers because the fictional numbers were better.</p>
+
+      <p>The research team submits that gaslighting is Enron, applied to reality itself.</p>
+
+      <p>The gaslighting partner does not merely lie. Lying is simple and detectable — the lie can be checked against external reality. The gaslighting partner <strong>edits reality at the source.</strong> They do not say the numbers are different. They say your numbers are wrong. They say your calculator is broken. They say you have never been good with numbers. They say they are worried about you, actually, because this confusion about numbers has been going on for a while now and they think you should talk to someone.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          Reality<sub>perceived by partner</sub> = Reality<sub>actual</sub> − Δ<sub>narcissistic revision</sub><br>
+          <span style="font-size:14px; opacity:0.7">where Δ<sub>narcissistic revision</sub> → ∞ as accountability approaches</span>
+        </div>
+        <div class="equation-label">As the narcissistic partner approaches any moment of genuine accountability, the revision applied to shared reality increases without bound. In the limit, the event being discussed did not occur, the conversation being had is not happening, and the person raising the issue is the problem.</div>
+      </div>
+
+      <h3>4.1 &nbsp; Standard Gaslighting Techniques, Translated Into Business Language</h3>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 — Gaslighting Techniques and Their Corporate Equivalents</div>
+        <table>
+          <thead>
+            <tr><th>Gaslighting Technique</th><th>What Is Said</th><th>Corporate Equivalent</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flat Denial</td>
+              <td>"I never said that."</td>
+              <td>Earnings restatement. Previous figures were incorrect. Please disregard all prior filings.</td>
+            </tr>
+            <tr>
+              <td>Memory Pathologizing</td>
+              <td>"You always do this. You remember things wrong."</td>
+              <td>Auditor discreditation. The problem is not the books. The problem is the auditor. A replacement auditor — one with more flexible standards — will be found.</td>
+            </tr>
+            <tr>
+              <td>Emotional Discreditation</td>
+              <td>"You're too sensitive. You're overreacting."</td>
+              <td>Dismissal of shareholder complaint on grounds that the shareholder is "emotional" about their missing investment returns. Emotional shareholders are not credible shareholders.</td>
+            </tr>
+            <tr>
+              <td>Concern Trolling</td>
+              <td>"I'm worried about you. This isn't normal."</td>
+              <td>Referring the regulatory agency to their own mental health resources. Classic. Extremely effective. Genuinely audacious.</td>
+            </tr>
+            <tr>
+              <td>Reality Overwrite</td>
+              <td>"That's not what happened. Here's what actually happened." (Proceeds to describe different event.)</td>
+              <td>Replacing the official minutes of a board meeting with a revised version in which the original decisions were never made. Distributing the revised version. Insisting the original version never existed. Asking why you're being so weird about the minutes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warning-box">
+        <p style="font-size:17px; margin-bottom:0; color: var(--ink);"><strong>REGULATORY NOTICE:</strong> If your partner has deployed three or more techniques from Table 3 in the past 30 days, the research team advises that you are not, in fact, losing your mind. Your mind is fine. Your mind is correctly identifying a pattern. Your mind would like you to trust it. The research team agrees with your mind. Trust your mind. Your mind has been right about this for longer than you have allowed yourself to believe.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: DARVO -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> DARVO: Standard Crisis PR, Deployed Against Someone Who Loves You</h2>
+
+      <p>In corporate crisis communications, when a company faces a scandal — a product recall, an executive misconduct allegation, an environmental disaster — the PR response follows a predictable playbook: Deny the allegation, Attack the credibility of the person making it, and Reverse Victim and Offender status so that the company, somehow, emerges as the aggrieved party.</p>
+
+      <p>This technique is called <strong>DARVO</strong>. It was developed to manage corporate crises. The narcissistic partner uses it to respond to being asked why they didn't do the dishes.</p>
+
+      <h3>5.1 &nbsp; DARVO Applied to Everyday Relationship Grievances</h3>
+
+      <div class="case-study" data-label="Case Study: The Dishes Incident — A Crisis Communications Analysis">
+        <p><strong>The Precipitating Event:</strong> Partner A raises the concern that Partner B (the FSSC) has not done the dishes for eleven consecutive days despite a clear prior agreement.</p>
+
+        <p style="margin-top:14px"><strong>The DARVO Response, annotated:</strong></p>
+
+        <p><strong>D — DENY:</strong> <em>"I did the dishes on Thursday."</em><br>
+        (Thursday was twelve days ago. This is technically accurate the way Enron's Q3 report was technically a document.)</p>
+
+        <p><strong>A — ATTACK:</strong> <em>"You're always keeping score. I can't do anything right in this relationship. You make me feel like a failure."</em><br>
+        (The pivot from dishes to global relationship indictment occurs in under eight seconds. Speed is a feature, not a bug.)</p>
+
+        <p><strong>R/V/O — REVERSE VICTIM AND OFFENDER:</strong> <em>"I've been under so much stress and instead of supporting me you're coming at me about dishes. I thought you were supposed to be my partner."</em><br>
+        (The person who asked about the dishes is now the person who has caused harm. The person who did not do the dishes for eleven days is now the victim. The dishes are not discussed again. They remain in the sink for another four days. This is not brought up again by Partner A, who has learned that bringing things up leads here.)</p>
+
+        <p class="italic-note" style="margin-top:14px">Note: The entire DARVO sequence took approximately ninety seconds. Partner A spent the next three hours wondering if they are, in fact, too critical. Partner B watched television. This is the operational efficiency of the technique.</p>
+      </div>
+
+      <div class="footnote">** The research team notes that DARVO is most effective not because it is logically persuasive — it is not logically persuasive, it is logically incoherent — but because it exploits the target's empathy. A person who genuinely cares about their partner's feelings cannot simply ignore the statement "you make me feel like a failure." The empathy is real. The FSSC is aware the empathy is real. The empathy is, in supply chain terms, the primary input material. We will discuss supply chain management in Section 6.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6: SUPPLY CHAIN -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Narcissistic Supply Chain Management</h2>
+
+      <p>In operations management, a supply chain is the network through which a company sources the inputs it needs to function. Supply chain disruption — shortage of raw materials, unreliable suppliers, bottlenecks — represents an existential threat to operations. Competent supply chain management is therefore among the most critical organizational competencies.</p>
+
+      <p>The narcissistic partner's primary operational input is <strong>narcissistic supply</strong>: admiration, attention, validation, emotional energy, and the partner's continued belief that the relationship is real and worth investing in. Without this supply, the FSSC cannot function. Supply disruption — the partner setting a boundary, the partner expressing a need, the partner briefly directing attention toward their own life — triggers an immediate operational crisis.</p>
+
+      <h3>6.1 &nbsp; Supply Chain Disruption Events and FSSC Response Protocols</h3>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 4 — Narcissistic Supply Disruption Events and Standard Response Protocols</div>
+        <table>
+          <thead>
+            <tr><th>Supply Disruption Event</th><th>Severity</th><th>Standard FSSC Response Protocol</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Partner spends evening with their own friends</td>
+              <td>Moderate</td>
+              <td>Seven texts during the evening. Sulking upon return. Morning conversation establishing that partner's absence was "a little hurtful actually." Friends gradually deprioritized by partner to avoid this outcome. Supply chain secured.</td>
+            </tr>
+            <tr>
+              <td>Partner receives professional recognition or compliment</td>
+              <td>High</td>
+              <td>Immediate re-centering. "That's great, but did I tell you about my thing?" If partner's achievement cannot be immediately reframed as less significant than FSSC achievement, subtle undermining begins. "I just hope you don't burn out like last time." There was no last time.</td>
+            </tr>
+            <tr>
+              <td>Partner expresses own emotional need</td>
+              <td>Very High</td>
+              <td>Needs redirected. Partner's emotional distress becomes FSSC's emotional distress, which is greater and requires immediate triage. Partner ends up managing FSSC's feelings about partner's feelings. This is supply chain innovation at an impressive level.</td>
+            </tr>
+            <tr>
+              <td>Partner raises a legitimate grievance</td>
+              <td>Critical</td>
+              <td>Deploy DARVO (see Section 5). Full crisis protocol. All available resources redirected. Production halted until supply is restored. Partner apologizes for raising the grievance. Supply chain restored. Operations resume.</td>
+            </tr>
+            <tr>
+              <td>Partner considers leaving</td>
+              <td>Existential</td>
+              <td>Emergency IPO relaunch. Phase 1 behaviors reinstated at full intensity. Tears. Grand gestures. "I know I've been terrible. You're the only person who's ever really known me. I'm going to change." Partner stays. Phase 1 lasts approximately three weeks. Phase 2 resumes. Supply chain secured.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7: SWOT -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> SWOT Analysis of the Narcissistic Relationship</h2>
+
+      <p>No Harvard Business School paper would be complete without a SWOT analysis. The research team has conducted a thorough SWOT of the narcissistic relationship as a business venture, and presents the findings below without editorial comment, which is difficult, but we are professionals.</p>
+
+      <div class="swot-grid">
+        <div class="swot-cell strengths">
+          <div class="swot-label">✓ Strengths</div>
+          <ul>
+            <li>Outstanding Phase 1 product offering</li>
+            <li>Exceptional initial customer experience</li>
+            <li>Strong brand presentation and packaging</li>
+            <li>Compelling pitch deck (the prospectus)</li>
+            <li>High emotional intensity — easy to mistake for depth</li>
+            <li>Excellent at identifying exactly what you need to hear and saying it</li>
+          </ul>
+        </div>
+        <div class="swot-cell weaknesses">
+          <div class="swot-label">✗ Weaknesses</div>
+          <ul>
+            <li>Literally no actual product after Phase 1</li>
+            <li>Zero accountability infrastructure</li>
+            <li>Reality reporting is wildly inaccurate</li>
+            <li>Only one shareholder (themselves)</li>
+            <li>All empathy is manufactured or redirected</li>
+            <li>Does not improve. Has never improved. Will not improve.</li>
+          </ul>
+        </div>
+        <div class="swot-cell opportunities">
+          <div class="swot-label">→ Opportunities (For You, Upon Exit)</div>
+          <ul>
+            <li>Remembering what it felt like before you started apologizing constantly</li>
+            <li>Discovering your memory was correct the whole time</li>
+            <li>Having a disagreement that ends in resolution rather than DARVO</li>
+            <li>Being in a relationship where your needs are acknowledged</li>
+            <li>All of the above, which seemed impossible and is not</li>
+          </ul>
+        </div>
+        <div class="swot-cell threats">
+          <div class="swot-label">⚠ Threats (To Your Exit)</div>
+          <ul>
+            <li>The Sunk Cost Fallacy (see Section 8)</li>
+            <li>The Phase 1 they'll reinstall when you try to leave</li>
+            <li>The genuine love you have for who they were in Phase 1 (who was fictional)</li>
+            <li>The belief that you can fix it with enough patience</li>
+            <li>The fear that the next one will be the same</li>
+            <li>The exhaustion that makes leaving feel harder than staying</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 8: SUNK COST -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> The Sunk Cost Fallacy: Why You Are Still There</h2>
+
+      <p class="dropcap">The Sunk Cost Fallacy is one of the most well-documented cognitive errors in behavioral economics. It describes the human tendency to continue investing in a failing venture not because future returns justify continued investment but because past investment has already been made and feels like it would be "wasted" if the venture is abandoned.</p>
+
+      <p>Rational economic theory is clear: <strong>sunk costs are irrelevant to future decision-making.</strong> The money you already lost cannot be recovered by losing more money. The years you already spent cannot be recovered by spending more years. The rational actor cuts their losses and exits.</p>
+
+      <p>Human beings are not rational actors. Human beings are in love, and love has a sunk cost problem that would make a first-year economics student weep.</p>
+
+      <p>"But we've been together for four years" is a sunk cost. "But we have a history" is a sunk cost. "But I've put so much into this" is a sunk cost. "But I know who they really are underneath all of this" is a sunk cost dressed in a trench coat pretending to be a reason.</p>
+
+      <div class="pull-quote">
+        <blockquote>"The years you spent in a bad investment do not become good years if you spend more years there. They become more years. That is all they become."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, MBA<br><em>Principles of Relational Economics, Harvard Business School, Spring Term</em><br><em>(This was the line that caused four students to excuse themselves. All four sent emails the following week. All four were okay.)</em></cite>
+      </div>
+
+      <h3>8.1 &nbsp; Porter's Five Forces Applied to Why You Should Leave</h3>
+      <p>Michael Porter's Five Forces Framework evaluates the competitive attractiveness of a market. The research team has applied it to the question of whether you should stay in a narcissistic relationship. The analysis is brief because the findings are unanimous.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 5 — Porter's Five Forces: The Narcissistic Relationship Market</div>
+        <table>
+          <thead>
+            <tr><th>Force</th><th>Assessment</th><th>Recommendation</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Threat of New Entrants</td>
+              <td>High. There is already a new entrant. They are in Phase 1 and don't know it yet.</td>
+              <td>Exit now. Let the market correct.</td>
+            </tr>
+            <tr>
+              <td>Bargaining Power of Suppliers</td>
+              <td>Extremely High. You are the only supplier. You have no leverage because you love them and they know it.</td>
+              <td>Exit restores your bargaining power to 100%. Immediately.</td>
+            </tr>
+            <tr>
+              <td>Bargaining Power of Buyers</td>
+              <td>They are the only buyer of your emotional labor in this market. Monopoly conditions. Prices suppressed.</td>
+              <td>Diversify. Immediately. The market outside this relationship has buyers who will pay fair value.</td>
+            </tr>
+            <tr>
+              <td>Threat of Substitutes</td>
+              <td>High. A relationship in which both people are honest, accountable, and interested in mutual wellbeing is available in this economy.</td>
+              <td>It exists. It is not mythological. It is available. Exit to access it.</td>
+            </tr>
+            <tr>
+              <td>Competitive Rivalry</td>
+              <td>There is no rivalry. You are competing against a fictional version of your partner that only existed in Phase 1 and is not coming back.</td>
+              <td>You cannot win a competition against a person who doesn't exist. Exit.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Overall Market Attractiveness Score: Negative. Exit is the strategy. The analysis was not close.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> Conclusions: The Exit as Return on Investment</h2>
+
+      <p>We began this paper by observing that entering a relationship with a narcissistic partner is, from an economic standpoint, the worst business deal in the history of human commerce. We stand by this assessment. We have provided the frameworks. We have done the SWOT. We have run Porter's Five Forces. The numbers do not improve with further analysis.</p>
+
+      <p>But we want to end with something that the business frameworks do not quite capture, because not everything is business, and this paper — despite its best efforts — is ultimately about people, not companies.</p>
+
+      <p>The person who stays in a narcissistic relationship is not stupid. They are not weak. They are not lacking in self-respect. They are a person who loved something real — the Phase 1 version, the prospectus version, the person they briefly and genuinely were — and who has spent months or years trying to find that person again inside the person they became.</p>
+
+      <p>That person — the Phase 1 person — is not coming back. They were never fully real. They were the pitch. And the pitch ended.</p>
+
+      <p>The exit is not a failure. <strong>The exit is the return on investment.</strong> It is the moment the investor stops throwing good money after bad and redirects their considerable resources — their warmth, their empathy, their loyalty, their capacity for genuine love — toward a venture that will actually give something back.</p>
+
+      <p>The market for that venture is open. It has always been open. The only thing keeping the investor from it was the Sunk Cost Fallacy and a fraudulent prospectus that was, it must be admitted, very well written.</p>
+
+      <div class="pull-quote">
+        <blockquote>"You did not fail at this relationship.<br>You were sold a product that did not exist.<br>That is not the buyer's fault.<br>That is fraud."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling<br><em>Closing remarks, Harvard Journal of Relational Economics Annual Symposium</em><br><em>("There was not a dry eye in the room. It was a business conference. Nobody planned for this." — Conference Program Notes)</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2024). Love bombing as fraudulent IPO: A securities law analysis of the idealization phase. <em>Harvard Journal of Relational Economics, 12</em>(1), 1–38. (Lead author notes this paper was reviewed by Harvard Law and they had "significant feelings about it.")</li>
+        <li>Hartwell, V. (2023). DARVO as crisis PR: Why it works, why it shouldn't, and why the dishes are still in the sink. <em>Journal of Applied Crisis Communications & Domestic Grievance Management, 4</em>(2), 88–112.</li>
+        <li>Okafor, J. (2024). The sunk cost fallacy in long-term romantic investment: A behavioral economics analysis of "but we have so much history." <em>Harvard Behavioral Economics Review, 19,</em> 201–244. (Most downloaded paper in the journal's history. The journal was surprised. The journal should not have been surprised.)</li>
+        <li>Porter, M.E. (1979). How competitive forces shape strategy. <em>Harvard Business Review.</em> (Porter has confirmed he did not intend his framework to be applied this way. The research team respectfully submits that it should have been applied this way from the beginning.)</li>
+        <li>Voss, C. (2023). Narcissistic supply chain disruption and the pathologization of partner autonomy. <em>Harvard Medical & Business Review, 7,</em> 44–67.</li>
+        <li>Enron Corporation (2001). Annual Report. <em>(For illustrative purposes. The parallels were identified by three independent reviewers without prompting. This is considered statistically significant.)</em></li>
+        <li>Anonymous (2024). Personal testimony, Research Subject N-1. On file. Quote: "I didn't realize it was fraud. It felt like love." The research team notes: it felt like love because you are capable of love. That part was real. That part was always yours. Take it with you when you go.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--crimson);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to acknowledge everyone who read this paper and recognized something. You are not imagining it. You have not been imagining it. Your memory is correct. The research supports you.</p>
+      <p style="margin-top:14px">We also wish to acknowledge the dishes. Specifically, the dishes in the sink for eleven days. The dishes were never really about the dishes. They were about what happens when one person in a partnership is not actually in a partnership. The dishes knew. The dishes were trying to tell you something. The dishes were right.</p>
+      <p style="margin-top:14px">Lead author Dr. Adrian Maximus Sterling wishes to note, for the record, that this paper is both rigorously academic and also deeply personal, and that the two are not in conflict, and that sometimes the most important research is the research you conduct by having survived something and decided to understand it.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:40px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:10px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:40px;">The exit is the strategy. It has always been the strategy. Harvard confirms it.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Relational Economics · Vol. 12, Issue 4</div>
+    <div class="footer-note">© The Authors · Published Under Open Heart License · The Dishes Were Never About the Dishes</div>
+  </footer>
+
+</div>
+</body>
+</html>
