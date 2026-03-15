@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chrome Hypothesis | Harvard Journal of Vehicular Mate-Attraction Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --ink-light: #1a1a1a;
+    --ink-faint: #2a2a2a;
+    --paper: #f7f5ef;
+    --paper-warm: #f0ece0;
+    --paper-aged: #e5dfc8;
+    --rule: #8a7a60;
+    --rule-light: #b8a888;
+    --crimson: #a51c30;
+    --chrome: #6a6a7a;
+    --chrome-light: #9a9aaa;
+    --gold: #8b6914;
+    --silver: #c0c0c8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #111;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.5;
+  }
+
+  .journal {
+    max-width: 860px;
+    margin: 40px auto;
+    background: var(--paper);
+    box-shadow: 0 0 0 1px #333, 0 20px 80px rgba(0,0,0,0.7);
+    animation: pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity:0; transform:translateY(24px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+
+  /* HARVARD CHROME MASTHEAD */
+  .masthead {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2a 50%, #0a0a0a 100%);
+    border-bottom: 3px solid var(--crimson);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      rgba(192,192,200,0.03) 60px,
+      rgba(192,192,200,0.03) 61px
+    );
+  }
+
+  .masthead-top {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  .harvard-crest {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(165,28,48,0.5);
+  }
+
+  .harvard-crest span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--chrome-light);
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  .masthead-journal {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+  }
+
+  .masthead-journal strong {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    margin-bottom: 3px;
+    color: #fff;
+  }
+
+  .masthead-journal small {
+    font-size: 12px;
+    color: var(--chrome-light);
+    font-style: italic;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .masthead-strip {
+    background: var(--crimson);
+    padding: 7px 60px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ornament {
+    text-align: center;
+    color: var(--crimson);
+    font-size: 16px;
+    letter-spacing: 0.5em;
+    padding: 10px 0;
+    background: var(--paper-aged);
+    border-bottom: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+    user-select: none;
+  }
+
+  .paper-header {
+    padding: 50px 60px 36px;
+    border-bottom: 3px solid var(--crimson);
+    text-align: center;
+    background: var(--paper);
+  }
+
+  .paper-type {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .paper-type::before, .paper-type::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: var(--crimson);
+  }
+
+  .paper-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+  }
+
+  .paper-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink-light);
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto 24px;
+  }
+
+  .paper-fields {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .field-tag {
+    background: var(--ink);
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .field-tag.chrome-tag {
+    background: linear-gradient(135deg, #555, #999, #555);
+    color: #fff;
+  }
+
+  .authors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 28px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule-light);
+    border-bottom: 1px solid var(--rule-light);
+    text-align: left;
+  }
+
+  .author-card {
+    background: var(--paper-warm);
+    border: 1px solid var(--rule-light);
+    padding: 14px 16px;
+  }
+
+  .author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 3px;
+    line-height: 1.3;
+  }
+
+  .author-name.lead { color: var(--crimson); font-size: 15px; }
+
+  .author-title {
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .author-contact {
+    font-size: 11px;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--chrome);
+    line-height: 1.6;
+  }
+
+  .author-quals {
+    font-size: 11px;
+    color: var(--ink-faint);
+    margin-top: 5px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .dates-row {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 2;
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .paper-body { padding: 40px 60px 60px; }
+
+  .abstract-box {
+    background: var(--paper-aged);
+    border-left: 4px solid var(--crimson);
+    padding: 26px 30px;
+    margin-bottom: 44px;
+    position: relative;
+  }
+
+  .abstract-box::before {
+    content: 'ABSTRACT';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    background: var(--crimson);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    padding: 3px 10px;
+  }
+
+  .abstract-text {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .keywords {
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+
+  .keywords strong { font-style: normal; color: var(--ink); font-weight: 600; }
+
+  .section { margin-bottom: 44px; }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--crimson);
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+
+  h2 .sec-num {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--crimson);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ink);
+    margin: 28px 0 12px;
+    padding-left: 16px;
+    border-left: 3px solid var(--crimson);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.85;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: var(--ink);
+    hyphens: auto;
+  }
+
+  p.italic-note {
+    font-style: italic;
+    color: var(--ink-light);
+    font-size: 17px;
+    padding: 12px 20px;
+    border-left: 3px solid var(--rule);
+    background: var(--paper-warm);
+  }
+
+  .equation-box {
+    background: var(--paper-warm);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--chrome);
+    padding: 20px 32px;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .equation {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+
+  .equation-label {
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+
+  .table-wrapper { margin: 28px 0; overflow-x: auto; }
+
+  .table-caption {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--ink);
+    margin-bottom: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+
+  thead tr { background: var(--ink); color: #fff; }
+
+  thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  tbody tr:nth-child(even) { background: var(--paper-aged); }
+  tbody tr:nth-child(odd) { background: var(--paper); }
+  tbody tr:hover { background: rgba(165,28,48,0.05); transition: background 0.2s; }
+
+  tbody td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--rule-light);
+    line-height: 1.55;
+    color: var(--ink);
+    font-size: 15px;
+    vertical-align: top;
+  }
+
+  tbody td:first-child {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--crimson);
+    width: 25%;
+  }
+
+  .table-note {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ink-light);
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+
+  .footnote {
+    font-size: 16px;
+    color: var(--ink);
+    font-style: italic;
+    padding: 14px 20px;
+    border-left: 4px solid var(--crimson);
+    margin: 20px 0;
+    background: var(--paper-warm);
+    line-height: 1.8;
+  }
+
+  .footnote sup { color: var(--crimson); font-weight: 700; font-style: normal; }
+
+  .case-study {
+    border: 1px solid var(--rule);
+    background: var(--paper-warm);
+    padding: 22px 26px;
+    margin: 24px 0;
+    position: relative;
+  }
+
+  .case-study::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -11px;
+    left: 18px;
+    background: var(--ink);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 12px;
+    text-transform: uppercase;
+  }
+
+  .warning-box {
+    background: #fff8e8;
+    border: 2px solid var(--gold);
+    padding: 18px 26px;
+    margin: 24px 0;
+    position: relative;
+  }
+
+  .warning-box::before {
+    content: '⚠ FIELD SAFETY NOTICE';
+    position: absolute;
+    top: -11px;
+    left: 18px;
+    background: var(--gold);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 12px;
+  }
+
+  .chrome-box {
+    background: linear-gradient(135deg, #1a1a2a, #2a2a3a);
+    color: #e0e0e8;
+    padding: 22px 28px;
+    margin: 24px 0;
+    border-left: 4px solid var(--chrome-light);
+  }
+
+  .chrome-box p {
+    color: #e0e0e8;
+    font-size: 17px;
+  }
+
+  .chrome-box .chrome-stat {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: #c0c0d0;
+    display: block;
+    margin: 6px 0;
+    text-shadow: 0 0 20px rgba(192,192,208,0.5);
+  }
+
+  .chrome-box .chrome-label {
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #8a8aaa;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin: 24px 0;
+    background: var(--rule);
+  }
+
+  .stat-cell {
+    background: var(--paper);
+    padding: 18px 14px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--crimson);
+    display: block;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .pull-quote {
+    border-top: 3px double var(--crimson);
+    border-bottom: 3px double var(--crimson);
+    padding: 28px 40px;
+    margin: 36px 0;
+    text-align: center;
+  }
+
+  .pull-quote blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .pull-quote cite {
+    font-size: 14px;
+    color: var(--ink-faint);
+    font-style: italic;
+    display: block;
+    line-height: 1.7;
+  }
+
+  .dropcap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 62px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.78;
+    margin-right: 8px;
+    margin-top: 8px;
+    color: var(--crimson);
+  }
+
+  .rule-thick { border: none; border-top: 2px solid var(--crimson); margin: 44px 0; }
+
+  .center-ornament {
+    text-align: center;
+    color: var(--crimson);
+    font-size: 20px;
+    letter-spacing: 0.6em;
+    margin: 20px 0;
+    user-select: none;
+  }
+
+  .references ol { padding-left: 24px; }
+
+  .references li {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+
+  .acknowledgments {
+    background: var(--paper-aged);
+    padding: 28px 32px;
+    border: 1px solid var(--rule);
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .paper-footer {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a2a);
+    color: #fff;
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 3px solid var(--crimson);
+  }
+
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--chrome-light);
+  }
+
+  .footer-note {
+    font-style: italic;
+    color: var(--chrome-light);
+    opacity: 0.7;
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+  }
+
+  @media (max-width: 700px) {
+    .journal { margin: 0; }
+    .masthead-top, .paper-header, .paper-body { padding-left: 24px; padding-right: 24px; }
+    .masthead-strip { padding-left: 24px; padding-right: 24px; }
+    .paper-title { font-size: 26px; }
+    .authors-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Vehicular Mate-Attraction Studies</strong>
+        <small>& Applied Chromatic Evolutionary Psychology</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 4, Issue 2 &nbsp;·&nbsp; Peer-Reviewed by Six People Who All Own Motorcycles and Claim This Is Unrelated &nbsp;·&nbsp; ISSN: Not-Real-But-Very-Authoritative-Looking
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: Things That Absolutely Should Not Work But Do</div>
+
+    <h1 class="paper-title">The Chrome Hypothesis</h1>
+    <p class="paper-subtitle">A Multi-Disciplinary Investigation Into the Acquisition of Custom Chromed Motorcycles by Males Aged 55–75 as Evolutionarily Optimized Mate-Attraction Strategy, With Supporting Evidence From Materials Science, Acoustic Engineering, Evolutionary Psychology, Behavioral Economics, Neuroscience, and Three Parking Lots in Scottsdale, Arizona</p>
+
+    <div class="paper-fields">
+      <span class="field-tag chrome-tag">Materials Science</span>
+      <span class="field-tag">Evolutionary Psychology</span>
+      <span class="field-tag chrome-tag">Acoustic Engineering</span>
+      <span class="field-tag">Behavioral Economics</span>
+      <span class="field-tag">Neuroscience</span>
+      <span class="field-tag chrome-tag">Veblen Good Theory</span>
+      <span class="field-tag">Applied Audacity</span>
+    </div>
+
+    <!-- AUTHORS WITH CONTACT INFO -->
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA, D.Sc.</div>
+        <div class="author-title">Chair, Dept. of Catastrophic Male Decision-Making<br>Harvard Business School & Evolutionary Studies</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6c6b7a6d737671785f777d6c31777e6d697e6d7b317a7b6a">[email&#160;protected]</a><br>
+          Office: Aldrich Hall 412<br>
+          Tel: (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard), MBA (Wharton), D.Sc. Applied Human Audacity (Honorary). Lead author. Owns a motorcycle. Denies this influenced findings. Findings suggest otherwise.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. A. Sterling, Ph.D., M.S.</div>
+        <div class="author-title">Associate Professor, Evolutionary Psychology<br>Harvard Department of Human Reproductive Strategy</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10713e636475627c797e77507671633e787162667162743e757465">[email&#160;protected]</a><br>
+          Office: William James Hall 810<br>
+          Tel: (617) 555-0271
+        </div>
+        <div class="author-quals">Ph.D. Evolutionary Psychology (Oxford), M.S. Mate Choice & Signal Theory (UCL). No relation to lead author, though they share a last name and suspiciously similar opinions about V-twin engines. Coincidence under investigation.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Chester B. Holloway III, Ph.D., P.E.</div>
+        <div class="author-title">Gordon McKay Professor of Acoustic Engineering<br>Harvard John A. Paulson School of Engineering</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3c5f1254535050534b5d457c4f595d4f12545d4e4a5d4e5812595849">[email&#160;protected]</a><br>
+          Office: Maxwell Dworkin 233<br>
+          Tel: (617) 555-0388
+        </div>
+        <div class="author-quals">Ph.D. Acoustic Engineering (MIT), P.E. Licensed. Pioneered research into infrasonic frequency response in human attraction contexts. His colleagues initially thought this was a joke. His colleagues no longer think this is a joke.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Reginald T. Whitmore IV, Ph.D., FASM</div>
+        <div class="author-title">Professor of Materials Science & Surface Engineering<br>MIT (Guest Author, Borrowed from Down the Street)</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9bbe7bea1a0bda4a6bbac89a4a0bde7acadbc">[email&#160;protected]</a><br>
+          Office: Building 8, Room 319<br>
+          Tel: (617) 555-0452
+        </div>
+        <div class="author-quals">Ph.D. Materials Science (MIT), Fellow of the American Society for Materials. World authority on chromium reflectivity coefficients. Was not told what the paper was about when recruited. Is now fully committed to the research and has questions about his own car.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Valentina Cruz-Okonkwo, M.D., Ph.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Reward & Status<br>Harvard Medical School, Dept. of Neurobiology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82f4ace1f0f7f8ede9edc2eaeff1aceae3f0f4e3f0e6ace7e6f7">[email&#160;protected]</a><br>
+          Office: Goldenson Building 420<br>
+          Tel: (617) 555-0519
+        </div>
+        <div class="author-quals">M.D. (Johns Hopkins), Ph.D. Neuroscience (Stanford). Research focuses on dopaminergic response to status signals and the neurobiology of "that's actually kind of impressive." Joined the research team after witnessing the parking lot data collection firsthand and describing the results as "genuinely baffling and I need to understand this."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Luxury Economics & Conspicuous Consumption<br>Harvard Kennedy School of Government</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a6e246b686b786b4a62617924626b787c6b786e246f6e7f">[email&#160;protected]</a><br>
+          Office: Rubenstein Building 302<br>
+          Tel: (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Author of "Veblen Was Right About Everything: A Reluctant Concession" (2019, Oxford University Press, 847 citations). Has strong opinions about the difference between a $12,000 motorcycle and an $85,000 motorcycle as it relates to attraction outcomes. Spoiler: the difference is enormous and also completely irrational. He has accepted this.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: After One Very Productive Weekend in Scottsdale &nbsp;·&nbsp;
+      Peer-Reviewed: By Colleagues Who Kept Saying "Wait, Seriously?" &nbsp;·&nbsp;
+      Accepted: Unanimously, With Audible Laughter &nbsp;·&nbsp;
+      Published: In the Interest of Science and Also Older Men Everywhere
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of a phenomenon observed with remarkable consistency across North American parking lots, roadside diners, motorcycle rallies, and at least one Cracker Barrel in Tennessee: the acquisition of a custom, heavily chromed motorcycle by a male subject aged 55–75 demonstrably and repeatedly attracts the attention of female subjects significantly younger than the operator.</p>
+      <p class="abstract-text">We examine this phenomenon through six independent disciplinary lenses: (1) <strong>Evolutionary Psychology</strong>, in which the motorcycle functions as an honest signal of resource acquisition capacity; (2) <strong>Materials Science</strong>, in which chrome's reflectivity coefficient functions as a proxy for wealth display that bypasses conscious evaluation; (3) <strong>Acoustic Engineering</strong>, in which the V-twin firing frequency at idle produces infrasonic resonance that activates the human threat-assessment-adjacent-to-excitement neural pathway; (4) <strong>Behavioral Economics</strong>, in which the custom motorcycle is a textbook Veblen good whose attraction value scales nonlinearly with price; (5) <strong>Neuroscience</strong>, in which the combination of chrome, sound, and the sight of a 67-year-old man clearly not worrying about what anyone thinks produces a dopaminergic response that the research team has elected to describe as "surprisingly robust"; and (6) <strong>Sociology</strong>, in which the motorcycle communicates an entire biographical narrative — freedom, means, experience, irreverence — in approximately 0.3 seconds, which is faster than any sentence a 67-year-old man could realistically open with.</p>
+      <p class="abstract-text">Our central finding is this: <strong>it works.</strong> The data are unambiguous, the effect sizes are significant, the replication rate across sites is 94.7%, and the research team has spent considerable time arguing about whether publishing these findings is responsible. We have decided it is. The men were going to buy the motorcycles anyway.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Chrome Hypothesis · Vehicular Status Display · V-Twin Acoustic Arousal · Veblen Motorcycle Effect · Evolutionary Mate-Attraction Signaling · The Parking Lot Effect · Honest Signal Theory · Why A 67-Year-Old Man on a Custom Harley Gets More Conversations Than a 35-Year-Old on a Stock Honda · The Helmet Problem (See Section 9) · Resource Display on Two Wheels
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Phenomenon Stated</h2>
+
+      <p class="dropcap">There exists, in the empirical record, a phenomenon so consistently observed, so frequently reported, and so thoroughly documented in gas station parking lots across the American Southwest that its continued absence from the peer-reviewed literature represents a significant gap — not in the data, which is extensive, but in the scientific community's willingness to take it seriously.</p>
+
+      <p>The phenomenon is this: a man, typically between the ages of 55 and 75, acquires a custom motorcycle — specifically one that has been chromed extensively, customized expensively, and equipped with an exhaust system whose primary engineering purpose appears to be acoustic rather than mechanical — parks said motorcycle in a public location, and is subsequently approached by, photographed by, or enters into extended conversation with women who are, by any standard actuarial measure, significantly younger than he is.</p>
+
+      <p>This paper does not ask whether this happens. It happens. The research team has documented it in 34 separate field sites across 11 states. It happens with a reliability that would make most pharmaceutical trials weep with envy. This paper asks <em>why</em> it happens — and finds, to the team's considerable amusement and eventual grudging respect, that the answer involves physics, evolution, neuroscience, economics, and a surprisingly sophisticated signaling system that the men deploying it generally understand only intuitively, if at all.</p>
+
+      <p>Subject M-67, our primary longitudinal case study, described his decision to purchase a $78,000 custom chromed touring motorcycle as follows: "I just always wanted one." Subject M-67 has since received fourteen unsolicited phone numbers, been photographed with thirty-one strangers, and been asked his name by a woman twenty-nine years his junior who then spelled her own name out slowly and unprompted. Subject M-67 continues to maintain that he bought the motorcycle because he "just always wanted one." The research team believes him. The research team also believes that "just wanting one" is evolution working exactly as designed.</p>
+
+      <div class="footnote"><sup>†</sup> The research team wishes to note that the original proposal for this study was rejected twice by the Harvard IRB on the grounds that the premise was "not a serious research question." Following submission of 847 pages of preliminary field data, 23 hours of parking lot video, and a 14-page appendix titled "We Are Completely Serious, Please Read The Data," the IRB approved the study with the notation: "Approved, with the committee's reluctant acknowledgment that this is apparently real."</div>
+
+      <h3>1.1 &nbsp; Scope and Delimitations</h3>
+      <p>This paper concerns itself specifically with <em>custom</em> motorcycles — those that have been modified, chromed, painted, and otherwise personalized at significant expense beyond the factory configuration. The distinction between a stock motorcycle and a custom chromed one is not merely aesthetic. It is, as Section 4 will demonstrate, economically and evolutionarily critical. A man on a $9,000 stock motorcycle is a man who owns a motorcycle. A man on a $79,000 custom chromed motorcycle is a man who has <em>resources, taste, time, and enough self-confidence to spend eighty thousand dollars on something that will definitely scratch</em> — and that combination, the data suggest, is doing considerable work.</p>
+
+      <p>We also note, for clarity, that this paper does not address why this strategy works with the specific frequency it does. We address that in Sections 2 through 8. This paper addresses only the fact that it works — which, upon reflection, is the part most likely to be useful to the target demographic and most likely to be cited in contexts the research team did not fully anticipate.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">94.7%</span>
+          <span class="stat-label">Replication rate across 34 field sites</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">4.7 min</span>
+          <span class="stat-label">Average time to first unsolicited approach after parking</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">$78K</span>
+          <span class="stat-label">Average investment in peak-performing subjects' motorcycles</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">23 yrs</span>
+          <span class="stat-label">Average age differential in documented interactions</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Evolutionary Psychology: The Motorcycle as Honest Signal</h2>
+
+      <p>Honest Signal Theory, first formalized by Zahavi (1975) in the context of the peacock's tail, holds that certain displays are evolutionarily stable precisely because they are <em>costly</em> — they require genuine resources to produce and maintain, and therefore cannot be faked by lower-quality individuals. The peacock cannot fake its tail. The male bowerbird cannot fake the elaborate structure it has spent weeks constructing. And a 67-year-old man cannot fake an $80,000 custom motorcycle sitting in the parking lot of a Cracker Barrel in Scottsdale.</p>
+
+      <p>The motorcycle, from an evolutionary psychology standpoint, is therefore not a vehicle. It is a peacock's tail with a 103-cubic-inch engine and approximately forty square feet of custom chrome work.</p>
+
+      <h3>2.1 &nbsp; What the Signal Communicates</h3>
+      <p>A custom chromed motorcycle, assessed by an evolutionarily-tuned female nervous system in approximately 300 milliseconds, communicates the following information simultaneously and without the operator having to say a single word:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Information Encoded in the Custom Chrome Motorcycle Signal (300ms Assessment Window)</div>
+        <table>
+          <thead>
+            <tr><th>Signal Component</th><th>What Is Communicated</th><th>Evolutionary Relevance</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$78,000 Price Tag</td>
+              <td>This individual has significant disposable resources above survival requirements.</td>
+              <td>High. Resource availability is among the most consistent predictors of mate quality across cultures and centuries. The motorcycle is a balance sheet with handlebars.</td>
+            </tr>
+            <tr>
+              <td>Custom Personalization</td>
+              <td>This individual did not simply purchase a commodity. He invested time, taste, and decision-making into something personal. He has preferences. He acts on them.</td>
+              <td>Moderate-High. Agency and deliberate action signal executive function. Executive function is attractive. This is not a metaphor.</td>
+            </tr>
+            <tr>
+              <td>Operating Condition</td>
+              <td>The motorcycle is clean, maintained, detailed, and functional. Nothing is broken. Everything is intentional.</td>
+              <td>High. Care for expensive objects signals capacity for care generally. Female nervous systems note this. They do not necessarily know they are noting it. They are noting it.</td>
+            </tr>
+            <tr>
+              <td>Presence in Public</td>
+              <td>This individual brought the motorcycle somewhere. He went outside. He is, demonstrably, still doing things.</td>
+              <td>Moderate. Continued engagement with the world signals health, vitality, and the functional absence of the couch-based entropy that claims many males of this age cohort. He is vertical. He is moving. He arrived on purpose.</td>
+            </tr>
+            <tr>
+              <td>The Age of the Operator</td>
+              <td>This individual has been accumulating resources for 45+ years and has arrived at a point where spending them on chrome is an option he chose.</td>
+              <td>High. This is, counterintuitively, a feature. See Section 7 for full analysis. The age is not a liability. The age is part of the signal.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: All of this information is processed before the operator removes his helmet. The helmet problem is addressed separately in Section 9 and is, the research team acknowledges, a genuine complication to an otherwise elegant system.</div>
+      </div>
+
+      <h3>2.2 &nbsp; Why Younger Men in Sports Cars Do Not Achieve Equivalent Results</h3>
+      <p>A question the research team was repeatedly asked during peer review: "Why doesn't a 35-year-old in a Ferrari achieve the same effect?" This is an excellent question and the answer is instructive.</p>
+      <p>A 35-year-old in a Ferrari is, evolutionarily speaking, still a speculative investment. He might have resources long-term. The Ferrari might be financed. The resources might not be as deep as the car implies. The signal, while positive, is not yet fully verified by time.</p>
+      <p>A 67-year-old on an $80,000 custom motorcycle is a completed proof of concept. He accumulated the resources. He maintained them. He survived to spend them on something purely for pleasure. He is not performing success. He achieved it, had enough left over to chrome everything twice, and has the unhurried energy of a man who no longer needs to prove anything to anyone — which is, the neuroscience literature confirms (see Section 6), one of the most attractive qualities a human being can project.</p>
+
+      <div class="footnote"><sup>‡</sup> Subject M-71, age 71, was observed in a Sturgis, South Dakota parking lot spending 47 minutes in conversation with three women aged 28, 31, and 34, all of whom had approached him without prompting while his 35-year-old son stood approximately twelve feet away next to a newer, more powerful motorcycle. The son was not approached. The son was present for the debrief and described the experience as "educational" and "the most humbling afternoon of my adult life." His father described it as "Tuesday."</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Materials Science: The Reflectivity Coefficient as Wealth Proxy</h2>
+
+      <p>Dr. Whitmore's contribution to this research represents, in the view of the other authors, the most unexpectedly rigorous section of the paper. When first approached about the project, Dr. Whitmore — the world's foremost authority on industrial chromium application — reportedly replied that he "had better things to do." He subsequently read the preliminary data, requested field access, and spent eleven days in Scottsdale with a photometer. His findings follow.</p>
+
+      <h3>3.1 &nbsp; Chrome as Sensory Stimulant</h3>
+      <p>Chromium, when electroplated to a mirror finish and applied at the density typical of a custom motorcycle build (approximately 340–580 individual chrome components on a fully custom build), produces a surface reflectivity of 62–72% across the visible spectrum. This is not merely bright. This is, in direct sunlight, visually spectacular in a manner that bypasses learned aesthetic preferences and operates at the level of the primate visual system's fundamental response to moving light.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          A<sub>chrome</sub> = R<sub>λ</sub> × C<sub>surface</sub> × Ω<sub>angular</sub> × I<sub>solar</sub><br>
+          <span style="font-size:13px;opacity:0.6;display:block;margin-top:6px;">Chrome Attraction Index = Reflectivity × Surface Area × Viewing Angle Distribution × Solar Irradiance</span>
+        </div>
+        <div class="equation-label">At peak solar irradiance (Arizona, 2pm, June), a fully chromed custom motorcycle produces a total luminous intensity approaching that of a small theatrical spotlight — directed, as fate and physics would have it, outward in all directions simultaneously. The motorcycle is, in the precise sense of the word, radiant. This is not a metaphor. This is optics.</div>
+      </div>
+
+      <h3>3.2 &nbsp; The Quantity Effect: Why More Chrome is More</h3>
+      <p>A critical finding of Dr. Whitmore's analysis is that chrome coverage is not linear in its effect. Below approximately 40% custom chrome coverage, the motorcycle reads as "nicely maintained." Above 70% coverage, it begins to read as "someone made a significant decision here." Above 85% coverage — the full custom build — it reads as something that has no conventional descriptor in the English language but which the research team's female field observers consistently described, unprompted and independently, using the words: "Oh wow" and "whose is that."</p>
+      <p>"Whose is that," the research team notes, is among the most useful three-word questions an older gentleman's motorcycle can generate.</p>
+
+      <div class="chrome-box">
+        <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:center; text-align:center; margin-bottom:16px;">
+          <div>
+            <span class="chrome-stat">62–72%</span>
+            <span class="chrome-label">Visible Spectrum Reflectivity</span>
+          </div>
+          <div>
+            <span class="chrome-stat">580+</span>
+            <span class="chrome-label">Chrome components, full custom build</span>
+          </div>
+          <div>
+            <span class="chrome-stat">0.3 sec</span>
+            <span class="chrome-label">Time to initial visual attention capture</span>
+          </div>
+        </div>
+        <p style="font-size:15px; text-align:center; opacity:0.8; font-style:italic;">"In 31 years of materials science research, I have never published a paper that made me reconsider my vehicle choices. I am reconsidering my vehicle choices." — Dr. R.T. Whitmore IV, FASM, peer review commentary</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Acoustic Engineering: The V-Twin as Neurological Event</h2>
+
+      <p>Prof. Holloway joined this research with a specific hypothesis: that the sound profile of a large-displacement V-twin engine at idle — specifically the characteristic loping cadence produced by the 45-degree cylinder offset and the uneven firing interval — produces acoustic frequencies that interact with the human auditory-emotional processing system in ways that are both measurable and, for the research team's purposes, highly relevant.</p>
+
+      <p>Prof. Holloway was correct. The research team wishes it had been less correct, because the findings required three rounds of peer review before the reviewers accepted that the numbers were real.</p>
+
+      <h3>4.1 &nbsp; The V-Twin Firing Signature</h3>
+      <p>A 103-cubic-inch V-twin engine with aftermarket exhaust, at 900-1100 RPM idle, produces a sound pressure level of 78-94 dB at 10 meters, with a fundamental frequency of approximately 47-58 Hz and significant harmonic content in the 100-200 Hz range. This frequency range is not arbitrary. It overlaps substantially with:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — V-Twin Acoustic Profile and Neurological Coincidences That Are Not Coincidences</div>
+        <table>
+          <thead>
+            <tr><th>Frequency Range</th><th>V-Twin Output</th><th>Known Human Neurological Response</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>40–60 Hz (Fundamental)</td>
+              <td>Primary idle thump. The "potato-potato" cadence. Felt in the chest at close range.</td>
+              <td>Activates the same brainstem alerting pathway triggered by large animals, distant thunder, and other stimuli the primate threat-assessment system classifies as "significant and worth paying attention to." Not fear. Attention. Alert presence. The brain says: <em>something is here.</em></td>
+            </tr>
+            <tr>
+              <td>80–120 Hz (2nd Harmonic)</td>
+              <td>The "chest resonance" range. Physically perceptible at 5 meters. Inexplicably satisfying to most humans regardless of motorcycle interest.</td>
+              <td>Overlaps with the fundamental frequency range of the adult male speaking voice at its most resonant. The motorcycle is, acoustically, doing something the male voice does when it is being compelling. This is either a remarkable coincidence or evolution having a moment.</td>
+            </tr>
+            <tr>
+              <td>150–200 Hz (3rd Harmonic)</td>
+              <td>The "warmth" component. Gives the sound its characteristic richness vs. the thin sound of a 4-cylinder.</td>
+              <td>This frequency range is associated in psychoacoustics research with warmth, authority, and spatial presence — the same qualities that distinguish a confident speaking voice from a nervous one. The motorcycle is literally emitting confidence frequencies.</td>
+            </tr>
+            <tr>
+              <td>Sub-40 Hz (Infrasonic)</td>
+              <td>Produced by open pipes at high displacement, felt rather than heard at distance.</td>
+              <td>Below the hearing threshold but above the vibration-perception threshold. Registered in the body as a vague sense that something powerful is nearby. Research subjects described this as "I don't know why, it just feels like something is happening." Dr. Cruz-Okonkwo has identified the specific neural pathway. It is not subtle.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: Prof. Holloway wishes to emphasize that this analysis applies specifically to large-displacement V-twin engines with open or lightly baffled exhaust systems. A 250cc inline-4 at idle produces primarily annoyance. The acoustic profile does not scale down. This is non-negotiable from an engineering standpoint.</div>
+      </div>
+
+      <h3>4.2 &nbsp; The Throttle as Language</h3>
+      <p>A finding that emerged unexpectedly from the acoustic analysis and that Prof. Holloway initially refused to include in the paper on the grounds that it "sounds ridiculous" before the data compelled its inclusion: the brief application of throttle — the characteristic blip produced when an operator revs the engine without moving — functions, in the acoustic analysis, as a communicative act.</p>
+      <p>A single throttle blip from a large-displacement V-twin produces a rapid increase and decrease in sound energy across the full frequency spectrum described above, lasting approximately 0.8 seconds. In the acoustic data, this event is indistinguishable in its attentional-capture function from a human voice saying a short, declarative sentence in a confident register.</p>
+      <p>The motorcycle, in other words, can speak. It says something that has no direct translation but that the research team's field observers consistently paraphrased as: <em>"I'm here, and I'm not in a hurry."</em> This sentence, delivered at 94 dB from a custom-chromed touring motorcycle, has a measurably different effect than the same sentence delivered verbally by a 67-year-old man in a parking lot. The research team acknowledges this is not flattering to the verbal approach but insists the data are the data.</p>
+
+      <div class="footnote"><sup>§</sup> During field observation in Laughlin, Nevada, Subject M-67 was observed producing a single throttle blip while stationary at a stoplight. A woman in the adjacent vehicle rolled down her window. This was documented as Event 247 in the field log. The research team notes that the stoplight was red for only 45 seconds, which the team classifies as an impressive conversion rate per unit time by any reasonable standard.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Behavioral Economics: The Veblen Motorcycle Effect</h2>
+
+      <p>Prof. Abara-Whitfield arrived at this research from a different angle than his colleagues. As the author of <em>Veblen Was Right About Everything: A Reluctant Concession</em> (2019), he was already familiar with the literature on conspicuous consumption — the phenomenon, first described by Thorstein Veblen in 1899, whereby goods derive part of their value from their visible expensiveness. What he had not previously considered was the application of Veblen good theory to mate-attraction outcomes. He has now considered it extensively, and his conclusions are presented below.</p>
+
+      <h3>5.1 &nbsp; Why the Price Matters More Than the Machine</h3>
+      <p>Veblen goods are distinguished from normal goods by a counterintuitive demand curve: as price increases, demand increases. A $500 watch tells time. A $50,000 watch also tells time. The $50,000 watch communicates something the $500 watch cannot. The motorcycle market follows exactly this pattern — but with an additional variable that Veblen himself did not have the pleasure of analyzing: the age of the operator.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 — Motorcycle Investment Level vs. Observed Approach Rate (Controlled Field Data, n=847 Parking Events)</div>
+        <table>
+          <thead>
+            <tr><th>Investment Level</th><th>Stock / Unmodified</th><th>Avg. Approaches/hr</th><th>Avg. Approach Age Diff.</th><th>Conversion to Conversation (10+ min)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Under $10,000</td>
+              <td>Stock, minimal modification</td>
+              <td>0.3</td>
+              <td>4.2 years</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>$10,000–$25,000</td>
+              <td>Some custom work, partial chrome</td>
+              <td>0.8</td>
+              <td>9.7 years</td>
+              <td>28%</td>
+            </tr>
+            <tr>
+              <td>$25,000–$50,000</td>
+              <td>Significant custom work, full paint, chrome package</td>
+              <td>1.9</td>
+              <td>17.3 years</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>$50,000–$80,000</td>
+              <td>Extensive custom build, near-full chrome, custom exhaust</td>
+              <td>3.4</td>
+              <td>21.8 years</td>
+              <td>67%</td>
+            </tr>
+            <tr>
+              <td>$80,000+</td>
+              <td>Full custom build, maximum chrome, custom everything</td>
+              <td style="color:#a51c30;font-weight:700">5.1</td>
+              <td style="color:#a51c30;font-weight:700">27.4 years</td>
+              <td style="color:#a51c30;font-weight:700">84%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: Approach rate measured as unprompted female-initiated interactions per hour of stationary parking time. Age differential calculated as operator age minus approaching female age (positive values indicate operator is older). Conversion rate measures percentage of initial approaches that resulted in conversations of 10 minutes or longer. All figures represent averages across 34 field sites in 11 states. The research team notes that the $80,000+ row was the one that caused two peer reviewers to go buy motorcycles. This is disclosed in the interests of transparency.</div>
+      </div>
+
+      <h3>5.2 &nbsp; The Irrationality Premium: Why Custom Beats Stock Every Time</h3>
+      <p>The single most economically significant finding in Prof. Abara-Whitfield's analysis is what he terms the <strong>Irrationality Premium</strong>: the additional attraction value generated not merely by the expense of a custom motorcycle, but by the visible fact that the expense was <em>unnecessary.</em></p>
+      <p>A stock motorcycle is a rational purchase. It performs the transportation function efficiently at reasonable cost. A custom motorcycle — with hand-stitched leather, eighteen coats of custom paint over a base layer of real metal flake, chrome-plated components that were already perfectly functional in steel, and an exhaust system that costs $4,000 and makes the machine sound like the voice of God — is an irrational purchase. It is more expensive. It is less practical. It is magnificent.</p>
+      <p>And magnificence, the behavioral economics literature confirms, is itself a signal. The man who spent $78,000 making a functional machine <em>beautiful</em> is communicating that he has resources sufficient to deploy toward beauty. That he values beauty. That he has the security to spend money on something purely because he wanted to. This profile — resources, aesthetics, confidence, security — scores extremely high on every mate-quality assessment instrument the research team could locate.</p>
+
+      <div class="footnote">** In an unexpected finding, Prof. Abara-Whitfield documented what he has termed the "Neighbor Effect": female subjects who had not approached the motorcycle operator directly were observed making positive comments about the motorcycle to companions, using phrasing that in every case reflected on the owner rather than the machine. Examples from field transcripts include: "Whoever owns that must be interesting," "I wonder what he does," and — observed three times independently, in three different states — "I bet he has a great house." The motorcycle had not moved. The operator was inside a diner having the meatloaf. The motorcycle was doing his PR for him unattended. Return on investment calculations are available in Appendix D.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Neuroscience: What Happens in the Brain at 4.7 Minutes</h2>
+
+      <p>Dr. Cruz-Okonkwo's contribution to this paper represents, in her own words, "the most unusual neuroimaging study I have ever been associated with and I once scanned someone while they were eating a competitive-eating-contest-level quantity of hot wings." The data, she confirms, are reproducible. Her findings are as follows.</p>
+
+      <h3>6.1 &nbsp; The Multi-Sensory Convergence Event</h3>
+      <p>When a female subject encounters a fully custom chromed motorcycle ridden by an older male operator, the following neural events occur in approximately the order listed, across a timeframe of 300 milliseconds to 4 minutes:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 4 — Neural Event Sequence Upon Custom Motorcycle Encounter (fMRI Data, n=112 Female Subjects)</div>
+        <table>
+          <thead>
+            <tr><th>Time</th><th>Sensory Input</th><th>Brain Region Activated</th><th>Functional Interpretation</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T + 0.0–0.3s</td>
+              <td>Chrome visual flash / initial sight</td>
+              <td>Superior colliculus, V1 visual cortex</td>
+              <td>"Something visually significant is here. Orienting response initiated." Head turns. Eyes track. This is involuntary. It cannot be opted out of. The superior colliculus does not ask permission.</td>
+            </tr>
+            <tr>
+              <td>T + 0.3–0.8s</td>
+              <td>V-twin acoustic signature</td>
+              <td>Auditory cortex → amygdala</td>
+              <td>Frequency profile processed. Power/authority associations activated. The chest-resonance frequencies do their work here. Mild arousal response noted. "Something with mass and power." Not threat — adjacent to it. The exciting kind of adjacent.</td>
+            </tr>
+            <tr>
+              <td>T + 0.8–2.0s</td>
+              <td>Full visual assessment of motorcycle</td>
+              <td>Ventral visual stream → OFC</td>
+              <td>Economic assessment. Chrome coverage, customization, scale, condition all processed. Orbitofrontal cortex begins resource estimation. This is not conscious. The subject does not think "this represents significant capital expenditure." The OFC just lights up. Same region. Same signal.</td>
+            </tr>
+            <tr>
+              <td>T + 2.0–15s</td>
+              <td>Operator assessed</td>
+              <td>Fusiform face area → mPFC → nucleus accumbens</td>
+              <td>Age read. Confidence posture read. Unhurriedness noted. The medial prefrontal cortex — responsible for social assessments — activates in the pattern associated with "experienced, settled, not trying too hard." Nucleus accumbens (reward center) shows dopaminergic uptick. The research team wants to be clear: this is not flattering to the women in the study. The brain does not care what is flattering. The brain just runs its program.</td>
+            </tr>
+            <tr>
+              <td>T + 15s–4.7 min</td>
+              <td>Continued presence / approach decision</td>
+              <td>Anterior cingulate cortex → motor cortex</td>
+              <td>Conflict resolution between social inhibition ("I shouldn't just walk up to a stranger") and reward seeking. In 84% of high-investment-motorcycle cases, reward seeking wins. Subject initiates approach. This is the moment that appears in Table 3. It is a brain event before it is a social one.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>6.2 &nbsp; The "Not Trying" Variable</h3>
+      <p>The most counterintuitive finding in Dr. Cruz-Okonkwo's neuroimaging data is what she terms the <strong>Settled Confidence Effect</strong>: the neural response in female subjects is significantly stronger when the male operator is observed <em>not</em> paying attention to whether it is working.</p>
+      <p>An operator who is sitting on or near the motorcycle and scanning the environment for reactions produces a measurably weaker nucleus accumbens response in observers than an operator who is examining the machine himself, talking to a companion, or — peak performance, documented 34 times — drinking a coffee and looking at literally nothing in particular.</p>
+      <p>The man who bought an $80,000 motorcycle for himself, is having a fine time regardless of what anyone thinks, and does not need the validation — produces, neurologically, a stronger attraction response than the man who bought the same motorcycle hoping it would work and is clearly checking whether it's working. The irony is exquisite. The motorcycle works best when the owner has forgotten to wonder if it works.</p>
+
+      <div class="footnote">†† Subject M-67, who has been cited throughout this paper as our primary longitudinal case study, was asked at the conclusion of the research whether he tried to attract attention with the motorcycle. He looked at the research team for a long moment and said: "I was just trying to get a coffee." This response was rated by Dr. Cruz-Okonkwo as a 9.4 out of 10 on the Settled Confidence Index. She showed him the fMRI data from his parking lot appearances. He looked at it for a while. Then he said: "So I should get the extended chrome package." Reader, he got the extended chrome package.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Age-Differential as Feature, Not Bug</h2>
+
+      <p class="dropcap">The most common objection raised during peer review — raised, notably, by the youngest reviewer on the panel — was a version of the following: "But isn't the age differential a liability? Shouldn't younger women prefer younger men?" This question, while reasonable in isolation, reflects an incomplete understanding of both the evolutionary literature and the specific signal being analyzed.</p>
+
+      <p>The answer is: for some purposes, yes. For the specific mate-quality signals communicated by a custom chromed motorcycle, operated with unhurried confidence by a man who has visibly had a full and successful life and still gets up in the morning and does interesting things — no. The age is not a liability. The age is the evidence.</p>
+
+      <h3>7.1 &nbsp; The Proof-of-Concept Problem</h3>
+      <p>A 35-year-old man presents a hypothesis: "I will be successful, stable, interesting, and worth knowing." The hypothesis is unverified. It may be true. It may not. The listener must evaluate future potential from present evidence, which is speculative.</p>
+      <p>A 67-year-old man on a custom motorcycle presents a <em>completed proof</em>: "I was successful enough to accumulate this. I am stable enough that I still feel like doing things. I am interesting enough that I customized something to my own taste rather than buying whatever was available. I am worth knowing because I have, by the actuarial evidence in front of you, been worth knowing for approximately five decades." This is not a hypothesis. This is a longitudinal study with a 67-year sample.</p>
+
+      <h3>7.2 &nbsp; Comparative Investment-Strategy Analysis</h3>
+      <div class="table-wrapper">
+        <div class="table-caption">Table 5 — Male Mate-Attraction Strategies: Cost-Benefit Analysis Across Age Groups</div>
+        <table>
+          <thead>
+            <tr><th>Strategy</th><th>Typical Age Range</th><th>Avg. Investment</th><th>Signal Type</th><th>Verifiability</th><th>Approach Rate (per hr)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Online Dating Profile</td>
+              <td>25–45</td>
+              <td>$0–$50/mo</td>
+              <td>Self-reported claims, verified by nobody</td>
+              <td>Very Low</td>
+              <td>0.1 (in-person)</td>
+            </tr>
+            <tr>
+              <td>Sports Car (leased)</td>
+              <td>30–50</td>
+              <td>$800–$2,000/mo</td>
+              <td>Possible wealth. Possibly financed. Possibly also has three roommates. Unknown.</td>
+              <td>Low</td>
+              <td>0.4</td>
+            </tr>
+            <tr>
+              <td>Gym Physique</td>
+              <td>25–55</td>
+              <td>$100/mo + 10 hrs/week</td>
+              <td>Discipline, health, available time. Strong signal.</td>
+              <td>Moderate (visible)</td>
+              <td>0.9</td>
+            </tr>
+            <tr>
+              <td>Status Career Display</td>
+              <td>35–60</td>
+              <td>20 years of effort</td>
+              <td>Significant resources. Hard to communicate quickly. Requires conversation.</td>
+              <td>Moderate (requires disclosure)</td>
+              <td>0.2 (passive)</td>
+            </tr>
+            <tr>
+              <td>Custom Chrome Motorcycle (Owned, $78K+)</td>
+              <td>55–75</td>
+              <td>$78,000–$120,000 one-time</td>
+              <td>Completed success. Resources. Taste. Health. Agency. Confidence. All visible simultaneously. No conversation required.</td>
+              <td><strong style="color:#a51c30">Very High (parked in public)</strong></td>
+              <td><strong style="color:#a51c30">5.1</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes that the motorcycle's cost-per-approach, while high in absolute terms, compares favorably with other strategies when adjusted for quality, age-differential, and the fact that the operator is also getting to ride a magnificent machine and doesn't have to fill out a profile or describe himself as "laid-back but also adventurous."</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 8: CASE STUDIES -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Field Case Studies</h2>
+
+      <div class="case-study" data-label="Case Study M-67 — 'The Primary Subject'">
+        <p>Subject M-67, age 67, acquired a custom-built touring motorcycle with full chrome package, custom paint (57 hours of labor, 22 coats), aftermarket exhaust producing 91 dB at idle, and an estimated total investment of $82,400. He describes the purchase as motivated entirely by having "always wanted one."</p>
+        <p>Over 18 months of longitudinal observation, Subject M-67 was approached by 312 individuals in parking lots, gas stations, diners, and at two motorcycle rallies. Of these, 247 (79.2%) were female. Of the female approaches, 71% were by women more than 15 years younger than the subject. Fourteen approached women provided phone numbers unprompted. Subject M-67 used three of them. He describes himself as "not really looking for anything" — a statement that, per Section 6.2, Dr. Cruz-Okonkwo has confirmed is itself doing enormous amounts of work.</p>
+        <p>Subject M-67 also received, during the study period, one noise complaint from a neighbor, one concerned call from his cardiologist about "the kind of vibration exposure that engine produces," and one voicemail from his adult son asking "Dad are you okay you bought an eighty thousand dollar motorcycle." Subject M-67 is fine. Subject M-67 has never been better. Subject M-67 is, by every available measure, thriving.</p>
+        <p class="italic-note">Field note: Observed on three separate occasions with coffee and no particular agenda, parked outside establishments, being approached by strangers while clearly not trying to be approached. Achieved a Settled Confidence Index of 9.4 on best observation. The motorcycle appeared, in the research team's estimation, to be enjoying itself as well.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study M-71 — 'The Son Problem'">
+        <p>Subject M-71, age 71, was observed over two days at the Sturgis Motorcycle Rally alongside his son, age 35, who was riding a newer, more powerful, factory-stock motorcycle. The son's motorcycle had more horsepower. Subject M-71's motorcycle had more chrome, more custom work, and approximately $47,000 more in visible investment. Researchers documented approach rates for both subjects simultaneously.</p>
+        <p>Subject M-71: 23 approaches over two days, 78% female, average age differential of 33 years, four conversations exceeding 30 minutes, two dinner invitations from separate parties. Subject M-71's son: 4 approaches over two days, 50% female, average age differential of 2 years, zero dinner invitations, increasing existential discomfort.</p>
+        <p>On the second evening, the son was observed examining his father's motorcycle for approximately 12 minutes. He asked where it was built. He looked at his own motorcycle. He looked at his father's again. He said, to no one in particular, "I think I understand now." He has since inquired about custom build shops in three states. His father gave him two recommendations and the phone number of a good chrome plater. The research team considers this outcome a successful intergenerational transfer of knowledge.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study M-58 — 'The Domestic Paradox'">
+        <p>Subject M-58, age 58, provides the research team's most instructive data regarding the context-specificity of the Chrome Hypothesis. Upon delivery of his new custom motorcycle — full chrome, custom paint, $71,000 total investment — his wife of 28 years viewed it in the driveway and said, quote: "You look ridiculous. It's a mid-life crisis on wheels. The neighbors are going to talk." This was logged as a strongly negative domestic response, classified as Context A.</p>
+        <p>The following afternoon, Subject M-58 stopped for fuel at a gas station on Route 17. During the 4 minutes and 12 seconds he was stationary at the pump, he was approached by three women ranging in age from 27 to 34, all of whom complimented the motorcycle, asked questions about it, and in one case asked if he would mind if she took a photo with it. Subject M-58 did not mind. This was logged as a strongly positive public response, classified as Context B.</p>
+        <p>Subject M-58 returned home and reported both events to his wife. His wife said "Of course they talked to you, you have a very expensive thing." Subject M-58 noted this appeared to concede a fundamental point. His wife did not acknowledge this. She has since been observed, on two occasions, referring to the motorcycle as "our motorcycle" to friends. The research team classifies this as a data point too complex to fully analyze within the scope of this paper and has noted it for a future study titled "The Domestic Reclassification of the Mid-Life Crisis: A Longitudinal Analysis."</p>
+      </div>
+
+      <div class="footnote">‡‡ A finding that appeared consistently across all three case studies and twelve additional subjects: the custom chrome motorcycle generates positive attention from women who <em>do not identify as motorcycle enthusiasts</em>. When field researchers asked approaching women whether they were interested in motorcycles generally, 67% said no, or "not really," or "I've never thought about it." They were not interested in motorcycles. They were interested in this motorcycle. The distinction matters. This is not a hobby interest. This is a status and signal response operating independently of any motorcycle-specific knowledge or preference. The motorcycle does not require the observer to know anything about motorcycles. It communicates in a language older than any motorcycle.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 9 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> The Helmet Problem: A Confounding Variable</h2>
+
+      <p>No paper that deals honestly with the Chrome Hypothesis can avoid addressing what the research team has, from the earliest stages of this project, referred to as The Helmet Problem.</p>
+
+      <p>The Helmet Problem is this: a significant portion of the signal analyzed in Sections 2 through 7 — specifically the evolutionary psychology components relating to confident male bearing, the age-related proof-of-concept signals, and the settled-confidence neurological effects — is produced by the <em>operator</em>. And the operator is, while in motion, wearing a helmet. Which covers his face. Which removes approximately 40% of the biological signaling apparatus from view.</p>
+
+      <p>This creates a situation that the research team has struggled to describe in language appropriate for a peer-reviewed journal. The motorcycle arrives — brilliant, chrome, thunderous, magnificent — and sitting atop it is a shape in a helmet who could be, for all the observer can currently determine, literally anyone.</p>
+
+      <div class="warning-box">
+        <p style="font-size:17px; margin-bottom:0; color:var(--ink);"><strong>FIELD SAFETY NOTICE:</strong> The research team strongly advises that motorcycle operators observe all applicable helmet laws and safety regulations. The Helmet Problem is a research methodological inconvenience. It is not a reason to ride without a helmet. The research team notes that a deceased subject cannot enjoy the results of the Chrome Hypothesis. Wear the helmet. Remove it upon arrival. This is the sequence. This is the protocol. The arrival matters more than the approach.</p>
+      </div>
+
+      <h3>9.1 &nbsp; The Reveal Sequence</h3>
+      <p>The field data reveals a finding that Prof. Holloway initially described as "absurdly cinematic but empirically solid": the act of removing the helmet after parking — specifically the sequence of silencing the engine, dismounting, and removing the helmet — functions as a distinct and measurable attentional event in the parking lot environment.</p>
+      <p>Female subjects within visual range of the parking event showed a documented secondary attentional spike at helmet removal — a second orienting response following the initial motorcycle arrival response documented in Section 6. The arrival of the chrome motorcycle generates attention. The reveal of the operator generates <em>assessment</em>. These are two distinct neural events, and the gap between them — typically 30 to 90 seconds — functions, in the research team's framing, as a very effective piece of theater.</p>
+      <p>The research team documented 23 instances in which female subjects who had been casually observing the parked motorcycle visibly refocused attention at the moment of helmet removal. In 19 of those 23 instances, the refocused attention was followed, within 4 minutes, by an approach or proximal positioning.</p>
+      <p class="italic-note">In Subject M-67's case study data, his average helmet-removal-to-first-approach time across all documented events was 3 minutes and 14 seconds. This is faster than most people's coffee order. The research team notes that coffee was, on multiple occasions, the instrument of the approach — specifically the question "Is there a good place to get coffee around here?" which the research team has elected to classify as a conversation-opening technique that requires absolutely no motorcycle knowledge and approximately eight words.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 10 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 10</span> Confounding Variables, Limitations, and Things We Cannot Explain But Documented Anyway</h2>
+
+      <h3>10.1 &nbsp; The Leather Jacket Invariance Theorem</h3>
+      <p>Early in the research design, the team hypothesized that a leather jacket — the cultural garment most strongly associated with motorcycle operation — would function as an additional positive moderating variable. This hypothesis was tested across 156 subjects.</p>
+      <p>The leather jacket adds 0.3 standard deviations to approach rate, which is statistically significant but practically modest. More interestingly, the <em>absence</em> of a leather jacket in favor of a button-down shirt, a polo, or — in one documented case — a very nice linen jacket, produced approach rates indistinguishable from the leather jacket condition and in some field sites marginally higher.</p>
+      <p>The research team interprets this as follows: the leather jacket communicates "motorcycle person." The polo shirt or linen jacket on a man arriving on a custom chromed motorcycle communicates "person who happens to ride motorcycles among other things he does," which is a subtly but measurably different — and measurably more interesting — biographical implication. The leather jacket says biker. The linen jacket says the man contains multitudes.</p>
+
+      <h3>10.2 &nbsp; The Destination Matters Less Than the Research Team Expected</h3>
+      <p>The research team initially predicted that parking location would significantly moderate approach rates — that a motorcycle rally would produce higher rates than a Cracker Barrel, for instance. The prediction was wrong. The Chrome Hypothesis holds across environments with remarkable consistency. Diner, gas station, motorcycle rally, upscale restaurant parking lot, hardware store, one documented instance at a library — the approach rate variance by location was less than 8%.</p>
+      <p>The chrome, it appears, does not require a supporting context. It is its own context. It arrives and creates the conditions for interaction wherever it stops, because the signals it carries are not venue-specific. They are human-specific. They work in the parking lot of a Cracker Barrel for the same reason they work at Sturgis: because the observer's nervous system does not know or care what building is in the background.</p>
+
+      <h3>10.3 &nbsp; One Thing We Cannot Explain</h3>
+      <p>In 7 of 34 field sites, researchers documented what they have termed the <strong>Spontaneous Endorsement Cascade</strong>: a phenomenon in which a positive interaction between a female subject and a motorcycle operator, observed by other female subjects, produced additional approaches at a rate 2.3x higher than the baseline approach rate.</p>
+      <p>This is social proof, which is known and understood. What is less understood is that the cascade initiated even when the observing subjects could not have heard the initial conversation — they observed only the physical proximity and body language of the initial interaction. The motorcycle was apparently functioning as a focal point around which positive social dynamics organized themselves spontaneously, drawing additional participants through a mechanism that the research team's sociologist, Dr. Abara-Whitfield, described as "the chrome version of a campfire." People come toward warmth. In this case the warmth is reflective and has a V-twin.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 11</span> Conclusions</h2>
+
+      <p class="dropcap">We set out to determine whether a 67-year-old man buying a custom chromed motorcycle increases his appeal to younger women. We found that it does, reliably, across six independent disciplinary frameworks, 34 field sites, 847 documented parking events, and one memorable afternoon in Laughlin, Nevada involving a stoplight and a woman who rolled her window down.</p>
+
+      <p>The Chrome Hypothesis holds. The effect is real. The mechanism is evolutionary, neurological, acoustic, economic, and optical simultaneously — which makes it, the research team submits, one of the most over-determined results in the history of behavioral science. Nature, economics, physics, and neuroscience all agree. The chrome motorcycle works. They agree because they are describing the same underlying truth from different angles: <em>the man who has lived fully and spent some of what he has on something beautiful and loud and unnecessary because he wanted to is doing something that the human nervous system, across all its evolutionary layers, recognizes as worth paying attention to.</em></p>
+
+      <p>We close with a note for the men in our study, specifically Subject M-67, who will read this paper and continue insisting he bought the motorcycle because he "just always wanted one."</p>
+
+      <p>Sir, you are correct. That is exactly why you bought it. And the fact that it works for the reasons documented in this paper does not diminish the fact that you wanted it, got it, and are enjoying it thoroughly. The best mate-attraction strategies are always the ones the operator is not consciously executing. You wanted the motorcycle. The motorcycle wanted to work. Evolution made sure those two desires were compatible. You just showed up and let the chrome do what chrome does.</p>
+
+      <p>The research team considers this a beautiful outcome. We hope the extended chrome package is everything you wanted.</p>
+
+      <div class="pull-quote">
+        <blockquote>"Six disciplines. Thirty-four parking lots. Eight hundred and forty-seven documented events.<br>The conclusion is unanimous and the chrome is not optional."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, closing remarks<br>Harvard Journal of Vehicular Mate-Attraction Studies Annual Symposium, 2024<br><em>("The standing ovation lasted four minutes. At least three audience members left immediately to call their custom bike builders. The symposium caterer ran out of coffee. The researchers consider this a successful dissemination of findings.")</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- REFERENCES -->
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2024). Vehicular status display and female approach rate: A field study across 34 North American sites. <em>Harvard Journal of Vehicular Mate-Attraction Studies, 4</em>(1), 1–89. (This is the paper you are reading. The citation is here because academic formatting requires it. The research team finds this circular but accepts it.)</li>
+        <li>Sterling, A. (2023). Resource signal theory and the custom motorcycle: Why the V-twin is an honest signal with aftermarket exhaust. <em>Journal of Evolutionary Psychology, 21</em>(3), 212–241. (The other Sterling. Still no relation. The research team has stopped investigating this.)</li>
+        <li>Holloway, C.B. III (2024). Infrasonic and low-frequency acoustic profiles of large-displacement V-twin engines and their effect on human attentional and arousal systems: A study I never thought I would conduct. <em>Journal of the Acoustical Society of America, 155</em>(4), 2847–2891.</li>
+        <li>Whitmore, R.T. IV (2023). Chromium surface reflectivity in the visible spectrum: Industrial applications and, apparently, attraction outcomes I was not expecting to publish. <em>Journal of Materials Science and Engineering, 41</em>(7), 4401–4438. (Most downloaded paper in the journal's 40-year history. Dr. Whitmore has mixed feelings about this.)</li>
+        <li>Cruz-Okonkwo, V. (2024). Dopaminergic response to multi-modal status signals in adult females: fMRI evidence from parking lot field conditions. <em>Nature Neuroscience, 27</em>(3), 412–429. (Subject of three editorial board meetings before acceptance. Accepted. 847 citations in first year.)</li>
+        <li>Abara-Whitfield, D. (2019). <em>Veblen Was Right About Everything: A Reluctant Concession.</em> Oxford University Press. (847 citations. Abara-Whitfield notes that his motorcycle paper has already surpassed this in six months and he has complicated feelings about his life's work.)</li>
+        <li>Zahavi, A. (1975). Mate selection — a selection for a handicap. <em>Journal of Theoretical Biology, 53</em>(1), 205–214. (The peacock paper. Zahavi did not know he was also describing a 1984 Harley-Davidson with a full chrome package. He was.)</li>
+        <li>Veblen, T. (1899). <em>The Theory of the Leisure Class.</em> Macmillan. (Veblen described conspicuous consumption in 1899. He could not have predicted the custom motorcycle. The custom motorcycle would not have surprised him at all.)</li>
+        <li>Subject M-67 (2024). Personal interview. On file. Notable quote: "I just always wanted one." Research team classification: Honest signal of settled confidence, deployed without awareness. Score: 9.4/10.</li>
+        <li>Subject M-71's son (2024). Personal interview. On file. Notable quote: "I think I understand now." Research team classification: Accurate. Score: Complete.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--crimson);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to thank Subject M-67, Subject M-71, Subject M-58, and all 847 parking lot events that made this paper possible. Special thanks to the 312 women who approached Subject M-67 over 18 months and thereby constituted our primary dataset. None of them knew they were participating in a Harvard study. The research team hopes they are doing well.</p>
+      <p style="margin-top:14px">Thanks to the IRB for eventually saying yes. Thanks to the Sturgis Rally for existing. Thanks to the three peer reviewers who went and bought motorcycles after reading the draft — your conflict of interest was noted, your revisions were excellent, and the research team considers your purchases a form of empirical replication.</p>
+      <p style="margin-top:14px">Special acknowledgment to Dr. Whitmore, who came for the materials science and stayed for everything else. His photometer readings from the Scottsdale parking lot are reproducible, significant, and the most unusual thing he has ever published in 31 years of materials science. He has asked that the research team stop bringing this up at conferences. The research team will not stop bringing this up at conferences.</p>
+      <p style="margin-top:14px">Finally: to every man who ever bought something magnificent and loud and expensive and unnecessary because he wanted to — and found, to his pleasant surprise, that the universe rewarded the decision — this paper is, technically, about you. You are welcome. The chrome was always going to work. We just finally explained why.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">The chrome was always going to work. Science just took a while to catch up.</p>
+
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid var(--ink);padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--crimson);text-decoration:none;border-bottom:1px solid var(--crimson);padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:var(--ink);opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Physics of Intimate Relationships</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">What happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Why younger women keep ending up at dinner with men who remember the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Wall-Builder's Paradox</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">You are somehow both the prisoner and the warden.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Neuro-Gravitational Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Atlas Collapse</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">On carrying everything for everyone and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:180px;max-width:250px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--crimson);font-family:'Playfair Display',serif;margin-bottom:5px;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">A Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:var(--ink);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Vehicular Mate-Attraction Studies · Vol. 4, Issue 2</div>
+    <div class="footer-note">© The Authors · Open Heart License · The Chrome Was Always Going To Work</div>
+  </footer>
+
+</div>
+</body>
+</html>
