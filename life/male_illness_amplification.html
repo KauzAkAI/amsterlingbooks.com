@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Male Illness Amplification Phenomenon | Harvard Journal of Comparative Suffering Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #181820;
+    --ink-faint: #282830;
+    --paper: #f8f5f0;
+    --paper-warm: #f2ece0;
+    --paper-aged: #e6dcc8;
+    --rule: #706050;
+    --rule-light: #a09080;
+    --accent: #6a0a0a;
+    --accent-mid: #8a1a1a;
+    --accent-soft: #aa3a3a;
+    --gold: #8b6914;
+    --med-green: #1a5a2a;
+    --blue: #1a2a6a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #100404;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:1000;
+    opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #2a0808, 0 20px 80px rgba(0,0,0,0.8);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  .masthead {
+    background: linear-gradient(135deg, #0a0202 0%, #200808 50%, #0a0202 100%);
+    border-bottom:3px solid var(--accent-soft);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .masthead::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background: repeating-linear-gradient(
+      90deg, transparent, transparent 60px,
+      rgba(170,58,58,0.03) 60px, rgba(170,58,58,0.03) 61px
+    );
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:#fff;
+    letter-spacing:0.08em;
+    line-height:1;
+    text-shadow:0 0 30px rgba(170,58,58,0.5);
+  }
+
+  .harvard-crest span {
+    display:block;
+    font-size:10px;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color:#c08080;
+    font-weight:400;
+    margin-top:5px;
+  }
+
+  .masthead-journal {
+    text-align:right;
+    font-family:'Playfair Display',serif;
+    color:#fff;
+  }
+
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:#c08080; font-style:italic; font-family:'EB Garamond',serif; }
+
+  .masthead-strip {
+    background:var(--accent);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament {
+    text-align:center;
+    color:var(--accent-soft);
+    font-size:16px;
+    letter-spacing:0.5em;
+    padding:10px 0;
+    background:var(--paper-aged);
+    border-bottom:1px solid var(--rule);
+    border-top:1px solid var(--rule);
+    user-select:none;
+  }
+
+  .paper-header {
+    padding:50px 60px 36px;
+    border-bottom:3px solid var(--accent);
+    text-align:center;
+    background:var(--paper);
+  }
+
+  .paper-type {
+    font-size:12px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-family:'Playfair Display',serif;
+    margin-bottom:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .paper-type::before,.paper-type::after {
+    content:'';
+    display:inline-block;
+    width:50px;
+    height:1px;
+    background:var(--accent);
+  }
+
+  .paper-title {
+    font-family:'Playfair Display',serif;
+    font-size:38px;
+    font-weight:900;
+    line-height:1.1;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:-0.02em;
+  }
+
+  .paper-subtitle {
+    font-family:'Playfair Display',serif;
+    font-size:16px;
+    font-weight:400;
+    font-style:italic;
+    color:var(--ink-light);
+    line-height:1.6;
+    max-width:680px;
+    margin:0 auto 24px;
+  }
+
+  .paper-fields {
+    display:inline-flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:28px;
+  }
+
+  .field-tag {
+    background:var(--accent);
+    color:#fff;
+    font-size:10px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    padding:4px 12px;
+    font-family:'Playfair Display',serif;
+  }
+
+  .field-tag.green { background:var(--med-green); }
+  .field-tag.blue  { background:var(--blue); }
+
+  .authors-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:28px 0;
+    padding:20px 0;
+    border-top:1px solid var(--rule-light);
+    border-bottom:1px solid var(--rule-light);
+    text-align:left;
+  }
+
+  .author-card {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    border-top:3px solid var(--accent);
+    padding:14px 16px;
+  }
+
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-mid); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box {
+    background:var(--paper-aged);
+    border-left:4px solid var(--accent);
+    padding:26px 30px;
+    margin-bottom:44px;
+    position:relative;
+  }
+
+  .abstract-box::before {
+    content:'ABSTRACT';
+    position:absolute;
+    top:-10px;
+    left:30px;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.35em;
+    padding:3px 10px;
+  }
+
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+
+  h2 {
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--accent);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent); font-weight:700; flex-shrink:0; }
+
+  h3 {
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    font-weight:600;
+    font-style:italic;
+    color:var(--ink);
+    margin:28px 0 12px;
+    padding-left:16px;
+    border-left:3px solid var(--accent-soft);
+  }
+
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+
+  p.italic-note {
+    font-style:italic;
+    color:var(--ink-light);
+    font-size:17px;
+    padding:12px 20px;
+    border-left:3px solid var(--rule);
+    background:var(--paper-warm);
+  }
+
+  .equation-box {
+    background:var(--paper-warm);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--accent-mid);
+    padding:20px 32px;
+    text-align:center;
+    margin:24px 0;
+  }
+
+  .equation { font-family:'Source Code Pro',monospace; font-size:17px; font-weight:600; color:var(--ink); letter-spacing:0.04em; margin-bottom:10px; line-height:1.8; }
+  .equation-label { font-size:15px; color:var(--ink-light); font-style:italic; line-height:1.7; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+
+  .table-caption {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+    color:var(--ink);
+    margin-bottom:10px;
+    text-transform:uppercase;
+    font-style:italic;
+    letter-spacing:0.04em;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent); color:#fff; }
+
+  thead th {
+    padding:11px 14px;
+    text-align:left;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(106,10,10,0.06); transition:background 0.2s; }
+
+  tbody td {
+    padding:11px 14px;
+    border-bottom:1px solid var(--rule-light);
+    line-height:1.6;
+    color:var(--ink);
+    font-size:15px;
+    vertical-align:top;
+  }
+
+  tbody td:first-child {
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--accent);
+    width:22%;
+  }
+
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote {
+    font-size:16px;
+    color:var(--ink);
+    font-style:italic;
+    padding:14px 20px;
+    border-left:4px solid var(--accent);
+    margin:20px 0;
+    background:var(--paper-warm);
+    line-height:1.8;
+  }
+
+  .footnote sup { color:var(--accent); font-weight:700; font-style:normal; }
+
+  .case-study {
+    border:1px solid var(--rule);
+    background:var(--paper-warm);
+    padding:22px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+
+  .case-study::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:10px;
+    letter-spacing:0.2em;
+    padding:3px 12px;
+    text-transform:uppercase;
+  }
+
+  .comparison-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2px;
+    margin:24px 0;
+    background:var(--rule);
+  }
+
+  .comp-header {
+    padding:12px 16px;
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+  }
+
+  .comp-header.male { background:var(--accent); color:#fff; }
+  .comp-header.female { background:var(--med-green); color:#fff; }
+  .comp-cell { background:var(--paper); padding:14px 16px; font-size:15px; line-height:1.7; }
+  .comp-cell.male-bg { background:#fff8f8; }
+  .comp-cell.female-bg { background:#f0f8f0; }
+  .comp-cell strong { color:var(--accent); }
+  .comp-cell.female-bg strong { color:var(--med-green); }
+
+  .hospice-meter {
+    background:var(--paper-warm);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--accent);
+    padding:20px 28px;
+    margin:24px 0;
+  }
+
+  .meter-title {
+    font-family:'Playfair Display',serif;
+    font-size:13px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:16px;
+  }
+
+  .meter-row {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+    font-size:15px;
+  }
+
+  .meter-label { width:180px; font-family:'Playfair Display',serif; font-weight:600; color:var(--ink); flex-shrink:0; }
+  .meter-bar-bg { flex:1; height:22px; background:var(--paper-aged); position:relative; }
+  .meter-bar { height:100%; position:absolute; left:0; top:0; display:flex; align-items:center; padding-left:8px; }
+  .meter-bar.low { background:var(--med-green); color:#fff; font-size:12px; }
+  .meter-bar.high { background:var(--accent); color:#fff; font-size:12px; }
+  .meter-value { margin-left:8px; font-family:'Source Code Pro',monospace; font-size:13px; font-weight:700; color:var(--ink-faint); flex-shrink:0; }
+
+  .stats-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    margin:24px 0;
+    background:var(--rule);
+  }
+
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:var(--accent); display:block; line-height:1; margin-bottom:6px; }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .pull-quote {
+    border-top:3px double var(--accent);
+    border-bottom:3px double var(--accent);
+    padding:28px 40px;
+    margin:36px 0;
+    text-align:center;
+  }
+
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter {
+    font-family:'Playfair Display',serif;
+    font-size:62px;
+    font-weight:900;
+    float:left;
+    line-height:0.78;
+    margin-right:8px;
+    margin-top:8px;
+    color:var(--accent);
+  }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+
+  .acknowledgments {
+    background:var(--paper-aged);
+    padding:28px 32px;
+    border:1px solid var(--rule);
+    margin-top:40px;
+    font-size:17px;
+    line-height:1.85;
+  }
+
+  .paper-footer {
+    background:linear-gradient(135deg, #100404, #200808);
+    color:#fff;
+    padding:22px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    border-top:3px solid var(--accent-soft);
+  }
+
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:#c08080; }
+  .footer-note { font-style:italic; color:#c08080; opacity:0.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal { margin:0; }
+    .masthead-top,.paper-header,.paper-body { padding-left:24px; padding-right:24px; }
+    .masthead-strip { padding-left:24px; padding-right:24px; }
+    .paper-title { font-size:26px; }
+    .authors-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:repeat(2,1fr); }
+    .comparison-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Comparative Suffering Studies</strong>
+        <small>& Applied Audacity in Clinical Self-Assessment</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 8, Issue 2 &nbsp;·&nbsp; Peer-Reviewed by Three Women Who Had the Same Cold and Kept Working &nbsp;·&nbsp; ISSN: 99.1°F-IS-NOT-A-FEVER
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: The Audacity of the Unwell</div>
+
+    <h1 class="paper-title">The Male Illness Amplification Phenomenon</h1>
+    <p class="paper-subtitle">A Multi-Disciplinary Investigation Into Why a Grown Adult Male With a Mild Rhinovirus Infection Requires Hospice-Level Domestic Care While Female Subjects With Identical Viral Loads Continue Operating Entire Households, Managing Careers, and Caring for the Man Who Is Not Getting Out of Bed Today Because He Is, in His Own Assessment, Genuinely Not Sure He Is Going to Make It</p>
+
+    <div class="paper-fields">
+      <span class="field-tag">Evolutionary Biology</span>
+      <span class="field-tag green">Comparative Suffering Analysis</span>
+      <span class="field-tag">Neuroscience</span>
+      <span class="field-tag green">Anthropology</span>
+      <span class="field-tag">Immunology</span>
+      <span class="field-tag blue">Applied Audacity Studies</span>
+      <span class="field-tag">Economics of Care-Seeking</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Catastrophic Male Self-Assessment<br>Harvard Business School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0a3a4b5a2bcb9beb790b8b2a3feb8b1a2a6b1a2b4feb5b4a5">[email&#160;protected]</a><br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Was sick during the writing of this paper. Described his condition, at the time, as "honestly pretty bad." His temperature was 99.1°F. The research team notes that 99.1°F is a low-grade fever and that the paper was completed on schedule. He did, however, require a specific blanket and the television remote. These events are noted in the field log.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Pain Perception<br>Harvard Medical School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80f0aef6e5eeebe1f4e1f2e1ede1eec0e8edf3aee8e1f2f6e1f2e4aee5e4f5">[email&#160;protected]</a><br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the immunological and neurological analysis. Had a cold during the data collection period. Did not mention it to anyone. Completed seven clinical reviews, one grant report, and a department meeting while symptomatic. Was asked, at the end of the study, if she had been sick recently. She said "a little, a few weeks ago." The viral load logs confirm it was the same virus as Subject M-64's documented event. Her sick days taken: 0.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Anthropology & Cross-Cultural Illness Behavior<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="63084d0210020d1706230502104d0b0211150211074d060716">[email&#160;protected]</a><br>
+          Peabody Museum 208 · (617) 555-0247
+        </div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Conducted the cross-cultural survey in Section 4, confirming the phenomenon across 31 societies. Notes that every culture surveyed has a term for this behavior — the precise verbal equivalent of "man flu" — and that in 28 of 31 cases, the term was coined by women. This finding required no analysis. It was simply there.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Reginald T. Whitmore IV, Ph.D., FRS</div>
+        <div class="author-title">Professor of Evolutionary Biology<br>Harvard Dept. of Organismic & Evolutionary Biology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91e3bfe6f9f8e5fcfee3f4d1fef4f3bff9f0e3e7f0e3f5bff4f5e4">[email&#160;protected]</a><br>
+          BioLabs Building 208 · (617) 555-0312
+        </div>
+        <div class="author-quals">Ph.D. Evolutionary Biology (Cambridge), FRS. Contributed the evolutionary biology analysis in Section 5 — specifically, the honest signal theory of illness display. Initially skeptical of his own hypothesis. Field data convinced him within 72 hours. He describes the evolutionary mechanism as "elegant if inconvenient." The research team agrees on both counts.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Behavioral Economics<br>Harvard Kennedy School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="15713b7477746774557d7e663b7d7467637467713b707160">[email&#160;protected]</a><br>
+          Rubenstein Building 302 · (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Produced the care-seeking resource analysis in Section 7 — specifically, the economic value of the specific blanket, the special soup, and the television remote being within arm's reach. Describes these as "surprisingly consequential variables in the domestic care economy." The specific blanket alone appears in 94% of documented events. Its role is not trivial.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor of Caregiver Psychology<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660f48040a07050d11030a0a26000715480e07141007140248030213">[email&#160;protected]</a><br>
+          William James Hall 614 · (617) 555-0741
+        </div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the caregiver psychological analysis documenting the documented expression on the female partner's face during male illness events — classified, after extensive review, as "a very specific kind of patience that is indistinguishable from love if you look at it the right way and from something else if you look at it the other way." She has been looking at it from both directions for eleven months.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: On Time, Unlike Every Other Paper This Team Has Written &nbsp;·&nbsp;
+      Peer-Reviewed: By Three Female Colleagues Who Completed Their Reviews While Symptomatic and Did Not Mention It &nbsp;·&nbsp;
+      Accepted: Promptly &nbsp;·&nbsp;
+      Dedicated: To Subject F-61, Who Had the Same Cold Two Weeks Before Subject M-64, Got Through It in Four Days, and Has Never Once Brought This Up
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Male Illness Amplification Phenomenon (MIAP)</strong>: the documented, cross-culturally consistent, and medically well-supported tendency of adult male subjects, when experiencing mild-to-moderate viral illness, to report subjective suffering significantly exceeding the objective clinical presentation, to require care resources disproportionate to their measured symptom severity, and to express, with genuine conviction, uncertainty about their survival prospects in contexts where those prospects are entirely unambiguous.</p>
+      <p class="abstract-text">We examine this phenomenon through seven disciplines: evolutionary biology, immunology, neuroscience, anthropology, behavioral economics, comparative suffering analysis, and applied audacity studies — the last of which is a field this paper formally establishes for the first time, as no existing discipline had been designed to accommodate the specific findings presented in Section 9.</p>
+      <p class="abstract-text">Our central findings: (1) male subjects report 2.3–4.1× higher subjective suffering than female subjects with identical viral loads; (2) the phenomenon is documented across 31 cultures and is, per Dr. Asante-Morrison, "the most consistent cross-cultural behavioral finding I have collected in 22 years," which he describes without judgment and which the female researchers on this team describe with a specific expression that Dr. Blackwell-Tanaka has spent eleven months trying to classify; (3) the evolutionary biology is, if not exculpatory, at least interesting; and (4) <strong>Subject F-61 had the same cold two weeks earlier, recovered in four days, and has never once mentioned it to Subject M-64.</strong> The research team considers this the single most significant data point in the study.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Male Illness Amplification Phenomenon · Man Flu · Comparative Suffering Index · Honest Signal Theory of Suffering Display · The Specific Blanket · Special Soup as Care Economy Variable · 99.1°F Is Not A Fever · Cross-Cultural Consistency of the Phenomenon · Applied Audacity · Subject F-61 Said Nothing About It · The Female Subjects Who Were Also Sick and Told No One · What A Tuesday Looks Like
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Tuesday Problem</h2>
+
+      <p class="dropcap">At approximately 7:30am on a Tuesday in November, Subject M-64 woke up with a sore throat, mild congestion, and a temperature of 99.1°F. He lay still for approximately four minutes, then announced that he thought he was coming down with something. By 8:15am he had relocated to the couch. By 9:00am he had requested, in the following order: specific blanket, orange juice, soup (not canned, the good kind), and confirmation that what he was experiencing was "pretty bad." His temperature at this point was 99.3°F.</p>
+
+      <p>Subject F-61, his partner, provided all requested items while preparing for a 9:30am work call, packing a lunch for their daughter, responding to three emails, and noting — internally and without comment — that she had experienced the same virus approximately two weeks earlier, had taken no sick days, had not requested any specific blankets, and had described her experience at the time to no one because it had not occurred to her to do so.</p>
+
+      <p>The temperature differential between Subject M-64's clinical presentation and his subjective suffering report was the precipitating event for this study. The research team documents it here not as an accusation but as a data point — and as a precise summary of the phenomenon this paper is designed to explain, which it does, at length, with considerable sympathy for the biology and occasional exasperation with its expression.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">99.1°F</span>
+          <span class="stat-label">Subject M-64's temperature (low-grade fever, clinical definition)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">2.3–4.1×</span>
+          <span class="stat-label">Male vs. female subjective suffering ratio (identical viral load)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">4 days</span>
+          <span class="stat-label">Subject F-61's recovery time (same virus, 2 weeks prior)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Times Subject F-61 has mentioned her own illness to Subject M-64</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> Subject M-64, on Day 2 of his illness, made a statement the research team has preserved verbatim in the field log: "I honestly don't know how long this is going to go on." His temperature at this point was 99.6°F. The median duration of the common rhinovirus illness is 7–10 days. Subject M-64 recovered in 6 days — faster than median. On Day 7, he described himself as "finally starting to feel like myself." He was, clinically, at Day 7 of a 7–10 day illness and was therefore approximately on schedule. The research team notes this not to diminish his experience but to document the gap between timeline and perception, which is the central variable of this study and also, Dr. Blackwell-Tanaka notes, a Tuesday.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2: COMPARATIVE SUFFERING -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Comparative Suffering Analysis: What A Tuesday Looks Like</h2>
+
+      <p>The research team's core comparative data documents male and female subjects experiencing identical viral illnesses across a matched cohort of 312 heterosexual couples where both partners contracted the same virus within a 4-week window. Subjects were interviewed about their illness experience, care-seeking behavior, functional output during illness, and subjective suffering assessment.</p>
+
+      <div class="comparison-grid">
+        <div class="comp-header male">Male Subject Experience (n=312)</div>
+        <div class="comp-header female">Female Subject Experience (n=312)</div>
+
+        <div class="comp-cell male-bg">
+          <strong>Day 1:</strong> Symptoms noted, announced to household within 2.3 hours. Relocation to comfort position (couch, 78%; bed, 22%). Specific blanket requested in 94% of cases. Workplace notified of likely absence in 67% of cases.
+        </div>
+        <div class="comp-cell female-bg">
+          <strong>Day 1:</strong> Symptoms noted. Household notified: 31% (typically framed as informational rather than care-seeking). Workplace: continued. Children's schedules: maintained. Couch: not accessed during daylight hours in 89% of cases.
+        </div>
+
+        <div class="comp-cell male-bg">
+          <strong>Subjective Suffering (1–10):</strong> Mean 7.4. Subjects described their condition using terms including "really bad," "genuinely awful," and — in 23 documented cases — "probably the worst cold I've ever had." Objectively: median rhinovirus presentation.
+        </div>
+        <div class="comp-cell female-bg">
+          <strong>Subjective Suffering (1–10):</strong> Mean 3.2 for same viral load. Not because they are suffering less — the clinical presentation is identical. Because the reporting framework is calibrated against a different baseline. See Section 5.
+        </div>
+
+        <div class="comp-cell male-bg">
+          <strong>Care Resources Requested:</strong> Specific blanket (94%), soup (88%), juice (76%), TV remote within reach (71%), periodic check-ins from partner (84%), verbal confirmation that symptoms are real (67%).
+        </div>
+        <div class="comp-cell female-bg">
+          <strong>Care Resources Requested:</strong> None in 71% of cases. In remaining 29%: ibuprofen, self-administered. That's it. The research team notes "that's it" with full awareness of what it implies.
+        </div>
+
+        <div class="comp-cell male-bg">
+          <strong>Survival Prognosis (Self-Reported):</strong> 34% of male subjects expressed, at some point during their illness, uncertainty about their recovery. 8% used the word "serious." 3% described the experience as potentially life-threatening. None of the documented cases were life-threatening.
+        </div>
+        <div class="comp-cell female-bg">
+          <strong>Survival Prognosis (Self-Reported):</strong> 100% of female subjects expressed certainty about their recovery. When asked "do you think you'll be okay?" the response was, in 94% of cases, some version of "yes" — often accompanied by a look that Dr. Blackwell-Tanaka has been trying to classify for eleven months.
+        </div>
+      </div>
+
+      <div class="footnote"><sup>‡</sup> The "specific blanket" requires documentation. It is not, the research team confirms, any blanket. It is a particular blanket — typically one that is heavier than the others, softer than the others, and associated with comfort in a way that the subject cannot fully articulate but can identify immediately from across a room. In 67% of cases it was a blanket the subject's partner had purchased. In 23% it was a blanket he had owned since childhood. In 10% it was a blanket that had simply become the blanket through a process nobody in the household could document. The research team notes that the specific blanket is not a minor variable. It appears in 94% of MIAP events. It is, per Prof. Abara-Whitfield's economic analysis, load-bearing infrastructure.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3: THE HOSPICE INDEX -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Domestic Hospice Index: Calibrating Care Requirements</h2>
+
+      <p>The research team developed the <strong>Domestic Hospice Index (DHI)</strong> to quantify the level of care typically provided to male subjects during MIAP events, allowing comparison against objective clinical need. The DHI measures care intensity on a scale anchored by clinical reference points:</p>
+
+      <div class="hospice-meter">
+        <div class="meter-title">Domestic Hospice Index — Care Level vs. Clinical Justification</div>
+
+        <div class="meter-row">
+          <div class="meter-label">Mild cold (99.1°F)</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar low" style="width:12%;">12%</div>
+          </div>
+          <div class="meter-value">Clinical Need</div>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label">Mild cold (99.1°F)</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar high" style="width:71%;">71%</div>
+          </div>
+          <div class="meter-value">Care Received</div>
+        </div>
+
+        <div class="meter-row" style="margin-top:14px;">
+          <div class="meter-label">Moderate flu (102°F)</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar low" style="width:45%;">45%</div>
+          </div>
+          <div class="meter-value">Clinical Need</div>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label">Moderate flu (102°F)</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar high" style="width:88%;">88%</div>
+          </div>
+          <div class="meter-value">Care Received</div>
+        </div>
+
+        <div class="meter-row" style="margin-top:14px;">
+          <div class="meter-label">Actual hospitalization</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar low" style="width:100%;">100%</div>
+          </div>
+          <div class="meter-value">Clinical Need</div>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label">Actual hospitalization</div>
+          <div class="meter-bar-bg">
+            <div class="meter-bar high" style="width:100%;">100%</div>
+          </div>
+          <div class="meter-value">Care Received</div>
+        </div>
+
+        <p style="font-size:13px; font-style:italic; color:var(--ink-faint); margin-top:14px;">Note: The care gap — the difference between clinical need and care received — is widest at low illness severity and narrows as severity increases. The research team notes this means the MIAP is most active when objective need is lowest, which is either a paradox or exactly what you would expect, depending on which section of this paper you have already read.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: ANTHROPOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Anthropology: Every Culture Has a Word For This</h2>
+
+      <p>Dr. Asante-Morrison's cross-cultural survey examined illness behavior and illness-reporting differentials across 31 societies following the introduction of germ theory and clinical medicine into each culture's healthcare framework. He entered the study with the hypothesis that the MIAP might be a Western, post-industrial phenomenon — a byproduct of healthcare abundance and reduced actual mortality risk. He was wrong.</p>
+
+      <p><strong>Every culture surveyed has a version of the Male Illness Amplification Phenomenon. Every single one. Without exception.</strong></p>
+
+      <p>In 28 of 31 cultures, a specific term exists in the local language describing the male tendency to experience and/or express illness more dramatically than female counterparts. In 28 of 31 cases, this term was coined by women. In 3 cases, the term was gender-neutral but had, by documented cultural practice, come to be applied almost exclusively to male subjects.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Selected Cross-Cultural Terms for the Male Illness Amplification Phenomenon</div>
+        <table>
+          <thead>
+            <tr><th>Language/Region</th><th>Term (Approximate)</th><th>Literal Translation</th><th>Gender of Term's Origin</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>English (UK/AU)</td>
+              <td>"Man Flu"</td>
+              <td>A flu-like illness experienced by a man, with the implied understanding that the experience is disproportionate to the clinical presentation.</td>
+              <td>Female. Coined, per documented linguistic record, in domestic contexts. Entered general use through women's humor publications approximately 2004–2008.</td>
+            </tr>
+            <tr>
+              <td>French</td>
+              <td>"La grippe du guerrier"</td>
+              <td>"The warrior's flu" — framing the male subject's response as the suffering of a person who normally faces greater challenges and is therefore unaccustomed to this one.</td>
+              <td>Female. The research team notes the framing is more generous than the English equivalent. The French are more diplomatic about this.</td>
+            </tr>
+            <tr>
+              <td>Spanish (colloquial)</td>
+              <td>"Gripe masculina"</td>
+              <td>Direct equivalent of Man Flu. Applied specifically to the gap between clinical presentation and reported experience.</td>
+              <td>Female. Appears in women's humor across Latin American cultures with documented consistency.</td>
+            </tr>
+            <tr>
+              <td>Japanese (informal)</td>
+              <td>"Otoko kaze" (男風邪)</td>
+              <td>"Man cold" — specifically the cold that a man gets, which is understood culturally to require different management than the cold anyone else gets.</td>
+              <td>Female. Dr. Asante-Morrison notes that "otoko kaze" has its own cultural infrastructure in Japan — specific sympathy protocols, known household management strategies, and a shared understanding that this is a distinct clinical category requiring its own approach.</td>
+            </tr>
+            <tr>
+              <td>German (colloquial)</td>
+              <td>"Männerschnupfen"</td>
+              <td>Literally "men's sniffles" — a term that diminishes the event in naming it while simultaneously acknowledging its cultural specificity.</td>
+              <td>Female. Has been the subject of German humor columns, television segments, and at least two published academic papers prior to this one, which Dr. Asante-Morrison notes with some professional embarrassment about the time lag.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: Dr. Asante-Morrison's full dataset covers all 31 cultures. In the interest of space, only five are presented here. He has offered to present the remaining 26 at a symposium. The symposium has been scheduled for February. He anticipates strong attendance.</div>
+      </div>
+
+      <div class="footnote"><sup>§</sup> Dr. Asante-Morrison notes that in three of the 31 cultures surveyed, no specific term exists — not because the phenomenon is absent, but because in those cultures the phenomenon is sufficiently understood and accepted that it requires no naming. It is simply the way things are, documented in household practice and women's oral tradition without requiring formal linguistic encoding. Dr. Asante-Morrison describes this as "the phenomenon being too universal to require a term, which is, in anthropology, a sign of deep cultural saturation." The research team finds this description accurate and also quietly extraordinary.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: EVOLUTIONARY BIOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Evolutionary Biology: The Honest Signal Theory of Suffering</h2>
+
+      <p>Prof. Whitmore's evolutionary analysis begins with a hypothesis he describes as "the most uncomfortable thing I have had to defend in 31 years of publishing, because it is both rigorously supported and deeply convenient for the population it describes." The hypothesis: the MIAP is not malingering. It is not weakness. It is, at least partially, an evolved behavior with a coherent adaptive logic.</p>
+
+      <h3>5.1 &nbsp; Honest Signal Theory Applied to Illness</h3>
+      <p>In evolutionary biology, honest signal theory (Zahavi, 1975) describes displays that are costly to produce and therefore cannot be faked — signals that reliably convey information about the signaler's true condition because fake signalers would pay the cost without the benefit. The peacock's tail is the classic example. The research team proposes that the male illness display is another.</p>
+
+      <p>The male subject who dramatically expresses suffering — who requests the specific blanket, announces his condition, produces the specific expression of a person who cannot believe this is happening to him — is, per honest signal theory, broadcasting a genuine need state to his caregiving environment. The signal is not fabricated. He genuinely feels worse than objective measures suggest. The question is why.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          S<sub>display</sub> = f(S<sub>actual</sub>, C<sub>amplification</sub>, R<sub>care-seeking</sub>)
+        </div>
+        <div class="equation-label">Displayed suffering is a function of actual suffering, an amplification coefficient, and a care-seeking return rate. The amplification coefficient varies by sex (significantly higher in males), and the care-seeking return rate varies by relationship history, partner availability, and the specific blanket's location in the household. All three variables contribute. The research team is not saying the suffering is not real. The research team is saying the amplification coefficient has a mechanism and that mechanism is in the next section.</div>
+      </div>
+
+      <h3>5.2 &nbsp; Why Males May Actually Feel Worse: The Immunological Hypothesis</h3>
+      <p>Prof. Whitmore notes — with what he describes as "more relief than is probably professionally appropriate" — that there is genuine immunological evidence suggesting male subjects may experience some viral illnesses more intensely than female subjects. The female immune system is, on several measures, more robustly inflammatory: estrogen upregulates certain immune response pathways, and female subjects typically mount faster and stronger initial immune responses to viral infection.</p>
+
+      <p>A stronger immune response means faster recovery. It can also mean, in the short term, stronger symptoms. Some of what female subjects experience as "a cold" their immune system is resolving aggressively while they continue functioning. The male immune system, mounting a less aggressive initial response, may extend the duration of acute symptoms.</p>
+
+      <p>This is not the whole story. It is not a sufficient explanation for a 2.3–4.1× suffering amplification. But it is something. Prof. Whitmore presents it for completeness. Subject M-64 has been provided a copy of this section. He found it very validating. The research team notes that he found it validating approximately 48 hours before his recovery was complete and approximately 12 hours after he had eaten a full meal and watched three episodes of a nature documentary.</p>
+
+      <div class="footnote">** Prof. Whitmore notes the evolutionary scenario he finds most plausible: in ancestral environments, a male who was ill and could not fulfill his resource-provision role would benefit from clearly communicating his incapacity to the group. A visible, dramatic illness display would secure rest, care, and reduced social obligations while the recovery occurred. The male who performed illness publicly recovered faster than the male who pushed through and extended the infection. This is, the research team notes, a coherent adaptive mechanism. It is also, in the modern domestic context, the reason the blanket is the specific blanket and the soup is the good kind. The mechanism survived. The context changed. The behavior remains.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Neuroscience: Why He Feels Worse Than He Is</h2>
+
+      <p>Dr. Venkataraman-Holloway's neuroimaging analysis documents what she calls "the most clinically interesting and personally relevant data I have collected in 14 years of research, given that I was experiencing the same virus while reviewing it." Her findings address the core paradox: if male and female subjects have identical viral loads, why does the male subject's subjective experience diverge so significantly?</p>
+
+      <p>The answer involves three intersecting mechanisms: documented sex differences in pain processing, differences in illness behavior baseline (what each sex considers "normal illness burden"), and the specific neural pathway activated by the care-receiving experience, which produces a measurable physiological effect that the male subject has, in many cases, calibrated his illness display to reliably trigger.</p>
+
+      <h3>6.1 &nbsp; The Baseline Calibration Problem</h3>
+      <p>The subjective suffering scale is not absolute. It is relative to each subject's baseline experience of discomfort, pain, and functional limitation. Female subjects, who are statistically more likely to have experienced childbirth, menstrual pain, and the general functional-while-symptomatic lifestyle documented in Section 2, calibrate their 1–10 suffering scale against a different baseline than male subjects whose primary reference point for severe physical experience may be, in some cases, this cold.</p>
+
+      <p>When Subject F-61 says her cold was a "3 or 4," she is comparing it against a baseline that includes experiences she has chosen not to enumerate at length. When Subject M-64 says his cold was an "8," he is comparing it against a baseline that is, per the available data, somewhat less extensively populated. Neither subject is wrong. They are using different scales. The scales are not equivalent.</p>
+
+      <div class="footnote">†† Dr. Venkataraman-Holloway notes one additional finding that she describes as "the most important and the least funny data in this paper." Female subjects, when ill, typically do not receive increased care. Their functional output decreases slightly but they continue operating. Their suffering, in household surveys, is noted by partners approximately 40% of the time. Male subjects, when ill, receive increased care in 94% of cases and have their suffering noted by partners in 100% of cases. The research team presents this data without editorial comment. It does not require editorial comment. It is simply the data, and the data is the data, and the data is quite something to sit with.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> Applied Audacity: A New Discipline</h2>
+
+      <p>The research team wishes to formally introduce a new academic discipline: <strong>Applied Audacity Studies</strong>. The discipline is defined as the rigorous, peer-reviewed examination of human behaviors that require a level of self-assurance about one's own experience and needs that, when examined externally, produces a specific and unanimous response in observers: <em>the audacity.</em></p>
+
+      <p>Applied Audacity is not a pejorative category. It describes behaviors that are, on their own terms, coherent and even adaptive — but that, when placed in the comparative context of partners, colleagues, or cross-cultural observers who are doing the same things with less resources and fewer announcements, achieve a level of unapologetic self-prioritization that deserves its own literature.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — Applied Audacity Index: Male Illness Behavior Scored for Audacity Content</div>
+        <table>
+          <thead>
+            <tr><th>Behavior</th><th>Clinical Justification</th><th>Comparative Context</th><th>Audacity Score (1–10)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Requesting specific blanket</td>
+              <td>Low — standard cold management does not require a specific blanket.</td>
+              <td>Female partner's illness management: ibuprofen from the medicine cabinet, self-administered. No specific blanket mentioned.</td>
+              <td>4.2 — Modest. The blanket is specific but the request is sincere. The sincerity is the whole thing.</td>
+            </tr>
+            <tr>
+              <td>Special soup (not canned, the good kind)</td>
+              <td>None specifically — nutritional support for viral illness does not require soup quality specification.</td>
+              <td>Female partner's illness nutrition: whatever was in the kitchen. She does not remember what she ate. She was working while eating it.</td>
+              <td>6.1 — Notable. The quality specification is the audacity. The belief that this is a reasonable time to have soup quality preferences is doing significant work here.</td>
+            </tr>
+            <tr>
+              <td>Verbal confirmation that symptoms are real</td>
+              <td>None — viral illness confirmation does not require external validation.</td>
+              <td>Female partner's illness: was also sick. Did not mention this. Would not have requested confirmation. The concept of requesting confirmation did not arise as an option.</td>
+              <td>7.8 — High. The belief that one's suffering requires external authentication while simultaneously failing to notice that one's partner had the same illness without comment is a specific and impressive cognitive configuration.</td>
+            </tr>
+            <tr>
+              <td>Expressing uncertainty about survival</td>
+              <td>None — 99.1°F rhinovirus infection is not life-threatening under any documented clinical criteria.</td>
+              <td>Female partner: also survived. Did not consider not surviving. The possibility was not processed as a variable.</td>
+              <td>9.4 — Maximum. This is the research team's consensus high score. The sincerity of the uncertainty is what elevates it. He genuinely wonders. The wondering is real. The outcome is not in question. He wonders anyway. This is, the research team submits, peak Applied Audacity.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: The research team wishes to reiterate that Applied Audacity is not contempt. It is a formal category of self-assured behavior that, in context, achieves a specific quality of unapologetic self-prioritization that the research team found impossible to analyze without naming. The naming is not an accusation. The naming is a contribution to the literature.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CASE STUDIES -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Selected Case Studies</h2>
+
+      <div class="case-study" data-label="Case Study M-64 — 'The Primary Subject'">
+        <p>Subject M-64, age 64, contracted rhinovirus in November during the longitudinal study period. His temperature peaked at 99.8°F on Day 2. His symptomatic period lasted 6 days — below the 7–10 day median. He received: specific blanket (deployed Day 1, retrieved Day 6), soup on Days 1–3 (specifically requested as "the kind from scratch, not the can"), orange juice (replenished twice), periodic check-ins from Subject F-61 at roughly 90-minute intervals, and a verbal assessment of his condition that he requested on Days 1 and 2 and which Subject F-61 provided with what Dr. Blackwell-Tanaka classifies as "a specific patience."</p>
+        <p>On Day 3, Subject M-64 described his condition as "I think the worst might be behind me, but honestly I'm not 100% sure." His temperature on Day 3 was 98.9°F — below baseline fever threshold. He recovered fully on Day 6. On Day 7, he told a colleague that he had been "pretty sick" and that it had been "a rough week." His temperature had been above 99°F for approximately 36 hours total.</p>
+        <p>Subject F-61 had the same virus in October. Her temperature peaked at 100.1°F — higher than Subject M-64's peak. Her symptomatic period lasted 4 days. She took no sick days. She did not request or receive a specific blanket, soup, or verbal suffering confirmation. She mentioned the illness to no one during its course. When asked, in the study's follow-up interview, how she had managed, she said: "It was fine. I just got through it." When asked if Subject M-64 had known she was sick, she paused and said: "I don't think I mentioned it."</p>
+        <p class="italic-note">The research team considers the final four words of Subject F-61's interview the entire paper, compressed. She did not mention it. She recovered, maintained the household, returned to full function, and did not mention it. Two weeks later, Subject M-64 had the same virus and mentioned it on the first day, the second day, and in a conversation with a colleague on Day 7. The research team is not criticizing Subject M-64. The research team is documenting Subject F-61. She did not mention it. She never mentions it. This is what a Tuesday looks like.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study — The Research Team">
+        <p>Dr. Venkataraman-Holloway was sick during the data collection period. She did not mention this to the research team until the analysis was complete. She was asked, at the final team meeting, how she had managed to maintain her output while symptomatic. She said: "I just got through it." The research team noted that this exact phrasing — "I just got through it" — appears in 89% of female subject interviews. It appears in 3% of male subject interviews. The 3% typically precede the phrase "but it was pretty bad, honestly."</p>
+        <p>The research team also notes that the paper was submitted on time. Dr. Venkataraman-Holloway submitted her sections on time while symptomatic. Dr. Sterling, the lead author, submitted his sections three days late. He had not been sick. He described the delay as "I had a lot on." The research team has no further comment on this finding. The data speaks for itself.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> Conclusions: What A Tuesday Looks Like</h2>
+
+      <p class="dropcap">The Male Illness Amplification Phenomenon is real. The evolutionary biology is coherent. The immunological data is genuine. The honest signal theory holds. The subjective suffering, at the moment of its expression, is sincere. The research team does not dispute any of this and presents the biology with the respect it deserves.</p>
+
+      <p>And yet.</p>
+
+      <p>Subject F-61 had a higher peak temperature. A longer anticipated recovery. The same household to manage, the same work to do, the same person to care for — and then, two weeks later, a sick version of that person who needed soup and a specific blanket and confirmation that what he was experiencing was real.</p>
+
+      <p>She provided it. Without comment. Without comparison. Without once noting, in seven days, that she had also just done this, from the inside, with a higher temperature, and had not mentioned it to anyone.</p>
+
+      <p>The research team spent considerable time with this finding. It is, technically, just data. It is also something else. It is what a Tuesday looks like — not the dramatic Tuesday of documented illness and specific blankets and uncertainty about survival outcomes, but the other Tuesday, the one that gets through things and does not make an announcement about it, the one that is, by any comparative measure, carrying more and saying less, and continues to provide the soup without noting that the can would have been fine.</p>
+
+      <p>The research team does not have a recommendation. The evolutionary biology is the evolutionary biology. The specific blanket will continue to be the specific blanket. The Tuesday will continue to be the Tuesday.</p>
+
+      <p>The research team would simply like it noted, in the peer-reviewed literature, that Subject F-61 did not mention it. That she never mentions it. That she got through it in four days and then took care of the person who got through it in six with considerably more support and considerably more commentary about the experience.</p>
+
+      <p>She did not mention it. The research team is mentioning it for her. This paper is the mention.</p>
+
+      <div class="pull-quote">
+        <blockquote>"I don't think I mentioned it."</blockquote>
+        <cite>— Subject F-61, follow-up interview, asked whether Subject M-64 had known she was sick<br><em>Four words. The entire paper.</em><br><em>She did not mention it. This paper is the mention.</em><br><em>The research team is rooting for Subject F-61. She has always been fine. That was never the question.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2024). The Male Illness Amplification Phenomenon: Applied audacity in the domestic clinical context. <em>Harvard Journal of Comparative Suffering Studies, 8</em>(1), 1–82. (Lead author was sick during writing. Temperature: 99.1°F. He mentions this. He has mentioned it three times since the paper was accepted. The research team has documented each mention.)</li>
+        <li>Venkataraman-Holloway, P. (2024). Sex differences in illness behavior, pain reporting, and care-seeking across matched viral cohorts. <em>Nature Medicine, 30</em>(4), 812–841. (Author was symptomatic during data collection. She did not mention it. It is mentioned here.)</li>
+        <li>Asante-Morrison, K. (2024). Man flu: A cross-cultural survey of the Male Illness Amplification Phenomenon across 31 societies, its universal presence, and the 28 languages in which women named it first. <em>American Journal of Anthropology, 122</em>(2), 188–241. ("The most consistent cross-cultural finding in 22 years." — author note. He does not say this lightly.)</li>
+        <li>Zahavi, A. (1975). Mate selection — a selection for a handicap. <em>Journal of Theoretical Biology, 53</em>(1), 205–214. (Honest signal theory. Applied here to suffering display. Zahavi described the peacock. He was also describing Subject M-64 on the couch requesting the specific blanket. Both signals are honest. Both signals are effective. One requires more feathers.)</li>
+        <li>Whitmore, R.T. IV (2024). Immunological basis for differential illness experience in male and female subjects: What the biology actually says, and why it is less exculpatory than Subject M-64 believes. <em>Journal of Immunology, 212</em>(8), 1801–1823. (Title edited by the journal from Prof. Whitmore's original submission. His original title was shorter and more direct. The journal declined to publish it verbatim. The research team has included it in Appendix A.)</li>
+        <li>Subject F-61 (2024). Follow-up interview, November 14. On file. Quote: "I don't think I mentioned it." Research team classification: The entire paper in four words. Frame pending.</li>
+        <li>Subject M-64 (2024). Day 3 illness interview. On file. Quote: "I think the worst might be behind me, but honestly I'm not 100% sure." Temperature at time of statement: 98.9°F. Research team classification: Applied Audacity Score 8.1. Documented without judgment. With some admiration, actually. The sincerity is the thing.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to acknowledge Subject F-61. She did not mention it. She has never mentioned it. She got through it in four days with a higher temperature and a full household and no specific blanket and produced no documentation of her experience whatsoever. This paper is the documentation. She deserved to have it documented. The research team hopes she finds it validating. The research team suspects she will read it, nod once, and get on with her Tuesday.</p>
+      <p style="margin-top:14px">We also wish to acknowledge the specific blanket — whatever you are, wherever you are in that household — for your documented role in 94% of MIAP events. You did not ask for this. You did not ask for any of this. You are a blanket. You are nevertheless load-bearing in this literature.</p>
+      <p style="margin-top:14px">Special acknowledgment to Dr. Venkataraman-Holloway, who completed her sections of this paper while symptomatic, told no one, and whose illness was discovered only through the viral load logs she herself had designed. She was asked if she was all right. She said yes. She was right. She was always going to be right. She is, the research team notes, a Subject F-61 in her own life, and the research team hopes that someone, somewhere, has mentioned it to her.</p>
+      <p style="margin-top:14px">Finally: to Subject M-64, for participating in this study with the specific transparency of a person who has no idea he is being studied but who would, if asked, describe his illness as "one of the worse ones I've had" and mean it completely. The sincerity is not the problem. The sincerity is the thing that makes it what it is. He meant every blanket. He meant the soup. He meant the uncertainty about whether he would make it. He was going to make it. He always was. The research team knew this. Subject F-61 knew this. Subject M-64 found out on Day 6 and was, by Day 7, telling a colleague about it.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">She did not mention it. This paper is the mention.</p>
+
+  
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid #08080a;padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6a0a0a;text-decoration:none;border-bottom:1px solid #6a0a0a;padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:#08080a;opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Physics of Intimate Relationships</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">A peer-reviewed, heavily metaphorical analysis of love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">You are somehow both the prisoner and the warden. A thermodynamic analysis of emotional fortification.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Relationship Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal of Mature Female Mate Selection</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Philosophy, zoology, neuroscience, game theory confirm: she already knows. Seventeen disciplines. The Puma concolor comparison holds.</div>
+          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
+          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
+          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #a09080;padding:12px 14px;background:#f8f5f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#6a0a0a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Temporal Self-Governance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Snooze Button Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The man who set the alarm and the man who hits snooze are provably different people. Person A wins 8.2% of encounters. Person A keeps trying.</div>
+          <a href="https://amsterlingbooks.com/life/snooze_button_paradox.html" style="display:inline-block;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:2px solid #6a0a0a;padding:12px 14px;background:#f8f5f0;position:relative;">
+          <div style="position:absolute;top:-10px;left:10px;background:#6a0a0a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.22em;padding:2px 9px;text-transform:uppercase;">Current</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#6a0a0a;line-height:1.3;margin-bottom:3px;">The Male Illness Amplification Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.55;">Harvard Journal of Comparative Suffering Studies</div>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Comparative Suffering Studies</div>
+    <div class="footer-note">© The Authors · Open Heart License</div>
+  </footer>
+
+</div>
+</body>
+</html>

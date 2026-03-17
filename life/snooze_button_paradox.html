@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Snooze Button Paradox | Harvard Journal of Temporal Self-Governance</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #080808;
+    --ink-light: #181818;
+    --ink-faint: #282828;
+    --paper: #f8f6f0;
+    --paper-warm: #f2ede0;
+    --paper-aged: #e6dfc8;
+    --rule: #806040;
+    --rule-light: #b09070;
+    --accent: #2a1a0a;
+    --accent-mid: #5a3a10;
+    --accent-soft: #8a5a20;
+    --gold: #8b6914;
+    --amber: #c07820;
+    --night: #1a1408;
+    --alarm-red: #8b1a1a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #080604;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:1000;
+    opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #2a1a08, 0 20px 80px rgba(0,0,0,0.8);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  .masthead {
+    background: linear-gradient(135deg, #060402 0%, #1a1008 50%, #060402 100%);
+    border-bottom:3px solid var(--amber);
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* Alarm clock glow */
+  .masthead::before {
+    content:'';
+    position:absolute;
+    top:0; right:80px;
+    width:200px; height:100%;
+    background:radial-gradient(ellipse at top right, rgba(192,120,32,0.12) 0%, transparent 70%);
+    pointer-events:none;
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:#fff;
+    letter-spacing:0.08em;
+    line-height:1;
+    text-shadow:0 0 30px rgba(192,120,32,0.5);
+  }
+
+  .harvard-crest span {
+    display:block;
+    font-size:10px;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color:#c09060;
+    font-weight:400;
+    margin-top:5px;
+  }
+
+  .masthead-journal {
+    text-align:right;
+    font-family:'Playfair Display',serif;
+    color:#fff;
+  }
+
+  .masthead-journal strong {
+    display:block;
+    font-size:14px;
+    letter-spacing:0.06em;
+    margin-bottom:3px;
+  }
+
+  .masthead-journal small {
+    font-size:12px;
+    color:#c09060;
+    font-style:italic;
+    font-family:'EB Garamond',serif;
+  }
+
+  .masthead-strip {
+    background:var(--accent-mid);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament {
+    text-align:center;
+    color:var(--amber);
+    font-size:16px;
+    letter-spacing:0.5em;
+    padding:10px 0;
+    background:var(--paper-aged);
+    border-bottom:1px solid var(--rule);
+    border-top:1px solid var(--rule);
+    user-select:none;
+  }
+
+  .paper-header {
+    padding:50px 60px 36px;
+    border-bottom:3px solid var(--accent-mid);
+    text-align:center;
+    background:var(--paper);
+  }
+
+  .paper-type {
+    font-size:12px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:var(--accent-mid);
+    font-family:'Playfair Display',serif;
+    margin-bottom:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .paper-type::before,.paper-type::after {
+    content:'';
+    display:inline-block;
+    width:50px;
+    height:1px;
+    background:var(--accent-mid);
+  }
+
+  .paper-title {
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    font-weight:900;
+    line-height:1.1;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:-0.02em;
+  }
+
+  .paper-subtitle {
+    font-family:'Playfair Display',serif;
+    font-size:16px;
+    font-weight:400;
+    font-style:italic;
+    color:var(--ink-light);
+    line-height:1.6;
+    max-width:680px;
+    margin:0 auto 24px;
+  }
+
+  .paper-fields {
+    display:inline-flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:28px;
+  }
+
+  .field-tag {
+    background:var(--accent-mid);
+    color:#fff;
+    font-size:10px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    padding:4px 12px;
+    font-family:'Playfair Display',serif;
+  }
+
+  .field-tag.night { background:var(--night); border:1px solid var(--amber); color:var(--amber); }
+
+  .authors-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:28px 0;
+    padding:20px 0;
+    border-top:1px solid var(--rule-light);
+    border-bottom:1px solid var(--rule-light);
+    text-align:left;
+  }
+
+  .author-card {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    border-top:3px solid var(--accent-mid);
+    padding:14px 16px;
+  }
+
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box {
+    background:var(--paper-aged);
+    border-left:4px solid var(--accent-mid);
+    padding:26px 30px;
+    margin-bottom:44px;
+    position:relative;
+  }
+
+  .abstract-box::before {
+    content:'ABSTRACT';
+    position:absolute;
+    top:-10px;
+    left:30px;
+    background:var(--accent-mid);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.35em;
+    padding:3px 10px;
+  }
+
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+
+  h2 {
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--accent-mid);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-mid); font-weight:700; flex-shrink:0; }
+
+  h3 {
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    font-weight:600;
+    font-style:italic;
+    color:var(--ink);
+    margin:28px 0 12px;
+    padding-left:16px;
+    border-left:3px solid var(--amber);
+  }
+
+  p {
+    font-size:18px;
+    line-height:1.85;
+    margin-bottom:16px;
+    text-align:justify;
+    color:var(--ink);
+    hyphens:auto;
+  }
+
+  p.italic-note {
+    font-style:italic;
+    color:var(--ink-light);
+    font-size:17px;
+    padding:12px 20px;
+    border-left:3px solid var(--rule);
+    background:var(--paper-warm);
+  }
+
+  .alarm-display {
+    background:var(--night);
+    color:var(--alarm-red);
+    font-family:'Source Code Pro',monospace;
+    font-size:48px;
+    font-weight:700;
+    text-align:center;
+    padding:24px 32px;
+    margin:24px 0;
+    letter-spacing:0.1em;
+    text-shadow:0 0 20px rgba(139,26,26,0.8);
+    border:1px solid #2a0808;
+    position:relative;
+  }
+
+  .alarm-display .alarm-label {
+    font-size:11px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:#604040;
+    display:block;
+    margin-top:8px;
+    text-shadow:none;
+  }
+
+  .alarm-display .snooze-count {
+    position:absolute;
+    top:12px;
+    right:20px;
+    font-size:12px;
+    color:#804040;
+    text-shadow:none;
+    letter-spacing:0.1em;
+  }
+
+  .equation-box {
+    background:var(--paper-warm);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--accent-soft);
+    padding:20px 32px;
+    text-align:center;
+    margin:24px 0;
+  }
+
+  .equation {
+    font-family:'Source Code Pro',monospace;
+    font-size:17px;
+    font-weight:600;
+    color:var(--ink);
+    letter-spacing:0.04em;
+    margin-bottom:10px;
+    line-height:1.8;
+  }
+
+  .equation-label { font-size:15px; color:var(--ink-light); font-style:italic; line-height:1.7; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+
+  .table-caption {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+    color:var(--ink);
+    margin-bottom:10px;
+    text-transform:uppercase;
+    font-style:italic;
+    letter-spacing:0.04em;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+
+  thead th {
+    padding:11px 14px;
+    text-align:left;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(90,58,16,0.06); transition:background 0.2s; }
+
+  tbody td {
+    padding:11px 14px;
+    border-bottom:1px solid var(--rule-light);
+    line-height:1.6;
+    color:var(--ink);
+    font-size:15px;
+    vertical-align:top;
+  }
+
+  tbody td:first-child {
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--accent-mid);
+    width:22%;
+  }
+
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote {
+    font-size:16px;
+    color:var(--ink);
+    font-style:italic;
+    padding:14px 20px;
+    border-left:4px solid var(--accent-mid);
+    margin:20px 0;
+    background:var(--paper-warm);
+    line-height:1.8;
+  }
+
+  .footnote sup { color:var(--accent-mid); font-weight:700; font-style:normal; }
+
+  .case-study {
+    border:1px solid var(--rule);
+    background:var(--paper-warm);
+    padding:22px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+
+  .case-study::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--accent-mid);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:10px;
+    letter-spacing:0.2em;
+    padding:3px 12px;
+    text-transform:uppercase;
+  }
+
+  .stats-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    margin:24px 0;
+    background:var(--rule);
+  }
+
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+
+  .stat-num {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:var(--accent-mid);
+    display:block;
+    line-height:1;
+    margin-bottom:6px;
+  }
+
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .snooze-timeline {
+    position:relative;
+    padding-left:120px;
+    margin:24px 0;
+  }
+
+  .snooze-event {
+    position:relative;
+    margin-bottom:14px;
+    min-height:40px;
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+  }
+
+  .snooze-time {
+    position:absolute;
+    left:-120px;
+    width:110px;
+    text-align:right;
+    font-family:'Source Code Pro',monospace;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.4;
+  }
+
+  .snooze-time.alarm { color:var(--alarm-red); }
+  .snooze-time.snooze { color:var(--amber); }
+  .snooze-time.chaos { color:var(--accent-soft); }
+
+  .snooze-desc {
+    font-size:16px;
+    line-height:1.65;
+    color:var(--ink);
+    padding-top:2px;
+  }
+
+  .snooze-desc em { font-style:italic; color:var(--ink-faint); }
+
+  .pull-quote {
+    border-top:3px double var(--accent-mid);
+    border-bottom:3px double var(--accent-mid);
+    padding:28px 40px;
+    margin:36px 0;
+    text-align:center;
+  }
+
+  .pull-quote blockquote {
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-style:italic;
+    color:var(--ink);
+    line-height:1.6;
+    margin-bottom:14px;
+  }
+
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter {
+    font-family:'Playfair Display',serif;
+    font-size:62px;
+    font-weight:900;
+    float:left;
+    line-height:0.78;
+    margin-right:8px;
+    margin-top:8px;
+    color:var(--accent-mid);
+  }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-mid); margin:44px 0; }
+
+  .center-ornament { text-align:center; color:var(--amber); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+
+  .acknowledgments {
+    background:var(--paper-aged);
+    padding:28px 32px;
+    border:1px solid var(--rule);
+    margin-top:40px;
+    font-size:17px;
+    line-height:1.85;
+  }
+
+  .paper-footer {
+    background:linear-gradient(135deg, #060402, #1a1008);
+    color:#fff;
+    padding:22px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    border-top:3px solid var(--amber);
+  }
+
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); }
+  .footer-note { font-style:italic; color:var(--amber); opacity:0.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal { margin:0; }
+    .masthead-top,.paper-header,.paper-body { padding-left:24px; padding-right:24px; }
+    .masthead-strip { padding-left:24px; padding-right:24px; }
+    .paper-title { font-size:26px; }
+    .authors-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:repeat(2,1fr); }
+    .snooze-timeline { padding-left:80px; }
+    .snooze-time { left:-80px; width:70px; font-size:14px; }
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Temporal Self-Governance</strong>
+        <small>& Applied Chronological Decision Failure Studies</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 2, Issue 4 &nbsp;·&nbsp; Peer-Reviewed by People Who Submitted This Paper Late &nbsp;·&nbsp; ISSN: 6:00-AM-WAS-A-MISTAKE
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: Humans vs. Themselves</div>
+
+    <h1 class="paper-title">The Snooze Button Paradox</h1>
+    <p class="paper-subtitle">A Multi-Disciplinary Investigation Into the Documented Impossibility of the Same Human Being Setting an Alarm at 10:47pm and Hitting Snooze Until 7:15am — Including Formal Proof That the Man Who Set the Alarm and the Man Who Hit Snooze Are Demonstrably Different People, the Game-Theoretic Consequences of That Finding, and Why the 6am Self Keeps Losing to an Opponent Who Is Technically Himself</p>
+
+    <div class="paper-fields">
+      <span class="field-tag">Philosophy of Personal Identity</span>
+      <span class="field-tag night">Game Theory</span>
+      <span class="field-tag">Behavioral Economics</span>
+      <span class="field-tag night">Neuroscience</span>
+      <span class="field-tag">Applied Mathematics</span>
+      <span class="field-tag night">Decision Science</span>
+      <span class="field-tag">Chronological Audacity</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Chair, Dept. of Catastrophic Temporal Decision-Making<br>Harvard Business School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="87f4f3e2f5ebeee9e0c7efe5f4a9efe6f5f1e6f5e3a9e2e3f2">[email&#160;protected]</a><br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard), MBA (Wharton). Lead author. Has set his alarm for 6am on 847 documented occasions. Has arrived at 6am on 0 of those occasions. Describes his alarm-setting behavior as "optimistic." Describes his snooze behavior as "a separate matter entirely." The research team has spent fourteen months explaining why it is not a separate matter.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Personal Identity & Temporal Philosophy<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbd295c9dacdded5c8ccd4d4dffbdddac895d3dac9cddac9df95dedfce">[email&#160;protected]</a><br>
+          Barker Center 412 · (617) 555-0181
+        </div>
+        <div class="author-quals">D.Phil. Philosophy (Oxford), FRSL. Contributed the personal identity analysis — the formal proof that the 10:47pm alarm-setter and the 6:09am snooze-presser are distinct persons under Lockean psychological continuity theory. This proof was completed at 11:30pm after she set her own alarm for 7am and felt, she reports, a deep philosophical unease about what she had just done.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Sleep Inertia<br>Harvard Medical School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7c799c1d2d9dcd6c3d6c5d6dad6d9f7dfdac499dfd6c5c1d6c5d399d2d3c2">[email&#160;protected]</a><br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Documented the prefrontal cortex offline period in Section 5. Her fMRI data confirms that the snooze-presser is, neurologically, not operating with a functional decision-making apparatus. She presented this finding at a 9am conference. Seven attendees looked at her with an expression she now classifies as "personal recognition."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Yuki Tanaka-Okonkwo, Ph.D., IEEE Fellow</div>
+        <div class="author-title">Professor of Applied Mathematics & Series Convergence<br>Harvard John A. Paulson SEAS</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3c4512485d525d575d7c4f595d4f12545d4e4a5d4e5812595849">[email&#160;protected]</a><br>
+          Maxwell Dworkin 519 · (617) 555-0461
+        </div>
+        <div class="author-quals">Ph.D. Mathematics (Princeton), IEEE Fellow. Developed the Snooze Arithmetic Progression analysis showing the series does not converge through any internal mechanism. Initially described the proof as "trivial." Upon reflection, noted that the simplicity of the proof makes the frequency of the behavior "genuinely interesting to me as a mathematician, in the way that certain paradoxes are interesting." The paradox is genuinely interesting.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Behavioral Economics & Temporal Discounting<br>Harvard Kennedy School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10743e717271627150787b633e787162667162743e757465">[email&#160;protected]</a><br>
+          Rubenstein Building 302 · (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Author of the hyperbolic discounting analysis in Section 6. Calculated the lifetime productivity cost of the snooze habit. Described the result as "larger than I wanted it to be and I am not going to say the number without the full context of the methodology section." The number is in Section 7. The context is provided. The number is still large.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Anthropology & Cross-Cultural Alarm Behavior<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="117a3f7062707f6574517770623f797063677063753f747564">[email&#160;protected]</a><br>
+          Peabody Museum 208 · (617) 555-0247
+        </div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the snooze behavior is documented across 31 cultures following the introduction of mechanical alarm technology. Notes that in pre-alarm societies, the behavior existed in different form: "You can find accounts of people who agreed to be awoken at dawn, were awoken at dawn, and immediately attempted to negotiate with the person who woke them for more time. The snooze button is new. The behavior is ancient."</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: Three Days After the Original Deadline &nbsp;·&nbsp;
+      Peer-Reviewed: By Colleagues Who All Said "We Were Going To Do This Study" &nbsp;·&nbsp;
+      Accepted: At 9:47am, Which Was Originally Scheduled for 9:00am &nbsp;·&nbsp;
+      Dedicated: To the 6am Self. You Tried. You Always Try. It Never Works. This Paper Explains Why.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first formal multi-disciplinary analysis of the <strong>Snooze Button Paradox (SBP)</strong>: the documented, near-universal phenomenon in which a human subject sets an alarm at night with genuine intention, is awakened by that alarm at the appointed time, and immediately chooses — in a series of repeated, confident decisions — to delay waking until significantly after the appointed time, producing an outcome that is both the opposite of the original intention and completely predictable to everyone except the subject at the moment of alarm-setting.</p>
+      <p class="abstract-text">We present formal proof, across six disciplines, that the <strong>10:47pm Alarm-Setter (Person A)</strong> and the <strong>6:09am Snooze-Presser (Person B)</strong> are demonstrably distinct individuals under philosophy of personal identity, neuroscience, game theory, and behavioral economics. This finding has significant implications: if A and B are different people, Person A cannot be held responsible for Person B's behavior. Person B, however, is fully responsible for everything that happens after 7:15am, which is when Person A's original schedule would have required him to already be somewhere else.</p>
+      <p class="abstract-text">Our central findings: the snooze arithmetic series does not converge through internal mechanism; the prefrontal cortex is measurably offline during snooze events; the 6am self consistently loses to the 6:09am self in every documented game-theoretic encounter despite holding what should be a decisive structural advantage; and the lifetime productivity cost of the snooze habit is a number we are going to tell you but would like you to be seated when you read it.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Snooze Button Paradox · Temporal Personal Identity Discontinuity · Prefrontal Cortex Offline Window · Hyperbolic Sleep Discounting · Snooze Arithmetic Progression · The 6am Self vs. The 6:09am Self · Person A Cannot Bind Person B · Nine Minutes of Unconscious Victory · Why The Alarm Was Always Wrong · The Arithmetic Series That Ends In Panic · Applied Chronological Audacity
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Phenomenon and Its Architecture</h2>
+
+      <p class="dropcap">At approximately 10:47pm on any given weeknight, a human subject — typically male, though the phenomenon is documented across all demographics — reaches for his phone, opens the alarm application, and sets an alarm for 6:00am. He does this with full cognitive function. He is awake. His prefrontal cortex is operational. He has correctly assessed that the following morning requires him to be somewhere at a specific time and that 6:00am provides adequate preparation time. This is a rational decision, made by a rational person, in full possession of the relevant facts.</p>
+
+      <p>At 6:00am, the alarm sounds.</p>
+
+      <p>At 6:00am and approximately four seconds, the alarm is silenced.</p>
+
+      <p>At 6:09am, the alarm sounds again.</p>
+
+      <p>This cycle continues.</p>
+
+      <p>The research team documents the remainder of the event below, in real time, as a service to the reader and as a monument to the human capacity for optimism in the face of overwhelming counter-evidence.</p>
+
+      <div class="alarm-display">
+        06:00
+        <span class="alarm-label">ALARM — ORIGINAL INTENTION — STILL THEORETICALLY ACHIEVABLE</span>
+        <span class="snooze-count">SNOOZE: 0</span>
+      </div>
+
+      <div class="snooze-timeline">
+        <div class="snooze-event">
+          <div class="snooze-time alarm">6:00 AM</div>
+          <div class="snooze-desc">Alarm sounds. Person A's intent is activated. Person B — the being who actually occupies this body — hits snooze. <em>Person B has never met Person A's intentions and does not acknowledge them.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time snooze">6:09 AM</div>
+          <div class="snooze-desc">Second alarm. Person B has now had nine minutes of additional sleep during which he has made no progress toward any of Person A's goals. Snooze pressed. <em>Person B does not experience this as failure. Person B experiences this as victory. Person B is wrong but the prefrontal cortex is not available to say so.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time snooze">6:18 AM</div>
+          <div class="snooze-desc">Third alarm. Person B has calculated, in the loose non-conscious arithmetic of early morning, that there is still "plenty of time." This calculation is incorrect by a margin that will become apparent at approximately 7:02am. <em>Snooze pressed with increasing conviction.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time snooze">6:27 AM</div>
+          <div class="snooze-desc">Fourth alarm. Person B makes a decision: he will get up at 6:30. He will give himself three more minutes. This is not a snooze. This is a plan. <em>It is a snooze.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time snooze">6:36 AM</div>
+          <div class="snooze-desc">Person B's 6:30 plan has not been executed. A new plan is formed: 6:45. This is the last snooze. <em>This is not the last snooze.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time snooze">6:45 AM</div>
+          <div class="snooze-desc">The last snooze is pressed. Person B forms what he describes internally as an "absolute commitment" to rising at 7:00. <em>The commitment is made by the same person who made all the other commitments this morning.</em></div>
+        </div>
+        <div class="snooze-event">
+          <div class="snooze-time chaos">7:15 AM</div>
+          <div class="snooze-desc"><strong>Person A's original schedule achieves terminal failure.</strong> Person B awakens without alarm in a state of biological panic, briefly becomes Person C (a person who moves very fast and is angry about it), and begins a compressed preparation sequence that Person A had allocated 75 minutes for and is now allocated 12. <em>Person A is not available to comment. Person A is a memory.</em></div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Average number of snooze presses per morning event (n=847)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">75 min</span>
+          <span class="stat-label">Time Person A allocated for morning preparation</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">12 min</span>
+          <span class="stat-label">Time actually available when Person B finally rises</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Times Person A has won this encounter (all documented mornings)</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team wishes to note that Person A, when interviewed at 10:47pm, was asked whether he expected to actually wake up at 6:00am. He said "yes, absolutely." Person B, when interviewed at 7:17am, was asked whether he had intended to wake up at 6:00am. He said "I set the alarm for 6." These are two answers to different questions from different people and the research team has documented this as the foundational data point of the entire study. Person A believes in Person B with a consistency that the evidence does not support. The research team finds this simultaneously touching and statistically indefensible.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Philosophy: Are These the Same Person?</h2>
+
+      <p>The philosophy of personal identity has grappled for centuries with the question of what makes a person at one time the same person as a person at another time. John Locke argued that personal identity consists in psychological continuity — specifically, the continuity of conscious memory. Derek Parfit extended this to argue that personal identity is not what matters; what matters is psychological connectedness, which can come in degrees.</p>
+
+      <p>The research team applies these frameworks to the 10:47pm alarm-setter and the 6:09am snooze-presser. The results are, Prof. Ravenswood-Clarke notes, "more definitive than I expected when I started, and more personally relevant than I was comfortable with."</p>
+
+      <h3>2.1 &nbsp; The Lockean Test: Memory Continuity</h3>
+      <p>For Locke, Person A and Person B are the same person if and only if Person B can consciously remember being Person A. This requires an accessible memory chain between the two states. The research team tested this directly: at 7:17am, subjects were asked what they remembered from 10:47pm the previous evening. Specifically: what time did you set the alarm for, and why?</p>
+      <p>91% of subjects remembered setting an alarm. 78% remembered the general time. 12% could recall the specific reasoning — "I had the 8:30 meeting." 0% reported any vivid, continuous conscious experience bridging the alarm-setting and the first snooze press. The memory chain is broken by sleep. Under Locke's criterion, <strong>Person A and Person B are not the same person.</strong></p>
+
+      <h3>2.2 &nbsp; The Parfit Test: Psychological Connectedness</h3>
+      <p>Parfit requires not strict memory continuity but psychological connectedness — overlapping chains of intentions, beliefs, and desires. Person A had specific intentions: wake at 6, prepare by 7:15, arrive at destination at 8:30. Person B has no access to these intentions at 6:00am. Person B has one operational priority: more sleep. Person B does not know the meeting is at 8:30. Person B does not know about the meeting. Person B barely knows what year it is.</p>
+      <p>The psychological connectedness between 10:47pm and 6:09am is, Parfit's framework confirms, <strong>at or near zero.</strong> These are not meaningfully the same person. They share a body. They do not share a decision-making apparatus, a set of active intentions, or functional prefrontal cortex availability.</p>
+
+      <div class="footnote"><sup>‡</sup> Prof. Ravenswood-Clarke notes the significant practical implication of this finding: if Person A and Person B are distinct individuals under both major frameworks of personal identity theory, then Person A's decision to set an alarm at 6am is, strictly speaking, an attempt to <em>bind a future person</em> without that person's consent. This is legally and philosophically contentious. Person B did not agree to be awoken at 6am. Person B was not consulted. Person B, upon awakening, demonstrates his disagreement seven times in nine-minute increments. The research team notes that Person B's position, while inconvenient, is philosophically coherent. This does not mean Person B is right. It means Person A needs a better commitment device. Section 8 addresses this. It does not fully solve the problem.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Game Theory: The 6am Self Loses Every Time</h2>
+
+      <p>In game theory, a commitment problem occurs when a player cannot credibly commit to a future action because the future self who must execute the action has different preferences than the present self who made the commitment. This is precisely the structure of the Snooze Button Paradox.</p>
+
+      <h3>3.1 &nbsp; The Game Structure</h3>
+      <p>Person A (10:47pm) sets an alarm as a commitment device — a mechanism designed to force Person B (6:00am) to wake up. This is a classic pre-commitment strategy, the same logic behind Ulysses having himself tied to the mast. The alarm is the mast. Person A is Ulysses. Person B is also Ulysses but without the rope, because Person B has been given full access to the snooze button, which is a rope with an off switch, which entirely defeats the purpose of the rope.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Game Theory Matrix: Person A (6am) vs. Person B (The Snooze)</div>
+        <table>
+          <thead>
+            <tr><th>Person B's Move</th><th>If Person A Wins (Wakes)</th><th>If Person B Wins (Snooze)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First Snooze (6:00)</td>
+              <td>Person A rises, executes plan, arrives on time. Payoff: full schedule achieved. Theoretical maximum. <strong>Observed frequency: 8.2%</strong></td>
+              <td>Nine more minutes of sleep. Immediate payoff: high. Deferred cost: mounting. Person B does not calculate deferred costs. Person B cannot. The PFC is offline.</td>
+            </tr>
+            <tr>
+              <td>Snoozes 2–5 (6:09–6:36)</td>
+              <td>Each individual snooze pressed: small immediate gain. Cumulative cost: the schedule is now impossible to execute fully. Person B is aware of this in the abstract. Person B does not find this motivating.</td>
+              <td>Person B experiences each additional snooze as an independent decision with fresh justification. "Just this one more." The research team notes that "just this one more" appears in the data 847 times. It has never been the last one.</td>
+            </tr>
+            <tr>
+              <td>The Decisive Final Snooze</td>
+              <td>Person B forms an "absolute commitment" to rising at the next alarm. This commitment is made by the same apparatus that made all previous commitments this morning. The research team's confidence interval on this commitment is 0–12%.</td>
+              <td>Person B wins the encounter decisively. Person A's schedule is now terminal. Person C (the panic state) is activated. Person C is not in the original game tree. Person C was not anticipated. Person C has 12 minutes and strong opinions about everybody involved.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: Person A's win rate across 847 documented morning encounters: 8.2%. The research team notes this is a worse win rate than random chance in most two-player games, which requires active effort to achieve against an opponent who is ostensibly yourself.</div>
+      </div>
+
+      <h3>3.2 &nbsp; Why Person A Keeps Setting the Alarm</h3>
+      <p>The most puzzling finding in the game theory analysis is not that Person B wins. It is that Person A keeps trying. Despite a win rate of 8.2%, Person A sets the alarm again the following evening with full confidence. This is not irrational optimism. This is a structural feature of the game: Person A and Person B never meet. Person A has never experienced losing. Person B has never experienced setting the alarm. Each operates in complete ignorance of the other's track record. The game resets every 24 hours. The alarm gets set. Person B wins. Neither learns anything.</p>
+
+      <div class="footnote"><sup>§</sup> Subject M-58 was asked, at 10:47pm, about his track record of waking at 6am. He said he thought he was pretty good about it. His phone records showed 23 consecutive mornings in which the first snooze was pressed within 8 seconds of the alarm. He was shown this data. He looked at it for a while. Then he said: "That's early. I'm not really a morning person." He then set his alarm for 6am. The research team documented this as "the most concise demonstration of the paradox we have collected in fourteen months of fieldwork."</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Mathematics: The Snooze Arithmetic Progression</h2>
+
+      <p>The snooze sequence is mathematically a simple arithmetic progression with first term a₀ = 6:00am and common difference d = 9 minutes:</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          a<sub>n</sub> = a<sub>0</sub> + n·d = 6:00 + n(9 min)<br><br>
+          a<sub>1</sub> = 6:09 &nbsp;·&nbsp; a<sub>2</sub> = 6:18 &nbsp;·&nbsp; a<sub>3</sub> = 6:27 &nbsp;·&nbsp; a<sub>n</sub> = 6:00 + 9n
+        </div>
+        <div class="equation-label">The series is unbounded. It has no natural termination point — it will continue generating valid alarm times indefinitely. The subject believes, at each term, that the next term will be the last. This belief is generated fresh at each alarm and has never, in the documented literature, been correct for the reason the subject believed it to be correct.</div>
+      </div>
+
+      <p>Dr. Tanaka-Okonkwo's contribution to this section is a formal proof that the snooze sequence terminates not through mathematical convergence but through one of two external mechanisms: (1) the schedule catastrophe — the moment at which remaining preparation time falls below a threshold that even Person B cannot deny, and (2) a third party — typically a partner, a child, or a meeting notification — who introduces an exogenous shock to the system.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          T<sub>termination</sub> = min(T<sub>catastrophe</sub>, T<sub>external shock</sub>)
+        </div>
+        <div class="equation-label">The series terminates when panic arrives or someone else arrives first. In households where a partner is present, T<sub>external shock</sub> is typically earlier and arrives with a specific tone that Person B has learned to classify as "not negotiable." This is the most effective termination mechanism documented. Its effectiveness increases with relationship duration.</div>
+      </div>
+
+      <div class="footnote">** Dr. Tanaka-Okonkwo notes that the 9-minute snooze interval is not arbitrary — it is a deliberate product decision based on human sleep cycle research suggesting that 9 minutes is long enough to feel like meaningful sleep but short enough that deeper sleep stages are not re-entered, theoretically making waking easier. She notes that this interval was designed to facilitate gentle waking. She notes that it instead facilitates seven gentle wakings followed by one catastrophic waking, and that this outcome was apparently not fully modeled in the original design. She has been in contact with the relevant engineering teams. They have not responded.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Neuroscience: The Prefrontal Cortex Is Not At Work</h2>
+
+      <p>Dr. Venkataraman-Holloway's neuroimaging contribution to this paper is, she reports, "the section that required the least analysis and produced the most nodding at conferences." The finding is simple. The implications are enormous. The finding is this:</p>
+
+      <p><strong>During snooze events, the prefrontal cortex — the brain region responsible for rational decision-making, impulse control, planning, and the evaluation of long-term consequences — is functionally offline.</strong></p>
+
+      <p>Sleep inertia — the transitional state between sleep and full waking — produces a measurable suppression of prefrontal activity lasting between 15 and 30 minutes after awakening, with maximum suppression in the first 5 minutes. Person B makes his snooze decision at approximately T+4 seconds — 4 seconds after the alarm sounds, while sleep inertia is at its peak and the prefrontal cortex is at its lowest measured activity.</p>
+
+      <p>Person B is not deciding to snooze. Person B is a biological process with a thumb.</p>
+
+      <h3>5.1 &nbsp; What Is Operational During The Snooze Press</h3>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — Neural Availability at T+4 Seconds (Snooze Press Moment)</div>
+        <table>
+          <thead>
+            <tr><th>Brain Region</th><th>Availability at T+4s</th><th>Functional Consequence</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prefrontal Cortex</td>
+              <td>12–18% of baseline. Effectively offline for planning, consequences, or anything Person A cared about last night.</td>
+              <td>No access to: meeting time, schedule, Person A's intentions, the concept of "later." Not available. Come back in 20 minutes.</td>
+            </tr>
+            <tr>
+              <td>Hypothalamus (Sleep Drive)</td>
+              <td>Fully operational. Strongly motivated. Has opinions.</td>
+              <td>Sleep now is presented to the decision-making system as an overwhelming and immediate good. This is the only input available. It wins by default because it is the only candidate.</td>
+            </tr>
+            <tr>
+              <td>Motor Cortex (Thumb)</td>
+              <td>Functional for simple learned motor patterns. Snooze-pressing is a learned motor pattern.</td>
+              <td>The thumb knows where the snooze button is. The thumb has always known. The thumb has been here before. The thumb does not need the prefrontal cortex for this. The thumb is fine.</td>
+            </tr>
+            <tr>
+              <td>Auditory Processing</td>
+              <td>Operational but motivationally neutral regarding alarm content.</td>
+              <td>The alarm is heard. The alarm is categorized as "aversive stimulus requiring elimination." Elimination achieved via snooze. Auditory processing satisfied. Everyone else's concerns: irrelevant at this moment.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: By snooze press 4 (approximately 6:27am), the prefrontal cortex has begun returning to baseline. By this point, the subject is making incrementally more rational decisions. He is still pressing snooze. He is now pressing snooze with awareness that this is not optimal. This is documented as a distinct and more philosophically interesting phase of the event.</div>
+      </div>
+
+      <div class="footnote">†† Dr. Venkataraman-Holloway documents what she terms the <strong>Lucid Snooze Window</strong> (LSW): the period, typically between snooze 4 and snooze 6, in which the prefrontal cortex has sufficiently recovered that the subject is fully aware he should be getting up and is choosing not to. The LSW is, neurologically, the most interesting phase of the event — it is the only period in which Person B and Person A are simultaneously present, looking at each other across the snooze button, and Person B wins anyway. The research team finds this data point the most honest and the most damning. You know. You know you should get up. You press snooze anyway. This is not sleep inertia. This is a decision. You made it. It is yours.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Behavioral Economics: Hyperbolic Discounting and the Nine-Minute Premium</h2>
+
+      <p>Standard economic models assume that humans discount future value at a constant rate — a dollar tomorrow is worth slightly less than a dollar today, and the discount is consistent across all time horizons. This is called exponential discounting. It is rational. It is also not what humans do.</p>
+
+      <p>Humans use <strong>hyperbolic discounting</strong>: they apply a dramatically higher discount rate to the immediate future than to the distant future. A reward now is worth enormously more than a reward in five minutes, which is only slightly less valuable than a reward in an hour.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          V(t) = V₀ / (1 + k·t)
+        </div>
+        <div class="equation-label">Where V(t) is the present value of a future reward at time t, V₀ is the undiscounted reward value, and k is the hyperbolic discount rate. At 6:00am, with sleep inertia active, k approaches its maximum documented value in human subjects. Nine minutes of additional sleep becomes worth approximately 47 minutes of future productivity. This is not a calculation. This is a feeling. The feeling is wrong. The feeling is extremely compelling.</div>
+      </div>
+
+      <p>Prof. Abara-Whitfield's analysis demonstrates that at 6:00am, the subject applies a hyperbolic discount so severe that nine minutes of immediate sleep is valued, by his nervous system, as approximately equal to an entire functioning morning. This is incorrect by every objective measure. It is also completely consistent with documented hyperbolic discounting behavior. The subject is not irrational. He is human. The distinction matters less at 6am than you might hope.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> Economics: The Lifetime Cost of Nine Minutes</h2>
+
+      <p>Prof. Abara-Whitfield's lifetime cost analysis proceeds from the following documented parameters: average 7 snooze presses per morning, 9 minutes each, 5 mornings per week, 48 weeks per year, across a working lifespan of 45 years. The arithmetic produces a number he asked the research team to present with what he called "appropriate gravity."</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          T<sub>snooze lifetime</sub> = 7 × 9 × 5 × 48 × 45 = 680,400 minutes = 11,340 hours = 472.5 days
+        </div>
+        <div class="equation-label">The average person who snoozes habitually spends approximately 472.5 days of their life in the snooze window — the specific, liminal, neither-asleep-nor-awake state that is too disrupted to be restorative sleep and too unconscious to be productive time. It is not rest. It is not waking. It is 472 days of being a biological process with a thumb, floating in the specific misery of knowing the alarm will sound again in nine minutes.</div>
+      </div>
+
+      <p>At the U.S. median hourly wage, this represents a productivity opportunity cost of approximately <strong>$98,400</strong> across a working lifetime. Prof. Abara-Whitfield notes that this figure does not represent what was lost — the snooze window is not productive time that could be redirected. It represents what was neither gained nor enjoyed: not real sleep, not real morning, not rest, not work. It is 472 days of being in a waiting room that has an alarm in it.</p>
+
+      <div class="footnote">‡‡ Prof. Abara-Whitfield also calculated the cost of the Lucid Snooze Window specifically — the period after snooze 4 when the subject is making conscious decisions. Approximately 31% of total snooze time occurs in the LSW. This represents roughly 146 days of the lifetime total in which the subject was fully aware he should get up, chose not to, and then had to live with himself about it. No monetary value can be assigned to this. Prof. Abara-Whitfield tried. He stopped. Some things cannot be quantified without becoming depressing in a way that exceeds the scope of this paper.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CASE STUDIES -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Selected Case Studies</h2>
+
+      <div class="case-study" data-label="Case Study M-58 — 'The Optimist'">
+        <p>Subject M-58, age 58, has set his alarm for 6:00am on 312 of the 365 days documented in the longitudinal study period. He has risen at or before 6:15am on 26 of those occasions (8.3%). On the remaining 286 occasions, his wake time ranged from 6:27am to 7:44am, with a median of 7:08am.</p>
+        <p>Subject M-58 describes himself as "a morning person who just needs a minute to get going." His phone records show that "a minute to get going" has a documented range of 9 to 104 minutes and a mean of 68 minutes. When presented with this data, Subject M-58 said: "That doesn't sound right." The data is right.</p>
+        <p>Most significantly: Subject M-58 re-sets his alarm for 6:00am every evening. Without exception. After 286 consecutive mornings in which Person B defeated Person A, Person A sets the alarm again with what Subject M-58 describes as "genuine intention." The research team does not doubt this. Person A always has genuine intention. Person A has never met Person B. Person A will never learn. This is, the research team notes, both the flaw in the system and the thing that makes Person A kind of wonderful.</p>
+        <p class="italic-note">Person A is an optimist. Person A has always been an optimist. Person A will set the alarm for 6am tomorrow. Person B will press snooze. This is not a tragedy. This is a love story between a man and his best intentions, playing out every morning across nine-minute intervals, for the rest of his life.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study F-55 — 'The Observer'">
+        <p>Subject F-55, the partner of Subject M-58, was interviewed as a longitudinal observer of the SBP phenomenon. She was asked, first, how many times Subject M-58 woke at his intended alarm time in the past year. She said: "Maybe twenty times." The documented figure is 26. She was close.</p>
+        <p>She was asked whether she found this frustrating. She thought about this for a long time. Then she said: "He sets it for 6 every night. He believes it every time. There's something about that." When asked to elaborate, she said: "He's always going to try to be the person who gets up at 6. He just never quite is." She paused. "I find that sort of sweet and sort of maddening in equal measure. Both at the same time."</p>
+        <p class="italic-note">The research team has classified Subject F-55's response as the most accurate description of the Snooze Button Paradox in the entire collected data. We have proposed it as the clinical summary. "He's always going to try to be the person who gets up at 6. He just never quite is." The person who sets the alarm and the person who hits snooze are different people. Person A keeps trying anyway. The research team is, ultimately, rooting for Person A.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> Conclusions: On Person A, Person B, and the Alarm That Gets Set Anyway</h2>
+
+      <p class="dropcap">We have proven, across philosophy, game theory, neuroscience, mathematics, and behavioral economics, that the man who sets the alarm and the man who hits snooze are demonstrably distinct individuals. Person A cannot be held responsible for Person B's behavior. Person B cannot be expected to honor Person A's commitments. The game is structurally unwinnable by Person A because the commitment device is operated by the very agent it was designed to constrain, who has a prefrontal cortex offline and a thumb that knows where the button is.</p>
+
+      <p>And yet Person A sets the alarm.</p>
+
+      <p>Every evening. 10:47pm. 6:00am. With genuine intention and the specific, undefeated optimism of someone who has never successfully inhabited the morning they planned and has never stopped planning it.</p>
+
+      <p>The research team has spent considerable time with this finding. It is, technically, irrational. It is also, we have come to believe, one of the most human things a person does. To plan a version of yourself that you will not quite be. To commit, every night, to a morning self who is more organized, more punctual, more intentional than the warm unconscious person who will actually wake up and immediately begin negotiating. To believe — with the quiet confidence of someone who has never won this particular game — that tomorrow morning might be different.</p>
+
+      <p>It will not be different. The mathematics confirm this. The neuroscience confirms this. The game theory is unanimous.</p>
+
+      <p>Set the alarm anyway. Person A is worth believing in.</p>
+
+      <div class="pull-quote">
+        <blockquote>"He's always going to try to be the person who gets up at 6.<br>He just never quite is."</blockquote>
+        <cite>— Subject F-55, partner of Subject M-58, longitudinal observer<br><em>Personal interview, 8:47am (they were both late)</em><br><em>Adopted unanimously as the clinical definition of the Snooze Button Paradox</em><br><em>The research team is rooting for Person A.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2024). The Snooze Button Paradox: A behavioral economics analysis of the 10:47pm self's repeated, unlearned defeat by the 6:09am self. <em>Harvard Journal of Temporal Self-Governance, 2</em>(3), 1–71. (Lead author submitted this paper at 9:47am. It was due at 9:00am. He had set an alarm for 7:30am. He is aware of the irony. The irony is in the data.)</li>
+        <li>Locke, J. (1689). <em>An Essay Concerning Human Understanding.</em> Thomas Basset. (Locke's theory of personal identity as psychological continuity. He did not anticipate its application to snooze buttons. He was, the research team notes, writing in an era of church bells and roosters, neither of which had a snooze function. He may have been better rested than us.)</li>
+        <li>Parfit, D. (1984). <em>Reasons and Persons.</em> Oxford University Press. (Parfit argued that personal identity is not what matters. The research team argues that at 6:09am, nothing matters. Parfit was onto something.)</li>
+        <li>Venkataraman-Holloway, P. (2024). Sleep inertia and prefrontal cortex suppression: Why you are not the person your alarm clock thinks you are. <em>Nature Neuroscience, 27</em>(9), 1801–1834. ("Seven attendees at the 9am presentation made eye contact with me in a way I can only describe as personal recognition." — author note.)</li>
+        <li>Tanaka-Okonkwo, Y. (2024). The arithmetic progression of the snooze: Why the series terminates in catastrophe and never in dignity. <em>IEEE Transactions on Applied Mathematics, 71</em>(1), 201–228. ("Trivial proof. Genuinely interesting behavior." — author note, exact words.)</li>
+        <li>Abara-Whitfield, D. (2024). 472 days in a waiting room with an alarm in it: Lifetime productivity and wellbeing cost of habitual snooze behavior. <em>Journal of Behavioral Economics, 33</em>(1), 44–89. ("I stopped calculating at the 146-day figure. Some things are their own conclusion." — author, methods section footnote.)</li>
+        <li>Person A (every night, 10:47pm). Alarm set for 6:00am. Genuine intention confirmed. Track record: irrelevant to Person A. The research team notes that this is, ultimately, the most important citation in this paper.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent-mid);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to acknowledge Person A — every version of him, across every morning, in every household — who sets the alarm with the specific, undefeatable hope of someone who has never successfully been the person he plans to be at 10:47pm and has never stopped planning to be him. You are the reason this paper exists. You are also the reason this paper had to be submitted late.</p>
+      <p style="margin-top:14px">We also wish to acknowledge Person B, without whom there would be no paradox and also no extra sleep, and who operates entirely without cortical guidance but with considerable effectiveness. You won 91.8% of documented encounters. The research team does not admire this. The research team does not entirely blame you either.</p>
+      <p style="margin-top:14px">Special acknowledgment to Subject F-55, whose two-sentence description of Subject M-58 — "He's always going to try to be the person who gets up at 6. He just never quite is" — is the most accurate clinical definition produced in fourteen months of data collection and will appear in the Journal's glossary. She was not trying to make history. She was describing her husband. The history made itself, at approximately 8:47am, while they were both late.</p>
+      <p style="margin-top:14px">Finally: to the 9-minute snooze interval, which was designed with the best intentions and has produced a documented 472-day lifetime waiting room for the average human being. The intention was good. The outcome was not what you planned. The research team understands. You set the alarm for 6am too.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">Person A will set the alarm for 6am tomorrow. The research team is rooting for him.</p>
+
+  
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid #080808;padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#5a3a10;text-decoration:none;border-bottom:1px solid #5a3a10;padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:#080808;opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Physics of Intimate Relationships</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">A peer-reviewed, heavily metaphorical analysis of love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">You are somehow both the prisoner and the warden. A thermodynamic analysis of emotional fortification.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Relationship Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal of Mature Female Mate Selection</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Philosophy, zoology, neuroscience, game theory confirm: she already knows. Seventeen disciplines. The Puma concolor comparison holds.</div>
+          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
+          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
+          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:2px solid #5a3a10;padding:12px 14px;background:#f8f6f0;position:relative;">
+          <div style="position:absolute;top:-10px;left:10px;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.22em;padding:2px 9px;text-transform:uppercase;">Current</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#5a3a10;line-height:1.3;margin-bottom:3px;">The Snooze Button Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.55;">Harvard Journal of Temporal Self-Governance</div>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b09070;padding:12px 14px;background:#f8f6f0;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#5a3a10;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Comparative Suffering Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#080808;margin-bottom:4px;line-height:1.3;">The Male Illness Amplification Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#080808;opacity:0.7;margin-bottom:9px;line-height:1.45;">99.1°F. The specific blanket. Applied Audacity Studies, formally introduced. She had the same cold two weeks earlier. She did not mention it.</div>
+          <a href="https://amsterlingbooks.com/life/male_illness_amplification.html" style="display:inline-block;background:#5a3a10;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Temporal Self-Governance</div>
+    <div class="footer-note">© The Authors · Open Heart License</div>
+  </footer>
+
+</div>
+</body>
+</html>
