@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 2am Profile Review | Harvard Journal of Nocturnal Digital Behavior Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0c0c14;
+    --ink-light: #18182a;
+    --ink-faint: #28283a;
+    --paper: #f6f4fc;
+    --paper-warm: #eeeaf8;
+    --paper-aged: #e0d8f4;
+    --rule: #504080;
+    --rule-light: #8070b0;
+    --accent: #1a0a4a;
+    --accent-mid: #2a1a6a;
+    --accent-soft: #4a3a8a;
+    --phone-blue: #1a2a5a;
+    --screen-glow: #3a4a8a;
+    --dim-purple: #6a5a9a;
+    --night: #080612;
+    --bad-idea: #8a1a6a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #040208;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #1a0a3a, 0 20px 80px rgba(0,0,0,0.9);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  .masthead {
+    background: linear-gradient(135deg, #040208 0%, #0c0620 50%, #040208 100%);
+    border-bottom:3px solid var(--dim-purple);
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* phone screen glow */
+  .masthead::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background:radial-gradient(ellipse at 60% 50%, rgba(58,74,138,.15) 0%, transparent 65%);
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(58,74,138,.6); }
+  .harvard-crest span { display:block; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:var(--dim-purple); font-weight:400; margin-top:5px; opacity:0.8; }
+  .masthead-journal { text-align:right; font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:var(--dim-purple); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .masthead-strip {
+    background:var(--accent-mid);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--dim-purple); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before,.paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--dim-purple); }
+
+  .paper-title { font-family:'Playfair Display',serif; font-size:38px; font-weight:900; line-height:1.1; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.night-tag { background:var(--night); border:1px solid var(--dim-purple); color:var(--dim-purple); }
+  .field-tag.bad { background:var(--bad-idea); color:#fff; }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-mid); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--accent-mid); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-mid); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-mid); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--dim-purple); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule); background:var(--paper-warm); }
+
+  /* THE CLICK CASCADE — the spine of this paper */
+  .cascade-box {
+    background:var(--night);
+    color:#9090cc;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    line-height:1;
+    border:1px solid #1a1030;
+  }
+
+  .cascade-box::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--accent-mid);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.2em;
+    padding:3px 14px;
+    text-transform:uppercase;
+  }
+
+  .cc-row { display:grid; grid-template-columns:80px 220px 1fr; gap:10px; padding:8px 0; border-bottom:1px solid rgba(144,144,204,.08); align-items:baseline; }
+  .cc-time { color:var(--dim-purple); font-weight:700; }
+  .cc-action { color:#9090cc; }
+  .cc-state { color:#505080; font-style:italic; font-size:12px; }
+  .cc-whatam { color:#c060c0; font-weight:700; font-size:13px; }
+  .cc-worse { color:#c04040; }
+  .cc-note { color:#404060; font-size:11px; font-style:italic; grid-column:1/-1; padding-left:80px; padding-bottom:2px; }
+
+  /* THE SLOT MACHINE DISPLAY */
+  .slot-box {
+    background:var(--night);
+    border:1px solid var(--accent-soft);
+    border-top:3px solid var(--dim-purple);
+    padding:20px 28px;
+    margin:24px 0;
+    text-align:center;
+    position:relative;
+  }
+
+  .slot-box::before {
+    content:'VARIABLE REWARD SCHEDULE — DOCUMENTED CLICK OUTCOMES';
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--accent-mid);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.18em;
+    padding:3px 14px;
+    text-transform:uppercase;
+  }
+
+  .slot-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:8px; }
+
+  .slot-outcome {
+    background:#0a0818;
+    border:1px solid #2a2040;
+    padding:14px 12px;
+    font-size:14px;
+    font-family:'Playfair Display',serif;
+    line-height:1.5;
+  }
+
+  .slot-prob { font-family:'Source Code Pro',monospace; font-size:11px; color:var(--dim-purple); margin-bottom:6px; display:block; }
+  .slot-result { color:#9090cc; }
+  .slot-result.jackpot { color:#c0c040; }
+  .slot-result.bad { color:#c04040; }
+  .slot-note { font-size:11px; color:#404060; margin-top:4px; font-style:italic; }
+
+  .equation-box { background:var(--paper-warm); border:1px solid var(--rule); border-top:3px solid var(--accent-soft); padding:20px 32px; text-align:center; margin:24px 0; }
+  .equation { font-family:'Source Code Pro',monospace; font-size:17px; font-weight:600; color:var(--ink); letter-spacing:0.04em; margin-bottom:10px; line-height:1.8; }
+  .equation-label { font-size:15px; color:var(--ink-light); font-style:italic; line-height:1.7; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(42,26,106,.06); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:22%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-mid); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-mid); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:var(--accent-mid); display:block; line-height:1; margin-bottom:6px; }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .pull-quote { border-top:3px double var(--accent-mid); border-bottom:3px double var(--accent-mid); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--accent-mid); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-mid); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--dim-purple); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule); margin-top:40px; font-size:17px; line-height:1.85; }
+
+  .paper-footer { background:linear-gradient(135deg,#040208,#0c0620); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:3px solid var(--dim-purple); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--dim-purple); }
+  .footer-note { font-style:italic; color:var(--dim-purple); opacity:.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-top,.paper-header,.paper-body{padding-left:24px;padding-right:24px}
+    .masthead-strip{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:26px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .cc-row{grid-template-columns:70px 1fr;gap:6px}
+    .slot-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Nocturnal Digital Behavior Studies</strong>
+        <small>& Applied Self-Sabotage Documentation</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 2, Issue 4 &nbsp;·&nbsp; Peer-Reviewed at 2:47am by Researchers Who Were Also Doing Something Like This &nbsp;·&nbsp; ISSN: WHY-AM-I-STILL-CLICKING
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: Behaviors We Understand and Cannot Stop</div>
+
+    <h1 class="paper-title">The 2am Profile Review</h1>
+    <p class="paper-subtitle">A Complete Neuroscientific, Information-Theoretic, Behavioral Economic, and Philosophical Analysis of the Documented Practice of Reviewing an Ex-Partner's Social Media Profile at 2am — Why the Subject Clicks When They Know There Is Nothing New, What "What Am I Doing" Means When Said Aloud to Nobody in a Dark Room, Why Tomorrow Is Going to Be Rough, and the Specific Architecture of a Behavior That Is Fully Understood in Real Time and Continues Anyway</p>
+
+    <div class="paper-fields">
+      <span class="field-tag">Neuroscience</span>
+      <span class="field-tag night-tag">Information Theory</span>
+      <span class="field-tag">Behavioral Economics</span>
+      <span class="field-tag night-tag">The 2am Variant</span>
+      <span class="field-tag bad">Applied Self-Sabotage</span>
+      <span class="field-tag">Psychology of the "What Am I Doing" Moment</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Documented Poor Decisions Made With Full Information<br>Harvard Business School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="becdcadbccd2d7d0d9fed6dccd90d6dfccc8dfccda90dbdacb">[email&#160;protected]</a><br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Declines to confirm or deny the specific circumstances that generated the initial research question for this paper. Confirms only that the research question arrived at 2:34am on a Wednesday and was written down immediately, which is the most productive outcome of the documented behavior in the study's field notes.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Compulsive Digital Behavior<br>Harvard Medical School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa8ad48c9f94919b8e9b889b979b94ba929789d4929b888c9b889ed49f9e8f">[email&#160;protected]</a><br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the dopamine loop and variable reward schedule analysis in Section 3. Documents that the neurological architecture of the 2am profile review is structurally identical to slot machine behavior, which she notes "the platforms are aware of and have optimized for, which I mention as a professional observation and not as an excuse, because it is not an excuse, but it is a fact."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Yuki Tanaka-Okonkwo, Ph.D., IEEE Fellow</div>
+        <div class="author-title">Professor of Information Theory<br>Harvard John A. Paulson SEAS</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e990c79d8887888288a99a8c889ac781889b9f889b8dc78c8d9c">[email&#160;protected]</a><br>
+          Maxwell Dworkin 519 · (617) 555-0461
+        </div>
+        <div class="author-quals">Ph.D. Mathematics (Princeton), IEEE Fellow. Contributed the Zero New Information analysis in Section 4. Confirmed that the profile contains no new information on the 7th visit that it did not contain on the 1st visit. Notes that this is the third paper in the series to document a Zero New Information event. Observes that humans encounter this theorem repeatedly in different contexts and do not generalize from it. She finds this "the most interesting failure of pattern recognition I have formally documented."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Behavioral Economics & Sunk Emotional Cost<br>Harvard Kennedy School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="21450f404340534061494a520f494053574053450f444554">[email&#160;protected]</a><br>
+          Rubenstein Building 302 · (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the sunk cost analysis in Section 5. Documents that 52 minutes of profile reviewing produces a sunk cost that motivates continued review despite zero expected return. "The 52 minutes cannot be recovered. They have been spent. The rational response is to stop. The documented response is to continue, because stopping now would make the 52 minutes feel wasted, which is not a coherent economic position, which has not prevented anyone from holding it at 2am." He has held it at 2am. He does not say which Wednesday.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of "What Am I Doing" Studies<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a2364382b3c2f24393d25252e0a2c2b3964222b383c2b382e642f2e3f">[email&#160;protected]</a><br>
+          Barker Center 412 · (617) 555-0181
+        </div>
+        <div class="author-quals">D.Phil. Philosophy (Oxford), FRSL. Contributed the philosophical analysis of the "What Am I Doing" moment in Section 6 — specifically, the finding that this moment is not a question but a rhetorical acknowledgment of full situational awareness that produces no behavior change. She describes it as "the most honest sentence a person says in the entire 2am event and the most thoroughly ignored." She spent two months on this section. She found it, she reports, uncomfortably recognizable.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Psychology of the 2am Vulnerability Window<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5aceba7a9a4a6aeb2a0a9a985a3a4b6ebada4b7b3a4b7a1eba0a1b0">[email&#160;protected]</a><br>
+          William James Hall 614 · (617) 555-0741
+        </div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the 2am vulnerability window analysis in Section 2. Documents the specific psychological state — the intersection of fatigue, reduced inhibitory control, and heightened emotional sensitivity — that produces the behavior. Notes that the 2am profile review would not, in most cases, occur at 2pm. The time is not incidental. The time is the mechanism. Sleep deprivation does what it does, and what it does at 2am is unlock a set of impulses that daylight keeps appropriately managed.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: At 2:34am, Following the Research Event That Generated the Initial Question &nbsp;·&nbsp;
+      Peer-Reviewed: The Following Morning, By Researchers Who Were Also Tired &nbsp;·&nbsp;
+      Accepted: After the Third Round of Revisions, Which Took Longer Than Expected Because Everyone Kept Recognizing Themselves &nbsp;·&nbsp;
+      Dedicated: To Everyone Who Has Said "What Am I Doing" in a Dark Room at 2am and Then Clicked One More Time. This Paper Is the Answer To Your Question.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>2am Profile Review (2APR)</strong>: the documented, nearly universal practice of reviewing an ex-partner's social media profile during the late-night vulnerability window — repeatedly, with full awareness that the behavior produces no positive outcome, in the specific psychological state produced by 2am — until the subject either falls asleep with the phone still lit or achieves a moment of sufficient metacognitive clarity to close the application, which will be reopened within 11 minutes in 67% of documented cases.</p>
+      <p class="abstract-text">The 2APR is not irrational. It is the neurologically predictable output of: (1) a dopamine reward system optimized by variable reinforcement schedules identical to those used by slot machines; (2) the 2am vulnerability window — the intersection of fatigue, reduced inhibitory control, and elevated emotional salience; (3) a sunk cost fallacy applied to emotional investment; and (4) the Zero New Information Theorem operating in its most complete form — the subject knows the profile contains nothing new, clicks anyway, finds nothing new, and clicks again.</p>
+      <p class="abstract-text">The <strong>"What Am I Doing" moment</strong> — the verbal or subverbal acknowledgment of the behavior's futility — is documented as a distinct clinical phase. It is the most accurate statement made during the entire event. It changes nothing. The subject knows exactly what they are doing. The knowledge does not produce cessation. Tomorrow is going to be rough. They click one more time.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> 2am Profile Review · The Dopamine Loop · Variable Reward Schedule (Slot Machine Architecture) · Zero New Information Theorem (Third Instance This Series) · The "What Am I Doing" Moment · Sunk Cost of Emotion · 2am Vulnerability Window · Why I Keep Clicking · Their New Person's Dog · It Is 3:47am · One More · Tomorrow Is Going to Be Rough
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: 2am and the Phone That Is Still Lit</h2>
+
+      <p class="dropcap">It is 2:14am. The subject has work in approximately 5.75 hours. The subject is aware of this. The subject is not asleep. The subject is holding their phone above their face in the dark, illuminated by the specific blue-white light of a social media profile they have visited seven times in the past 52 minutes. The profile has not changed. The subject knows the profile has not changed. The subject clicks to the next photo anyway.</p>
+
+      <p>This paper asks why. The answer is documented, neurologically coherent, cross-culturally consistent, and — the research team suspects — personally recognizable to approximately 94% of adults with smartphones and a romantic history. The behavior is not mysterious. It is the predictable output of specific systems doing exactly what they were designed to do: the dopamine system, the social comparison system, the loss-aversion system, and — critically — the platforms themselves, which were built by people who understood all three of the preceding systems and optimized for extended engagement with the precision of a casino floor architect.</p>
+
+      <p>The subject is not weak. The subject is human. The systems are working. The profile is still there. It is 2:14am. Tomorrow is going to be rough.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">2:14am</span>
+          <span class="stat-label">Average time of first profile visit in documented 2APR events</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">7.3×</span>
+          <span class="stat-label">Average profile visits per 2APR event before sleep or cessation</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">0</span>
+          <span class="stat-label">New information discovered that was not available on visit 1</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">67%</span>
+          <span class="stat-label">Events where app reopened within 11 minutes of being closed</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2: THE 2AM WINDOW -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The 2am Vulnerability Window: Why Now and Not at 2pm</h2>
+
+      <p>The 2am profile review would not, in the vast majority of documented cases, occur at 2pm. The subject at 2pm has: a functioning prefrontal cortex, social context that activates prosocial self-monitoring, adequate sleep history, and the general structure of a day providing alternative sources of stimulation and meaning. At 2pm, the impulse to check the profile is present but loses to competing priorities. At 2am, it does not.</p>
+
+      <p>Dr. Blackwell-Tanaka documents the specific convergence that produces the 2am window:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — The 2am Vulnerability Window: Converging Factors</div>
+        <table>
+          <thead>
+            <tr><th>Factor</th><th>State at 2pm</th><th>State at 2am</th><th>Effect on 2APR Probability</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prefrontal Cortex</td>
+              <td>Fully operational. Evaluates impulses, applies consequences, maintains self-regulation.</td>
+              <td>Significantly impaired by sleep deprivation. Operating at reduced capacity. Inhibitory control compromised.</td>
+              <td>The brake is failing. The impulse that the PFC suppresses at 2pm wins at 2am because the suppressor is tired.</td>
+            </tr>
+            <tr>
+              <td>Emotional Salience</td>
+              <td>Normal. The memory of the ex is present but not dominant. Other stimuli compete successfully.</td>
+              <td>Elevated. Fatigue increases emotional reactivity. The memory is larger. The curiosity is sharper. The ache, if present, is more present.</td>
+              <td>The emotional signal is louder at 2am. The cognitive filter is quieter. The signal wins.</td>
+            </tr>
+            <tr>
+              <td>Alternative Stimulation</td>
+              <td>Multiple options: work, social interaction, physical activity, entertainment requiring attention.</td>
+              <td>One option: the phone. It is dark. Everyone else is asleep. The phone is warm. The phone is there.</td>
+              <td>Competition eliminated. The phone wins by default because it is the only thing available at 2am that asks nothing of the subject and provides the specific form of engagement their nervous system is seeking.</td>
+            </tr>
+            <tr>
+              <td>Social Monitoring</td>
+              <td>Active. The subject is visible to others. Behavior is partly regulated by social context and the awareness of being seen.</td>
+              <td>Absent. It is 2am. Nobody is watching. The dark is private. The phone produces no social consequence. This is experienced as freedom. It is also experienced as license for the behavior the subject would not execute publicly.</td>
+              <td>The social governor is offline. The private self, which has been curious about the profile since the last conversation, is now in charge. It is 2am. It clicks.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: The convergence of these four factors at 2am is not coincidental. It is the predictable output of human neurobiology under sleep deprivation, solitude, and emotional activation. The platforms are aware of peak engagement windows. The 2am window is in the data. The research team notes this without accusation and with the specific energy of scientists who have read the engagement optimization literature and found it instructive about more than one thing.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3: THE DOPAMINE LOOP -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Neuroscience: The Slot Machine You Are Holding</h2>
+
+      <p>Dr. Venkataraman-Holloway's neuroimaging analysis documents the core mechanism of the 2APR: the variable reward schedule. This is the same reinforcement architecture that makes slot machines effective, that keeps people playing despite a documented house edge, and that social media platforms have — with extensive research and refinement — built into their scroll and profile architectures.</p>
+
+      <p>A <strong>variable reward schedule</strong> delivers rewards intermittently and unpredictably. Unlike a fixed schedule (pull lever, get reward), a variable schedule delivers reward on some pulls but not others, with no predictable pattern. This produces the highest resistance to extinction — meaning the behavior is hardest to stop — of any reinforcement schedule in the documented literature. The subject keeps clicking because the next click might be the one that delivers something.</p>
+
+      <div class="slot-box">
+        <div class="slot-grid">
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: 58%</span>
+            <div class="slot-result">Nothing new. Same photos as last visit. Same caption. Nothing learned. Nothing changed.</div>
+            <div class="slot-note">Still clicks again. The nothing is not a signal to stop. The nothing means the next click might be something.</div>
+          </div>
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: 24%</span>
+            <div class="slot-result">New story or post since last visit. Content: ambiguous. The subject interprets it. The interpretation is biased.</div>
+            <div class="slot-note">Dopamine. The interpretation produces more questions. The questions require more clicking. The loop accelerates.</div>
+          </div>
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: 11%</span>
+            <div class="slot-result bad">New content featuring another person. Assessment begins. Assessment is brutal. The subject is not applying generous assumptions.</div>
+            <div class="slot-note">This is the worst outcome. It is also the most engaging. The engagement will last 40 minutes minimum. Sleep pushed to 3:30am.</div>
+          </div>
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: 5%</span>
+            <div class="slot-result">Content that mentions something shared. A place. A song. Something that was theirs.</div>
+            <div class="slot-note">The subject does not know if this is intentional. The subject will be thinking about this at 7am when the alarm goes off. The day will begin wrong.</div>
+          </div>
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: 2%</span>
+            <div class="slot-result jackpot">JACKPOT: Content suggesting the ex is thinking about them. Ambiguous enough to be interpreted as a signal.</div>
+            <div class="slot-note">This is the reel that keeps the machine running. It has happened once in the past six months. The subject is still pulling the lever because it happened that once.</div>
+          </div>
+          <div class="slot-outcome">
+            <span class="slot-prob">PROBABILITY: &lt;1%</span>
+            <div class="slot-result">The ex has posted something that provides actual closure or clarity about where things stand.</div>
+            <div class="slot-note">This has never happened. This is not what social media is for. The research team notes this gently. The subject already knows this. The subject clicks anyway.</div>
+          </div>
+        </div>
+      </div>
+
+      <p>The 2% jackpot is the machine's operating secret. The subject has experienced it — or something they interpreted as it — at least once. The brain's reward system encoded that experience with extraordinary fidelity. Every subsequent pull is, neurologically, reaching for that experience again. The 58% nothing results do not teach the brain that the machine doesn't pay. They teach the brain that the next pull might be the pull. It is 2:31am. The next pull might be the pull.</p>
+
+      <div class="footnote"><sup>†</sup> The platforms know this. The variable reward schedule was not an accidental feature of social media design. It was optimized through A/B testing across hundreds of millions of users, measuring engagement metrics that correlate directly with dopamine loop activation. The infinite scroll, the notification delay, the story disappearance — these are not aesthetic choices. They are behavioral engineering. The research team presents this fact not as an excuse for the 2APR but as context: the subject at 2am is not fighting their own weakness. They are fighting a system designed and refined by thousands of engineers specifically to prevent them from putting the phone down. This is relevant data.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: ZERO NEW INFORMATION -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Information Theory: The Zero New Information Theorem, Third Occurrence</h2>
+
+      <p>Dr. Tanaka-Okonkwo has now formally applied the Zero New Information Theorem — first introduced in the Empty Refrigerator Stare paper and reapplied in the Left Lane Syndrome — to its third documented context. She notes this with the specific expression of a mathematician who has proven the same theorem three times in different rooms and found the same people in each one.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          I(profile content | visit n) = 0 bits &nbsp;&nbsp; ∀ n > 1<br><br>
+          I(visit n+1 | outcome of visit n = nothing) ≠ 0<br>
+          → Subject clicks anyway
+        </div>
+        <div class="equation-label">The profile contains no information on visit 7 that it did not contain on visit 1. The subject has full information about the profile. The profile cannot tell them anything they do not already know. Zero new information is available.<br><br>However: the probability that the next visit will contain new information is nonzero in the subject's estimation. The estimate is incorrect — the profile updates on the ex's schedule, not the subject's visit schedule. But the estimate feels plausible at 2am because the PFC that would evaluate it is impaired. The loop continues.</div>
+      </div>
+
+      <p>Dr. Tanaka-Okonkwo notes the specific finding she terms the <strong>Infinite Scroll Paradox</strong>: the subject is not only reviewing a static profile but scrolling through historical content — photos from two years ago, captions from the summer before last, a trip that is now a memory of a memory. None of this is new information. All of it was there on visit 1. The subject is scrolling through time, not through updates. The scroll produces no new data. The scroll produces feelings. The feelings are data of a different kind. The data of a different kind is what was always being sought.</p>
+
+      <div class="footnote"><sup>‡</sup> Dr. Tanaka-Okonkwo's additional observation on the three instances of the Zero New Information Theorem in this series: the refrigerator, the left lane camper's horn, and the 2am profile review all share a structural feature. In each case, the subject is seeking something from a source that cannot provide it. The refrigerator cannot provide the satisfaction the subject seeks — it can only provide food. The horn cannot move the left lane camper — it can only express frustration. The profile cannot provide closure, understanding, or reconnection — it can only provide photos. In all three cases, the subject continues to request from the wrong source. In all three cases, the research team notes: the thing being sought is real. The source is just not where it is.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: SUNK COST -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Behavioral Economics: The Sunk Cost of 52 Minutes</h2>
+
+      <p>Prof. Abara-Whitfield's economic analysis addresses the specific moment — documented in 78% of 2APR events — when the subject becomes aware they have been reviewing the profile for a significant amount of time and uses this awareness as a reason to continue rather than to stop.</p>
+
+      <p>The <strong>sunk cost fallacy</strong> in its classical form: you have spent money on something. The money cannot be recovered. You continue spending money because stopping now would make the prior spending feel wasted. The rational position is that the prior spending is gone regardless of future decisions and should not influence them. The human position is that it absolutely influences them.</p>
+
+      <p>Applied to the 2APR: the subject has spent 52 minutes reviewing a profile. The 52 minutes cannot be recovered. Stopping now would make the 52 minutes feel purposeless. Continuing for another 8 minutes might — the brain proposes — produce something that retroactively justifies the 52. The next click might be the one. The 52 minutes will have been for something. This reasoning is not coherent. The subject is aware it is not coherent. The subject executes it anyway, at 2am, with impaired prefrontal function and a variable reward schedule pulling the next click.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          E[value of next click] ≈ 0<br>
+          Perceived justification for next click = f(minutes already spent)<br>
+          ∴ As sunk time increases → perceived necessity of next click increases<br>
+          ∴ The longer you have been doing this, the harder it is to stop
+        </div>
+        <div class="equation-label">The sunk cost and the variable reward schedule compound each other. The longer the session, the more emotionally invested the subject is (sunk cost), and the more the brain expects that the next click will deliver (variable reward). Both mechanisms push toward continuation. Neither mechanism is providing accurate information about the expected value of the next click. The next click has the same expected value it had on click 1. The subject's perception of that value has increased dramatically.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6: WHAT AM I DOING -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Philosophy: The "What Am I Doing" Moment</h2>
+
+      <p>Prof. Ravenswood-Clarke documents what she considers the most philosophically significant event in the entire 2APR: the <strong>"What Am I Doing" moment</strong> — the point at which the subject achieves full, explicit metacognitive awareness of their behavior and voices this awareness, either aloud or internally, in a dark room, to nobody.</p>
+
+      <p>The "What Am I Doing" moment is not a question. It is classified, per Austin's speech act theory, as a <strong>rhetorical acknowledgment</strong> — a statement that performs the function of acknowledging something without requiring or expecting a response. The subject knows what they are doing. They know it is 2am. They know they have work in 5 hours. They know the profile has nothing new. They know this has been going on for 52 minutes. They know every single relevant fact. The "What Am I Doing" moment is the verbal crystallization of all this knowledge.</p>
+
+      <p>And then they click one more time.</p>
+
+      <p>Prof. Ravenswood-Clarke documents this as the most honest sentence in the entire event — and the most completely ignored. The sentence is accurate. The sentence contains the answer to its own question. The answer is: scrolling through photos of someone who is asleep at 2am while you look at them. The answer is available. The sentence provides it. The click follows. The sentence changes nothing. The knowledge changes nothing. The behavior continues.</p>
+
+      <p class="italic-note">"The 'What Am I Doing' moment is not a failure of self-awareness. It is proof of self-awareness deployed without executive function. The subject knows everything. The knowledge has no traction at 2am because the brain system that would convert knowledge into behavior change — the prefrontal cortex — is the same system that sleep deprivation has compromised. You can be fully aware and unable to act on your awareness. This is not weakness. This is 2am." — Prof. Ravenswood-Clarke, conclusions, first draft</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- THE CASCADE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Click Cascade: Real-Time Documentation</h2>
+
+      <p>The research team presents the complete documented sequence of a standard 2APR event, from initial profile access through final cessation. Times are approximate. Emotional states are documented from post-event interviews.</p>
+
+      <div class="cascade-box" data-label="2APR EVENT LOG — SUBJECT M-47 — WEDNESDAY NIGHT">
+        <div class="cc-row">
+          <span class="cc-time">2:14am</span>
+          <span class="cc-action">Profile accessed. "Just checking."</span>
+          <span class="cc-state">Justification: curiosity, neutral. PFC: impaired. Duration intended: 2 minutes.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">2:16am</span>
+          <span class="cc-action">Recent posts reviewed. Nothing new since last check (8 days ago).</span>
+          <span class="cc-state">Zero new information confirmed. Logical endpoint reached.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">2:17am</span>
+          <span class="cc-action">Scrolling continues. Photos from 6 months ago.</span>
+          <span class="cc-state">New information: 0. New feelings: significant. The scroll has changed direction from present to past. This is not checking. This is something else.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">2:23am</span>
+          <span class="cc-action">Mutual friend's profile visited. "Just to see."</span>
+          <span class="cc-state">The cascade has expanded. The ex's profile was insufficient. Adjacent information is now being sought. This is the second level of the loop.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">2:31am</span>
+          <span class="cc-action">New person's profile found via tagged photo.</span>
+          <span class="cc-state cc-worse">Assessment initiated. This is the worst outcome in the slot machine analysis. It is also why the slot machine pays — the jackpot made this feel possible. The assessment will take 34 minutes.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">2:47am</span>
+          <span class="cc-action cc-whatam">"What am I doing."</span>
+          <span class="cc-state">Said aloud. To nobody. In the dark. Full metacognitive awareness achieved. Next action: one more click.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">3:04am</span>
+          <span class="cc-action">App closed. "Going to sleep."</span>
+          <span class="cc-state">Correct decision. 50-minute session complete. Nothing learned. Everything felt.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">3:15am</span>
+          <span class="cc-action cc-worse">App reopened. "Just one more look."</span>
+          <span class="cc-state">67% probability event confirmed. The 11-minute reopening window documented. The sunk cost of 50 minutes and the variable reward schedule have produced this. This was predictable. It was predicted. It happened anyway.</span>
+        </div>
+        <div class="cc-row">
+          <span class="cc-time">3:47am</span>
+          <span class="cc-action">Phone placed face-down. Sleep.</span>
+          <span class="cc-state">Session total: 93 minutes. New information acquired: 0 bits. Emotional content processed: significant. Work in 4.25 hours. Tomorrow is going to be rough.</span>
+        </div>
+        <div class="cc-note">Post-event interview: Subject M-47 was asked what he had been looking for. He thought about this for a long time. Then he said: "I don't know. Something." He was asked if he found it. He said: "No." He was asked if he would do it again. He said nothing. The research team classified this as a yes.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Conclusions: What You Were Looking For</h2>
+
+      <p class="dropcap">The 2am profile review is not irrational. It is the completely predictable output of a dopamine system optimized by variable reinforcement, a 2am vulnerability window that disables the brain's primary self-regulatory apparatus, a sunk cost fallacy applied to emotional time, and platforms built by engineers who understood all of the preceding and designed accordingly.</p>
+
+      <p>The subject at 2:14am picking up their phone is not weak. They are operating in the worst possible conditions for the decision they are about to make — sleep-deprived, emotionally activated, alone in the dark, holding a device that was designed to maximize the probability of exactly this behavior. The decision to open the profile is the predictable output of these conditions. The research team does not judge it.</p>
+
+      <p>But the research team does want to answer the question the subject asked themselves at 2:47am in the dark. <em>What am I doing.</em></p>
+
+      <p>You are looking for something the profile cannot give you. You are looking, in the feed of someone who is asleep, for closure or understanding or reconnection or evidence that you are thought of. The feed cannot provide these things. The feed can only provide photos and captions. The photos and captions are not the thing. The thing is not on their profile. The thing is not anywhere a phone can reach at 2am.</p>
+
+      <p>The thing will be reachable in the morning, in conversation, in time, in the ordinary processes of becoming a person who is no longer in that particular place. The phone will not deliver it. The 93 minutes will not deliver it. The new person's profile will definitely not deliver it.</p>
+
+      <p>Put the phone down. Tomorrow is going to be rough regardless. It will be less rough if you sleep. The profile will be the same in the morning. You will be more yourself in the morning. More yourself is better equipped for what you were actually looking for, which was never on the profile, which was always going to require something the phone cannot provide.</p>
+
+      <div class="pull-quote">
+        <blockquote>"What am I doing."</blockquote>
+        <cite>— Subject M-47, 2:47am, said aloud, to nobody, in the dark<br><em>He knew exactly what he was doing. The knowledge had no traction at 2am.</em><br><em>He clicked one more time.</em><br><em>The research team has documented it. The research team has been there. Put the phone down.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2024). The 2am profile review: A behavioral economics analysis of a behavior that is fully understood in real time and continues anyway. <em>Harvard Journal of Nocturnal Digital Behavior Studies, 2</em>(4), 1–79. (The research question arrived at 2:34am. The lead author wrote it down immediately. This was the most productive outcome of the evening. He was also tired the next day.)</li>
+        <li>Venkataraman-Holloway, P. (2024). Variable reward schedules in social media design: The slot machine you are holding and what happens to your dopamine system at 2am. <em>Nature Neuroscience, 28</em>(3), 401–438. ("The platforms are aware of this. This is documented. This is in their own research." — Author note, included in final publication.)</li>
+        <li>Tanaka-Okonkwo, Y. (2024). Zero New Information Theorem, third application: The profile has not changed since the last visit; the subject visits again. <em>IEEE Transactions on Information Theory, 71</em>(1), 101–128. ("The same theorem. Different room. The same people." — Author note.)</li>
+        <li>Abara-Whitfield, D. (2024). Sunk emotional cost and the 52-minute session: Why stopping now would make the earlier time feel wasted, which is not coherent, which has not prevented anyone from reasoning this way at 2am. <em>Journal of Behavioral Economics, 35</em>(1), 1–67. ("I have held this position at 2am. I do not say which Wednesday." — Conflict of interest statement.)</li>
+        <li>Ravenswood-Clarke, I. (2024). "What Am I Doing": A philosophical analysis of the most honest and most ignored sentence in the documented behavioral literature. <em>Journal of Applied Philosophy, 44</em>(2), 201–241. ("Uncomfortably recognizable." — Author note, submitted with the abstract.)</li>
+        <li>Subject M-47 (2024). Personal interview, 7:42am, the morning after. Asked what he was looking for at 2am. Said: "Something." The research team noted: it was not on the profile. It was never on the profile. It was real. It just requires more than a phone can provide at 2am.</li>
+        <li>The Profile (Ongoing). Available 24 hours a day. Contains photos. Contains captions. Does not contain closure. Does not contain the thing being sought. Has never contained the thing being sought. Will not contain it at 3am either. Will not contain it at 3:15am when the app is reopened. Was there the whole time. Was never the right place to look.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the phone — specifically, the phone at 2am. You are warm. You are lit. You are always there. You are the only thing in the room that asks nothing and provides immediate engagement at a time when every other option requires effort that is not available. You are not the problem. You are the occasion. The research team would like you to go dark more easily. You were designed not to. This is documented. We still wish it were otherwise.</p>
+      <p style="margin-top:14px">We also wish to acknowledge the engineers who built the variable reward schedule into the feed architecture. You knew what you were doing. The research team has read the papers. The engagement metrics are in the literature. We acknowledge your craft without endorsing its application in this specific context. The slot machine comparison is not rhetorical. It is documented. We mention this not to excuse the subject but to complete the picture of what they are navigating at 2am, which is more than just their own feelings.</p>
+      <p style="margin-top:14px">Special acknowledgment to Subject M-47, who said "What am I doing" aloud in the dark at 2:47am and then clicked one more time. You were not alone in this. The research team was not alone in recognizing this. This paper exists because of you and also because of everyone who recognized themselves in the first paragraph and kept reading. You are not alone. The 2am is a shared room. Put the phone down. The morning is better. You deserve the morning.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">Put the phone down. The morning is better. You deserve the morning.</p>
+
+  
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid #0c0c14;padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#2a1a6a;text-decoration:none;border-bottom:1px solid #2a1a6a;padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:#0c0c14;opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Physics of Intimate Relationships</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">A peer-reviewed, heavily metaphorical analysis of love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">You are somehow both the prisoner and the warden. A thermodynamic analysis of emotional fortification.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Relationship Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal of Mature Female Mate Selection</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Philosophy, zoology, neuroscience, game theory confirm: she already knows. Seventeen disciplines. The Puma concolor comparison holds.</div>
+          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
+          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
+          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Temporal Self-Governance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Snooze Button Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">The man who set the alarm and the man who hits snooze are provably different people. Person A wins 8.2% of encounters. Person A keeps trying.</div>
+          <a href="https://amsterlingbooks.com/life/snooze_button_paradox.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Comparative Suffering Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Male Illness Amplification Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">99.1°F. The specific blanket. Applied Audacity Studies, formally introduced. She had the same cold two weeks earlier. She did not mention it.</div>
+          <a href="https://amsterlingbooks.com/life/male_illness_amplification.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Pre-Event Mirror Protocol Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">Does This Make My Butt Look Bigger?</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">The question was never about pants. No Nash equilibrium exists. The dress was on the bed. He was supposed to look at her, not the pants.</div>
+          <a href="https://amsterlingbooks.com/life/pants_paradox.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Female Audacity</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The "If Men Can Do It" Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">The List of things women couldn't do. Every stated reason failed. The audacity was correct all along. The List updates. It always updates.</div>
+          <a href="https://amsterlingbooks.com/life/if_men_can_do_it.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Domestic Linguistics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The "I Have a Headache Tonight" Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Five words. Near-zero entropy at 10:47pm. An invoice, not a refusal. The head hurts. The head also has reasons. Make coffee Thursday morning.</div>
+          <a href="https://amsterlingbooks.com/life/headache_syndrome.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Flow Dynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">The Left Lane Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">The Tandem Formation. The Velocity Lock. The Brake Check (Audacity Score: 11.4). 80,000 lbs vs 3,000 lbs. Move right. It is the law.</div>
+          <a href="https://amsterlingbooks.com/life/left_lane_syndrome.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #8070b0;padding:12px 14px;background:#f6f4fc;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#2a1a6a;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Temporal Optimism</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0c0c14;margin-bottom:4px;line-height:1.3;">"I'm Almost There"</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.7;margin-bottom:9px;line-height:1.45;">Zero geographic data transmitted. Maximum relational warmth. The keys are in the last coat. The drive is 23 minutes. Both things are true.</div>
+          <a href="https://amsterlingbooks.com/life/almost_there.html" style="display:inline-block;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:2px solid #2a1a6a;padding:12px 14px;background:#f6f4fc;position:relative;">
+          <div style="position:absolute;top:-10px;left:10px;background:#2a1a6a;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.22em;padding:2px 9px;text-transform:uppercase;">Current</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#2a1a6a;line-height:1.3;margin-bottom:3px;">The 2am Profile Review</div>
+          <div style="font-size:10px;font-style:italic;color:#0c0c14;opacity:0.55;">Harvard Journal of Nocturnal Digital Behavior Studies</div>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+  </main>
+
+</div>
+</body>
+</html>
