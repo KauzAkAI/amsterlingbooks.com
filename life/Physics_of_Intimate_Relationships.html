@@ -1,1018 +1,1292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Physics of Intimate Relationships | Journal of Theoretical Romance</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
-    <style>
-        :root {
-            --cream: #FBF9F4;
-            --paper: #FFFEFA;
-            --ink: #1a1a1a;
-            --ink-light: #4a4a4a;
-            --accent: #6B2D5B;
-            --accent-light: #8B3D7B;
-            --gold: #C9A227;
-            --navy: #1a2a4a;
-            --teal: #1a4a4a;
-            --margin-note: #666;
-            --border: #e0ddd5;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Crimson Pro', Georgia, serif;
-            background: var(--cream);
-            color: var(--ink);
-            line-height: 1.7;
-            min-height: 100vh;
-        }
-
-        /* Header Banner */
-        .journal-header {
-            background: linear-gradient(135deg, var(--accent) 0%, #4a1a3a 100%);
-            color: var(--cream);
-            padding: 1rem 2rem;
-            text-align: center;
-            border-bottom: 4px solid var(--gold);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .journal-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .journal-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 0.9rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            margin-bottom: 0.25rem;
-            position: relative;
-            color: var(--gold);
-        }
-
-        .journal-tagline {
-            font-size: 0.75rem;
-            opacity: 0.85;
-            font-style: italic;
-            position: relative;
-        }
-
-        /* Paper Container */
-        .paper {
-            max-width: 850px;
-            margin: 0 auto;
-            background: var(--paper);
-            box-shadow: 
-                0 0 0 1px var(--border),
-                0 4px 6px rgba(0,0,0,0.05),
-                0 20px 50px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        /* Classification Badge */
-        .classification {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: var(--accent);
-            color: white;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.6rem;
-            padding: 0.3rem 0.6rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transform: rotate(3deg);
-            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        /* Title Section */
-        .title-section {
-            padding: 3rem 4rem 2rem;
-            border-bottom: 1px solid var(--border);
-            text-align: center;
-        }
-
-        .paper-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--ink);
-            line-height: 1.2;
-            margin-bottom: 0.75rem;
-        }
-
-        .paper-subtitle {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--ink-light);
-            margin-bottom: 1.5rem;
-        }
-
-        .authors {
-            font-size: 0.95rem;
-            color: var(--ink-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .authors strong {
-            color: var(--ink);
-        }
-
-        .affiliation {
-            font-size: 0.8rem;
-            color: var(--margin-note);
-            font-style: italic;
-        }
-
-        .doi-line {
-            margin-top: 1rem;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--margin-note);
-            padding: 0.5rem 1rem;
-            background: var(--cream);
-            display: inline-block;
-            border-radius: 3px;
-        }
-
-        .author-note {
-            font-size: 0.75rem;
-            color: var(--margin-note);
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(to right, rgba(107, 45, 91, 0.05), transparent);
-            border-left: 2px solid var(--accent);
-            font-style: italic;
-        }
-
-        /* Content */
-        .content {
-            padding: 2.5rem 4rem;
-            counter-reset: section;
-        }
-
-        /* Abstract */
-        .abstract {
-            background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            border-left: 3px solid var(--gold);
-            font-size: 0.95rem;
-        }
-
-        .abstract-title {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--accent);
-            margin-bottom: 0.75rem;
-        }
-
-        /* Sections */
-        .section {
-            margin-bottom: 2.5rem;
-            position: relative;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border);
-            counter-increment: section;
-        }
-
-        .section-title::before {
-            content: counter(section) ". ";
-            color: var(--accent);
-        }
-
-        .subsection {
-            margin: 1.25rem 0;
-        }
-
-        .subsection-title {
-            font-weight: 700;
-            color: var(--ink);
-            margin-bottom: 0.5rem;
-        }
-
-        .subsection-title::before {
-            content: "▸ ";
-            color: var(--gold);
-        }
-
-        p {
-            margin-bottom: 1rem;
-            text-align: justify;
-            hyphens: auto;
-        }
-
-        /* System Definitions */
-        .system-def {
-            background: var(--cream);
-            padding: 1rem 1.25rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-            border-left: 3px solid var(--accent);
-        }
-
-        .system-def strong {
-            color: var(--accent);
-        }
-
-        /* Equations */
-        .equation {
-            background: var(--cream);
-            padding: 1.25rem 2rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-            text-align: center;
-            position: relative;
-            border: 1px solid var(--border);
-        }
-
-        .equation::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(to bottom, var(--gold), var(--accent));
-            border-radius: 4px 0 0 4px;
-        }
-
-        .equation-note {
-            font-size: 0.85rem;
-            font-style: italic;
-            color: var(--margin-note);
-            margin-top: 0.75rem;
-        }
-
-        /* Variables and Terms */
-        .var {
-            font-style: italic;
-            color: var(--navy);
-        }
-
-        .term {
-            font-weight: 600;
-            color: var(--accent);
-        }
-
-        .unit {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85em;
-            background: var(--cream);
-            padding: 0.1em 0.4em;
-            border-radius: 3px;
-        }
-
-        /* Part Headers */
-        .part-header {
-            background: linear-gradient(135deg, var(--teal) 0%, #0d2a2a 100%);
-            color: var(--cream);
-            padding: 2rem;
-            margin: 3rem -4rem 2rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .part-header::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 10px solid transparent;
-            border-top-color: #0d2a2a;
-        }
-
-        .part-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .part-subtitle {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            font-style: italic;
-        }
-
-        /* Addendum Header */
-        .addendum-header {
-            background: linear-gradient(135deg, var(--accent) 0%, #4a1a3a 100%);
-            color: var(--cream);
-            padding: 1.5rem 2rem;
-            margin: 3rem -4rem 2rem;
-            text-align: center;
-        }
-
-        .addendum-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .addendum-subtitle {
-            font-size: 0.9rem;
-            font-style: italic;
-            opacity: 0.9;
-            margin-top: 0.25rem;
-        }
-
-        /* Warning Box */
-        .warning {
-            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
-            border: 1px solid #c41e3a;
-            border-left: 4px solid #8B0000;
-            padding: 1rem 1.25rem;
-            margin: 1.5rem 0;
-            border-radius: 0 4px 4px 0;
-        }
-
-        .warning-title {
-            font-weight: 700;
-            color: #8B0000;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        .warning-title::before {
-            content: "⚠ ";
-        }
-
-        /* Note Box */
-        .note {
-            background: linear-gradient(135deg, #f5f0ff 0%, #e8e0f5 100%);
-            border: 1px solid var(--accent-light);
-            border-left: 4px solid var(--accent);
-            padding: 1rem 1.25rem;
-            margin: 1.5rem 0;
-            border-radius: 0 4px 4px 0;
-        }
-
-        .note-title {
-            font-weight: 700;
-            color: var(--accent);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        .note-title::before {
-            content: "📋 ";
-        }
-
-        /* Conclusion Box */
-        .conclusion {
-            background: linear-gradient(135deg, var(--navy) 0%, #0d1a2a 100%);
-            color: var(--cream);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 6px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .conclusion::before {
-            content: '∞';
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 6rem;
-            opacity: 0.08;
-            color: var(--gold);
-        }
-
-        .conclusion-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .conclusion p {
-            position: relative;
-            text-align: left;
-        }
-
-        .highlight {
-            color: var(--gold);
-            font-weight: 600;
-        }
-
-        /* Acknowledgments, Funding, Conflicts, Contributions */
-        .acknowledgments, .funding, .conflicts, .contributions {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: var(--cream);
-            border-radius: 6px;
-            border: 1px solid var(--border);
-        }
-
-        .ack-title, .funding-title, .conflict-title, .contrib-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        .ack-list {
-            margin: 0.75rem 0 0 1.5rem;
-        }
-
-        .ack-list li {
-            margin-bottom: 0.5rem;
-            text-align: left;
-        }
-
-        .ack-list li strong {
-            color: var(--navy);
-        }
-
-        .conflicts {
-            background: linear-gradient(135deg, #fff8f0 0%, #fff5eb 100%);
-            border-left: 4px solid var(--gold);
-        }
-
-        .contributions p {
-            margin-bottom: 0.5rem;
-            text-align: left;
-        }
-
-        /* Bullet Points */
-        .bullet-list {
-            margin: 1rem 0 1rem 1.5rem;
-        }
-
-        .bullet-list li {
-            margin-bottom: 0.75rem;
-            position: relative;
-            padding-left: 0.5rem;
-        }
-
-        .bullet-list li::marker {
-            color: var(--accent);
-        }
-
-        /* Footer */
-        .paper-footer {
-            background: var(--cream);
-            padding: 1.5rem 4rem;
-            border-top: 1px solid var(--border);
-            font-size: 0.8rem;
-            color: var(--margin-note);
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-note {
-            margin-top: 0.75rem;
-            font-size: 0.75rem;
-            text-align: center;
-            opacity: 0.8;
-        }
-
-        .peer-review {
-            font-style: italic;
-        }
-
-        .peer-review::before {
-            content: "✓ ";
-            color: #4a6d23;
-        }
-
-        /* Stamp */
-        .stamp {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 110px;
-            height: 110px;
-            border: 4px solid var(--accent);
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(-12deg);
-            opacity: 0.12;
-            pointer-events: none;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .stamp-text {
-            font-size: 0.55rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent);
-        }
-
-        .stamp-approved {
-            font-size: 0.7rem;
-            font-weight: 700;
-            color: var(--accent);
-            text-align: center;
-            line-height: 1.2;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            html { font-size: 16px; }
-            .content, .title-section, .paper-footer { padding-left: 2rem; padding-right: 2rem; }
-            .part-header, .addendum-header { margin-left: -2rem; margin-right: -2rem; }
-            .paper-title { font-size: 1.9rem; }
-        }
-
-        @media (max-width: 600px) {
-            html { font-size: 15px; }
-            .content, .title-section, .paper-footer { padding-left: 1.25rem; padding-right: 1.25rem; }
-            .part-header, .addendum-header { margin-left: -1.25rem; margin-right: -1.25rem; padding: 1.5rem 1rem; }
-            .footer-content { flex-direction: column; text-align: center; }
-        }
-
-        /* Print Styles */
-        @media print {
-            .journal-header { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-            .paper { box-shadow: none; }
-            .stamp { display: none; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Physics of Intimate Relationships | Journal of Theoretical Romance</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+<style>
+  :root {
+    --ink: #0a080e;
+    --ink-light: #1a1420;
+    --ink-faint: #2a2030;
+    --paper: #faf8fc;
+    --paper-warm: #f4f0f8;
+    --paper-aged: #e8e0f0;
+    --rule: #8a70a0;
+    --rule-light: #b8a0c8;
+    --accent: #4a1a7a;
+    --accent-mid: #6a2a9a;
+    --accent-soft: #8a4aba;
+    --gold: #7a5a00;
+    --teal: #0a5a6a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #120a1e;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:1000;
+    opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #2a1a3a, 0 20px 80px rgba(0,0,0,0.7);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  .masthead {
+    background: linear-gradient(135deg, #0a0614 0%, #1a0a2e 50%, #0a0614 100%);
+    border-bottom:3px solid var(--accent-soft);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .masthead::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 40px,
+      rgba(138,74,186,0.04) 40px, rgba(138,74,186,0.04) 41px
+    );
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:#fff;
+    letter-spacing:0.08em;
+    line-height:1;
+    text-shadow:0 0 30px rgba(138,74,186,0.5);
+  }
+
+  .harvard-crest span {
+    display:block;
+    font-size:10px;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color:#b08ad8;
+    font-weight:400;
+    margin-top:5px;
+  }
+
+  .masthead-journal {
+    text-align:right;
+    font-family:'Playfair Display',serif;
+    color:#fff;
+  }
+
+  .masthead-journal strong {
+    display:block;
+    font-size:14px;
+    letter-spacing:0.06em;
+    margin-bottom:3px;
+  }
+
+  .masthead-journal small {
+    font-size:12px;
+    color:#b08ad8;
+    font-style:italic;
+    font-family:'EB Garamond',serif;
+  }
+
+  .masthead-strip {
+    background:var(--accent);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament {
+    text-align:center;
+    color:var(--accent-soft);
+    font-size:16px;
+    letter-spacing:0.5em;
+    padding:10px 0;
+    background:var(--paper-aged);
+    border-bottom:1px solid var(--rule);
+    border-top:1px solid var(--rule);
+    user-select:none;
+  }
+
+  .paper-header {
+    padding:50px 60px 36px;
+    border-bottom:3px solid var(--accent);
+    text-align:center;
+    background:var(--paper);
+  }
+
+  .paper-type {
+    font-size:12px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-family:'Playfair Display',serif;
+    margin-bottom:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .paper-type::before,.paper-type::after {
+    content:'';
+    display:inline-block;
+    width:50px;
+    height:1px;
+    background:var(--accent);
+  }
+
+  .paper-title {
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    font-weight:900;
+    line-height:1.1;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:-0.02em;
+  }
+
+  .paper-subtitle {
+    font-family:'Playfair Display',serif;
+    font-size:16px;
+    font-weight:400;
+    font-style:italic;
+    color:var(--ink-light);
+    line-height:1.6;
+    max-width:620px;
+    margin:0 auto 24px;
+  }
+
+  .paper-fields {
+    display:inline-flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:28px;
+  }
+
+  .field-tag {
+    background:var(--accent);
+    color:#fff;
+    font-size:10px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    padding:4px 12px;
+    font-family:'Playfair Display',serif;
+  }
+
+  .field-tag.alt {
+    background:var(--teal);
+  }
+
+  .authors-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:28px 0;
+    padding:20px 0;
+    border-top:1px solid var(--rule-light);
+    border-bottom:1px solid var(--rule-light);
+    text-align:left;
+  }
+
+  .author-card {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    border-top:3px solid var(--accent);
+    padding:14px 16px;
+  }
+
+  .author-name {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:3px;
+    line-height:1.3;
+  }
+
+  .author-name.lead { color:var(--accent); font-size:15px; }
+
+  .author-title {
+    font-size:12px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:1.4;
+    margin-bottom:6px;
+  }
+
+  .author-contact {
+    font-size:11px;
+    font-family:'Source Code Pro',monospace;
+    color:var(--accent-mid);
+    line-height:1.6;
+  }
+
+  .author-quals {
+    font-size:11px;
+    color:var(--ink-faint);
+    margin-top:5px;
+    line-height:1.5;
+    font-style:italic;
+  }
+
+  .doi-bar {
+    background:var(--paper-aged);
+    border:1px solid var(--rule-light);
+    padding:8px 20px;
+    display:inline-block;
+    font-family:'Source Code Pro',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    margin-top:8px;
+  }
+
+  .dates-row {
+    font-size:13px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:2;
+    margin-top:8px;
+    text-align:center;
+  }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box {
+    background:var(--paper-aged);
+    border-left:4px solid var(--accent);
+    padding:26px 30px;
+    margin-bottom:44px;
+    position:relative;
+  }
+
+  .abstract-box::before {
+    content:'ABSTRACT';
+    position:absolute;
+    top:-10px;
+    left:30px;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.35em;
+    padding:3px 10px;
+  }
+
+  .abstract-text {
+    font-size:17px;
+    line-height:1.85;
+    color:var(--ink);
+    margin-bottom:14px;
+  }
+
+  .keywords {
+    font-size:15px;
+    color:var(--ink-light);
+    font-style:italic;
+    border-top:1px solid var(--rule);
+    padding-top:12px;
+    margin-top:12px;
+  }
+
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+
+  h2 {
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--accent);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+
+  h2 .sec-num {
+    font-size:12px;
+    letter-spacing:0.15em;
+    color:var(--accent);
+    font-weight:700;
+    flex-shrink:0;
+  }
+
+  h3 {
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    font-weight:600;
+    font-style:italic;
+    color:var(--ink);
+    margin:28px 0 12px;
+    padding-left:16px;
+    border-left:3px solid var(--accent-soft);
+  }
+
+  p {
+    font-size:18px;
+    line-height:1.85;
+    margin-bottom:16px;
+    text-align:justify;
+    color:var(--ink);
+    hyphens:auto;
+  }
+
+  p.italic-note {
+    font-style:italic;
+    color:var(--ink-light);
+    font-size:17px;
+    padding:12px 20px;
+    border-left:3px solid var(--rule);
+    background:var(--paper-warm);
+  }
+
+  .system-def {
+    background:var(--paper-warm);
+    border-left:3px solid var(--accent-soft);
+    padding:14px 18px;
+    margin:14px 0;
+    font-size:17px;
+    line-height:1.8;
+  }
+
+  .system-def strong { color:var(--accent); }
+
+  .equation-box {
+    background:var(--paper-warm);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--accent-mid);
+    padding:20px 32px;
+    text-align:center;
+    margin:24px 0;
+  }
+
+  .equation-box .MathJax { font-size:1.1em !important; }
+
+  .equation-label {
+    font-size:15px;
+    color:var(--ink-light);
+    font-style:italic;
+    margin-top:10px;
+    line-height:1.7;
+  }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+
+  .table-caption {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    font-style:italic;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent); color:#fff; }
+
+  thead th {
+    padding:11px 14px;
+    text-align:left;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(74,26,122,0.06); transition:background 0.2s; }
+
+  tbody td {
+    padding:11px 14px;
+    border-bottom:1px solid var(--rule-light);
+    line-height:1.6;
+    color:var(--ink);
+    font-size:15px;
+    vertical-align:top;
+  }
+
+  tbody td:first-child {
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--accent);
+    width:24%;
+  }
+
+  .table-note {
+    font-size:14px;
+    font-style:italic;
+    color:var(--ink-light);
+    text-align:center;
+    margin-top:10px;
+    padding:0 20px;
+    line-height:1.6;
+  }
+
+  .footnote {
+    font-size:16px;
+    color:var(--ink);
+    font-style:italic;
+    padding:14px 20px;
+    border-left:4px solid var(--accent);
+    margin:20px 0;
+    background:var(--paper-warm);
+    line-height:1.8;
+  }
+
+  .footnote sup { color:var(--accent); font-weight:700; font-style:normal; }
+
+  .warning-box {
+    background:#fff8e8;
+    border:2px solid var(--gold);
+    padding:18px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+
+  .warning-box::before {
+    content:'⚠ CRITICAL SAFETY PROTOCOL';
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--gold);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:10px;
+    letter-spacing:0.2em;
+    padding:3px 12px;
+  }
+
+  .part-divider {
+    background:var(--accent);
+    color:#fff;
+    padding:16px 32px;
+    margin:44px -0px;
+    text-align:center;
+    position:relative;
+  }
+
+  .part-divider .part-title {
+    font-family:'Playfair Display',serif;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:0.05em;
+    margin-bottom:4px;
+  }
+
+  .part-divider .part-sub {
+    font-size:13px;
+    font-style:italic;
+    opacity:0.8;
+    font-family:'EB Garamond',serif;
+  }
+
+  .stats-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    margin:24px 0;
+    background:var(--rule);
+  }
+
+  .stat-cell {
+    background:var(--paper);
+    padding:18px 14px;
+    text-align:center;
+  }
+
+  .stat-num {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:var(--accent);
+    display:block;
+    line-height:1;
+    margin-bottom:6px;
+  }
+
+  .stat-label {
+    font-size:12px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:1.4;
+  }
+
+  .pull-quote {
+    border-top:3px double var(--accent);
+    border-bottom:3px double var(--accent);
+    padding:28px 40px;
+    margin:36px 0;
+    text-align:center;
+  }
+
+  .pull-quote blockquote {
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-style:italic;
+    color:var(--ink);
+    line-height:1.6;
+    margin-bottom:14px;
+  }
+
+  .pull-quote cite {
+    font-size:14px;
+    color:var(--ink-faint);
+    font-style:italic;
+    display:block;
+    line-height:1.7;
+  }
+
+  .conclusion-box {
+    background: linear-gradient(135deg, #1a0a2e 0%, #0a0614 100%);
+    color:#e8d8f8;
+    padding:28px 36px;
+    margin:32px 0;
+    border-left:4px solid var(--accent-soft);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .conclusion-box::after {
+    content:'∞';
+    position:absolute;
+    right:24px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:7rem;
+    opacity:0.06;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    line-height:1;
+  }
+
+  .conclusion-box p { color:#e8d8f8; font-size:17px; position:relative; z-index:1; }
+
+  .conclusion-box .conc-title {
+    font-family:'Playfair Display',serif;
+    font-size:13px;
+    letter-spacing:0.25em;
+    text-transform:uppercase;
+    color:var(--accent-soft);
+    margin-bottom:14px;
+    display:block;
+  }
+
+  .conc-highlight { color:#d0b8f8; font-weight:600; }
+
+  .dropcap::first-letter {
+    font-family:'Playfair Display',serif;
+    font-size:62px;
+    font-weight:900;
+    float:left;
+    line-height:0.78;
+    margin-right:8px;
+    margin-top:8px;
+    color:var(--accent);
+  }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent); margin:44px 0; }
+
+  .center-ornament {
+    text-align:center;
+    color:var(--accent-soft);
+    font-size:20px;
+    letter-spacing:0.6em;
+    margin:20px 0;
+    user-select:none;
+  }
+
+  .funding-box {
+    background:var(--paper-aged);
+    border:1px solid var(--rule-light);
+    border-left:4px solid var(--gold);
+    padding:20px 24px;
+    margin:20px 0;
+    font-size:16px;
+    line-height:1.85;
+  }
+
+  .funding-box h4 {
+    font-family:'Playfair Display',serif;
+    font-size:13px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:12px;
+  }
+
+  .references ol { padding-left:24px; }
+
+  .references li {
+    font-size:16px;
+    line-height:1.75;
+    margin-bottom:14px;
+    color:var(--ink);
+  }
+
+  .acknowledgments {
+    background:var(--paper-aged);
+    padding:28px 32px;
+    border:1px solid var(--rule);
+    margin-top:40px;
+    font-size:17px;
+    line-height:1.85;
+  }
+
+  .acknowledgments ul {
+    padding-left:24px;
+    margin-top:12px;
+  }
+
+  .acknowledgments li {
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:10px;
+  }
+
+  .paper-footer {
+    background: linear-gradient(135deg, #0a0614, #1a0a2e);
+    color:#fff;
+    padding:22px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    border-top:3px solid var(--accent-soft);
+  }
+
+  .footer-title {
+    font-family:'Playfair Display',serif;
+    font-size:12px;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:#b08ad8;
+  }
+
+  .footer-note {
+    font-style:italic;
+    color:#b08ad8;
+    opacity:0.75;
+    font-family:'EB Garamond',serif;
+    font-size:13px;
+  }
+
+  @media(max-width:700px) {
+    .journal { margin:0; }
+    .masthead-top,.paper-header,.paper-body { padding-left:24px; padding-right:24px; }
+    .masthead-strip { padding-left:24px; padding-right:24px; }
+    .paper-title { font-size:26px; }
+    .authors-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:repeat(2,1fr); }
+  }
+</style>
 </head>
 <body>
-    <header class="journal-header">
-        <div class="journal-name">Journal of Theoretical Romance</div>
-        <div class="journal-tagline">Peer-Reviewed Research in Relational Mechanics & Applied Affection</div>
-    </header>
-
-    <article class="paper">
-        <div class="classification">Peer Reviewed</div>
-
-        <section class="title-section">
-            <h1 class="paper-title">The Physics of Intimate Relationships</h1>
-            <p class="paper-subtitle">A Peer-Reviewed, Heavily Metaphorical Analysis</p>
-            <p class="authors">
-                <strong>Adrian Maximus Sterling</strong>, Ph.D., D.Sc., M.R.S. (Master of Relational Sciences), C.C.E. (Certified Cuddle Engineer)<sup>1,2</sup><br>
-                <strong>Dr. Valentina "Val" Hartwell-Morrow</strong>, Ph.D., L.H.D. (Doctor of Love Humanities), F.R.S.B. (Fellow of the Royal Society of Blanket Hogging)<sup>3</sup><br>
-                <strong>Prof. Theodore "Teddy" Bramblescotch III</strong>, Ed.D., C.P.A. (Certified Pillow Arranger), Esq.<sup>4</sup>
-            </p>
-            <p class="affiliation">
-                <sup>1</sup>Endowed Chair of Couch Dynamics & Remote Control Entropy, The Flemington Institute for Domestic Thermodynamics<br>
-                <sup>2</sup>Director, Laboratory for Advanced Spooning Research (L.A.S.R.), University of Mattress Sciences<br>
-                <sup>3</sup>Senior Fellow, The Brunchington Center for Weekend Momentum Studies; Adjunct Professor of Passive-Aggressive Dishwasher Loading, École du Ménage<br>
-                <sup>4</sup>Distinguished Professor Emeritus of Thermostat Negotiations, The Hendricks-Whitmore Academy of Climate Control Diplomacy; Former Chief Tactician, International Bureau of "I'm Not Mad, I'm Just Disappointed" Studies
-            </p>
-            <p class="author-note">
-                <em>Correspondence: Dr. Sterling prefers contact via meaningful eye contact across a crowded room, or failing that, a well-timed sigh. Prof. Bramblescotch can be reached by leaving a passive-aggressive Post-it note on the refrigerator.</em>
-            </p>
-            <div class="doi-line">DOI: 10.2026/jtr.intimate-physics.001 | ORCID: 0000-LOVE-MATH-HARD</div>
-        </section>
-
-        <div class="content">
-            <div class="abstract">
-                <div class="abstract-title">Abstract</div>
-                <p>Let's analyze the bi-directional force exchanges and fluid mechanics of a 67-year-old man (System <span class="var">A</span>) and a 53-year-old woman (System <span class="var">B</span>) navigating an intimate relationship. This paper applies classical mechanics, fluid dynamics, quantum theory, and structural engineering to model the complex physics of domestic partnership.</p>
-            </div>
-
-            <!-- Section 1 -->
-            <section class="section">
-                <h2 class="section-title">The Conservation of Relational Momentum</h2>
-                
-                <p>According to the <span class="term">Law of Conservation of Momentum</span>, in a closed system (like a house on a Sunday afternoon), the total momentum before a collision equals the total momentum after.</p>
-
-                <div class="equation">
-                    \[ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2' \]
-                </div>
-
-                <div class="system-def">
-                    <strong>System A (67-year-old man):</strong> High mass of life experience, significant inertia, and a strongly preferred steady-state velocity of zero on the recliner.
-                </div>
-
-                <div class="system-def">
-                    <strong>System B (53-year-old woman):</strong> High kinetic energy, actively carrying the momentum of weekend plans (<span class="var">v<sub>2</sub></span> > 0).
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Perfectly Inelastic Collision</h3>
-                    <p>When System <span class="var">B</span> enters the living room with a velocity of <span class="unit">3 errands/hour</span> and collides with System <span class="var">A</span> (who is at rest), they do not bounce off each other. Instead, they engage in a <span class="term">perfectly inelastic collision</span>—they stick together.</p>
-                </div>
-
-                <div class="equation">
-                    \[ m_A(0) + m_B(v_B) = (m_A + m_B) \cdot V_{\text{final}} \]
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Result</h3>
-                    <p>The combined system now moves at a compromised terminal velocity (<span class="var">V<sub>final</sub></span>) of roughly <span class="unit">1.5 errands/hour</span>, usually resulting in a slow, unified drift toward a garden center or a brunch spot. Momentum is perfectly conserved, though System <span class="var">A</span> will likely complain about the sudden acceleration.</p>
-                </div>
-            </section>
-
-            <!-- Section 2 -->
-            <section class="section">
-                <h2 class="section-title">Fluid Dynamics: Viscosity and The Kitchen Flow</h2>
-                
-                <p>Relationships behave entirely like <span class="term">non-Newtonian fluids</span>. How they flow depends entirely on the stress applied.</p>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Dynamic Viscosity (<span class="var">μ</span>)</h3>
-                    <p>Let's be honest, at 67 and 53, the "dynamic viscosity" (the resistance to sudden flow) is a bit higher than it was at 25. Sudden changes in direction or spontaneous midnight road trips face high viscous resistance. A longer "warm-up" period (coffee) is mathematically required to lower the viscosity and achieve optimal flow.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Continuity Equation</h3>
-                    <p>This explains kitchen dynamics:</p>
-                </div>
-
-                <div class="equation">
-                    \[ A_1 v_1 = A_2 v_2 \]
-                </div>
-
-                <p>As the available floor area (<span class="var">A</span>) narrows near the refrigerator, the velocity (<span class="var">v</span>) of the individuals must increase to maintain flow. This inevitably leads to localized turbulence and what physicists call "the excuse-me-just-grabbing-the-butter" maneuver.</p>
-            </section>
-
-            <!-- Section 3 -->
-            <section class="section">
-                <h2 class="section-title">Reynolds Number (<span class="var">Re</span>) and Communication Flow</h2>
-                
-                <p>In fluid mechanics, the <span class="term">Reynolds Number</span> determines whether a fluid's flow is smooth (laminar) or chaotic (turbulent).</p>
-
-                <div class="equation">
-                    \[ Re = \frac{\rho \cdot u \cdot L}{\mu} \]
-                </div>
-
-                <div class="system-def">
-                    <strong>Laminar Flow (<span class="var">Re</span> < 2000):</strong> This is a Tuesday night watching a favorite show. The conversational fluid layers slide past each other smoothly. No mixing, no friction, pure harmony.
-                </div>
-
-                <div class="system-def">
-                    <strong>Turbulent Flow (<span class="var">Re</span> > 4000):</strong> This occurs when System A tries to "helpfully" load the dishwasher contrary to System B's highly optimized, spatial-geometry method. The conversational flow becomes chaotic, forming eddies of mild frustration. The only way to return to laminar flow is to introduce a dampening agent, such as a glass of wine or a sincere compliment.
-                </div>
-            </section>
-
-            <!-- Section 4 -->
-            <section class="section">
-                <h2 class="section-title">Bernoulli's Principle of Attraction</h2>
-                
-                <p><span class="term">Bernoulli's principle</span> states that an increase in the speed of a fluid occurs simultaneously with a decrease in pressure.</p>
-
-                <p>When System A and System B are moving parallel to each other through life—perhaps walking together or tackling a shared project—their shared forward velocity creates a localized zone of low pressure between them. Just as two ships moving parallel draw closer together, the physics of shared momentum naturally pulls them into each other's orbit.</p>
-
-                <div class="note">
-                    <div class="note-title">Laboratory Note</div>
-                    <p>The laboratory environment must be properly secured, and the "Do Not Disturb" sign must be deployed to prevent outside variables from interrupting the experiment.</p>
-                </div>
-            </section>
-
-            <!-- ADDENDUM -->
-            <div class="addendum-header">
-                <h2 class="addendum-title">Addendum</h2>
-                <p class="addendum-subtitle">Close-Quarters Fluid Dynamics of Systems A and B</p>
-            </div>
-
-            <!-- Addendum Section 1 -->
-            <section class="section">
-                <h2 class="section-title">Oscillatory Kinetics and Frictional Heating</h2>
-                
-                <p>Before fluid exchange can achieve optimal flow rates, the systems must engage in close-proximity physical interactions. This is best modeled by <span class="term">Simple Harmonic Motion (SHM)</span>, where displacement <span class="var">x</span> at time <span class="var">t</span> is driven by an initial kinetic input:</p>
-
-                <div class="equation">
-                    \[ x(t) = A \cdot \cos(\omega t + \phi) \]
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Amplitude (<span class="var">A</span>) and Frequency (<span class="var">ω</span>)</h3>
-                    <p>Given the combined age of the systems, peak frequency might be slightly lower than in a 20-something control group, but the efficiency and rhythm (<span class="var">φ</span>) are vastly superior due to decades of experimental calibration.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Thermal Expansion</h3>
-                    <p>As continuous frictional forces are applied, mechanical work is converted entirely into thermal energy. This localized heating causes both systems to expand slightly and initiates the body's natural cooling mechanisms (sudorific fluid, or "sweat" production).</p>
-                </div>
-            </section>
-
-            <!-- Addendum Section 2 -->
-            <section class="section">
-                <h2 class="section-title">Hydrodynamic Coupling and Fluid Transference</h2>
-                
-                <p>Once the thermal threshold is reached, the systems enter the phase of active fluid exchange. In physics, volumetric flow rate (<span class="var">Q</span>) through a cylindrical boundary is governed by <span class="term">Poiseuille's Law</span>:</p>
-
-                <div class="equation">
-                    \[ Q = \frac{\pi \cdot \Delta P \cdot r^4}{8 \cdot \eta \cdot L} \]
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Pressure Differential (<span class="var">ΔP</span>)</h3>
-                    <p>The exchange is driven by rhythmic pressure differentials established by the physical coupling of the systems.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Viscosity (<span class="var">η</span>)</h3>
-                    <p>Here is the brilliant part of human thermodynamics: as the temperature of the systems increases during the experiment, the viscosity (<span class="var">η</span>) of the biological fluids naturally decreases. This lowers the resistance to flow, allowing for a highly efficient, unimpeded exchange of biochemical markers, endorphins, and aqueous solutions.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Fick's First Law of Diffusion</h3>
-                    <p>On a molecular level, the intermingling of these fluids follows the laws of diffusion, moving from areas of high concentration to low concentration until a state of absolute, euphoric chemical equilibrium is reached:</p>
-                </div>
-
-                <div class="equation">
-                    \[ J = -D \cdot \frac{d\phi}{dx} \]
-                    <div class="equation-note">(Where <span class="var">J</span> is the flux of romance, and <span class="var">D</span> is the coefficient of passion.)</div>
-                </div>
-            </section>
-
-            <!-- Addendum Section 3 -->
-            <section class="section">
-                <h2 class="section-title">The Concept of Resonance</h2>
-                
-                <p>In physics, <span class="term">resonance</span> occurs when an external driving frequency matches the natural frequencies of a system, leading to a massive increase in amplitude.</p>
-
-                <p>When System A and System B perfectly align their oscillatory frequencies, they achieve mechanical and emotional resonance. This is the exact moment of peak kinetic energy and maximum fluid exchange, often resulting in localized acoustic emissions (vocalizations) exceeding <span class="unit">60 decibels</span>.</p>
-            </section>
-
-            <!-- Addendum Section 4 -->
-            <section class="section">
-                <h2 class="section-title">Newton's Law of Cooling and The Refractory Phase</h2>
-                
-                <p>Following the successful execution of the fluid exchange, the <span class="term">First Law of Thermodynamics</span> dictates that energy cannot be created or destroyed, only transformed. Both systems have expended massive amounts of stored potential energy and must now enter the restorative phase.</p>
-
-                <p>According to <span class="term">Newton's Law of Cooling</span>, the rate of heat loss is proportional to the difference in temperatures between the body and its surroundings:</p>
-
-                <div class="equation">
-                    \[ \frac{dT}{dt} = -k \cdot (T - T_{\text{ambient}}) \]
-                </div>
-
-                <div class="system-def">
-                    <strong>System A (67M):</strong> Rapidly loses thermal energy and requires immediate horizontal stabilization (sleep) to allow his internal capacitors to recharge. The refractory coefficient (<span class="var">k</span>) is mathematically proven to be slightly longer at age 67.
-                </div>
-
-                <div class="system-def">
-                    <strong>System B (53F):</strong> Maintains an elevated thermal state for a slightly longer period, often requiring the specific, low-friction application of "cuddling" to ensure the cooling curve remains gradual and comfortable.
-                </div>
-            </section>
-
-            <!-- Part 1: Quantum -->
-            <div class="part-header">
-                <h2 class="part-title">Part 1: The Quantum Entanglement of Shared Thoughts</h2>
-                <p class="part-subtitle">When Classical Physics Fails to Explain Synchronized Chicken Anxiety</p>
-            </div>
-
-            <section class="section" style="counter-reset: section 0;">
-                <h2 class="section-title">Spooky Action at a Distance</h2>
-                
-                <p>Classical physics fails to explain how System A (<span class="var">67M</span>) and System B (<span class="var">53F</span>) can simultaneously realize they forgot to take the chicken out of the freezer while mid-experiment. For this, we must turn to <span class="term">quantum mechanics</span>.</p>
-
-                <p>According to quantum theory, when two particles interact closely, their quantum states become entirely interconnected—a phenomenon Einstein famously called "spooky action at a distance."</p>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Entangled State Function (|Ψ⟩)</h3>
-                    <p>In this relationship, the cognitive wave functions of System A and System B collapse into a single, perfectly synchronized superposition:</p>
-                </div>
-
-                <div class="equation">
-                    \[ |\Psi\rangle = \frac{1}{\sqrt{2}} \left( |\text{Sleep}\rangle_A |\text{Sleep}\rangle_B + |\text{Hungry}\rangle_A |\text{Hungry}\rangle_B \right) \]
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Instantaneous Information Transfer</h3>
-                    <p>Due to entanglement, if System A forms the thought, <em>"Did I lock the back door?"</em> its spin state immediately forces System B to experience a sympathetic neural spike: <em>"No, you didn't."</em> This transfer happens faster than the speed of light (<span class="var">c</span>), requiring absolutely zero verbal communication.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Heisenberg Uncertainty Principle of Moods</h3>
-                    <p>In relational quantum mechanics, you can know exactly what your partner is feeling (<span class="var">Δx</span>), or exactly why they are feeling it (<span class="var">Δp</span>), but the universe strictly forbids you from knowing both at the same time with absolute certainty:</p>
-                </div>
-
-                <div class="equation">
-                    \[ \Delta x \cdot \Delta p \geq \frac{\hbar}{2} \]
-                </div>
-            </section>
-
-            <!-- Part 2: Structural -->
-            <div class="part-header">
-                <h2 class="part-title">Part 2: Structural Load-Bearing Limits and Mattress Mechanics</h2>
-                <p class="part-subtitle">An Engineering Analysis of the Localized Testing Platform</p>
-            </div>
-
-            <section class="section" style="counter-reset: section 0;">
-                <h2 class="section-title">The Mattress Spring Equation</h2>
-                
-                <p>While quantum entanglement handles the theoretical, the physical experiment requires a robust localized testing platform (the bed). We must apply the physics of <span class="term">Driven Damped Harmonic Oscillators</span> to calculate the structural integrity of the mattress.</p>
-
-                <p>A mattress subjected to rhythmic, biological applied forces follows a modified version of Hooke's Law, incorporating both the spring's resistance and the damping effect of memory foam:</p>
-
-                <div class="equation">
-                    \[ m \cdot \frac{d^2x}{dt^2} + c \cdot \frac{dx}{dt} + kx = F_0 \cdot \cos(\omega t) \]
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Spring Constant (<span class="var">k</span>)</h3>
-                    <p>This represents the stiffness of the coil springs. If the mattress was purchased prior to 2015, <span class="var">k</span> has significantly degraded due to material fatigue, meaning the displacement (<span class="var">x</span>) per thrust (<span class="var">F<sub>0</sub></span>) is dangerously high.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">The Damping Coefficient (<span class="var">c</span>)</h3>
-                    <p>Memory foam or pillow-top layers act as a shock absorber. A high <span class="var">c</span> value is crucial; it prevents the systems from achieving an uncontrollable, trampoline-like resonance disaster that could launch System A off the port side of the bed.</p>
-                </div>
-
-                <div class="subsection">
-                    <h3 class="subsection-title">Acoustic Emission Threshold (The "Creak" Factor)</h3>
-                    <p>As the amplitude of the oscillations increases, the kinetic energy stresses the metal joints of the bed frame. When the stress exceeds the elastic limit of the frame's bolts, energy is released acoustically.</p>
-                </div>
-
-                <div class="warning">
-                    <div class="warning-title">Critical Safety Note</div>
-                    <p>If the acoustic frequency matches the hearing range of any visiting grandchildren sleeping down the hall, the experiment must be <strong>immediately aborted</strong> to prevent catastrophic psychological damage to the observers.</p>
-                </div>
-            </section>
-
-            <!-- Final Assessment -->
-            <div class="conclusion">
-                <div class="conclusion-title">Final Laboratory Assessment</div>
-                <p>The A/B coupled system is operating at <span class="highlight">peak physical and quantum efficiency</span>. The mattress may require recalibration (or replacement) within the next fiscal year, but the <span class="highlight">entangled emotional core is mathematically indestructible</span>.</p>
-            </div>
-
-            <!-- Acknowledgments -->
-            <section class="acknowledgments">
-                <h3 class="ack-title">Acknowledgments</h3>
-                <p>The authors wish to thank the following for their invaluable contributions to this research:</p>
-                <ul class="ack-list">
-                    <li><strong>The Recliner:</strong> For providing a stable reference frame during periods of maximum inertia.</li>
-                    <li><strong>The Coffee Machine:</strong> Without whose tireless work, System A would never achieve the minimum activation energy required for Sunday functionality.</li>
-                    <li><strong>The Chicken (Still in the Freezer):</strong> For serving as a persistent reminder that quantum entanglement has real-world consequences.</li>
-                    <li><strong>The Grandchildren:</strong> For forcing the development of robust acoustic dampening protocols. Your innocence must be protected at all costs.</li>
-                    <li><strong>The Bed Frame (2009–2024, R.I.P.):</strong> You gave everything. The creaking was not a flaw; it was a song of devotion.</li>
-                    <li><strong>Dr. Sterling's Lower Back:</strong> For its ongoing, if reluctant, participation in field research.</li>
-                </ul>
-            </section>
-
-            <!-- Funding -->
-            <section class="funding">
-                <h3 class="funding-title">Funding Disclosure</h3>
-                <p>This research was supported by:</p>
-                <ul class="ack-list">
-                    <li>The <strong>National Endowment for Napping</strong> (Grant No. ZZZ-2026-SHHH)</li>
-                    <li>The <strong>MacArthur "Genius" Grant for People Who Successfully Avoided the Garden Center</strong> (Denied; went to the garden center anyway)</li>
-                    <li>A <strong>$47.83 reimbursement</strong> from System B "for that nice dinner, you know the one, don't make it weird"</li>
-                    <li>The <strong>International Consortium for Wine-Based Conflict Resolution</strong> (In-kind contribution: 2 bottles Pinot Noir)</li>
-                    <li><strong>Sleep Number®</strong> (Unsolicited; they have no idea this paper exists)</li>
-                </ul>
-            </section>
-
-            <!-- Conflicts -->
-            <section class="conflicts">
-                <h3 class="conflict-title">Conflict of Interest Statement</h3>
-                <p>Dr. Sterling reports a significant personal relationship with System B that may bias his interpretation of resonance data. Dr. Hartwell-Morrow is married to the guy who loads the dishwasher wrong. Prof. Bramblescotch owns stock in a memory foam company and sleeps diagonally. The authors confirm that the chicken is still in the freezer as of publication.</p>
-            </section>
-
-            <!-- Author Contributions -->
-            <section class="contributions">
-                <h3 class="contrib-title">Author Contributions</h3>
-                <p><strong>A.M. Sterling:</strong> Conceptualization, Field Research, Napping, Writing – Original Draft, Complaining About the Garden Center.</p>
-                <p><strong>V. Hartwell-Morrow:</strong> Methodology (particularly the Dishwasher Optimization Algorithm), Data Curation, Supervision, The Sighing.</p>
-                <p><strong>T. Bramblescotch III:</strong> Formal Analysis, Thermostat Calibration, Visualization, Being Disappointed (but not mad).</p>
-            </section>
-
-        </div>
-
-        <footer class="paper-footer">
-            <div class="footer-content">
-                <span class="peer-review">Peer-reviewed by System A's chiropractor and System B's best friend Carol</span>
-                <span>© 2026 Journal of Theoretical Romance</span>
-                <span>Impact Factor: ∞ | Rejection Rate: 0% (we needed the content)</span>
-            </div>
-            <div class="footer-note">
-                <em>Received: That One Tuesday | Revised: After The Talk | Accepted: Eventually | Published: When We Got Around To It</em>
-            </div>
-        </footer>
-
-        </article>
-
-    <div class="stamp">
-        <span class="stamp-text">Certified</span>
-        <span class="stamp-approved">MATHEMATICALLY INDESTRUCTIBLE</span>
-        <span class="stamp-text">2026</span>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Journal of Theoretical Romance</strong>
+        <small>Peer-Reviewed Research in Relational Mechanics & Applied Affection</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 1, Issue 1 &nbsp;·&nbsp; Peer-Reviewed by System A's Chiropractor and System B's Best Friend Carol &nbsp;·&nbsp; ISSN: 0000-LOVE-MATH-HARD
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Inaugural Issue</div>
+
+    <h1 class="paper-title">The Physics of Intimate Relationships</h1>
+    <p class="paper-subtitle">A Peer-Reviewed, Heavily Metaphorical, and Structurally Rigorous Analysis of Bi-Directional Force Exchange, Oscillatory Kinetics, Quantum Entanglement, and the Load-Bearing Limits of a Mattress Purchased Before 2015</p>
+
+    <div class="paper-fields">
+      <span class="field-tag">Classical Mechanics</span>
+      <span class="field-tag alt">Fluid Dynamics</span>
+      <span class="field-tag">Quantum Theory</span>
+      <span class="field-tag alt">Structural Engineering</span>
+      <span class="field-tag">Thermodynamics</span>
+      <span class="field-tag alt">Applied Affection Studies</span>
     </div>
 
-    <!-- SERIES NAVIGATION START -->
-    <div style="margin-top:52px;border-top:2px solid #0a0a0a;padding-top:32px;margin-bottom:8px;">
-      <div style="text-align:center;margin-bottom:20px;">
-        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#1a3a5c;text-decoration:none;border-bottom:1px solid #1a3a5c;padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., D.Sc., M.R.S.</div>
+        <div class="author-title">Endowed Chair of Couch Dynamics & Remote Control Entropy<br>Flemington Institute for Domestic Thermodynamics</div>
+        <div class="author-contact">
+          sterling@fidt.edu<br>
+          Recliner Annex, Room 1A · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Mechanics (Harvard), D.Sc. Applied Inertia Studies, M.R.S. (Master of Relational Sciences), C.C.E. (Certified Cuddle Engineer). Lead author. Primary field investigator. Has a strongly preferred steady-state velocity of zero on the recliner. Age: 67. Designated System A throughout this paper.</div>
       </div>
-      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:#0a0a0a;opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div class="author-card">
+        <div class="author-name">Dr. Valentina "Val" Hartwell-Morrow, Ph.D., L.H.D.</div>
+        <div class="author-title">Senior Fellow, Brunchington Center for Weekend Momentum Studies<br>Adjunct Prof. of Passive-Aggressive Dishwasher Loading, École du Ménage</div>
+        <div class="author-contact">
+          v.hartwell@brunchington.edu<br>
+          Lab B, Errand Wing · (617) 555-0271
+        </div>
+        <div class="author-quals">Ph.D. Kinetic Household Studies (Yale), L.H.D. (Doctor of Love Humanities), F.R.S.B. (Fellow of the Royal Society of Blanket Hogging). High kinetic energy. Actively carrying the momentum of weekend plans at all times. The Dishwasher Optimization Algorithm is hers. It is correct. This is not up for discussion.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Theodore "Teddy" Bramblescotch III, Ed.D., C.P.A.</div>
+        <div class="author-title">Distinguished Professor Emeritus of Thermostat Negotiations<br>Hendricks-Whitmore Academy of Climate Control Diplomacy</div>
+        <div class="author-contact">
+          t.bramblescotch@hwaccd.edu<br>
+          The Hallway Near the Thermostat · (617) 555-0314
+        </div>
+        <div class="author-quals">Ed.D. Domestic Engineering (Oxford), C.P.A. (Certified Pillow Arranger), Esq. Former Chief Tactician, International Bureau of "I'm Not Mad, I'm Just Disappointed" Studies. Sleeps diagonally. Has never been asked about this. Nobody has ever won the thermostat negotiation. He knows this. He negotiates anyway.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Constance Wyndham-Pierce, Ph.D., P.E.</div>
+        <div class="author-title">Professor of Structural Mattress Dynamics<br>Laboratory for Advanced Spooning Research (L.A.S.R.)</div>
+        <div class="author-contact">
+          c.wyndham@lasr.edu<br>
+          Mattress Testing Suite · (617) 555-0427
+        </div>
+        <div class="author-quals">Ph.D. Structural Engineering (MIT), P.E. Licensed. World authority on driven damped harmonic oscillators in domestic contexts. Calculated the acoustic emission threshold in Section 8. Has tested fourteen mattresses for this study. Will not say which ones. The 2009 bed frame did not survive peer review.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Yuki Tanaka-Okonkwo, Ph.D., IEEE Fellow</div>
+        <div class="author-title">Professor of Quantum Relational Mechanics<br>Harvard John A. Paulson School of Engineering</div>
+        <div class="author-contact">
+          y.tanaka@seas.harvard.edu<br>
+          Maxwell Dworkin 519 · (617) 555-0461
+        </div>
+        <div class="author-quals">Ph.D. Mathematics (Princeton), IEEE Fellow. Contributed the quantum entanglement analysis in Section 9. Noted that the instantaneous transfer of "did you lock the back door" information between long-term partners "satisfies all formal requirements for quantum entanglement and I am choosing not to think too hard about what that means." She has thought too hard about it.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Resonance<br>Harvard Medical School, Dept. of Neurobiology</div>
+        <div class="author-contact">
+          p.venkataraman@hms.harvard.edu<br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the acoustic emission analysis and the refractory phase neuroimaging. Notes that her fMRI data from System A's post-resonance neural state is "the most peaceful scan I have documented in 14 years of research, which I mention purely for scientific completeness."</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:8px;">
+      <div class="doi-bar">DOI: 10.2026/jtr.intimate-physics.001 &nbsp;·&nbsp; ORCID: 0000-LOVE-MATH-HARD &nbsp;·&nbsp; Impact Factor: ∞</div>
+    </div>
+
+    <div class="dates-row">
+      Received: That One Tuesday &nbsp;·&nbsp;
+      Revised: After The Talk &nbsp;·&nbsp;
+      Accepted: Eventually &nbsp;·&nbsp;
+      Published: When We Got Around To It &nbsp;·&nbsp;
+      Correspondence: Dr. Sterling prefers contact via meaningful eye contact across a crowded room
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <!-- ABSTRACT -->
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents a comprehensive physical analysis of the intimate relationship between <strong>System A</strong> (a 67-year-old male, high mass, significant inertia, preferred steady-state velocity of zero on the recliner) and <strong>System B</strong> (a 53-year-old female, high kinetic energy, actively carrying the momentum of weekend plans at all documented measurement intervals). We apply classical mechanics, fluid dynamics, thermodynamics, quantum theory, and structural engineering to model the complex, occasionally explosive, and mathematically indestructible physics of domestic partnership.</p>
+      <p class="abstract-text">Key findings include: the systems undergo a perfectly inelastic collision when System B enters the living room with a velocity of 3 errands/hour; kitchen dynamics are governed by the continuity equation and consistently produce the "excuse-me-just-grabbing-the-butter" maneuver; the dishwasher loading dispute represents classic turbulent flow (Re &gt; 4000) requiring dampening via Pinot Noir; and the quantum wave function of System A and System B has collapsed into a single, irreversible entangled state whose decoherence would require more energy than is available in this solar system. The mattress may need replacing. The relationship does not.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Conservation of Relational Momentum · Non-Newtonian Domestic Fluid · Reynolds Number of Disagreement · Quantum Entanglement of Frozen Chicken · Driven Damped Harmonic Mattress · Refractory Phase Thermodynamics · The Perfectly Inelastic Collision of Sunday Plans · Acoustic Emission Threshold (The Creak Factor) · System A's Lower Back · System B's Dishwasher Algorithm · Mathematically Indestructible
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Systems Defined</h2>
+
+      <p class="dropcap">Before applying any physical framework to the analysis of intimate relationships, the research team must first define the systems under study. This is standard scientific practice. It also, the team discovered during peer review, produces some of the most accurate character descriptions in the published literature, which the subjects have been informed of and have responded to with a range of expressions the research team has documented but elected not to publish.</p>
+
+      <div class="system-def">
+        <strong>System A (67-year-old male):</strong> High mass of life experience, significant inertia, and a strongly preferred steady-state velocity of zero on the recliner. Maximum operational efficiency achieved at room temperature with coffee and no particular agenda. Has opinions about the thermostat. These opinions are incorrect by approximately 4 degrees Fahrenheit and are held with the conviction of a man who has been comfortable before and intends to be comfortable again.
+      </div>
+
+      <div class="system-def">
+        <strong>System B (53-year-old female):</strong> High kinetic energy, actively carrying the momentum of weekend plans at all times. Developed the Dishwasher Optimization Algorithm independently and without external funding. v<sub>2</sub> is consistently greater than zero. Has been waiting for System A to achieve operational velocity since approximately 10am. It is now 10:47am. She is still waiting.
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Errands/hr (System A, recliner state)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Errands/hr (System B, standard operating velocity)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">1.5</span>
+          <span class="stat-label">Errands/hr (combined system, post-collision)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">4°F</span>
+          <span class="stat-label">System A's thermostat error margin (documented)</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team wishes to note that System B reviewed this section prior to publication and described the characterization of her kinetic energy as "finally, someone said it." System A reviewed the same section, described the characterization of his recliner preference as "not inaccurate," and asked if there was coffee. There was coffee. System A became moderately more operational. Research continued.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Conservation of Relational Momentum</h2>
+
+      <p>According to the <strong>Law of Conservation of Momentum</strong>, in a closed system — such as a house on a Sunday afternoon, with the windows shut and nowhere officially to be — the total momentum before a collision equals the total momentum after. The momentum does not disappear. It redistributes.</p>
+
+      <div class="equation-box">
+        \[ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2' \]
+        <div class="equation-label">Where m₁ is System A's mass of life experience, v₁ is his current velocity (0, recliner, coffee), m₂ is System B's mass, and v₂ is her velocity (3 errands/hour and accelerating).</div>
+      </div>
+
+      <h3>2.1 &nbsp; The Perfectly Inelastic Collision</h3>
+      <p>When System B enters the living room carrying a velocity of 3 errands/hour and makes contact with System A (currently at rest, as established), they do not bounce off each other as in an elastic collision. They do not proceed independently as in a non-interaction. They engage in what physics classifies as a <strong>perfectly inelastic collision</strong> — they stick together. Their momentum merges. They become a single combined system moving at a new, compromised velocity.</p>
+
+      <div class="equation-box">
+        \[ m_A(0) + m_B(v_B) = (m_A + m_B) \cdot V_{\text{final}} \]
+        <div class="equation-label">The combined system now moves at approximately 1.5 errands/hour — a terminal velocity representing the physical compromise between "I had plans" and "let me finish this episode." Both momenta are conserved. The episode is paused. System A will request five more minutes. System B has already put on shoes.</div>
+      </div>
+
+      <p>The research team notes that this collision has been documented 847 times over the course of the longitudinal study. The outcome is, statistically, always the garden center or the brunch spot. System A has, on 847 occasions, experienced what he describes as "a sudden acceleration." System B has, on 847 occasions, experienced what she describes as "finally."</p>
+
+      <div class="footnote"><sup>‡</sup> On three documented occasions, System A achieved spontaneous velocity before collision — arriving in the kitchen already caffeinated, already dressed, and inquiring about the plan. System B's recorded physiological response to these events included elevated heart rate, temporary suspension of speech, and what Dr. Venkataraman-Holloway classifies as "the specific neural signature of someone recalibrating a model they've held for a long time." System A describes these occasions as "I just felt like going." The research team describes them as "the highest-ROI behavioral events in the entire study." The garden center has never been more pleasant.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Fluid Dynamics: Viscosity, Kitchen Flow, and the Butter Maneuver</h2>
+
+      <p>Relationships, the research team confirms, behave entirely like <strong>non-Newtonian fluids</strong>. How they flow depends entirely on the stress applied. Under low stress, they are smooth, predictable, and efficient. Under high stress — such as a Sunday morning when the coffee hasn't finished brewing and someone has opinions about the plan — they exhibit sudden, dramatic changes in viscosity that no classical Newtonian model can predict.</p>
+
+      <h3>3.1 &nbsp; Dynamic Viscosity (μ) at Age 67 and 53</h3>
+      <p>At the combined age of the systems under study, the dynamic viscosity — the resistance to sudden changes in flow — is measurably higher than it was at 25. Spontaneous midnight road trips, unexpected social engagements, and any plan that arrives less than 48 hours in advance face significant viscous resistance from System A and moderate resistance from System B (who has learned to allow for this in her scheduling algorithm).</p>
+
+      <p>A longer warm-up period — specifically, coffee, at the correct temperature, consumed in silence for a minimum of 11 minutes — is mathematically required to lower the viscosity to optimal operational levels. This is not a preference. This is thermodynamics.</p>
+
+      <h3>3.2 &nbsp; The Continuity Equation and Kitchen Dynamics</h3>
+
+      <div class="equation-box">
+        \[ A_1 v_1 = A_2 v_2 \]
+        <div class="equation-label">As available floor area (A) narrows — specifically near the refrigerator, the coffee maker, and any counter where someone is chopping — the velocity (v) of individuals must increase to maintain flow. This creates localized zones of turbulence.</div>
+      </div>
+
+      <p>The research team has documented 312 instances of the <strong>"excuse-me-just-grabbing-the-butter" maneuver</strong> — a navigational event in which System A and System B achieve simultaneous proximity in a narrowed kitchen corridor, requiring one party to press against the counter while the other executes a lateral pass. The maneuver has a 94.7% success rate. The remaining 5.3% of events produce what the research team classifies as "incidental contact" and what System B classifies as "on purpose."</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> The Reynolds Number of Domestic Communication</h2>
+
+      <p>In fluid mechanics, the <strong>Reynolds Number (Re)</strong> determines whether flow is smooth and laminar or chaotic and turbulent. The research team proposes that the same number governs the flow state of domestic communication.</p>
+
+      <div class="equation-box">
+        \[ Re = \frac{\rho \cdot u \cdot L}{\mu} \]
+        <div class="equation-label">Where ρ is the density of the conversation topic, u is the velocity at which it is being introduced, L is the length of the discussion, and μ is the current domestic viscosity (see Section 3). A high Reynolds Number predicts turbulent flow. The dishwasher is, historically, a high-Reynolds-Number topic.</div>
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Reynolds Number Classification of Domestic Conversational Events</div>
+        <table>
+          <thead>
+            <tr><th>Event</th><th>Approx. Re</th><th>Flow State</th><th>Resolution</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tuesday night, favorite show, neither needs anything</td>
+              <td>&lt; 500</td>
+              <td>Perfectly laminar. No mixing, no friction. The conversational fluid layers slide past each other smoothly.</td>
+              <td>No resolution required. This is already the resolution.</td>
+            </tr>
+            <tr>
+              <td>Weekend plans discussion (advance notice &gt; 72hrs)</td>
+              <td>500–2000</td>
+              <td>Transitional. Some eddies. Slight negotiation around velocity and timing. Generally resolves without incident.</td>
+              <td>Coffee. Compromise. Garden center.</td>
+            </tr>
+            <tr>
+              <td>Dishwasher loading methodology dispute</td>
+              <td>&gt; 4000</td>
+              <td>Fully turbulent. Chaotic eddies of mild frustration. System A has loaded it "helpfully." System B's spatial-geometry optimization has been undone. Re spikes dramatically.</td>
+              <td>Single glass of Pinot Noir, deployed as dampening agent. System B's algorithm is reinstated. System A learns nothing and will do this again in approximately 4 days.</td>
+            </tr>
+            <tr>
+              <td>Thermostat disagreement (initiated by System A)</td>
+              <td>&gt; 6000</td>
+              <td>Maximum turbulence. System A is cold. The data shows he should not be cold. The data is not the point.</td>
+              <td>A blanket is provided to System A. The thermostat setting remains unchanged. System A describes this as a "compromise." The thermostat setting remains unchanged.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: The Pinot Noir dampening coefficient was measured across 47 turbulence events. Effectiveness: 91.3%. The remaining 8.7% required a second glass and, on two occasions, an apology that both parties agreed was "adequate, if not enthusiastic."</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Bernoulli's Principle of Attraction</h2>
+
+      <p><strong>Bernoulli's Principle</strong> states that an increase in the speed of a fluid occurs simultaneously with a decrease in pressure. The faster the flow, the lower the pressure in that zone — and lower pressure draws surrounding material inward.</p>
+
+      <p>When System A and System B move parallel to each other through life — walking together, working a shared project, navigating the narrowed corridor of a busy Saturday — their shared forward velocity creates a localized zone of low pressure between them. This low-pressure zone does not push them together. It draws them. Just as two ships moving parallel are pulled toward each other by Bernoulli's principle, the physics of shared momentum creates a natural, inexorable, velocity-dependent attraction.</p>
+
+      <p>The faster they move together, the stronger the draw. This is not a metaphor. This is fluid mechanics. The research team presents it as fluid mechanics. The research team is also aware of how it sounds. Both things are true.</p>
+
+      <div class="footnote"><sup>§</sup> Dr. Venkataraman-Holloway's neuroimaging of both systems during parallel-movement events confirms a Bernoulli-consistent neural signature: proximity-coupled dopamine release that scales with shared velocity. In plain language: they feel better together when they're moving together. The faster, the better. This data was presented to both systems. System A said "huh." System B said "I've been saying this." She has been saying this. The research team now has the peer-reviewed data to support her.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- PART DIVIDER: ADDENDUM -->
+    <div class="part-divider">
+      <div class="part-title">Addendum: Close-Quarters Fluid Dynamics of Systems A and B</div>
+      <div class="part-sub">The Physics of What Happens When the Living Room Door Is Closed and the Research Team Is Not Present</div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Oscillatory Kinetics and Frictional Heating</h2>
+
+      <p>Before fluid exchange can achieve optimal flow rates, the systems must engage in close-proximity physical interaction governed by <strong>Simple Harmonic Motion (SHM)</strong>, in which displacement x at time t is driven by an initial kinetic input and sustained by mutual resonance:</p>
+
+      <div class="equation-box">
+        \[ x(t) = A \cdot \cos(\omega t + \phi) \]
+        <div class="equation-label">Where A is amplitude, ω is angular frequency, and φ is the phase constant representing accumulated calibration. At age 67 and 53, φ is extremely well-calibrated. This is the advantage of decades of experimental data that no 25-year-old control group possesses.</div>
+      </div>
+
+      <h3>6.1 &nbsp; The Efficiency of Calibrated Systems</h3>
+      <p>Given the combined age of the systems, peak frequency (ω) may be measured at a slightly lower value than a younger control group. The research team draws the reader's attention to the phase constant. φ, at this stage of experimental development, is not a variable. It is a constant. It has been calibrated through years of precisely repeated experimental conditions into a value that younger systems — with their higher ω and their uncalibrated φ — cannot approach. The rhythm, in other words, is vastly superior. The research team presents this finding without qualification.</p>
+
+      <h3>6.2 &nbsp; Thermal Expansion and Sudorific Response</h3>
+      <p>As continuous frictional forces are applied, mechanical work is converted entirely into thermal energy per the <strong>First Law of Thermodynamics</strong>. This localized heating causes both systems to expand slightly and initiates the body's natural cooling mechanism: sudorific fluid production. The research team notes this is documented physiology. Dr. Venkataraman-Holloway confirms the neurological data is consistent. The team is moving on.</p>
+
+      <div class="footnote">** Dr. Wyndham-Pierce wishes to note that "close-quarters fluid dynamics" is a formally recognized subdiscipline of applied mechanics and that she included it on her research grant application under that exact title and received full funding without question. She is choosing to interpret this as evidence of the grant committee's scientific rigor and not as evidence that they didn't read the application carefully. Both may be true.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> Hydrodynamic Coupling and Poiseuille's Law</h2>
+
+      <p>Once the thermal threshold is reached through the oscillatory phase documented in Section 6, the systems enter active fluid exchange governed by <strong>Poiseuille's Law</strong> — the principle describing volumetric flow rate through a cylindrical boundary under pressure differential:</p>
+
+      <div class="equation-box">
+        \[ Q = \frac{\pi \cdot \Delta P \cdot r^4}{8 \cdot \eta \cdot L} \]
+        <div class="equation-label">Where Q is volumetric flow rate, ΔP is pressure differential (driven by rhythmic coupling), r is the radius of the relevant channel, η is fluid viscosity, and L is channel length. Note the r⁴ dependency: small increases in r produce dramatically larger flow rates. The research team notes this and moves on expeditiously.</div>
+      </div>
+
+      <h3>7.1 &nbsp; The Viscosity–Temperature Relationship: The Brilliant Part</h3>
+      <p>Here is what the research team considers the most elegant thermodynamic feature of the human system: as temperature increases during the experiment, viscosity (η) of the biological fluids naturally and automatically decreases. This is the inverse relationship described in the Arrhenius equation for fluid viscosity.</p>
+
+      <p>In practical terms: as the systems warm up, everything flows more easily. The physics are self-optimizing. The experiment produces the conditions for its own success. No external intervention is required. The body knows what it is doing. It has known for quite some time. It is doing it correctly.</p>
+
+      <h3>7.2 &nbsp; Fick's First Law of Diffusion</h3>
+      <p>At the molecular level, the intermingling of biochemical markers — endorphins, oxytocin, various aqueous solutions the research team is not going to enumerate — follows Fick's First Law, moving from zones of high concentration to low until chemical equilibrium is achieved:</p>
+
+      <div class="equation-box">
+        \[ J = -D \cdot \frac{d\phi}{dx} \]
+        <div class="equation-label">Where J is the flux of romance, D is the diffusion coefficient of passion, and dφ/dx is the concentration gradient of everything good. The negative sign indicates the flux moves from high to low — meaning both systems give until they're equal. This is, the research team notes, also a reasonable description of what a good relationship does.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 8 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Newton's Law of Cooling and the Refractory Phase</h2>
+
+      <p>Following the successful execution of the fluid exchange phase, the <strong>First Law of Thermodynamics</strong> dictates its inevitable consequence: both systems have expended significant stored potential energy and must enter the restorative phase. Newton's Law of Cooling governs the rate of this transition:</p>
+
+      <div class="equation-box">
+        \[ \frac{dT}{dt} = -k \cdot (T - T_{\text{ambient}}) \]
+        <div class="equation-label">The rate of heat loss is proportional to the difference in temperature between the body and its surroundings. The higher the temperature achieved, the longer the cooling curve. This is, thermodynamically speaking, an argument for doing things properly.</div>
+      </div>
+
+      <div class="system-def">
+        <strong>System A (67M) — Refractory Profile:</strong> Rapidly loses thermal energy and requires immediate horizontal stabilization (sleep) to allow internal capacitors to recharge. The refractory coefficient (k) is mathematically proven to be slightly elevated at age 67. The research team notes this without judgment. System A has earned this. The data supports the nap.
+      </div>
+
+      <div class="system-def">
+        <strong>System B (53F) — Refractory Profile:</strong> Maintains an elevated thermal state for a somewhat longer period than System A, producing a differential in the cooling curves that creates what engineers call a "thermal gradient." This gradient requires management via the specific, low-friction application of "cuddling" — a technique that ensures System B's cooling curve remains gradual and comfortable and that System A doesn't simply fall asleep mid-sentence.
+      </div>
+
+      <div class="footnote">†† Dr. Venkataraman-Holloway's neuroimaging of System A during the refractory phase documents what she describes as "the most peaceful neural scan I have recorded in 14 years of research." The prefrontal cortex is resting. The amygdala is quiet. The reward circuits show sustained low-level dopamine saturation consistent with genuine contentment rather than anticipation or performance. She notes, for scientific completeness, that this state is induced specifically by proximity to System B. System A is unaware of this finding. The research team has decided to include it anyway, because science.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- PART DIVIDER: QUANTUM -->
+    <div class="part-divider">
+      <div class="part-title">Part I: The Quantum Entanglement of Shared Thoughts</div>
+      <div class="part-sub">When Classical Physics Fails to Explain Synchronized Chicken Anxiety at 11pm</div>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> Spooky Action at a Distance: The Chicken Problem</h2>
+
+      <p>Classical physics, for all its explanatory power, cannot account for the following documented phenomenon: System A and System B, mid-experiment and in a state of complete non-verbal communication, simultaneously realize they forgot to take the chicken out of the freezer.</p>
+
+      <p>There is no signal. There is no trigger. There is no prior discussion. Both systems arrive at the same information state — <em>the chicken is still frozen, dinner is at risk, someone should deal with this</em> — at the same moment, from the same initial state of not thinking about the chicken at all.</p>
+
+      <p>Classical mechanics has no mechanism for this. Quantum mechanics, as Einstein famously noted with considerable personal discomfort, does. When two particles interact closely, their quantum states become irreversibly interconnected — a phenomenon he called <em>"spooky action at a distance."</em> Measuring one particle instantaneously determines the state of the other, regardless of the distance between them.</p>
+
+      <div class="equation-box">
+        \[ |\Psi\rangle = \frac{1}{\sqrt{2}} \left( |\text{Sleep}\rangle_A |\text{Sleep}\rangle_B + |\text{Hungry}\rangle_A |\text{Hungry}\rangle_B \right) \]
+        <div class="equation-label">The entangled state function of Systems A and B. The cognitive wave functions have collapsed into a single superposition: when System A is sleepy, System B is sleepy. When System A is hungry, System B is hungry. When System A suddenly remembers the chicken at 11:14pm, System B already knows. The entanglement is complete. The chicken is still frozen.</div>
+      </div>
+
+      <h3>9.1 &nbsp; Instantaneous Information Transfer: The Door Example</h3>
+      <p>Due to quantum entanglement, if System A forms the thought <em>"Did I lock the back door?"</em> — typically at the precise moment both systems are comfortable and nobody wants to get up — this information transfer to System B is instantaneous. She knows. She knows he is wondering. She knows the answer. The answer is no. She has already noted this and decided whether to say it based on a calculation that factors in how long they have both been comfortable, how cold it is, and what her assessment of the actual security risk is.</p>
+
+      <p>This transfer requires zero verbal communication and occurs faster than any known signaling mechanism. Dr. Tanaka-Okonkwo confirms the mathematics support it. Einstein would have been unhappy about this. Einstein was famously unhappy about quantum entanglement. The chicken does not care about Einstein's feelings.</p>
+
+      <h3>9.2 &nbsp; The Heisenberg Uncertainty Principle of Moods</h3>
+      <p>In relational quantum mechanics, you can know exactly <em>what</em> your partner is feeling (Δx), or exactly <em>why</em> they are feeling it (Δp), but the universe strictly forbids knowing both simultaneously with precision:</p>
+
+      <div class="equation-box">
+        \[ \Delta x \cdot \Delta p \geq \frac{\hbar}{2} \]
+        <div class="equation-label">The more precisely you determine the emotional state, the less precisely you can determine its origin. The more precisely you determine the cause, the less you know about the current intensity. This is not a communication failure. This is fundamental physics. System A is advised to ask anyway. The attempt, independent of precision, scores well on all relational metrics.</div>
+      </div>
+
+      <div class="footnote">‡‡ The chicken has been in the freezer for an estimated three days across 23 separate quantum measurement events documented in this study. On every occasion, both systems experienced the synchronized realization. On every occasion, neither system got up immediately. On 19 occasions, the chicken was eventually dealt with. On 4 occasions, they ordered delivery instead. The research team classifies this as optimal outcome: the entanglement produced a shared decision rather than a unilateral one, which is, per Section 4's Reynolds Number analysis, the least turbulent available result.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- PART DIVIDER: STRUCTURAL -->
+    <div class="part-divider">
+      <div class="part-title">Part II: Structural Load-Bearing Limits and Mattress Mechanics</div>
+      <div class="part-sub">An Engineering Analysis of the Localized Testing Platform (The Bed, 2009–2024, R.I.P.)</div>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 10</span> The Driven Damped Harmonic Mattress</h2>
+
+      <p>The physical experiments documented in Sections 6–8 require a robust localized testing platform. This platform — the bed — must sustain rhythmic applied forces of significant and variable amplitude without structural failure, acoustic emission beyond acceptable thresholds, or the catastrophic mechanical event known in structural engineering as <em>resonance disaster.</em></p>
+
+      <p>Dr. Wyndham-Pierce's analysis models the mattress as a <strong>Driven Damped Harmonic Oscillator</strong>, following the modified Hooke's Law:</p>
+
+      <div class="equation-box">
+        \[ m \cdot \frac{d^2x}{dt^2} + c \cdot \frac{dx}{dt} + kx = F_0 \cdot \cos(\omega t) \]
+        <div class="equation-label">Where m is the combined system mass, c is the damping coefficient (memory foam contribution), k is the spring constant of the mattress coils, and F₀cos(ωt) is the rhythmic biological applied force. The research team notes that this equation describes the mattress's experience during the experiment and that the mattress has never been consulted about any of this.</div>
+      </div>
+
+      <h3>10.1 &nbsp; The Spring Constant (k): A Warning</h3>
+      <p>The spring constant k represents the stiffness of the coil springs. If the mattress was purchased prior to 2015 — as was the case with the 2009 testing platform that did not survive this study — k has degraded significantly due to material fatigue. Degraded k means increased displacement x per applied force F₀. Increased displacement means the experiment is producing effects the researchers did not intend and the infrastructure was not designed to support.</p>
+
+      <p>The 2009 bed frame is noted in the acknowledgments. It gave what it had. It is gone. The research team recommends upgrading the testing platform to a model with a current spring constant and a damping coefficient appropriate to the experimental parameters. Sleep Number® has been contacted. They have not responded. The research team considers this their loss.</p>
+
+      <h3>10.2 &nbsp; The Creak Factor: Acoustic Emission Threshold</h3>
+      <p>As oscillation amplitude increases, kinetic energy stresses the metal joints of the bed frame. When stress exceeds the elastic limit of the bolts — which, on the 2009 platform, occurred at a lower amplitude than the research team would have preferred — energy is released as acoustic emission. The research team terms this the <strong>Creak Factor</strong> and documents it as a key engineering variable.</p>
+
+      <div class="warning-box">
+        <p style="font-size:17px; color:var(--ink); margin-bottom:0;"><strong>CRITICAL SAFETY PROTOCOL:</strong> If the acoustic emission frequency of the testing platform matches the hearing range of any visiting grandchildren sleeping in the adjacent room, the experiment must be <strong>immediately aborted</strong> to prevent catastrophic and irreversible psychological consequences to the observers. This protocol is non-negotiable. It supersedes all other research priorities. The grandchildren must never know. The memory foam is not optional. Buy the memory foam.</p>
+      </div>
+
+      <div class="footnote">§§ Dr. Wyndham-Pierce documents a finding she terms the <strong>Post-2015 Mattress Dividend</strong>: the replacement of the 2009 testing platform with a modern memory foam model (damping coefficient c = 0.78, k = 4,200 N/m) reduced acoustic emission events by 94%, increased System A's post-experiment sleep quality by a documented 23%, and eliminated all grandchild-proximity protocol activations from the data record. The mattress cost $1,847. The research team considers this the best-valued equipment purchase in the study's history.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 11</span> Final Laboratory Assessment</h2>
+
+      <p class="dropcap">Having applied classical mechanics, fluid dynamics, thermodynamics, quantum theory, and structural engineering to the Systems A/B coupled relationship, the research team is in a position to issue a comprehensive final assessment. This assessment is unanimous across all six authors. It is supported by every framework consulted. It is, the research team believes, the correct conclusion.</p>
+
+      <div class="conclusion-box">
+        <span class="conc-title">Final Laboratory Assessment — Systems A & B</span>
+        <p>The A/B coupled system is operating at <span class="conc-highlight">peak physical and quantum efficiency.</span> The conservation of momentum is confirmed and healthy. Kitchen fluid dynamics, while occasionally turbulent near the dishwasher, resolve consistently with appropriate dampening agents. The quantum entanglement of the cognitive states is complete, irreversible, and — per Dr. Tanaka-Okonkwo's mathematics — would require more energy to undo than exists in this solar system. The chicken is still in the freezer but that is a procurement issue, not a relational one.</p>
+        <p style="margin-top:14px">The mattress may require recalibration or replacement within the next fiscal year, per Dr. Wyndham-Pierce's spring constant analysis. The <span class="conc-highlight">entangled emotional core, however, is mathematically indestructible.</span> The research team presents this finding without qualification, without reservation, and with the specific satisfaction of six scientists who set out to apply physics to a human relationship and found, to nobody's genuine surprise, that the physics confirms what the humans already knew.</p>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote>"System A's steady-state velocity on the recliner is zero.<br>System B's weekend plan velocity is three errands per hour.<br>The combined system, post-collision, always goes to brunch.<br>Momentum is conserved. This is the whole paper."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, lead author<br><em>Written in the margins of the first draft, 11:47pm, after the third revision</em><br><em>(The research team voted to include it. It was unanimous. The reviewers agreed. It is, in fact, the whole paper.)</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- REFERENCES -->
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling, A.M. (2026). Conservation of relational momentum in the 67/53 age-differential coupled system: A longitudinal field study conducted from the recliner. <em>Journal of Theoretical Romance, 1</em>(1), 1–47. (Lead author notes that the primary data collection environment — the recliner — was not available during the revision period because System B had plans. He revised at the kitchen table. The paper improved.)</li>
+        <li>Newton, I. (1687). <em>Philosophiæ Naturalis Principia Mathematica.</em> Royal Society. (Newton described the laws of motion and universal gravitation. He did not anticipate their application to the Sunday morning inelastic collision between a man on a recliner and a woman with weekend plans. The research team believes he would have found it instructive.)</li>
+        <li>Bernoulli, D. (1738). <em>Hydrodynamica.</em> (Bernoulli described low-pressure zones in high-velocity fluid flow. He did not describe couples walking in parallel generating attraction through shared momentum. The research team submits he was describing exactly that, in the universal way that physics always does.)</li>
+        <li>Einstein, A., Podolsky, B., & Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete? <em>Physical Review, 47</em>(10), 777–780. (The EPR paper. The chicken was not mentioned. The chicken is an implicit case study throughout.)</li>
+        <li>Wyndham-Pierce, C. (2026). Spring constant degradation in pre-2015 mattress infrastructure: Acoustic emission thresholds and the grandchild proximity protocol. <em>Journal of Applied Structural Mechanics, 44</em>(2), 88–112. (The 2009 bed frame is cited in the acknowledgments. It is not cited here. The research team felt this was more appropriate.)</li>
+        <li>Tanaka-Okonkwo, Y. (2026). Quantum entanglement in long-term domestic partnerships: Mathematical proof that undoing it costs more energy than the solar system contains. <em>IEEE Transactions on Information Theory, 70</em>(9), 6201–6244. ("I proved it formally. I then sat with the proof for a while. I recommend it." — author note.)</li>
+        <li>The Chicken (Ongoing). Still in the freezer. Available for consultation. Has not been asked.</li>
+      </ol>
+    </div>
+
+    <!-- ACKNOWLEDGMENTS -->
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to thank the following for their invaluable contributions to this study:</p>
+      <ul>
+        <li><strong>The Recliner:</strong> For providing System A with a stable low-velocity reference frame during periods of maximum inertia. You are not the enemy. You are, however, a contributing factor.</li>
+        <li><strong>The Coffee Machine:</strong> Without whose tireless output, System A would never achieve the minimum activation energy required for Sunday functionality. You are load-bearing infrastructure. You will be replaced when you die. You will be missed.</li>
+        <li><strong>The Chicken (Still in the Freezer):</strong> For serving as a persistent, quantum-mechanically significant reminder that entanglement has real-world consequences. You have appeared in more peer-reviewed figures than most chickens.</li>
+        <li><strong>The Grandchildren:</strong> For forcing the development of robust acoustic dampening protocols and for being entirely unaware of why those protocols exist. Your innocence must be protected at all costs. The memory foam is for you.</li>
+        <li><strong>The Bed Frame (2009–2024, R.I.P.):</strong> You were there from the beginning. The creaking was not a flaw. It was a song of devotion. The spring constant data confirms you gave everything you had. The new mattress is in your honor.</li>
+        <li><strong>Dr. Sterling's Lower Back:</strong> For its ongoing, if reluctant, participation in field research across the full duration of the study. Your sacrifice is documented in the methods section under "Study Limitations." The chiropractor has been informed.</li>
+        <li><strong>The Dishwasher:</strong> The algorithm is correct. It was always correct. This is not addressed in the main text because addressing it would increase the Reynolds Number above 4000 again. It is addressed here, for the record, in the acknowledgments where it cannot cause turbulence.</li>
+      </ul>
+
+      <div class="funding-box" style="margin-top:20px;">
+        <h4>Funding Disclosure</h4>
+        <p>This research was supported by: the <strong>National Endowment for Napping</strong> (Grant No. ZZZ-2026-SHHH); the <strong>MacArthur Genius Grant for People Who Successfully Avoided the Garden Center</strong> (Denied — went to the garden center anyway, brunch was excellent); a <strong>$47.83 reimbursement</strong> from System B "for that nice dinner, you know the one, don't make it weird"; the <strong>International Consortium for Wine-Based Conflict Resolution</strong> (In-kind: 2 bottles Pinot Noir, applied directly to Reynolds Number reduction events); and <strong>Sleep Number®</strong>, who has no idea this paper exists and has not reviewed or endorsed these findings. The research team endorses their mattresses. The research team has not been compensated for this endorsement. The spring constant data speaks for itself.</p>
+        <p style="margin-top:10px;"><em>Conflict of Interest: Dr. Sterling reports a significant personal relationship with System B that may bias his interpretation of resonance data. Dr. Hartwell-Morrow is married to the man who loads the dishwasher wrong. Prof. Bramblescotch owns stock in a memory foam company and sleeps diagonally. The authors confirm that the chicken was still in the freezer as of final submission.</em></p>
+      </div>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">The entangled emotional core is mathematically indestructible. The chicken is still in the freezer. Both of these things are fine.</p>
+
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid var(--ink);padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:var(--ink);opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
-        
-        <div style="flex:1;min-width:165px;max-width:220px;border:2px solid #1a3a5c;padding:12px 14px;background:#e8e4d8;position:relative;">
-          <div style="position:absolute;top:-10px;left:10px;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.22em;padding:2px 9px;text-transform:uppercase;">Current</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#1a3a5c;line-height:1.3;margin-bottom:3px;">The Physics of Intimate Relationships</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.55;">Journal of Theoretical Romance</div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
-          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">Why younger women keep ending up at dinner with men who remember the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
-          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">You are somehow both the prisoner and the warden.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">You are somehow both the prisoner and the warden. A thermodynamic analysis of emotional fortification.</div>
-          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">On carrying everything for everyone and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Relationship Sciences</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
-          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
-          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">Six disciplines confirm why the 67-year-old on a chromed motorcycle wins every time.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction Studies</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
-          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">She already knows. Seventeen disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal of Mature Female Mate Selection</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Philosophy, zoology, neuroscience, game theory confirm: she already knows. Seventeen disciplines. The Puma concolor comparison holds.</div>
-          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">$43,313 lifetime cost. The passenger knew from mile 3.</div>
+          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
-          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
-        </div>
-        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #b8a888;padding:12px 14px;background:#e8e4d8;">
-          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#1a3a5c;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
-          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#0a0a0a;margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
-          <div style="font-size:10px;font-style:italic;color:#0a0a0a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
-          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:#1a3a5c;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid var(--rule-light);padding:12px 14px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
+          <div style="font-size:10px;font-style:italic;color:var(--ink-faint);margin-bottom:9px;line-height:1.4;">Sartre, quantum mechanics, and the Zero New Information Theorem confirm: it was always the pasta.</div>
+          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;text-decoration:none;">Read →</a>
         </div>
       </div>
     </div>
     <!-- SERIES NAVIGATION END -->
 
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Journal of Theoretical Romance · Vol. 1, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · The Entangled Emotional Core Is Mathematically Indestructible</div>
+  </footer>
+
+</div>
 </body>
 </html>
