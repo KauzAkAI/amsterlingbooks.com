@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Apex Predator Hypothesis | Harvard Interdisciplinary Journal of Mature Female Mate Selection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0608;
+    --ink-light: #1a1018;
+    --ink-faint: #2a2028;
+    --paper: #faf5f7;
+    --paper-warm: #f5eef2;
+    --paper-aged: #ecdde6;
+    --rule: #9a7088;
+    --rule-light: #c8a8b8;
+    --accent: #6b0f3a;
+    --accent-mid: #8b1a50;
+    --accent-soft: #aa3060;
+    --gold: #8b6400;
+    --teal: #0a5a5a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #1a0a14;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:1000;
+    opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #3a1a2a, 0 20px 80px rgba(0,0,0,0.7);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    background: linear-gradient(135deg, #1a0614 0%, #3a0a28 40%, #1a0614 100%);
+    border-bottom:3px solid var(--accent-soft);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .masthead::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 30px,
+      rgba(170,48,96,0.04) 30px, rgba(170,48,96,0.04) 31px
+    );
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:#fff;
+    letter-spacing:0.08em;
+    line-height:1;
+    text-shadow:0 0 30px rgba(170,48,96,0.6);
+  }
+
+  .harvard-crest span {
+    display:block;
+    font-size:10px;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color:var(--rule-light);
+    font-weight:400;
+    margin-top:5px;
+  }
+
+  .masthead-journal {
+    text-align:right;
+    font-family:'Playfair Display',serif;
+    color:#fff;
+  }
+
+  .masthead-journal strong {
+    display:block;
+    font-size:14px;
+    letter-spacing:0.06em;
+    margin-bottom:3px;
+  }
+
+  .masthead-journal small {
+    font-size:12px;
+    color:var(--rule-light);
+    font-style:italic;
+    font-family:'EB Garamond',serif;
+  }
+
+  .masthead-strip {
+    background:var(--accent);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament {
+    text-align:center;
+    color:var(--accent-soft);
+    font-size:16px;
+    letter-spacing:0.5em;
+    padding:10px 0;
+    background:var(--paper-aged);
+    border-bottom:1px solid var(--rule);
+    border-top:1px solid var(--rule);
+    user-select:none;
+  }
+
+  .paper-header {
+    padding:50px 60px 36px;
+    border-bottom:3px solid var(--accent);
+    text-align:center;
+    background:var(--paper);
+  }
+
+  .paper-type {
+    font-size:12px;
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-family:'Playfair Display',serif;
+    margin-bottom:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .paper-type::before,.paper-type::after {
+    content:'';
+    display:inline-block;
+    width:50px;
+    height:1px;
+    background:var(--accent);
+  }
+
+  .paper-title {
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    font-weight:900;
+    line-height:1.1;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:-0.02em;
+  }
+
+  .paper-subtitle {
+    font-family:'Playfair Display',serif;
+    font-size:16px;
+    font-weight:400;
+    font-style:italic;
+    color:var(--ink-light);
+    line-height:1.6;
+    max-width:680px;
+    margin:0 auto 24px;
+  }
+
+  .discipline-bands {
+    display:flex;
+    gap:0;
+    margin:20px 0;
+    overflow:hidden;
+    border:1px solid var(--rule);
+  }
+
+  .band {
+    flex:1;
+    padding:10px 8px;
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:10px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:700;
+    line-height:1.4;
+  }
+
+  .band.humanities { background:#f0e8d8; color:#5a3a10; border-right:1px solid var(--rule); }
+  .band.social     { background:#e8f0e8; color:#1a4a1a; border-right:1px solid var(--rule); }
+  .band.natural    { background:#e8eef8; color:#1a2a5a; border-right:1px solid var(--rule); }
+  .band.formal     { background:var(--paper-aged); color:var(--accent); }
+
+  .band .band-label {
+    display:block;
+    font-size:8px;
+    letter-spacing:0.2em;
+    opacity:0.65;
+    margin-bottom:4px;
+  }
+
+  .authors-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:28px 0;
+    padding:20px 0;
+    border-top:1px solid var(--rule-light);
+    border-bottom:1px solid var(--rule-light);
+    text-align:left;
+  }
+
+  .author-card {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    padding:14px 16px;
+    border-top:3px solid var(--accent);
+  }
+
+  .author-card.humanities-card { border-top-color:#8b5a10; }
+  .author-card.social-card     { border-top-color:#1a6a1a; }
+  .author-card.natural-card    { border-top-color:#1a2a8a; }
+  .author-card.formal-card     { border-top-color:var(--teal); }
+
+  .author-name {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:3px;
+    line-height:1.3;
+  }
+
+  .author-name.lead { color:var(--accent); font-size:13px; }
+
+  .author-dept {
+    font-size:10px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-family:'Playfair Display',serif;
+    margin-bottom:4px;
+    opacity:0.75;
+  }
+
+  .author-title {
+    font-size:12px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:1.4;
+    margin-bottom:6px;
+  }
+
+  .author-contact {
+    font-size:11px;
+    font-family:'Source Code Pro',monospace;
+    color:var(--accent-mid);
+    line-height:1.6;
+  }
+
+  .author-quals {
+    font-size:11px;
+    color:var(--ink-faint);
+    margin-top:5px;
+    line-height:1.5;
+    font-style:italic;
+  }
+
+  .dates-row {
+    font-size:13px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:2;
+    margin-top:6px;
+    text-align:center;
+  }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box {
+    background:var(--paper-aged);
+    border-left:4px solid var(--accent);
+    padding:26px 30px;
+    margin-bottom:44px;
+    position:relative;
+  }
+
+  .abstract-box::before {
+    content:'ABSTRACT';
+    position:absolute;
+    top:-10px;
+    left:30px;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.35em;
+    padding:3px 10px;
+  }
+
+  .abstract-text {
+    font-size:17px;
+    line-height:1.85;
+    color:var(--ink);
+    margin-bottom:14px;
+  }
+
+  .keywords {
+    font-size:15px;
+    color:var(--ink-light);
+    font-style:italic;
+    border-top:1px solid var(--rule);
+    padding-top:12px;
+    margin-top:12px;
+  }
+
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+
+  h2 {
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--accent);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+  }
+
+  h2 .sec-num {
+    font-size:12px;
+    letter-spacing:0.15em;
+    color:var(--accent);
+    font-weight:700;
+    flex-shrink:0;
+  }
+
+  h2 .disc-badge {
+    font-size:9px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    padding:2px 8px;
+    font-weight:600;
+    flex-shrink:0;
+    margin-left:auto;
+  }
+
+  .badge-hum  { background:#8b5a10; color:#fff; }
+  .badge-soc  { background:#1a6a1a; color:#fff; }
+  .badge-nat  { background:#1a2a8a; color:#fff; }
+  .badge-for  { background:var(--teal); color:#fff; }
+  .badge-multi { background:var(--accent); color:#fff; }
+
+  h3 {
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    font-weight:600;
+    font-style:italic;
+    color:var(--ink);
+    margin:28px 0 12px;
+    padding-left:16px;
+    border-left:3px solid var(--accent-soft);
+  }
+
+  p {
+    font-size:18px;
+    line-height:1.85;
+    margin-bottom:16px;
+    text-align:justify;
+    color:var(--ink);
+    hyphens:auto;
+  }
+
+  p.italic-note {
+    font-style:italic;
+    color:var(--ink-light);
+    font-size:17px;
+    padding:12px 20px;
+    border-left:3px solid var(--rule);
+    background:var(--paper-warm);
+  }
+
+  .equation-box {
+    background:var(--paper-warm);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--teal);
+    padding:20px 32px;
+    text-align:center;
+    margin:24px 0;
+  }
+
+  .equation {
+    font-family:'Source Code Pro',monospace;
+    font-size:17px;
+    font-weight:600;
+    color:var(--ink);
+    letter-spacing:0.04em;
+    margin-bottom:10px;
+    line-height:1.8;
+  }
+
+  .equation-label {
+    font-size:15px;
+    color:var(--ink-light);
+    font-style:italic;
+  }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+
+  .table-caption {
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+    color:var(--ink);
+    margin-bottom:10px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    font-style:italic;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+
+  thead tr { background:var(--accent); color:#fff; }
+
+  thead th {
+    padding:11px 14px;
+    text-align:left;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(107,15,58,0.06); transition:background 0.2s; }
+
+  tbody td {
+    padding:11px 14px;
+    border-bottom:1px solid var(--rule-light);
+    line-height:1.6;
+    color:var(--ink);
+    font-size:15px;
+    vertical-align:top;
+  }
+
+  tbody td:first-child {
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--accent);
+    width:22%;
+  }
+
+  .table-note {
+    font-size:14px;
+    font-style:italic;
+    color:var(--ink-light);
+    text-align:center;
+    margin-top:10px;
+    padding:0 20px;
+    line-height:1.6;
+  }
+
+  .footnote {
+    font-size:16px;
+    color:var(--ink);
+    font-style:italic;
+    padding:14px 20px;
+    border-left:4px solid var(--accent);
+    margin:20px 0;
+    background:var(--paper-warm);
+    line-height:1.8;
+  }
+
+  .footnote sup { color:var(--accent); font-weight:700; font-style:normal; }
+
+  .case-study {
+    border:1px solid var(--rule);
+    background:var(--paper-warm);
+    padding:22px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+
+  .case-study::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--accent);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:10px;
+    letter-spacing:0.2em;
+    padding:3px 12px;
+    text-transform:uppercase;
+  }
+
+  .game-matrix {
+    display:grid;
+    grid-template-columns:auto 1fr 1fr;
+    gap:2px;
+    background:var(--rule);
+    margin:24px 0;
+    font-size:15px;
+  }
+
+  .gm-header { background:var(--ink); color:#fff; padding:10px 14px; font-family:'Playfair Display',serif; font-weight:700; font-size:12px; letter-spacing:0.1em; }
+  .gm-her    { background:var(--accent); color:#fff; padding:12px 14px; font-weight:600; }
+  .gm-him    { background:var(--teal); color:#fff; padding:12px 14px; font-weight:600; }
+  .gm-cell   { background:var(--paper); padding:12px 14px; line-height:1.6; }
+  .gm-cell.good { background:#e8f4e8; }
+  .gm-cell.bad  { background:#fce8e8; }
+
+  .stats-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    margin:24px 0;
+    background:var(--rule);
+  }
+
+  .stat-cell {
+    background:var(--paper);
+    padding:18px 14px;
+    text-align:center;
+  }
+
+  .stat-num {
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:var(--accent);
+    display:block;
+    line-height:1;
+    margin-bottom:6px;
+  }
+
+  .stat-label {
+    font-size:12px;
+    color:var(--ink-faint);
+    font-style:italic;
+    line-height:1.4;
+  }
+
+  .pull-quote {
+    border-top:3px double var(--accent);
+    border-bottom:3px double var(--accent);
+    padding:28px 40px;
+    margin:36px 0;
+    text-align:center;
+  }
+
+  .pull-quote blockquote {
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-style:italic;
+    color:var(--ink);
+    line-height:1.6;
+    margin-bottom:14px;
+  }
+
+  .pull-quote cite {
+    font-size:14px;
+    color:var(--ink-faint);
+    font-style:italic;
+    display:block;
+    line-height:1.7;
+  }
+
+  .maslow-pyramid {
+    margin:24px auto;
+    max-width:560px;
+    text-align:center;
+  }
+
+  .maslow-level {
+    padding:12px 20px;
+    margin:2px auto;
+    font-family:'Playfair Display',serif;
+    font-size:14px;
+    font-weight:600;
+    color:#fff;
+    position:relative;
+    line-height:1.4;
+  }
+
+  .maslow-level .annotation {
+    font-size:12px;
+    font-weight:400;
+    font-style:italic;
+    opacity:0.9;
+    display:block;
+    margin-top:2px;
+  }
+
+  .dropcap::first-letter {
+    font-family:'Playfair Display',serif;
+    font-size:62px;
+    font-weight:900;
+    float:left;
+    line-height:0.78;
+    margin-right:8px;
+    margin-top:8px;
+    color:var(--accent);
+  }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent); margin:44px 0; }
+
+  .center-ornament {
+    text-align:center;
+    color:var(--accent-soft);
+    font-size:20px;
+    letter-spacing:0.6em;
+    margin:20px 0;
+    user-select:none;
+  }
+
+  .discipline-header {
+    background:var(--paper-aged);
+    border:1px solid var(--rule);
+    border-left:5px solid var(--accent);
+    padding:10px 20px;
+    margin:40px 0 20px;
+    font-family:'Playfair Display',serif;
+    font-size:12px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+  }
+
+  .discipline-header.hum  { border-left-color:#8b5a10; color:#8b5a10; }
+  .discipline-header.soc  { border-left-color:#1a6a1a; color:#1a6a1a; }
+  .discipline-header.nat  { border-left-color:#1a2a8a; color:#1a2a8a; }
+  .discipline-header.for  { border-left-color:var(--teal); color:var(--teal); }
+
+  .references ol { padding-left:24px; }
+
+  .references li {
+    font-size:16px;
+    line-height:1.75;
+    margin-bottom:14px;
+    color:var(--ink);
+  }
+
+  .acknowledgments {
+    background:var(--paper-aged);
+    padding:28px 32px;
+    border:1px solid var(--rule);
+    margin-top:40px;
+    font-size:17px;
+    line-height:1.85;
+  }
+
+  .paper-footer {
+    background:linear-gradient(135deg, #1a0614, #3a0a28);
+    color:#fff;
+    padding:22px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    border-top:3px solid var(--accent-soft);
+  }
+
+  .footer-title {
+    font-family:'Playfair Display',serif;
+    font-size:12px;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--rule-light);
+  }
+
+  .footer-note {
+    font-style:italic;
+    color:var(--rule-light);
+    opacity:0.7;
+    font-family:'EB Garamond',serif;
+    font-size:13px;
+  }
+
+  @media(max-width:700px) {
+    .journal { margin:0; }
+    .masthead-top,.paper-header,.paper-body { padding-left:24px; padding-right:24px; }
+    .masthead-strip { padding-left:24px; padding-right:24px; }
+    .paper-title { font-size:26px; }
+    .authors-grid { grid-template-columns:1fr; }
+    .stats-grid { grid-template-columns:repeat(2,1fr); }
+    .discipline-bands { flex-wrap:wrap; }
+    .game-matrix { font-size:13px; }
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Interdisciplinary Journal of Mature Female Mate Selection</strong>
+        <small>Special Issue: She Knows Exactly What She Wants. She Always Has.</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 9, Issue 1 &nbsp;·&nbsp; Peer-Reviewed Across Four Academic Domains by People Who All Kept Using the Word "Obviously" &nbsp;·&nbsp; ISSN: Not-Real-But-Extremely-Peer-Reviewed
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Multi-Disciplinary Research — Humanities · Social Sciences · Natural Sciences · Formal Sciences</div>
+
+    <h1 class="paper-title">The Apex Predator Hypothesis</h1>
+    <p class="paper-subtitle">A Comprehensive Cross-Disciplinary Investigation Into the Mature Female Selection of Younger Male Partners, Encompassing Philosophy, Evolutionary Biology, Game Theory, Neuroscience, Linguistics, Information Theory, and the Specific Expression on a 28-Year-Old Man's Face When He Realizes He Is Absolutely Out of His Depth and Finds This Somehow Excellent</p>
+
+    <div class="discipline-bands">
+      <div class="band humanities">
+        <span class="band-label">Humanities</span>
+        Philosophy · Literary Theory · Linguistics · Art History
+      </div>
+      <div class="band social">
+        <span class="band-label">Social Sciences</span>
+        Sociology · Anthropology · Psychology · Game Theory
+      </div>
+      <div class="band natural">
+        <span class="band-label">Natural Sciences</span>
+        Evolutionary Biology · Neuroscience · Zoology · Endocrinology
+      </div>
+      <div class="band formal">
+        <span class="band-label">Formal Sciences</span>
+        Information Theory · Statistics · Decision Theory · Applied Mathematics
+      </div>
+    </div>
+
+    <!-- AUTHORS -->
+    <div class="authors-grid">
+      <div class="author-card humanities-card">
+        <div class="author-dept">Humanities Division</div>
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Female Narrative Agency<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="325b1c405344575c41455d5d56725453411c5a5340445340561c575647">[email&#160;protected]</a><br>
+          Barker Center 412 · (617) 555-0181
+        </div>
+        <div class="author-quals">D.Phil. Comparative Literature (Oxford), FRSL. Author of "She Was Never Waiting: Female Agency in the Western Canon, 400 BCE–Tuesday" (Oxford UP, 2021). Lead author. Has strong opinions. Has always had strong opinions. This is, the research team submits, on-brand.</div>
+      </div>
+
+      <div class="author-card social-card">
+        <div class="author-dept">Social Sciences Division</div>
+        <div class="author-name">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Catastrophic Male Decision-Making<br>Harvard Business School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96e5e2f3e4fafff8f1d6fef4e5b8fef7e4e0f7e4f2b8f3f2e3">[email&#160;protected]</a><br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard), MBA (Wharton). Contributed the game theory matrix and behavioral economics sections. Described the experience asymmetry findings as "humbling in a way I hadn't anticipated." Has been cited in six prior papers in this journal and is now reconsidering several life choices.</div>
+      </div>
+
+      <div class="author-card social-card">
+        <div class="author-dept">Social Sciences Division</div>
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Anthropology & Cross-Cultural Mate Selection<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa91d49b899b948e9fba9c9b89d4929b888c9b889ed49f9e8f">[email&#160;protected]</a><br>
+          Peabody Museum 208 · (617) 555-0247
+        </div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Conducted the cross-cultural survey data across 34 societies. Noted that every single one of them has a version of this phenomenon, which he describes as "the most consistent cross-cultural finding in my 22-year career, and I have been keeping that to myself at dinner parties until now."</div>
+      </div>
+
+      <div class="author-card natural-card">
+        <div class="author-dept">Natural Sciences Division</div>
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience & Endocrinology<br>Harvard Medical School</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f080de86959e9b91849182919d919eb0989d83de98918286918294de959485">[email&#160;protected]</a><br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Pioneer of the "confidence peak" neuroimaging research. Her paper "The Female Brain at 50: An fMRI Study of Who Is Now Running This" (Nature, 2023) had 2,847 citations in its first year. She says this modestly. She says everything modestly. The data is not modest.</div>
+      </div>
+
+      <div class="author-card natural-card">
+        <div class="author-dept">Natural Sciences Division</div>
+        <div class="author-name">Prof. Desmond Osei-Whitfield III, Ph.D., FZS</div>
+        <div class="author-title">Gordon McKay Professor of Evolutionary Zoology<br>Harvard Museum of Natural History</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9ad0918d9b97be919b9cd0969f8c889f8c9ad09b9a8b">[email&#160;protected]</a><br>
+          MCZ Building 441 · (617) 555-0388
+        </div>
+        <div class="author-quals">Ph.D. Evolutionary Biology (Cambridge), Fellow of the Zoological Society. World authority on Puma concolor behavior. Was not initially told this paper would compare actual cougars to human ones. Is now deeply committed to the comparison and has submitted a follow-up proposal. The comparison, he confirms, holds better than it has any right to.</div>
+      </div>
+
+      <div class="author-card formal-card">
+        <div class="author-dept">Formal Sciences Division</div>
+        <div class="author-name">Dr. Yuki Tanaka-Okonkwo, Ph.D., IEEE Fellow</div>
+        <div class="author-title">Professor of Information Theory & Applied Mathematics<br>Harvard John A. Paulson SEAS</div>
+        <div class="author-contact">
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b42154f5a555a505a7b485e5a4815535a494d5a495f155e5f4e">[email&#160;protected]</a><br>
+          Maxwell Dworkin 519 · (617) 555-0461
+        </div>
+        <div class="author-quals">Ph.D. Mathematics (Princeton), IEEE Fellow. Developed the Experience Bandwidth Theorem presented in Section 10. Initially submitted this as a pure mathematics paper to a mathematics journal. The mathematics journal asked if she was feeling all right. She submitted it here instead. It is, mathematically, airtight.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: By Six People Who Each Thought This Was Someone Else's Idea &nbsp;·&nbsp;
+      Peer-Reviewed: Extensively, By Colleagues Who Kept Saying "Well, Obviously" &nbsp;·&nbsp;
+      Accepted: After Reviewers Stopped Laughing Long Enough to Sign the Forms &nbsp;·&nbsp;
+      Published: In the Interest of Science, Self-Actualization, and Younger Men Everywhere Who Deserve Fair Warning
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <!-- ABSTRACT -->
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the Apex Predator Phenomenon (APP): the documented tendency of women in the 40–60 age cohort to seek, select, and successfully acquire younger male partners, deploying a combined arsenal of self-knowledge, neurological confidence, evolutionary fitness, accumulated social intelligence, and the specific quality of knowing exactly what they want and being prepared to say so out loud in complete sentences, which the research team's male consultants described as "terrifying and then absolutely wonderful" in that order.</p>
+      <p class="abstract-text">Drawing upon the full spectrum of academic inquiry — from Nietzsche's will to power to information-theoretic bandwidth analysis to the literal hunting behavior of <em>Puma concolor</em> in the Sierra Nevada — we demonstrate that the mature female preference for younger male partners is not, as popular culture has occasionally suggested, a compensation for anything. It is, the data confirm, a <strong>rational optimization.</strong> She is not settling downward. She is selecting specifically. The distinction is everything, and we have seventeen disciplines confirming it.</p>
+      <p class="abstract-text">Our central findings: (1) the mature female at peak confidence operates with an information advantage so significant that game theory classifies it as a dominant strategy regardless of the younger male's countermove; (2) the neuroscience of female confidence peaks between ages 45–55 in ways that earlier research either missed or, the team suspects, elected not to publish; (3) the actual <em>Puma concolor</em> — the mountain lion — is a genuinely instructive behavioral model and Prof. Osei-Whitfield would like everyone to stop laughing because the comparison is rigorous; and (4) the younger male's reported experience of this dynamic, when studied longitudinally, can be summarized as: <strong>disoriented, then fascinated, then grateful.</strong></p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Apex Predator Phenomenon · Experience Asymmetry · Confidence Peak Theory · Puma concolor Behavioral Homology · Game Theory Dominant Strategy · Information Bandwidth Advantage · Maslow's Hierarchy (She's at the Top) · The Nietzsche Problem · Why She Already Knows · Younger Male Longitudinal Gratitude Index · She Did Not Come This Far to Ask Permission
+      </div>
+    </div>
+
+    <!-- SECTION 1 INTRO -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: On Naming the Phenomenon <span class="disc-badge badge-multi">Multi-Disciplinary</span></h2>
+
+      <p class="dropcap">We begin with a linguistic note that the entire research team insisted upon including before the science, because the linguistics, it turns out, is itself revealing. The word "cougar," as applied to mature women who pursue younger men, entered North American popular usage in the early 2000s. It is borrowed from <em>Puma concolor</em> — the mountain lion, the largest unspotted cat in the Western Hemisphere, an apex predator so efficient and so precisely adapted to its environment that wildlife biologists describe it with a reverence they do not typically extend to other species.</p>
+
+      <p>The research team notes that whoever coined this term — intending, one presumes, a mild cultural insult — accidentally paid the highest possible compliment. The apex predator of the American wilderness: solitary, self-sufficient, territorial, extraordinarily capable, unhurried in its assessment, and when it decides to move, <em>fast.</em> This is the animal the popular imagination reached for when it needed a metaphor. The popular imagination, the research team submits, was not wrong. It just didn't know it was being complimentary.</p>
+
+      <p>We proceed with this in mind: the word these women have been given is the name of an apex predator. We will treat it accordingly.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">34</span>
+          <span class="stat-label">Cultures surveyed — all had a version of this phenomenon</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">45–55</span>
+          <span class="stat-label">Age range of documented female confidence peak (years)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">94%</span>
+          <span class="stat-label">Younger male subjects reporting eventual positive outcome</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Younger male subjects who "did not see it coming" (self-reported)</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team wishes to disclose that this paper was originally proposed to the Harvard IRB under the title "Mate Selection Dynamics in Older Female Cohorts: A Multi-Disciplinary Analysis." The IRB approved it. The research team subsequently realized that "Mate Selection Dynamics in Older Female Cohorts" was the single least accurate description of what they were studying and changed the internal working title. The IRB was not notified. The IRB would have approved the new title also but it was funnier not to tell them.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- HUMANITIES SECTION -->
+    <div class="discipline-header hum">◆ &nbsp; Part I: The Humanities — Philosophy, Literary Theory, Linguistics, Art History</div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> Philosophy: Nietzsche, the Will to Power, and Tuesday Night <span class="disc-badge badge-hum">Humanities</span></h2>
+
+      <p>Friedrich Nietzsche's concept of the <em>Wille zur Macht</em> — the will to power — is frequently misunderstood as a theory of aggression. It is not. Nietzsche's will to power describes the fundamental drive of living things not merely to survive but to <em>become</em> — to grow, to master, to express one's fullest capacity, to refuse the diminishment that comfort and convention offer as a substitute for genuine life.</p>
+
+      <p>The mature woman who, having spent years in the service of others' needs, having raised children, sustained households, built careers, and done all of this with the quiet competence that goes largely unremarked — who then looks at the available options in her cohort and makes a different choice — is, in Nietzsche's framework, not having a crisis. She is having a <em>becoming.</em></p>
+
+      <h3>2.1 &nbsp; Nietzsche's Three Metamorphoses, Applied</h3>
+      <p>In <em>Thus Spoke Zarathustra</em>, Nietzsche describes three metamorphoses of the spirit: the camel (bearing burdens dutifully), the lion (refusing and asserting freedom), and the child (creative, self-directed, beginning again without the weight of previous obligations). Prof. Ravenswood-Clarke's contribution to this section documents that the trajectory of the mature woman in the APP context follows this arc with remarkable precision — and that the lion stage, which Nietzsche saw as transitional, appears in this population to be being enjoyed thoroughly rather than passed through quickly.</p>
+
+      <p class="italic-note">"She has been the camel for twenty years. She has carried what she was given and she carried it well and nobody thanked her adequately. She is done being the camel. She is now the lion. She is looking at a 31-year-old who has absolutely no idea what is about to happen to him and frankly neither does Nietzsche but we can interpolate." — Prof. Ravenswood-Clarke, field notes, October 2023</p>
+
+      <div class="footnote"><sup>‡</sup> Prof. Ravenswood-Clarke notes, for completeness, that Simone de Beauvoir addressed this dynamic in <em>The Second Sex</em> (1949) with considerable precision and considerably less humor than this paper, and that the 75 years between de Beauvoir's analysis and this paper represent a significant lag in the field's willingness to treat the subject as scientifically legitimate. She has opinions about this lag. This paper is some of those opinions expressed through the medium of peer review.</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Linguistics: What "Cougar" Actually Means <span class="disc-badge badge-hum">Humanities</span></h2>
+
+      <p>The linguistic analysis of the term "cougar" reveals a semantic evolution that the research team finds instructive. Originally deployed as mild social censure — a raised eyebrow in noun form — the word has undergone a documented process of reclamation and redeployment by the very population it was meant to characterize, a process linguists call <strong>amelioration</strong>: the improvement of a word's connotations over time.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Semantic Evolution of "Cougar": From Intended Insult to Accurate Ecological Descriptor</div>
+        <table>
+          <thead>
+            <tr><th>Era</th><th>Intended Meaning</th><th>Actual Zoological Meaning</th><th>Net Outcome</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Early 2000s (deployment)</td>
+              <td>"Older woman pursuing younger men" — intended as mildly dismissive or cautionary</td>
+              <td>Apex predator. Top of food chain. 200 lbs of focused, self-sufficient hunting excellence. Territorial range of up to 150 square miles. Avoids other adults. Operates alone. Extremely effective.</td>
+              <td>The insult accidentally selected the most admirable animal available. Backfired at the taxonomic level.</td>
+            </tr>
+            <tr>
+              <td>2005–2015 (reclamation)</td>
+              <td>Population so named began using the term positively. Social science records the emergence of "cougar" as self-identifier in dating profiles, social media, and merchandise.</td>
+              <td>Puma concolor population remained unchanged. Continued being excellent. Unaware of cultural debate.</td>
+              <td>Amelioration confirmed. The word improved in meaning because the people it named recognized the compliment the namers had accidentally delivered.</td>
+            </tr>
+            <tr>
+              <td>2015–present (normalization)</td>
+              <td>Descriptor now in wide, largely neutral use. Negative connotation substantially eroded. Word now primarily signals: "a woman who knows what she wants." </td>
+              <td>Puma concolor still an apex predator. Still excellent. Still not aware this is happening.</td>
+              <td>The research team considers this outcome a success for both the humans and the mountain lions, though only one group knows about it.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Note: The research team searched for a comparably sized mammal to use as insult material for a 28-year-old man pursuing an older woman and found no equivalent term in widespread use, which is itself a significant sociological data point that Prof. Asante-Morrison addresses in Section 5.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> Literary Theory & Art History: She Was Never Waiting <span class="disc-badge badge-hum">Humanities</span></h2>
+
+      <p>The literary archive documents women of mature confidence selecting younger or less powerful partners not as passive acceptance but as active, deliberate choice across every major literary tradition. Cleopatra and Mark Antony (she was older, she was more powerful, she absolutely knew what she was doing and the historical record confirms she did it exceptionally well). Circe and Odysseus. The Wife of Bath, who had five husbands and a theory about all of them. Emma Hamilton. George Sand. Colette, who not only lived this but wrote seventeen books about it, all of which remain more instructive than any dating advice column published in the last century.</p>
+
+      <p>Prof. Ravenswood-Clarke's analysis identifies what she terms the <strong>Agency Constant</strong>: across literary depictions spanning 2,400 years, the mature woman in these pairings is consistently the agent — the one who decides, who initiates, who frames the terms. The younger man is consistently described as: initially startled, subsequently mesmerized, ultimately changed. The narrative arc is remarkably consistent. The research team notes that 2,400 years of consistent data is, in most disciplines, considered a robust finding.</p>
+
+      <div class="footnote"><sup>§</sup> The art historical record is even more explicit. The research team refers readers to the full body of work depicting mature female figures across Greek, Roman, Renaissance, and Baroque traditions, in which the qualities most consistently emphasized are: directness of gaze, authority of posture, and the specific facial expression that the research team's art historian, Prof. Ravenswood-Clarke, describes as "I have assessed you completely and made a decision and you will find out what that decision is when I tell you." The research team notes that this expression appears in no formal art-historical taxonomy and submits it for consideration.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SOCIAL SCIENCES -->
+    <div class="discipline-header soc">◆ &nbsp; Part II: The Social Sciences — Sociology, Anthropology, Psychology, Game Theory</div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Anthropology: Every Culture Has Her <span class="disc-badge badge-soc">Social Sciences</span></h2>
+
+      <p>Dr. Asante-Morrison's cross-cultural survey represents the most geographically comprehensive data in this paper, covering 34 societies across six continents, spanning documented human behavior from prehistoric artifact analysis through contemporary ethnographic field study. His central finding is stated here without elaboration because it requires none:</p>
+
+      <p><strong>Every culture surveyed has a version of the Apex Predator Phenomenon. Every single one. Without exception.</strong></p>
+
+      <p>The terminology varies. The social framing varies. The degree of celebration vs. mild social eyebrow-raising varies. What does not vary is the phenomenon itself: the mature, experienced, self-possessed woman who selects a younger partner — and the consistent outcome for both parties when she does. Across 34 cultures, on 6 continents, in societies ranging from contemporary urban environments to traditional agricultural communities, the recorded outcome for younger male partners in these relationships is: <em>improved wellbeing metrics, accelerated social development, and a statistically significant tendency to describe the experience, in retrospect, as formative.</em></p>
+
+      <p>"Formative" appears in 23 of 34 cultural data sets as the functional equivalent of whatever local term was used. Dr. Asante-Morrison has proposed the term cross-culturally universal.</p>
+
+      <div class="footnote">** Dr. Asante-Morrison notes that the one data point that varies most significantly across cultures is the social response to the phenomenon — ranging from active celebration (documented in 11 societies) through neutral acceptance (14 societies) through mild social commentary (7 societies) through active disapproval (2 societies). He notes that the two societies with active disapproval are also the two societies with the lowest documented female autonomy metrics across all other measures, which he describes as "not a coincidence and I will be available to discuss this at the symposium."</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Psychology: Maslow Was Describing Her <span class="disc-badge badge-soc">Social Sciences</span></h2>
+
+      <p>Abraham Maslow's hierarchy of needs — physiological, safety, love and belonging, esteem, self-actualization — is among the most cited frameworks in psychology. It describes human motivation as pyramidal: the lower levels must be met before the upper ones become operative. Self-actualization, the pinnacle, is the state of becoming fully oneself: authentic, creative, unconstrained by external approval, directed from internal rather than external authority.</p>
+
+      <p>The research team's psychological analysis finds that the mature woman in the APP context has, in most cases, functionally completed the lower four levels of the hierarchy and is operating at self-actualization. The younger man she is considering is, statistically, somewhere between esteem and love-and-belonging, still in the process of constructing those levels, and has not yet accessed the self-actualization floor because the elevator does not skip levels.</p>
+
+      <!-- MASLOW PYRAMID -->
+      <div class="maslow-pyramid">
+        <div class="maslow-level" style="width:40%;background:#6b0f3a;">
+          Self-Actualization
+          <span class="annotation">She is here. Has been for a while. Enjoying it.</span>
+        </div>
+        <div class="maslow-level" style="width:55%;background:#8b1a50;">
+          Esteem
+          <span class="annotation">She passed through this. It was fine. She doesn't need it from you.</span>
+        </div>
+        <div class="maslow-level" style="width:68%;background:#aa3060;">
+          Love & Belonging
+          <span class="annotation">She has this. She is choosing more of it, deliberately.</span>
+        </div>
+        <div class="maslow-level" style="width:82%;background:#c44878;">
+          Safety & Security
+          <span class="annotation">She built this herself. It is extremely load-bearing.</span>
+        </div>
+        <div class="maslow-level" style="width:95%;background:#d46090;">
+          Physiological Needs
+          <span class="annotation">Handled. Has been handled. Moving on.</span>
+        </div>
+        <p style="font-size:12px;font-style:italic;color:var(--ink-faint);margin-top:10px;">Maslow's Hierarchy as Applied to the Subject Population (n = mature women who have seen some things)</p>
+        <p style="font-size:12px;font-style:italic;color:var(--ink-faint);">He is approximately here: ↑ (somewhere in esteem, probably)</p>
+      </div>
+
+      <p>The psychological implication is significant: a woman operating at self-actualization is not seeking validation from a younger partner. She is not seeking completion, rescue, status, or proof of anything. She is seeking what self-actualized people seek: genuine connection, enjoyment, experience, and the specific pleasure of choosing something because she wants it rather than because she needs it.</p>
+
+      <p>This is, the research team notes, an entirely different dynamic than most relationship frameworks anticipate — and it is the reason the younger man, who is accustomed to relationships as transactions of mutual need-fulfillment, finds the experience disorienting. There is no need to fill. There is no gap to step into. There is only a woman who has decided she would like his company, and is extending the offer, and is prepared to rescind it if he makes it weird.</p>
+
+      <div class="footnote">†† Subject F-52, asked what she was looking for in a younger partner, said: "Someone who finds things interesting. Who laughs. Who hasn't calcified yet." When asked to elaborate on "calcified," she thought for a moment and said: "You know how some men get to 50 and they've decided everything they're going to think? He hasn't done that yet. There's still movement." The research team has been thinking about this answer for eleven months.</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> Game Theory: The Dominant Strategy Matrix <span class="disc-badge badge-soc">Social Sciences</span></h2>
+
+      <p>Dr. Sterling's contribution is the formal game-theoretic analysis of the interaction between the mature female subject and the younger male target. Game theory, developed by von Neumann and Morgenstern (1944) and extended by Nash (1950), provides mathematical tools for analyzing strategic interactions between rational agents. The key concept for our purposes is the <strong>dominant strategy</strong>: a choice that produces the best available outcome regardless of what the other player does.</p>
+
+      <p>The research team found, to Dr. Sterling's considerable personal discomfort, that the mature female in this dynamic possesses a dominant strategy across essentially every possible game state. We present the analysis without further apology.</p>
+
+      <!-- GAME THEORY MATRIX -->
+      <div class="table-caption" style="margin-bottom:8px;">Table 2 — Game Theory Matrix: Mature Female (Player 1) vs. Younger Male (Player 2)</div>
+      <div class="game-matrix">
+        <div class="gm-header"></div>
+        <div class="gm-header gm-him">He Pursues Enthusiastically</div>
+        <div class="gm-header gm-him">He Plays It Cool / Hesitates</div>
+        <div class="gm-her">She Initiates / Expresses Interest</div>
+        <div class="gm-cell good">She gets what she wanted. He gets what he didn't know he wanted until now. Both parties win. She is not surprised by this outcome. She calculated it before she made the first move. <strong>Outcome: Optimal.</strong></div>
+        <div class="gm-cell good">She is not bothered by his hesitation. She has seen hesitation before. She is patient with a purpose. He will either come around or he won't. She has plans either way. His hesitation is not her emergency. <strong>Outcome: She waits. He decides. Clock is ticking.</strong></div>
+        <div class="gm-her">She Declines / Reassesses</div>
+        <div class="gm-cell bad">He pursued. She reconsidered. He is now having the novel experience of being the one who wanted something and did not receive it. This is, for many younger men, the first time this has happened. It is educational. She moves on without visible distress. <strong>Outcome: He learns something important.</strong></div>
+        <div class="gm-cell">Neither engaged. Nothing happened. She returned to her life, which was already good before this interaction. He continues not knowing what he passed on. She ordered the dessert. <strong>Outcome: She's fine. He will wonder.</strong></div>
+      </div>
+      <p class="table-note">Note: In every quadrant of this matrix, the mature female subject's outcome is either positive or neutral. There is no quadrant in which her outcome is negative. Dr. Sterling notes this is the mathematical definition of a dominant strategy and that he has not encountered a cleaner example in twelve years of game theory research, which he is also processing.</p>
+
+      <h3>7.1 &nbsp; The Information Asymmetry Advantage</h3>
+      <p>Game theory's power rests heavily on information: a player with more and better information about the game state is better positioned to select optimal strategies. The mature female subject possesses a structural information advantage over her younger counterpart that Dr. Sterling has quantified and that is, frankly, not close.</p>
+      <p>She has played this game longer. She has more data on what she wants, what she doesn't want, what works, what doesn't, what she is willing to negotiate on and what she is not. She has been disappointed enough times to have a calibrated understanding of her own minimum acceptable standard. She has been happy enough times to know what happiness actually feels like as opposed to its less expensive simulation. She knows the difference between a good morning and a performance of a good morning.</p>
+      <p>He is working from substantially less data. He is, in information-theoretic terms, operating with a smaller training set, lower model confidence, and higher prediction error. He thinks he knows what he wants. She knows whether he does.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- NATURAL SCIENCES -->
+    <div class="discipline-header nat">◆ &nbsp; Part III: The Natural Sciences — Evolutionary Biology, Neuroscience, Zoology, Endocrinology</div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Zoology: The Actual Cougar — A Behavioral Comparison <span class="disc-badge badge-nat">Natural Sciences</span></h2>
+
+      <p>Prof. Osei-Whitfield has requested that the other authors stop laughing during this section. He acknowledges the section is funny. He insists it is also rigorous. Both are true. He has the data.</p>
+
+      <p><em>Puma concolor</em> — the mountain lion, puma, or cougar — is the largest felid in North America and one of the most successful predators on the continent. It inhabits a range from the Canadian Yukon to the southern Andes, adapts to virtually any environment, and operates with a combination of patience, efficiency, and precise timing that wildlife biologists have studied for decades. The following comparison between <em>Puma concolor</em> behavioral patterns and human Apex Predator Phenomenon characteristics is presented in the spirit of sincere scientific inquiry and not, Prof. Osei-Whitfield emphasizes, as a joke, even though he acknowledges it sounds like one.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 — Behavioral Homology: Puma concolor vs. Human APP Subject (Mature Female Cohort)</div>
+        <table>
+          <thead>
+            <tr><th>Behavioral Trait</th><th>Puma concolor (Actual Cougar)</th><th>Human APP Subject</th><th>Correspondence</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Territory</td>
+              <td>Large, clearly defined personal range. Does not share without deliberate choice. Marks boundaries. Enforces them.</td>
+              <td>Established life: career, home, social network, personal space. Does not surrender these for an unverified prospect. Boundaries clearly communicated. First violation typically the last.</td>
+              <td>Strong. The territory is real in both cases and is not under negotiation.</td>
+            </tr>
+            <tr>
+              <td>Hunting Strategy</td>
+              <td>Observes extensively before committing. Assesses multiple factors simultaneously. Does not telegraph approach. Moves when conditions are optimal, not before.</td>
+              <td>Assesses extensively before expressing interest. Reads the room, the person, the subtext, the subtext of the subtext. Does not reveal hand prematurely. Initiates when she has decided, which is after considerably more analysis than the target is aware of.</td>
+              <td>Exact. The younger man believes the interest is spontaneous. It is not spontaneous. The approach was planned before he knew she had noticed him.</td>
+            </tr>
+            <tr>
+              <td>Independence</td>
+              <td>Solitary by nature. Not because other cougars are unavailable but because independence is the optimal operational state. Selects company; is not compelled by loneliness.</td>
+              <td>Has built a full life that does not require a partner to be complete. Is not selecting from scarcity. Is selecting from abundance, with the specific and unhurried discernment of someone who could also just not bother and be fine.</td>
+              <td>Exact and critical. She is not there because she needs to be. This distinction, the research team notes, changes everything about the dynamic.</td>
+            </tr>
+            <tr>
+              <td>Efficiency</td>
+              <td>Does not expend energy unnecessarily. When it moves, it commits. High success rate per attempt because attempts are not made until success probability is high.</td>
+              <td>Does not pursue ambivalent targets, tolerate prolonged ambiguity, or invest in low-probability returns. When she decides, she acts. Success rate per expressed interest: documented at 78.3% in field study. The 21.7% failure rate she describes as "fine, honestly."</td>
+              <td>Strong. The efficiency is a feature of having been inefficient before and learning from it, which the younger man has not yet had time to do.</td>
+            </tr>
+            <tr>
+              <td>Response to Challenge</td>
+              <td>Puma concolor does not bluff. Does not posture. Does not escalate unnecessarily. But when challenged, the response is immediate, proportionate, and effective. There is no second challenge.</td>
+              <td>Does not bluff. Does not perform patience she doesn't have. Does not accept treatment below her established minimum standard because she is lonely or because it's been a while. When a line is crossed, the line is named. Once. There is no second crossing.</td>
+              <td>Exact. The younger man who mistakes patience for passivity learns otherwise. This is also documented in the case studies. It is described as clarifying.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Prof. Osei-Whitfield notes: "I have spent 31 years studying large felid behavior. I did not expect my work to be most applicable in this context. I am not disappointed. The comparison is more exact than anything I anticipated when I agreed to join this research team. I have asked my graduate students not to read this paper until after I grade their dissertations."</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 9</span> Neuroscience & Endocrinology: The Confidence Peak <span class="disc-badge badge-nat">Natural Sciences</span></h2>
+
+      <p>Dr. Venkataraman-Holloway's neuroimaging research represents, in the other authors' consensus opinion, the section most likely to generate controversy and the section most thoroughly supported by data. We present her findings in full.</p>
+
+      <h3>9.1 &nbsp; What Happens in the Female Brain Between 45 and 55</h3>
+      <p>The conventional narrative of female aging and neurology has historically emphasized loss: declining estrogen, reduced neuroplasticity, the menopause transition. This narrative is not false. It is also, Dr. Venkataraman-Holloway's research demonstrates, extraordinarily incomplete — in the same way that describing a structural renovation by listing only what was demolished is technically accurate but misses the point.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 4 — Neurological and Hormonal Profile: Female Brain, 45–55 Year Cohort (fMRI & Endocrine Data, n=847)</div>
+        <table>
+          <thead>
+            <tr><th>Neural/Hormonal System</th><th>Conventional Narrative</th><th>What the Data Actually Show</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prefrontal Cortex (Executive Function)</td>
+              <td>"Declining with age"</td>
+              <td>Increased myelin density and optimized connectivity compared to 25-year-old baseline. Decision-making is faster, more accurate, and less susceptible to emotional override. The PFC at 50 is running better software on more experience. It is not the same PFC. It is better.</td>
+            </tr>
+            <tr>
+              <td>Amygdala (Fear/Anxiety Response)</td>
+              <td>"Emotional regulation declines"</td>
+              <td>Reduced reactivity to social threat stimuli. She is less afraid of disapproval, less reactive to social pressure, and less likely to make decisions based on what other people might think. This is not emotional dysregulation. This is emotional <em>freedom.</em></td>
+            </tr>
+            <tr>
+              <td>Estrogen Fluctuation</td>
+              <td>"Decline leads to negative outcomes"</td>
+              <td>Reduced estrogen correlates with reduced social anxiety and increased willingness to express authentic preferences. She is hormonally less inclined to perform agreeableness she doesn't feel. The younger man who has always benefited from female agreeableness should update his model.</td>
+            </tr>
+            <tr>
+              <td>Testosterone (Yes, Also Present)</td>
+              <td>"Not significant in females"</td>
+              <td>Relative testosterone levels <em>increase</em> as estrogen declines in the 45–55 cohort. Associated with increased assertiveness, confidence, risk-tolerance, and the specific quality of knowing what she wants and experiencing no particular hesitation about pursuing it. The research team notes this is documented endocrinology. The research team also notes it explains a great deal.</td>
+            </tr>
+            <tr>
+              <td>Dopamine System (Reward Processing)</td>
+              <td>"Reward sensitivity declines"</td>
+              <td>Recalibrated toward intrinsic rather than extrinsic reward. She is less motivated by external validation and more motivated by genuine enjoyment. She cannot be impressed by things that are not actually impressive. She is impressed by things that are actually impressive. This is a feature, not a bug, and the younger man who is genuinely impressive benefits from it enormously.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="equation-box">
+        <div class="equation">
+          C<sub>peak</sub> = (E<sub>PFC</sub> × T<sub>rel</sub>) / (A<sub>reactive</sub> × S<sub>social anxiety</sub>)
+        </div>
+        <div class="equation-label">The Confidence Peak Equation: where E<sub>PFC</sub> is executive function efficiency, T<sub>rel</sub> is relative testosterone, A<sub>reactive</sub> is amygdala reactivity, and S<sub>social anxiety</sub> is susceptibility to social pressure. As the denominator decreases (reduced anxiety, reduced reactivity) and the numerator increases (better decisions, more testosterone), the confidence index rises. It peaks, per the data, between 45 and 55. Dr. Venkataraman-Holloway's paper on this was titled "The Female Brain at 50: An fMRI Study of Who Is Now Running This." Nature published it. It now has 2,847 citations. Nature has not published a correction.</div>
+      </div>
+
+      <div class="footnote">‡‡ Subject F-48, asked when she felt she had become "herself" — fully, without qualification — thought for a moment and said: "Thursday. About three years ago. I woke up on a Thursday and I just... knew what I thought about things. I hadn't known before, or I'd known but spent all my energy checking whether knowing it was allowed. And then on a Thursday I stopped checking." Dr. Venkataraman-Holloway has framed this quote and placed it outside her office. She reports that three female colleagues have stopped in the hallway to read it. All three nodded.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- FORMAL SCIENCES -->
+    <div class="discipline-header for">◆ &nbsp; Part IV: The Formal Sciences — Information Theory, Statistics, Decision Theory, Applied Mathematics</div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 10</span> Information Theory: The Experience Bandwidth Theorem <span class="disc-badge badge-for">Formal Sciences</span></h2>
+
+      <p>Dr. Tanaka-Okonkwo's contribution begins with a clarification she asked to be included verbatim: "This is a real mathematical framework applied to a real empirical phenomenon. The fact that it is also funny does not make it less mathematically rigorous. I have checked the proofs four times. They are correct."</p>
+
+      <p>Information theory, developed by Claude Shannon (1948), provides mathematical tools for quantifying information content, channel capacity, and signal quality. The fundamental unit is the bit: a binary distinction. More bits of experience = more information = higher capacity to process novel situations, predict outcomes, and make optimal decisions under uncertainty.</p>
+
+      <h3>10.1 &nbsp; The Experience Bandwidth Theorem: Formal Statement</h3>
+
+      <div class="equation-box">
+        <div class="equation">
+          B<sub>exp</sub>(t) = ∫₀ᵗ Q(τ) · R(τ) dτ
+        </div>
+        <div class="equation-label">Experience Bandwidth as a function of time: the integral over a lifetime of Quality of experience (Q) multiplied by Reflection upon that experience (R). This is not merely years lived — it is years processed. The woman who has not only experienced things but thought about them, learned from them, revised her models based on them, accumulates higher effective bandwidth per year than one who has simply elapsed time. The theorem implies that two people of the same calendar age can have radically different experience bandwidths, and that a mature woman with high Q·R values can substantially outperform the naive bandwidth estimate from her age alone.</div>
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 5 — Comparative Experience Bandwidth: Mature Female Subject vs. Younger Male Partner (Representative Case)</div>
+        <table>
+          <thead>
+            <tr><th>Experience Domain</th><th>Her Bandwidth (approx.)</th><th>His Bandwidth (approx.)</th><th>Information Asymmetry</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Relationship Dynamics</td>
+              <td>3–5 significant relationships, full arc each. Knows what she wants. Knows what she doesn't want. Has learned the difference between a person and a person's first impression.</td>
+              <td>1–3 relationships, shorter average duration. Pattern recognition still developing. First impressions still largely determinative. Has not yet fully learned the difference between someone being interesting and someone being interested.</td>
+              <td>High. She already knows several things about him that he doesn't know about himself yet. She is choosing whether to mention them.</td>
+            </tr>
+            <tr>
+              <td>Self-Knowledge</td>
+              <td>Has revised her self-model multiple times against empirical reality. Current model is calibrated. Knows her limits, preferences, dealbreakers, negotiables, and nonnegotiables with precision.</td>
+              <td>Self-model is the first draft. May be accurate. May not be. Has not been tested extensively enough to know which parts are load-bearing and which are decorative.</td>
+              <td>High. She is not performing a self. He may still be.</td>
+            </tr>
+            <tr>
+              <td>Social Pattern Recognition</td>
+              <td>Has seen most of the available configurations of human behavior. Can identify patterns in approximately the first 20 minutes of conversation that would take him several months of experience to perceive.</td>
+              <td>Pattern library is smaller. Novelty detection is high — many things still feel unprecedented that are, from her vantage point, well-documented historical phenomena with known outcomes.</td>
+              <td>Significant. She is not reading a new book. She is rereading a familiar one and noticing things she missed the first time.</td>
+            </tr>
+            <tr>
+              <td>Enjoyment Calibration</td>
+              <td>Has had enough varied experience to know precisely what she enjoys, what she doesn't enjoy, what she thought she'd enjoy and didn't, and what she was wrong about in both directions. Does not need to perform enjoyment she doesn't feel.</td>
+              <td>Enjoyment calibration is still developing. May pursue things he believes he should enjoy. Has not yet fully distinguished authentic preference from socially constructed preference. Still, occasionally, trying to like things.</td>
+              <td>She knows what she likes. This saves an enormous amount of time and the younger man tends to find this genuinely refreshing after approximately 48 hours of adjustment.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>10.2 &nbsp; What He Gets Out of the Bandwidth Asymmetry</h3>
+      <p>The information asymmetry, the research team is careful to note, does not render the younger man irrelevant to the dynamic — quite the opposite. What he offers that she cannot provide for herself is exactly what his lower experience bandwidth generates: novelty, undeflated enthusiasm, the capacity to find familiar things interesting because they are not yet familiar to him, and the specific energetic quality of a person who is still in the process of becoming and has not yet arrived anywhere permanent.</p>
+      <p>She finds this genuinely interesting. Not patronizingly — not the way one finds a child interesting — but the way a very well-read person finds a book with a genuinely new perspective interesting. The enthusiasm is real. The direction it might go is genuinely uncertain. She does not know what he will think about everything. This is, it turns out, worth something.</p>
+
+      <div class="footnote">§§ Subject F-54 described the experience of dating a 29-year-old as follows: "He got excited about a documentary about glaciers and talked about it for forty minutes and I realized I couldn't remember the last time I'd talked about anything for forty minutes because I'd found it exciting rather than because I had to. And I thought: I want to be around that. Not the glacier documentary specifically. The forty minutes." The research team has been instructed by Prof. Ravenswood-Clarke to include this quote in every future paper in this series regardless of topic. The other authors have agreed.</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="sec-num">§ 11</span> Statistics: The Confidence Interval Theorem <span class="disc-badge badge-for">Formal Sciences</span></h2>
+
+      <p>In statistics, a confidence interval represents the range within which the true value of a parameter is estimated to lie, given available data. A wider confidence interval reflects greater uncertainty. A narrower one reflects greater precision — more data, better calibration, higher confidence in the estimate.</p>
+
+      <p>Dr. Tanaka-Okonkwo's statistical analysis of self-reported preference accuracy across age cohorts finds that the mature female subject's confidence intervals on her own preferences are dramatically narrower than those of her younger counterpart. She is not more certain because she is rigid. She is more certain because she has tested her estimates against reality repeatedly and updated them. Her model is fitted to data. His model is largely theoretical.</p>
+
+      <div class="equation-box">
+        <div class="equation">
+          CI<sub>preference</sub>(age) = x̄ ± (z · σ / √n)
+        </div>
+        <div class="equation-label">Where n — the number of experiences informing the preference estimate — increases dramatically with age, and σ — the variance in preference expression — decreases as calibration improves. The practical result: at 50, she has a narrower, more accurate confidence interval on what she wants than he does at 28. When she says she knows what she wants, this is not a social performance. It is a statistical statement. The sample size supports it.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CASE STUDIES -->
+    <div class="section">
+      <h2><span class="sec-num">§ 12</span> Field Case Studies: The Evidence in Its Natural Habitat</h2>
+
+      <div class="case-study" data-label="Case Study F-52 — 'The Assessment'">
+        <p>Subject F-52, age 52, a senior architect, was observed at a professional networking event where she spent approximately 11 minutes in conversation with a male subject aged 31 before the male subject provided his phone number unprompted, without being asked, in the middle of a sentence about something else. He appeared briefly surprised by his own behavior.</p>
+        <p>When researchers asked Subject F-52 what had transpired in those 11 minutes, she said: "I asked him what he was working on and whether he meant it." When asked to elaborate on "whether he meant it," she said: "Whether the work was something he cared about or something he was doing because it was available." When researchers noted this seemed like an unusually direct question for a networking event, she said: "I don't have time for people who are doing things they don't mean."</p>
+        <p>The younger male, interviewed separately, said: "She just — looked at me like she was deciding something. And then she asked questions nobody asks at these things. And I just wanted her to keep asking them."</p>
+        <p class="italic-note">Researchers note that "she looked at me like she was deciding something" appeared in 34 of 67 younger male interview transcripts, making it the single most common unprompted descriptor. The research team classifies this as the human equivalent of the pre-strike assessment documented in <em>Puma concolor</em> behavioral literature. Prof. Osei-Whitfield has been asked to stop saying "I told you so" at team meetings.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study F-47 — 'The Terms'">
+        <p>Subject F-47, age 47, was in a relationship with a male subject aged 29 for 14 months. Research interviews at the 3-month, 7-month, and 14-month marks document the younger male's reported experience across the arc of the relationship.</p>
+        <p><strong>Month 3:</strong> "She's unlike anyone I've dated. She just says what she wants. Not in a demanding way — she just says it. I don't know what to do with that yet."</p>
+        <p><strong>Month 7:</strong> "I used to think I needed to figure out what women wanted and then do that. She just tells me. I realized I've been playing a guessing game for my entire dating life and she just decided not to play it. It's the most efficient thing I've ever encountered."</p>
+        <p><strong>Month 14:</strong> "I'm a better communicator than I've ever been. I'm a better partner. I understand things about myself I didn't before. I don't know if this relationship will continue but I know that I'm different because of it and that the different is better."</p>
+        <p class="italic-note">The research team notes that "formative" was how the younger male described the relationship at 14 months — using the same term documented in 23 of Dr. Asante-Morrison's 34 cultural datasets. The cross-cultural universal holds at the individual level. Dr. Asante-Morrison has been notified. He was not surprised.</p>
+      </div>
+
+      <div class="case-study" data-label="Case Study F-55 — 'The Glacier Documentary'">
+        <p>This case study documents Subject F-54 (referenced in the footnote to Section 10, presented here with full context per research protocol). Age 54, recently divorced, described her re-entry into dating after eight years of marriage as "initially alarming and then unexpectedly fun, which I hadn't given myself permission to anticipate."</p>
+        <p>Her relationship with Subject M-29 lasted seven months and produced, by both parties' accounts, outcomes consistent with the theoretical framework: she received the enthusiasm, novelty, and undeflated interest described in Section 10.2; he received the directness, calibrated self-knowledge, and absence of games described in Section 7. The glacier documentary, referenced in the Section 10 footnote, was not an isolated incident. He was, by multiple accounts, enthusiastic about a range of topics with the specific quality of someone who had not yet had enthusiasm managed out of him by accumulated disappointment.</p>
+        <p>"He reminded me that I used to be like that about things," Subject F-54 said. "And then I thought — maybe I still could be. And then I went and was."</p>
+        <p class="italic-note">The research team notes, with some feeling, that this outcome — both parties leaving the interaction more fully themselves than when they entered it — is the optimal theoretical result and that it was achieved here by a 54-year-old woman and a 29-year-old man in a relationship that began because she found him interesting and said so. The research team is rooting for them.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 13</span> Conclusions: What Seventeen Disciplines Agree On</h2>
+
+      <p class="dropcap">We began this paper with a word — cougar — that was intended as mild social correction and accidentally named an apex predator. We have spent the preceding twelve sections explaining why the accident was precise. We close by summarizing what the humanities, social sciences, natural sciences, and formal sciences all agree on, which is, when stated plainly, this:</p>
+
+      <p>She is not compensating for anything. She is not chasing youth. She is not in denial. She is not having a crisis. She is a fully realized adult human being who has arrived at self-actualization, built her life with her own hands, developed a set of well-calibrated preferences tested against decades of empirical data, and decided — with the executive function of a well-myelinated prefrontal cortex, the assertiveness of a testosterone-relative environment, the reduced social anxiety of an amygdala that no longer considers other people's opinions a threat, and the efficiency of a predator who moves when conditions are optimal and not before — that she would like the company of someone who still finds glaciers interesting enough to talk about for forty minutes.</p>
+
+      <p>This is not a failure of judgment. This is judgment operating at peak efficiency. This is Maslow's top floor looking down the stairs and deciding that what it wants is on the second floor, which is currently full of energy and possibility and the genuine enthusiasm of someone who has not yet decided everything they're going to think.</p>
+
+      <p>And the younger man? The research team has one message for him, drawn from 847 interview transcripts, 34 cultural datasets, eleven months of field observation, and the biological, mathematical, philosophical, literary, evolutionary, neurological, game-theoretic, and information-theoretic evidence presented in this paper:</p>
+
+      <p><strong>She has already assessed you. She has done this before you knew she was doing it. Her estimate of the probability that this will be good for you is higher than your own estimate, and her confidence interval is narrower, and she knows something you don't about what you're capable of.</strong></p>
+
+      <p>The appropriate response, the data suggest, is to find this clarifying rather than terrifying. You are not out of your depth in a dangerous way. You are out of your depth in the way that all genuine learning requires. She is not a threat. She is what happens when a person decides to stop apologizing for knowing what they want and goes and gets it.</p>
+
+      <p>The word they gave her is the name of an apex predator. She has decided to accept the description. The research team considers this a reasonable decision. The Zoological Society of America, when consulted, had no objections.</p>
+
+      <div class="pull-quote">
+        <blockquote>"She spent twenty years being certain about everyone else's needs.<br>She has spent the last five being certain about her own.<br>The difference is audible from across a room."</blockquote>
+        <cite>— Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL<br>Closing Remarks, Harvard Interdisciplinary Symposium on Mature Female Agency, 2024<br><em>("There was a standing ovation. Three male colleagues in the front row appeared to be taking notes for personal rather than professional reasons. This is not disclosed in the official proceedings but is documented here.")</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- REFERENCES -->
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Ravenswood-Clarke, I. (2021). <em>She Was Never Waiting: Female Agency in the Western Canon, 400 BCE–Tuesday.</em> Oxford University Press. (847 citations. Prof. Ravenswood-Clarke notes the title was considered "provocative" by the editorial board. She notes this was the point.)</li>
+        <li>Venkataraman-Holloway, P. (2023). The female brain at 50: An fMRI study of who is now running this. <em>Nature Neuroscience, 26</em>(4), 1144–1178. (2,847 citations in first year. No correction issued. Prof. Venkataraman-Holloway did not expect a correction to be necessary. She was right.)</li>
+        <li>Sterling, A.M. (2024). Information asymmetry and dominant strategy: A game-theoretic analysis of mature female mate selection. <em>Harvard Journal of Behavioral Economics, 14</em>(2), 88–134. (Sterling notes this was the most personally educational paper he has ever written and declines to elaborate on what that means.)</li>
+        <li>Asante-Morrison, K. (2024). Universal phenomena in mate selection: Cross-cultural evidence from 34 societies for the Apex Predator Pattern. <em>American Journal of Anthropology, 121</em>(3), 201–267. ("I had been sitting on this data for six years." — Dr. Asante-Morrison, editorial note. "I was waiting for someone to ask." This paper is us asking.)</li>
+        <li>Osei-Whitfield, D. III (2024). Behavioral homology between <em>Puma concolor</em> and mature female human mate selection strategy: A zoological analysis I did not expect to publish. <em>Behavioral Ecology, 35</em>(2), 412–441. (Most downloaded paper in Behavioral Ecology's 40-year history. Prof. Osei-Whitfield's graduate students are no longer allowed to read it until after dissertation grading.)</li>
+        <li>Tanaka-Okonkwo, Y. (2024). The Experience Bandwidth Theorem: An information-theoretic framework for quantifying accumulated knowledge in mate selection contexts. <em>IEEE Transactions on Information Theory, 70</em>(8), 5521–5538. (Accepted by IEEE on the third submission. First two rejections were on the grounds of "subject matter." The mathematics, the editors confirmed, were correct.)</li>
+        <li>Maslow, A.H. (1943). A theory of human motivation. <em>Psychological Review, 50</em>(4), 370–396. (Maslow did not know he was describing the subject population of this paper. The subject population did not need Maslow to tell them where they were.)</li>
+        <li>Nietzsche, F. (1883). <em>Also sprach Zarathustra.</em> (Nietzsche did not know he was describing Tuesday. He was describing Tuesday.)</li>
+        <li>Shannon, C.E. (1948). A mathematical theory of communication. <em>Bell System Technical Journal, 27</em>, 379–423. (Shannon developed information theory. He would not have predicted this application. The application is mathematically valid. We believe he would have been amused.)</li>
+        <li>Nash, J. (1950). Equilibrium points in n-person games. <em>Proceedings of the National Academy of Sciences, 36</em>(1), 48–49. (Nash developed the mathematical framework Dr. Sterling used. Nash won a Nobel Prize. Dr. Sterling notes this is the highest-status citation he has ever included in a paper that made him personally uncomfortable.)</li>
+        <li>Subject F-52 (2024). Personal interview transcript. On file. Quote: "I don't have time for people who are doing things they don't mean." Research team notes: this sentence applies equally to careers, conversations, relationships, and presumably most aspects of adult life. It is being considered as an epigraph for the next paper.</li>
+        <li>Subject F-54 (2024). Personal interview transcript. On file. Quote: "He reminded me that I used to be like that about things. And then I thought — maybe I still could be. And then I went and was." Research team classification: Optimal outcome. Highest score in longitudinal data. Research team is rooting for them.</li>
+      </ol>
+    </div>
+
+    <!-- ACKNOWLEDGMENTS -->
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent);"><span class="sec-num">§</span> Acknowledgments</h2>
+      <p>The research team wishes to acknowledge, first and with genuine admiration, every woman in the subject population who knew what she wanted before any of this research existed to confirm she was right. You did not need the peer review. We wrote it for everyone else.</p>
+      <p style="margin-top:14px">Special thanks to the 67 younger male interview subjects whose honesty, candor, and frequent use of the word "formative" provided the most consistent data in the study. You are all, the research team believes, better for having been out of your depth in this specific way. The disorientation was temporary. The lessons were not.</p>
+      <p style="margin-top:14px">Prof. Osei-Whitfield wishes to thank the mountain lions. They did not participate in this study knowingly but their behavioral data was, as documented in Section 8, remarkably applicable. They are apex predators. They have always been apex predators. The humans who borrowed their name are beginning to understand why it fits.</p>
+      <p style="margin-top:14px">Dr. Sterling wishes to note, for the record, that the game theory matrix in Section 7 took him four days to build correctly because he kept getting the same result every time and going back to check his work. The work was correct the first time. The result held. He has made peace with this.</p>
+      <p style="margin-top:14px">Prof. Ravenswood-Clarke wishes to note that she has waited twenty-two years for a peer-reviewed journal to take this subject seriously. The wait, she says, is consistent with the broader pattern documented in this paper: good things come to those who know what they want and are prepared to wait until conditions are optimal before moving. She has framed this as a personal vindication. The research team does not disagree.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">She did not come this far to ask permission. The data confirm this was always the correct decision.</p>
+
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid var(--ink);padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:var(--ink);opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Physics of Intimate Relationships</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">What happens when two systems re-enter each other's field after 30 years.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Wall-Builder's Paradox</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">You are somehow both the prisoner and the warden.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Neuro-Gravitational Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Atlas Collapse</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">On carrying everything for everyone and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Harvard business school analysis. DARVO as crisis PR. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Harvard Journal of Vehicular Mate-Attraction</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Chrome Hypothesis</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Why the 67-year-old on a custom chromed motorcycle wins. Six disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:175px;max-width:235px;border:1px solid var(--rule-light);padding:14px 16px;background:var(--paper-warm);">
+          <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:5px;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.35;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:11px;font-style:italic;color:var(--ink-faint);margin-bottom:10px;line-height:1.5;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:var(--accent);color:#fff;font-family:'Playfair Display',serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;padding:5px 13px;text-decoration:none;">Read →</a>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Interdisciplinary Journal of Mature Female Mate Selection · Vol. 9, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · She Did Not Come This Far to Ask Permission</div>
+  </footer>
+
+</div>
+</body>
+</html>
