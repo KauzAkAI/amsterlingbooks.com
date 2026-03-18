@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tree Stand Theorem | Harvard Journal of Geographic Moral Exemption Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #f8f6f0;
+    --paper-warm: #f0ede0;
+    --paper-aged: #e4dcc8;
+    --rule: #3a2800;
+    --rule-light: #6a4800;
+    --accent: #1a0e00;
+    --accent-mid: #4a2800;
+    --accent-soft: #6a4010;
+    --forest: #1a3a00;
+    --home: #003a4a;
+    --wrong: #7a0000;
+    --knows: #004a2a;
+    --distance: #3a1a4a;
+    --refuted: #8a2000;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #06040a;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px; margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #1a0e00, 0 20px 80px rgba(0,0,0,0.85);
+    animation:pageLoad 0.8s ease-out;
+  }
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* SPLIT MASTHEAD — forest / home */
+  .masthead {
+    position:relative; overflow:hidden;
+    border-bottom:4px solid var(--accent-soft);
+  }
+  .masthead-split { display:grid; grid-template-columns:1fr 1fr; }
+  .masthead-forest {
+    background: linear-gradient(135deg, #060e02, #0e2206);
+    padding:20px 30px 20px 60px;
+    position:relative; z-index:1;
+  }
+  .masthead-home {
+    background: linear-gradient(135deg, #020e14, #021a24);
+    padding:20px 60px 20px 30px;
+    text-align:right;
+    position:relative; z-index:1;
+  }
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(26,58,0,.8); }
+  .harvard-crest span { display:block; font-size:9px; letter-spacing:0.4em; text-transform:uppercase; color:rgba(255,255,255,.45); font-weight:400; margin-top:5px; }
+  .masthead-journal { font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:13px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:11px; color:rgba(255,255,255,.5); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .context-bar {
+    display:grid; grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
+  }
+  .ctx-away { background:rgba(10,30,4,.95); padding:7px 30px 7px 60px; color:#70c050; }
+  .ctx-home { background:rgba(2,14,22,.95); padding:7px 60px 7px 30px; color:#50a0c0; text-align:right; }
+
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--forest); }
+  .paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--home); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:44px; font-weight:900; line-height:1.05; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.forest { background:var(--forest); }
+  .field-tag.home { background:var(--home); }
+  .field-tag.wrong { background:var(--wrong); }
+  .field-tag.knows { background:var(--knows); }
+  .field-tag.distance { background:var(--distance); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--forest); border-right:4px solid var(--home); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--rule-light); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  /* THE THEOREM BOX */
+  .theorem-box {
+    background:#02060a;
+    border:1px solid #0a1a0a;
+    padding:24px 32px;
+    margin:24px 0;
+    position:relative;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    color:#90c080;
+    line-height:1.6;
+  }
+  .theorem-box::before {
+    content:'THE TREE STAND THEOREM — FORMAL STATEMENT';
+    position:absolute; top:-11px; left:18px;
+    background:var(--wrong); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .thm-row { display:grid; grid-template-columns:240px 1fr; gap:16px; padding:9px 0; border-bottom:1px solid rgba(144,192,128,.07); align-items:baseline; }
+  .thm-label { color:#406030; }
+  .thm-value { color:#90c080; }
+  .thm-refuted { color:#c04040; font-weight:700; }
+  .thm-note { color:#304020; font-style:italic; font-size:12px; margin-left:240px; padding-top:4px; }
+
+  /* WHAT SHE KNOWS LOG */
+  .knows-log {
+    background:#020a06;
+    color:#60c080;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative; line-height:1;
+    border:1px solid #081408;
+  }
+  .knows-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--knows); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .kl-row { display:grid; grid-template-columns:80px 160px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(96,192,128,.07); align-items:baseline; }
+  .kl-time { color:#306020; font-weight:700; }
+  .kl-signal { font-weight:700; }
+  .kl-signal.phone { color:#60c0a0; }
+  .kl-signal.friend { color:#c0a060; }
+  .kl-signal.instinct { color:#a060c0; }
+  .kl-signal.receipt { color:#c06040; }
+  .kl-signal.smell { color:#c0a020; }
+  .kl-signal.vibe { color:#8080c0; }
+  .kl-signal.knew { color:#40c060; font-size:14px; }
+  .kl-event { color:#60c080; line-height:1.5; }
+  .kl-note { color:#203020; font-style:italic; font-size:12px; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd) { background:var(--paper); }
+  tbody tr:hover { background:rgba(74,40,0,.05); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:25%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-soft); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:24px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.wrong-num { color:var(--wrong); }
+  .stat-num.knows-num { color:var(--knows); }
+  .stat-num.forest-num { color:var(--forest); }
+  .stat-num.home-num { color:var(--home); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  /* THE CONVICTION BOX */
+  .conviction-box {
+    background:var(--paper-warm);
+    border:2px solid var(--wrong);
+    border-left:5px solid var(--wrong);
+    padding:20px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+  .conviction-box::before {
+    content:'THE CONVICTION — STATED IN FULL';
+    position:absolute; top:-11px; left:18px;
+    background:var(--wrong); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.18em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .conv-item { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:12px 0; border-bottom:1px solid var(--paper-aged); font-size:16px; line-height:1.65; }
+  .conv-item:last-child { border:none; }
+  .conv-belief { color:var(--wrong); font-style:italic; }
+  .conv-belief::before { content:'He believes: '; font-style:normal; font-family:'Playfair Display',serif; font-weight:700; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:4px; color:var(--wrong); opacity:0.7; }
+  .conv-reality { color:var(--knows); }
+  .conv-reality::before { content:'Reality: '; font-style:normal; font-family:'Playfair Display',serif; font-weight:700; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:4px; color:var(--knows); opacity:0.7; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .rule-split { border:none; height:2px; background:linear-gradient(to right, var(--forest) 50%, var(--home) 50%); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(to right, #060e02 50%, #020a10 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,.45); }
+  .footer-note { font-style:italic; color:rgba(255,255,255,.4); font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-forest,.masthead-home,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip,.ctx-away,.ctx-home{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:30px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .kl-row{grid-template-columns:70px 110px 1fr;gap:6px}
+    .thm-row{grid-template-columns:1fr;gap:4px}
+    .thm-note{margin-left:0}
+    .conv-item{grid-template-columns:1fr;gap:8px}
+    .masthead-split{grid-template-columns:1fr}
+    .masthead-home{text-align:left}
+    .context-bar{grid-template-columns:1fr}
+    .ctx-home{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<div style="background:#1a1200;padding:10px 24px;display:flex;align-items:center;border-bottom:1px solid #3a2800;">
+  <a href="https://amsterlingbooks.com/life/" style="font-family:'Playfair Display',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#c0a040;text-decoration:none;">&#8592; All Papers</a>
+</div>
+
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-split">
+      <div class="masthead-forest">
+        <div class="harvard-crest">VERITAS<span>Harvard University · Cambridge, Massachusetts</span></div>
+      </div>
+      <div class="masthead-home">
+        <div class="masthead-journal">
+          <strong>Harvard Journal of Geographic Moral Exemption Studies</strong>
+          <small>& Distance-Based Accountability Collapse Research</small>
+        </div>
+      </div>
+    </div>
+    <div class="context-bar">
+      <div class="ctx-away">🌲 &nbsp; He Is Away · "She'll Never Know" · He Is Wrong</div>
+      <div class="ctx-home">She Is Home · Faithful · Already Knows &nbsp; 🏠</div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 1, Issue 1 &nbsp;·&nbsp; Peer-Reviewed By Six Researchers, Four of Whom Knew Before He Got Home &nbsp;·&nbsp; ISSN: SHE-ALREADY-KNEW
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Complete Refutation of a Popular Theorem</div>
+    <h1 class="paper-title">The Tree Stand Theorem</h1>
+    <p class="paper-subtitle">On the Documented Male Belief That Physical Distance Constitutes Moral Permission, the Woman at Home Who Is Being Completely Faithful, the Woman at Home Who Already Knows, and Why These Are the Same Woman</p>
+
+    <div class="paper-fields">
+      <span class="field-tag wrong">The Theorem: Refuted</span>
+      <span class="field-tag forest">He Is Away</span>
+      <span class="field-tag home">She Is Home</span>
+      <span class="field-tag home">She Is Faithful</span>
+      <span class="field-tag knows">She Already Knows</span>
+      <span class="field-tag distance">Distance ≠ Permission</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Beliefs That Do Not Survive Contact With Reality<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 · (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Has studied the Tree Stand Theorem — the operative male belief that physical distance from one's partner creates a zone of reduced moral accountability — across 312 documented cases, 8 cultures, and one hunting camp in rural Alabama whose occupants asked not to be identified by name, county, or state, a request the research team has partially honored. Notes the theorem is held with extraordinary conviction by its adherents. Notes the theorem is wrong.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Psychology of the Geographic Permission Belief<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">i.blackwell@fas.harvard.edu<br>William James Hall 614 · (617) 555-0741</div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the psychological analysis of the theorem's structure in Section 3. Documents that the Tree Stand Theorem is not a conscious philosophy — no man has ever said aloud "my moral obligations are geographically bounded." The theorem operates as an implicit belief, activated by physical distance, that the normal rules of relationship accountability are suspended in the same way that a different time zone suspends business hours. The belief is sincere. The belief is also completely wrong. Both things are documented.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of "She'll Never Know" as a Premise<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">i.ravenswood@fas.harvard.edu<br>Barker Center 412 · (617) 555-0181</div>
+        <div class="author-quals">D.Phil. Philosophy & Linguistics (Oxford), FRSL. Contributed the formal analysis of the theorem's central premise — "she'll never know" — in Section 4. Documents that this premise fails on three independent grounds: empirically (she finds out in 89.4% of documented cases), epistemically (it treats the absence of disclosure as the absence of knowledge, which is incorrect), and philosophically (it confuses detection with consequence, as if the wrongness of an action depends on its discovery). The premise is wrong at every level of analysis. Prof. Ravenswood-Clarke describes working on this section as "the most dispiriting three weeks of my career."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Female Pattern Recognition<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 · (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the neuroscience of how she knows in Section 5. Documents the specific neural mechanisms by which women detect behavioral deception in long-term partners — the integration of micro-behavioral cues, tonal changes, attention pattern deviations, and what subjects consistently describe as "a feeling" that the research team's instruments confirm is not a feeling but an accurate synthesis of hundreds of subthreshold signals. She knows because she is attending to him with a precision he has never noticed. She has always been attending to him with this precision. The precision is not a trap. It is just attention. It works.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Fidelity Asymmetry Studies<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 · (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the fidelity asymmetry documented in Section 6 across 31 cultures. In every culture studied: men are more likely to commit opportunistic infidelity during travel and time away. Women in those same cultures, with those same absent partners, demonstrate significantly lower rates of infidelity. The woman at home is being faithful. The man in the tree stand believes he is invisible. Both of these things are happening simultaneously, in every culture, in every decade, without interruption. Dr. Asante-Morrison describes this as "the most consistently documented asymmetry in the fidelity literature." He does not find this funny. The research team finds it both not funny and, in its sheer brazen consistency, also funny.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & Decisions Made in the Belief That Nobody Is Watching<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 · (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the game theory analysis in Section 7. Documents that the Tree Stand Theorem produces the single worst expected-value decision in the domestic behavioral economics literature: a short-term gain of roughly zero lasting significance, purchased at the cost of a relationship that 88% of couples report infidelity destroyed, a 71% personal regret rate among the people who did it, and a 75% divorce rate among men who left for the affair partner. The expected value calculation is unambiguous. It has never changed. It is performed by almost nobody before the decision is made. Prof. Abara-Whitfield notes this is the economic equivalent of insisting that the slot machine will pay out this time.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: After the Study's 312th Documented Case, By Which Point the Research Team Was No Longer Surprised &nbsp;·&nbsp;
+      Peer-Reviewed: By Six Researchers Who Each Contributed One Incident From Their Personal Knowledge &nbsp;·&nbsp;
+      Accepted: Unanimously, With the Specific Energy of People Who Are Tired &nbsp;·&nbsp;
+      Dedicated: To the Women at Home. You Were Faithful. You Already Knew. You Deserved Better Than Both.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary refutation of the <strong>Tree Stand Theorem (TST)</strong> — the documented implicit male belief that physical distance from one's partner creates a temporary geographic suspension of relational moral accountability, commonly expressed in the premise "she'll never know." The TST is held by approximately <strong>20–25% of married men</strong> at some point in their marriage, is activated by contexts of travel, hunting, business trips, hunting camps, away games, bachelor weekends, hunting, conferences, and hunting, and produces the single most comprehensively poor expected-value decision in the domestic behavioral literature.</p>
+      <p class="abstract-text">The research team presents the TST's complete structure, its internal logic, and its failure at every level of that logic. The theorem rests on three premises: that geographic distance reduces the probability of detection; that reduced detection probability reduces moral consequence; and that reduced moral consequence makes the action permissible. All three premises are wrong. The first is empirically wrong (she finds out in 89.4% of cases). The second is philosophically wrong (moral consequence does not depend on detection). The third is ethically wrong (permissibility cannot be derived from probability of discovery).</p>
+      <p class="abstract-text">The paper documents, in parallel, the woman at home: <strong>faithful, attending to the relationship with a quality of care the absent party has systematically underestimated, and already aware of or rapidly becoming aware of what is happening</strong>. She is not sitting in ignorance. She is sitting with the knowledge that something has shifted, matching the evidence she has against the explanation she has been given, and arriving — with her characteristic precision — at the correct conclusion. She arrived before he got home. In 73% of cases, she arrived before he left the other state.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> The Tree Stand Theorem · Geographic Moral Exemption · "She'll Never Know" (Premise: Wrong) · Physical Distance ≠ Permission · The Woman at Home · She Is Faithful · She Already Knows · 89.4% Detection Rate · 71% Regret · 88% Relationship Destruction · The Expected Value Is Negative · She Knew Before He Got Home
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Theorem and Its Address</h2>
+
+      <p class="dropcap">The Tree Stand Theorem is named for its most concentrated documented environment — the hunting camp, the tree stand, the opening weekend away — though the research team notes it activates with equal reliability in Las Vegas hotel rooms, conference center bars, fishing boats in international waters, and any location that has been mentally classified by its male occupant as "away." The geographic specifics are immaterial. The theorem is about distance, not destination. Any distance activates it. The nearest Holiday Inn 40 minutes from home has activated it. The research team has documented this.</p>
+
+      <p>The theorem's core proposition: <em>I am not here. Therefore the normal rules do not fully apply here. Therefore what happens here stays here. Therefore she'll never know. Therefore it's fine.</em> Each step in this chain sounds plausible in isolation. The chain, in aggregate, is wrong at every link. The research team documents each link's failure in turn, beginning with the empirical one, because empirical wrongness is the most direct, and ending with the moral one, because moral wrongness is the most important.</p>
+
+      <p>The research team notes, at the outset, that this paper is not primarily about the men. The men are documented, analyzed, and found to be making a very poor decision with consequences the research team details fully. The paper is primarily about the women. The women at home are being faithful. The women at home already know, or are in the process of knowing with the specific quiet efficiency that the research team has come to recognize across 312 cases as one of the most consistently underestimated human capabilities in the behavioral literature. The women deserve the documentation. The documentation follows.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num wrong-num">20–25%</span>
+          <span class="stat-label">Married men who commit infidelity at some point. Per General Social Survey.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num knows-num">89.4%</span>
+          <span class="stat-label">Cases in study where the partner discovered the infidelity. "She'll never know" fails here.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num home-num">13%</span>
+          <span class="stat-label">Married women who commit infidelity. Those same wives, at home, faithful. 7–12 percentage points more faithful.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num forest-num">73%</span>
+          <span class="stat-label">Cases where she had formed the correct suspicion before he returned home.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 2: THE THEOREM STATED -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Theorem: Stated Formally and Refuted Completely</h2>
+
+      <div class="theorem-box">
+        <div class="thm-row">
+          <span class="thm-label">Theorem name:</span>
+          <span class="thm-value">The Tree Stand Theorem (TST)</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Formal statement:</span>
+          <span class="thm-value">Physical distance from one's partner reduces the moral salience of relational commitments and lowers the practical consequence of violating them, thereby creating a temporary zone of reduced accountability that the actor is justified in acting within.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Common expression:</span>
+          <span class="thm-value">"She'll never know." / "What happens in Vegas." / "It doesn't count." / "I was drunk." / "It was just one time." / "I was away." The variations are many. The theorem is one.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Premise 1:</span>
+          <span class="thm-value">Geographic distance reduces detection probability.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Premise 1 status:</span>
+          <span class="thm-refuted">EMPIRICALLY WRONG. Detection rate: 89.4%. Distance does not prevent detection. Distance delays detection. The delay is measured in days, not permanently.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Premise 2:</span>
+          <span class="thm-value">Reduced detection probability reduces moral consequence.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Premise 2 status:</span>
+          <span class="thm-refuted">PHILOSOPHICALLY WRONG. Moral consequence is not a function of detection. An action that harms someone has harmed them whether or not anyone discovers it. The harm is in the betrayal of trust, which occurs at the moment of the act, not at the moment of discovery.</span>
+        </div>
+        <div class="thm-row">
+          <span class="thm-label">Premise 3:</span>
+          <span class="thm-value">Reduced moral consequence makes the action permissible.</span>
+        </div>
+        <div class="thm-row" style="border:none;">
+          <span class="thm-label">Premise 3 status:</span>
+          <span class="thm-refuted">ETHICALLY WRONG. Permissibility cannot be derived from detection probability. "I can probably get away with it" has never been a valid moral justification in any ethical framework the research team has reviewed, including the ones written by people who were trying to find one.</span>
+        </div>
+        <div class="thm-note" style="margin-left:0; margin-top:12px; padding-top:10px; border-top:1px solid rgba(144,192,128,.08);">
+          OVERALL THEOREM STATUS: Refuted on empirical, philosophical, and ethical grounds simultaneously. The theorem fails at every level of analysis available to the research team. The research team has looked for a level at which it does not fail. The research team has not found one.
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 3: THE PSYCHOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Psychology: Why Men Believe This Anyway</h2>
+
+      <p>Dr. Blackwell-Tanaka's analysis of the TST's psychological structure documents how a belief this thoroughly wrong becomes and remains operative. The answer is not that the men are stupid. The answer is that the theorem is not a reasoned conclusion. It is an implicit belief, activated by environmental cues, that operates below the level of conscious analysis.</p>
+
+      <p>The activation sequence is documented: departure from home territory, arrival in a context coded as "away," social environment that does not include the partner, alcohol in many documented cases, and opportunity. These cues, in combination, activate a psychological state that the research team classifies as the <strong>Reduced Accountability Perception (RAP)</strong> — a measurable shift in how the actor perceives the rules governing his behavior. The RAP does not tell him the rules have changed. It simply makes the rules feel less present. They are still there. They are always still there. The RAP is not a philosophical position. It is a neurological state produced by distance, novelty, and lowered inhibition. It is also not a defense.</p>
+
+      <div class="conviction-box">
+        <div class="conv-item">
+          <div class="conv-belief">Nobody here knows me. I am, in this context, essentially anonymous. My normal identity — husband, partner, person with commitments — is not visible here. What is not visible is not operative.</div>
+          <div class="conv-reality">He is not anonymous to himself. He is not anonymous to whoever he is with. He will not be anonymous when he returns home, where the full weight of his normal identity will be entirely operative, and where she will be waiting with the kind of attention that does not take breaks when he does.</div>
+        </div>
+        <div class="conv-item">
+          <div class="conv-belief">She is far away. Distance creates a kind of insulation. What happens here does not travel. The two spaces are separate. They do not communicate.</div>
+          <div class="conv-reality">They communicate constantly. He communicates with her. His behavior communicates with her — his tone, his timing, his patterns, his tells. She is a highly calibrated instrument aimed at him. Distance does not reduce the signal. Distance sometimes amplifies it, because his absence makes his presence, when it occurs, more precisely analyzed.</div>
+        </div>
+        <div class="conv-item">
+          <div class="conv-belief">If she doesn't know, she isn't hurt. The harm only exists in the knowing. Managing the knowing manages the harm.</div>
+          <div class="conv-reality">The harm is in the betrayal of trust, which occurred at the moment of the act. She is carrying that harm right now, before she knows, because she is in a relationship whose foundation has been quietly undermined. She does not yet know the source of the unease she is feeling. She is beginning to investigate.</div>
+        </div>
+        <div class="conv-item" style="border:none;">
+          <div class="conv-belief">This is a one-time event. It is bounded. It will not affect anything. He will return home and nothing will have changed.</div>
+          <div class="conv-reality">88% of couples report infidelity as a major factor in eventual separation. 71% of the people who did it report regretting it. Something changes. Something always changes. The thing that changes is not always visible immediately. It is visible eventually.</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 4: SHE ALREADY KNOWS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> She Already Knows: The Detection Record</h2>
+
+      <p class="dropcap">The most consequential empirical failure of the Tree Stand Theorem is its detection assumption. The theorem requires that detection be low-probability for its logic to proceed at all. The detection rate in the study is 89.4%. The theorem's foundational premise fails in nine of ten cases. The research team presents the detection record in full.</p>
+
+      <div class="knows-log" data-label="HOW SHE FOUND OUT — DETECTION METHODS DOCUMENTED ACROSS 312 CASES">
+        <div class="kl-row">
+          <span class="kl-time">Method 1</span>
+          <span class="kl-signal phone">Phone evidence</span>
+          <span class="kl-event">The phone. The phone is, in the 21st century, a remarkable infidelity documentation system that the actor continues to carry in his pocket. 47% of detected cases. Text messages, call logs, location data, the app he forgot to delete, the notification that appeared while she was using it to look something up. The phone is not neutral. The phone is a witness.</span>
+        </div>
+        <div class="kl-row">
+          <span class="kl-time">Method 2</span>
+          <span class="kl-signal friend">Social network</span>
+          <span class="kl-event">Someone told someone who told her. Or was at the same venue. Or mentioned it without knowing they shouldn't. 34% of cases. The theorem's assumption of a sealed information environment is incorrect. He was in a room. The room had other people in it. People talk. Information travels faster than he does.</span>
+        </div>
+        <div class="kl-row">
+          <span class="kl-time">Method 3</span>
+          <span class="kl-signal instinct">She knew before</span>
+          <span class="kl-event">73% of cases: she had already formed the correct suspicion before he returned home. She noticed the shift in his communication patterns. The slightly different energy of the calls. The response latency. The tonal quality. She was attending to him — as she always does — with the specific precision documented in Section 5. She did not yet have confirmation. She was looking for it. She found it, or it found her.</span>
+        </div>
+        <div class="kl-row">
+          <span class="kl-time">Method 4</span>
+          <span class="kl-signal receipt">Financial records</span>
+          <span class="kl-event">The credit card statement. The ATM withdrawal in a city he said he didn't go to. The restaurant he couldn't have eaten at alone. 28% of cases. Financial records are comprehensive. Financial records have timestamps. Financial records do not lie on his behalf.</span>
+        </div>
+        <div class="kl-row">
+          <span class="kl-time">Method 5</span>
+          <span class="kl-signal smell">He was different</span>
+          <span class="kl-event">He came home different. His behavior changed. He was either too attentive or not attentive enough. He volunteered information about the trip without being asked. He was defensive about questions that had never been suspicious questions before. He was present but not quite present. She noticed. She notices everything. She has always noticed everything.</span>
+        </div>
+        <div class="kl-row" style="border:none; padding-top:12px;">
+          <span class="kl-time">Summary</span>
+          <span class="kl-signal knew">She knew.</span>
+          <span class="kl-event">89.4% detected. 10.6% undetected at time of study. The research team notes: "undetected at time of study" is not the same as "undetected." Some of the 10.6% are still in the process. The theorem assumed the outcome. The outcome is detection.</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team notes the specific quality of the knowing. In 73% of cases, she had already arrived at the correct conclusion before any confirming evidence was presented. She arrived there through the integration of signals that individually seemed minor and together were unambiguous. She held the conclusion quietly while she gathered confirmation. She gathered it. This is not paranoia. This is pattern recognition applied to the most familiar behavioral dataset she has — him — by the most attentive analyst of that dataset — her. He has been under observation this entire time. He did not know he was under observation. He was always under observation.</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 5: THE WOMAN AT HOME -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> The Woman at Home: What She Is Actually Doing</h2>
+
+      <p>The Tree Stand Theorem requires, for its emotional logic to function, a particular model of the woman at home: passive, unaware, occupied with domestic concerns, not watching. The theorem is wrong about this too. The research team documents what she is actually doing.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — The Woman at Home: What the Theorem Assumes vs. What the Study Documents</div>
+        <table>
+          <thead>
+            <tr><th>The Theorem Assumes</th><th>The Study Documents</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>She is unaware that anything is different.</td>
+              <td>In 73% of cases she has already detected a behavioral shift and is in the process of interpreting it. She knows something is different. She does not yet know what. She is finding out.</td>
+            </tr>
+            <tr>
+              <td>She is not thinking about him in any particular analytical way.</td>
+              <td>She is thinking about him precisely. She is replaying the last conversation. She is noting the response latency on the last text. She is comparing this trip to prior trips. She is doing this automatically, as part of the continuous background analysis she applies to the relationship at all times. This analysis does not pause when he leaves. It intensifies slightly, because absence is an information-rich state.</td>
+            </tr>
+            <tr>
+              <td>She has no access to information about what he is doing.</td>
+              <td>She has access to: his phone communications (tone, timing, frequency), his social network (friends, family, mutual connections), financial records, location data on shared devices, and the testimony of her own pattern recognition applied to his behavioral history. She is not without resources.</td>
+            </tr>
+            <tr>
+              <td>She is being equally likely to be doing what he is doing.</td>
+              <td>She is not. The fidelity asymmetry is documented across 31 cultures and every decade of available data. While he is in the tree stand, she is home. She is faithful. She is attending to the relationship with the care she always attends to it. The asymmetry is consistent. The research team finds it, in the context of this paper, both deeply unfair and precisely documented.</td>
+            </tr>
+            <tr>
+              <td>She will be forgiving if she finds out.</td>
+              <td>88% of couples report infidelity as a major factor in separation. The damage is real and it is lasting. The research team documents no theoretical basis for the assumption of forgiveness as a default outcome.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes that the woman at home is not a passive figure in the theorem. She is an active, attentive, faithful partner who is being betrayed by someone who has incorrectly modeled her as less observant, less present, and less capable of detecting a lie than she is. She is all three of these things more than he has estimated. The estimation error is documented across all 312 cases.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 6: THE FIDELITY ASYMMETRY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> The Fidelity Asymmetry: She Is Home and She Is Faithful</h2>
+
+      <p>Dr. Asante-Morrison's cross-cultural analysis of the fidelity asymmetry is the section of this paper the research team finds most important to document, because it is the section that is most consistently underdiscussed in treatments of this subject. The discussion tends to center on the person who cheated. This section centers on the person who didn't.</p>
+
+      <p>While 20–25% of married men commit infidelity at some point in their marriage, the comparable figure for married women is 13%. The gap is 7–12 percentage points depending on the study, the decade, and the demographic. It has been consistent since reliable data collection on this subject began. It is consistent across cultures. It is consistent across income levels, education levels, and religiosity levels. It is simply a consistent feature of the data: when travel and opportunity create the conditions for opportunistic infidelity, men take the opportunity at significantly higher rates than women in the same conditions.</p>
+
+      <p>The woman at home is therefore, in the majority of cases where this theorem is being tested, doing something her partner is not: remaining faithful. She is not being naive. She is not being passive. She is honoring a commitment that he has decided, at this moment, in this tree stand or this hotel bar or this conference happy hour, that geography has suspended. She is carrying the relationship while he is temporarily depositing it somewhere he thinks nobody can see.</p>
+
+      <div class="case-study" data-label="The Asymmetry in Numbers">
+        <p>In the 312 cases documented in this study, the subject committed infidelity while away. In 289 of those 312 cases (92.6%), the partner at home had not committed infidelity during the same period, or any period documented in the study. In 23 cases (7.4%), there was documented infidelity by both parties — a figure the research team notes is roughly consistent with the general female infidelity rate in the broader population.</p>
+        <p>The prevailing pattern in 92.6% of cases: he was away, he violated the commitment, she was home, she did not. This is not a moral verdict from the research team. This is the data. The data says: she was faithful. The data says this clearly, consistently, and without exception in nine of ten cases.</p>
+        <p class="italic-note">Dr. Asante-Morrison notes, in his field report from the cross-cultural portion of the study: "In every culture I visited, the women knew which men were doing this. They had a name for those men. The name varied by language. The meaning did not vary. And in every culture, those same women were also clear about which women were not doing this — were home, faithful, waiting. Those women also had a name. The name was simpler. It was usually just their name."</p>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 7: THE EXPECTED VALUE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Expected Value: What the Theorem Actually Costs</h2>
+
+      <p>Prof. Abara-Whitfield's expected value analysis of the Tree Stand Theorem is the most straightforward section of this paper because the numbers are unambiguous. The research team presents them without commentary, because the numbers comment on themselves.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — The Tree Stand Theorem: Expected Value Calculation</div>
+        <table>
+          <thead>
+            <tr><th>Variable</th><th>Value</th><th>Source</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Probability of detection</td>
+              <td>89.4% in this study; 50–70% in broader literature depending on method. Detection is the modal outcome, not the exceptional one.</td>
+              <td>Study data (312 cases); Institute for Family Studies; Journal of Family Psychology, 2023.</td>
+            </tr>
+            <tr>
+              <td>Relationship destruction rate upon detection</td>
+              <td>88% of couples report infidelity as a major factor in separation. Not all separate immediately; many separate eventually.</td>
+              <td>National Institutes of Health; General Social Survey longitudinal data.</td>
+            </tr>
+            <tr>
+              <td>Personal regret rate</td>
+              <td>71% of men who committed infidelity reported regretting it. The regret is documented. It arrives. It is usually too late to be useful.</td>
+              <td>Superdrug Online Doctor Survey, 2017; Nickerson et al. Affair Attitudes Survey, 2023.</td>
+            </tr>
+            <tr>
+              <td>Divorce rate if leaving for affair partner</td>
+              <td>75%. The affair partner, when promoted to primary partner, produces a new relationship with a 75% divorce rate. This is not an improvement.</td>
+              <td>Pittman, F. (1989). Private Lies: Infidelity and the Betrayal of Intimacy.</td>
+            </tr>
+            <tr>
+              <td>Duration of average affair</td>
+              <td>6–24 months. Most affairs do not reach the "falling-in-love" phase before ending. The benefit that was being purchased is brief and does not last.</td>
+              <td>Zur Institute infidelity research overview; Journal of Sex and Marital Therapy, 2020.</td>
+            </tr>
+            <tr>
+              <td>Net expected value of theorem execution</td>
+              <td>Negative. Significantly negative. The gain is short-term, the cost is long-term, the probability of the cost is high, and the benefit has a documented short shelf life.</td>
+              <td>The arithmetic. The arithmetic is available to anyone. It is rarely consulted.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Prof. Abara-Whitfield's summary: "The Tree Stand Theorem is the behavioral equivalent of a lottery ticket that costs $10,000, wins $50 in 11% of cases, and loses your house in 89% of cases. No rational actor with full information would play this game. The theorem functions because the actor does not have full information, or does not consult the information he has, or consults it and concludes that the odds somehow do not apply to him specifically. They apply to him specifically. They apply to everyone specifically. The house has always had the same odds. The house has always won at the same rate."</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Conclusions: The Theorem Is Wrong. She Already Knew.</h2>
+
+      <p class="dropcap">The Tree Stand Theorem does not survive examination at any level. It is empirically wrong because she finds out. It is philosophically wrong because the wrongness of an act does not depend on its discovery. It is ethically wrong because "she'll never know" has never constituted a moral justification. It is strategically wrong because the expected value calculation produces a clear and unambiguous negative. And it is morally wrong in the sense that requires no mathematical support — in the sense that it treats a faithful person's trust as a resource to be exploited during a window of reduced oversight, which it is not, and has never been.</p>
+
+      <p>The woman at home is faithful. She has been faithful. She is doing the thing that the relationship requires while the theorem is being invoked to temporarily suspend the theorem-invoker from the same requirement. She is also watching, in the specific and comprehensive way that people who care deeply about someone watch them, for the signals that something has changed. The signals are there. They are always there. She is reading them. She has probably already finished reading them.</p>
+
+      <p>The research team offers this paper not as a deterrent — the expected value calculation already is that, and is not being consulted — but as a documentation. The woman at home deserves the documentation. Her faithfulness deserves the documentation. Her intelligence deserves the documentation. The tree stand was not invisible. It never was. She could see it from where she was standing the whole time.</p>
+
+      <div class="pull-quote">
+        <blockquote>"He was in the tree stand.<br>He thought he was invisible.<br>She was home.<br>She was faithful.<br>She already knew.<br>She had known since Tuesday."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes<br><em>After the 312th case closed</em><br><em>The detection had taken four days</em><br><em>He thought he had gotten away with it until Monday</em><br><em>She had known since Tuesday of the prior week</em><br><em>She let him think he had until Monday</em><br><em>The research team has no further comment</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>General Social Survey (ongoing). Married adults reporting extramarital sex: men 20%, women 13%. The gap is documented. The gap is consistent. The gap is the fidelity asymmetry. The woman at home is in the 87%. She did not ask for a study to confirm this. She knows she is in the 87%. She is always the one who knows.</li>
+        <li>Venkataraman-Holloway, P. (2026). Female behavioral pattern recognition in long-term partners: The neural basis of "she already knew." <em>Journal of Affective Neuroscience, 29</em>(1), 1–44. ("She is not psychic. She is attentive. The distinction matters less than it appears, because the outputs are the same." — Author note.)</li>
+        <li>Blackwell-Tanaka, I. (2026). The Reduced Accountability Perception: Geographic distance and implicit moral exemption beliefs in adult males. <em>Harvard Journal of Geographic Moral Exemption Studies, 1</em>(1), 1–62. ("The belief is not conscious. If it were conscious, it could be examined. Examined, it fails immediately. The implicit mechanism is the mechanism's most important feature: it operates below the level of examination." — Author note.)</li>
+        <li>Abara-Whitfield, D. (2026). Expected value analysis of the Tree Stand Theorem: Why the arithmetic does not produce the conclusion the actor has reached. <em>Harvard Journal of Geographic Moral Exemption Studies, 1</em>(1), 63–108. (The arithmetic is in the paper. The arithmetic is clear. The arithmetic was available before the decision was made. The arithmetic was not consulted.)</li>
+        <li>Asante-Morrison, K. (2026). The fidelity asymmetry across 31 cultures: She was home, she was faithful, she knew. <em>Journal of Cross-Cultural Fidelity Studies, 3</em>(1), 1–88. (Every culture. Every decade. The same pattern. He was away. She was home. She was faithful. She already knew. The research team has documented this 312 times in one study and across centuries in the anthropological record.)</li>
+        <li>The Women (Home, faithful, already knowing). 289 of 312 cases. They were home. They were faithful. They were attending to the relationship with a quality of care that was not being reciprocated at that moment. They noticed. They always notice. The research team dedicates this paper to them. Not to the theorem. Not to the theorem-invokers. To them.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the women. You were home. You were faithful. You were attending to the relationship with a precision and care that was not being matched at the moment this paper documents. You noticed something was different. You integrated the signals. You arrived at the correct conclusion, in 73% of cases, before he returned home. You held the conclusion. You gathered the confirmation. You were right. You were always right. You were right about him in a hundred ways he benefited from before this one, and you were right about this one too, and the research team wants to say — in the formal record, on the page, for documentation — that your faithfulness was real, your attention was extraordinary, and you deserved better than a theorem that required your unawareness in order to function.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge, briefly, the tree stand. You are a small platform elevated in a tree, designed for the patient observation of wildlife. You did not design the theorem named after you. You did not consent to the behavior conducted in your vicinity or in the motel rooms, hotel bars, and conference centers that have stood in for you in the documented cases. You are an innocent party in this study. The research team notes that the tree stand itself has a better record than the theorem that bears its name. The tree stand produces deer. The theorem produces regret, discovery, and consequences that last significantly longer than the hunting season.</p>
+      <p style="margin-top:14px;">Finally: to the 10.6% of cases where detection had not occurred at the time of the study's close. The research team does not know your current status. The research team notes that "undetected at time of study" is not a stable condition. The research team notes that she is still attending, still integrating, still arriving at conclusions with her characteristic quiet precision. The arithmetic of 89.4% was calculated on cases that had time to close. You have not closed yet. The research team does not recommend confidence.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">The theorem is refuted. She was faithful. She already knew. She knew since Tuesday.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Geographic Moral Exemption Studies · Vol. 1, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · Distance ≠ Permission. She Was Faithful. She Already Knew.</div>
+  </footer>
+
+</div>
+</body>
+</html>
