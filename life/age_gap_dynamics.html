@@ -67,7 +67,7 @@ body::before {
 }
 
 /* Masthead */
-.masthead {
+.masthead { position:relative;
     background: linear-gradient(135deg, var(--ink) 0%, #2a2a2a 100%);
     color: var(--paper-aged);
     padding: 24px 50px;
@@ -653,10 +653,15 @@ tbody tr:hover {
 </style>
 </head>
 <body>
+<div style="background:#1a1200;padding:10px 24px;display:flex;align-items:center;border-bottom:1px solid #3a2800;">
+  <a href="https://amsterlingbooks.com/life/" style="font-family:'Playfair Display',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#c0a040;text-decoration:none;">&#8592; All Papers</a>
+</div>
+
 <article class="journal">
 
 <!-- Masthead -->
 <header class="masthead">
+  <a href="https://amsterlingbooks.com/life/" style="position:absolute;top:14px;left:22px;font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,.65);text-decoration:none;z-index:10;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">&#8592; All Papers</a>
     <div class="masthead-title">
         <strong>Journal of Chronological Attraction Physics</strong>
         A Publication of the Institute for Age-Differential Romance Studies
@@ -1065,23 +1070,7 @@ tbody tr:hover {
 </div>
 
 <!-- Related Publications -->
-<div class="related-pubs">
-    <h3>More Publications by Adrian Maximus Sterling</h3>
-    <div class="related-links">
-        <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html">
-            <strong>The Physics of Intimate Relationships</strong>
-            <span>A Peer-Reviewed, Heavily Metaphorical Analysis — Journal of Theoretical Romance</span>
-        </a>
-        <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html">
-            <strong>The Relativistic Re-Ignition of System A and System B</strong>
-            <span>A Longitudinal Study on Orbital Decay, Dormancy, and Thermal Re-entry — Journal of Applied Romantic Physics</span>
-        </a>
-        <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html">
-            <strong>The Wall-Builder's Paradox</strong>
-            <span>A Unified Theory of Emotional Fortification — Journal of Interpersonal Thermodynamics</span>
-        </a>
-    </div>
-</div>
+
 
 <!-- Footer -->
 <footer class="paper-footer">
@@ -1094,5 +1083,31 @@ tbody tr:hover {
 </footer>
 
 </article>
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+<div style="background:#1a1200;border-top:3px solid #8a6a00;padding:18px 60px;text-align:center;margin-top:40px;">
+  <a href="https://amsterlingbooks.com/life/" style="font-family:'Playfair Display',serif;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#c0a040;text-decoration:none;opacity:0.85;">← Back to The Research Series</a>
+</div>
+
 </body>
 </html>
