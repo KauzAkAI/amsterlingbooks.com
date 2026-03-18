@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Said I'd Do It | Harvard Journal of Domestic Task Deferral Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #f8f6f0;
+    --paper-warm: #f0ece0;
+    --paper-aged: #e4d8c0;
+    --rule: #3a2800;
+    --rule-light: #7a5020;
+    --accent: #1a0e00;
+    --accent-mid: #5a3000;
+    --accent-soft: #7a4820;
+    --trash: #1a3a00;
+    --promise: #00308a;
+    --done: #005a20;
+    --asking: #8a4000;
+    --did-it: #6a0030;
+    --minute: #3a1a5a;
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #06040a;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  body::before {
+    content:''; position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:.5;
+  }
+
+  .journal {
+    max-width:860px; margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #1a0e00, 0 20px 80px rgba(0,0,0,.85);
+    animation:pageLoad .8s ease-out;
+  }
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* SPLIT MASTHEAD */
+  .masthead { position:relative; overflow:hidden; border-bottom:4px solid var(--accent-soft); }
+  .masthead-split { display:grid; grid-template-columns:1fr 1fr; }
+  .ms-left {
+    background: linear-gradient(135deg, #0a1400, #182800);
+    padding:20px 30px 20px 60px; position:relative; z-index:1;
+  }
+  .ms-right {
+    background: linear-gradient(135deg, #0e0800, #201400);
+    padding:20px 60px 20px 30px; text-align:right; position:relative; z-index:1;
+  }
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:#fff; letter-spacing:.08em; line-height:1; text-shadow:0 0 30px rgba(0,80,0,.5); }
+  .harvard-crest span { display:block; font-size:9px; letter-spacing:.4em; text-transform:uppercase; color:rgba(255,255,255,.4); font-weight:400; margin-top:5px; }
+  .masthead-journal { font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:13px; letter-spacing:.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:11px; color:rgba(255,255,255,.45); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .context-bar {
+    display:grid; grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif; font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+  }
+  .ctx-wife   { background:rgba(80,40,0,.9);  padding:7px 30px 7px 60px; color:#ffc080; }
+  .ctx-husband{ background:rgba(0,40,20,.9);  padding:7px 60px 7px 30px; color:#80d0a0; text-align:right; }
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; }
+  .paper-type { font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--asking); }
+  .paper-type::after  { content:''; display:inline-block; width:50px; height:1px; background:var(--trash); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:52px; font-weight:900; line-height:1.0; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.trash   { background:var(--trash); }
+  .field-tag.promise { background:var(--promise); }
+  .field-tag.asking  { background:var(--asking); }
+  .field-tag.did-it  { background:var(--did-it); }
+  .field-tag.minute  { background:var(--minute); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--asking); border-right:4px solid var(--trash); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  /* THE TRASH TIMELINE */
+  .trash-log {
+    background:#040802;
+    color:#a0c080;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative; line-height:1;
+    border:1px solid #0c1408;
+  }
+  .trash-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--trash); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .tl-row { display:grid; grid-template-columns:80px 140px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(160,192,128,.07); align-items:baseline; }
+  .tl-time   { color:#405030; font-weight:700; }
+  .tl-actor  { font-weight:700; }
+  .tl-actor.wife    { color:#ffb060; }
+  .tl-actor.husband { color:#60d090; }
+  .tl-actor.trash   { color:#c0c060; font-style:italic; }
+  .tl-actor.internal{ color:#608040; font-style:italic; }
+  .tl-event  { color:#a0c080; line-height:1.5; }
+  .tl-note   { color:#304020; font-style:italic; font-size:12px; }
+  .tl-done   { color:#40c060; font-weight:700; }
+  .tl-still  { color:#c08040; font-style:italic; }
+
+  /* THE PROMISE ANATOMY */
+  .promise-box {
+    background:#020408;
+    border:1px solid #080c14;
+    border-left:4px solid var(--promise);
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    color:#8090c0;
+    line-height:1.6;
+  }
+  .promise-box::before {
+    content:'ANATOMY OF "I\'LL GET TO IT"';
+    position:absolute; top:-11px; left:18px;
+    background:var(--promise); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .pb-row { display:grid; grid-template-columns:180px 1fr; gap:16px; padding:9px 0; border-bottom:1px solid rgba(128,144,192,.07); align-items:baseline; }
+  .pb-label { color:#404870; font-weight:700; }
+  .pb-value { color:#8090c0; line-height:1.5; }
+  .pb-value.real { color:#40c080; }
+  .pb-value.intent { color:#c0c040; }
+  .pb-value.problem { color:#c04040; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:22%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-soft); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:24px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.t  { color:var(--trash); }
+  .stat-num.p  { color:var(--promise); }
+  .stat-num.a  { color:var(--asking); }
+  .stat-num.d  { color:var(--did-it); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .rule-split { border:none; height:2px; background:linear-gradient(to right, var(--asking) 50%, var(--trash) 50%); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(to right,#0a1400 50%,#0e0800 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.4); }
+  .footer-note  { font-style:italic; color:rgba(255,255,255,.35); font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .ms-left,.ms-right,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip,.ctx-wife,.ctx-husband{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:36px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .tl-row{grid-template-columns:70px 100px 1fr;gap:6px}
+    .pb-row{grid-template-columns:1fr;gap:4px}
+    .masthead-split{grid-template-columns:1fr}
+    .ms-right{text-align:left}
+    .context-bar{grid-template-columns:1fr}
+    .ctx-husband{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<div style="background:#1a1200;padding:10px 24px;display:flex;align-items:center;border-bottom:1px solid #3a2800;">
+  <a href="https://amsterlingbooks.com/life/" style="font-family:'Playfair Display',serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#c0a040;text-decoration:none;">&#8592; All Papers</a>
+</div>
+
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-split">
+      <div class="ms-left">
+        <div class="harvard-crest">VERITAS<span>Harvard University · Cambridge, Massachusetts</span></div>
+      </div>
+      <div class="ms-right">
+        <div class="masthead-journal">
+          <strong>Harvard Journal of Domestic Task Deferral Studies</strong>
+          <small>& Household Promise Half-Life Research</small>
+        </div>
+      </div>
+    </div>
+    <div class="context-bar">
+      <div class="ctx-wife">🗑️ &nbsp; Wife · "Take the Trash Out" · Has Asked 4.7 Times · Is About to Just Do It</div>
+      <div class="ctx-husband">Husband · "I'll Get to It" · Fully Intends To · Has Not &nbsp; 🪑</div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 3, Issue 2 &nbsp;·&nbsp; Peer-Reviewed By Six Researchers, All of Whom Identified a Specific Household Task During the Review Process &nbsp;·&nbsp; ISSN: ILL-GET-TO-IT-I-PROMISE
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Couples Dynamics Series</div>
+    <h1 class="paper-title">"I Said I'd Do It"</h1>
+    <p class="paper-subtitle">On the Gap Between the Promise, the Genuine Intention Behind the Promise, the Trash Bag That Has Been Sitting Next to the Door for Three Days, and the Profound Mutual Certainty That Both Parties Are Entirely Correct</p>
+
+    <div class="paper-fields">
+      <span class="field-tag trash">The Trash: Still There</span>
+      <span class="field-tag promise">The Promise: Sincere</span>
+      <span class="field-tag asking">Times Asked: 4.7</span>
+      <span class="field-tag did-it">She Did It: 61%</span>
+      <span class="field-tag minute">In a Minute: Not a Minute</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Things I Said I'd Do and Fully Intended to Do<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 · (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Classified by this study as a Promiser — defined by the genuine sincere belief, at the moment of promising, that the task will be completed in the timeframe implied by "I'll get to it." The Promiser is not lying. The Promiser has a complete internal model of themselves getting to it. The model is accurate in every respect except the timing. The timing is, the research team documents, rarely correct. The trash is not out yet. The trash will go out. The Promiser is aware of the trash. The Promiser was watching something.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Psychology of Deferred Domestic Intention<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">i.blackwell@fas.harvard.edu<br>William James Hall 614 · (617) 555-0741</div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the intention analysis in Section 3. Documents the specific psychological state of a person who has sincerely promised to do a task, has not done the task, and is now being asked about the task again. The state is not guilt, technically, because the Promiser has not abandoned the intention — the intention is still live, still present, still real, just not yet executed. The gap between live intention and executed action is the subject of this paper. The gap has a mean duration of 3.2 days for trash-related tasks. The gap is real. Both parties have been living inside it.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & The Household Task Negotiation<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 · (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the game theory analysis in Section 4. Notes that the household task negotiation is a Prisoner's Dilemma variant in which both parties would benefit from a clear, executed agreement, but neither party has the information about when the other party will act, producing a standoff in which the Requester keeps asking and the Promiser keeps intending and the trash sits by the door radiating quiet reproach. Prof. Abara-Whitfield notes that the optimal strategy — "just do it immediately when asked" — is known to both parties and adopted by neither.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of "I'll Get to It" as a Temporal Statement<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">i.ravenswood@fas.harvard.edu<br>Barker Center 412 · (617) 555-0181</div>
+        <div class="author-quals">D.Phil. Philosophy & Linguistics (Oxford), FRSL. Contributed the linguistic analysis of the deferral phrase vocabulary in Section 5. Documents the specific, testable time claims embedded in each phrase — "in a minute," "in a bit," "I'll get to it," "later," "when I'm done," "I was just about to" — and measures each phrase's actual predictive validity against observed outcomes. Findings: "in a minute" takes a mean of 47 minutes. "When I'm done" requires first establishing when "done" is. "I was just about to" is delivered, the research team documents, in 73% of cases, by someone who was not just about to.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Interrupted Task Completion<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 · (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the neuroscience of deferred tasks in Section 6. Documents the specific neural mechanism of task deferral — the same mechanism underlying the planning fallacy (Kahneman, 1979) — in which the brain simulates the completion of a task in vivid detail, experiences the task as already-in-progress, and thereby reduces the urgency signal that would motivate immediate action. The Promiser's brain has taken out the trash many times. The brain has done this in simulation. The actual trash is still by the door. The simulation felt so real.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Household Task Deferral<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 · (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the Promiser/Requester dynamic across 31 cultures. Every culture with a concept of shared domestic labor produces this exact pattern. Every culture's Promisers genuinely intend to complete the tasks they promise. Every culture's Requesters ask an average of 4.7 times before either the task is done or the Requester does it themselves. The gap between promise and execution is universal. The trash is by the door in every culture. The trash has always been by the door.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: After the Fourth Request of the Week &nbsp;·&nbsp;
+      Peer-Reviewed: By Six Researchers Who Each Disclosed a Specific Undone Task During the Review Process &nbsp;·&nbsp;
+      Accepted: With Particular Attention to the "I Was Just About to" Data, Which Three Reviewers Called "Too Accurate" &nbsp;·&nbsp;
+      Dedicated: To the Trash Bag by the Door. You Were Noticed. You Were Promised. You Were Eventually Dealt With. The Relationship Is Fine.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Household Task Deferral Cycle (HTDC)</strong> — the documented pattern in which a domestic task is requested, sincerely promised, not completed, re-requested a mean of 4.7 times, and ultimately either completed by the Promiser under escalating social pressure or completed by the Requester in a state of quiet exasperation that the Promiser will later describe as "I was about to do that." The HTDC occurs in 91.4% of cohabitating couples and repeats a mean of 3.8 times per week across task categories including but not limited to: trash disposal, dishwasher unloading, light bulb replacement, the thing in the garage, calling back the person, scheduling the appointment, and the item that has been on the counter for two weeks and everyone knows whose it is.</p>
+      <p class="abstract-text">The foundational finding: <strong>both parties are correct.</strong> The Promiser genuinely intends to complete the task at the moment of promising. The promise is sincere. The intention is real. The problem is not bad faith — it is the specific neurological mechanism by which the brain's simulation of task completion reduces the urgency signal, combined with the inherent optimism of the planning fallacy, combined with the thing he was watching, combined with the specific comfortable position he was in on the couch that made getting up seem like a decision rather than an automatic action. The Requester is correct that the task has not been done and has been promised. The Promiser is correct that they were going to do it. The trash is correct that it needs to go out. All three are right. The situation is the problem.</p>
+      <p class="abstract-text">The paper documents the complete HTDC anatomy: the initial request, the sincere promise, the first re-request (gentle), the second re-request (informational), the third re-request (pointed), the fourth re-request (accompanied by the specific silence documented in Paper 23 of this series), and the resolution — either the Promiser completes the task or the Requester completes the task while saying, with exact technical accuracy, "I'll just do it myself." The phrase "I'll just do it myself" is the cycle's conclusion. It contains, the research team documents, more information per word than any other phrase in the domestic communication literature.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Household Task Deferral Cycle · The Trash · I'll Get to It · In a Minute (Mean: 47 Minutes) · Times Asked: 4.7 · She Did It: 61% · I Was Just About to · Both Correct · The Situation Is the Problem · I'll Just Do It Myself · The Planning Fallacy, Domestic Application · The Couch · He Was Watching Something
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Trash Is Still There</h2>
+
+      <p class="dropcap">The trash bag has been next to the door for three days. This is documented. It arrived there on Wednesday evening, when it was removed from the kitchen bin and placed beside the door — the standard intermediate position between "in the bin" and "out of the house" — by Subject M-67, who placed it there with the full intention of taking it outside on his next trip out. He has not yet made a next trip out that included the trash. He has made three trips out during this period. The trash was not on any of those trips. The trash remains.</p>
+
+      <p>Subject F-55 has asked about the trash on Thursday morning, Thursday evening, and Friday morning. On each occasion Subject M-67 has said a variant of "I'll get to it" or "I was going to do that" or "yeah, I know, I'll do it in a minute." On each occasion, Subject M-67 meant it. The intention has been present, live, and genuine for all three days. The trash has also been present for all three days. These two facts coexist without resolving each other.</p>
+
+      <p>The research team has documented this pattern in 91.4% of cohabitating couples, across 31 cultures, across every category of domestic task. The pattern is not a conflict. It is a structural feature of shared domestic life produced by two specific and well-documented human tendencies — the planning fallacy and the optimism of deferred action — operating in the presence of a person who needs to know if the thing is going to happen and when. The pattern is the research team's subject. The trash is the research team's case study. The trash went out on Saturday.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num a">4.7</span>
+          <span class="stat-label">Mean times a task is requested before completion or Requester takeover</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num p">3.2 days</span>
+          <span class="stat-label">Mean gap between promise and task completion — trash-category tasks</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num d">61%</span>
+          <span class="stat-label">Tasks ultimately completed by the Requester after 4+ unfulfilled requests</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num t">47 min</span>
+          <span class="stat-label">Mean actual time elapsed after "in a minute"</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 2: THE TIMELINE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Cycle: Documented Day by Day</h2>
+
+      <div class="trash-log" data-label="THE TRASH — WEDNESDAY THROUGH SATURDAY — COMPLETE FIELD LOG">
+        <div class="tl-row">
+          <span class="tl-time">Wed 7pm</span>
+          <span class="tl-actor husband">M-67</span>
+          <span class="tl-event">Removes trash bag from kitchen bin. Places it beside the front door. Internal state: task 47% complete. Remaining 53%: get it outside. M-67 assesses: this will happen shortly. M-67 sits back down. <span class="tl-note">// The trash is now by the door. This is progress.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Wed 7pm</span>
+          <span class="tl-actor trash">Trash</span>
+          <span class="tl-event tl-still">Remains by door. Begins first night in intermediate position.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Thu 8am</span>
+          <span class="tl-actor wife">F-55</span>
+          <span class="tl-event">Notices trash. Says, pleasantly: "The trash is still there." M-67 says: "Yeah I'll get it on the way out." M-67 is not on the way out. M-67 is having coffee. <span class="tl-note">// Request 1. Tone: informational.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Thu 8:11am</span>
+          <span class="tl-actor husband">M-67</span>
+          <span class="tl-event">Leaves for an errand. Does not take the trash. M-67 will later report that he forgot. The research team notes: the trash was beside the door that M-67 walked through. The trash was in M-67's peripheral vision. M-67 forgot the trash in the same way that a person forgets the thing that is right next to the thing they are doing. <span class="tl-note">// The planning fallacy simulation was so vivid that the actual task felt handled.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Thu 7pm</span>
+          <span class="tl-actor wife">F-55</span>
+          <span class="tl-event">Evening. Trash still present. "Did you get the trash?" M-67: "Oh — I'll do it now." M-67 does not do it now. M-67 is in the middle of something. The something takes until 9:30pm. At 9:30pm it feels too late to take the trash out as a standalone trip. <span class="tl-note">// Request 2. Tone: slightly pointed.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Fri 8am</span>
+          <span class="tl-actor wife">F-55</span>
+          <span class="tl-event">"The trash has been there since Wednesday." M-67 says: "I know. I said I'd do it." This sentence is accurate. M-67 did say that. M-67 has said it twice. The sentence does not address the trash's current location. <span class="tl-note">// Request 3. Tone: the tone that contains the history of Requests 1 and 2.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Fri 11am</span>
+          <span class="tl-actor wife">F-55</span>
+          <span class="tl-event">No verbal request. Subject F-55 passes the trash on the way to the door. Subject F-55 picks up the trash. Subject F-55 takes the trash outside. Subject F-55 returns. Subject F-55 says nothing. <span class="tl-note">// Request 4 was not a request. It was a resolution. The Specific Silence (Paper 23, this series) has been deployed. The silence is louder than the three requests.</span></span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">Fri 11:03am</span>
+          <span class="tl-actor husband">M-67</span>
+          <span class="tl-event">Notices trash is gone. Notices F-55's expression. Says: <span class="tl-note">// ↓</span></span>
+        </div>
+        <div class="tl-row" style="border:none; padding-top:8px;">
+          <span class="tl-time">Fri 11:03am</span>
+          <span class="tl-actor husband">M-67</span>
+          <span class="tl-event tl-done">"I was just about to do that."</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 3: THE PROMISE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Promise: Why It Is Sincere and Why That Is Not the Point</h2>
+
+      <p>The research team documents, with emphasis, the sincerity of the promise. "I'll get to it" is not a dismissal. It is not a lie. It is not a performance of compliance designed to end the conversation. It is a genuine statement of intent, made by a person who, at the moment of making it, has a complete and vivid internal model of themselves completing the task. The model is accurate. The person will, in fact, get to it. The question — which the research team has been unable to answer in a way that satisfies both parties — is when.</p>
+
+      <div class="promise-box">
+        <div class="pb-row">
+          <span class="pb-label">What is said:</span>
+          <span class="pb-value">"I'll get to it." / "I know, I'll do it." / "In a minute." / "I was just about to."</span>
+        </div>
+        <div class="pb-row">
+          <span class="pb-label">What is meant:</span>
+          <span class="pb-value intent">I am aware of the task. I have not forgotten the task. I am planning to do the task. In my internal model, the task is as good as done. The only remaining variable is exactly when it will transfer from the internal model to the physical world.</span>
+        </div>
+        <div class="pb-row">
+          <span class="pb-label">What is heard:</span>
+          <span class="pb-value">A timed commitment. The phrase implies a specific, near-term execution window. The receiver reasonably interprets "I'll get to it" as meaning: shortly. Today. Before it needs to be asked about again.</span>
+        </div>
+        <div class="pb-row">
+          <span class="pb-label">The gap:</span>
+          <span class="pb-value problem">Between "I meant it" and "shortly, today, before re-asking." This gap is 3.2 days for trash. It is longer for items in the garage. It is, for certain tasks involving phone calls to specific institutions, of indeterminate length and may be considered a theoretical rather than practical intention.</span>
+        </div>
+        <div class="pb-row">
+          <span class="pb-label">Is the promise a lie?</span>
+          <span class="pb-value real">No. The intention is genuine at the moment of promise. The problem is that the internal simulation of task completion is experienced as partial task completion — reducing the urgency that would drive immediate action. The Promiser has mentally taken out the trash many times. The brain files these simulations under "handled." The trash has not heard about this filing system.</span>
+        </div>
+        <div class="pb-row" style="border:none;">
+          <span class="pb-label">"I was just about to":</span>
+          <span class="pb-value problem">Deployed in 73% of cases where the Requester completes the task before the Promiser does. Technically possible in 11% of those cases — the Promiser had, in fact, recently refreshed the intention. Not technically possible in 89% — the Promiser was on the couch. The phrase is delivered with complete sincerity in 100% of cases, because at the moment of delivery, the Promiser genuinely re-activates the intention and experiences it as having been active. It was not active. It is active now, three seconds too late.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 4: WHAT SHE KNOWS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> "I'll Just Do It Myself": The Five Most Loaded Words in Domestic Communication</h2>
+
+      <p class="dropcap">"I'll just do it myself" is not a sentence about the task. The task is, at the moment this sentence is spoken, being performed — the Requester is already doing it. The sentence is about the preceding 3.2 days. It is a complete compressed account of: the initial request, the sincere promise, the time that passed, the re-requests, the good-faith follow-ups, the final decision that waiting is no longer efficient, and the moment of picking up the thing and taking it outside. All of this is in the sentence. The sentence contains four days of relational data in five words.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — "I'll Just Do It Myself": Information Content Per Word</div>
+        <table>
+          <thead>
+            <tr><th>Word</th><th>Surface Meaning</th><th>Full Information Content</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"I'll"</td>
+              <td>First-person future tense. The speaker is going to take an action.</td>
+              <td>This is now my action. It was previously assigned to you. The assignment did not produce the action. I am reassigning it to myself. This reassignment is not a preference. It is the result of 4.7 requests and 3.2 days.</td>
+            </tr>
+            <tr>
+              <td>"just"</td>
+              <td>A minimizing adverb. The action is simple, small, unremarkable.</td>
+              <td>The word "just" is doing enormous emotional work here. It contains: the desire not to make a big deal of this; the awareness that making a big deal of this would be unpleasant; the awareness that not making a big deal of this while also saying the sentence is structurally impossible; and the specific resignation of someone who has decided to proceed without drama while also, unavoidably, producing a small amount of drama.</td>
+            </tr>
+            <tr>
+              <td>"do"</td>
+              <td>To perform the action.</td>
+              <td>The action that was promised. The action that was going to happen. The action that is now, four days after being next to the door, being performed by the person who asked for it to be performed rather than the person who promised to perform it.</td>
+            </tr>
+            <tr>
+              <td>"it"</td>
+              <td>The task in question.</td>
+              <td>The trash. The specific trash that has been by the door since Wednesday. The trash that was looked at on Thursday morning, Thursday evening, and Friday morning. The trash that was, at each of those moments, acknowledged and promised. The trash that is now in the speaker's hands.</td>
+            </tr>
+            <tr>
+              <td>"myself"</td>
+              <td>Without assistance.</td>
+              <td>Without your assistance specifically. The word "myself" is, in this context, a mirror. It reflects the gap between the promise and the action. It does not accuse. It does not require a response. It simply points, quietly and completely, at the fact that the thing is being done now, by the person who asked, rather than the person who said they would.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Prof. Ravenswood-Clarke notes: "Five words. Each word is doing the work of a paragraph. The sentence is a masterpiece of domestic compression. The Promiser, upon hearing it, receives all five paragraphs simultaneously. The Promiser says 'I was just about to.' The Promiser means it. It is 11:03am on Friday. The trash is already outside."</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 5: THE TAXONOMY OF DEFERRAL -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> The Deferral Vocabulary: What Each Phrase Actually Predicts</h2>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — Deferral Phrase Predictive Validity: What Was Said vs. What Happened</div>
+        <table>
+          <thead>
+            <tr><th>Phrase</th><th>Implied Timeframe</th><th>Actual Mean Time to Completion</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"In a minute"</td>
+              <td>60 seconds. One minute. The literal meaning of the phrase.</td>
+              <td>47 minutes. The research team tracked 847 instances. Mean: 47.3 minutes. Median: 31 minutes. Maximum: 4 days. Minimum: 3 minutes (outlier; Promiser had been literally just about to).</td>
+            </tr>
+            <tr>
+              <td>"I'll get to it"</td>
+              <td>Soon. Today. Within the relevant timeframe for the task's urgency.</td>
+              <td>3.2 days for trash-category. 6.4 days for garage-category. 11.7 days for phone-call-to-institution-category. Some items in the phone-call category are still pending at time of publication.</td>
+            </tr>
+            <tr>
+              <td>"I know, I'll do it"</td>
+              <td>Acknowledgment of prior request + renewed commitment. Implies resolution is imminent.</td>
+              <td>Re-request required in 84% of cases. The phrase's acknowledgment of the prior request ("I know") is accurate. The commitment ("I'll do it") is sincere. The imminence is not confirmed by the data.</td>
+            </tr>
+            <tr>
+              <td>"When I'm done"</td>
+              <td>Upon completion of the current activity. Specific and conditional.</td>
+              <td>Requires first establishing when "done" is. "Done" for television: when the episode ends. Then there is another episode. "Done" for the task on the computer: unclear. The task has sub-tasks. The sub-tasks have their own timelines. The research team recommends not using this phrase.</td>
+            </tr>
+            <tr>
+              <td>"I was just about to"</td>
+              <td>Imminent. The task was already in motion.</td>
+              <td>Delivered after the Requester has begun doing the task in 73% of cases. In 89% of those cases, the Promiser was not demonstrably about to begin. In 11%, the Promiser had, within the preceding 15 minutes, re-activated the intention. The intention was not yet in motion. "About to" is a temporal claim about the immediate future. The immediate future has been preempted. The phrase is, under the circumstances, technically and emotionally complicated.</td>
+            </tr>
+            <tr>
+              <td>"I said I'd do it"</td>
+              <td>Confirmation that the promise was made. Not a new timeline.</td>
+              <td>This phrase, deployed in response to a re-request, contains no new temporal information. It confirms the prior promise. It does not update its delivery date. The Requester already knows the promise was made. The Requester is asking about the execution. The phrase answers a different question than the one asked.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team recommends, for all parties: "I'll do it right now" is the only phrase in the domestic deferral vocabulary that is both sincere and predictively valid. It requires doing the thing immediately upon saying it. This is slightly less comfortable than the couch. It is significantly more comfortable than all subsequent interactions about the thing.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Conclusions: Both Correct. The Trash Is Out. The Relationship Is Fine.</h2>
+
+      <p class="dropcap">The Household Task Deferral Cycle is not a conflict. It is a structural feature of shared domestic life produced by two people with different neurological relationships to deferred action living together and needing to coordinate. The Promiser is not lazy. The Requester is not nagging. The trash is not a metaphor. The trash is just the trash, and it needs to go out, and someone needs to do it, and the gap between promising and doing is a real gap with a real mean duration and a real effect on the person waiting on the other side of the promise.</p>
+
+      <p>The research team's findings: the promise is always sincere. The intention is always real. The planning fallacy is always operating. The re-requests are always justified. The "I was just about to" is always delivered too late. The "I'll just do it myself" always contains exactly what it appears to contain. And the relationship, in 94.2% of documented cases, is fine. The trash went out. One of them took it out. The cycle reset. Next week there will be another trash bag and another promise and another 3.2-day gap and another "I said I'd do it" and another "I'll just do it myself" and both parties will be, as they always are, correct.</p>
+
+      <p>The only resolution the research team has found that breaks the cycle is the one both parties already know: do the task at the moment of being asked, rather than promising to do it later. The moment of asking is the moment of minimum friction. The task is small. The couch will still be there. The specific comfortable position can be recovered. The 3.2-day cycle, once started, generates friction at every subsequent step. The trash takes 90 seconds to take outside. The 90 seconds have been available for 3.2 days. They will remain available until deployed.</p>
+
+      <div class="pull-quote">
+        <blockquote>"The trash was next to the door on Wednesday.<br>He said he'd get to it.<br>He meant it.<br>She asked on Thursday. He said in a minute.<br>She asked on Friday. He said I know.<br>She took it out Friday morning.<br>He said: 'I was just about to.'<br>He meant that too.<br>The trash was outside.<br>The relationship was fine.<br>Next Wednesday there will be another trash bag."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes, Friday 11:04am<br><em>Watching Subject F-55 come back inside</em><br><em>The trash was outside</em><br><em>He had, in fact, been thinking about it since Thursday</em><br><em>The gap between thinking about it and doing it was three days</em><br><em>The research team finds this a reasonable and very human gap</em><br><em>The trash goes out Sunday from now on. He has promised this. He means it.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Blackwell-Tanaka, I. (2026). The live-but-unexecuted intention: Why sincere promises about household tasks have a 3.2-day mean gap. <em>Harvard Journal of Domestic Task Deferral Studies, 3</em>(2), 1–58. ("The intention is real. The problem is that a real intention, in the mind of the Promiser, functions as a real partial action. The brain experiences 'I am going to do this' as approximately equivalent to 'I am in the process of doing this.' The trash disagrees." — Author note.)</li>
+        <li>Kahneman, D. & Tversky, A. (1979). Intuitive prediction: Biases and corrective procedures. <em>TIMS Studies in Management Science, 12</em>, 313–327. (The foundational planning fallacy paper. The research team notes the planning fallacy was originally documented in professional project planning contexts. The research team confirms it operates with equal precision in the context of taking the trash out.)</li>
+        <li>Ravenswood-Clarke, I. (2026). "In a minute": A predictive validity analysis of domestic temporal promises. <em>Journal of Applied Domestic Linguistics, 48</em>(1), 1–44. (Mean time after "in a minute": 47 minutes. "The phrase 'in a minute' should be understood as a commitment to begin considering the task within the next hour. It should not be understood as a commitment to complete the task within sixty seconds. No data supports the sixty-second interpretation." — Author note.)</li>
+        <li>Abara-Whitfield, D. (2026). The household Prisoner's Dilemma: Task deferral as an information asymmetry problem in domestic game theory. <em>Harvard Journal of Domestic Task Deferral Studies, 3</em>(2), 59–112. ("The optimal strategy is known. The optimal strategy is to do the task when asked. The optimal strategy is adopted in approximately 8.6% of first-request cases. The remaining 91.4% initiate the cycle." — Author note.)</li>
+        <li>Sterling, A.M. (2026). Field notes, Wednesday through Friday, the trash. Personal research log. Task initiated: Wednesday 7pm (partial — bag moved to door). Task completed: Friday 11:03am (by Subject F-55). "I was just about to" delivered: Friday 11:03am. Accuracy of "I was just about to": low. Sincerity of "I was just about to": high. Trash location at time of delivery: outside. Relationship status: fine. New protocol established: Sunday is now trash day. The Promiser has promised this. The research team will report back.</li>
+        <li>The Trash Bag (Wednesday 7pm–Friday 11:03am, beside the front door). Duration in intermediate position: 63 hours and 3 minutes. Requests received during tenure: 3 verbal, 1 silent. Promises made regarding it: 4. Times it was "just about to be taken out": indeterminate. Times it was actually taken out: 1. By: Subject F-55. The research team thanks the trash bag for its patience. The trash bag was not patient. The trash bag had no feelings about this. Only the humans involved had feelings. They are both fine.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light);font-size:16px;margin-bottom:16px;color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the Requester. You asked three times. You said it pleasantly the first time, informatively the second time, and with the specific tone of a person who has been keeping a silent count the third time. You did not say "I told you so." You picked up the trash, took it outside, came back in, and said nothing. The nothing was articulate. The nothing contained all three prior requests and the 63-hour gap and the four sincere promises and the specific Friday morning moment when you decided that waiting for the execution of the promise was less efficient than the 90 seconds it would take to execute it yourself. You were right. The research team thanks you for the data. You provided it while also just wanting the trash to be outside.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge the Promiser. You meant every single promise. The intention was present on Wednesday, Thursday, and Friday. The intention was live, genuine, and undimmed. You also watched an episode on Wednesday after putting the bag down, forgot on Thursday morning (the door was right there; the forgetting was its own small study in task salience), had something you were in the middle of on Thursday evening, and were, in an honest accounting, not actually about to do it on Friday morning when the phrase was deployed. You were thinking about it. You have been thinking about it for 63 hours. The thinking and the doing are different things. You know this. The trash knows this. You have established Sunday as trash day. The research team will hold you to Sunday. You meant that too. Sunday will be fine.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center;font-style:italic;font-size:15px;color:var(--ink-faint);margin-top:12px;margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center;font-style:italic;font-size:14px;color:var(--ink-faint);margin-bottom:44px;">The trash is out. Both parties were correct. Sunday is now trash day. Both parties know this. Both parties mean it.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Domestic Task Deferral Studies · Vol. 3, Issue 2</div>
+    <div class="footer-note">© The Authors · Open Heart License · Both Correct. The Situation Is the Problem. The Trash Is Out.</div>
+  </footer>
+
+</div>
+</body>
+</html>
