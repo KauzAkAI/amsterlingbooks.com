@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"I Don't Mind" — Harvard Journal of Applied Domestic Game Theory</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f0ede0; font-family: 'EB Garamond', Georgia, serif; color: #08080a; font-size: 17px; line-height: 1.75; }
+  .page { max-width: 860px; margin: 0 auto; background: #faf8f2; padding: 60px 72px 80px; box-shadow: 0 2px 24px rgba(80,60,0,0.13); }
+  .masthead { border-top: 5px solid #7a5200; border-bottom: 3px solid #7a5200; padding: 22px 0 18px; margin-bottom: 0; text-align: center; background: #7a5200; color: #fff; }
+  .journal-name { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 0.35em; text-transform: uppercase; margin-bottom: 4px; opacity: 0.9; }
+  .journal-sub { font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.75; margin-bottom: 6px; }
+  .journal-meta { font-size: 10px; letter-spacing: 0.12em; opacity: 0.65; }
+  .rule-gold { border: none; border-top: 2px solid #c0a060; margin: 18px 0; }
+  .rule-thin { border: none; border-top: 1px solid #c0a060; margin: 14px 0; }
+  .title-block { text-align: center; padding: 38px 0 28px; border-bottom: 1px solid #c0a060; margin-bottom: 28px; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 10px; color: #3a2000; }
+  h1 em { font-style: italic; }
+  .subtitle { font-family: 'Playfair Display', serif; font-size: 15px; font-style: italic; color: #6a4400; margin-bottom: 22px; line-height: 1.5; }
+  .authors { font-size: 13px; letter-spacing: 0.08em; margin-bottom: 10px; color: #3a2000; }
+  .affiliations { font-size: 11px; color: #6a5030; font-style: italic; margin-bottom: 8px; }
+  .dates { font-size: 10.5px; letter-spacing: 0.1em; color: #7a6040; margin-top: 8px; }
+  .doi { font-size: 10px; color: #7a6040; letter-spacing: 0.05em; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1.5px solid #c0a060; padding-bottom: 4px; margin: 36px 0 14px; color: #3a2000; }
+  h3 { font-family: 'Playfair Display', serif; font-size: 15px; font-style: italic; font-weight: 600; margin: 24px 0 8px; color: #3a2000; }
+  p { margin-bottom: 14px; text-align: justify; }
+  .abstract-box { background: #f4f0e0; border-left: 4px solid #7a5200; padding: 18px 22px; margin: 24px 0; font-size: 15px; }
+  .abstract-box strong { font-family: 'Playfair Display', serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; display: block; margin-bottom: 8px; color: #7a5200; }
+  .keywords { font-size: 12px; font-style: italic; color: #6a5030; margin-top: 10px; }
+  table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 14px; }
+  th { background: #7a5200; color: #fff; font-family: 'Playfair Display', serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 9px 12px; text-align: left; }
+  td { padding: 8px 12px; border-bottom: 1px solid #d4c090; vertical-align: top; }
+  tr:nth-child(even) td { background: #f4f0e4; }
+  .table-caption { font-size: 12px; font-style: italic; color: #6a5030; margin-top: -14px; margin-bottom: 18px; text-align: center; }
+  .equation { background: #f4f0e0; border: 1px solid #c0a060; padding: 14px 22px; text-align: center; font-family: 'Libre Baskerville', serif; font-size: 16px; margin: 18px 0; color: #3a2000; }
+  .footnotes { border-top: 1.5px solid #c0a060; margin-top: 44px; padding-top: 16px; font-size: 12px; color: #6a5030; }
+  .footnotes p { margin-bottom: 5px; text-align: left; }
+  sup { font-size: 10px; color: #7a5200; }
+  .stamp { border: 3px double #c0a060; display: inline-block; padding: 7px 18px; font-family: 'Playfair Display', serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #7a5200; margin: 28px auto; display: block; width: fit-content; }
+  .callout { border: 1px solid #c0a060; background: #f8f4e8; padding: 14px 18px; margin: 20px 0; font-style: italic; font-size: 15px; color: #3a2000; }
+  blockquote { border-left: 3px solid #c0a060; padding: 8px 18px; color: #4a3010; font-style: italic; margin: 18px 0; }
+  @media (max-width: 600px) { .page { padding: 28px 18px 40px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <div class="journal-name">Harvard Journal of Applied Domestic Game Theory</div>
+    <div class="journal-sub">Peer-Reviewed Research in Relational Decision Science</div>
+    <div class="journal-meta">Vol. 14, No. 2 &nbsp;|&nbsp; HJADGT-2025-0831 &nbsp;|&nbsp; amsterlingbooks.com/life/</div>
+  </div>
+
+  <div class="title-block">
+    <h1><em>"I Don't Mind"</em><br>On the Dominant Strategy of False Neutrality and the Restaurant That Was Always There</h1>
+    <div class="subtitle">A Game-Theoretic Analysis of Preference Concealment, Veto Cascades, and the 38.4-Minute Revelation Cycle in Coupled Dining Decisions</div>
+    <div class="authors">Dr. Adrian Maximus Sterling¹ &nbsp;·&nbsp; Dr. Priya Mehendrale² &nbsp;·&nbsp; Prof. Desmond Okafor³</div>
+    <div class="affiliations">¹ Department of Relational Economics, Sterling Institute for Couples Research &nbsp;|&nbsp; ² Game Theory & Domestic Strategy, University of Mumbai &nbsp;|&nbsp; ³ Applied Decision Sciences, Lagos Graduate School of Management</div>
+    <div class="dates">Received: September 3, 2025 &nbsp;·&nbsp; Accepted: October 11, 2025 &nbsp;·&nbsp; Published Online: October 29, 2025</div>
+    <div class="doi">DOI: 10.1093/hjadgt.2025.083117 &nbsp;|&nbsp; Open Access</div>
+  </div>
+
+  <div class="abstract-box">
+    <strong>Abstract</strong>
+    This study investigates a globally documented phenomenon in coupled decision-making: the deployment of apparent preference neutrality ("I don't mind") as a dominant strategy in restaurant selection, with subsequent systematic veto of all offered alternatives until a preferred option, held constant since the moment of inquiry, is proposed or reluctantly self-revealed. In a longitudinal study of 1,847 couples across 22 nations, we document a mean veto-before-revelation count of 7.3 (SD = 2.1), a mean time-to-resolution of 38.4 minutes (SD = 9.7), and a Preference Concealment Rate of 94%: the proportion of participants who deployed "I don't mind" while harboring a specific, named preference at the moment of utterance. We introduce the Veto Log Protocol, the False Neutrality Index (FNI), and the Revelation Threshold Model. Theoretical modeling under Nash equilibrium confirms that false neutrality is the dominant strategy under current relational incentive structures. The restaurant was always there. It has always been there. It will continue to be there. Just say the restaurant.
+    <div class="keywords"><strong>Keywords:</strong> game theory, preference concealment, veto cascade, domestic decision science, Nash equilibrium, applied couples research, dining behavior, false neutrality index</div>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>Every evening, across six continents, in kitchens and cars and living rooms lit blue by television screens, a ritual unfolds with the regularity of a tidal cycle. One partner turns to the other and asks: <em>Where do you want to eat?</em> And from the other comes a response so universal it has achieved the status of cultural artifact: <em>I don't mind.</em></p>
+  <p>The response is false. It has always been false. The person who said it minded from the beginning. They minded when the question was still being formed. They are currently minding. In 94% of documented cases, they had a specific restaurant — often a specific dish at a specific restaurant — in their immediate cognitive foreground at the precise moment they said "I don't mind."<sup>1</sup></p>
+  <p>What follows is not consensus-seeking. It is a veto process with a predetermined terminal condition. The offering partner will suggest locations. The receiving partner will decline or redirect each one — not from genuine indifference, but from an incentive structure that makes explicit preference declaration suboptimal under current relational norms. This cycle will continue for a mean of 38.4 minutes before the preferred restaurant either emerges naturally from the suggestion space or is finally, reluctantly named.</p>
+  <p>The Greek place on Maple Street was the answer. The Greek place on Maple Street was always the answer. It was the answer before the question was asked.</p>
+
+  <h2>2. Literature Review</h2>
+  <h3>2.1 The Preference Concealment Tradition</h3>
+  <p>Schelling (1960) identified coordination games as contexts in which agents pursue private information advantages at the cost of collective efficiency.<sup>2</sup> Von Neumann and Morgenstern (1944) established formal frameworks for strategic preference revelation under uncertainty.<sup>3</sup> Neither, however, anticipated that these dynamics would be applied most vigorously to the question of whether to eat Thai or Italian on a Wednesday.</p>
+  <p>Subsequent work in behavioral economics identified what Kahneman (2011) termed "preference scaffolding" — the construction of apparent neutrality as a mechanism for offloading decision responsibility while retaining veto authority.<sup>4</sup> Our contribution extends this framework specifically to the coupled domestic dining context, a domain notable for the simultaneous presence of high stakes (relational harmony) and low stakes (it's dinner) that creates uniquely distorted incentive gradients.</p>
+
+  <h3>2.2 The Veto Literature</h3>
+  <p>Chen & Watanabe (2018) documented veto behavior in 340 couples' restaurant selection processes, identifying a mean of 5.2 vetoes before resolution, with notable variance by relationship duration.<sup>5</sup> Our replication across a substantially larger sample (n = 1,847) produced a higher mean (7.3), suggesting either methodological differences in veto counting protocols or a worsening of the condition over time. We favor the latter explanation.</p>
+
+  <h2>3. Methods</h2>
+  <h3>3.1 The Veto Log Protocol</h3>
+  <p>Couples were equipped with standardized Veto Log Cards during the study period. Upon initiation of any restaurant-selection conversation, the "offering" partner recorded each suggestion made; the "receiving" partner independently recorded their private preference at the moment of initial inquiry. Log cards were collected and compared at resolution.</p>
+  <p>A "veto" was defined as any non-acceptance response including: "I'm not really in the mood for that," "we just had that," silence followed by topic change, "whatever you want," and the sub-type we termed the <em>Distant Hmm</em> — a voiced nasal exhalation conveying neither acceptance nor explicit rejection, which nonetheless functions as a veto in practice.</p>
+
+  <h3>3.2 The False Neutrality Index (FNI)</h3>
+  <p>We developed the False Neutrality Index as a ratio measure of the divergence between stated and actual preference states at the moment of neutrality claim:</p>
+  <div class="equation">
+    FNI = (N<sub>stated</sub> × P<sub>concealed</sub>) / T<sub>revelation</sub>
+    <br><small style="font-size:12px;font-style:italic;">Where N<sub>stated</sub> = stated neutrality score (0–1), P<sub>concealed</sub> = concealed preference specificity (0–1), T<sub>revelation</sub> = time to revelation in minutes</small>
+  </div>
+  <p>A perfect FNI of 1.0 indicates complete stated neutrality combined with complete concealed specificity, resolved in exactly one minute. Higher values indicate more extreme false neutrality. The study mean was 0.71. The study maximum was 1.0, recorded six times. All six participants had wanted the Greek place on Maple.</p>
+
+  <h2>4. Results</h2>
+  <h3>4.1 Core Findings</h3>
+  <table>
+    <tr><th>Metric</th><th>Result</th><th>95% CI</th></tr>
+    <tr><td>Preference Concealment Rate</td><td>94.2%</td><td>[92.1%, 96.3%]</td></tr>
+    <tr><td>Mean vetoes before resolution</td><td>7.3</td><td>[6.8, 7.8]</td></tr>
+    <tr><td>Mean time to resolution (min)</td><td>38.4</td><td>[35.1, 41.7]</td></tr>
+    <tr><td>Couples who reached preferred restaurant</td><td>87.6%</td><td>[85.2%, 90.0%]</td></tr>
+    <tr><td>Preferred restaurant named at T=0 (never)</td><td>5.8%</td><td>[4.4%, 7.2%]</td></tr>
+    <tr><td>Post-resolution satisfaction with outcome</td><td>91.3%</td><td>[89.0%, 93.6%]</td></tr>
+  </table>
+  <p class="table-caption">Table 1. Core behavioral metrics across 1,847 couples, 12-month study period.</p>
+
+  <h3>4.2 The Veto Cascade</h3>
+  <p>Veto analysis revealed a consistent pattern we termed the <em>Cascade with Late Narrowing</em>: early vetoes are categorical ("not really Italian tonight"), mid-phase vetoes become more specific ("that place has bad parking"), and late-phase vetoes become nearly arbitrary ("I feel like somewhere new"). This progression has a mean duration of 31.2 minutes and terminates either in exhaustion-based acceptance of the offering partner's suggestion or spontaneous self-revelation by the preferring partner.</p>
+
+  <div class="callout">
+    Veto Log, Subject F-55, Session 34:<br>
+    <em>19:02 — "I don't mind, whatever you want."</em><br>
+    <em>19:04 — [Sushi proposed] "Not really feeling raw fish tonight."</em><br>
+    <em>19:07 — [Pizza proposed] "We had pizza Tuesday."</em><br>
+    <em>19:11 — [Thai proposed] "The parking there is awful."</em><br>
+    <em>19:15 — [Burgers proposed] "I'm not really in a burger mood."</em><br>
+    <em>19:19 — [Mexican proposed] "Kind of loud in there."</em><br>
+    <em>19:24 — [Italian proposed] "What about that Greek place on Maple?"</em><br>
+    <em>[The Greek place on Maple was the answer at 19:02.]</em>
+  </div>
+
+  <h3>4.3 The Preferred Restaurant Was Stable</h3>
+  <p>Cross-referencing veto log cards, we found that in 91.4% of cases, the restaurant ultimately chosen was identical to the restaurant held privately at the moment of initial "I don't mind" declaration. The preference was not formed during the veto process. The preference was not the product of the discussion. The preference predated the discussion by a mean of 8.3 minutes — in many cases, by longer. Subject M-12 reported that his partner had been thinking about the Greek place "since lunch."</p>
+
+  <table>
+    <tr><th>Veto Count</th><th>% of Sessions</th><th>Cumulative</th><th>Est. Time Elapsed</th></tr>
+    <tr><td>0–2 vetoes</td><td>8.4%</td><td>8.4%</td><td>&lt; 8 min</td></tr>
+    <tr><td>3–5 vetoes</td><td>23.1%</td><td>31.5%</td><td>12–22 min</td></tr>
+    <tr><td>6–9 vetoes</td><td>41.7%</td><td>73.2%</td><td>22–38 min</td></tr>
+    <tr><td>10–14 vetoes</td><td>19.8%</td><td>93.0%</td><td>38–55 min</td></tr>
+    <tr><td>15+ vetoes</td><td>7.0%</td><td>100%</td><td>55+ min</td></tr>
+  </table>
+  <p class="table-caption">Table 2. Veto count distribution and estimated elapsed time.</p>
+
+  <h2>5. Game-Theoretic Analysis</h2>
+  <h3>5.1 Why False Neutrality Is the Dominant Strategy</h3>
+  <p>Under current relational incentive structures, false neutrality dominates explicit preference revelation for the following reasons, each formally verified under standard Nash equilibrium analysis:</p>
+  <p><strong>(a) Responsibility Offloading.</strong> Stating "I don't mind" transfers decision accountability to the offering partner. If the evening is poor, causal responsibility is attributed to the proposer, not the vetoer.</p>
+  <p><strong>(b) Preference Optionality.</strong> False neutrality maintains the option to accept or reject any proposal without having committed to a preference that might be criticized.</p>
+  <p><strong>(c) The Unselfishness Signal.</strong> "I don't mind" communicates relational flexibility and consideration, which has social value independent of its factual accuracy.</p>
+  <div class="equation">
+    Payoff(False Neutrality) > Payoff(True Preference)
+    <br>when: δ(blame avoidance) + σ(flexibility signal) > ε(efficiency gain) + τ(partner frustration cost)
+    <br><small style="font-size:12px;font-style:italic;">This inequality holds for approximately 94% of observed pairs.</small>
+  </div>
+
+  <h3>5.2 The Efficiency Cost</h3>
+  <p>The 38.4-minute mean resolution time represents 38.4 minutes of foregone leisure, conversation, and dining that occurs while two people circle the same answer from opposite directions. Annualized across 3.2 restaurant decisions per week, the average couple spends approximately 213 hours per year — approximately 8.9 days — in veto cycles that could be resolved immediately by stating the preferred restaurant at T=0.</p>
+
+  <h2>6. Why She Doesn't Just Say the Restaurant</h2>
+  <p>Participants were directly asked: if you had a preference, why did you not state it immediately? Responses clustered into four categories.</p>
+  <table>
+    <tr><th>Reason Given</th><th>% of Respondents</th></tr>
+    <tr><td>"I wanted to be flexible / not controlling"</td><td>41.2%</td></tr>
+    <tr><td>"I wanted to see if he would suggest it first"</td><td>28.7%</td></tr>
+    <tr><td>"I didn't want to seem like I always get my way"</td><td>19.3%</td></tr>
+    <tr><td>"I actually wanted something from the process"</td><td>10.8%</td></tr>
+  </table>
+  <p class="table-caption">Table 3. Self-reported reasons for preference concealment (n = 1,738 respondents).</p>
+  <p>The 28.7% who "wanted to see if he would suggest it first" represent a secondary test function embedded within the veto process: preference concealment as a check on whether the partner possesses sufficient knowledge of one's tastes to produce the correct answer unsolicited. This is a valid relational test. It is also a test that, by design, produces 38.4 minutes of unnecessary inefficiency regardless of outcome.</p>
+
+  <h2>7. The Resolution Moment</h2>
+  <p>Despite the duration and apparent frustration of the veto cycle, resolution satisfaction was strikingly high: 91.3% of couples reported satisfaction with the eventual dining choice, and 87.4% reported enjoying the meal. Subject F-55 noted, of her 22nd recorded veto session: "It was a great evening. The lamb was incredible." The preferred restaurant had been the Greek place on Maple Street. It was very good. It always is.</p>
+  <p>This finding suggests that the veto cycle, while informationally inefficient, may serve latent relational functions — including the demonstration of sustained engagement, mutual accommodation signaling, and the ritualized approach to shared decisions that couples appear to value for its own sake.</p>
+
+  <h2>8. Conclusions</h2>
+  <p>"I don't mind" is not a preference state. It is a strategic utterance deployed in a game with established payoff structures, a predetermined terminal condition, and a preferred restaurant already selected. The restaurant existed at T=0. It will exist at T=38.4 minutes when it is finally named. In 91.4% of cases, it is the restaurant that was always going to be chosen.</p>
+  <p>The false neutrality cascade costs approximately 8.9 days per year per couple, produces no informational value for either party, and terminates at the same destination it would have reached immediately with honest preference disclosure. Nash equilibrium analysis confirms the strategy is rational given current incentive structures, which means the incentive structures are the problem, not the participants.</p>
+  <p>We close with the following recommendation, delivered without academic qualifications, footnotes, or caveats: <strong>Just say the restaurant.</strong></p>
+  <p>It is the Greek place on Maple. It has always been the Greek place on Maple. The lamb is incredible.</p>
+
+  <div class="stamp">Peer Reviewed &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; No Conflicts of Interest &nbsp;·&nbsp; The Authors Have Also Done This</div>
+
+  <div class="footnotes">
+    <hr class="rule-thin">
+    <p><sup>1</sup> Sterling et al. (2025). Preference state mapping in coupled dining decisions: a longitudinal study. Harvard Journal of Applied Domestic Game Theory, 14(1), 1–34.</p>
+    <p><sup>2</sup> Schelling, T.C. (1960). The Strategy of Conflict. Harvard University Press.</p>
+    <p><sup>3</sup> Von Neumann, J. & Morgenstern, O. (1944). Theory of Games and Economic Behavior. Princeton University Press.</p>
+    <p><sup>4</sup> Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.</p>
+    <p><sup>5</sup> Chen, L. & Watanabe, K. (2018). Veto dynamics in restaurant selection among long-term couples. Journal of Consumer Behavior, 37(4), 112–129.</p>
+  </div>
+</div>
+
+    
+
+
+    
+
+
+    
+
+
+    <!-- SERIES NAVIGATION START -->
+    <div style="margin-top:52px;border-top:2px solid #08080a;padding-top:32px;margin-bottom:8px;">
+      <div style="text-align:center;margin-bottom:20px;">
+        <a href="https://amsterlingbooks.com/series" style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#7a5200;text-decoration:none;border-bottom:1px solid #7a5200;padding-bottom:2px;">✦ &nbsp; Full Series at amsterlingbooks.com/series &nbsp; ✦</a>
+      </div>
+      <p style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;text-align:center;color:#08080a;opacity:0.45;margin-bottom:20px;">Also From the Research Team</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Theoretical Romance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Physics of Intimate Relationships</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">A peer-reviewed, heavily metaphorical analysis of love as force, friction, and orbital mechanics.</div>
+          <a href="https://amsterlingbooks.com/life/Physics_of_Intimate_Relationships.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Applied Romantic Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Relativistic Re-Ignition of System A & B</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+          <a href="https://amsterlingbooks.com/life/Relativistic_Reignition.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Chronological Attraction Physics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Gravitational Dynamics of Age-Differential Coupling</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+          <a href="https://amsterlingbooks.com/life/age_gap_dynamics.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Interpersonal Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Wall-Builder's Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">You are somehow both the prisoner and the warden. A thermodynamic analysis of emotional fortification.</div>
+          <a href="https://amsterlingbooks.com/life/wall_builders_paradox.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Journal of Neuro-Gravitational Relationship Sciences</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Atlas Collapse</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
+          <a href="https://amsterlingbooks.com/life/the_atlas_collapse.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Relational Economics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Narcissistic Partner as Poorly Managed Corporation</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Harvard business school analysis. Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+          <a href="https://amsterlingbooks.com/life/narcissistic_partner_corporation.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Mate-Attraction Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Chrome Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
+          <a href="https://amsterlingbooks.com/life/chrome_hypothesis.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Interdisciplinary Journal of Mature Female Mate Selection</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Apex Predator Hypothesis</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Philosophy, zoology, neuroscience, game theory confirm: she already knows. Seventeen disciplines. The Puma concolor comparison holds.</div>
+          <a href="https://amsterlingbooks.com/life/apex_predator_hypothesis.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Male Navigation</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Directional Refusal Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
+          <a href="https://amsterlingbooks.com/life/directional_refusal_syndrome.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Empty Refrigerator Stare</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
+          <a href="https://amsterlingbooks.com/life/empty_refrigerator_stare.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Temporal Self-Governance</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Snooze Button Paradox</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The man who set the alarm and the man who hits snooze are provably different people. Person A wins 8.2% of encounters. Person A keeps trying.</div>
+          <a href="https://amsterlingbooks.com/life/snooze_button_paradox.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Comparative Suffering Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Male Illness Amplification Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">99.1°F. The specific blanket. Applied Audacity Studies, formally introduced. She had the same cold two weeks earlier. She did not mention it.</div>
+          <a href="https://amsterlingbooks.com/life/male_illness_amplification.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Pre-Event Mirror Protocol Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">Does This Make My Butt Look Bigger?</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The question was never about pants. No Nash equilibrium exists. The dress was on the bed. He was supposed to look at her, not the pants.</div>
+          <a href="https://amsterlingbooks.com/life/pants_paradox.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Female Audacity</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The "If Men Can Do It" Phenomenon</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The List of things women couldn't do. Every stated reason failed. The audacity was correct all along. The List updates. It always updates.</div>
+          <a href="https://amsterlingbooks.com/life/if_men_can_do_it.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Domestic Linguistics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The "I Have a Headache Tonight" Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Five words. Near-zero entropy at 10:47pm. An invoice, not a refusal. The head hurts. The head also has reasons. Make coffee Thursday morning.</div>
+          <a href="https://amsterlingbooks.com/life/headache_syndrome.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Flow Dynamics</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Left Lane Syndrome</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The Tandem Formation. The Velocity Lock. The Brake Check (Audacity Score: 11.4). 80,000 lbs vs 3,000 lbs. Move right. It is the law.</div>
+          <a href="https://amsterlingbooks.com/life/left_lane_syndrome.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Temporal Optimism</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">"I'm Almost There"</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Zero geographic data transmitted. Maximum relational warmth. The keys are in the last coat. The drive is 23 minutes. Both things are true.</div>
+          <a href="https://amsterlingbooks.com/life/almost_there.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Nocturnal Digital Behavior Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The 2am Profile Review</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The slot machine you are holding. Zero new information. The sunk cost of 52 minutes. "What am I doing." One more click. Put the phone down.</div>
+          <a href="https://amsterlingbooks.com/life/two_am_profile_review.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Consumer Behavior & Applied Retail Incompetence</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">She Knows More Than He Does</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">She trained more, spends more, rides younger. She walked in ready to buy. He explained motorcycles to the man she brought for company. She won anyway.</div>
+          <a href="https://amsterlingbooks.com/life/she_knows_more.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:2px solid #7a5200;padding:12px 14px;background:#faf8f2;position:relative;">
+          <div style="position:absolute;top:-10px;left:10px;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.22em;padding:2px 9px;text-transform:uppercase;">Current</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#7a5200;line-height:1.3;margin-bottom:3px;">"I Don't Mind"</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.55;">Harvard Journal of Applied Domestic Game Theory</div>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Thermodynamics & Undeclared Conflict Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Thermostat War</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">47,312 annual adjustments. Zero formal declarations. She is cold. He is fine. Both are physiologically correct. Neither is winning.</div>
+          <a href="https://amsterlingbooks.com/life/thermostat_war.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Textile Conflict Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Blanket Situation</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">18.3 inches of net displacement per night. The Taker has no memory of it. The Left remembers everything after 3am. The coffee is always made.</div>
+          <a href="https://amsterlingbooks.com/life/blanket_situation.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Vehicular Co-Governance Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Driver and the Navigator</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">GPS accuracy: 84%. Override rate: 47%. Override correctness: 31%. The Specific Silence communicates everything. They always get there.</div>
+          <a href="https://amsterlingbooks.com/life/driver_and_navigator.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Relational Cryptography</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">"I'm Fine"</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Maximum Shannon entropy. Eight operational variants. Zero bits of state information. One unmistakable signal. Ask again. The door opens 94.7% of the time.</div>
+          <a href="https://amsterlingbooks.com/life/im_fine.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Domestic Acoustic Conflict Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Volume Negotiation</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Her: 19. Him: 47. Gap: 27.8 normalized units. The compromise fails. The Treaty of Subtitles holds. The remote is on the coffee table. Nobody is reaching for it.</div>
+          <a href="https://amsterlingbooks.com/life/volume_negotiation.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Chronobiological Cohabitation Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Sleep Schedule Incompatibility</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">3.5-hour chronotype gap. 3.8 hours shared alertness per day. The 6am Inexplicable Cheerfulness Event. The Early Bird makes incredible coffee.</div>
+          <a href="https://amsterlingbooks.com/life/sleep_schedule.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Digital Relational Communication Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Three Dots</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Read at 3:16pm. Dots appeared three times. Response: 3 hours 10 minutes. The Greek place was there the whole time. It was always there.</div>
+          <a href="https://amsterlingbooks.com/life/the_three_dots.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Leisure Preference Divergence Studies</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Vacation Incompatibility</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">The Decompressor vs. the Explorer. 14-item list vs. pool chair and a book. Day 3.2: discovery. Day 5: the best day. The photograph hangs in their kitchen.</div>
+          <a href="https://amsterlingbooks.com/life/vacation_incompatibility.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+        <div style="flex:1;min-width:165px;max-width:220px;border:1px solid #c0a060;padding:12px 14px;background:#faf8f2;">
+          <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7a5200;font-family:'Playfair Display',serif;margin-bottom:4px;opacity:0.85;">Harvard Journal of Applied Developmental Game Theory</div>
+          <div style="font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#08080a;margin-bottom:4px;line-height:1.3;">The Parent Trap</div>
+          <div style="font-size:10px;font-style:italic;color:#08080a;opacity:0.7;margin-bottom:9px;line-height:1.45;">Two parenting philosophies. One 4-year-old. She has already run every optimization the literature describes. She asked for crackers. She got them.</div>
+          <a href="https://amsterlingbooks.com/life/the_parent_trap.html" style="display:inline-block;background:#7a5200;color:#fff;font-family:'Playfair Display',serif;font-size:9px;letter-spacing:0.13em;text-transform:uppercase;padding:4px 11px;text-decoration:none;">Read →</a>
+        </div>
+      </div>
+    </div>
+    <!-- SERIES NAVIGATION END -->
+
+</body>
+</html>

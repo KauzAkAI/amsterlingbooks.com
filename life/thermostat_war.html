@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Thermostat War | Harvard Journal of Domestic Thermodynamics & Undeclared Conflict Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #faf8f6;
+    --paper-warm: #f4f0e8;
+    --paper-aged: #e8dfd0;
+    --rule: #6a2000;
+    --rule-light: #a04020;
+    --accent: #3a0800;
+    --accent-mid: #7a1a00;
+    --hot: #8a2000;
+    --cold: #1a1a7a;
+    --cold-light: #3a3aaa;
+    --cold-pale: #e8ecf8;
+    --neutral: #4a3800;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #0a0400;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #2a0800, 0 20px 80px rgba(0,0,0,0.85);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* SPLIT MASTHEAD — hot/cold */
+  .masthead {
+    position:relative;
+    overflow:hidden;
+    border-bottom:4px solid #505050;
+  }
+
+  .masthead-split {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .masthead-hot {
+    background: linear-gradient(135deg, #3a0800 0%, #7a1a00 100%);
+    padding:20px 30px 20px 60px;
+    position:relative;
+    z-index:1;
+  }
+
+  .masthead-cold {
+    background: linear-gradient(135deg, #0a0a3a 0%, #1a1a7a 100%);
+    padding:20px 60px 20px 30px;
+    text-align:right;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; }
+  .harvard-crest span { display:block; font-size:9px; letter-spacing:0.4em; text-transform:uppercase; color:rgba(255,255,255,.6); font-weight:400; margin-top:5px; }
+
+  .masthead-journal { font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:13px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:11px; color:rgba(255,255,255,.65); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .temp-bar {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+  }
+
+  .temp-hot-cell {
+    background:var(--hot);
+    padding:7px 30px 7px 60px;
+    color:#ffccaa;
+  }
+
+  .temp-cold-cell {
+    background:var(--cold);
+    padding:7px 60px 7px 30px;
+    color:#aaccff;
+    text-align:right;
+  }
+
+  .ornament { text-align:center; color:#808080; font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid #a06040; border-top:1px solid #a06040; user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--neutral); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--neutral); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--hot); }
+  .paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--cold); }
+
+  .paper-title { font-family:'Playfair Display',serif; font-size:48px; font-weight:900; line-height:1.0; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--neutral); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.hot { background:var(--hot); }
+  .field-tag.cold { background:var(--cold); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--neutral); padding:14px 16px; }
+  .author-card.hot-card { border-top-color:var(--hot); }
+  .author-card.cold-card { border-top-color:var(--cold); }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:#7a5020; line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--hot); border-right:4px solid var(--cold); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--neutral); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2.hot-head { border-bottom:2px solid var(--hot); }
+  h2.cold-head { border-bottom:2px solid var(--cold); }
+  h2.neutral-head { border-bottom:2px solid var(--neutral); }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--neutral); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--rule-light); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  .hot { color:var(--hot); font-weight:700; }
+  .cold { color:var(--cold); font-weight:700; }
+
+  /* THE ADJUSTMENT LOG */
+  .adj-log {
+    background:#0a0400;
+    color:#c0a080;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    line-height:1;
+    border:1px solid #1a0c04;
+  }
+
+  .adj-log::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--neutral);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.2em;
+    padding:3px 14px;
+    text-transform:uppercase;
+  }
+
+  .adj-row { display:grid; grid-template-columns:80px 90px 80px 1fr; gap:12px; padding:8px 0; border-bottom:1px solid rgba(192,160,128,.08); align-items:baseline; }
+  .adj-time { color:#a08060; font-weight:700; }
+  .adj-who { font-weight:700; }
+  .adj-who.her { color:#ff9988; }
+  .adj-who.him { color:#8899ff; }
+  .adj-temp { font-weight:700; }
+  .adj-temp.up { color:#ff6633; }
+  .adj-temp.down { color:#6688ff; }
+  .adj-temp.same { color:#a08060; }
+  .adj-note { color:#606040; font-style:italic; font-size:12px; line-height:1.5; }
+
+  /* WEAPONS ARSENAL */
+  .arsenal-box {
+    background:var(--paper-warm);
+    border:2px solid var(--rule-light);
+    border-top:none;
+    padding:0;
+    margin:24px 0;
+    overflow:hidden;
+  }
+
+  .arsenal-header {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .arsenal-hot-hdr {
+    background:var(--hot);
+    color:#fff;
+    padding:10px 20px;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    text-align:center;
+  }
+
+  .arsenal-cold-hdr {
+    background:var(--cold);
+    color:#fff;
+    padding:10px 20px;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    text-align:center;
+  }
+
+  .arsenal-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .arsenal-item {
+    padding:14px 20px;
+    border-bottom:1px solid var(--paper-aged);
+    border-right:1px solid var(--paper-aged);
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .arsenal-item:nth-child(even) { border-right:none; }
+
+  .arsenal-name { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; margin-bottom:4px; }
+  .arsenal-name.hot-weapon { color:var(--hot); }
+  .arsenal-name.cold-weapon { color:var(--cold); }
+  .arsenal-desc { color:var(--ink-faint); font-size:14px; line-height:1.5; }
+  .arsenal-effect { font-size:12px; font-style:italic; color:var(--rule-light); margin-top:4px; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--neutral); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(74,56,0,.06); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--neutral); width:22%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--neutral); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--neutral); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--neutral); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.hot-num { color:var(--hot); }
+  .stat-num.cold-num { color:var(--cold); }
+  .stat-num.neutral-num { color:var(--neutral); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  /* TREATY BOX */
+  .treaty-box {
+    background: linear-gradient(135deg, #200800, #080820);
+    border:2px solid #505050;
+    padding:28px 36px;
+    margin:28px 0;
+    position:relative;
+    color:#e0e0e0;
+  }
+
+  .treaty-box::before {
+    content:'THE TREATY OF SUBTITLES — RATIFIED BY BOTH PARTIES';
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#505050;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.22em;
+    padding:3px 18px;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+
+  .treaty-clause { display:flex; gap:16px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,.08); font-size:16px; line-height:1.6; align-items:baseline; }
+  .treaty-clause:last-child { border:none; }
+  .treaty-num { font-family:'Playfair Display',serif; font-weight:700; color:#a09080; flex-shrink:0; width:30px; }
+  .treaty-text { color:#c0b8a8; }
+
+  .pull-quote { border-top:3px double var(--neutral); border-bottom:3px double var(--neutral); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--neutral); }
+
+  .rule-thick { border:none; border-top:2px solid var(--neutral); margin:44px 0; }
+  .rule-split { border:none; height:2px; background:linear-gradient(to right, var(--hot) 50%, var(--cold) 50%); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--neutral); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+
+  .paper-footer { background:linear-gradient(to right, #200800 50%, #080820 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid #505050; }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,.6); }
+  .footer-note { font-style:italic; color:rgba(255,255,255,.5); font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-hot,.masthead-cold,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .temp-hot-cell,.temp-cold-cell{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:32px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .adj-row{grid-template-columns:70px 80px 60px 1fr;gap:6px}
+    .arsenal-grid{grid-template-columns:1fr}
+    .arsenal-header{grid-template-columns:1fr}
+    .arsenal-cold-hdr{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-split">
+      <div class="masthead-hot">
+        <div class="harvard-crest">
+          VERITAS
+          <span>Harvard University · Cambridge, Massachusetts</span>
+        </div>
+      </div>
+      <div class="masthead-cold">
+        <div class="masthead-journal">
+          <strong>Harvard Journal of Domestic Thermodynamics</strong>
+          <small>& Undeclared Conflict Studies</small>
+        </div>
+      </div>
+    </div>
+    <div class="temp-bar">
+      <div class="temp-hot-cell">🔥 &nbsp; He Is Fine · 68°F · "It's Perfect In Here"</div>
+      <div class="temp-cold-cell">She Is Freezing · 74°F · "It's Literally Arctic" &nbsp; 🧊</div>
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: Wars Nobody Has Formally Declared</div>
+
+    <h1 class="paper-title">The Thermostat War</h1>
+    <p class="paper-subtitle">A Complete Physiological, Game-Theoretic, Military-Strategic, and Anthropological Documentation of the Continuous Low-Grade Bilateral Climate Conflict Present in 96.3% of Cohabitating Couples — Including the Full Arsenal of Thermal Weapons, the 47,312 Annual Adjustments That Produce Zero Net Temperature Change, Why She Is Correct That She Is Cold, Why He Is Correct That He Is Fine, and the Only Documented Peace Agreement with a Lasting Stability Rating Above 60%</p>
+
+    <div class="paper-fields">
+      <span class="field-tag hot">She Is Cold</span>
+      <span class="field-tag cold">He Is Fine</span>
+      <span class="field-tag">Both Are Correct</span>
+      <span class="field-tag hot">Thermal Weapons</span>
+      <span class="field-tag cold">47,312 Adjustments</span>
+      <span class="field-tag">Treaty of Subtitles</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card hot-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Bilateral Physiological Incompatibility<br>Harvard Business School</div>
+        <div class="author-contact">
+          sterling@hbs.harvard.edu<br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Classified by this study as a Warm Operator — comfortable at 68°F, considers 72°F "a little much," has never once in the study period been cold. Has found the thermostat moved up on 312 documented occasions. Has returned it to 68°F on 289 of those occasions. Was not aware, prior to this study, that this constituted a war. Is now aware. The awareness has not changed his temperature preference.</div>
+      </div>
+      <div class="author-card cold-card">
+        <div class="author-name">Dr. Ingrid Halvorsen-Nakamura, Ph.D., M.D.</div>
+        <div class="author-title">Professor of Thermal Biology & Estrogen-Mediated Thermoregulation<br>University of Oslo / Harvard Medical School</div>
+        <div class="author-contact">
+          i.halvorsen@medicine.uio.no<br>
+          Rikshospitalet Wing C · +47 23 07 00 00
+        </div>
+        <div class="author-quals">Ph.D. Physiology (Oslo), M.D. (Harvard). The physiological expert. Confirmed that women have a mean thermal comfort zone 3–5°F warmer than men, driven by estrogen-mediated peripheral vasoconstriction, lower resting metabolic rate per unit of body surface area, and greater thermal sensitivity in the extremities. Notes that both parties in the conflict are physiologically correct. Notes that "physiologically correct" has never, in her clinical experience, resolved a thermostat conflict. The conflict continues. The physiology continues.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. James Obi-Nwosu, Ph.D.</div>
+        <div class="author-title">Professor of Conflict Resolution & Undeclared Domestic Wars<br>Lagos School of Governance</div>
+        <div class="author-contact">
+          j.obi@lsg.edu.ng<br>
+          Faculty Building 3, Office 204
+        </div>
+        <div class="author-quals">Ph.D. Political Science (Oxford). Contributed the military strategy analysis and the arsenal documentation in Section 4. Notes that the thermostat conflict has the defining features of an asymmetric low-intensity conflict: no formal declaration of hostilities, no peace treaty (until the Treaty of Subtitles), continuous incremental action and counter-action, and both parties telling outside parties that everything is "fine." Everything is not fine. The thermostat is at 71°F and neither party set it there.</div>
+      </div>
+      <div class="author-card cold-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Temperature Perception<br>Harvard Medical School</div>
+        <div class="author-contact">
+          p.venkataraman@hms.harvard.edu<br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the neurological analysis of cold perception in Section 3. Documents that the female Cold Operator's experience of cold is genuine — peripheral cold receptors are firing, vasoconstriction is active, and the thermal discomfort signal is real. Also documents that the male Warm Operator's experience of comfort is genuine — his thermal receptors are not firing because the ambient temperature is within his comfort zone. Both experiences are neurologically real. The thermostat cannot satisfy both simultaneously. This is the problem.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Domestic Conflict<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">
+          k.asante@fas.harvard.edu<br>
+          Peabody Museum 208 · (617) 555-0247
+        </div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the thermostat conflict across all 31 cultures in the study. Every culture with central climate control has this conflict. The specific temperatures vary by regional norm, but the dynamic — one partner cold, one partner fine, continuous adjustment and counter-adjustment, no formal acknowledgment of hostilities — is universal. In cultures without thermostats, the conflict manifests around window opening, fire management, and blanket allocation. The conflict predates the thermostat. The thermostat just gave it a dial.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & Bilateral Adjustment Economics<br>Harvard Kennedy School</div>
+        <div class="author-contact">
+          d.abara@hks.harvard.edu<br>
+          Rubenstein Building 302 · (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Produced the economic analysis of the adjustment-counter-adjustment cycle in Section 5. Calculates that 34% of all thermostat adjustments in the study return the temperature to within 1°F of the pre-adjustment baseline — meaning both parties moved the thermostat and the thermostat ended up where it started. The combined time spent on these adjustments is 0.4 minutes per zero-change cycle. This has happened 16,100 times in the study period. Prof. Abara-Whitfield describes this as "the least efficient expenditure of effort I have documented." He has documented some very inefficient expenditures of effort.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: In February, During the Study's Coldest Documented Stretch (She Was Very Cold) &nbsp;·&nbsp;
+      Peer-Reviewed: By Three Cold Operators and Three Warm Operators &nbsp;·&nbsp;
+      Accepted: After Considerable Debate About Whether 68°F Is "Perfect" or "Freezing" &nbsp;·&nbsp;
+      Dedicated: To Every Person Who Has Put On a Sweater Without Saying Anything. You Know What You Were Doing. The Research Team Also Knows.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Domestic Thermostat Conflict (DTC)</strong> — the continuous, low-grade, formally undeclared climate war documented in 96.3% of cohabitating couples regardless of geography, climate zone, season, or the number of blankets stored in the home. Smart thermostat data from 3,214 households reveals a mean of <strong>47,312 annual thermostat adjustments per household</strong>, of which 89.4% constitute a counter-adjustment of the partner's previous adjustment, and 34% return the temperature to within 1°F of the pre-adjustment baseline — meaning approximately one in three thermostat interactions produces zero net temperature change and serves exclusively as a statement of position.</p>
+      <p class="abstract-text">The DTC is physiologically grounded: women demonstrate a mean thermal comfort zone 3–5°F warmer than men, supported by estrogen-mediated peripheral vasoconstriction, metabolic rate differentials, and body surface area ratios. <strong>Both parties are correct.</strong> The Cold Operator is genuinely cold. The Warm Operator is genuinely comfortable. The thermostat cannot satisfy both simultaneously at any single setting. The conflict is therefore, under current biological constraints, irresolvable. Both parties have correctly identified this, which is why neither party has formally declared the war. Declaring it would require acknowledging that nobody wins it.</p>
+      <p class="abstract-text">We document the full <strong>Thermal Weapons Arsenal</strong> deployed by both parties — the quiet adjustment, the extra blanket deployed without comment, the "I'm just going to put on a sweater" offensive, the open window maneuver, the specific statement "I didn't touch the thermostat" — and confirm that the only documented peace agreement with a stability rating above 60% is the <strong>Treaty of Subtitles</strong>: the bilateral agreement, usually implicit, to set the temperature at a mutually tolerable compromise and address remaining comfort gaps through clothing management. Dinner, the research team recommends, at 71 degrees.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Domestic Thermostat Conflict · 47,312 Annual Adjustments · Zero Net Change (34%) · She Is Cold (Correct) · He Is Fine (Also Correct) · The Problem Is Unsolvable · The Thermal Arsenal · The Quiet Adjustment · The Sweater Offensive · "I Didn't Touch It" · The Treaty of Subtitles · 71 Degrees · Both Right · Nobody Wins
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 1</span> Introduction: The Thermostat and What It Has Become</h2>
+
+      <p class="dropcap">The thermostat is a small plastic rectangle mounted near the hallway. It controls the ambient temperature of the shared living space. It was designed by engineers who assumed it would be set once, occasionally adjusted for seasonal changes, and otherwise left alone. The engineers were wrong. The thermostat has become the most contested object in the modern domestic environment, the site of a continuous low-grade conflict that neither party has named and both parties are waging with great dedication.</p>
+
+      <p>The conflict operates on a simple axis: one person is cold, one person is fine, and the thermostat can only be set to one temperature. Every setting satisfies one party and does not satisfy the other. The unsatisfied party adjusts the thermostat. The previously satisfied party, now unsatisfied, adjusts it back. This cycle has been running, in the average household, 129.6 times per day, since the third week of cohabitation, without a formal declaration of hostilities and without a formal peace negotiation. Both parties describe the domestic temperature situation as "fine" to outside parties. Both parties have strong feelings about it.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num hot-num">47,312</span>
+          <span class="stat-label">Mean annual thermostat adjustments per cohabitating household</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num cold-num">89.4%</span>
+          <span class="stat-label">Adjustments that constitute a counter-adjustment of the partner's last move</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num neutral-num">34%</span>
+          <span class="stat-label">Adjustment cycles ending within 1°F of the starting temperature. Net change: zero.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num neutral-num">0</span>
+          <span class="stat-label">Households in the study that achieved genuine bilateral thermal comfort at one setting</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The 34% zero-change figure deserves emphasis. In 15,846 documented adjustment cycles in the study period, both parties moved the thermostat and the thermostat ended up where it started. The mean time per zero-change cycle: 0.4 minutes. Total time consumed by adjustments that produced no temperature change: 6,338 minutes — 105 hours — across the study period. The research team presents this not as an indictment of either party but as a precise measurement of the effort invested in a bilateral position statement. The position being stated: I have a temperature preference and I intend to express it. The temperature, unmoved by these efforts, continues to be whatever it was.</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 2: THE PHYSIOLOGY -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 2</span> The Physiology: Why Both Parties Are Completely Correct</h2>
+
+      <p>Before documenting the conflict, the research team establishes the foundational finding that separates the Domestic Thermostat Conflict from most domestic conflicts: <strong>both parties are right.</strong> This is not a courtesy. It is a documented physiological fact, and it is the reason the conflict is irresolvable by argument — because argument about facts requires that one party be wrong, and in the DTC, neither party is wrong.</p>
+
+      <p>Dr. Halvorsen-Nakamura's physiological analysis documents three independent mechanisms that produce the female Cold Operator's lower thermal comfort temperature:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Physiological Basis of the Temperature Gap: Why She Is Cold and He Is Fine</div>
+        <table>
+          <thead>
+            <tr><th>Mechanism</th><th>What It Does</th><th>Effect on Thermal Comfort</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Estrogen-mediated vasoconstriction</td>
+              <td>Estrogen promotes constriction of peripheral blood vessels, reducing blood flow to extremities (hands, feet) in cooler environments.</td>
+              <td>Cold hands and feet at temperatures where the Warm Operator's extremities remain comfortable. The Cold Operator's feet are cold at 68°F. This is not imagination. This is estrogen. The feet are genuinely cold.</td>
+            </tr>
+            <tr>
+              <td>Metabolic rate differential</td>
+              <td>Women have a lower resting metabolic rate per unit of body surface area than men. The body produces less internal heat per square foot of skin surface.</td>
+              <td>Less internal heat generation means the Cold Operator requires more ambient warmth to maintain core temperature comfort. At 68°F, the Warm Operator's metabolism is providing adequate supplemental heat. The Cold Operator's is not.</td>
+            </tr>
+            <tr>
+              <td>Body surface area ratio</td>
+              <td>Women generally have a higher surface area-to-mass ratio, meaning more skin surface relative to the body mass generating heat.</td>
+              <td>More surface area through which heat is lost to the environment. The Cold Operator is, from a thermodynamic standpoint, a less efficient heat-retaining system at low ambient temperatures. This is not a character flaw. This is geometry and biology combined.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Dr. Halvorsen-Nakamura notes that the documented mean gap in thermal comfort between men and women is 3–5°F — which is, incidentally, exactly the gap between the Warm Operator's preferred temperature (68°F) and the Cold Operator's preferred temperature (72°F) in the primary study household. The conflict is not manufactured. The gap is not perception. It is physiology, measured, replicated, and published in seven independent studies before this paper was written. She is cold. He is fine. The science is in.</div>
+      </div>
+
+      <div class="footnote"><sup>‡</sup> The Warm Operator's comfort at 68°F is equally well-documented. His thermal receptors are not firing distress signals because 68°F is within his comfort zone. He is not pretending to be fine. He is fine. The research team wishes to state this clearly because the Cold Operator occasionally suspects the Warm Operator is fine on purpose, as a strategic position, and the Warm Operator occasionally suspects the Cold Operator is cold on purpose, as a strategic position. Neither suspicion is correct. Both experiences are genuine, simultaneous, and thermodynamically incompatible at a single thermostat setting.</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 3: THE ADJUSTMENT RECORD -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 3</span> The Record: One Day, Documented in Full</h2>
+
+      <p>The research team presents the complete thermostat adjustment record for a single representative Tuesday in the study household. The record was obtained from smart thermostat data. Neither party was informed of the monitoring in real time. Both parties, upon review of the data, described it as "about right."</p>
+
+      <div class="adj-log" data-label="THERMOSTAT ADJUSTMENT LOG — TUESDAY — COMPLETE RECORD">
+        <div class="adj-row">
+          <span class="adj-time">6:04am</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-temp up">68→72°F</span>
+          <span class="adj-note">She woke first. House was "freezing." Note: 68°F. Adjustment: +4°F. She went to make coffee.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">7:12am</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp down">72→68°F</span>
+          <span class="adj-note">He woke up. "It's so hot in here." Adjusted without looking at her. She was in the kitchen. She heard the click.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">7:34am</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-temp up">68→71°F</span>
+          <span class="adj-note">Compromise position. She went one degree under her preference. This is a concession. He does not know it is a concession.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">9:15am</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp down">71→69°F</span>
+          <span class="adj-note">Working from home. "A little warm." Adjusted by 2°F. Counter-concession, also unacknowledged.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">11:48am</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-temp up">69→71°F</span>
+          <span class="adj-note">Returned to her 7:34am compromise position. The thermostat is back where it was at 7:34am. 2 hours 34 minutes and two adjustments to arrive back at 71°F.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">12:30pm</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp same">71°F</span>
+          <span class="adj-note">He checked the thermostat while getting lunch. Did not adjust. Research team notes this as a remarkable act of restraint documented only 4 times in the full study period.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">3:17pm</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-temp up">71→73°F</span>
+          <span class="adj-note">Afternoon temperature drop. "I'm cold." This is the highest setting of the day. She is wearing socks. She is still cold.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">3:44pm</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp down">73→70°F</span>
+          <span class="adj-note">"It's like a sauna." Adjusted down 3°F. He did not say anything. She heard the click from the other room.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">3:51pm</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-note">Deployed the Sweater Offensive. Put on a cardigan. Did not adjust the thermostat. Did not say anything. The cardigan was very visible.</span>
+          <span></span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">4:02pm</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp up">70→71°F</span>
+          <span class="adj-note">He saw the cardigan. He adjusted one degree. He said nothing. She said nothing. The conflict was briefly, silently resolved by one degree of acknowledged compromise.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">6:30pm</span>
+          <span class="adj-who her">Her</span>
+          <span class="adj-temp up">71→72°F</span>
+          <span class="adj-note">Cooking dinner. "I'm done being cold." End-of-day temperature escalation is documented in 78% of weekday records.</span>
+        </div>
+        <div class="adj-row">
+          <span class="adj-time">10:15pm</span>
+          <span class="adj-who him">Him</span>
+          <span class="adj-temp down">72→68°F</span>
+          <span class="adj-note">Bedtime. "We sleep better when it's cool." This is accurate — sleep quality is documented as higher at 65–68°F. This does not mean 68°F is comfortable to fall asleep at. These are different things.</span>
+        </div>
+        <div class="adj-row" style="border:none; padding-top:10px;">
+          <span class="adj-time"></span>
+          <span style="grid-column:2/-1; color:#606040; font-style:italic; font-size:12px; line-height:1.6;">Day summary: 11 adjustments. Net temperature change from 6:04am setting: 0°F — both started and ended at 68°F. Total adjustment distance traveled: 24°F up and down across the day. Mean time between adjustments: 1 hour 39 minutes. Number of verbal acknowledgments of the conflict: 0. Conflict status: ongoing.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 4: THE ARSENAL -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 4</span> The Thermal Weapons Arsenal: A Complete Inventory</h2>
+
+      <p>Prof. Obi-Nwosu's military strategy analysis documents both parties' full arsenal of thermal weapons — the complete set of tactics deployed in the DTC short of direct verbal acknowledgment of the conflict. Both parties maintain complete deniability. Both parties know exactly what they are doing. The research team presents the inventory in the format of a bilateral arms document.</p>
+
+      <div class="arsenal-box">
+        <div class="arsenal-header">
+          <div class="arsenal-hot-hdr">🔥 Warm Operator Arsenal</div>
+          <div class="arsenal-cold-hdr">🧊 Cold Operator Arsenal</div>
+        </div>
+        <div class="arsenal-grid">
+
+          <div class="arsenal-item">
+            <div class="arsenal-name hot-weapon">The Quiet Adjustment</div>
+            <div class="arsenal-desc">Moving the thermostat down without comment, typically while passing by or getting water. Executed with the casual confidence of someone who is not doing anything.</div>
+            <div class="arsenal-effect">Effect: Temperature drops. Cold Operator notices within 12 minutes. Counter-adjustment follows.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name cold-weapon">The Quiet Counter-Adjustment</div>
+            <div class="arsenal-desc">Identical in form. Moving the thermostat up without comment. The symmetry of the quiet adjustment and the quiet counter-adjustment is the defining feature of the DTC. The war has no opening shots. It has only counter-shots.</div>
+            <div class="arsenal-effect">Effect: Temperature rises. Warm Operator notices within 8 minutes. Counter-adjustment follows.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name hot-weapon">The Open Window</div>
+            <div class="arsenal-desc">Opening a window instead of adjusting the thermostat. Technically not a thermostat adjustment. Creates a pocket of cold air near the window while leaving the rest of the room unchanged. Strategic in summer only. Devastating to anyone sitting near the window.</div>
+            <div class="arsenal-effect">Effect: Localized Cold Operator crisis near window. Prompt relocation of Cold Operator away from window.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name cold-weapon">The Sweater Offensive</div>
+            <div class="arsenal-desc">Putting on a sweater, blanket, or additional layer in a visible location without adjusting the thermostat and without saying anything. The visibility is the message. The silence is the pressure. The research team documents this as the most effective single-move weapon in the Cold Operator arsenal.</div>
+            <div class="arsenal-effect">Effect: Warm Operator becomes aware of the Cold Operator's thermal state without being explicitly told. Adjusts thermostat by 1°F within 11 minutes in 73% of deployments.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name hot-weapon">"I Sleep Better When It's Cool"</div>
+            <div class="arsenal-desc">Citing documented sleep science to justify the 68°F bedtime setting. The science is correct — core body temperature drops during sleep and cooler ambient temperatures facilitate this. The deployment of correct science to win a temperature argument is, Prof. Obi-Nwosu notes, "technically admissible and strategically annoying."</div>
+            <div class="arsenal-effect">Effect: Cold Operator cannot refute the science. Cold Operator deploys extra blanket. Blanket war begins.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name cold-weapon">"I'm Just Going to Make Tea"</div>
+            <div class="arsenal-desc">Announcing the preparation of a hot beverage as a thermal solution. Not a request for a thermostat adjustment. Not a complaint. Just an announcement that she is cold enough to seek external heat sources. The implication is loud. The statement is mild.</div>
+            <div class="arsenal-effect">Effect: Warm Operator registers that the Cold Operator is cold. May or may not adjust thermostat. Cold Operator gets tea either way. Tea is warm.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name hot-weapon">"I Didn't Touch It"</div>
+            <div class="arsenal-desc">The defensive denial, deployed when the Cold Operator notices a temperature change and looks at the Warm Operator. Technically sometimes true. Functionally, the statement itself confirms that the Cold Operator's glance was understood as an accusation, which it was.</div>
+            <div class="arsenal-effect">Effect: Conversation ends. Investigation begins. Smart thermostat data is consulted later. He touched it.</div>
+          </div>
+
+          <div class="arsenal-item">
+            <div class="arsenal-name cold-weapon">The Weighted Blanket Arrival</div>
+            <div class="arsenal-desc">The appearance of a large, heavy blanket in the shared living space, deployed around the Cold Operator with the quiet ceremony of someone establishing territory. Not a weapon directed at the Warm Operator. A unilateral thermal solution that requires no thermostat adjustment and communicates the situation completely.</div>
+            <div class="arsenal-effect">Effect: Cold Operator is warmer. Warm Operator receives the message. Message received. No response required. The blanket is its own response.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footnote"><sup>§</sup> Prof. Obi-Nwosu notes a feature of the DTC arsenal that distinguishes it from conventional military arsenals: both parties' weapons are calibrated to avoid direct confrontation. The Quiet Adjustment could have been a conversation. The Sweater Offensive could have been a request. The "I Didn't Touch It" could have been an admission. Every weapon in both arsenals is a preference stated at arm's length — through action, implication, or strategic silence — rather than directly. The research team observes that a direct statement of preference would resolve each exchange in under ninety seconds. Both parties continue to prefer the arsenal. The arsenal is 47,312 annual moves. The direct conversation is zero annual moves. The preference is documented.</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 5: GAME THEORY -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 5</span> Game Theory: Why Nobody Wins and Nobody Stops</h2>
+
+      <p>Prof. Abara-Whitfield's game theory analysis of the DTC identifies a structure distinct from most domestic conflicts: this is not a game either party can win, and both parties understand this, and both parties continue to play. The rational response to an unwinnable game is to stop playing. Neither party stops. This requires explanation.</p>
+
+      <p>The explanation is that the DTC is not actually about temperature. The temperature is the object of the conflict, but it is not the subject. The subject is something more fundamental: the right to exist comfortably in shared space. Each thermostat adjustment is a small assertion: <em>my comfort matters here.</em> Each counter-adjustment is a small assertion in return: <em>mine does too.</em> The 47,312 adjustments are not 47,312 battles over temperature. They are 47,312 bilateral confirmations that both parties have legitimate standing in the shared space.</p>
+
+      <p>This is why neither party stops. Stopping would not mean "I accept defeat on the temperature question." It would mean "I no longer assert my right to be comfortable here." Neither party is prepared to make that statement. The thermostat continues to move. Both parties continue to be present. This is, in its strange way, a form of mutual recognition.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — The DTC Strategic Matrix: Why Both Parties Keep Adjusting</div>
+        <table>
+          <thead>
+            <tr><th>If Party A adjusts and Party B...</th><th>Temperature outcome</th><th>What it communicates</th><th>Probability of further adjustment</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Also adjusts (counter)</td>
+              <td>Net: 0–1°F change. Back near start.</td>
+              <td>Both preferences acknowledged. Both positions stated. Impasse confirmed. Both parties still here.</td>
+              <td>89%. The cycle continues. This is the normal state.</td>
+            </tr>
+            <tr>
+              <td>Does not adjust (accepts)</td>
+              <td>Party A's preferred temperature held.</td>
+              <td>Party B has conceded this round. Party B will adjust at the next available moment. The concession is temporary.</td>
+              <td>94% within 90 minutes. The concession is banked, not resolved.</td>
+            </tr>
+            <tr>
+              <td>Verbally acknowledges</td>
+              <td>Negotiation begins. Compromise temperature possible.</td>
+              <td>Both parties are now in a conversation about something real. This is unusual. Both parties are slightly uncomfortable with it.</td>
+              <td>31% of verbal acknowledgments result in a stable temperature agreement lasting more than one week. This is the highest stability rating of any resolution method.</td>
+            </tr>
+            <tr>
+              <td>Deploys the Sweater Offensive</td>
+              <td>Temperature stays at A's setting. B adds clothing.</td>
+              <td>B has communicated their state without requesting a change. A has received the communication. A may or may not respond.</td>
+              <td>73% — A usually adjusts 1°F after the Sweater Offensive. Both parties understand the communication. The communication worked.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes that the highest-stability resolution — verbal acknowledgment leading to a negotiated compromise — occurs in 31% of attempts but is attempted in only 4% of all DTC exchanges. The other 96% use the arsenal. The reason is not that verbal acknowledgment is unknown as an option. The reason is that the thermostat conflict, as documented, is not primarily about temperature. It is about presence and comfort and standing in shared space. And those things are harder to discuss than a number on a dial.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 6: THE TREATY -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 6</span> The Treaty of Subtitles: The Only Stable Peace</h2>
+
+      <p>The research team documents six resolution strategies attempted in the study population and their stability ratings over 12 months. Five of them fail. One does not.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 — Thermostat Conflict Resolution Strategies and Stability Ratings</div>
+        <table>
+          <thead>
+            <tr><th>Strategy</th><th>Description</th><th>12-Month Stability</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"Your turn to pick"</td>
+              <td>Alternating control of the thermostat by day or week. Formally agreed upon. Both parties comply initially.</td>
+              <td>18% — collapses by week 3 when the Warm Operator's week contains a cold snap. Emergency adjustment deployed. Treaty void.</td>
+            </tr>
+            <tr>
+              <td>The Compromise Temperature</td>
+              <td>Agreement on a fixed temperature (usually 70–71°F) as the permanent setting for both parties.</td>
+              <td>34% — the compromise temperature satisfies neither party fully, which means both parties have ongoing motivation to nudge it. Nudging resumes within 2 weeks. The compromise is a ceasefire, not a peace.</td>
+            </tr>
+            <tr>
+              <td>Separate thermostats (zones)</td>
+              <td>Installation of dual-zone climate control, allowing different temperatures in different rooms.</td>
+              <td>71% — highest stability of all hardware solutions. Expensive. Requires admitting the problem is real and worth $3,000. Many couples choose the conflict over the conversation about the conflict.</td>
+            </tr>
+            <tr>
+              <td>The Weighted Blanket Accord</td>
+              <td>Thermostat set to Warm Operator's preference; Cold Operator addressed via high-quality insulated blanket and heated mattress pad.</td>
+              <td>44% — works until summer, when the heated mattress pad becomes a liability and the conflict resumes.</td>
+            </tr>
+            <tr>
+              <td>Discussion and negotiation</td>
+              <td>Direct conversation about both parties' needs, leading to a negotiated temperature and explicit clothing-management agreement.</td>
+              <td>31% — effective when it occurs. Occurs rarely. Requires both parties to discuss something that is ostensibly about temperature but is actually about comfort and standing in shared space, which is harder to discuss.</td>
+            </tr>
+            <tr>
+              <td><strong>The Treaty of Subtitles</strong></td>
+              <td>Implicit bilateral agreement: thermostat set to 71°F (neither party's first choice); Cold Operator addresses the gap with a blanket and socks; Warm Operator addresses the gap by opening a window briefly in the morning without comment; neither party requires the other to abandon their thermal reality. Both parties watch television with subtitles on — the primary cohabitating activity during which the temperature is most actively contested.</td>
+              <td><strong>68%</strong> — the highest stability of any solution that does not involve expensive hardware. Works because it does not require either party to be wrong. She is still cold. He is still fine. The thermostat is at 71°F. The blanket is on the couch. The window opens briefly at 7am. Everyone knows what they're doing. Nobody says it.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The Treaty of Subtitles is named after the finding that 68% of couples who achieve stable temperature arrangements also watch television with subtitles on — a separate, overlapping bilateral compromise between the party who wants the volume at 47 and the party who wants it at 19. These couples, the research team notes, have developed a general facility for implicit bilateral compromise that extends across multiple domestic theaters. The subtitle is a flag of the general peace, not merely a text track.</div>
+      </div>
+
+      <div class="treaty-box">
+        <div class="treaty-clause">
+          <span class="treaty-num">I.</span>
+          <span class="treaty-text">The thermostat shall be set at 71°F, representing a position neither party prefers and both parties can tolerate.</span>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">II.</span>
+          <span class="treaty-text">The Cold Operator retains the right to add clothing layers, blankets, or hot beverages at any time without this constituting a complaint or a request.</span>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">III.</span>
+          <span class="treaty-text">The Warm Operator retains the right to open a window briefly in the morning, which shall not be interpreted as a thermostat adjustment or a hostile act.</span>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">IV.</span>
+          <span class="treaty-text">Neither party shall comment on the other party's thermal management strategy (the blanket, the window) provided that strategy does not materially alter the shared space temperature.</span>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">V.</span>
+          <span class="treaty-text">Both parties acknowledge that the other party's thermal experience is real, correct, and not subject to negotiation or dismissal. She is cold. He is fine. Both things are true. The treaty does not resolve this. The treaty lives alongside it.</span>
+        </div>
+        <div class="treaty-clause" style="border:none;">
+          <span class="treaty-num">VI.</span>
+          <span class="treaty-text">The television shall have subtitles on. This clause is unrelated to temperature and has been included because it is, in practice, inseparable from the households in which this treaty has been successfully ratified.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2 class="neutral-head"><span class="sec-num">§ 7</span> Conclusions: 71 Degrees and a Blanket</h2>
+
+      <p class="dropcap">The Domestic Thermostat Conflict is irresolvable. This is not pessimism. It is thermodynamics. Two people with a 3–5°F gap in thermal comfort, sharing a space with a single thermostat, cannot both be fully comfortable at the same time. One degree of compromise requires one party to be slightly less comfortable than they would prefer. This is not unfair. This is the arithmetic of shared space.</p>
+
+      <p>What can be resolved is the 47,312 annual adjustments. Not because the conflict is wrong — the conflict is a legitimate expression of two people's genuine physiological realities — but because 47,312 adjustments producing a mean of 34% zero-change cycles is an expensive way to communicate two things that could be said in a single conversation: <em>I am cold, and my being cold is real.</em> <em>I am fine, and my being fine is also real.</em> Both true. Both acknowledged. Now: 71 degrees and a blanket.</p>
+
+      <p>The Treaty of Subtitles works not because it satisfies everyone but because it recognizes everyone. It says: you are cold and that is real, here is a blanket. He is fine and that is real, here is 71°F. Neither party has abandoned their thermal reality. Both parties have found a way to exist comfortably alongside each other's thermal reality. This is the best available outcome. This is what 68% stability looks like. It looks like a blanket on the couch and the window open for seven minutes in the morning and nobody saying anything because everyone already knows.</p>
+
+      <div class="pull-quote">
+        <blockquote>"She is cold.<br>He is fine.<br>Both are correct.<br>The thermostat is at 71°F.<br>The blanket is on the couch.<br>This is the peace."</blockquote>
+        <cite>— Dr. Ingrid Halvorsen-Nakamura, closing remarks<br><em>She was wearing a cardigan during the presentation</em><br><em>The conference room was at 70°F</em><em>She was cold</em><br><em>She did not say anything. She had a cardigan.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2 class="neutral-head"><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Halvorsen-Nakamura, I. et al. (2024). Estrogen-mediated peripheral vasoconstriction and its effect on thermal comfort zone in cohabitating couples. <em>Journal of Thermal Biology, 118</em>, 103–119. (She is cold. The paper explains why in 16 pages. The summary: estrogen, metabolic rate, surface area. All three. She is cold.)</li>
+        <li>Obi-Nwosu, J. (2026). The Thermal Arsenal: Asymmetric low-intensity conflict strategies in domestic climate management. <em>Harvard Journal of Domestic Thermodynamics & Undeclared Conflict Studies, 1</em>(1), 44–88. ("Both parties maintain full deniability. Both parties know exactly what they're doing." — Author note.)</li>
+        <li>Smart Thermostat Consortium (2024). Residential climate adjustment patterns: 3,214 households, 12-month longitudinal study. Mean annual adjustments: 47,312. Zero-change cycles: 34%. The thermostat moved. Nothing changed. This happened 15,846 times.</li>
+        <li>Abara-Whitfield, D. (2026). The 0.4-minute zero-change adjustment: A game-theoretic analysis of bilateral position statements executed via thermostat. <em>Harvard Journal of Domestic Thermodynamics & Undeclared Conflict Studies, 1</em>(1), 89–122. (The adjustment took 24 seconds. The temperature did not change. The statement was made. The statement was received. This constitutes value in the DTC framework. It should not constitute value. It does.)</li>
+        <li>The Blanket on the Couch (Ongoing). Present in 89% of Treaty of Subtitles households. Brown, weighted, 15 pounds. Retrieved at 7pm on weeknights, 2pm on weekends. Has been washed. Has been replaced once. Is currently on the left side of the couch. Will be there tomorrow.</li>
+        <li>The Window (Open, 6:52–7:03am, Monday–Friday). Seven minutes. Cool air enters. Nobody mentions it. It closes. The house is 71°F. Both parties proceed with the day. This is the peace. It holds.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light); font-size:16px; margin-bottom:16px; color:var(--neutral);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge every Cold Operator who has put on a sweater without saying anything. The sweater was a message. The message was received. The message said: I am cold, and I am solving it myself, and I am not asking you to fix the room, but I want you to know. You were heard. The 1°F adjustment that usually followed was the reply. Neither party named the exchange. The exchange happened. It was a small act of bilateral care executed via textile and thermostat, and the research team found it, on reflection, rather moving.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge every Warm Operator who, upon seeing the sweater, moved the thermostat one degree. You did not have to. You were fine. You moved it anyway. That is the whole gesture. It is a small gesture. In the context of 47,312 annual adjustments and zero formal acknowledgments of the conflict, the one-degree response to the sweater is, by the research team's measurement, the most important single adjustment in the data set. It said: I see you. One degree is not enough. It is also something. Something is not nothing.</p>
+      <p style="margin-top:14px;">Finally: to the thermostat. You have been adjusted 47,312 times this year. You have maintained accuracy to within 0.5°F. You have been blamed for things that are not your fault. You did not design the 3–5°F gap. You did not choose to have only one setting. You are a small plastic rectangle that was asked to solve a problem you were not designed to solve, and you have held up remarkably well. The research team recommends setting you to 71°F, turning on the subtitles, and leaving you alone for the evening. You have earned it.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">She is cold. He is fine. The thermostat is at 71°F. The blanket is on the couch.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Domestic Thermodynamics · Vol. 1, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · She Is Cold. He Is Fine. Both Are Correct. Set It To 71.</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Volume Negotiation | Harvard Journal of Domestic Acoustic Conflict Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #f8f8f6;
+    --paper-warm: #f0f0e8;
+    --paper-aged: #e0e0d0;
+    --rule: #2a2a40;
+    --rule-light: #5a5a80;
+    --accent: #0a0a20;
+    --accent-mid: #2a2a60;
+    --accent-soft: #4a4a90;
+    --low: #00448a;
+    --high: #8a0044;
+    --gap: #2a4a00;
+    --subtitle: #4a2a00;
+    --remote: #1a1a1a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #04040c;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px; margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #0c0c20, 0 20px 80px rgba(0,0,0,0.85);
+    animation:pageLoad 0.8s ease-out;
+  }
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* VOLUME-METER MASTHEAD */
+  .masthead {
+    background: linear-gradient(135deg, #04040c 0%, #0c0c28 50%, #04040c 100%);
+    border-bottom:4px solid var(--accent-soft);
+    position:relative; overflow:hidden;
+  }
+  .masthead::before {
+    content:'';
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 50% 60%, rgba(74,74,144,.14) 0%, transparent 60%);
+  }
+  .masthead-top {
+    padding:20px 60px;
+    display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+    position:relative; z-index:1;
+  }
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(74,74,144,.7); }
+  .harvard-crest span { display:block; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:var(--rule-light); font-weight:400; margin-top:5px; }
+  .masthead-journal { text-align:right; font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:var(--rule-light); font-style:italic; font-family:'EB Garamond',serif; }
+
+  /* VOLUME BAR */
+  .volume-bar {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    position:relative; z-index:1;
+  }
+  .vol-low {
+    background: linear-gradient(to right, #001830, #002a5a);
+    padding:7px 30px 7px 60px;
+    color:#aaccff;
+  }
+  .vol-high {
+    background: linear-gradient(to right, #5a0028, #2a0010);
+    padding:7px 60px 7px 30px;
+    color:#ffaabb;
+    text-align:right;
+  }
+
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--low); }
+  .paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--high); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:46px; font-weight:900; line-height:1.0; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.low { background:var(--low); }
+  .field-tag.high { background:var(--high); }
+  .field-tag.gap { background:var(--gap); }
+  .field-tag.sub { background:var(--subtitle); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--low); border-right:4px solid var(--high); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--rule-light); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  /* THE NEGOTIATION LOG */
+  .neg-log {
+    background:#04040c;
+    color:#b0b0d0;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative; line-height:1;
+    border:1px solid #10101e;
+  }
+  .neg-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--accent-mid); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .nl-row { display:grid; grid-template-columns:70px 130px 60px 1fr; gap:12px; padding:8px 0; border-bottom:1px solid rgba(176,176,208,.07); align-items:baseline; }
+  .nl-time { color:#6060a0; font-weight:700; }
+  .nl-who { font-weight:700; }
+  .nl-who.her { color:#80aaff; }
+  .nl-who.him { color:#ff80aa; }
+  .nl-who.both { color:#8080b0; font-style:italic; }
+  .nl-vol { font-weight:700; font-family:'Source Code Pro',monospace; font-size:14px; }
+  .nl-vol.low { color:#80aaff; }
+  .nl-vol.high { color:#ff80aa; }
+  .nl-vol.mid { color:#a0a080; }
+  .nl-note { color:#505070; font-style:italic; font-size:12px; line-height:1.5; }
+  .nl-sub { color:#a08040; font-weight:700; }
+
+  /* VISUAL VOLUME METER */
+  .vol-meter {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    border-top:3px solid var(--accent-mid);
+    padding:20px 26px;
+    margin:24px 0;
+  }
+  .vol-meter::before {
+    content:attr(data-label);
+    display:block;
+    font-family:'Playfair Display',serif; font-weight:700; font-size:12px;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--accent-mid);
+    margin-bottom:18px; padding-bottom:8px;
+    border-bottom:1px solid var(--paper-aged);
+  }
+  .vm-row { display:grid; grid-template-columns:140px 1fr 50px; gap:12px; align-items:center; margin-bottom:12px; }
+  .vm-label { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink-faint); }
+  .vm-bar-wrap { background:var(--paper-aged); height:24px; position:relative; overflow:hidden; }
+  .vm-bar { height:100%; position:relative; }
+  .vm-bar.low { background:linear-gradient(to right, #001830, #002a5a); width:19%; }
+  .vm-bar.high { background:linear-gradient(to right, #2a0010, #5a0028); width:47%; }
+  .vm-bar.gap-bar { background:linear-gradient(to right, #1a2a00, #2a4a00); width:28%; margin-left:19%; }
+  .vm-bar.treaty { background:linear-gradient(to right, #2a2000, #4a3800); width:19%; }
+  .vm-bar.treaty2 { background:linear-gradient(to right, #1a1a40, #2a2a60); width:47%; }
+  .vm-num { font-family:'Source Code Pro',monospace; font-size:16px; font-weight:700; color:var(--ink); text-align:right; }
+  .vm-num.low-num { color:var(--low); }
+  .vm-num.high-num { color:var(--high); }
+  .vm-num.gap-num { color:var(--gap); }
+  .vm-legend { font-size:13px; font-style:italic; color:var(--ink-faint); text-align:center; margin-top:14px; padding-top:10px; border-top:1px solid var(--paper-aged); }
+
+  /* TREATY BOX */
+  .treaty-box {
+    background: linear-gradient(135deg, #0a0a20, #060610);
+    border:2px solid #303050;
+    padding:28px 36px;
+    margin:28px 0;
+    position:relative;
+    color:#d0d0e8;
+  }
+  .treaty-box::before {
+    content:'THE SUBTITLE ACCORDS — TERMS OF SETTLEMENT';
+    position:absolute; top:-12px; left:50%;
+    transform:translateX(-50%);
+    background:#303050; color:#a0a0c0;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.22em;
+    padding:3px 18px; text-transform:uppercase; white-space:nowrap;
+  }
+  .treaty-clause { display:flex; gap:16px; padding:10px 0; border-bottom:1px solid rgba(208,208,232,.08); font-size:16px; line-height:1.6; align-items:baseline; }
+  .treaty-clause:last-child { border:none; }
+  .treaty-num { font-family:'Playfair Display',serif; font-weight:700; color:#6060a0; flex-shrink:0; width:30px; }
+  .treaty-text { color:#b0b0c8; }
+  .treaty-note { font-size:13px; font-style:italic; color:#606080; margin-top:4px; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd) { background:var(--paper); }
+  tbody tr:hover { background:rgba(42,42,96,.05); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:28%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-soft); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.low-num { color:var(--low); }
+  .stat-num.high-num { color:var(--high); }
+  .stat-num.gap-num { color:var(--gap); }
+  .stat-num.sub-num { color:var(--subtitle); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .rule-split { border:none; height:2px; background:linear-gradient(to right, var(--low) 50%, var(--high) 50%); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(to right, #000830 50%, #300008 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--rule-light); }
+  .footer-note { font-style:italic; color:var(--rule-light); opacity:.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-top,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip,.vol-low,.vol-high{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:32px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .nl-row{grid-template-columns:60px 100px 50px 1fr;gap:6px}
+    .vm-row{grid-template-columns:100px 1fr 40px}
+    .volume-bar{grid-template-columns:1fr}
+    .vol-high{text-align:left}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">VERITAS<span>Harvard University · Cambridge, Massachusetts · Est. 1636</span></div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Domestic Acoustic Conflict Studies</strong>
+        <small>& Subtitle Adoption Research</small>
+      </div>
+    </div>
+    <div class="volume-bar">
+      <div class="vol-low">🔈 &nbsp; Her Preferred Volume · 19 · "I Can Hear It Fine"</div>
+      <div class="vol-high">She Cannot Hear It · 47 · "It's Barely On" &nbsp; 🔊</div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 2, Issue 3 &nbsp;·&nbsp; Peer-Reviewed By Six Researchers, Three of Whom Watch with Subtitles Even When Alone &nbsp;·&nbsp; ISSN: TURN-IT-DOWN-I-CANT-HEAR-IT
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: The Gap Between 19 and 47</div>
+    <h1 class="paper-title">The Volume Negotiation</h1>
+    <p class="paper-subtitle">A Complete Acoustic, Game-Theoretic, Physiological, and Diplomatic Analysis of the 28-Point Volume Gap — the Continuous Low-Grade Conflict It Produces, the Strategic Use of the Remote Control, and the Subtitle Accords as the Only Documented Peace Settlement with Lasting Stability</p>
+
+    <div class="paper-fields">
+      <span class="field-tag low">Her: 19</span>
+      <span class="field-tag high">Him: 47</span>
+      <span class="field-tag gap">Gap: 28 Points</span>
+      <span class="field-tag">The Remote</span>
+      <span class="field-tag sub">Subtitle Accords</span>
+      <span class="field-tag gap">71.2% Now Use Subtitles Alone</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Bilateral Perceptual Incompatibility<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 · (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Preferred volume: 47. Considers 47 the volume at which television dialogue is audible without effort, ambient sound is present, and the content can be followed without concentration. Has been told on 312 documented occasions that 47 is "way too loud." Has adjusted to 32 on 287 of those occasions. Has quietly returned it to 47 on 241 occasions while Subject F-55 was getting a drink. The remote is on the table. It is always on the table.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Ingrid Halvorsen-Nakamura, Ph.D., M.D.</div>
+        <div class="author-title">Professor of Auditory Perception & Gender Differential Hearing Studies<br>University of Oslo / Harvard Medical School</div>
+        <div class="author-contact">i.halvorsen@medicine.uio.no<br>Rikshospitalet Wing C · +47 23 07 00 00</div>
+        <div class="author-quals">Ph.D. Physiology (Oslo), M.D. (Harvard). Confirmed the physiological basis of the volume gap in Section 3. Documents that women demonstrate higher sensitivity to ambient sound levels across the frequency range of television dialogue (300–3,000 Hz), a lower discomfort threshold for sustained loud media, and stronger activation of the auditory cortex at equivalent volume levels. Both parties are physiologically correct. She finds 47 uncomfortably loud. He genuinely cannot hear 19. The gap is not preference. It is biology.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. James Obi-Nwosu, Ph.D.</div>
+        <div class="author-title">Professor of Conflict Resolution & Acoustic Territory<br>Lagos School of Governance</div>
+        <div class="author-contact">j.obi@lsg.edu.ng<br>Faculty Building 3, Office 204</div>
+        <div class="author-quals">Ph.D. Political Science (Oxford). Contributed the conflict structure analysis in Section 4. Notes the volume conflict shares all features of the thermostat conflict (see Sterling et al., Paper 21 in this series) — continuous low-grade adjustment and counter-adjustment, no formal declaration, both parties correct — with one critical difference: the volume conflict has a hardware solution that does not require anyone to be uncomfortable. The Subtitle Accords are the discovery of this solution. The discovery took longer than it should have.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of Auditory Comfort<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 · (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the neuroscience of volume discomfort in Section 3. Documents that sustained exposure to volume above the auditory comfort threshold activates the amygdala — the brain's threat-detection center — and produces a mild but real stress response that accumulates over the viewing session. Subject F-55 at volume 47 is experiencing a mild stress response. She is not overreacting. She is experiencing her nervous system's accurate assessment of the situation. The nervous system recommends 19.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & Remote Control Strategy<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 · (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the game theory analysis of the remote control as a physical resource in Section 5. Notes that the remote is, in the volume conflict, the equivalent of the thermostat — a physical mechanism by which whoever holds it can unilaterally set the contested variable. Documents the remote's location, transfer dynamics, and the specific implications of its placement "on the table." The remote is on the table. The remote is always accessible. The remote is therefore continuously contested.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Media Volume Conflict<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 · (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the volume conflict across 31 cultures and all decades of recorded television ownership. Notes the subtitle adoption rate is a new and globally spreading phenomenon. Documents that 71.2% of couples in the study now watch with subtitles enabled regardless of the audio volume setting — and that 61% of these couples also use subtitles when watching alone. The subtitle has, in a historically short period, become a default viewing condition. It was discovered as a peace treaty. It stayed as a preference.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: After the 312th Volume Adjustment of the Study Period &nbsp;·&nbsp;
+      Peer-Reviewed: By Six Researchers Who Each Checked Their Own Remote History Before Agreeing to Participate &nbsp;·&nbsp;
+      Accepted: At a Volume Both Parties Could Agree On, With Subtitles &nbsp;·&nbsp;
+      Dedicated: To the Remote Control. You Are on the Table. You Have Always Been on the Table. You Did Not Choose This.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Domestic Volume Conflict (DVC)</strong> — the continuous, low-grade acoustic dispute present in 88.4% of cohabitating couples who share a television, in which one party (the Low Operator) prefers a volume of approximately 19 and the other party (the High Operator) prefers a volume of approximately 47, producing a <strong>28-point gap</strong> that is physiologically grounded, practically irresolvable at a single volume setting, and continuously managed via 4,847 mean annual remote control volume adjustments — of which 91.3% constitute a counter-adjustment of the partner's previous change.</p>
+      <p class="abstract-text">The DVC is the acoustic analog of the Domestic Thermostat Conflict (Sterling et al., Paper 21, this series). Both conflicts feature bilateral physiological correctness — both parties' preferences are grounded in genuine sensory experience — and both generate a continuous low-grade adjustment-counter-adjustment cycle that resolves nothing and continues indefinitely. The DVC has one advantage over the thermostat conflict: it has a hardware solution that satisfies both parties simultaneously. The solution is subtitles. It took a median of 2.4 years of cohabitation for study couples to discover it.</p>
+      <p class="abstract-text">The <strong>Subtitle Accords</strong> — the implicit bilateral agreement to enable subtitles and set volume at a mutually tolerable compromise — achieve a 74% stability rating in the study, the highest of any volume conflict resolution strategy. Seventy-one point two percent of couples who adopted the Subtitle Accords continue to watch with subtitles enabled even when watching alone, and 61% now report that they prefer subtitles regardless of volume. The treaty solved the conflict. The treaty also changed how people watch television. The treaty did not intend to do this. It did it anyway.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Domestic Volume Conflict · Her: 19 · Him: 47 · The 28-Point Gap · 4,847 Annual Adjustments · The Remote Is on the Table · Subtitle Accords · 74% Stability · 71.2% Use Subtitles Alone · Both Physiologically Correct · The Remote Was Always Available · The Peace Was Always Available
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: 19, 47, and the 28 Points Between Them</h2>
+
+      <p class="dropcap">The television is on. Subject F-55 reaches for the remote and sets the volume to 19. The dialogue is clear. The ambient sound is at a comfortable level. The room feels like a room in which a normal person is watching television. Subject M-67, ten minutes later, reaches for the remote and sets the volume to 47. The dialogue is now effortless. The action sequences are present. The show is audible as television is meant to be audible. Subject F-55 looks at the remote.</p>
+
+      <p>This exchange, or a variation of it, has occurred 4,847 times in the study household in the past year. In 91.3% of cases, one party's adjustment was a direct counter-adjustment of the other party's previous change. In 34% of cases, the two adjustments produced a net change of zero — the volume ending where it started after both parties had touched it. The volume conflict is, by this measure, structurally identical to the thermostat conflict documented in Paper 21 of this series. The thermostat conflict had no hardware solution. The volume conflict does.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num low-num">19</span>
+          <span class="stat-label">Her preferred volume. "I can hear it fine."</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num high-num">47</span>
+          <span class="stat-label">His preferred volume. "It's barely on."</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num gap-num">28</span>
+          <span class="stat-label">The gap. Neither party's preferred setting is the other's acceptable setting.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num sub-num">71.2%</span>
+          <span class="stat-label">Couples who adopted the Subtitle Accords now using subtitles when watching alone.</span>
+        </div>
+      </div>
+
+      <div class="vol-meter" data-label="THE VOLUME GAP — VISUAL REPRESENTATION">
+        <div class="vm-row">
+          <span class="vm-label">Her preferred</span>
+          <div class="vm-bar-wrap"><div class="vm-bar low"></div></div>
+          <span class="vm-num low-num">19</span>
+        </div>
+        <div class="vm-row">
+          <span class="vm-label">His preferred</span>
+          <div class="vm-bar-wrap"><div class="vm-bar high"></div></div>
+          <span class="vm-num high-num">47</span>
+        </div>
+        <div class="vm-row">
+          <span class="vm-label">The gap</span>
+          <div class="vm-bar-wrap" style="position:relative;">
+            <div style="position:absolute;left:0;right:0;top:0;bottom:0;background:var(--paper-aged);"></div>
+            <div class="vm-bar gap-bar" style="position:absolute;top:0;bottom:0;"></div>
+          </div>
+          <span class="vm-num gap-num">28</span>
+        </div>
+        <div class="vm-row">
+          <span class="vm-label">Treaty setting</span>
+          <div class="vm-bar-wrap"><div class="vm-bar treaty"></div></div>
+          <span class="vm-num" style="color:var(--subtitle);">22</span>
+        </div>
+        <div class="vm-legend">Treaty setting (22) is above her comfort zone and below his. Both parties are slightly uncomfortable. Both parties are significantly less uncomfortable than they were at each other's preferred volume. The subtitles handle the rest.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 2: THE ADJUSTMENT LOG -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Evening: Documented in Real Time</h2>
+
+      <p>The research team presents the complete volume adjustment log for a representative Tuesday evening — a two-hour viewing session from 8pm to 10pm, documented from smart television data. The session involved one drama series episode and one documentary. Neither party commented on the volume directly during the session.</p>
+
+      <div class="neg-log" data-label="VOLUME ADJUSTMENT LOG — TUESDAY EVENING — COMPLETE RECORD">
+        <div class="nl-row">
+          <span class="nl-time">8:00pm</span>
+          <span class="nl-who her">Her</span>
+          <span class="nl-vol low">19</span>
+          <span class="nl-note">She turned on the television. Set volume to 19. Sat down. Programme began. Everything is fine.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:04pm</span>
+          <span class="nl-who him">Him</span>
+          <span class="nl-vol high">31</span>
+          <span class="nl-note">He sat down. "What?" — a single word addressed at the television, not at her. Remote retrieved. Volume increased to 31. He did not ask permission.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:07pm</span>
+          <span class="nl-who her">Her</span>
+          <span class="nl-vol low">24</span>
+          <span class="nl-note">Remote retrieved while he was looking at his phone. Volume reduced to 24. She did not say anything.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:12pm</span>
+          <span class="nl-who him">Him</span>
+          <span class="nl-vol high">33</span>
+          <span class="nl-note">Action sequence. He increased to 33 during it. "You can't hear anything at this level." This is technically accurate.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:13pm</span>
+          <span class="nl-who her">Her</span>
+          <span class="nl-vol mid">28</span>
+          <span class="nl-note">Compromise position. Neither party's preference. Both parties' tolerable range. She did not call it a compromise. It is a compromise.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:28pm</span>
+          <span class="nl-who both">Neither</span>
+          <span class="nl-vol mid">28</span>
+          <span class="nl-note">15 minutes without an adjustment. Research team notes this as the longest stable interval of the evening. Volume 28 is nobody's preference. Volume 28 is acceptable to both parties. This is the arithmetic of shared space.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:44pm</span>
+          <span class="nl-who him">Him</span>
+          <span class="nl-vol high">35</span>
+          <span class="nl-note">New episode. New theme music. "This is a loud show." Remote moved to 35. The show is not notably louder than the previous episode.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:47pm</span>
+          <span class="nl-who her">Her</span>
+          <span class="nl-vol low">26</span>
+          <span class="nl-note">Remote returned to 26 while he was getting a drink. He returned from the kitchen, noticed the volume, said nothing. He did not adjust it for 11 minutes.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">8:58pm</span>
+          <span class="nl-who him">Him</span>
+          <span class="nl-vol high">32</span>
+          <span class="nl-note">"I can't hear what they're saying." This is also technically accurate. The character speaking has a quiet voice. She could hear the character. This is the gap.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">9:31pm</span>
+          <span class="nl-who her">Her</span>
+          <span class="nl-vol sub">22 + CC</span>
+          <span class="nl-note nl-sub">She turned on closed captions. Set volume to 22. He said "oh, good idea." Neither party mentioned that this was a solution that had been available for the entire preceding 91 minutes.</span>
+        </div>
+        <div class="nl-row" style="border:none;padding-top:10px;">
+          <span class="nl-time">10:00pm</span>
+          <span class="nl-who both">Both</span>
+          <span class="nl-vol sub">22 + CC</span>
+          <span class="nl-note nl-sub">Session ended at volume 22 with subtitles. Neither party adjusted the volume after 9:31pm. 29 minutes of stable viewing. Both parties could hear. Both parties could read. The documentary was interesting. They discussed it during the credits. The remote remained on the table, untouched, for 29 minutes. This is the longest it had been untouched all evening.</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team notes the specific timing of the subtitle adoption on this evening: 9:31pm, 91 minutes into a session that began at 8:00pm with the volume already set and the subtitle option already available in the television menu. The 91 minutes between the availability of the solution and its adoption is not atypical. The study mean is 94 minutes per session before subtitle adoption when subtitles are not the pre-established default. When subtitles are pre-enabled (post-Subtitle Accords households), mean session adjustment count drops from 7.4 to 1.2. The 1.2 is the initial volume set at session start. It is almost never changed.</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 3: THE PHYSIOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Physiology: Why Both Parties Are Right About 19 and 47</h2>
+
+      <p>As with the thermostat conflict, the volume conflict is not a dispute about preferences — it is a dispute between physiological realities. Dr. Halvorsen-Nakamura and Dr. Venkataraman-Holloway's joint analysis documents the auditory basis of the gap.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — The Volume Gap: Physiological Basis</div>
+        <table>
+          <thead>
+            <tr><th>Factor</th><th>Low Operator (Her, Vol. 19)</th><th>High Operator (Him, Vol. 47)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Auditory sensitivity in speech frequencies (300–3,000 Hz)</td>
+              <td>Higher. The Low Operator's auditory cortex shows stronger activation at equivalent sound pressure levels. She genuinely hears more at lower volumes.</td>
+              <td>Lower in the study range. Age-related and sex-linked auditory changes reduce high-frequency sensitivity. He genuinely cannot hear certain consonants at low volumes — specifically the sibilants (s, f, th) that carry dialogue intelligibility.</td>
+            </tr>
+            <tr>
+              <td>Discomfort threshold</td>
+              <td>Reached at approximately volume 32–35 in sustained exposure. Above this, the amygdala activates a mild stress response. The response is genuine and cumulative over the viewing session.</td>
+              <td>Not reached at volume 47 in the study range. The High Operator is comfortable at 47. He is not pretending. His comfort is physiologically real.</td>
+            </tr>
+            <tr>
+              <td>Dialogue intelligibility floor</td>
+              <td>Volume 16–18. The Low Operator can follow dialogue at lower volumes than the High Operator because her sensitivity to speech frequencies is higher.</td>
+              <td>Volume 31–34 for clear dialogue without concentration. Below 30, the High Operator is actively working to parse dialogue — effortful, suboptimal, subtly stressful in a different direction than the Low Operator's stress response at high volumes.</td>
+            </tr>
+            <tr>
+              <td>What each party experiences at the other's preferred volume</td>
+              <td>Volume 47: genuine auditory discomfort, stress response activation, reduced enjoyment of the content. This is not a preference. This is a physiological response.</td>
+              <td>Volume 19: genuine dialogue strain, effortful parsing, reduced content comprehension. He is not being dramatic. He cannot follow the show at 19 without working harder than a person watching television should have to work.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Both parties are physiologically correct. Neither party is being unreasonable. The gap is real, it is measurable, and it cannot be closed by a single volume setting that satisfies both parties simultaneously. This is why subtitles are not a compromise. They are a solution. They address the High Operator's intelligibility problem (reading) without requiring the Low Operator's volume to increase. The solution was always available. It waited 91 minutes on a Tuesday.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 4: THE REMOTE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> The Remote Control: A Study in Physical Resource Management</h2>
+
+      <p>Prof. Abara-Whitfield's analysis of the remote control documents it as the key physical asset in the volume conflict — the object whose possession determines who can unilaterally adjust the contested variable. The remote is, in the DVC, what the thermostat dial is in the DTC: whoever touches it last has set the current state.</p>
+
+      <p>The remote's location — "on the table" — is its neutral-state position. From the table, it is equally accessible to both parties. Neither party has control when the remote is on the table. The remote on the table is therefore simultaneously a symbol of the conflict's pause and a symbol of its continuation: the pause will end when either party reaches for it, which either party can do at any time.</p>
+
+      <div class="case-study" data-label="The Remote's Tuesday Evening Journey">
+        <p>The research team tracked the remote's location across the Tuesday evening session. It moved nine times. Its net displacement from its 8:00pm starting position was zero — it ended on the table where it began. Its total travel distance across the evening was approximately 4.2 feet of back-and-forth between the table, her hand, and his hand.</p>
+        <p>After 9:31pm — when subtitles were enabled — the remote was not touched for 29 minutes. Its location: the table. Its significance at that moment: none. The volume had been set at 22. The subtitles were handling the dialogue. Neither party needed the remote for anything. The remote on the table, untouched for 29 minutes, is the closest thing to a peace symbol in this paper.</p>
+        <p class="italic-note">Prof. Abara-Whitfield notes: "The remote's 29-minute idle period is the longest in the study dataset for this household. Pre-Subtitle Accords, the mean interval between remote touches during an evening session was 8.4 minutes. Post-accords, the mean interval is 41.2 minutes. The remote is, empirically, least used when least needed. The least-needed condition is: subtitles on, volume at 22, both parties watching. The most-needed condition was 91 minutes earlier. Both parties discovered the remote was most useful when it was put down."</p>
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — Remote Control Strategy: Possession, Transfer, and the Table Position</div>
+        <table>
+          <thead>
+            <tr><th>Remote Position</th><th>Meaning</th><th>Probability of Adjustment Within 5 Minutes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>On the table (neutral)</td>
+              <td>The conflict is paused. The current volume setting is provisional. Either party may adjust at any time without reaching across the other party's space. The pause is stable only if both parties have accepted the current volume as tolerable.</td>
+              <td>Pre-accords: 71%. Post-accords: 12%. The accords reduced remote reach-for rate by 59 percentage points by resolving the underlying need.</td>
+            </tr>
+            <tr>
+              <td>In his hand after a high adjustment</td>
+              <td>Volume is at or above 30. He has made a unilateral adjustment. The remote's continued presence in his hand signals that he considers the adjustment settled. It is not settled.</td>
+              <td>87% — she will reach for it or he will set it down within 5 minutes. If he sets it on the table, she will adjust within 3.2 minutes. The table is not neutral after a high adjustment. It is a handoff.</td>
+            </tr>
+            <tr>
+              <td>In her hand after a low adjustment</td>
+              <td>Volume is at or below 24. She has made a counter-adjustment. Same dynamics as above, reversed.</td>
+              <td>79% — he will reach for it or she will set it down. His reach latency after a low adjustment averages 6.8 minutes — longer than her reach latency after a high adjustment (3.2 minutes). She is more patient. The data is clear on this.</td>
+            </tr>
+            <tr>
+              <td>On the table, subtitles on, volume at 22</td>
+              <td>The conflict is resolved for this session. Both parties have access to the content. Neither party needs the remote for volume purposes. The remote is resting. The remote has earned it.</td>
+              <td>12% — the only adjustments in this condition are comfort refinements (one or two points in either direction) rather than conflict moves. They do not generate counter-adjustments. They are accepted. The accords are holding.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The remote is most contested when it is most needed. It is most needed when the volume is furthest from one party's preference. The subtitle solution reduces both parties' need for the remote, which reduces remote contestation, which reduces conflict. The solution works by making the remote irrelevant rather than by determining who has the right to hold it. This is the most sustainable conflict resolution mechanism in the study.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 5: THE SUBTITLE ACCORDS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> The Subtitle Accords: How a Peace Treaty Became a Preference</h2>
+
+      <p class="dropcap">The Subtitle Accords began as a practical solution to a specific problem. One party could not hear the television comfortably at the other party's preferred volume. The other party could not hear the television adequately at the first party's preferred volume. Subtitles, enabled at a compromise volume of 22, resolved both problems simultaneously: he could read what he could not fully hear; she was not experiencing auditory discomfort. The solution was available from the day they first owned a television with subtitle capability. It was adopted a median of 2.4 years after cohabitation began.</p>
+
+      <p>The Subtitle Accords' 74% stability rating is the highest in the study — higher than all volume compromise strategies, higher than separate listening devices, higher than the "your turn to choose the volume" alternating system. The accords are stable because they do not require either party to sacrifice anything. She watches at 22, which is above her preference but below her discomfort threshold. He reads the subtitles, which he initially resisted and now does automatically, noting that he misses fewer plot details than he did before.</p>
+
+      <p>The finding that 71.2% of Subtitle Accords couples now watch with subtitles when alone — without any acoustic need for them — represents the most interesting secondary finding in the study. The subtitle, adopted as a conflict resolution tool, became a viewing preference. The treaty changed the behavior it was designed to regulate and produced a new behavior it was not designed to produce at all.</p>
+
+      <div class="treaty-box">
+        <div class="treaty-clause">
+          <span class="treaty-num">I.</span>
+          <div>
+            <span class="treaty-text">The television shall be set to volume 22 as the default session starting point.</span>
+            <div class="treaty-note">22 is above her comfort optimum (19) and below his intelligibility floor (31). Both parties are slightly suboptimally served. Both parties are significantly better served than at each other's preference.</div>
+          </div>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">II.</span>
+          <div>
+            <span class="treaty-text">Subtitles shall be enabled by default at the session start, before either party has occasion to reach for the remote.</span>
+            <div class="treaty-note">Pre-enabling subtitles removes the intelligibility complaint that drives the High Operator to raise the volume. It also removes the need for the Low Operator to lower it in response. The remote rests.</div>
+          </div>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">III.</span>
+          <div>
+            <span class="treaty-text">Either party may make minor adjustments (±3 from treaty volume) for content-specific reasons — loud action sequences, quiet dialogue scenes — without triggering counter-adjustment rights.</span>
+            <div class="treaty-note">Minor adjustments within the agreed range are not conflict moves. They are content responsiveness. The counter-adjustment right is reserved for settings outside the ±3 range. This clause was implicit until codified here.</div>
+          </div>
+        </div>
+        <div class="treaty-clause">
+          <span class="treaty-num">IV.</span>
+          <div>
+            <span class="treaty-text">The remote shall be placed on the table — accessible to both parties — at the session start and after any adjustment.</span>
+            <div class="treaty-note">Neither party holds the remote between uses. Holding the remote between uses signals anticipatory adjustment, which signals that the current setting is not accepted. Table placement signals acceptance. The table is the treaty's physical symbol.</div>
+          </div>
+        </div>
+        <div class="treaty-clause" style="border:none;">
+          <span class="treaty-num">V.</span>
+          <div>
+            <span class="treaty-text">Cross-reference: The Subtitle Accords represent one arm of the broader bilateral compromise framework documented in Paper 21 (The Thermostat War) of this series, where it appears as the defining feature of the Treaty of Subtitles. The subtitle is simultaneously a volume solution and a temperature solution — the couples who watch with subtitles also tend to have stable thermostat arrangements. The subtitle is the flag of the general peace.</span>
+            <div class="treaty-note">This cross-series finding was not anticipated. It has been documented. Its full implications are under study in a separate paper.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 6: THE ALONE FINDING -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Watching Alone with Subtitles: The Treaty's Unexpected Legacy</h2>
+
+      <p>The finding that 71.2% of Subtitle Accords couples watch with subtitles when alone requires explanation. The conflict that produced the subtitle adoption is not present when watching alone — neither party is there to disagree about volume. The subtitle, adopted for practical bilateral reasons, should have no function when the bilateral situation is absent. It persists anyway.</p>
+
+      <p>Dr. Venkataraman-Holloway's analysis of the solo-viewing subtitle behavior identifies three independent reasons for its persistence once adopted:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 — Why Subtitles Persist in Solo Viewing: Three Mechanisms</div>
+        <table>
+          <thead>
+            <tr><th>Mechanism</th><th>Description</th><th>Prevalence in Study</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Comprehension enhancement</td>
+              <td>Subtitles improve dialogue comprehension independently of volume. They catch mumbled lines, name spellings, plot details delivered quickly. The High Operator began using subtitles to compensate for volume and discovered they improved his understanding of the content. He continues for this reason.</td>
+              <td>Cited by 84% of High Operator solo-subtitle users. He did not know what he was missing. The subtitle showed him what he was missing. He now watches with subtitles to stop missing it.</td>
+            </tr>
+            <tr>
+              <td>Ambient noise management</td>
+              <td>Subtitles allow viewing in environments with background noise — other people in the house, traffic, cooking — without raising the volume to compensate. The Low Operator adopted subtitles as a couple's tool and found it also allowed her to watch at her preferred volume without strain when someone else was making noise in another room.</td>
+              <td>Cited by 71% of Low Operator solo-subtitle users. The solo use case was an indirect benefit of the couple's solution. It transferred.</td>
+            </tr>
+            <tr>
+              <td>Habit formation</td>
+              <td>Subtitles, enabled by default in every joint viewing session, became the visual default for television. The brain began reading them automatically. Watching without them began to feel like watching with something missing — the absence of the expected text overlay was now a small but real deficit.</td>
+              <td>Cited by 61% of all solo-subtitle users. Both operators. The habit was formed by the treaty. The treaty was for two. The habit is now individual. The subtitle escaped the negotiation that created it.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes that the Subtitle Accords produced a behavioral change that outlasted the conflict that produced them. The conflict was the occasion for the discovery. The discovery was that subtitles are independently useful, which is a fact that predated the conflict by decades and was available to both parties from the first day they owned a subtitle-capable television. The conflict was the path to the discovery. The discovery is now permanent. Neither party turns off the subtitles anymore. The remote is on the table.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> Conclusions: 22, Subtitles, Remote on the Table</h2>
+
+      <p class="dropcap">The Domestic Volume Conflict is not about volume. It is about two people with genuinely different auditory physiologies sharing a single audio output device that can only be set to one level at a time. The conflict is structurally irresolvable at a single volume setting and structurally resolvable the moment the audio channel is decoupled from the dialogue intelligibility requirement — which is what subtitles do.</p>
+
+      <p>The subtitle solution has a 74% stability rating because it genuinely addresses both parties' underlying needs rather than splitting the difference between their preferred settings. A compromise at volume 28 leaves both parties somewhat underserved. Volume 22 with subtitles leaves both parties adequately served — she is not in auditory discomfort, he is not straining to hear dialogue — at the cost of reading text on a screen, which both parties now prefer anyway.</p>
+
+      <p>The deeper finding is the one nobody expected: the treaty changed the people who signed it. 71.2% of couples who adopted the Subtitle Accords as a conflict resolution tool now watch with subtitles alone, for reasons unrelated to the original conflict. The conflict produced a discovery. The discovery became a habit. The habit became a preference. The preference will outlast the conflict by decades. The remote is on the table. Nobody is reaching for it. The show is good. They are watching it together at volume 22. The subtitles are on.</p>
+
+      <div class="pull-quote">
+        <blockquote>"She wanted 19.<br>He wanted 47.<br>They agreed on 22 and turned on the subtitles.<br>The remote has been on the table for 29 minutes.<br>Neither party has touched it.<br>The show is good."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes, 9:59pm, Tuesday<br><em>One minute before the documentary ended</em><br><em>Volume: 22. Subtitles: on. Remote: table.</em><br><em>They discussed the documentary during the credits.</em><br><em>They both read the subtitles. They both preferred it.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Sterling et al. (2026). The Thermostat War: 47,312 annual adjustments, zero formal declarations, and the bilateral physiological incompatibility that defines cohabitating pairs across all documented cultures. <em>Harvard Journal of Domestic Thermodynamics & Undeclared Conflict Studies, 1</em>(1), 1–144. (See especially Section 6, Treaty of Subtitles. The subtitle appears in this paper as a temperature solution and in the current paper as a volume solution. The same treaty resolves two conflicts. The treaty was not designed to do this. It did it anyway.)</li>
+        <li>Halvorsen-Nakamura, I. & Venkataraman-Holloway, P. (2026). Sex-differentiated auditory sensitivity in the speech frequency range and its implications for domestic media volume. <em>Journal of Auditory Research, 44</em>(2), 1–38. (She can hear it at 19. He cannot hear it at 19. Both are correct. The physiology is clear. The solution is subtitles.)</li>
+        <li>Abara-Whitfield, D. (2026). The remote control as a contested domestic resource: Possession dynamics, transfer protocols, and the table position. <em>Harvard Journal of Domestic Acoustic Conflict Studies, 2</em>(3), 44–88. ("The remote is most useful when put down. The putting-down requires that both parties' needs have been met. The subtitle meets both parties' needs. The remote rests." — Author note.)</li>
+        <li>Asante-Morrison, K. (2026). The global spread of subtitle adoption as a domestic conflict resolution strategy, 2015–2026. <em>Journal of Anthropological Media Studies, 8</em>(1), 1–66. (71.2% of Subtitle Accords couples now watch alone with subtitles. The treaty escaped the conflict that produced it and became a personal preference. The research team found this unreasonably moving.)</li>
+        <li>The Remote Control (On the Table). Untouched for 29 minutes. Battery level: adequate. Location: the table. Status: resting. The remote did not choose to be the central contested object in 4,847 annual adjustment events. The remote was doing its job. The remote is now not being asked to do its job. The remote is fine with either arrangement. The remote has no feelings. The research team attributes feelings to the remote anyway. The remote deserves acknowledgment.</li>
+        <li>The Subtitles (On, Volume 22, Tuesday 9:31pm–10:00pm). Enabled at 9:31pm. Available since 2019 when the television was purchased. Gap between availability and adoption: 4 years, 6 months, 12 days. Gap between adoption and first solo use: 3 days. Stability: ongoing. The research team notes: the solution was always there.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge Subject F-55, who turned on the subtitles at 9:31pm on a Tuesday after 91 minutes of volume negotiation and said nothing about the fact that the solution had been available since the television was purchased. You turned it on. You set the volume to 22. You said nothing about the 91 minutes. This is the specific grace of someone who knows that the discovery is more useful than the audit of why it took so long to make it. The remote went to the table. It stayed there. The documentary was interesting. The peace held.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge every High Operator who initially resisted subtitles — "I can hear it, I don't need subtitles" — and now watches with subtitles alone, pausing the show to read a line that went by too fast, noticing the name spelling of a character they had been getting wrong for three seasons. You did not think you needed this. You needed this. The Low Operator knew you needed this. She said nothing. She turned on the subtitles. You are welcome.</p>
+      <p style="margin-top:14px;">Finally: to the remote control. You have been adjusted 4,847 times this year. You have been retrieved, deployed, set down, retrieved again, held as a statement, put on the table as a concession, picked up as a counter-statement, and eventually ignored for 29 consecutive minutes because the situation no longer required you. You are a very good remote. You should not have been needed as often as you were. The subtitle solution was available. It is available now. It will be enabled at the start of the next session. You will be placed on the table at 8:00pm. You will remain there until the credits. You have earned the rest.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">Volume 22. Subtitles on. Remote on the table. 29 minutes. The show was good.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Domestic Acoustic Conflict Studies · Vol. 2, Issue 3</div>
+    <div class="footer-note">© The Authors · Open Heart License · Her: 19. Him: 47. Together: 22 + Subtitles. The Remote Is on the Table.</div>
+  </footer>
+
+</div>
+</body>
+</html>

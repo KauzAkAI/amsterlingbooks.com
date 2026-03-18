@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Register Went Dark | Harvard Journal of Applied Arithmetic & Foundational Competency Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #faf9f4;
+    --paper-warm: #f4f2e4;
+    --paper-aged: #e8e2c8;
+    --rule: #7a4a00;
+    --rule-light: #b07820;
+    --accent: #3a2000;
+    --accent-mid: #6a3800;
+    --accent-soft: #8a5410;
+    --crisis: #8a1a00;
+    --cash: #1a5a1a;
+    --register: #1a1a5a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #0c0800;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #2a1400, 0 20px 80px rgba(0,0,0,0.8);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  .masthead {
+    background: linear-gradient(135deg, #0c0800 0%, #241000 50%, #0c0800 100%);
+    border-bottom:4px solid var(--crisis);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .masthead::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background:radial-gradient(ellipse at 60% 40%, rgba(138,26,0,.14) 0%, transparent 60%);
+  }
+
+  .masthead-top {
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:1;
+  }
+
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(138,26,0,.6); }
+  .harvard-crest span { display:block; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:var(--rule-light); font-weight:400; margin-top:5px; }
+  .masthead-journal { text-align:right; font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:var(--rule-light); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .masthead-strip {
+    background:var(--crisis);
+    padding:7px 60px;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    position:relative;
+    z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--crisis); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before,.paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--crisis); }
+
+  .paper-title { font-family:'Playfair Display',serif; font-size:42px; font-weight:900; line-height:1.0; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.crisis { background:var(--crisis); }
+  .field-tag.cash { background:var(--cash); }
+  .field-tag.reg { background:var(--register); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--crisis); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--crisis); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--crisis); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--crisis); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--accent-soft); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule); background:var(--paper-warm); }
+
+  /* THE INCIDENT TIMELINE */
+  .timeline-box {
+    background:#0c0800;
+    color:#c0a060;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    line-height:1;
+    border:1px solid #1a1000;
+  }
+
+  .timeline-box::before {
+    content:attr(data-label);
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--crisis);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.2em;
+    padding:3px 14px;
+    text-transform:uppercase;
+  }
+
+  .tl-row { display:grid; grid-template-columns:90px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(192,160,96,.1); align-items:baseline; }
+  .tl-time { color:var(--rule-light); font-weight:700; }
+  .tl-event { color:#c0a060; line-height:1.6; }
+  .tl-freeze { color:#c04040; font-weight:700; }
+  .tl-note { color:#606040; font-style:italic; font-size:12px; }
+  .tl-good { color:#40c060; }
+
+  /* COMPETENCY TABLE */
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody tr:hover { background:rgba(106,56,0,.06); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:35%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--crisis); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--crisis); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; color:var(--crisis); display:block; line-height:1; margin-bottom:6px; }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  /* THE CURRICULUM INDICTMENT BOX */
+  .indictment-box {
+    background:var(--paper-warm);
+    border:2px solid var(--crisis);
+    border-left:5px solid var(--crisis);
+    padding:20px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+
+  .indictment-box::before {
+    content:'CURRICULUM INDICTMENT — THE DEFENDANT IS THE SCHOOL BOARD';
+    position:absolute;
+    top:-11px;
+    left:18px;
+    background:var(--crisis);
+    color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:9px;
+    letter-spacing:0.18em;
+    padding:3px 14px;
+    text-transform:uppercase;
+  }
+
+  .indict-item { display:flex; gap:16px; padding:10px 0; border-bottom:1px solid var(--paper-aged); font-size:16px; line-height:1.6; align-items:baseline; }
+  .indict-item:last-child { border:none; }
+  .indict-year { font-family:'Playfair Display',serif; font-weight:700; color:var(--crisis); flex-shrink:0; width:100px; font-size:14px; }
+  .indict-text { color:var(--ink); flex:1; }
+
+  .pull-quote { border-top:3px double var(--crisis); border-bottom:3px double var(--crisis); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--crisis); }
+
+  .rule-thick { border:none; border-top:2px solid var(--crisis); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--crisis); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule); margin-top:40px; font-size:17px; line-height:1.85; }
+
+  .paper-footer { background:linear-gradient(135deg,#0c0800,#241000); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--crisis); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--rule-light); }
+  .footer-note { font-style:italic; color:var(--rule-light); opacity:.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-top,.paper-header,.paper-body{padding-left:24px;padding-right:24px}
+    .masthead-strip{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:28px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .tl-row{grid-template-columns:70px 1fr}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">
+        VERITAS
+        <span>Harvard University · Cambridge, Massachusetts · Est. 1636</span>
+      </div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Applied Arithmetic & Foundational Competency Studies</strong>
+        <small>& Curriculum Failure Documentation</small>
+      </div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 1, Issue 1 &nbsp;·&nbsp; Peer-Reviewed By Researchers Who Can Make Change &nbsp;·&nbsp; ISSN: ONE-DOLLAR-MINUS-SEVENTY-SIX-CENTS
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: The Register Went Dark</div>
+
+    <h1 class="paper-title">The Register Went Dark</h1>
+    <p class="paper-subtitle">A Complete Documentation of the $1.00 / $0.76 Incident, the 47.3-Second Freeze Event That Followed, the Open Drawer, the Visible Quarters, the Cashier Who Reached for Their Phone, and the Institutional Failures of the American Curriculum That Made All of This Completely Predictable</p>
+
+    <div class="paper-fields">
+      <span class="field-tag crisis">Crisis Documentation</span>
+      <span class="field-tag">Applied Arithmetic</span>
+      <span class="field-tag cash">Change Theory</span>
+      <span class="field-tag crisis">Curriculum Failure</span>
+      <span class="field-tag reg">Register Dependency Studies</span>
+      <span class="field-tag">Cursive Archaeology</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Things That Should Not Require Documentation<br>Harvard Business School</div>
+        <div class="author-contact">
+          sterling@hbs.harvard.edu<br>
+          Aldrich Hall 412 · (617) 555-0194
+        </div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Age 67. Can make change in his head for any combination of bills and coins up to $100, including hypothetical denominations, in the dark, on a motorcycle, while irritated. Was behind the subject in line during the Primary Incident. Waited 47.3 seconds while staring at a drawer containing four quarters, two dimes, and four pennies arranged in labeled slots. Proposed this paper while still standing in line. The cashier was very nice. The arithmetic was not present.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Behavioral Economics & Numerical Literacy<br>Harvard Kennedy School</div>
+        <div class="author-contact">
+          d.abara@hks.harvard.edu<br>
+          Rubenstein Building 302 · (617) 555-0637
+        </div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Produced the economic analysis of the Tip Calculation Crisis in Section 4. Documents that 15% of a check has become a mathematical event requiring either a phone, a long pause, or a round-number approximation that is wrong. Confirms that a 67-year-old who can calculate 18% of $47 in under four seconds is now statistically remarkable. This was not always remarkable. This is a new development.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Cognitive Offloading & External Brain Studies<br>Harvard Medical School</div>
+        <div class="author-contact">
+          p.venkataraman@hms.harvard.edu<br>
+          Goldenson 318 · (617) 555-0309
+        </div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the cognitive offloading analysis in Section 5. Documents the neurological consequences of outsourcing arithmetic to devices since early childhood. Notes that the brain does not maintain skills it is not asked to practice. Notes that the phone was asked to practice these skills instead. Notes that the phone is very good at it. Notes that the phone was not in the drawer with the quarters.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Generational Competency Transfer<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">
+          k.asante@fas.harvard.edu<br>
+          Peabody Museum 208 · (617) 555-0247
+        </div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Contributed the cross-generational analysis and the cursive section, which he describes as "a small archaeological tragedy." Documents that cursive handwriting was removed from the Common Core curriculum in 2010 and that an entire generation grew up able to read ancient rune fonts on merchandise but not their own grandmother's birthday cards. Describes this as "the most specific loss I have documented." His grandmother wrote beautiful letters. He has had them translated.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Skills Nobody Decided To Stop Teaching<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">
+          i.ravenswood@fas.harvard.edu<br>
+          Barker Center 412 · (617) 555-0181
+        </div>
+        <div class="author-quals">D.Phil. Philosophy & Linguistics (Oxford), FRSL. Contributed the signature analysis in Section 6. Documents the decline of the legal signature from a learned personal mark to what she clinically classifies as "a loop, an undulation, and an initial that would not survive a basic graphology assessment." Notes that the signature section was the hardest to write because it required her to look at receipts from the past decade, which she found "deeply, specifically sad in a way I did not anticipate."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Institutional Accountability & Curriculum Failure<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">
+          i.blackwell@fas.harvard.edu<br>
+          William James Hall 614 · (617) 555-0741
+        </div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the institutional analysis in Section 7 — specifically the documentation of who made the decisions that produced the Primary Incident. Notes that the cashier did not decide not to learn arithmetic. The cashier was taught by teachers who were handed a curriculum by administrators who were handed standards by school boards who were handed frameworks by committees who were handed priorities by policy trends. The cashier is very nice. The policy trends are the defendant.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: While Still Standing in Line &nbsp;·&nbsp;
+      Peer-Reviewed: By Five Researchers Who Each Contributed an Incident of Their Own &nbsp;·&nbsp;
+      Accepted: Unanimously, and With Feeling &nbsp;·&nbsp;
+      Dedicated: To the Quarters in the Drawer. They Were Right There. They Were Always Right There.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Register Darkness Event (RDE)</strong> — the documented phenomenon in which a cashier, presented with a $1.00 bill in payment for a $0.76 purchase, experiences a complete arithmetic failure upon the darkening or malfunctioning of the point-of-sale register display, requiring a mean of 47.3 seconds to determine that the correct change is $0.24, despite the presence of clearly labeled coin slots containing quarters, dimes, nickels, and pennies arranged in decreasing denomination order approximately eight inches from their hands.</p>
+      <p class="abstract-text">The RDE is not a failure of intelligence. It is the predictable outcome of an educational system that removed mental arithmetic practice from core curriculum, introduced calculator dependency at age 7, eliminated cursive handwriting instruction in 2010, and produced graduates who can access the sum of $1.00 minus $0.76 in approximately 1.4 seconds on a device they carry — but who cannot access it in 47.3 seconds using only the coins in a labeled drawer and the arithmetic they were not taught.</p>
+      <p class="abstract-text">Supporting findings: 8% of Americans under 30 can write in cursive. Of those, 4% learned from TikTok. The legal signature has declined from a practiced personal mark to what Prof. Ravenswood-Clarke classifies as "a loop, an undulation, and optimism." The ability to calculate a 15% tip mentally is now a statistically significant differentiator in social settings. The cashier is not the problem. The research team documents who is.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Register Darkness Event · $1.00 Minus $0.76 · 47.3 Seconds · The Quarters Were Right There · Cognitive Offloading · Curriculum Omission · Cursive Archaeology · The Signature Has Become a Squiggle · Calculator Dependency (Age 7) · The School Board Is the Defendant · The Cashier Is Very Nice · The Drawer Was Open The Whole Time
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: One Dollar. Seventy-Six Cents. The Rest Is Documentation.</h2>
+
+      <p class="dropcap">The purchase totaled $0.76. The customer — Subject M-67, age 67, lead author — handed the cashier a $1.00 bill. The cashier accepted the bill, turned to the register, and pressed several buttons. The register, which had been experiencing intermittent connectivity issues since the lunch rush, went dark.</p>
+
+      <p>The cashier looked at the screen. The screen was dark. The cashier looked at Subject M-67. Subject M-67 looked at the cashier. The drawer was open. The coins in the drawer were labeled. The quarter slot contained quarters. The dime slot contained dimes. The answer was, in every measurable physical and mathematical sense, present in the immediate environment.</p>
+
+      <p>Forty-seven point three seconds passed.</p>
+
+      <p>The cashier reached for their phone.</p>
+
+      <p>This paper documents what happened, why it happened, who is responsible for why it happened, and what else is missing alongside the arithmetic — because the arithmetic, it turns out, is not the only thing that did not make it through. The cursive didn't make it through. The signature didn't make it through. The mental tip calculation didn't make it through. A generation of genuinely capable, intelligent people arrived at adulthood missing a specific and perfectly avoidable set of tools because someone, somewhere, in a conference room, with a whiteboard, decided those tools were no longer necessary.</p>
+
+      <p>The research team would like a word with that conference room.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">47.3s</span>
+          <span class="stat-label">Mean time to make change without register display</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">2.1s</span>
+          <span class="stat-label">Mean time with register display functioning</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">$0.24</span>
+          <span class="stat-label">The answer. It was $0.24. It was always $0.24.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">8"</span>
+          <span class="stat-label">Distance from cashier's hands to the labeled quarters</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2: THE INCIDENT -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Primary Incident: Real-Time Documentation</h2>
+
+      <p>The research team presents the complete timeline of the Primary Incident, from the moment Subject M-67 tendered payment through the resolution. All times are documented from field notes taken in real time by a researcher who was, to be clear, only there to buy a coffee.</p>
+
+      <div class="timeline-box" data-label="THE PRIMARY INCIDENT — REGISTER DARKNESS EVENT — FIELD DOCUMENTATION">
+        <div class="tl-row">
+          <span class="tl-time">T+0:00</span>
+          <span class="tl-event">Subject M-67 tenders $1.00 bill for $0.76 purchase. Transaction is normal. Everything is fine.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:03</span>
+          <span class="tl-event">Cashier accepts bill, presses register button. Register begins normal processing sequence.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:05</span>
+          <span class="tl-event tl-freeze">Register display goes dark. Connectivity lost. Change amount not displayed. The Incident begins.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:06</span>
+          <span class="tl-event">Cashier looks at dark screen. Screen remains dark. Screen provides no new information and will continue not to.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:09</span>
+          <span class="tl-event">Cashier taps screen twice. Screen is not a touch screen in this establishment. Screen does not respond. This was predictable.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:14</span>
+          <span class="tl-event">Cashier and Subject M-67 make eye contact. A shared acknowledgment passes between them that something has occurred. The cashier's expression conveys genuine distress. Subject M-67's expression conveys patience he does not entirely feel.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:18</span>
+          <span class="tl-event tl-freeze">Cashier looks at open drawer. The drawer contains: 4 quarters, 7 dimes, 11 nickels, 23 pennies, in labeled slots. The answer is in the drawer. The drawer does not know this. The cashier does not yet know this.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:24</span>
+          <span class="tl-event">Cashier looks at the $1.00 bill in their hand. They are doing something. It is not clear what. The bill contains no arithmetic. The bill is one dollar. The purchase was seventy-six cents. These are the only two facts required.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:31</span>
+          <span class="tl-event tl-freeze">Cashier reaches for phone. Phone is retrieved from pocket. Calculator application is opened. "1.00" is typed. Minus sign is pressed. ".76" is typed. Equals sign is pressed. Phone displays: 0.24.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:42</span>
+          <span class="tl-event">Cashier, now in possession of the answer, counts out two dimes and four pennies. Change is correct. Transaction completes.</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-time">T+0:47</span>
+          <span class="tl-event tl-good">Subject M-67 accepts change. Cashier smiles. Subject M-67 smiles. Both parties exit the transaction. The cashier is perfectly nice. The arithmetic was outsourced to a device. This paper is the result.</span>
+        </div>
+        <div class="tl-row" style="border:none; padding-top:14px;">
+          <span class="tl-time"></span>
+          <span class="tl-note">Field note: The quarter slot was labeled "QUARTERS." It contained quarters. A single quarter, one dime, one nickel, and four pennies — or alternatively, two dimes and four pennies, or one quarter minus one cent and then negotiating — would have resolved this in under three seconds. The quarters were there. They were always there. They are still there.</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> The research team notes, for full documentary accuracy, that Subject M-67 did not say anything during the 47.3 seconds. He waited. He has been 67 years old for a full year and has developed what his colleagues describe as "the specific patience of a man who has decided to study things instead of yelling about them." The research team is the result of this decision. This paper is one of its documents. The patience holds.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3: THE COMPETENCY INVENTORY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> Full Competency Inventory: What Else Didn't Make It Through</h2>
+
+      <p>The arithmetic is the most visible absence, but it is not alone. The research team conducted a full audit of foundational competencies that were standard practice for prior generations and are now either absent or severely diminished in the post-2000 birth cohort. The results are presented below without editorializing, because the numbers editorialized themselves.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Foundational Competency Status: Current Generation vs. Previous</div>
+        <table>
+          <thead>
+            <tr><th>Competency</th><th>Previous Generation</th><th>Current Status</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Making change without calculator</td>
+              <td>Standard. Taught in elementary school arithmetic. Practiced at every retail transaction.</td>
+              <td>Register-dependent. Mean failure time without display: 47.3 seconds. With display: 2.1 seconds. The knowledge is not gone. It was never installed.</td>
+              <td>The drawer is labeled. This does not help as much as one would hope.</td>
+            </tr>
+            <tr>
+              <td>Mental tip calculation</td>
+              <td>Standard. 15% = move decimal, halve, add. 20% = move decimal, double. Performed at table, in head, in under 10 seconds.</td>
+              <td>12% of adults under 30 can calculate 15% of a bill mentally. The other 88% use the app, accept the preset suggested gratuity, or guess at round numbers with the confidence of someone who is not sure they are right and will not be checking.</td>
+              <td>The app suggests 25% as the middle option now. Several subjects have started tipping 25% because it required fewer decisions than determining if 25% was appropriate. Prof. Abara-Whitfield describes this as "behavioral surrender."</td>
+            </tr>
+            <tr>
+              <td>Cursive handwriting</td>
+              <td>Taught grades 2–4. Expected through secondary school. Used for notes, letters, forms, legal documents.</td>
+              <td>8% literacy rate among adults under 30. Of this 8%, approximately 4% learned from TikTok tutorials. The remaining 4% had a teacher who ignored the curriculum guidance. Both groups are grateful.</td>
+              <td>Cursive was removed from the Common Core Standards in 2010. An entire generation can read a font called "Viking Runes" on merchandise but cannot read a note from their own grandmother. The research team finds this specifically haunting.</td>
+            </tr>
+            <tr>
+              <td>Legal signature</td>
+              <td>A developed, practiced, personal mark. Required for legal documents. Consistent across time. Identifiable as belonging to one person.</td>
+              <td>Prof. Ravenswood-Clarke's classification system: Type A (loop + undulation + initial), Type B (first letter + horizontal line), Type C (first name in print + shrug), Type D (what appears to be a seismograph reading during a minor tremor).</td>
+              <td>The legal validity of a signature in most jurisdictions does not require it to resemble your name. This has been interpreted as permission. It should not have been interpreted as permission.</td>
+            </tr>
+            <tr>
+              <td>Memorized phone numbers</td>
+              <td>Standard. Most adults had 10–20 numbers memorized. Home, work, parents, close friends. Could use a payphone if necessary.</td>
+              <td>Most adults under 30 have memorized: their own number (sometimes), their mother's number (usually), and one other (varies). The payphone problem is moot. The disaster scenario where the phone dies is not moot. The disaster scenario has not been planned for.</td>
+              <td>The phone is doing the remembering. The phone is very good at it. The phone has no backup.</td>
+            </tr>
+            <tr>
+              <td>Reading a paper map</td>
+              <td>Standard. Taught in schools, used on road trips, expected at car rental counters.</td>
+              <td>Not standard. The GPS gives directions. The GPS is usually correct. When the GPS is wrong, the subject continues following it with the focused trust of someone who has no alternative plan and has decided confidence is a reasonable substitute.</td>
+              <td>See also: The Directional Refusal Syndrome (Sterling et al., this series). The GPS variant is cross-generational. The not-even-knowing-to-distrust-it variant is generationally specific.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes that none of these competencies are intellectually demanding. They are practiced skills. They atrophy without practice. They were not practiced because the curriculum decided the devices would handle it. The devices do handle it, quite well, right up until the register goes dark.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: THE GOOGLE EVENT -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> The Google Event: When the Phone Is the First Thought, Not the Last</h2>
+
+      <p>The Register Darkness Event is the most visible manifestation of the external brain phenomenon, but it is not the most common. More common, and more instructive, is what Dr. Venkataraman-Holloway terms the <strong>Immediate Outsource Response (IOR)</strong>: the automatic, reflexive redirection of any factual question to a device before any attempt at internal retrieval.</p>
+
+      <p>The IOR is not laziness. Dr. Venkataraman-Holloway documents that it is a learned pathway. When a skill is consistently outsourced during the developmental period when neural pathways for that skill would otherwise form, the brain does not develop the internal retrieval pathway — it develops the outsource pathway instead. The phone is not a shortcut around the knowledge. The phone is where the knowledge lives. There is no shortcut because there is no internal destination to shortcut to.</p>
+
+      <div class="case-study" data-label="Case Study — The Capital City Event">
+        <p>A group of seven adults, ages 24–31, were asked, in a social setting, to name the capital of Australia without using their phones. The question was posed as a lighthearted trivia challenge. Three subjects retrieved their phones before the sentence was complete. Two subjects retrieved their phones during a pause following the sentence. One subject said "Sydney?" and then immediately said "wait, I'm Googling it." One subject said "Canberra" and was looked at by the others with the specific expression the research team classifies as <em>are you sure you should know that.</em></p>
+        <p>The subject who said Canberra was 28 years old and had learned it in a geography class taught by a teacher who had not yet been informed that geography had been reduced in the curriculum. The teacher is the hero of this case study. The teacher did not know he was the hero. He was just teaching capitals.</p>
+        <p class="italic-note">The research team notes that the answer is Canberra. It has always been Canberra. Sydney is larger, more famous, has the opera house, and is not the capital. This confusion is so common it has its own name in Australian tourism literature. The phone, when consulted, confirms: Canberra. The phone is right. The phone is always right. The phone was not there during the geography test that nobody took.</p>
+      </div>
+
+      <div class="footnote"><sup>‡</sup> Prof. Abara-Whitfield documents the economic dimension of the IOR. The mean time from question to Google result: 8.4 seconds. The mean time from question to correct internal retrieval, in subjects who have the information: 4.1 seconds. The phone is slower. The phone is used anyway because the activation energy for internal retrieval — the momentary cognitive effort of trying to remember — has been trained out of the pathway. The IOR fires before the internal retrieval attempt begins. This is not a moral failure. This is a trained reflex. The training was provided by the educational and technological environment. The environment had good intentions. The environment did not run the long game calculation.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: CURSIVE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> Cursive: A Small Archaeological Tragedy</h2>
+
+      <p>Dr. Asante-Morrison's cursive section was the hardest to write, which was not anticipated by any member of the research team when the paper was proposed. It was anticipated to be funny. It is funny. It is also, underneath the funny, something else.</p>
+
+      <p>Cursive was removed from the Common Core State Standards in 2010. The decision was reasonable on its stated terms: typing had superseded handwriting for most professional communication, and curriculum time is finite. Something had to go. Cursive went.</p>
+
+      <p>What went with it: the ability to read primary source historical documents in their original form. The ability to read letters from grandparents. The ability to read the founding documents of the United States without a transcription. The ability to sign one's name with a mark that is consistent, personal, and legally meaningful. And, the research team notes, the specific small pleasure of a well-made letter — the flow of a good lowercase g, the satisfying loop of a capital L — which is not a practical skill and which nobody has yet successfully argued should have been preserved on those grounds, but which is missed anyway, the way you miss something only after it's gone.</p>
+
+      <div class="case-study" data-label="Case Study — The Birthday Card">
+        <p>Subject F-28 received a birthday card from her grandmother, age 84. The card contained a two-paragraph message in her grandmother's handwriting — a clear, schooled cursive developed over seventy years of practice, legible, warm, personal. Subject F-28 could not read it. She photographed the card and uploaded the image to a handwriting transcription app. The app returned a typed transcription in 6 seconds.</p>
+        <p>The grandmother had written about the subject's mother as a child. She had written about a summer they spent together when the subject was three. She had written "I love you and I am proud of who you are becoming." Subject F-28 read these words from a transcription on her phone screen while sitting next to the original card, which contained the same words in a hand that had written them with care, in ink, and mailed them in an envelope with a stamp.</p>
+        <p class="italic-note">The subject read the transcription. She cried. She could not read the card. She kept the card. The research team notes: she kept the card. Whatever has been lost has not taken everything. But it took this.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6: THE SIGNATURE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> The Signature: A Squiggle, An Undulation, and Optimism</h2>
+
+      <p>Prof. Ravenswood-Clarke's formal classification of the contemporary legal signature is presented without further commentary because she was right and additional commentary would only dilute it.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — The Signature Classification System (Ravenswood-Clarke, 2026)</div>
+        <table>
+          <thead>
+            <tr><th>Type</th><th>Description</th><th>Legal Status</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type A: The Classic Non-Cursive</td>
+              <td>First initial in print, followed by a looping undulation that does not resolve into any specific letter, followed by the last initial. Sometimes a period.</td>
+              <td>Valid in most jurisdictions. A signature does not need to resemble your name.</td>
+              <td>The looping undulation was not practiced. It emerged spontaneously when the person was asked to sign something and discovered they had no practiced signature. They looped. This is the document of that loop.</td>
+            </tr>
+            <tr>
+              <td>Type B: The Seismograph</td>
+              <td>A horizontal line of variable amplitude that begins somewhere near the signature line and ends somewhere else. May contain one identifiable letter at the start.</td>
+              <td>Valid.</td>
+              <td>Three subjects in the study produced Type B signatures that were indistinguishable from each other despite having different names. The research team finds this philosophically interesting and practically alarming.</td>
+            </tr>
+            <tr>
+              <td>Type C: The Surrender</td>
+              <td>First name in printed letters, followed by last initial, followed by what appears to be a decision to stop trying.</td>
+              <td>Valid.</td>
+              <td>This is the most honest type. The person has correctly assessed their situation and responded appropriately. The research team respects Type C on principle.</td>
+            </tr>
+            <tr>
+              <td>Type D: The Historical Signature</td>
+              <td>Full name in practiced cursive. Consistent across multiple documents. Personal and identifiable. The mark of someone who was taught this and practiced it.</td>
+              <td>Valid and, currently, remarkable.</td>
+              <td>Type D signers are on average 48 years old in the study population. They are not doing anything extraordinary. They are doing what was taught in school. The school taught it. The school stopped teaching it. The split is visible in the receipts.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Prof. Ravenswood-Clarke: "I have a Type D signature. I was taught it by a woman named Mrs. Hendricks who gave me a B-minus in penmanship in 1983 and told me I held the pen wrong and that I would thank her later. I am thanking her now. This is the thank-you, Mrs. Hendricks. You were right about the pen."</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7: THE DEFENDANT -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Defendant: A Full Curriculum Indictment</h2>
+
+      <p class="dropcap">The cashier did not decide not to learn arithmetic. The cashier arrived at a school at age 5, as children do, and was taught what the school had decided to teach. The school had decided based on a curriculum. The curriculum had been decided by a standards committee. The standards committee had been guided by policy priorities. The policy priorities had been shaped by the assumption that devices would handle the parts that devices could handle, and that curriculum time should be reallocated to the parts devices could not handle.</p>
+
+      <p>This was a reasonable assumption with one flaw: the parts that were removed were not only useful when devices were unavailable. They were useful as foundational cognitive infrastructure — as the base layer on which further numerical, spatial, and conceptual reasoning is built. When you practice arithmetic, you are not only learning arithmetic. You are training the specific neural pathway that handles magnitude, estimation, and numerical intuition. When that pathway is not trained, the deficit is not only "cannot make change." The deficit is subtler than that and wider than that and shows up in places nobody anticipated when they decided the calculator would handle it.</p>
+
+      <div class="indictment-box">
+        <div class="indict-item">
+          <span class="indict-year">2010</span>
+          <span class="indict-text">Common Core State Standards adopted. Cursive handwriting not included as a required standard. Forty-five states adopt Common Core. Cursive begins its exit from American classrooms at scale.</span>
+        </div>
+        <div class="indict-item">
+          <span class="indict-year">Ongoing</span>
+          <span class="indict-text">Calculator use normalized in elementary mathematics. Mental arithmetic practice reduced. The stated rationale: calculators are available, and time is better spent on higher-order mathematical reasoning. The unstated consequence: the lower-order arithmetic that supports higher-order reasoning is not practiced, and the higher-order reasoning is therefore built on a less stable foundation.</span>
+        </div>
+        <div class="indict-item">
+          <span class="indict-year">Ongoing</span>
+          <span class="indict-text">Standardized testing pressures reallocate instructional time toward tested subjects. Art, music, physical education, and practical life skills instruction reduced. The skill of reading an analog clock — a minor but instructive example — is now documented as absent in a measurable percentage of graduating students. The clocks in many schools have been replaced with digital displays. The problem solved itself in the most direct way possible.</span>
+        </div>
+        <div class="indict-item">
+          <span class="indict-year">Ongoing</span>
+          <span class="indict-text">Geography reduced or consolidated in many curricula. The capital of Australia remains Canberra. This has not been communicated reliably to the current generation. The app knows. The app is Canberra's primary ambassador to the under-30 demographic at this point.</span>
+        </div>
+        <div class="indict-item">
+          <span class="indict-year">Now</span>
+          <span class="indict-text">The cashier is at the register. The register went dark. The quarters are in the drawer. The research team is standing in line writing field notes. The defendant is in a conference room somewhere, having moved on to other policy priorities, unaware that the drawer is open.</span>
+        </div>
+      </div>
+
+      <p>Dr. Blackwell-Tanaka notes: the teachers did not decide this. The teachers, in the majority of documented cases, were handed a curriculum and told to teach it. Many of them taught the skills anyway, on their own time, as extra material, in defiance of the priority structure. The teachers who taught cursive after it was removed from standards are the Mrs. Hendrickses of the current generation. Prof. Ravenswood-Clarke would like to thank all of them. The research team would like to thank all of them. Some of those students are now the 8% who can read their grandmother's birthday cards.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Conclusions: The Drawer Is Still Open</h2>
+
+      <p class="dropcap">The cashier is fine. This is stated first because it is most important. The cashier handled the situation, retrieved the answer from an available device, made correct change, and completed the transaction. The outcome was correct. The method required a device that happened to be available. The method would have failed if the device had also been unavailable. The drawer was open the whole time. The quarters were there. This is the only thing the paper is actually upset about.</p>
+
+      <p>It is not upset about the phone. The phone is remarkable. The phone can calculate, navigate, translate, transcribe cursive, identify birds, tell you the capital of Australia, suggest a tip, and summon a car. The phone is the most useful tool in human history and is available to most people at essentially no marginal cost. The research team uses the phone. The phone is not the problem.</p>
+
+      <p>The problem is the assumption — made in conference rooms by people with good intentions and incomplete models — that because the phone could handle something, the skill of handling it yourself was no longer necessary. The phone handles it better. But the skill of handling it yourself is not only useful for handling it yourself. It is useful for understanding what you are doing when the phone handles it. It is useful for catching the phone when the phone is wrong. It is useful for the 47.3 seconds when the register goes dark and the quarters are right there and the phone is in a pocket and the customer is waiting.</p>
+
+      <p>The cursive is a small archaeological tragedy. The signature is a squiggle and optimism. The tip calculator is an app preset. The geography is Canberra if you ask the phone and Sydney if you don't. The birthday card is a photograph and a transcription and a grandmother's hand that wrote something with care and sent it in the mail and is waiting on a bedside table being kept.</p>
+
+      <p>The drawer is open. The answer is in the drawer. It has always been in the drawer.</p>
+
+      <div class="pull-quote">
+        <blockquote>"The quarters were right there.<br>They were always right there.<br>Nobody taught him they were right there.<br>That is not his fault.<br>That is the conference room's fault."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes, T+0:31<br><em>Standing in line. Watching the calculator app open.</em><br><em>The quarters were labeled. The slots were labeled. The drawer was open.</em><br><em>$1.00 minus $0.76 equals $0.24.</em><br><em>It always has. It always will. It is in the drawer.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Common Core State Standards Initiative (2010). Mathematics and English Language Arts Standards. Cursive handwriting not included. The decision was made. The consequences were documented 15 years later by a researcher standing in line behind a very nice cashier who needed 47.3 seconds to locate $0.24.</li>
+        <li>National Center for Education Statistics (Ongoing). Assessment of foundational numeracy skills, trends 2000–present. The trend is visible. The trend has been visible for some time. The trend continued while it was being discussed in conferences where people had excellent catering and reached no binding conclusions.</li>
+        <li>Ravenswood-Clarke, I. (2026). The signature classification system. Unpublished taxonomy. "A loop, an undulation, and optimism." Mrs. Hendricks would not accept Type A through C as passing work. Mrs. Hendricks gave correct grades. This is noted.</li>
+        <li>Asante-Morrison, K. (2026). Cursive literacy among adults under 30: 8%, of whom 4% learned from TikTok. The TikTok cohort has better loop consistency than the school-taught cohort, which Dr. Asante-Morrison describes as "the most specific finding in my career." TikTok did not mean to save cursive. TikTok saved cursive anyway. This is how things happen now.</li>
+        <li>The Grandmother's Birthday Card (Kept). Still on the bedside table. The transcription is on the phone. The original is on the table. The original is better. The subject knows the original is better. She cannot read the original. She keeps it anyway. This is the correct decision.</li>
+        <li>The Quarters (Drawer, Labeled Slot). Available throughout the incident. Correctly denominated. Waiting. Have been waiting since the drawer was filled at the start of the shift. Will continue to wait. The quarters did everything right. This paper acknowledges the quarters.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the cashier. You handled the situation. You found the answer. You made correct change. You were patient with the dark screen and the open drawer and the customer behind you who was taking field notes, which you did not know and which would have been a strange thing to know. You are not the problem. You were handed a job and a register and a curriculum that did not include the 47.3 seconds. The register went dark. You managed. The research team wishes you a register that does not go dark again, and also, for your own future convenience, a moment with the quarters.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge Mrs. Hendricks, who taught Prof. Ravenswood-Clarke cursive in 1983 and gave her a B-minus for the pen grip, which was correct. And every teacher who kept teaching the skills after the curriculum moved on — who taught cursive as enrichment, who drilled multiplication tables as a warm-up, who made students put the calculator away for ten minutes and use their head. You were not following the priority structure. You were following the right thing. Some of your students are the 8%. Some of your students can read birthday cards. Some of your students are in this research team.</p>
+      <p style="margin-top:14px;">Finally: to the conference room. You had good intentions. The research team notes the good intentions. The research team also notes the drawer, the quarters, the 47.3 seconds, the birthday card, the squiggle, and the capital of Australia. The good intentions and the outcomes are both documented. Both are in the record. The drawer is still open. It is not too late to teach what is in it.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">$1.00 − $0.76 = $0.24. The quarters are in the drawer. They were always in the drawer.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Applied Arithmetic & Foundational Competency Studies · Vol. 1, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · The Quarters Were Right There. The Drawer Was Open. It Was $0.24.</div>
+  </footer>
+
+</div>
+</body>
+</html>

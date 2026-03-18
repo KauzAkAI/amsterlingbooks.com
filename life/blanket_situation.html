@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Blanket Situation | Harvard Journal of Applied Textile Conflict Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #faf8f4;
+    --paper-warm: #f2ede0;
+    --paper-aged: #e4dcc8;
+    --rule: #5a4020;
+    --rule-light: #8a6840;
+    --accent: #2a1800;
+    --accent-mid: #5a3000;
+    --accent-soft: #7a4810;
+    --taker: #1a4a1a;
+    --left: #4a1a00;
+    --midnight: #0a0818;
+    --nav-bg: #1a1200;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #0a0600;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px;
+    margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #1a1000, 0 20px 80px rgba(0,0,0,0.85);
+    animation:pageLoad 0.8s ease-out;
+  }
+
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  .masthead {
+    background: linear-gradient(135deg, #0a0600 0%, #1a1000 50%, #0a0600 100%);
+    border-bottom:4px solid var(--accent-soft);
+    position:relative; overflow:hidden;
+  }
+  .masthead::before {
+    content:'';
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 50% 60%, rgba(122,72,16,.12) 0%, transparent 60%);
+  }
+  .masthead-top {
+    padding:20px 60px;
+    display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+    position:relative; z-index:1;
+  }
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(122,72,16,.6); }
+  .harvard-crest span { display:block; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:var(--rule-light); font-weight:400; margin-top:5px; }
+  .masthead-journal { text-align:right; font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:var(--rule-light); font-style:italic; font-family:'EB Garamond',serif; }
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before,.paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--accent-soft); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:48px; font-weight:900; line-height:1.0; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.taker { background:var(--taker); }
+  .field-tag.left { background:var(--left); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--accent-soft); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--rule-light); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule); background:var(--paper-warm); }
+
+  /* NIGHT MIGRATION LOG */
+  .migration-log {
+    background:#08060e;
+    color:#c0b090;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    line-height:1;
+    border:1px solid #18140a;
+  }
+  .migration-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--accent-mid); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .ml-row { display:grid; grid-template-columns:70px 100px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(192,176,144,.08); align-items:baseline; }
+  .ml-time { color:#8a7850; font-weight:700; }
+  .ml-pos { font-weight:700; color:#c0b090; }
+  .ml-pos.left-side { color:#e09060; }
+  .ml-pos.right-side { color:#60a0e0; }
+  .ml-event { color:#a09070; line-height:1.5; }
+  .ml-note { color:#504830; font-style:italic; font-size:12px; }
+  .ml-alarm { color:#e04040; font-weight:700; }
+  .ml-good { color:#40c060; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd) { background:var(--paper); }
+  tbody tr:hover { background:rgba(90,48,0,.05); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:25%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-soft); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; color:var(--left); display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.green { color:var(--taker); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  /* THE CONFRONTATION TRANSCRIPT */
+  .convo-box {
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    border-top:3px solid var(--accent-mid);
+    padding:0;
+    margin:24px 0;
+    overflow:hidden;
+  }
+  .convo-hdr {
+    background:var(--accent-mid); color:#fff;
+    padding:8px 20px;
+    font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; text-transform:uppercase;
+  }
+  .convo-line { display:grid; grid-template-columns:180px 1fr; gap:16px; padding:12px 20px; border-bottom:1px solid var(--paper-aged); font-size:16px; line-height:1.6; }
+  .convo-line:last-child { border:none; }
+  .convo-speaker { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; }
+  .convo-speaker.left { color:var(--left); }
+  .convo-speaker.taker { color:var(--taker); }
+  .convo-text { color:var(--ink); }
+  .convo-note { font-size:13px; font-style:italic; color:var(--ink-faint); margin-top:4px; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(135deg,#0a0600,#1a1000); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--rule-light); }
+  .footer-note { font-style:italic; color:var(--rule-light); opacity:.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-top,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:34px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .ml-row{grid-template-columns:60px 80px 1fr;gap:6px}
+    .convo-line{grid-template-columns:1fr;gap:4px}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="harvard-crest">VERITAS<span>Harvard University · Cambridge, Massachusetts · Est. 1636</span></div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Applied Textile Conflict Studies</strong>
+        <small>& Nocturnal Territory Displacement Research</small>
+      </div>
+    </div>
+    <div class="masthead-strip">Vol. 3, Issue 1 &nbsp;·&nbsp; Peer-Reviewed By Six Researchers, Four of Whom Have Woken Up Without a Blanket &nbsp;·&nbsp; ISSN: WHERE-DID-THE-BLANKET-GO</div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: The Night and What Happens During It</div>
+    <h1 class="paper-title">The Blanket Situation</h1>
+    <p class="paper-subtitle">A Complete Forensic, Physiological, Game-Theoretic, and Anthropological Documentation of Nocturnal Blanket Displacement — Its 18.3-Inch Mean Migration Rate, the Total Absence of Taker Recollection, the Precise Archive Maintained by the Left, and the Specific Confusion the Taker Experiences Every Morning When the Evidence Is Presented to Them</p>
+
+    <div class="paper-fields">
+      <span class="field-tag left">The Left</span>
+      <span class="field-tag taker">The Taker</span>
+      <span class="field-tag">18.3 Inches Per Night</span>
+      <span class="field-tag">Zero Recollection</span>
+      <span class="field-tag left">Complete Archive Since February</span>
+      <span class="field-tag taker">Slept Wonderfully</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Events That Occur While One Party Is Asleep<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 · (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Has been identified by this study as a Left — the party who begins each night with shared access to the blanket and ends each night without it. Has documented 214 displacement events since February 14th, which Subject F-55 describes as "not a coincidence" that he started keeping records on Valentine's Day and Dr. Sterling describes as "methodological consistency." Has never once woken Subject F-55 in the night. Has considered it on seventeen occasions.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Sleep Neuroscience & Unconscious Motor Activity<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 · (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Confirmed that the Taker's displacement activity occurs entirely in deep sleep stages — the subject is genuinely, completely unconscious during every documented displacement event. The movements are not intentional. They are not strategic. They are the automatic motor expressions of a warm, comfortable person redistributing warmth toward themselves without any awareness that warmth was previously distributed otherwise. The Taker is not doing this on purpose. This does not help the Left at 3am.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Conversations That Occur at Breakfast<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">i.ravenswood@fas.harvard.edu<br>Barker Center 412 · (617) 555-0181</div>
+        <div class="author-quals">D.Phil. Philosophy & Linguistics (Oxford), FRSL. Contributed the discourse analysis of the morning confrontation in Section 5. Documents that the Taker's expression of genuine confusion — "I didn't do that," "I'm not a blanket person," "are you sure?" — is neurologically authentic. The Taker has no memory because the Taker has no memory. The Left's detailed account — date, time, approximate temperature, which direction the blanket migrated — is also neurologically authentic. The Left has been awake since 3am. The Left has had time to review.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & Nocturnal Resource Allocation<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 · (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the resource allocation analysis in Section 4. Notes that a shared blanket between two adults with different nocturnal thermal needs, in the absence of any allocation mechanism, will tend toward concentration with the party who moves more during sleep. Documents that this is not a statement about character. It is a statement about physics. The blanket goes where the motion takes it. The Left, who sleeps more still, consistently loses.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Memory Formation & The Specific Injustice of Having No Defense<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">i.blackwell@fas.harvard.edu<br>William James Hall 614 · (617) 555-0741</div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the memory and accountability analysis in Section 6. Documents the specific psychological position of the Taker: genuinely accused of something they genuinely did, with no memory of doing it, and no mechanism to either confirm or deny. The Taker cannot say "I didn't do it" because they did. The Taker cannot say "I know I did it" because they don't. The Taker can only say "I don't remember doing that," which is true, and which sounds exactly like what someone who did it on purpose would say to avoid accountability.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Nocturnal Territory Studies<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 · (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the blanket displacement phenomenon across 31 cultures and documented its universality across the full history of shared sleeping arrangements. Notes that the phenomenon predates the modern blanket — equivalent displacement events are documented with furs, pelts, and woven mats going back to the earliest records of cohabitation. The Taker's unconscious warmth-seeking is ancient behavior. The Left's precise archive of specific incidents is somewhat newer. The Left's archive is, however, comprehensive.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: February 15th, the Morning After Valentine's Day, When the Data Collection Formally Began &nbsp;·&nbsp;
+      Peer-Reviewed: By Six Researchers Who Each Checked Their Own Side of the Bed Before Agreeing to Participate &nbsp;·&nbsp;
+      Accepted: Unanimously, With the Specific Energy of People Who Have Been Waiting for Someone to Document This &nbsp;·&nbsp;
+      Dedicated: To the Left. You Were Not Wrong. You Were Cold. The Archive Is Correct.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Nocturnal Blanket Displacement Event (NBDE)</strong> — the documented nightly migration of shared bedding away from one party (the Left) toward the other (the Taker), at a mean rate of <strong>18.3 inches per night</strong>, executed entirely during the Taker's deep sleep phase, leaving no trace in the Taker's memory and leaving a detailed record in the Left's, who has been awake since approximately 3am and has had time to review the situation from multiple angles.</p>
+      <p class="abstract-text">The NBDE is not a character flaw. Dr. Venkataraman-Holloway's sleep neuroscience data confirms that all displacement activity occurs during NREM Stage 3 sleep — the deepest, most restorative phase — when the Taker's brain is not forming episodic memories and the Taker's motor system is executing comfort-optimization movements without cortical awareness or oversight. The Taker is asleep. The Taker is warm. The Taker is having an excellent night. These three facts are related.</p>
+      <p class="abstract-text">The Left's experience is documented separately and simultaneously: waking at 3am, finding the blanket edge at a location 18.3 inches from its last known position, lying still in the cold for a median of 11 minutes before either reclaiming the blanket or deciding that reclaiming it will wake the Taker, deciding it will not wake the Taker, executing a careful retrieval, waking the Taker anyway, and then having to explain why they are moving the blanket at 3am to a person who has no idea there is a blanket situation and who, in the morning, will have no recollection of this exchange either.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Nocturnal Blanket Displacement · 18.3 Inches Per Night · The Taker · The Left · Zero Taker Recollection · The Left's Archive (February–Present) · 3am Retrieval Event · Deep Sleep Stage Displacement · "I'm Not a Blanket Person" · The Taker Slept Wonderfully · The Left Did Not · Both Parties Are Correct About Their Own Experience
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: The Blanket, Its Last Known Position, and What Happened to It</h2>
+
+      <p class="dropcap">The blanket was positioned at 11pm with its center seam aligned with the center of the bed. Both parties were under equal portions. The left half covered Subject M-67 (the Left). The right half covered Subject F-55 (the Taker). This is documented in the baseline measurement taken at bedtime on the night of February 14th, which Dr. Sterling describes as the beginning of the formal study and Subject F-55 describes as "something I should have asked more questions about when I saw him put the tape measure on the bed."</p>
+
+      <p>By 3:08am, the center seam had migrated 18.3 inches to the left. Subject M-67 was uncovered from the waist down. Subject F-55 was encased in what the field notes describe as "a blanket distribution that would, in a court of law, constitute a taking." Subject F-55 was asleep. Subject F-55 was warm. Subject F-55 had no idea.</p>
+
+      <p>This paper asks: how, why, and at what mean rate. It also addresses the morning confrontation and the specific cognitive position it places the Taker in — accused, credibly, of something they have no memory of, by a person who has had since 3am to compose their account. The Taker's position is not comfortable. The Left's night was also not comfortable. The research team documents both.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num">18.3"</span>
+          <span class="stat-label">Mean nightly blanket displacement (center seam migration)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">214</span>
+          <span class="stat-label">Displacement events documented since February 14th</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num">3:08am</span>
+          <span class="stat-label">Mean time of Left's first waking event</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num green">0</span>
+          <span class="stat-label">Taker memories of displacement events. Zero. None. Not one.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2: THE NIGHT LOG -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Night: Documented Hour by Hour</h2>
+
+      <p>The research team presents the complete documentation of a representative night — February 22nd — as recorded by the Left in real time via a small notepad kept on the bedside table for this purpose. Subject F-55 has seen the notepad. Subject F-55 has not asked about it. The research team considers this a data point.</p>
+
+      <div class="migration-log" data-label="NOCTURNAL BLANKET DISPLACEMENT LOG — FEBRUARY 22ND — LEFT'S FIELD NOTES">
+        <div class="ml-row">
+          <span class="ml-time">11:04pm</span>
+          <span class="ml-pos">Baseline</span>
+          <span class="ml-event">Both parties under equal blanket portions. Center seam at bed center. Temperature: 68°F (see thermostat record, Paper 21). Both parties comfortable. Everything is fine.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">11:34pm</span>
+          <span class="ml-pos">+2.1"</span>
+          <span class="ml-event">First movement detected. Taker rolls toward Left. Minor blanket drag. Left still covered. Left notes this. Left does not say anything.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">12:17am</span>
+          <span class="ml-pos">+5.8"</span>
+          <span class="ml-event">Second movement. Taker adjusts position. Blanket edge now at Left's hip rather than Left's waist. Left is still technically under the blanket. Left notes the trajectory.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">1:42am</span>
+          <span class="ml-pos">+9.4"</span>
+          <span class="ml-event">Third movement. The blanket has now crossed a critical threshold. Left's left foot is exposed. It is cold. Left considers reclaiming blanket. Left decides not to disturb Taker. Left has made this decision 214 times.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">2:50am</span>
+          <span class="ml-pos">+14.2"</span>
+          <span class="ml-event">The situation has become significant. Left is covered from approximately the knee up on the right side and not at all on the left side. This is not a blanket arrangement. This is a blanket apportionment. The Taker is fully enclosed.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">3:08am</span>
+          <span class="ml-pos ml-alarm">+18.3"</span>
+          <span class="ml-event ml-alarm">The Left is awake. The blanket is on the Taker. The Taker is warm. The Left is cold. The Left lies still for 11 minutes considering options: (A) reclaim the blanket, (B) go get another blanket, (C) lie here and think about it, (D) wake Taker. Option D is considered. Option D is rejected. Option C is executed.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">3:19am</span>
+          <span class="ml-pos">Retrieval</span>
+          <span class="ml-event">Left executes a slow, careful lateral pull on the blanket edge. The intention is to retrieve the blanket without waking the Taker. This intention is sincere. The outcome is not consistent with the intention.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">3:19am</span>
+          <span class="ml-pos left-side">Wake event</span>
+          <span class="ml-event ml-alarm">Taker wakes. Taker says: "Wha—?" Left says: "Sorry, go back to sleep." Taker says: "What time is it?" Left says: "Go to sleep." Taker is asleep within 40 seconds. Left is awake until 4:11am thinking about the fact that the Taker went back to sleep in 40 seconds.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">6:04am</span>
+          <span class="ml-pos">+11.2"</span>
+          <span class="ml-event ml-note">The blanket has migrated back 7.1 inches since the 3am retrieval. The Left notes this without surprise. The Left has seen this before. The data is consistent with all prior records. The Taker is asleep. The Taker is warm. Good morning.</span>
+        </div>
+        <div class="ml-row" style="border:none;padding-top:12px;">
+          <span class="ml-time"></span>
+          <span class="ml-pos right-side">7:15am</span>
+          <span class="ml-event ml-good">Taker wakes. Taker says: "Morning!" Taker says: "Did you sleep okay?" Left says: "Fine." Left makes coffee. The coffee is excellent. The Left always makes excellent coffee. The Left has been awake since 3am and has had time to perfect the ratio.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3: THE PHYSIOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Physiology: Why the Taker Has No Idea</h2>
+
+      <p>The Taker's complete absence of memory is not a defensive position. It is a neurological fact, documented by Dr. Venkataraman-Holloway across 214 displacement events and confirmed by sleep stage analysis correlated with the displacement timeline.</p>
+
+      <p>All documented displacement events occur during NREM Stage 3 sleep — slow-wave sleep, the deepest and most restorative phase. During Stage 3, the hippocampus is not encoding episodic memories. The motor system is executing programmatic comfort-optimization movements — the body adjusting its position to maximize thermal comfort — without cortical oversight or awareness. The Taker's body is moving the blanket. The Taker's brain is not watching.</p>
+
+      <p>The Taker, upon waking, genuinely does not know. The Left, upon waking at 3am, genuinely does know. The asymmetry is neurological, not moral. It is also cold.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Sleep Stage and Displacement Correlation</div>
+        <table>
+          <thead>
+            <tr><th>Sleep Stage</th><th>Displacement Events</th><th>Memory Formed</th><th>Taker's Morning Account</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stage 1 (Light sleep)</td>
+              <td>3.2% of events</td>
+              <td>Partial. Taker may recall a vague sense of movement.</td>
+              <td>"I think I might have moved a bit." Insufficient for the Left's purposes.</td>
+            </tr>
+            <tr>
+              <td>Stage 2 (Light-moderate)</td>
+              <td>18.7% of events</td>
+              <td>Minimal. Taker has no clear episodic memory but may not be surprised to learn of movement.</td>
+              <td>"I don't remember but I can see how that might have happened." Progress.</td>
+            </tr>
+            <tr>
+              <td>Stage 3 (Deep sleep)</td>
+              <td>78.1% of events</td>
+              <td>None. Zero. The hippocampus is offline. No episodic encoding is occurring.</td>
+              <td>"I didn't do that." (Sincere.) "I'm not a blanket person." (Demonstrably false.) "Are you sure?" (The Left is sure.)</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The 78.1% Stage 3 rate explains the consistent completeness of the Taker's amnesia. The most significant displacement events — those accounting for the largest single-night migrations — occur during the deepest sleep, producing both the most complete blanket consolidation and the most complete Taker unawareness. The Taker is not lying. The Taker is Stage 3.</div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> Dr. Venkataraman-Holloway notes a secondary finding: the Taker's sleep quality is, by every measured metric, excellent. Mean deep sleep duration per night in the study period: 94 minutes. Mean sleep efficiency: 91%. Mean morning mood rating: 8.3 out of 10. The Left's corresponding metrics: 61 minutes deep sleep, 74% efficiency, 6.1 morning mood. The correlation between blanket possession and sleep quality is statistically significant (p&lt;0.001) and directionally obvious. The research team presents this without comment. The research team does not need to add comment. The numbers add it themselves.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: THE PHYSICS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> The Physics: How 18.3 Inches Happens</h2>
+
+      <p>Prof. Abara-Whitfield's physics analysis documents the mechanism of displacement. The blanket is a finite resource subject to conservation laws: its total surface area does not change during the night. What changes is its distribution. The redistribution occurs via a simple mechanism: the Taker moves, the blanket moves with the Taker, the Left does not move, the blanket does not return.</p>
+
+      <p>Each individual displacement event is small — a mean of 2.3 inches per movement. The cumulative effect of 8–12 movements per night, each moving the blanket toward the Taker and none moving it back, produces the 18.3-inch mean nightly migration documented in the study. The Left is not losing 18.3 inches in one motion. The Left is losing 2.3 inches at a time, in the dark, while asleep, until 3am when the cumulative result becomes undeniable and cold.</p>
+
+      <div class="case-study" data-label="The Accumulation Problem — February 22nd Detailed">
+        <p>The February 22nd record is illustrative. Five discrete displacement events between 11:34pm and 2:50am, each averaging 3.0 inches, produced a total migration of 14.2 inches before the Left's first waking. The Taker executed each movement in 3–8 seconds of unconscious motor activity. The Left detected each movement as a slight temperature change and a slight tension change in the blanket — enough to register, not enough to fully wake. The Left lay through each event, each time deciding not to intervene, until 3:08am when the aggregate outcome was impossible to continue ignoring.</p>
+        <p>The Left's decision not to intervene after each event is well-documented: waking the Taker is disruptive, the Taker is sleeping well, the Left is reluctant to sacrifice the Taker's sleep quality for blanket retrieval. This is a generous decision. It is also, across the study period, a decision that has contributed to 214 3am waking events for the Left. The generosity has a cost. The Left pays it nightly.</p>
+        <p class="italic-note">Prof. Abara-Whitfield notes: "If the Left had reclaimed the blanket after each of the five events on February 22nd, the 3am waking would not have occurred. The Left's strategy of tolerance, while prosocially motivated, enables the full accumulation. The Left is, in the game-theoretic sense, an enabler of the outcome they are complaining about. This analysis will not be shared with the Left. The Left is making coffee and has been awake since 3am and this is not the moment for game theory."</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: THE MORNING CONFRONTATION -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> The Morning Confrontation: A Complete Transcript</h2>
+
+      <p>Prof. Ravenswood-Clarke's discourse analysis of the morning confrontation reveals a structurally consistent exchange across all documented events. The Left presents the evidence. The Taker responds with genuine confusion. The Left provides more evidence. The Taker, confronted with irrefutable data they have no memory of, arrives at a defensive position that is simultaneously sincere and inadequate. The research team presents the canonical transcript.</p>
+
+      <div class="convo-box">
+        <div class="convo-hdr">Morning Confrontation — Canonical Transcript — 7:22am</div>
+        <div class="convo-line">
+          <span class="convo-speaker left">The Left:</span>
+          <div><span class="convo-text">"You took the whole blanket again last night."</span><div class="convo-note">Statement of fact. Delivered with the measured calm of someone who has been composing this sentence since 3am.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker taker">The Taker:</span>
+          <div><span class="convo-text">"What? No I didn't."</span><div class="convo-note">Genuine confusion. The Taker has no memory of this. The Taker's denial is authentic. The Taker's denial is also wrong.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker left">The Left:</span>
+          <div><span class="convo-text">"I woke up at 3am and you had all of it."</span><div class="convo-note">First data point presented. Time-stamped. Specific. The Left has more.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker taker">The Taker:</span>
+          <div><span class="convo-text">"I'm not a blanket person. I don't do that."</span><div class="convo-note">This is the Taker's self-concept speaking. The Taker genuinely does not identify as a blanket person. The data does not support this self-concept. The data strongly contradicts this self-concept. The data has been contradicting it since February.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker left">The Left:</span>
+          <div><span class="convo-text">"You've done it 214 times since February."</span><div class="convo-note">The archive is deployed. The Left has a number. The number is 214. The Taker was not expecting a number.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker taker">The Taker:</span>
+          <div><span class="convo-text">"...You've been counting?"</span><div class="convo-note">The Taker has identified the notepad as a variable. The Taker is recalibrating. The Taker is beginning to understand that this conversation has been longer in preparation than it appears.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker left">The Left:</span>
+          <div><span class="convo-text">"Since Valentine's Day."</span><div class="convo-note">The Left lets this land. The Left allows the date to do its work. February 14th. The Taker considers this. The Taker understands that the Left started counting the day after Valentine's Day. The Taker feels something about this. The Taker is not sure what it is.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker taker">The Taker:</span>
+          <div><span class="convo-text">"I don't remember doing it."</span><div class="convo-note">The Taker's most defensible and most frustrating statement. True. Completely true. Also not the point.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker left">The Left:</span>
+          <div><span class="convo-text">"I know."</span><div class="convo-note">Two words. The Left has accepted the Taker's neurological reality. The Left is not disputing the amnesia. The Left is disputing the outcome. The distinction matters.</div></div>
+        </div>
+        <div class="convo-line">
+          <span class="convo-speaker taker">The Taker:</span>
+          <div><span class="convo-text">"...I'm sorry."</span><div class="convo-note">Genuine. The Taker is sorry. The Taker did not know they were doing it. The Taker is sorry they were doing it. The apology contains both facts. Both facts are true. The Left accepts the apology. The Left makes a mental note that this is incident 215.</div></div>
+        </div>
+      </div>
+
+      <p>Prof. Ravenswood-Clarke notes that the canonical transcript ends with an apology and a mental note, which means the conflict was resolved and immediately entered into the record. Both things are true. Both things are appropriate. The apology was genuine. The record is accurate. The Taker will take the blanket again tonight. The Left will be awake at 3am. The coffee will be excellent.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6: THE ARCHIVE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> The Left's Archive: A Complete Description</h2>
+
+      <p class="dropcap">The Left's archive is a small spiral-bound notebook, 3 inches by 5 inches, kept in the bedside table drawer. Each entry records: the date, the time of the Left's first waking, the estimated displacement distance, the temperature at waking, the method of blanket retrieval (if attempted), whether the retrieval woke the Taker, and — in a column the Left labeled "T slept fine" — a checkmark in every single row.</p>
+
+      <p>The archive spans February 14th through the present. It is, as of the paper's submission date, 214 entries long. It contains no entries for the 8 nights in the study period during which the Left was traveling for work. The left side of the bed, on those nights, remained unchallenged. The blanket, on those nights, did not migrate. The Taker, on those nights, slept wonderfully with full blanket access. These nights are noted in the archive with a small star and the word "obviously."</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — Left's Archive: Selected Statistics (February 14th – Present)</div>
+        <table>
+          <thead>
+            <tr><th>Metric</th><th>Finding</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mean displacement</td>
+              <td>18.3 inches</td>
+              <td>From center seam to center seam. The peak single-night displacement was 27.4 inches, recorded March 3rd, a cold night. The Taker remembers March 3rd as "a really good sleep."</td>
+            </tr>
+            <tr>
+              <td>Mean Left waking time</td>
+              <td>3:08am</td>
+              <td>Range: 1:47am to 4:52am. The 1:47am event was a Thursday in February during a cold snap. The Left wrote "this is getting out of hand" in the notes column. This is the only editorial comment in the archive.</td>
+            </tr>
+            <tr>
+              <td>Retrieval attempts</td>
+              <td>187 of 214 events</td>
+              <td>The other 27 events the Left decided against retrieval and lay cold until morning. These are the events the Left is least willing to discuss.</td>
+            </tr>
+            <tr>
+              <td>Retrievals that woke Taker</td>
+              <td>94 of 187 attempts (50.3%)</td>
+              <td>The Left's intention is never to wake the Taker. The Left wakes the Taker half the time. The Taker goes back to sleep in a mean of 37 seconds. The Left is awake for a mean of 48 additional minutes. The difference is 47 minutes and 23 seconds per event.</td>
+            </tr>
+            <tr>
+              <td>"T slept fine" column</td>
+              <td>214 checkmarks out of 214 entries</td>
+              <td>The Left has never written anything other than a checkmark in this column. Not once. The Taker has always slept fine. The column was created, the Left reports, "for completeness." The research team notes the column was also created with the specific energy of someone documenting something they find significant.</td>
+            </tr>
+            <tr>
+              <td>Nights Left was traveling</td>
+              <td>8 nights</td>
+              <td>No displacement recorded. Marked with a star and "obviously." The Taker did not know about these stars until the research team mentioned them. The Taker considered them for a while.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The archive has been reviewed by all six co-authors. Prof. Asante-Morrison described it as "the most methodologically consistent personal dataset I have reviewed outside a formal research context." Dr. Blackwell-Tanaka described it as "an act of love disguised as an audit." The Left described it as "accurate."</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7: THE TAKER'S POSITION -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Taker's Position: Guilty, Amnesiac, and Genuinely Confused</h2>
+
+      <p>Dr. Blackwell-Tanaka's analysis documents the Taker's specific cognitive and emotional position, which the research team acknowledges is not a comfortable one. The Taker is being held accountable for 214 documented events, all of which happened, none of which the Taker remembers, and none of which the Taker can either confirm or deny. The Left's evidence is irrefutable. The Taker's memory is empty. Both things are true simultaneously.</p>
+
+      <p>The phrase "I didn't do that" — the Taker's first response in every confrontation — is, from the Taker's perspective, a sincere statement about their memory and identity. The Taker does not remember doing it. The Taker does not identify as a blanket person. The Taker believes, when they say "I didn't do that," that they are telling the truth. They are telling the truth about their memory. They are not telling the truth about the night.</p>
+
+      <p>The research team notes the Taker's specific dilemma: there is no response available that is both honest and satisfying. "I didn't do it" is dishonest. "I did it but I don't remember" is honest but sounds evasive. "I'll try not to do it" is sincere but meaningless — the Taker cannot try not to do something they are asleep while doing. The only honest and complete response is: "I believe you, I'm sorry, I'll get a second blanket." This response is available. It has been deployed. It has resolved the morning confrontation on 31 occasions. The second blanket lasted an average of 4.2 nights before it was also incorporated into the Taker's blanket arrangement. The Left noted this in the archive with no additional comment. The data was sufficient.</p>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Conclusions: Two Blankets and the Coffee</h2>
+
+      <p class="dropcap">The Nocturnal Blanket Displacement Event is irresolvable with a single shared blanket. This is not a statement about character. It is a statement about physics and sleep neuroscience. The Taker will move. The blanket will move with the Taker. The Left will be cold. This will happen again tonight. The archive will note it.</p>
+
+      <p>The recommended solution is structural: two blankets, each party's own, overlapping in the middle and separable at the edges. The solution is simple. The solution eliminates 18.3 inches of nightly migration, one 3am waking event, one morning confrontation, and the specific experience of lying cold in the dark deciding whether to retrieve the blanket and wake the Taker or lie here and think about it for 11 minutes. Two blankets. Problem solved.</p>
+
+      <p>The research team notes that the two-blanket solution has been proposed to the study household on three occasions. The two-blanket solution has been declined on three occasions. The stated reason: "it feels less cozy." The Left has reported this reason with the specific expression of someone who has been awake since 3am and is choosing not to say what they are thinking. The Left has accepted the reason. The Left is still keeping the archive.</p>
+
+      <p>The coffee, as documented across the study period, is consistently excellent. The Left is always awake first. The Left has always had time to get the ratio right. The Taker drinks it warm and grateful, every morning, without fully understanding the infrastructure that produced it. The research team considers this, on reflection, an apt summary of the Blanket Situation as a whole.</p>
+
+      <div class="pull-quote">
+        <blockquote>"The Left was cold.<br>The Taker was warm.<br>The Taker has no idea.<br>The coffee was excellent.<br>The archive notes 215."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes, 7:24am<br><em>After the morning confrontation. Drinking the coffee.</em><br><em>The coffee was, as documented, excellent.</em><br><em>The Left made it. The Left has been awake since 3am.</em><br><em>The Left knows the ratio by heart.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Venkataraman-Holloway, P. et al. (2026). Nocturnal motor activity during NREM Stage 3 sleep and its effect on shared bedding distribution. <em>Journal of Sleep Research, 35</em>(2), 44–67. ("The motor system is executing comfort-optimization without cortical awareness. The subject is asleep. The subject is warm. The subject does not know." — Author note.)</li>
+        <li>Abara-Whitfield, D. (2026). Blanket displacement as a resource allocation problem: Physics, patience, and the 3am event. <em>Harvard Journal of Applied Textile Conflict Studies, 3</em>(1), 1–44. ("The Left's tolerance of each individual displacement event enables the aggregate. The Left is a good partner. The Left is cold. These are related." — Author note.)</li>
+        <li>Asante-Morrison, K. (2026). Cross-cultural nocturnal territory displacement: From pelts to duvets, 40,000 BC–present. <em>Journal of Anthropological Sleep Studies, 12</em>(1), 1–88. (The phenomenon is ancient. The archive is new. The archive is, Dr. Asante-Morrison notes, "the most thorough documentation of an ancient problem I have encountered in 22 years of research.")</li>
+        <li>The Archive (February 14th, ongoing). Small spiral notebook, 3×5 inches, bedside table. 214 entries. 214 checkmarks in the "T slept fine" column. 8 stars. One editorial comment. "This is getting out of hand." Accurate.</li>
+        <li>The Second Blanket (Brief tenure: 4.2 nights mean). Deployed three times. Absorbed three times. Now occupying a position at the foot of the bed that the Taker describes as "cozy." The Left notes this in the archive with a small arrow pointing at the blanket's current location and the words "there it is."</li>
+        <li>The Coffee (Daily, 6:04am). Made by the Left. Ratio perfected over 214 nights of pre-dawn wakefulness. Consumed by both parties. Described by the Taker as "amazing." The Taker does not know the ratio. The Left knows the ratio because the Left has been awake since 3am for seven months and has had time to refine it. The Left accepts the compliment every morning. The Left is generous.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the Left. You lay cold in the dark for 11 minutes, 214 times, deciding not to wake the Taker. You made the coffee every morning while you were awake and the Taker was still warm. You kept the archive not because you were angry but because you needed the situation to be documented — to exist somewhere outside your own 3am certainty that it was happening and the Taker's morning certainty that it wasn't. The archive was the proof. The proof was for you as much as for anyone. The research team reviewed the archive. The research team confirms: the archive is correct. You were cold. It happened. The coffee is excellent.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge the Taker. You did not know. Every morning you said "did you sleep okay?" and meant it. The concern was genuine. The blanket was on you. Both things were true simultaneously and you were only aware of one of them. The research team does not assign you blame for a behavior that occurs during Stage 3 sleep, outside conscious awareness, in the service of your body's automatic warmth-seeking. You are not a bad partner. You are a warm sleeper. The distinction matters. The Left knows the distinction. The Left made you excellent coffee this morning. The Left will make it again tomorrow. You should, perhaps, get a second blanket.</p>
+      <p style="margin-top:14px;">Finally: to the archive itself. You are a 3×5 spiral notebook with 214 entries, kept in a drawer on the left side of the bed. You are the record of 214 cold waking events, 214 careful decisions not to disturb the Taker, 94 retrievals that woke them anyway, and 214 checkmarks in a column called "T slept fine." You are the most specific document of a particular love that the research team has reviewed — the specific love of lying cold in the dark at 3am for seven months and writing it down instead of saying it, because the Taker is asleep and is warm and the coffee is better than the fight. The research team thanks you for your service. The research team recommends you be shown to the Taker. Over coffee. In the morning.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">Two blankets. The coffee is always made. 215.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Applied Textile Conflict Studies · Vol. 3, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · The Archive Is Correct. Get a Second Blanket.</div>
+  </footer>
+
+</div>
+</body>
+</html>

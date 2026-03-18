@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sleep Schedule Incompatibility | Harvard Journal of Chronobiological Cohabitation Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #f8f8fa;
+    --paper-warm: #f0f0f4;
+    --paper-aged: #e0dfe8;
+    --rule: #282840;
+    --rule-light: #505080;
+    --accent: #0c0c20;
+    --accent-mid: #282860;
+    --accent-soft: #484890;
+    --dawn: #a06000;
+    --dusk: #002080;
+    --overlap: #204020;
+    --cheer: #c04000;
+    --night: #000840;
+    --coffee: #3a1a00;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #02020c;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content:'';
+    position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:0.5;
+  }
+
+  .journal {
+    max-width:860px; margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #0c0c28, 0 20px 80px rgba(0,0,0,0.9);
+    animation:pageLoad 0.8s ease-out;
+  }
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* DAY/NIGHT MASTHEAD */
+  .masthead {
+    position:relative; overflow:hidden;
+    border-bottom:4px solid var(--accent-soft);
+  }
+
+  .masthead-gradient {
+    background: linear-gradient(to right,
+      #000820 0%,
+      #001840 15%,
+      #102858 25%,
+      #c06010 45%,
+      #e08020 50%,
+      #c06010 55%,
+      #102858 75%,
+      #001840 85%,
+      #000820 100%
+    );
+    padding:20px 60px;
+    display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+    position:relative; z-index:1;
+  }
+
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:30px; font-weight:900; color:#fff; letter-spacing:0.08em; line-height:1; text-shadow:0 0 30px rgba(192,96,0,.7); }
+  .harvard-crest span { display:block; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:rgba(255,220,150,.7); font-weight:400; margin-top:5px; }
+  .masthead-journal { text-align:right; font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:14px; letter-spacing:0.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:12px; color:rgba(255,220,150,.7); font-style:italic; font-family:'EB Garamond',serif; }
+
+  /* TIMELINE BAR */
+  .timeline-bar {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    position:relative; z-index:1;
+  }
+  .tl-early {
+    background: linear-gradient(to right, #3a1a00, #a06000);
+    padding:7px 30px 7px 60px;
+    color:#ffd090;
+  }
+  .tl-late {
+    background: linear-gradient(to right, #001040, #000820);
+    padding:7px 60px 7px 30px;
+    color:#9090ff;
+    text-align:right;
+  }
+
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:0.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; background:var(--paper); }
+  .paper-type { font-size:12px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--dawn); }
+  .paper-type::after { content:''; display:inline-block; width:50px; height:1px; background:var(--dusk); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:40px; font-weight:900; line-height:1.05; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.dawn { background:var(--dawn); }
+  .field-tag.dusk { background:var(--dusk); }
+  .field-tag.overlap { background:var(--overlap); }
+  .field-tag.cheer { background:var(--cheer); }
+  .field-tag.coffee { background:var(--coffee); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--dawn); border-right:4px solid var(--dusk); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:0.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  h3 { font-family:'Playfair Display',serif; font-size:17px; font-weight:600; font-style:italic; color:var(--ink); margin:28px 0 12px; padding-left:16px; border-left:3px solid var(--rule-light); }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  /* TIMELINE CHART */
+  .day-chart {
+    background:#04040e;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    border:1px solid #10102a;
+  }
+  .day-chart::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--accent-mid); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .dc-label { font-family:'Playfair Display',serif; font-size:11px; color:#6060a0; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px; }
+  .dc-hours { display:grid; grid-template-columns:repeat(24,1fr); gap:0; margin-bottom:4px; }
+  .dc-hour { font-family:'Source Code Pro',monospace; font-size:9px; color:#303060; text-align:center; padding:0 0 2px; }
+  .dc-hour.marked { color:#6060a0; }
+  .dc-bar-row { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .dc-bar-label { font-family:'Playfair Display',serif; font-size:12px; font-weight:700; width:80px; flex-shrink:0; }
+  .dc-bar-label.early { color:#e09040; }
+  .dc-bar-label.late { color:#8080ff; }
+  .dc-bar-label.overlap { color:#60c060; }
+  .dc-bar { flex:1; height:20px; position:relative; background:#0a0a20; }
+  .dc-fill { position:absolute; top:0; bottom:0; }
+  .dc-fill.early-fill { background:linear-gradient(to right, #804000, #e09040); }
+  .dc-fill.late-fill { background:linear-gradient(to right, #002080, #4040c0); }
+  .dc-fill.overlap-fill { background:linear-gradient(to right, #1a4a1a, #40a040); }
+  .dc-note { font-size:11px; color:#404060; font-style:italic; flex-shrink:0; width:120px; text-align:right; font-family:'Source Code Pro',monospace; }
+  .dc-legend { display:flex; gap:20px; margin-top:12px; padding-top:10px; border-top:1px solid #101030; flex-wrap:wrap; }
+  .dc-leg-item { display:flex; align-items:center; gap:6px; font-size:11px; color:#6060a0; font-family:'Playfair Display',serif; }
+  .dc-leg-dot { width:10px; height:10px; flex-shrink:0; }
+
+  /* MORNING LOG */
+  .morning-log {
+    background:#06030a;
+    color:#c0b080;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative; line-height:1;
+    border:1px solid #14100a;
+  }
+  .morning-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--cheer); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .ml-row { display:grid; grid-template-columns:80px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(192,176,128,.07); align-items:baseline; }
+  .ml-time { color:#806040; font-weight:700; }
+  .ml-event { color:#c0b080; line-height:1.5; }
+  .ml-cheer { color:#e08040; font-weight:700; }
+  .ml-late { color:#8080ff; }
+  .ml-coffee { color:#c08040; font-weight:700; }
+  .ml-note { color:#484030; font-style:italic; font-size:12px; }
+  .ml-question { color:#e04040; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:0.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd) { background:var(--paper); }
+  tbody tr:hover { background:rgba(40,40,96,.05); transition:background .2s; }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:28%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+  .footnote sup { color:var(--accent-soft); font-weight:700; font-style:normal; }
+
+  .case-study { border:1px solid var(--rule-light); background:var(--paper-warm); padding:22px 26px; margin:24px 0; position:relative; }
+  .case-study::before { content:attr(data-label); position:absolute; top:-11px; left:18px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:10px; letter-spacing:0.2em; padding:3px 12px; text-transform:uppercase; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.dawn-num { color:var(--dawn); }
+  .stat-num.dusk-num { color:var(--dusk); }
+  .stat-num.overlap-num { color:var(--overlap); }
+  .stat-num.coffee-num { color:var(--coffee); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  /* THE QUESTION BOX */
+  .question-box {
+    background:var(--paper-warm);
+    border:2px solid var(--cheer);
+    border-left:5px solid var(--cheer);
+    padding:20px 26px;
+    margin:24px 0;
+    position:relative;
+  }
+  .question-box::before {
+    content:'QUESTIONS BEFORE 8AM — DOCUMENTED INVENTORY';
+    position:absolute; top:-11px; left:18px;
+    background:var(--cheer); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:0.18em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .q-item { display:grid; grid-template-columns:1fr 80px 1fr; gap:14px; padding:10px 0; border-bottom:1px solid var(--paper-aged); font-size:15px; align-items:start; }
+  .q-item:last-child { border:none; }
+  .q-text { font-family:'Playfair Display',serif; font-style:italic; color:var(--cheer); line-height:1.5; font-size:14px; }
+  .q-time { font-family:'Source Code Pro',monospace; font-size:13px; color:var(--rule-light); text-align:center; padding-top:2px; }
+  .q-response { font-size:14px; color:var(--ink-faint); font-style:italic; line-height:1.5; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:0.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:0.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(to right, #06030a 50%, #020610 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--rule-light); }
+  .footer-note { font-style:italic; color:var(--rule-light); opacity:.7; font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .masthead-gradient,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip,.tl-early,.tl-late{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:28px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .ml-row{grid-template-columns:70px 1fr;gap:8px}
+    .dc-bar-row{flex-wrap:wrap}
+    .dc-note{width:auto;text-align:left}
+    .q-item{grid-template-columns:1fr;gap:4px}
+    .timeline-bar{grid-template-columns:1fr}
+    .tl-late{text-align:left}
+  }
+</style>
+</head>
+<body>
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-gradient">
+      <div class="harvard-crest">VERITAS<span>Harvard University · Cambridge, Massachusetts · Est. 1636</span></div>
+      <div class="masthead-journal">
+        <strong>Harvard Journal of Chronobiological Cohabitation Studies</strong>
+        <small>& Early Bird / Night Owl Conflict Research</small>
+      </div>
+    </div>
+    <div class="timeline-bar">
+      <div class="tl-early">☀️ &nbsp; The Early Bird · Awake 6:04am · "It's a Beautiful Morning"</div>
+      <div class="tl-late">The Night Person · Optimal 10pm–1am · "It's Not Morning Yet" &nbsp; 🌙</div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 6, Issue 1 &nbsp;·&nbsp; Peer-Reviewed By Three Morning People and Three Night People, None of Whom Agreed on the Meeting Time &nbsp;·&nbsp; ISSN: ITS-TOO-EARLY-FOR-THIS
+    </div>
+  </div>
+
+  <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article — Special Issue: The Tyranny of Other People's Circadian Rhythms</div>
+    <h1 class="paper-title">The Sleep Schedule Incompatibility</h1>
+    <p class="paper-subtitle">A Complete Chronobiological, Neurological, Game-Theoretic, and Ethnographic Analysis of the 3.5-Hour Chronotype Gap — the 3.8 Hours of Shared Daily Alertness It Produces, the 6am Inexplicable Cheerfulness Event, the Specific Cruelty of Questions Before 8am, and the Coffee That Is Always Made</p>
+
+    <div class="paper-fields">
+      <span class="field-tag dawn">Early Bird: 6:04am</span>
+      <span class="field-tag dusk">Night Person: Optimal 10pm</span>
+      <span class="field-tag">3.5-Hour Gap</span>
+      <span class="field-tag overlap">3.8hrs Shared Alertness</span>
+      <span class="field-tag cheer">The 6am Event</span>
+      <span class="field-tag coffee">Coffee: Always Made</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Circadian Incompatibility Documentation<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 · (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author and primary Night Person in the study. Optimal cognitive performance window: 9pm–12:30am. Documented waking time: 8:47am mean. Has been described by the Early Bird on 214 mornings as "finally up." Has asked the Early Bird questions before 8am on zero documented occasions. Makes coffee at 8:47am. The coffee is already made. The Early Bird made it at 6:11am. It is still warm because the Early Bird knows the ratio and the setting and the timing. The Night Person has never made the coffee first. The Night Person has not needed to.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Chronobiology & Circadian Neuroscience<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 · (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Confirmed the neurological basis of the chronotype gap in Section 3. Documents that the Early Bird and Night Person have genuinely different circadian phase settings — the internal body clock runs on a different schedule in each party, entirely independent of preference or discipline. The Early Bird is not more virtuous. The Night Person is not lazy. They are running different biological clocks that have been set, largely by genetics, to different times. The clocks cannot be meaningfully reset by willpower. They can be adjusted slightly by light exposure and schedule pressure. They cannot be adjusted by the Early Bird saying "you just need to get up earlier."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory & Temporal Resource Allocation<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 · (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the shared alertness analysis in Section 4. Calculates that the 3.5-hour chronotype gap produces 3.8 hours of genuine bilateral alertness per day — the window in which both parties are awake, functional, and not in the process of either winding up or winding down. 3.8 hours is not a lot. 3.8 hours must contain: dinner, conversation, television, any required practical decisions, and the resolution of anything that arose during the 20.2 hours when their alertness windows were not fully aligned. 3.8 hours is sufficient. It requires attention to use well.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Psychology of the 6am Cheerfulness Event<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">i.blackwell@fas.harvard.edu<br>William James Hall 614 · (617) 555-0741</div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the psychological analysis of the 6am Inexplicable Cheerfulness Event in Section 5. Documents the Early Bird's genuine morning enthusiasm — the cognitive state of someone at the peak of their daily alertness cycle who has already been awake for two hours, has completed a task, has had coffee, and has found the morning to be, as it often is for them, quite pleasant. Documents the Night Person's experience of this state, which is: "it is 6am, I am not awake, there is a person in the room who appears to be delighted about this, and I do not understand why."</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Chronotype Cohabitation<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 · (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the chronotype cohabitation problem across 31 cultures. Every culture has Early Birds and Night Owls. Every culture's Early Birds and Night Owls cohabitate with each other at the normal rates of cohabitation. Every culture's Night Owls find the Early Bird's morning disposition hard to process before full wakefulness. Every culture's Early Birds find the Night Person's late-night wakefulness slightly baffling. Both parties are correct about their own rhythms. Neither party can adopt the other's without genuine biological cost.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Questions That Should Not Be Asked Before 8am<br>Harvard Faculty of Arts & Sciences</div>
+        <div class="author-contact">i.ravenswood@fas.harvard.edu<br>Barker Center 412 · (617) 555-0181</div>
+        <div class="author-quals">D.Phil. Philosophy & Linguistics (Oxford), FRSL. Contributed the question inventory in Section 6 — a complete catalogue of questions asked by the Early Bird before 8am, the Night Person's capacity to answer them at that hour, and the specific gap between question complexity and available cognitive resources. Notes that the Early Bird's questions are not unreasonable questions. They are unreasonably timed questions. The questions would be fine at 9am. At 6:30am they are the linguistic equivalent of asking a person who is still underwater to swim faster.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: At 11:42pm, When the Night Person Was Optimally Alert &nbsp;·&nbsp;
+      Peer-Reviewed: At 7am by Three Reviewers and at 10pm by Three Others &nbsp;·&nbsp;
+      Accepted: At the Mutually Acceptable Hour of 9:30am on a Saturday &nbsp;·&nbsp;
+      Dedicated: To the Early Bird Who Always Makes the Coffee. The Night Person Notices. The Night Person Is Grateful. The Night Person Is Sorry It Is Hard to Tell at 8:47am.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>Chronotype Cohabitation Gap (CCG)</strong> — the temporal incompatibility produced when two adults with chronotypes separated by 3.5 hours share a household, a schedule, and a bed. The Early Bird's peak cognitive performance window runs from approximately 7am to 1pm. The Night Person's peak cognitive performance window runs from approximately 9pm to 1am. These windows overlap by 3.8 hours in the late morning and early afternoon — the shared alertness window in which both parties are simultaneously awake, functional, and capable of conversation, decision-making, and the kind of sustained engagement that a relationship requires.</p>
+      <p class="abstract-text">The CCG produces three documented conflict zones: the <strong>6am Inexplicable Cheerfulness Event</strong> (Early Bird at peak alertness; Night Person technically awake but not available; Early Bird interpreting this availability as genuine; Night Person interpreting the Early Bird's cheerfulness as a form of aggression); the <strong>Pre-8am Question Period</strong> (Early Bird asking questions of a person whose prefrontal cortex has not fully initialized; Night Person answering with the reduced-resolution outputs of a brain not yet running at full capacity); and the <strong>10pm Vitality Asymmetry</strong> (Night Person entering their second wind; Early Bird experiencing the biological call toward sleep; Night Person interpreting the Early Bird's winding down as a social rejection; Early Bird interpreting the Night Person's wakefulness as a deliberate inconvenience).</p>
+      <p class="abstract-text">The CCG is not resolved. It is managed. The management strategy that best preserves both parties' functioning — and produces the most reliable indicator of relationship quality in the study — is the <strong>coffee</strong>. The Early Bird, awake since 6:04am and at their cognitive peak when the coffee is made, makes the coffee correctly every morning at 6:11am. The Night Person, who is not a morning person and could not make the coffee at 6:11am even if they tried, wakes at 8:47am to find it warm, correctly proportioned, and waiting. <strong>The coffee is always made. The research team considers this the study's most significant single finding.</strong></p>
+      <div class="keywords">
+        <strong>Keywords:</strong> Chronotype Cohabitation Gap · 3.5-Hour Gap · 3.8 Hours Shared Alertness · The Early Bird · The Night Person · 6am Inexplicable Cheerfulness Event · Questions Before 8am · Pre-Frontal Cortex Not Initialized · 10pm Vitality Asymmetry · Coffee: Always Made · 6:11am · The Night Person Is Grateful
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">§ 1</span> Introduction: Two Clocks, One Household</h2>
+
+      <p class="dropcap">The Early Bird wakes at 6:04am. This is not discipline. This is not virtue. This is a biological clock set, largely by genetics and reinforced by decades of practice, to produce full wakefulness at 6:04am with the specific quality of alertness that most people do not achieve until 9 or 10. By 6:15am the Early Bird has made coffee, assessed the day, completed a small task, and is in the kitchen experiencing the particular satisfaction of a morning that is going exactly as a morning should go. The Early Bird finds this normal. The Early Bird finds mornings, in general, hospitable.</p>
+
+      <p>The Night Person is asleep. The Night Person's biological clock is set to produce full wakefulness at approximately 9am, with genuine cognitive performance emerging around 10. The Night Person's peak is in the evening. The Night Person does their best thinking between 9pm and midnight. The Night Person does not find mornings hospitable. The Night Person finds mornings geologically slow. The Night Person is awake at 6:04am in the same technical sense that a computer is on while it is running its startup sequence: the hardware is present and the processes are initializing but the system is not yet ready for user input.</p>
+
+      <div class="day-chart" data-label="CHRONOTYPE ALIGNMENT CHART — 24-HOUR CYCLE — SUBJECT M-67 AND F-55">
+        <div class="dc-label">Hours (midnight to midnight)</div>
+        <div class="dc-hours">
+          <div class="dc-hour">12</div><div class="dc-hour">1</div><div class="dc-hour">2</div>
+          <div class="dc-hour">3</div><div class="dc-hour">4</div><div class="dc-hour">5</div>
+          <div class="dc-hour marked">6</div><div class="dc-hour">7</div><div class="dc-hour">8</div>
+          <div class="dc-hour marked">9</div><div class="dc-hour">10</div><div class="dc-hour">11</div>
+          <div class="dc-hour marked">12</div><div class="dc-hour">1</div><div class="dc-hour">2</div>
+          <div class="dc-hour">3</div><div class="dc-hour">4</div><div class="dc-hour">5</div>
+          <div class="dc-hour">6</div><div class="dc-hour">7</div><div class="dc-hour">8</div>
+          <div class="dc-hour marked">9</div><div class="dc-hour">10</div><div class="dc-hour">11</div>
+        </div>
+        <div class="dc-bar-row">
+          <span class="dc-bar-label early">Early Bird</span>
+          <div class="dc-bar">
+            <!-- Peak: 6am-1pm = cols 6-13 out of 24 = 29% to 54% -->
+            <div class="dc-fill early-fill" style="left:25%;width:29%;"></div>
+          </div>
+          <span class="dc-note">Peak: 6am–1pm</span>
+        </div>
+        <div class="dc-bar-row">
+          <span class="dc-bar-label late">Night Person</span>
+          <div class="dc-bar">
+            <!-- Peak: 9pm-1am = cols 21-1 = 87.5% to 4% (wrapping) -->
+            <div class="dc-fill late-fill" style="left:37.5%;width:16.5%;"></div>
+            <div class="dc-fill late-fill" style="left:87.5%;width:12.5%;"></div>
+            <div class="dc-fill late-fill" style="left:0;width:4%;"></div>
+          </div>
+          <span class="dc-note">Peak: 9pm–1am</span>
+        </div>
+        <div class="dc-bar-row">
+          <span class="dc-bar-label overlap">Overlap</span>
+          <div class="dc-bar">
+            <!-- Shared alertness: 9am-12:30pm = 37.5% to 52% -->
+            <div class="dc-fill overlap-fill" style="left:37.5%;width:16%;"></div>
+          </div>
+          <span class="dc-note">9am–12:45pm</span>
+        </div>
+        <div class="dc-legend">
+          <div class="dc-leg-item"><div class="dc-leg-dot" style="background:#e09040;"></div>Early Bird peak alertness</div>
+          <div class="dc-leg-item"><div class="dc-leg-dot" style="background:#4040c0;"></div>Night Person peak alertness</div>
+          <div class="dc-leg-item"><div class="dc-leg-dot" style="background:#40a040;"></div>Shared alertness window (3.8 hrs)</div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num dawn-num">6:04am</span>
+          <span class="stat-label">Early Bird mean wake time. Full alertness. Immediately.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num dusk-num">8:47am</span>
+          <span class="stat-label">Night Person mean wake time. Not full alertness. Not immediately.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num overlap-num">3.8hrs</span>
+          <span class="stat-label">Daily shared alertness window. All relationship business must fit here.</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num coffee-num">6:11am</span>
+          <span class="stat-label">Time coffee is made. By the Early Bird. Every morning. Without being asked.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 2: THE MORNING -->
+    <div class="section">
+      <h2><span class="sec-num">§ 2</span> The Morning: Documented Hour by Hour</h2>
+
+      <p>The research team presents the complete documentation of a representative weekday morning — a Thursday — from first waking through full bilateral alertness. The documentation is drawn from the Early Bird's concurrent notes and the Night Person's retrospective account, which differs from the Early Bird's in several specific early-morning details because the Night Person was not fully awake during the early-morning details.</p>
+
+      <div class="morning-log" data-label="THURSDAY MORNING — CHRONOTYPE COHABITATION LOG">
+        <div class="ml-row">
+          <span class="ml-time">6:04am</span>
+          <span class="ml-event ml-cheer">Early Bird wakes. No alarm. Eyes open. Room assessed. Day begun. The Early Bird reports feeling, as they do every morning at this hour, "ready." The Night Person is asleep. The Night Person is not ready.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">6:07am</span>
+          <span class="ml-event">Early Bird rises without disturbing Night Person. This is a practiced skill. The Early Bird has been doing this for years with the specific care of someone who knows that waking the Night Person at 6:07am produces a version of the Night Person that is not the Night Person at their best.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">6:11am</span>
+          <span class="ml-event ml-coffee">Coffee is made. The Early Bird has the ratio memorized. The grind is consistent. The water temperature is correct. The coffee takes 4 minutes and 20 seconds. The Early Bird drinks the first cup at 6:15am. The second cup will be waiting for the Night Person. The Early Bird has done this 312 times this year. The Night Person has never asked them to.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">6:15am</span>
+          <span class="ml-event">Early Bird completes the morning. Coffee. Email. Brief task. The garden. Whatever the morning holds. The Early Bird is at their cognitive peak. The morning is being fully used. The Night Person continues to be asleep.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:03am</span>
+          <span class="ml-event ml-late">Night Person stirs. Not awake. Processing. The Night Person will later report that they were "basically awake" at 8:03am. The Early Bird's contemporaneous note reads: "still asleep."</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:31am</span>
+          <span class="ml-event ml-late">Night Person achieves the first stage of wakefulness — eyes open, presence in room registered, brief orientation to time and day. Asks: "what time is it?" Early Bird, who has been up for 2 hours and 27 minutes and has completed several things, says: "8:31." Night Person says: "okay." Night Person does not move for 4 minutes.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:35am</span>
+          <span class="ml-event ml-cheer">Early Bird, at the door: "Morning! Did you sleep well? I was thinking we could—"</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:35am</span>
+          <span class="ml-event ml-late">Night Person: "Mm." <span class="ml-note">// The Night Person has produced a sound. The sound indicates presence. It does not indicate readiness for conversation. The Early Bird will interpret it as readiness for conversation.</span></span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:36am</span>
+          <span class="ml-event ml-question">Early Bird asks: "Do you want to go to the farmers market this morning or wait until Saturday? Also, should we call your mother back today? And what do you think about the thing with the — "</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:36am</span>
+          <span class="ml-event ml-note">Night Person's prefrontal cortex has been online for approximately 5 minutes. It is handling: body temperature regulation, temporal orientation, coffee location, basic vocabulary retrieval. It does not have the farmers market, the mother, or the thing online yet.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">8:47am</span>
+          <span class="ml-event ml-coffee">Night Person reaches the kitchen. Coffee is there. It is warm. The Early Bird made it at 6:11am and kept it on the correct setting. Night Person drinks it. The Night Person's first full sentence of the morning is: "This is really good." It is the same sentence, every morning, for 312 mornings.</span>
+        </div>
+        <div class="ml-row">
+          <span class="ml-time">9:15am</span>
+          <span class="ml-event">Night Person is now functional. Sentences are full. Topics are processable. The farmers market question can be answered. The mother can be discussed. The thing can be addressed. The 3.8-hour shared alertness window has begun. The Early Bird has been waiting for it since 6:04am.</span>
+        </div>
+        <div class="ml-row" style="border:none;">
+          <span class="ml-time">9:16am</span>
+          <span class="ml-event ml-cheer">Early Bird asks the farmers market question again. This time the Night Person has an answer. The answer is: Saturday. The Early Bird nods. The Early Bird has been thinking about the farmers market since 6:45am. It waited well.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 3: THE BIOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">§ 3</span> The Biology: Why "Just Get Up Earlier" Is Incorrect Advice</h2>
+
+      <p>Dr. Venkataraman-Holloway's chronobiological analysis establishes the foundational finding of this paper: the Early Bird and Night Person are not operating on different schedules because of discipline or preference. They are operating on different schedules because their circadian clocks — the suprachiasmatic nucleus in the hypothalamus, which regulates the timing of virtually every biological process — are set to different phases.</p>
+
+      <p>Chronotype is approximately 50% heritable. It is influenced by genetics, age, and light exposure. It is not meaningfully influenced by willpower. The Night Person cannot decide to be an Early Bird in the same way they cannot decide to be taller. Small adjustments are possible with sustained schedule pressure and light management. A 3.5-hour chronotype gap cannot be closed by either party simply deciding to try harder.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 — Chronotype Characteristics: Early Bird vs. Night Person</div>
+        <table>
+          <thead>
+            <tr><th>Characteristic</th><th>Early Bird (Subject F-55)</th><th>Night Person (Subject M-67)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Natural wake time (unalert)</td>
+              <td>6:04am. No alarm required. Eyes open. Ready. This is the biological clock completing its cycle and producing wakefulness.</td>
+              <td>8:47am. Alarm required on work days. Eyes open. Not ready. The biological clock has not completed its cycle. Wakefulness is technically present. Full function is not.</td>
+            </tr>
+            <tr>
+              <td>Peak cognitive performance</td>
+              <td>7am–1pm. The Early Bird's best thinking, clearest decisions, and highest processing speed occur in this window. After 2pm, performance begins its natural decline. After 9pm, the Early Bird is experiencing genuine biological tiredness, not preference.</td>
+              <td>9pm–1am. The Night Person's best thinking occurs here. The 11pm idea is real. The 11pm energy is real. The Night Person is not choosing to be awake at 11pm. The Night Person's brain is choosing it for them.</td>
+            </tr>
+            <tr>
+              <td>Morning disposition</td>
+              <td>Genuinely positive. The Early Bird's morning cortisol peak — the hormonal system that produces alertness and positive affect — occurs around 6:30am. The Early Bird is experiencing their daily best. This is not performance.</td>
+              <td>Processing. The Night Person's cortisol peak occurs around 9–10am. Before then, the Night Person is functioning on the downslope of melatonin, before the cortisol peak has cleared. The Night Person is not performing neutrality. They are genuinely not yet fully online.</td>
+            </tr>
+            <tr>
+              <td>Response to early morning conversation</td>
+              <td>Normal. The Early Bird has been awake for hours and is in their conversational peak window. Questions, planning, scheduling — all fully accessible.</td>
+              <td>Reduced capacity. The prefrontal cortex — responsible for decision-making, complex language processing, and sustained attention — takes 60–90 minutes post-waking to reach full function. Before that window, the Night Person can produce sentences. The Night Person cannot produce good decisions or complex planning.</td>
+            </tr>
+            <tr>
+              <td>Can be changed?</td>
+              <td>Marginally. With sustained schedule pressure, an Early Bird can shift 1–2 hours later. The Early Bird cannot become a Night Person.</td>
+              <td>Marginally. With sustained early morning light exposure and schedule pressure, a Night Person can shift 1–2 hours earlier. The Night Person cannot become an Early Bird. "Just go to sleep earlier" produces someone who lies awake for 2 hours before sleeping earlier.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes, for the Early Bird: the Night Person is not being difficult at 8:36am. The Night Person is being honest. The prefrontal cortex is not yet available. The 9:15am Night Person is the version who can engage fully with the farmers market question. That version is 39 minutes away. The Early Bird has waited 2 hours and 27 minutes already. 39 more minutes is not an unreasonable interval.</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 4: THE 3.8 HOURS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 4</span> The Shared Alertness Window: 3.8 Hours and What Must Fit Inside Them</h2>
+
+      <p>Prof. Abara-Whitfield's analysis of the shared alertness window documents both its value and its constraint. 3.8 hours per day is the period in which both parties are simultaneously at or near their cognitive peak. Outside this window, one party or the other is either not yet fully online (pre-9am) or beginning the winding-down process (post-1pm for the Early Bird, post-2am for the Night Person).</p>
+
+      <p>A healthy adult relationship requires time for: sustained conversation, shared decision-making, conflict resolution (when needed), recreational activity, and the small unstructured exchanges that constitute the relational fabric of daily life. The research team has estimated the minimum time requirement for these activities at 3.1 hours per day. The shared alertness window is 3.8 hours. The margin is 42 minutes.</p>
+
+      <div class="case-study" data-label="The 3.8-Hour Window: What Must Fit">
+        <p>The Thursday shared alertness window ran from 9:15am to approximately 1:00pm — 3 hours and 45 minutes. During this window the following occurred: farmers market decision (4 minutes), discussion of the mother (12 minutes), resolution of the thing that had been waiting since Tuesday (18 minutes), breakfast (22 minutes), a walk (47 minutes), and unstructured conversation about a documentary they had both watched the previous evening (31 minutes).</p>
+        <p>Total productive time: 2 hours and 14 minutes. Remaining window time: 1 hour and 31 minutes, spent in comfortable parallel activity — reading, adjacent tasks, the particular ease of being in the same space without the pressure of using the time. This is the relational dividend: the 1:31 that remains after the minimum is met, during which nothing is required and both parties are present and comfortable in the same room.</p>
+        <p class="italic-note">Prof. Abara-Whitfield notes: "The 3.8-hour constraint is not a problem to be solved. It is a design parameter to be respected. Couples who schedule important conversations within the shared alertness window and treat the outside hours as low-demand time report significantly higher relationship satisfaction than those who attempt full-function interactions at 8am or midnight. The 3.8 hours is enough. It requires intention to use. It does not require anxiety about its boundaries."</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 5: THE 6AM CHEERFULNESS EVENT -->
+    <div class="section">
+      <h2><span class="sec-num">§ 5</span> The 6am Inexplicable Cheerfulness Event: A Clinical Analysis</h2>
+
+      <p class="dropcap">The 6am Inexplicable Cheerfulness Event (ICE) is the documented phenomenon in which the Early Bird, at the peak of their daily alertness and fresh from the specific pleasure of a good morning, enters the shared space and produces a quality of cheerfulness that the Night Person, who is technically awake but cognitively two time zones behind, finds difficult to process without mild existential confusion.</p>
+
+      <p>The Early Bird's cheerfulness is genuine. It is the natural output of a person at their circadian peak, having completed several satisfying small things, in possession of good coffee and a pleasant morning. The Early Bird is not performing cheerfulness. The Early Bird is experiencing cheerfulness. The Early Bird cannot easily modulate the cheerfulness because cheerfulness at 6am is the Early Bird's resting state.</p>
+
+      <p>The Night Person's difficulty is also genuine. Experiencing someone else's peak positive affect during your own pre-cortisol-peak processing phase produces a specific cognitive dissonance — the awareness that a person in the immediate environment is in a state that is, physiologically, unavailable to you for at least two more hours. The Night Person is not resentful of the Early Bird's cheerfulness. The Night Person finds it, in the moment, faintly alien.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 — The 6am ICE: Early Bird Experience vs. Night Person Experience</div>
+        <table>
+          <thead>
+            <tr><th>Moment</th><th>Early Bird's Experience</th><th>Night Person's Experience</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"Good morning!" (6:32am)</td>
+              <td>Genuine greeting. The Early Bird has been awake for 28 minutes, has made coffee, has assessed the morning favorably, and is pleased to see the Night Person.</td>
+              <td>Registered. Processed as a greeting. Return greeting produced: "mm." Night Person is not being rude. Night Person has deployed all available morning social resources into "mm." "Mm" is doing a lot of work.</td>
+            </tr>
+            <tr>
+              <td>"It's such a nice day!" (6:33am)</td>
+              <td>Accurate assessment of the weather. Shared with the Night Person as a piece of relevant information and a social gesture.</td>
+              <td>Weather assessed through window. Weather confirmed: appears to be a day. Night Person does not have the processing capacity to evaluate "nice" as a category. Night Person says: "yeah." Night Person means: "I have registered that you have said a thing and I am confirming your presence."</td>
+            </tr>
+            <tr>
+              <td>General morning energy (6:34am onward)</td>
+              <td>The Early Bird is moving, doing things, engaged with the morning. This is normal. The Early Bird has been up for 30 minutes.</td>
+              <td>The Night Person is observing the Early Bird with the specific low-resolution awareness of someone watching a nature documentary while half asleep. The Early Bird appears to be doing several things. The things appear to be being done efficiently. The Night Person cannot explain where this energy comes from. The Night Person will have this energy at 10pm. The Early Bird will be asleep at 10pm. These facts coexist without resolution.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Dr. Blackwell-Tanaka notes: "The ICE is not a conflict. It is a parallel experience of the same morning, observed from different biological vantage points. The Early Bird is not wrong to be cheerful. The Night Person is not wrong to find the cheerfulness hard to meet. Both experiences are documented, simultaneous, and entirely understandable given each party's circadian position. The coffee helps bridge the gap. It usually takes until 8:47am."</div>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 6: THE QUESTIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 6</span> Questions Before 8am: A Complete Inventory</h2>
+
+      <p>Prof. Ravenswood-Clarke's question inventory documents the Early Bird's question-asking behavior in the pre-8am window and the Night Person's response capacity at that hour. The Early Bird's questions are reasonable. They are questions that would be entirely appropriate at 9:30am. At 6:30am they are directed at a person whose cognitive resources for answering them are not yet available.</p>
+
+      <div class="question-box">
+        <div class="q-item">
+          <span class="q-text">"Do you want to go to the farmers market this morning or Saturday?"</span>
+          <span class="q-time">8:36am</span>
+          <span class="q-response">Night Person has access to: "farmers market" (concept retrieved), "morning" (confirmed: yes, it is morning), "Saturday" (day retrieved, 3 seconds). Scheduling comparison: not yet available. Answer produced: "I don't care." Intended meaning: "I cannot yet evaluate this comparison."</span>
+        </div>
+        <div class="q-item">
+          <span class="q-text">"Should we call your mother back today?"</span>
+          <span class="q-time">8:36am</span>
+          <span class="q-response">Night Person has access to: "mother" (person retrieved), "call" (action retrieved), "today" (temporal concept retrieved). Emotional and relational context for the call: not loaded. Whether today is appropriate: requires calendar access (offline). Answer produced: "Sure." Intended meaning: "I cannot assess this yet but declining the question seems harder than agreeing."</span>
+        </div>
+        <div class="q-item">
+          <span class="q-text">"What do you think about the thing with the—" (unfinished)</span>
+          <span class="q-time">8:36am</span>
+          <span class="q-response">Night Person has no access to: which thing. Multiple things exist. Thing-identification requires context loading. Context loading requires available working memory. Working memory: in boot sequence. Night Person says: "What thing?" This is the correct and only available response.</span>
+        </div>
+        <div class="q-item">
+          <span class="q-text">"Did you sleep okay?" (6:32am, before coffee)</span>
+          <span class="q-time">6:32am</span>
+          <span class="q-response">Night Person's sleep quality assessment: not yet processed. Night Person says: "yeah." This may or may not be accurate. The Night Person has not had time to assess. The Night Person has been awake for approximately 4 minutes. The sleep quality review will take until 9am and will be conducted without being reported to anyone.</span>
+        </div>
+        <div class="q-item" style="border:none;">
+          <span class="q-text">"Do you want eggs?" (7:15am)</span>
+          <span class="q-time">7:15am</span>
+          <span class="q-response">This question is answerable at 7:15am. Hunger has been detected. "Eggs" has been retrieved as a concept. Yes/no evaluation: possible. The Night Person says "yes." The Night Person means "yes." This is the earliest reliable binary food decision in the study data.</span>
+        </div>
+      </div>
+
+      <div class="footnote"><sup>†</sup> Prof. Ravenswood-Clarke notes that the question inventory reveals not a conflict but a timing mismatch — the Early Bird has a backlog of morning thoughts that have been accumulating since 6am and become available to share the moment the Night Person is physically present, which is earlier than the Night Person is cognitively available to receive them. The solution is not fewer questions. The solution is the same questions at 9:15am, when the Night Person can answer them with the quality of engagement the Early Bird is hoping for. The Early Bird is not wrong to have the questions. The Early Bird is asking them two hours and 39 minutes before the optimal answer window opens.</div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- SECTION 7: THE COFFEE -->
+    <div class="section">
+      <h2><span class="sec-num">§ 7</span> The Coffee: The Study's Most Significant Finding</h2>
+
+      <p class="dropcap">The Early Bird makes the coffee every morning at 6:11am. This fact was entered into the study data on day one and has appeared in every subsequent morning record without exception. The Night Person has never asked the Early Bird to make the coffee. The Early Bird has never announced that they are making the coffee. The coffee is made. It is there at 8:47am. It is warm. It is correct.</p>
+
+      <p>The Night Person's first full sentence of the morning, delivered across 312 consecutive mornings in the study period, is: "This is really good." The sentence is accurate. The coffee is good. The sentence is also, the research team observes, the first thing the Night Person says to the Early Bird that is said with full cognitive presence — with genuine sensory engagement, formed thought, and the particular warmth of a person who has just received something they needed without having to ask for it.</p>
+
+      <p>The research team identifies the coffee as the most accurate daily measurement of the relationship's health that the study produced. It is made every morning. It is made correctly. It is made by the party who is awake and capable of making it, for the party who is not yet awake and will need it. It is not mentioned. It is not a negotiation. It is not a favor with a balance sheet. It is a cup of coffee, warm, made at 6:11am, waiting at 8:47am, without comment, without keeping score. The research team's instruments can measure many things. They cannot fully measure this. They have documented it instead.</p>
+
+      <div class="case-study" data-label="The Coffee: 312 Morning Record">
+        <p>The research team tracked the following across 312 consecutive mornings in the study period:</p>
+        <p><strong>Time coffee made:</strong> 6:11am (±4 minutes). <strong>Made by:</strong> Early Bird, all 312 mornings. <strong>Night Person asked:</strong> zero occasions. <strong>Early Bird announced:</strong> zero occasions. <strong>Coffee temperature at Night Person's first cup (8:47am):</strong> within acceptable range on 309 of 312 mornings (3 exceptions: two power outages, one morning the Early Bird also slept late). <strong>Night Person's first sentence:</strong> "This is really good" or a close variant, 312 of 312 mornings. <strong>Early Bird's response:</strong> "I know the ratio now." "Mm." A nod. A smile. Some variant of acknowledgment that the sentence is being received. 312 of 312 mornings.</p>
+        <p class="italic-note">The research team notes that the Night Person's first sentence being a compliment to the coffee, consistently, across 312 mornings, is not a coincidence. It is the Night Person's first genuine moment of full engagement each morning — the moment the cortisol peak begins to arrive, the caffeine begins to act, and the Night Person becomes, fully, the person the Early Bird has been waiting to see since 6:04am. The coffee is how they find each other in the morning. The Early Bird makes it at 6:11am. The Night Person receives it at 8:47am. The 2 hours and 36 minutes between are the gap. The coffee is the bridge across it.</p>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">§ 8</span> Conclusions: 3.8 Hours, Well Used</h2>
+
+      <p class="dropcap">The Chronotype Cohabitation Gap is not a problem to be solved. The Early Bird will wake at 6:04am. The Night Person will function at 9:15am. The shared alertness window will be 3.8 hours. These are biological facts. They are not negotiable by willpower, schedule pressure, or the Early Bird's gentle repeated suggestion that the Night Person would feel better if they got up a bit earlier. The Night Person would not feel better. The Night Person would feel earlier. These are different things.</p>
+
+      <p>What is available is attention — the decision to treat the 3.8-hour shared window as the primary relational resource it is, and to save the farmers market question for it. The window is enough. 3.8 hours, used with full presence, is more relational material than many couples access in a full day. It requires only the discipline of not asking complex questions at 8:36am and the willingness to wait 39 minutes for the version of the Night Person who can answer them.</p>
+
+      <p>The coffee is the template. It is not negotiated. It is not announced. It is not accounted for. It is made at 6:11am by the person who is awake and capable, for the person who will be awake and capable later, as a daily act of forward-thinking care that asks nothing in return except the first genuine sentence of the morning, which arrives at 8:47am, every morning, warm and specific and correctly targeted at the thing that is actually good. The research team recommends this as the operating model for the full 3.8 hours and beyond.</p>
+
+      <div class="pull-quote">
+        <blockquote>"She woke at 6:04am.<br>She made the coffee at 6:11am.<br>He woke at 8:47am.<br>The coffee was there.<br>He said: 'This is really good.'<br>She said: 'I know the ratio.'<br>This has happened 312 times."</blockquote>
+        <cite>— Dr. Adrian Maximus Sterling, field notes, 8:47am<br><em>Drinking the coffee in the kitchen</em><br><em>She was in the garden. She had been in the garden for an hour.</em><br><em>The morning was, as she had said at 6:33am, quite nice.</em><br><em>He was now in a position to confirm this.</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">§</span> References</h2>
+      <ol>
+        <li>Venkataraman-Holloway, P. (2026). Circadian phase variation in cohabitating couples: The 3.5-hour gap and its behavioral consequences. <em>Journal of Chronobiology and Human Behavior, 19</em>(1), 1–54. (The gap is genetic. The gap is real. The gap is not closeable by either party deciding to be more of a morning person. "You just need to get up earlier" is, Dr. Venkataraman-Holloway notes, "the most frequently offered and least effective chronotype intervention in the documented literature.")</li>
+        <li>Abara-Whitfield, D. (2026). Temporal resource scarcity in chronotype-mismatched households: The 3.8-hour shared alertness constraint. <em>Harvard Journal of Chronobiological Cohabitation Studies, 6</em>(1), 1–66. ("3.8 hours is enough. It requires attention to use. It rewards attention with margin. The 42 minutes of margin, used well, are the relational reserve that sees the household through the other 20.2 hours." — Author note.)</li>
+        <li>Ravenswood-Clarke, I. (2026). Temporal mismatch in question-asking: When a reasonable question becomes an unreasonable question because of when it is asked. <em>Journal of Applied Linguistics, 46</em>(2), 1–44. ("The questions are not the problem. The questions at 8:36am are the problem. The questions at 9:15am are fully answerable. The 39 minutes between these times is the cost of not waiting. The researchers recommend waiting." — Author note.)</li>
+        <li>Asante-Morrison, K. (2026). Chronotype cohabitation across 31 cultures: Universal patterns and cross-cultural variation in Early Bird / Night Person dynamics. <em>Journal of Cross-Cultural Chronobiology, 12</em>(1), 1–88. (Every culture has this. Every culture's Night People produce a functional morning sound before coffee. Every culture's Early Birds interpret the functional morning sound as an invitation to continue talking. Every culture's Night People are waiting for the coffee.)</li>
+        <li>The Coffee (312 mornings, 6:11am, made by Early Bird). Always warm at 8:47am. Always correctly proportioned. Never requested. Never announced. Always there. The research team has attempted to quantify its relational value and concluded that the attempt produces a smaller number than the coffee deserves. The coffee is documented. It is not fully capturable. It is made again tomorrow at 6:11am.</li>
+        <li>Subject M-67 (8:47am, 312 mornings). "This is really good." Accurate. Consistent. The first full sentence of the morning. The first full engagement of the day. Made possible by the person who was awake two hours and forty-six minutes earlier, who knew the ratio, who made it at 6:11am, who was in the garden by the time it was ready. The Night Person finds the garden in the morning. The Early Bird is already there.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light); font-size:16px; margin-bottom:16px; color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge the Early Bird. You have been awake since 6:04am for the entirety of this study. You have made the coffee 312 times without being asked and without keeping a record of it. You have asked questions at 8:36am that you could have held until 9:15am, and you have occasionally received answers that were less than the questions deserved, and you have waited anyway for the better answers that came 39 minutes later. You know the ratio. You found the garden. The morning, as you say most mornings, is quite nice. The research team has been trying to understand why you think so at 6:04am. The research team has concluded that you are simply built that way and that this is, on balance, a feature.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge the Night Person. You say "this is really good" every morning at 8:47am. You mean it every time. You have never once been fully awake when the Early Bird said "it's a beautiful morning" at 6:33am and you have never once said so directly, which is a form of tact that the Early Bird may not fully realize requires effort at that hour. You have your best ideas between 9pm and midnight. Some of them are very good. The Early Bird is asleep for most of them. You have written them down. The morning versions are also good, between 9:15 and 1pm, when the window is open and both parties are present. The window is enough. It always has been.</p>
+      <p style="margin-top:14px;">Finally: to the coffee itself. You are made at 6:11am by someone who learned the ratio through attention. You are received at 8:47am by someone who needed you. You are the bridge between 6:04am and 9:15am — between the Early Bird's morning and the Night Person's morning — and the bridge holds every day without drama or announcement. You are a cup of coffee. You are also, in the context of this study, the clearest daily evidence that two people with different biological clocks have found a way to be in the same household, attending to each other's needs across the gap between their rhythms, making something warm and wait for someone who isn't there yet. The research team thanks you. You are always ready at 8:47am.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">✦ &nbsp; ✦ &nbsp; ✦</div>
+    <p style="text-align:center; font-style:italic; font-size:15px; color:var(--ink-faint); margin-top:12px; margin-bottom:6px;">— End of Paper —</p>
+    <p style="text-align:center; font-style:italic; font-size:14px; color:var(--ink-faint); margin-bottom:44px;">Made at 6:11am. Ready at 8:47am. Always. "This is really good." Always.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Chronobiological Cohabitation Studies · Vol. 6, Issue 1</div>
+    <div class="footer-note">© The Authors · Open Heart License · 3.8 Hours. Well Used. Coffee Made. Always.</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Research Series | A.M. Sterling</title>
+<meta name="description" content="29 peer-reviewed papers on human behavior, couples dynamics, and universal truths nobody asked to have formally documented. Lead researcher: Dr. Adrian Maximus Sterling. All findings verified. Open access.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #0a0800;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: #08080a;
+    min-height: 100vh;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: linear-gradient(135deg, #0a0800 0%, #1a1200 50%, #0a0800 100%);
+    border-bottom: 4px solid #8a6a00;
+    padding: 36px 60px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 40%, rgba(192,160,0,.1) 0%, transparent 65%);
+  }
+  .veritas {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900;
+    color: #fff; letter-spacing: 0.14em;
+    text-shadow: 0 0 40px rgba(192,160,0,.5);
+    position: relative; z-index: 1;
+  }
+  .veritas-sub {
+    font-size: 10px; letter-spacing: 0.45em; text-transform: uppercase;
+    color: #c0a040; margin-top: 4px; opacity: 0.85;
+    position: relative; z-index: 1;
+  }
+  .series-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px; font-weight: 400; font-style: italic;
+    color: #fff; margin-top: 18px; line-height: 1.3;
+    position: relative; z-index: 1;
+  }
+  .series-meta {
+    font-size: 12px; color: #c0a040; margin-top: 8px;
+    letter-spacing: 0.1em; opacity: 0.8;
+    position: relative; z-index: 1;
+  }
+  .back-link {
+    position: absolute; top: 20px; left: 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: #c0a040; text-decoration: none;
+    opacity: 0.75; transition: opacity 0.2s;
+    z-index: 2;
+  }
+  .back-link:hover { opacity: 1; }
+  .back-link::before { content: '← '; }
+
+  /* ── INTRO BAND ── */
+  .intro {
+    background: #faf8f0;
+    border-bottom: 2px solid #c0a040;
+    padding: 40px 60px;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 18px; line-height: 1.85;
+    color: #3a2800; max-width: 700px;
+    margin: 0 auto 12px;
+  }
+  .intro p:last-of-type { margin-bottom: 0; }
+  .intro em { font-style: italic; color: #6a4800; }
+
+  .stat-row {
+    display: flex; justify-content: center;
+    gap: 44px; margin-top: 30px; padding-top: 22px;
+    border-top: 1px solid #d4b860; flex-wrap: wrap;
+  }
+  .stat-item { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px; font-weight: 700; color: #7a5200;
+    display: block; line-height: 1;
+  }
+  .stat-lbl {
+    font-size: 11px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: #8a6830; margin-top: 4px;
+  }
+
+  /* ── PAPER GRID ── */
+  .grid-wrap {
+    background: #f0ece0;
+    padding: 44px 60px;
+  }
+
+  .section-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-bottom: 2px solid #c0a040;
+    padding-bottom: 8px; margin-bottom: 20px; margin-top: 36px;
+  }
+  .section-head:first-child { margin-top: 0; }
+  .section-head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; color: #3a2000;
+  }
+  .section-head span {
+    font-size: 13px; color: #8a6830; font-style: italic;
+  }
+
+  .paper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .paper-card {
+    background: #faf8f2;
+    border: 1px solid #d4c090;
+    border-top: 3px solid var(--c, #7a5200);
+    padding: 18px 20px;
+    display: flex; flex-direction: column;
+    text-decoration: none; color: inherit;
+    transition: box-shadow 0.18s, transform 0.14s;
+  }
+  .paper-card:hover {
+    box-shadow: 0 4px 18px rgba(90,60,0,.14);
+    transform: translateY(-2px);
+  }
+  .card-num {
+    font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--c, #7a5200); margin-bottom: 6px; opacity: 0.65;
+  }
+  .card-journal {
+    font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--c, #7a5200); margin-bottom: 8px; opacity: 0.9; line-height: 1.4;
+  }
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700; color: #1a0a00;
+    line-height: 1.35; margin-bottom: 8px; flex: 1;
+  }
+  .card-desc {
+    font-size: 12px; color: #5a4020; line-height: 1.55;
+    font-style: italic; margin-bottom: 12px; opacity: 0.85;
+  }
+  .card-tag {
+    font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+    background: var(--c, #7a5200); color: #fff;
+    padding: 2px 8px; display: inline-block; margin-top: auto; align-self: flex-start;
+  }
+
+  /* category accent colours */
+  .cat-romance  { --c: #1a3a5c; }
+  .cat-male     { --c: #5a3a10; }
+  .cat-female   { --c: #7a1a4a; }
+  .cat-couples  { --c: #3a0808; }
+  .cat-society  { --c: #1a4a1a; }
+  .cat-digital  { --c: #2a1a6a; }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: #0a0800; color: #c0a040;
+    padding: 28px 60px; text-align: center;
+    border-top: 3px solid #8a6a00;
+  }
+  .site-footer p { font-size: 13px; line-height: 1.85; opacity: 0.75; }
+  .site-footer a { color: #c0a040; text-decoration: none; border-bottom: 1px solid rgba(192,160,64,.3); }
+  .site-footer a:hover { opacity: 1; border-color: #c0a040; }
+  .footer-orn { font-size: 16px; letter-spacing: 0.6em; color: #8a6a00; margin-bottom: 10px; }
+
+  @media (max-width: 680px) {
+    .masthead, .intro, .grid-wrap, .site-footer { padding-left: 20px; padding-right: 20px; }
+    .veritas { font-size: 30px; }
+    .series-name { font-size: 19px; }
+    .back-link { left: 20px; top: 14px; font-size: 11px; }
+    .stat-row { gap: 22px; }
+    .paper-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <a class="back-link" href="https://amsterlingbooks.com">amsterlingbooks.com</a>
+  <div class="veritas">VERITAS</div>
+  <div class="veritas-sub">Harvard University &nbsp;·&nbsp; Cambridge, Massachusetts &nbsp;·&nbsp; Est. 1636</div>
+  <div class="series-name">The Research Series</div>
+  <div class="series-meta">Lead Researcher: Dr. Adrian Maximus Sterling, Ph.D., MBA &nbsp;·&nbsp; A.M. Sterling &nbsp;·&nbsp; All Findings Verified &nbsp;·&nbsp; Open Access</div>
+</header>
+
+<div class="intro">
+  <p>These papers began with a simple observation: human beings do the same things, everywhere, across every culture, every generation, every time zone — and nobody had formally documented most of them. The refrigerator stare. The thermostat war. The Greek place on Maple Street that was always the answer.</p>
+  <p>What follows is the peer-reviewed record. All findings have been replicated. All subjects were, eventually, fine. The coffee was always made. <em>The lamb was incredible.</em></p>
+  <div class="stat-row">
+    <div class="stat-item"><span class="stat-num">29</span><span class="stat-lbl">Papers Published</span></div>
+    <div class="stat-item"><span class="stat-num">100%</span><span class="stat-lbl">Open Access</span></div>
+    <div class="stat-item"><span class="stat-num">∞</span><span class="stat-lbl">Times We've All Done This</span></div>
+  </div>
+</div>
+
+<div class="grid-wrap">
+
+  <!-- SECTION 1: RELATIONSHIPS & ROMANCE -->
+  <div class="section-head">
+    <h2>Relationships &amp; Romance</h2>
+    <span>The physics, thermodynamics, and game theory of love</span>
+  </div>
+  <div class="paper-grid">
+
+    <a href="Physics_of_Intimate_Relationships.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 01</div>
+      <div class="card-journal">Journal of Theoretical Romance</div>
+      <div class="card-title">The Physics of Intimate Relationships</div>
+      <div class="card-desc">Love as force, friction, and orbital mechanics. The equations were always there.</div>
+      <span class="card-tag">Theoretical</span>
+    </a>
+
+    <a href="Relativistic_Reignition.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 02</div>
+      <div class="card-journal">Journal of Applied Romantic Physics</div>
+      <div class="card-title">The Relativistic Re-Ignition of System A &amp; B</div>
+      <div class="card-desc">On orbital decay, dormancy, and what happens when two systems re-enter each other's field after years apart.</div>
+      <span class="card-tag">Applied</span>
+    </a>
+
+    <a href="age_gap_dynamics.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 03</div>
+      <div class="card-journal">Journal of Chronological Attraction Physics</div>
+      <div class="card-title">The Gravitational Dynamics of Age-Differential Coupling</div>
+      <div class="card-desc">Why younger women keep ending up at dinner with men who remember exactly where they were during the moon landing.</div>
+      <span class="card-tag">Gravitational</span>
+    </a>
+
+    <a href="wall_builders_paradox.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 04</div>
+      <div class="card-journal">Journal of Interpersonal Thermodynamics</div>
+      <div class="card-title">The Wall-Builder's Paradox</div>
+      <div class="card-desc">You are somehow both the prisoner and the warden.</div>
+      <span class="card-tag">Thermodynamic</span>
+    </a>
+
+    <a href="the_atlas_collapse.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 05</div>
+      <div class="card-journal">Journal of Neuro-Gravitational Sciences</div>
+      <div class="card-title">The Atlas Collapse</div>
+      <div class="card-desc">On carrying everything for everyone for fifteen years and forgetting you are allowed to put it down.</div>
+      <span class="card-tag">Clinical</span>
+    </a>
+
+    <a href="narcissistic_partner_corporation.html" class="paper-card cat-romance">
+      <div class="card-num">Paper 06</div>
+      <div class="card-journal">Harvard Journal of Relational Economics</div>
+      <div class="card-title">The Narcissistic Partner as Poorly Managed Corporation</div>
+      <div class="card-desc">Fraudulent IPO. DARVO as crisis PR. Porter's Five Forces. The dishes.</div>
+      <span class="card-tag">Economic</span>
+    </a>
+
+  </div>
+
+  <!-- SECTION 2: MALE BEHAVIOR -->
+  <div class="section-head">
+    <h2>Male Behavior</h2>
+    <span>Documented with sympathy and statistical rigor</span>
+  </div>
+  <div class="paper-grid">
+
+    <a href="chrome_hypothesis.html" class="paper-card cat-male">
+      <div class="card-num">Paper 07</div>
+      <div class="card-journal">Harvard Journal of Vehicular Mate-Attraction</div>
+      <div class="card-title">The Chrome Hypothesis</div>
+      <div class="card-desc">Why a 67-year-old on a custom chromed motorcycle outperforms every other male strategy ever documented. Six disciplines confirm it.</div>
+      <span class="card-tag">Confirmed</span>
+    </a>
+
+    <a href="directional_refusal_syndrome.html" class="paper-card cat-male">
+      <div class="card-num">Paper 09</div>
+      <div class="card-journal">Harvard Journal of Applied Male Navigation</div>
+      <div class="card-title">The Directional Refusal Syndrome</div>
+      <div class="card-desc">Why men won't ask for directions but will follow a GPS without argument. $43,313 lifetime cost. The passenger knew from mile 3.</div>
+      <span class="card-tag">Navigation</span>
+    </a>
+
+    <a href="empty_refrigerator_stare.html" class="paper-card cat-male">
+      <div class="card-num">Paper 10</div>
+      <div class="card-journal">Harvard Journal of Domestic Behavioral Thermodynamics</div>
+      <div class="card-title">The Empty Refrigerator Stare</div>
+      <div class="card-desc">Thermodynamics, quantum mechanics, Sartre, and the Zero New Information Theorem confirm: it was always going to be the pasta.</div>
+      <span class="card-tag">Zero New Information</span>
+    </a>
+
+    <a href="snooze_button_paradox.html" class="paper-card cat-male">
+      <div class="card-num">Paper 11</div>
+      <div class="card-journal">Harvard Journal of Temporal Self-Governance</div>
+      <div class="card-title">The Snooze Button Paradox</div>
+      <div class="card-desc">The man who set the alarm and the man who hits snooze are provably different people. Person A wins 8.2% of encounters.</div>
+      <span class="card-tag">Temporal</span>
+    </a>
+
+    <a href="male_illness_amplification.html" class="paper-card cat-male">
+      <div class="card-num">Paper 12</div>
+      <div class="card-journal">Harvard Journal of Comparative Suffering Studies</div>
+      <div class="card-title">The Male Illness Amplification Phenomenon</div>
+      <div class="card-desc">99.1°F. The specific blanket. She had the same cold two weeks earlier. She did not mention it.</div>
+      <span class="card-tag">Audacity: 9.4</span>
+    </a>
+
+  </div>
+
+  <!-- SECTION 3: FEMALE BEHAVIOR & TRIUMPH -->
+  <div class="section-head">
+    <h2>Female Behavior &amp; Triumph</h2>
+    <span>She won. The data confirms it.</span>
+  </div>
+  <div class="paper-grid">
+
+    <a href="apex_predator_hypothesis.html" class="paper-card cat-female">
+      <div class="card-num">Paper 08</div>
+      <div class="card-journal">Harvard Interdisciplinary Journal</div>
+      <div class="card-title">The Apex Predator Hypothesis</div>
+      <div class="card-desc">Seventeen disciplines confirm: she already knows. The Puma concolor comparison holds.</div>
+      <span class="card-tag">Confirmed ×17</span>
+    </a>
+
+    <a href="pants_paradox.html" class="paper-card cat-female">
+      <div class="card-num">Paper 13</div>
+      <div class="card-journal">Harvard Journal of Pre-Event Mirror Protocol Studies</div>
+      <div class="card-title">Does This Make My Butt Look Bigger?</div>
+      <div class="card-desc">The question was never about pants. No Nash equilibrium exists. He was supposed to look at her, not the pants.</div>
+      <span class="card-tag">Game Theory</span>
+    </a>
+
+    <a href="if_men_can_do_it.html" class="paper-card cat-female">
+      <div class="card-num">Paper 14</div>
+      <div class="card-journal">Harvard Journal of Applied Female Audacity</div>
+      <div class="card-title">The "If Men Can Do It" Phenomenon</div>
+      <div class="card-desc">The List of things women couldn't do. Every stated reason failed. The audacity was correct all along. The List updates.</div>
+      <span class="card-tag">The List Updates</span>
+    </a>
+
+    <a href="headache_syndrome.html" class="paper-card cat-female">
+      <div class="card-num">Paper 15</div>
+      <div class="card-journal">Harvard Journal of Applied Domestic Linguistics</div>
+      <div class="card-title">The "I Have a Headache Tonight" Syndrome</div>
+      <div class="card-desc">Five words. Near-zero entropy at 10:47pm. An invoice, not a refusal. Make coffee Thursday morning.</div>
+      <span class="card-tag">Linguistics</span>
+    </a>
+
+    <a href="she_knows_more.html" class="paper-card cat-female">
+      <div class="card-num">Paper 19</div>
+      <div class="card-journal">Harvard Journal of Consumer Behavior</div>
+      <div class="card-title">She Knows More Than He Does</div>
+      <div class="card-desc">She trained more, spends more, rides younger. He explained motorcycles to the man she brought for company. She won anyway.</div>
+      <span class="card-tag">She Won</span>
+    </a>
+
+  </div>
+
+  <!-- SECTION 4: COUPLES DYNAMICS -->
+  <div class="section-head">
+    <h2>Couples Dynamics</h2>
+    <span>Both parties are correct. The situation is the problem. The lamb is always incredible.</span>
+  </div>
+  <div class="paper-grid">
+
+    <a href="i_dont_mind.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 20</div>
+      <div class="card-journal">Harvard Journal of Applied Domestic Game Theory</div>
+      <div class="card-title">"I Don't Mind"</div>
+      <div class="card-desc">7.3 vetoes. 38.4 minutes. The Greek place was the answer at 6:47pm. It was always the Greek place.</div>
+      <span class="card-tag">Greek Place: Always</span>
+    </a>
+
+    <a href="thermostat_war.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 21</div>
+      <div class="card-journal">Harvard Journal of Domestic Thermodynamics</div>
+      <div class="card-title">The Thermostat War</div>
+      <div class="card-desc">47,312 annual adjustments. She is cold. He is fine. Both physiologically correct. Nobody wins.</div>
+      <span class="card-tag">Treaty of Subtitles</span>
+    </a>
+
+    <a href="blanket_situation.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 22</div>
+      <div class="card-journal">Harvard Journal of Applied Textile Conflict Studies</div>
+      <div class="card-title">The Blanket Situation</div>
+      <div class="card-desc">18.3 inches of net displacement per night. The Taker has zero recollection. The Left has an archive since February.</div>
+      <span class="card-tag">Zero Recall</span>
+    </a>
+
+    <a href="driver_and_navigator.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 23</div>
+      <div class="card-journal">Harvard Journal of Vehicular Co-Governance</div>
+      <div class="card-title">The Driver and the Navigator</div>
+      <div class="card-desc">Override rate: 47%. Override correctness: 31%. The Specific Silence. 100% arrival rate.</div>
+      <span class="card-tag">100% Arrival</span>
+    </a>
+
+    <a href="im_fine.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 24</div>
+      <div class="card-journal">Harvard Journal of Applied Relational Cryptography</div>
+      <div class="card-title">"I'm Fine"</div>
+      <div class="card-desc">Eight variants. Maximum entropy. The door is unlocked. Ask again — correctly — and it opens 94.7% of the time.</div>
+      <span class="card-tag">Ask Again</span>
+    </a>
+
+    <a href="volume_negotiation.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 25</div>
+      <div class="card-journal">Harvard Journal of Domestic Acoustic Conflict</div>
+      <div class="card-title">The Volume Negotiation</div>
+      <div class="card-desc">Her: 19. Him: 47. The Subtitle Accords. 71.2% now watch with subtitles even alone. The remote is on the table.</div>
+      <span class="card-tag">Subtitle Accords</span>
+    </a>
+
+    <a href="sleep_schedule.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 26</div>
+      <div class="card-journal">Harvard Journal of Chronobiological Cohabitation</div>
+      <div class="card-title">The Sleep Schedule Incompatibility</div>
+      <div class="card-desc">3.5-hour chronotype gap. 3.8 hours shared alertness. The coffee is always made at 6:11am. "This is really good." Always.</div>
+      <span class="card-tag">Coffee: Always Made</span>
+    </a>
+
+    <a href="the_three_dots.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 27</div>
+      <div class="card-journal">Harvard Journal of Digital Relational Communication</div>
+      <div class="card-title">The Three Dots</div>
+      <div class="card-desc">Appeared 3:16pm. Disappeared. Reappeared. Disappeared. Message arrived 6:26pm. The Greek place was typed and deleted at 3:16pm.</div>
+      <span class="card-tag">Zero New Information</span>
+    </a>
+
+    <a href="vacation_incompatibility.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 28</div>
+      <div class="card-journal">Harvard Journal of Leisure Preference Divergence</div>
+      <div class="card-title">The Vacation Incompatibility</div>
+      <div class="card-desc">The Decompressor wants the pool. The Explorer has 14 items. Day 3 is difficult. Day 5 is always the best day.</div>
+      <span class="card-tag">Day 5: Always Best</span>
+    </a>
+
+    <a href="the_parent_trap.html" class="paper-card cat-couples">
+      <div class="card-num">Paper 29</div>
+      <div class="card-journal">Harvard Journal of Applied Developmental Game Theory</div>
+      <div class="card-title">The Parent Trap</div>
+      <div class="card-desc">Two parenting philosophies. One 4-year-old. She has already run every optimization. She got the crackers. The good crackers.</div>
+      <span class="card-tag">Child Has Full Data</span>
+    </a>
+
+  </div>
+
+  <!-- SECTION 5: SOCIETY, HIGHWAYS & THE NIGHT -->
+  <div class="section-head">
+    <h2>Society, Highways &amp; the Night</h2>
+    <span>The behaviors nobody admits to but everyone recognizes</span>
+  </div>
+  <div class="paper-grid">
+
+    <a href="left_lane_syndrome.html" class="paper-card cat-society">
+      <div class="card-num">Paper 16</div>
+      <div class="card-journal">Harvard Journal of Vehicular Flow Dynamics</div>
+      <div class="card-title">The Left Lane Syndrome</div>
+      <div class="card-desc">The Tandem Formation. Audacity Score: 11.4. 80,000 lbs vs 3,000 lbs. Move right. It is the law.</div>
+      <span class="card-tag">Audacity: 11.4</span>
+    </a>
+
+    <a href="almost_there.html" class="paper-card cat-society">
+      <div class="card-num">Paper 17</div>
+      <div class="card-journal">Harvard Journal of Applied Temporal Optimism</div>
+      <div class="card-title">"I'm Almost There"</div>
+      <div class="card-desc">Zero geographic data transmitted. Maximum relational warmth. The keys are in the last coat. Both things are true.</div>
+      <span class="card-tag">Dominant Strategy</span>
+    </a>
+
+    <a href="two_am_profile_review.html" class="paper-card cat-digital">
+      <div class="card-num">Paper 18</div>
+      <div class="card-journal">Harvard Journal of Nocturnal Digital Behavior</div>
+      <div class="card-title">The 2am Profile Review</div>
+      <div class="card-desc">Zero new information. 52 minutes. "What am I doing." One more click. Put the phone down.</div>
+      <span class="card-tag">Put the Phone Down</span>
+    </a>
+
+  </div>
+
+</div><!-- /grid-wrap -->
+
+<footer class="site-footer">
+  <div class="footer-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+  <p>All papers by <strong>Dr. Adrian Maximus Sterling, Ph.D., MBA</strong> and the Research Team &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; No Conflicts of Interest</p>
+  <p style="margin-top:6px;">Part of the <a href="https://amsterlingbooks.com">A.M. Sterling</a> universe &nbsp;·&nbsp; <a href="https://amsterlingbooks.com">amsterlingbooks.com</a></p>
+  <p style="margin-top:10px; font-size:12px; opacity:0.5;">The researchers confirm: the Greek place on Maple was always the answer. The lamb was incredible. The coffee was always made. Both parties are, ultimately, fine.</p>
+</footer>
+
+</body>
+</html>
