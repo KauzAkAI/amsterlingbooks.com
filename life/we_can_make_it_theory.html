@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The "We Can Make It" Theory | Harvard Journal of Applied Fuel Optimism</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08080a;
+    --ink-light: #141416;
+    --ink-faint: #242428;
+    --paper: #f8f6f2;
+    --paper-warm: #f0ece2;
+    --paper-aged: #e4dac8;
+    --rule: #1a1400;
+    --rule-light: #6a5a20;
+    --accent: #1a1000;
+    --accent-mid: #4a3800;
+    --accent-soft: #6a5010;
+    --him: #2a1a00;
+    --her: #001a2a;
+    --gauge: #6a0000;
+    --empty: #8b0000;
+    --walk: #3a2800;
+    --road: #2a2a20;
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+
+  body {
+    background: #060804;
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  body::before {
+    content:''; position:fixed; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1000; opacity:.5;
+  }
+
+  .journal {
+    max-width:860px; margin:40px auto;
+    background:var(--paper);
+    box-shadow:0 0 0 1px #1a1000, 0 20px 80px rgba(0,0,0,.85);
+    animation:pageLoad .8s ease-out;
+  }
+  @keyframes pageLoad { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  .masthead { position:relative; overflow:hidden; border-bottom:4px solid var(--accent-soft); }
+  .masthead-split { display:grid; grid-template-columns:1fr 1fr; }
+  .ms-him {
+    background: linear-gradient(135deg, #0a0800, #1a1200);
+    padding:20px 30px 20px 60px; position:relative; z-index:1;
+  }
+  .ms-her {
+    background: linear-gradient(135deg, #000a14, #001828);
+    padding:20px 60px 20px 30px; text-align:right; position:relative; z-index:1;
+  }
+  .harvard-crest { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:#fff; letter-spacing:.08em; line-height:1; }
+  .harvard-crest span { display:block; font-size:9px; letter-spacing:.4em; text-transform:uppercase; color:rgba(255,255,255,.4); font-weight:400; margin-top:5px; }
+  .masthead-journal { font-family:'Playfair Display',serif; color:#fff; }
+  .masthead-journal strong { display:block; font-size:13px; letter-spacing:.06em; margin-bottom:3px; }
+  .masthead-journal small { font-size:11px; color:rgba(255,255,255,.45); font-style:italic; font-family:'EB Garamond',serif; }
+
+  .context-bar {
+    display:grid; grid-template-columns:1fr 1fr;
+    font-family:'Playfair Display',serif; font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+  }
+  .ctx-him { background:rgba(26,18,0,.95); padding:7px 30px 7px 60px; color:#d0a040; }
+  .ctx-her { background:rgba(0,18,40,.95); padding:7px 60px 7px 30px; color:#80c0ff; text-align:right; }
+
+  .masthead-strip {
+    background:var(--accent-mid); padding:7px 60px;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#fff;
+    font-family:'Playfair Display',serif; position:relative; z-index:1;
+  }
+
+  .ornament { text-align:center; color:var(--accent-soft); font-size:16px; letter-spacing:.5em; padding:10px 0; background:var(--paper-aged); border-bottom:1px solid var(--rule); border-top:1px solid var(--rule); user-select:none; }
+
+  .paper-header { padding:50px 60px 36px; border-bottom:3px solid var(--accent-mid); text-align:center; }
+  .paper-type { font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent-mid); font-family:'Playfair Display',serif; margin-bottom:24px; display:flex; align-items:center; justify-content:center; gap:12px; }
+  .paper-type::before { content:''; display:inline-block; width:50px; height:1px; background:var(--him); }
+  .paper-type::after  { content:''; display:inline-block; width:50px; height:1px; background:var(--her); }
+  .paper-title { font-family:'Playfair Display',serif; font-size:40px; font-weight:900; line-height:1.05; color:var(--ink); margin-bottom:10px; letter-spacing:-.02em; }
+  .paper-subtitle { font-family:'Playfair Display',serif; font-size:16px; font-weight:400; font-style:italic; color:var(--ink-light); line-height:1.6; max-width:680px; margin:0 auto 24px; }
+  .paper-fields { display:inline-flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:28px; }
+  .field-tag { background:var(--accent-mid); color:#fff; font-size:10px; letter-spacing:.12em; text-transform:uppercase; padding:4px 12px; font-family:'Playfair Display',serif; }
+  .field-tag.him   { background:var(--him); }
+  .field-tag.her   { background:var(--her); }
+  .field-tag.gauge { background:var(--gauge); }
+  .field-tag.walk  { background:var(--walk); }
+  .field-tag.empty { background:var(--empty); }
+
+  .authors-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0; padding:20px 0; border-top:1px solid var(--rule-light); border-bottom:1px solid var(--rule-light); text-align:left; }
+  .author-card { background:var(--paper-warm); border:1px solid var(--rule-light); border-top:3px solid var(--accent-soft); padding:14px 16px; }
+  .author-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--ink); margin-bottom:3px; line-height:1.3; }
+  .author-name.lead { color:var(--accent-mid); font-size:15px; }
+  .author-title { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; margin-bottom:6px; }
+  .author-contact { font-size:11px; font-family:'Source Code Pro',monospace; color:var(--accent-soft); line-height:1.6; }
+  .author-quals { font-size:11px; color:var(--ink-faint); margin-top:5px; line-height:1.5; font-style:italic; }
+  .dates-row { font-size:13px; color:var(--ink-faint); font-style:italic; line-height:2; margin-top:6px; text-align:center; }
+
+  .paper-body { padding:40px 60px 60px; }
+
+  .abstract-box { background:var(--paper-aged); border-left:4px solid var(--him); border-right:4px solid var(--her); padding:26px 30px; margin-bottom:44px; position:relative; }
+  .abstract-box::before { content:'ABSTRACT'; position:absolute; top:-10px; left:30px; background:var(--accent-mid); color:#fff; font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.35em; padding:3px 10px; }
+  .abstract-text { font-size:17px; line-height:1.85; color:var(--ink); margin-bottom:14px; }
+  .keywords { font-size:15px; color:var(--ink-light); font-style:italic; border-top:1px solid var(--rule-light); padding-top:12px; margin-top:12px; }
+  .keywords strong { font-style:normal; color:var(--ink); font-weight:600; }
+
+  .section { margin-bottom:44px; }
+  h2 { font-family:'Playfair Display',serif; font-size:21px; font-weight:700; color:var(--ink); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h2 .sec-num { font-size:12px; letter-spacing:.15em; color:var(--accent-soft); font-weight:700; flex-shrink:0; }
+  p { font-size:18px; line-height:1.85; margin-bottom:16px; text-align:justify; color:var(--ink); hyphens:auto; }
+  p.italic-note { font-style:italic; color:var(--ink-light); font-size:17px; padding:12px 20px; border-left:3px solid var(--rule-light); background:var(--paper-warm); }
+
+  /* DASHBOARD LOG */
+  .night-log {
+    background:#030200;
+    color:#c0a860;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative; line-height:1;
+    border:1px solid #0e0a02;
+  }
+  .night-log::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--gauge); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .nl-row { display:grid; grid-template-columns:100px 120px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid rgba(192,168,96,.07); align-items:baseline; }
+  .nl-time   { color:#504020; font-weight:700; }
+  .nl-actor  { font-weight:700; }
+  .nl-actor.him  { color:#d0a030; }
+  .nl-actor.her  { color:#60a0d0; }
+  .nl-actor.both { color:#c0a860; font-style:italic; }
+  .nl-actor.gauge { color:#ff4040; font-style:italic; }
+  .nl-actor.car  { color:#808060; font-style:italic; }
+  .nl-event  { color:#c0a860; line-height:1.5; }
+  .nl-note   { color:#403820; font-style:italic; font-size:12px; }
+  .nl-confident { color:#d0a030; font-weight:700; }
+  .nl-warning { color:#ff6040; font-weight:700; }
+  .nl-dead   { color:#ff3030; font-weight:700; }
+  .nl-walk   { color:#808060; font-style:italic; }
+
+  /* THE GAUGE ANATOMY */
+  .excuse-box {
+    background:#060400;
+    border:1px solid #120e04;
+    border-left:4px solid var(--gauge);
+    padding:22px 28px;
+    margin:24px 0;
+    position:relative;
+    font-family:'Source Code Pro',monospace;
+    font-size:13px;
+    color:#c0a060;
+    line-height:1.6;
+  }
+  .excuse-box::before {
+    content:attr(data-label);
+    position:absolute; top:-11px; left:18px;
+    background:var(--gauge); color:#fff;
+    font-family:'Playfair Display',serif; font-size:9px; letter-spacing:.2em;
+    padding:3px 14px; text-transform:uppercase;
+  }
+  .eb-row { display:grid; grid-template-columns:200px 1fr; gap:16px; padding:9px 0; border-bottom:1px solid rgba(192,160,96,.07); align-items:baseline; }
+  .eb-label { color:#504020; font-weight:700; }
+  .eb-value { color:#c0a060; line-height:1.5; }
+  .eb-value.real    { color:#40c060; }
+  .eb-value.fake    { color:#c04040; }
+  .eb-value.both    { color:#c0a040; }
+
+  .table-wrapper { margin:28px 0; overflow-x:auto; }
+  .table-caption { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:10px; text-transform:uppercase; font-style:italic; letter-spacing:.04em; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  thead tr { background:var(--accent-mid); color:#fff; }
+  thead th { padding:11px 14px; text-align:left; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; }
+  tbody tr:nth-child(even) { background:var(--paper-aged); }
+  tbody tr:nth-child(odd)  { background:var(--paper); }
+  tbody td { padding:11px 14px; border-bottom:1px solid var(--rule-light); line-height:1.6; color:var(--ink); font-size:15px; vertical-align:top; }
+  tbody td:first-child { font-family:'Playfair Display',serif; font-weight:700; font-size:14px; color:var(--accent-mid); width:22%; }
+  .table-note { font-size:14px; font-style:italic; color:var(--ink-light); text-align:center; margin-top:10px; padding:0 20px; line-height:1.6; }
+
+  .footnote { font-size:16px; color:var(--ink); font-style:italic; padding:14px 20px; border-left:4px solid var(--accent-soft); margin:20px 0; background:var(--paper-warm); line-height:1.8; }
+
+  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin:24px 0; background:var(--rule-light); }
+  .stat-cell { background:var(--paper); padding:18px 14px; text-align:center; }
+  .stat-num { font-family:'Playfair Display',serif; font-size:24px; font-weight:900; display:block; line-height:1; margin-bottom:6px; }
+  .stat-num.h { color:var(--him); }
+  .stat-num.r { color:var(--gauge); }
+  .stat-num.n { color:var(--empty); }
+  .stat-num.s { color:var(--her); }
+  .stat-label { font-size:12px; color:var(--ink-faint); font-style:italic; line-height:1.4; }
+
+  .pull-quote { border-top:3px double var(--accent-soft); border-bottom:3px double var(--accent-soft); padding:28px 40px; margin:36px 0; text-align:center; }
+  .pull-quote blockquote { font-family:'Playfair Display',serif; font-size:22px; font-style:italic; color:var(--ink); line-height:1.6; margin-bottom:14px; }
+  .pull-quote cite { font-size:14px; color:var(--ink-faint); font-style:italic; display:block; line-height:1.7; }
+
+  .dropcap::first-letter { font-family:'Playfair Display',serif; font-size:62px; font-weight:900; float:left; line-height:.78; margin-right:8px; margin-top:8px; color:var(--accent-soft); }
+
+  .rule-thick { border:none; border-top:2px solid var(--accent-soft); margin:44px 0; }
+  .rule-split { border:none; height:2px; background:linear-gradient(to right, var(--him) 50%, var(--her) 50%); margin:44px 0; }
+  .center-ornament { text-align:center; color:var(--accent-soft); font-size:20px; letter-spacing:.6em; margin:20px 0; user-select:none; }
+  .references ol { padding-left:24px; }
+  .references li { font-size:16px; line-height:1.75; margin-bottom:14px; color:var(--ink); }
+  .acknowledgments { background:var(--paper-aged); padding:28px 32px; border:1px solid var(--rule-light); margin-top:40px; font-size:17px; line-height:1.85; }
+  .paper-footer { background:linear-gradient(to right,#0a0800 50%,#000a14 50%); color:#fff; padding:22px 60px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:4px solid var(--accent-soft); }
+  .footer-title { font-family:'Playfair Display',serif; font-size:12px; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.4); }
+  .footer-note  { font-style:italic; color:rgba(255,255,255,.35); font-family:'EB Garamond',serif; font-size:13px; }
+
+  @media(max-width:700px) {
+    .journal{margin:0}
+    .ms-him,.ms-her,.paper-header,.paper-body,.paper-footer{padding-left:24px;padding-right:24px}
+    .masthead-strip,.ctx-him,.ctx-her{padding-left:24px;padding-right:24px}
+    .paper-title{font-size:28px}
+    .authors-grid{grid-template-columns:1fr}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .nl-row{grid-template-columns:70px 90px 1fr;gap:6px}
+    .eb-row{grid-template-columns:1fr;gap:4px}
+    .masthead-split,.context-bar{grid-template-columns:1fr}
+    .ms-her,.ctx-her{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<div style="background:#0a0800;padding:10px 24px;display:flex;align-items:center;border-bottom:1px solid #2a1a00;">
+  <a href="https://amsterlingbooks.com/life/" style="font-family:'Playfair Display',serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#c0a040;text-decoration:none;">&#8592; All Papers</a>
+</div>
+
+<div class="journal">
+
+  <div class="masthead">
+    <div class="masthead-split">
+      <div class="ms-him">
+        <div class="harvard-crest">VERITAS<span>Harvard University &middot; Cambridge, Massachusetts</span></div>
+      </div>
+      <div class="ms-her">
+        <div class="masthead-journal">
+          <strong>Harvard Journal of Applied Fuel Optimism</strong>
+          <small>&amp; Automotive Gauge Denial Studies</small>
+        </div>
+      </div>
+    </div>
+    <div class="context-bar">
+      <div class="ctx-him">&#9981; &nbsp; He Can Make It &middot; He Has Always Made It &middot; He Will Not Make It This Time Either</div>
+      <div class="ctx-her">She Knows &middot; She Has Always Known &middot; She Said Nothing &middot; He Is Walking Now &nbsp; &#9978;</div>
+    </div>
+    <div class="masthead-strip">
+      Vol. 11, Issue 7 &nbsp;&middot;&nbsp; Peer-Reviewed By Six Researchers, Four of Whom Have Walked for Gas &nbsp;&middot;&nbsp; ISSN: WE-CAN-MAKE-IT-NO-WE-CANNOT
+    </div>
+  </div>
+
+  <div class="ornament">&starf; &nbsp; &starf; &nbsp; &starf;</div>
+
+  <header class="paper-header">
+    <div class="paper-type">Original Research Article &mdash; The Classics Series</div>
+    <h1 class="paper-title">The &ldquo;We Can Make It&rdquo; Theory</h1>
+    <p class="paper-subtitle">He Saw the Sign. The Sign Said &ldquo;Next Gas Station 20 Miles.&rdquo; He Looked at the Gauge. The Gauge Was on E. He Said &ldquo;We Can Make It.&rdquo; She Knew They Could Not Make It. She Has Always Known They Could Not Make It. She Said Nothing. The Car Stopped. He Walked. A Complete Psychological, Thermodynamic, Game-Theoretic, and Pedestrian Analysis of the Most Predictable Walk in the History of American Marriage</p>
+
+    <div class="paper-fields">
+      <span class="field-tag him">The Gauge: On E</span>
+      <span class="field-tag her">She Knows</span>
+      <span class="field-tag gauge">He Can Make It</span>
+      <span class="field-tag empty">He Cannot Make It</span>
+      <span class="field-tag walk">He Is Walking</span>
+    </div>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-name lead">Dr. Adrian Maximus Sterling, Ph.D., MBA</div>
+        <div class="author-title">Dept. of Looking at the Gauge and Deciding It&rsquo;s Fine<br>Harvard Business School</div>
+        <div class="author-contact">sterling@hbs.harvard.edu<br>Aldrich Hall 412 &middot; (617) 555-0194</div>
+        <div class="author-quals">Ph.D. Behavioral Economics (Harvard). Lead author. Has passed the sign. Has looked at the gauge. Has seen the needle below E. Has said &ldquo;we can make it.&rdquo; Has not made it. Has pulled over. Has sat in the car for 11 seconds doing the math he should have done at the sign. Has gotten out of the car. Has walked. Has walked for 2.4 miles carrying a red plastic gas can that he does not yet own because he has to buy it at the gas station he is walking to. Has arrived at the gas station. Has bought the can. Has filled the can. Has walked back. Has not made eye contact with his wife when he returned. Has poured the gas. Has started the car. Has driven to the gas station he just walked to. Has filled the tank. Has said nothing. She has said nothing. The research team notes this is the correct conversational outcome. The walk was the incorrect automotive outcome.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Isolde Ravenswood-Clarke, D.Phil., FRSL</div>
+        <div class="author-title">Chair, Dept. of Sentences That Are Wrong When Spoken<br>Harvard Faculty of Arts &amp; Sciences</div>
+        <div class="author-contact">i.ravenswood@fas.harvard.edu<br>Barker Center 412 &middot; (617) 555-0181</div>
+        <div class="author-quals">D.Phil. Philosophy &amp; Linguistics (Oxford), FRSL. Contributed the linguistic analysis in Section 3. Notes that &ldquo;we can make it&rdquo; is a four-word declarative statement that has never, in the documented history of this phrase being spoken while passing a gas station with the gauge on E, been true. It has been said millions of times. It has been true zero times. No other sentence in the English language has been spoken with such confidence and been wrong with such consistency. &ldquo;We can make it&rdquo; is not a prediction. It is not an assessment. It is a statement of faith &mdash; faith in the gauge, faith in the car, faith in a set of physics that do not apply to internal combustion engines. The faith is always misplaced. The walk always follows.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Imogen Blackwell-Tanaka, Ph.D.</div>
+        <div class="author-title">Associate Professor, Psychology of Male Fuel Confidence<br>Harvard Dept. of Psychology</div>
+        <div class="author-contact">i.blackwell@fas.harvard.edu<br>William James Hall 614 &middot; (617) 555-0741</div>
+        <div class="author-quals">Ph.D. Psychology (Yale). Contributed the psychological analysis in Section 4. Documents the specific cognitive distortion that allows a man to look at a fuel gauge that reads empty, pass a functioning gas station, and feel confident. The confidence is not rational. The confidence is not based on evidence. The confidence is based on the fact that he has, on some occasions in the past, driven further than the gauge suggested he could. He remembers those occasions. He does not remember the occasions when he walked. The memory is selective. The gauge is not selective. The gauge is telling him the truth. He is not listening to the gauge. He is listening to himself. Himself is wrong.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Prof. Desmond Abara-Whitfield, Ph.D., CFA</div>
+        <div class="author-title">Professor of Game Theory &amp; Spousal Silence Optimization<br>Harvard Kennedy School</div>
+        <div class="author-contact">d.abara@hks.harvard.edu<br>Rubenstein Building 302 &middot; (617) 555-0637</div>
+        <div class="author-quals">Ph.D. Economics (Chicago), CFA Charter. Contributed the game theory analysis of why she does not say anything. She sees the sign. She sees the gauge. She knows they cannot make it. She could say &ldquo;we should stop for gas.&rdquo; She does not say it. Not because she doesn&rsquo;t know. She knows. She has always known. She does not say it because she has said it before, and when she said it, he said &ldquo;we&rsquo;re fine,&rdquo; and they had the conversation, and they still didn&rsquo;t stop, and they still ran out of gas, except now they also had a disagreement about it. The silence is the dominant strategy. Let him drive. Let it run out. Let him walk. He will learn nothing from the walk, but the walk produces a better evening than the argument.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Priya Venkataraman-Holloway, Ph.D., M.D.</div>
+        <div class="author-title">Associate Professor, Neuroscience of the Fuel Gauge Glance<br>Harvard Medical School</div>
+        <div class="author-contact">p.venkataraman@hms.harvard.edu<br>Goldenson 318 &middot; (617) 555-0309</div>
+        <div class="author-quals">Ph.D. Neuroscience (MIT), M.D. (Harvard). Contributed the neuroscience of what happens in his brain during the 0.8 seconds between seeing the gauge and deciding to keep driving. The visual cortex receives accurate information &mdash; the needle is below the E line. This information is passed to the prefrontal cortex, where it is immediately overridden by a competing signal from the limbic system that can only be described as &ldquo;nah, it&rsquo;s fine.&rdquo; The limbic signal has no data. It has no evidence. It has vibes. The vibes win every time. The vibes have never been correct. The prefrontal cortex, which knows the vibes are wrong, is overruled. Dr. Venkataraman-Holloway finds this neurologically remarkable and personally infuriating, as her husband does the same thing.</div>
+      </div>
+      <div class="author-card">
+        <div class="author-name">Dr. Kwame Asante-Morrison, Ph.D.</div>
+        <div class="author-title">Professor of Cross-Cultural Male Fuel Denial<br>Harvard Dept. of Anthropology</div>
+        <div class="author-contact">k.asante@fas.harvard.edu<br>Peabody Museum 208 &middot; (617) 555-0247</div>
+        <div class="author-quals">Ph.D. Anthropology (Yale). Confirmed the &ldquo;we can make it&rdquo; behavior across all 34 cultures with documented automobile use. The vehicle varies. The fuel type varies. The phrase varies &mdash; it is &ldquo;we can make it&rdquo; in English, the equivalent in every other language, and in some cases simply a confident silence while passing the station. The wife&rsquo;s expression varies only in the specific muscles used. The outcome does not vary. The car stops. The man walks. In 34 of 34 documented cultures, the man walks. Not once in the anthropological record has the woman walked for the gas. She sits in the car. She was right. She waits. He returns. Nothing is said. This is one of the most consistent behaviors Dr. Asante-Morrison has documented in 28 years of fieldwork.</div>
+      </div>
+    </div>
+
+    <div class="dates-row">
+      Submitted: From the Shoulder of Interstate 90, 3.7 Miles Past the Last Gas Station, on a Sunday &nbsp;&middot;&nbsp;
+      Peer-Reviewed: By Six Researchers, Four of Whom Had to Walk to Submit Their Reviews &nbsp;&middot;&nbsp;
+      Accepted: Unanimously. Every Reviewer Knew. Every Reviewer&rsquo;s Wife Knew First. &nbsp;&middot;&nbsp;
+      Dedicated: To the Fuel Gauge. You Were Right. You Have Always Been Right. He Was Not Listening. He Has Never Been Listening. You Tried.
+    </div>
+  </header>
+
+  <main class="paper-body">
+
+    <div class="abstract-box">
+      <p class="abstract-text">This paper presents the first comprehensive multi-disciplinary analysis of the <strong>&ldquo;We Can Make It&rdquo; Theory (WCMIT)</strong> &mdash; the universal male automotive behavior in which a husband, upon seeing a road sign indicating the next gas station is 20 miles ahead, looks at his fuel gauge, observes the needle resting at or below the E line, and announces to his wife, with complete confidence, &ldquo;We can make it.&rdquo; They cannot make it. They have never been able to make it. The wife knows they cannot make it. She has known since the sign. She knew before the sign. She has been watching the gauge since the last town. She says nothing, because she has learned that saying something produces the same outcome &mdash; the car stops, the husband walks &mdash; but with an argument attached. The silence is better. The walk is coming either way.</p>
+      <p class="abstract-text">The research team documents: the 0.8-second glance at the gauge that produces the wrong conclusion; the specific cognitive distortion that converts &ldquo;the needle is on E&rdquo; into &ldquo;we have plenty&rdquo;; the wife&rsquo;s silence, which is not agreement but strategy; the precise moment the engine sputters; the 11 seconds of silence in the car after it stops; and the walk &mdash; the 2.4-mile average walk to the gas station he could have stopped at, carrying a red plastic gas can he has to buy when he gets there because he does not own one, because owning one would be admitting this could happen, and it cannot happen, because he can make it. He could not make it. He is walking.</p>
+      <p class="abstract-text">The American Automobile Association confirms: more than 500,000 drivers run out of gas every year in the United States. The research team confirms: every one of them said &ldquo;we can make it.&rdquo; None of them could make it. This paper documents why they keep saying it anyway.</p>
+      <div class="keywords">
+        <strong>Keywords:</strong> We Can Make It &middot; We Cannot Make It &middot; The Gauge Is on E &middot; He Knows It Is on E &middot; He Is Not Stopping &middot; She Knows &middot; She Has Always Known &middot; The Car Is Stopping for Him &middot; The Walk &middot; The Gas Can He Has to Buy &middot; 500,000 Walks Per Year &middot; He Will Do This Again
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 1</span> Introduction: The Sign, the Gauge, and the Lie He Tells Himself</h2>
+
+      <p class="dropcap">It is 2:14pm on a Sunday. They are on the interstate. They have been driving for two hours and forty minutes. The sign appears: NEXT GAS STATION 20 MILES. He sees the sign. She sees the sign. They both see the sign. What happens next has been documented 500,000 times per year by the American Automobile Association and has never once produced a surprise ending.</p>
+
+      <p>He looks at the gauge. The needle is below the E. Not slightly below &mdash; the needle is in the region that the manufacturer designed to mean &ldquo;you should have stopped already.&rdquo; The fuel light has been on for fourteen miles. The fuel light has been on since the last town, which had a gas station, which he passed, which she noticed he passed, which she said nothing about because she has been married to this man for eleven years and she knows what &ldquo;we can make it&rdquo; sounds like before he says it.</p>
+
+      <p>He says: &ldquo;We can make it.&rdquo;</p>
+
+      <p>He cannot make it. The car has approximately 1.2 gallons of fuel remaining, which at highway speed provides approximately 14 miles of range. The gas station is 20 miles away. The math is not ambiguous. The math is not close. The math is short by 6 miles. He did not do the math. He looked at the gauge, he felt a feeling, and the feeling said &ldquo;fine.&rdquo; The feeling has never once, in 500,000 documented cases per year, been correct.</p>
+
+      <p>She says nothing.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num r">500,000</span>
+          <span class="stat-label">Americans who run out of gas every year, per AAA. Every one of them said &ldquo;we can make it.&rdquo;</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num h">0</span>
+          <span class="stat-label">Times &ldquo;we can make it&rdquo; has been true when spoken with the gauge on E while passing a gas station</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num n">93%</span>
+          <span class="stat-label">Of men who rate themselves &ldquo;above average&rdquo; at knowing how far they can drive on empty</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num s">2.4 mi</span>
+          <span class="stat-label">Mean distance of the walk to the gas station he should have stopped at</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 2: THE DRIVE -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 2</span> The Drive: Documented in Full</h2>
+
+      <div class="night-log" data-label="SUNDAY AFTERNOON &mdash; COMPLETE FIELD LOG &mdash; INTERSTATE 90 EASTBOUND">
+        <div class="nl-row">
+          <span class="nl-time">1:52pm</span>
+          <span class="nl-actor her">Her</span>
+          <span class="nl-event">Notices the fuel light is on. Does not say anything. Has learned. <span class="nl-note">// She noticed the fuel light 4 minutes before he did. She will never mention this.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">1:56pm</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event">Notices the fuel light. Glances at gauge. Needle is below E. Brain performs 0.0 seconds of math and produces the output: &ldquo;fine.&rdquo; <span class="nl-note">// The math, had it been performed, would have produced the output: &ldquo;stop immediately.&rdquo; The math was not performed.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:02pm</span>
+          <span class="nl-actor car">The Car</span>
+          <span class="nl-event">Passes the town of Millford. Population: 4,200. Gas stations: 2. Both visible from the highway. Both open. Price per gallon: $3.49. <span class="nl-note">// This will become the most expensive $3.49 he has ever not spent.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:02pm</span>
+          <span class="nl-actor her">Her</span>
+          <span class="nl-event">Sees the gas stations. Both of them. Looks at him. He is looking at the road. She looks back at the road. Says nothing. <span class="nl-note">// She considered saying &ldquo;should we stop?&rdquo; She has said this before. The answer was &ldquo;we&rsquo;re fine.&rdquo; They were not fine. She does not say it.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:08pm</span>
+          <span class="nl-actor gauge">The Gauge</span>
+          <span class="nl-event nl-warning">Needle is now visibly below E. The fuel light has been on for 22 minutes. The gauge is doing everything it can. The gauge was designed by engineers specifically to communicate this information. He is not receiving the information. The gauge cannot make him receive it.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:14pm</span>
+          <span class="nl-actor car">The Sign</span>
+          <span class="nl-event nl-warning">NEXT GAS STATION 20 MILES. The sign is large. The sign is reflective. The sign is doing its job. The sign and the gauge are in agreement. The sign and the gauge are correct. He and the sign and the gauge are about to disagree.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:14pm<br>+0.8 sec</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event nl-confident">&ldquo;We can make it.&rdquo; <span class="nl-note">// Said with the confidence of a man who has never once done the math and has been wrong every time he has not done it. The confidence is total. The confidence is magnificent. The confidence is wrong.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:14pm<br>+1.2 sec</span>
+          <span class="nl-actor her">Her</span>
+          <span class="nl-event">Says nothing. Adjusts her seatbelt. Looks out the passenger window. <span class="nl-note">// The seatbelt adjustment is not a seatbelt adjustment. It is the physical expression of a woman settling in for the thing she already knows is about to happen. She is comfortable. She will be sitting in this car for a while after it stops.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:17pm</span>
+          <span class="nl-actor gauge">The Gauge</span>
+          <span class="nl-event nl-warning">The needle is now resting on the pin. There is no further down. The gauge has communicated everything it is capable of communicating. The gauge has done its job. The gauge is finished.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:22pm</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event">Accelerates slightly. <span class="nl-note">// The research team wishes to document that he accelerated. He has 1.1 gallons. The gas station is 12 miles away. He accelerated. The research team has no explanation for this. Dr. Venkataraman-Holloway has checked. There is no neurological explanation. He just did it.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:28pm</span>
+          <span class="nl-actor car">The Engine</span>
+          <span class="nl-event nl-dead">Sputters. First sputter. The car lurches forward, catches, lurches again. The engine is receiving air where fuel should be. The engine is telling him what the gauge told him and the sign told him and his wife could have told him. Nobody is telling him anything he could not have known at 2:02pm in Millford.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:28pm<br>+4 sec</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event">&ldquo;Come on, come on, come on.&rdquo; <span class="nl-note">// He is talking to the car. The car does not speak English. The car speaks gasoline. He has given it no gasoline.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:29pm</span>
+          <span class="nl-actor car">The Engine</span>
+          <span class="nl-event nl-dead">Stops. The car is now a 3,400-pound piece of furniture on the shoulder of Interstate 90. It is not going to the gas station. He is going to the gas station. He is going on foot.</span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:29pm<br>+0 sec</span>
+          <span class="nl-actor both">Both</span>
+          <span class="nl-event">Silence. 11 seconds of silence. This is the specific silence that occurs between the engine stopping and either party speaking. It is not a comfortable silence. It is not an uncomfortable silence. It is the silence of two people who both know what just happened and one of whom was right and one of whom is about to walk 6 miles round trip. <span class="nl-note">// The 11 seconds are the longest 11 seconds in any marriage. Both parties are performing calculations. His calculation: how far is the gas station. Her calculation: whether to say &ldquo;I knew this would happen&rdquo; now or never. The correct answer is never. She usually selects correctly.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:29pm<br>+11 sec</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event">&ldquo;I&rsquo;ll be right back.&rdquo; Gets out of the car. <span class="nl-note">// &ldquo;Right back&rdquo; is, like &ldquo;we can make it,&rdquo; a statement that is wrong when spoken. He will not be right back. He will be back in 47 minutes. He will be sunburned. He will have a red plastic gas can.</span></span>
+        </div>
+        <div class="nl-row">
+          <span class="nl-time">2:29pm<br>+14 sec</span>
+          <span class="nl-actor her">Her</span>
+          <span class="nl-event">Watches him begin walking. Unlocks her phone. Reclines her seat slightly. <span class="nl-note">// She has been through this before. Not with this specific car on this specific highway. But she has been through this. She knew at the sign. She knew before the sign. She is comfortable. She has a podcast. She will be here when he gets back.</span></span>
+        </div>
+        <div class="nl-row" style="border:none;">
+          <span class="nl-time">3:16pm</span>
+          <span class="nl-actor him">Him</span>
+          <span class="nl-event nl-walk">Returns. Sunburned. Carrying a red plastic gas can. He bought the gas can at the gas station for $14.99. He filled it for $11.23. He walked 2.8 miles there and 2.8 miles back. He pours the gas. He starts the car. He drives to the gas station. He fills the tank. He pays $51.24 for a full tank. Neither party speaks until they are back on the highway. <span class="nl-note">// Total cost of not stopping in Millford: $14.99 for the can, $11.23 for the walk gas, $51.24 for the tank, 62 minutes of time, 5.6 miles of walking, one sunburn, and a marriage that is technically fine but specifically quiet.</span></span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 3: LINGUISTICS -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 3</span> The Linguistic Impossibility: A Sentence That Has Never Been True</h2>
+
+      <p>Prof. Ravenswood-Clarke&rsquo;s analysis establishes that &ldquo;we can make it&rdquo; occupies a unique position in the English language: it is a declarative statement of capability that has, in the specific context of a fuel gauge on E while passing a gas station, never been true. Not once. Not in any documented case. Not in any of the 500,000 annual instances catalogued by the American Automobile Association. The sentence is spoken with certainty. The sentence is wrong with equal certainty.</p>
+
+      <p>The word &ldquo;we&rdquo; is particularly instructive. He says &ldquo;we.&rdquo; There is no &ldquo;we.&rdquo; He is driving. He is looking at the gauge. He is making the decision. She is sitting in the passenger seat knowing the decision is wrong. The &ldquo;we&rdquo; drafts her into a decision she did not make, does not endorse, and will not be walking for. When the car stops, he does not say &ldquo;I&rsquo;ll be right back.&rdquo; Actually, he does say that. But the &ldquo;we&rdquo; from earlier has quietly disappeared. The &ldquo;we&rdquo; made the decision together. The &ldquo;I&rdquo; is walking alone.</p>
+
+      <div class="excuse-box" data-label="ANATOMY OF 'WE CAN MAKE IT'">
+        <div class="eb-row">
+          <span class="eb-label">What he says:</span>
+          <span class="eb-value">&ldquo;We can make it.&rdquo;</span>
+        </div>
+        <div class="eb-row">
+          <span class="eb-label">What is true:</span>
+          <span class="eb-value fake">They cannot make it. The car has 1.2 gallons. The station is 20 miles away. At 28 mpg highway, 1.2 gallons provides 33.6 miles. But the gauge is below E, which means less than 1.2 gallons. The actual amount is approximately 0.5 gallons. 0.5 gallons provides approximately 14 miles. The station is 20 miles. 14 is less than 20. This is arithmetic. He did not do arithmetic. He did feelings.</span>
+        </div>
+        <div class="eb-row">
+          <span class="eb-label">What she hears:</span>
+          <span class="eb-value">&ldquo;We are going to run out of gas and I am going to walk.&rdquo; She receives this translation accurately and completely. The four words he said and the fourteen words she heard contain the same information. She has a better decoder.</span>
+        </div>
+        <div class="eb-row">
+          <span class="eb-label">Does he believe it?</span>
+          <span class="eb-value both">Yes. This is the remarkable part. He believes it. He has looked at a gauge that says empty and produced the conclusion &ldquo;fine.&rdquo; The headache was a lie both parties understood. &ldquo;We can make it&rdquo; is a lie only one party understands, and it is the wrong party. He has lied to himself. He believes the lie. She does not. The gauge does not. The car does not.</span>
+        </div>
+        <div class="eb-row">
+          <span class="eb-label">Why does he believe it?</span>
+          <span class="eb-value fake">Because he made it once. In 2014. On a different car. With a different gauge. On a shorter distance. Under conditions that do not apply today. He remembers 2014. He does not remember 2016, 2019, or 2023, when he did not make it and walked. The brain stores the one success. The brain deletes the four failures. The brain is not performing science. The brain is performing self-mythology.</span>
+        </div>
+        <div class="eb-row" style="border:none;">
+          <span class="eb-label">Will he do this again?</span>
+          <span class="eb-value fake">Yes. The research team confirms: he will do this again. He will do this again because the walk does not update the model. The walk is processed as an anomaly. The model &mdash; &ldquo;I can always make it&rdquo; &mdash; survives the walk intact. It has survived every walk. It will survive this walk. He will be at another sign, with another gauge on E, and he will say it again, and she will say nothing again, and the car will stop again, and he will walk again. This is the cycle. The cycle has no exit condition.</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 4: PSYCHOLOGY -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 4</span> The Psychology: Why He Believes the Gauge Is a Suggestion</h2>
+
+      <p class="dropcap">Dr. Blackwell-Tanaka&rsquo;s analysis identifies three cognitive distortions operating simultaneously in the 0.8 seconds between seeing the gauge and saying &ldquo;we can make it.&rdquo; Each distortion is well-documented in the psychological literature. Their combination, in this specific context, produces an outcome so predictably wrong that the American Automobile Association has built a business around it.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 1 &mdash; The Three Cognitive Distortions of Fuel Optimism</div>
+        <table>
+          <thead>
+            <tr><th>Distortion</th><th>What It Does</th><th>What He Thinks</th><th>What Is Actually True</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Survivorship Bias</td>
+              <td>He remembers the one time he made it on fumes. He does not remember the four times he didn&rsquo;t.</td>
+              <td>&ldquo;I&rsquo;ve done this before. I made it.&rdquo;</td>
+              <td>He has done this before. He made it once. He walked four times. The ratio is 1:4. He remembers the 1.</td>
+            </tr>
+            <tr>
+              <td>Optimism Bias</td>
+              <td>He believes bad outcomes happen to other people. He is not other people. He is him. He can make it.</td>
+              <td>&ldquo;Those 500,000 people who ran out of gas aren&rsquo;t me. I know my car.&rdquo;</td>
+              <td>He is those people. He is exactly those people. Every one of those 500,000 people knew their car. Their car stopped anyway. Cars do not respond to confidence. Cars respond to gasoline.</td>
+            </tr>
+            <tr>
+              <td>The Gauge Discount</td>
+              <td>He believes the gauge is conservative. The manufacturer, he believes, built in a buffer. The E does not mean E. The E means &ldquo;you have a little more.&rdquo;</td>
+              <td>&ldquo;There&rsquo;s always more gas than the gauge shows.&rdquo;</td>
+              <td>There is sometimes slightly more gas than the gauge shows. The word &ldquo;slightly&rdquo; does not cover 6 miles. The manufacturer&rsquo;s buffer is approximately 1 gallon. He has already used the buffer. The buffer ended in Millford. He is now in the zone the manufacturer labeled &ldquo;you should already be at a gas station.&rdquo; He is not at a gas station. He is between gas stations. He is exactly where the manufacturer hoped he would not be.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Dr. Blackwell-Tanaka notes: &ldquo;Any one of these distortions would produce mild overconfidence. All three together produce a man who looks at an empty fuel gauge while passing a gas station at 65 miles per hour and feels genuinely, sincerely fine. The feeling is not a performance. He is not pretending to be confident. He is confident. The confidence is the problem. If he were pretending, he would stop. Because he is sincere, he drives.&rdquo;</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 5: HER SILENCE -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 5</span> The Game Theory: Why She Does Not Say &ldquo;We Should Stop for Gas&rdquo;</h2>
+
+      <p>Prof. Abara-Whitfield&rsquo;s game theory analysis addresses the question the research team receives most often: why doesn&rsquo;t she just say something? She sees the gauge. She sees the sign. She knows they cannot make it. She is sitting two feet from the driver. She could say &ldquo;we should stop for gas&rdquo; and the entire walk would be avoided. Why doesn&rsquo;t she say it?</p>
+
+      <p>She doesn&rsquo;t say it because she has said it before. She said it in 2016. She said it in 2019. She said it in 2023. Each time, the same thing happened. The analysis:</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 2 &mdash; Outcomes of Saying &ldquo;We Should Stop for Gas&rdquo; vs. Saying Nothing</div>
+        <table>
+          <thead>
+            <tr><th>Factor</th><th>She Says &ldquo;We Should Stop&rdquo;</th><th>She Says Nothing</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>His response</td>
+              <td>&ldquo;We&rsquo;re fine.&rdquo; Said immediately. Said with the same confidence as &ldquo;we can make it.&rdquo; He does not stop. The car does not stop. The suggestion has no effect on the car.</td>
+              <td>None required. The silence is comfortable. She has her podcast. The outcome is coming either way.</td>
+            </tr>
+            <tr>
+              <td>Does the car stop?</td>
+              <td>Yes. Same time. Same place. Same shoulder. Whether she says it or not, the fuel runs out at 2:29pm at mile marker 147. Her words do not add gasoline.</td>
+              <td>Yes. 2:29pm. Mile marker 147. Same outcome. The only difference is nobody argued about it on the way.</td>
+            </tr>
+            <tr>
+              <td>The walk</td>
+              <td>He walks. Same distance. Same gas can. But now he is also annoyed, because she &ldquo;told him so,&rdquo; which he is processing on the walk along with the sunburn and the $14.99 gas can.</td>
+              <td>He walks. Same distance. Same gas can. But the only thing he is processing is the walk. The walk is enough. The walk does not need a conversation partner.</td>
+            </tr>
+            <tr>
+              <td>The return</td>
+              <td>He returns. He pours the gas. She is right and they both know it. This knowledge, in a car, at 3:16pm on a Sunday, is not useful. It produces a silence that is different from the silence she would have had if she had said nothing &mdash; this silence has &ldquo;I told you so&rdquo; in it even if she doesn&rsquo;t say it. The evening is slightly worse.</td>
+              <td>He returns. He pours the gas. She is right and they both know it. But because she didn&rsquo;t say it, the knowledge is private. It belongs to her. It does not need to be discussed. The evening is slightly better.</td>
+            </tr>
+            <tr>
+              <td>Verdict</td>
+              <td>Same gas outcome. Same walk. Same 62 minutes. But with an argument, a vindication she didn&rsquo;t want, and a Sunday evening that carries a charge.</td>
+              <td>Same gas outcome. Same walk. Same 62 minutes. No argument. No charge. She was right. She knows it. He knows it. Nobody said it. The evening recovers.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Prof. Abara-Whitfield notes: &ldquo;Her silence is not passivity. Her silence is the dominant strategy. Speaking does not add fuel to the tank. Speaking does not change his mind. Speaking adds a disagreement to an outcome that is already determined. The fuel is going to run out. The car is going to stop. He is going to walk. The only variable she controls is whether the walk happens with or without an argument preceding it. She chooses without. She is correct. She has always been correct &mdash; about the gas, about the silence, about all of it.&rdquo;</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 6: NEUROSCIENCE -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 6</span> The 0.8-Second Glance: What Happens in His Brain When He Sees the Gauge</h2>
+
+      <p class="dropcap">The 0.8 seconds between looking at the fuel gauge and saying &ldquo;we can make it&rdquo; are, neurologically, the most dishonest 0.8 seconds in the male brain. The eyes see correctly. The visual cortex processes correctly. Every piece of accurate information is received, transmitted, and then &mdash; at the final stage &mdash; overruled by a feeling that has no data, no evidence, and no explanation.</p>
+
+      <p>At T+0.0: The eyes see the gauge. The needle is below E. The fuel light is on. The visual cortex processes this accurately. The information reaches the prefrontal cortex in 0.2 seconds.</p>
+
+      <p>At T+0.2: The prefrontal cortex receives the information and begins generating the rational response: &ldquo;stop at the next gas station.&rdquo; This is the correct response. The prefrontal cortex knows it is the correct response. The prefrontal cortex has done this before and has been overruled every time.</p>
+
+      <p>At T+0.4: The limbic system intervenes. The limbic system does not have data. The limbic system has a memory of one time in 2014 when the gauge was on E and he made it. The limbic system also has something that can only be described as masculine automotive optimism &mdash; a feeling, deep in the brainstem, that this car will not stop because he is driving it, and he does not run out of gas, because he is not the kind of man who runs out of gas.</p>
+
+      <p>At T+0.6: The limbic signal overrides the prefrontal cortex. The mouth opens.</p>
+
+      <p>At T+0.8: &ldquo;We can make it.&rdquo;</p>
+
+      <div class="footnote">Dr. Venkataraman-Holloway notes: &ldquo;I have imaged this process in 47 male subjects. In every case, the prefrontal cortex generates the correct response &mdash; stop for gas &mdash; and in every case the limbic system overrides it with a signal I can only characterize as vibes. The vibes have no empirical content. The vibes are not connected to the fuel gauge, the odometer, or any piece of data in the vehicle. The vibes are connected to his identity as a man who can make it. The identity is strong. The fuel is not. The fuel does not care about his identity. The fuel runs out at the same rate regardless of how he feels about it. I have explained this to my husband. He has run out of gas twice since the explanation.&rdquo;</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 7: THE WALK -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 7</span> The Walk: A Comprehensive Study of the 2.4-Mile Average Pedestrian Consequence</h2>
+
+      <p>The walk is the terminal event of the &ldquo;We Can Make It&rdquo; Theory. It is the moment the theory is falsified. It is the moment he is no longer driving to the gas station but walking to the gas station, which is a different experience in every dimension &mdash; speed, comfort, dignity, and the specific quality of sunlight on a man carrying a red plastic gas can along the shoulder of an interstate highway on a Sunday afternoon.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 3 &mdash; Driving to the Gas Station vs. Walking to the Gas Station</div>
+        <table>
+          <thead>
+            <tr><th>Factor</th><th>Driving (What Would Have Happened)</th><th>Walking (What Actually Happened)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Time</td>
+              <td>3 minutes. He would have exited at Millford, filled the tank, and been back on the highway before the song on the radio ended.</td>
+              <td>47 minutes. 23 minutes walking there. 4 minutes buying the gas can he does not own. 6 minutes filling the can. 23 minutes walking back. Plus the 6 minutes pouring the gas and driving to the station to fill the tank. The song on the radio is now 14 songs ago.</td>
+            </tr>
+            <tr>
+              <td>Cost</td>
+              <td>$51.24 for a full tank. This is the only cost. This is a normal cost. This is the cost of owning a car.</td>
+              <td>$77.46 total. $51.24 for the full tank. $11.23 for the gas in the can. $14.99 for the can itself. The can will go in the garage. He will not use it again because he will not run out of gas again because next time he can make it.</td>
+            </tr>
+            <tr>
+              <td>Physical state</td>
+              <td>Seated. Air-conditioned. Comfortable. The same physical state he was in before and after.</td>
+              <td>Sunburned. The left arm specifically &mdash; the arm facing traffic. Sweating. Carrying 8.4 pounds of gasoline in a plastic can. Wearing shoes that are appropriate for driving and inappropriate for a 5.6-mile round trip on asphalt in July.</td>
+            </tr>
+            <tr>
+              <td>Dignity</td>
+              <td>Intact. Nobody sees a man driving to a gas station and thinks anything about him. Driving to a gas station is invisible.</td>
+              <td>Modified. 114 cars have passed him. Some honked. One person waved. He is carrying a red gas can, which is the universal symbol for &ldquo;this man said he could make it and he could not make it.&rdquo; The gas can is a billboard. The gas can tells everyone on the highway exactly what happened. He cannot hide the gas can. The gas can is the size of a small dog and it is bright red.</td>
+            </tr>
+            <tr>
+              <td>Her experience</td>
+              <td>Uninterrupted. She would not have noticed the stop. The stop would have been three minutes. She would have looked at her phone. The trip would have continued.</td>
+              <td>47 minutes in a parked car on the shoulder of Interstate 90. She has her phone. She has a podcast. She is fine. She is more fine than he is. She is always more fine than he is in this scenario, because she is sitting and he is walking and she was right and he was wrong and none of this needs to be spoken because the gas can says it all.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes: the walk is not a punishment. The walk is a consequence. The consequence is produced not by the wife, not by the road, not by the gas station, but by the fuel gauge, which told him the truth, which he declined to hear, and which ran out of things to tell him at 2:29pm when it ran out of fuel to measure.</div>
+      </div>
+
+      <div class="pull-quote">
+        <blockquote>&ldquo;The red gas can is the most honest object on the highway.<br>It does not say &lsquo;we can make it.&rsquo;<br>It says &lsquo;we could not make it.&rsquo;<br>It says it to every car that passes.<br>It has never been wrong.&rdquo;</blockquote>
+        <cite>&mdash; Prof. Ravenswood-Clarke, field notes, Interstate 90 shoulder<br><em>Written while observing Subject 14 walking back with the can</em><br><em>The can was bright red</em><br><em>He was sunburned</em><br><em>His wife was listening to a podcast</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 8: THE MEN WHO STOPPED -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 8</span> The Wives Who Said Something: A Brief and Instructive Record</h2>
+
+      <p>The research team documents, for completeness, the four wives in the study who broke the silence and said &ldquo;we should stop for gas.&rdquo; The cases are instructive. The gas ran out at the same time in every case. The only variable that changed was the quality of the silence in the car after it stopped.</p>
+
+      <div class="table-wrapper">
+        <div class="table-caption">Table 4 &mdash; Wives Who Said It: Complete Record</div>
+        <table>
+          <thead>
+            <tr><th>Case</th><th>What She Said</th><th>His Response</th><th>Did He Stop?</th><th>What Happened</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Case 8A</td>
+              <td>&ldquo;Should we stop for gas?&rdquo; Said casually. Said as a question, not a statement.</td>
+              <td>&ldquo;We&rsquo;re fine.&rdquo; Said immediately. Did not look at the gauge.</td>
+              <td>No. The suggestion was processed and discarded in approximately 0.3 seconds. The car continued.</td>
+              <td>Ran out of gas 14 miles later. The walk was 2.1 miles. He said &ldquo;I&rsquo;ll be right back.&rdquo; She said &ldquo;I know.&rdquo; The &ldquo;I know&rdquo; carried weight. The walk was quiet.</td>
+            </tr>
+            <tr>
+              <td>Case 8B</td>
+              <td>&ldquo;The gas light has been on for fifteen minutes.&rdquo; Said factually. No emotion. Just data.</td>
+              <td>&ldquo;Yeah, we&rsquo;ve got plenty.&rdquo; He then patted the dashboard. He patted the dashboard as though the car were a horse that needed encouragement. The car is not a horse. The car needed gasoline.</td>
+              <td>No. The dashboard pat was, in retrospect, the moment the outcome was sealed.</td>
+              <td>Ran out of gas 11 miles later. She took a photo of the gas can and texted it to her sister with no caption. The sister responded with &ldquo;again?&rdquo; The word &ldquo;again&rdquo; tells the entire story.</td>
+            </tr>
+            <tr>
+              <td>Case 8C</td>
+              <td>&ldquo;We are going to run out of gas.&rdquo; Said directly. No question. A statement of fact.</td>
+              <td>Silence. Then: &ldquo;No we&rsquo;re not.&rdquo; Then, quieter: &ldquo;I know this car.&rdquo;</td>
+              <td>No. &ldquo;I know this car&rdquo; is the final form of fuel denial. It is the statement made when all rational arguments have been exhausted and only the relationship between the man and his vehicle remains. The relationship does not produce gasoline.</td>
+              <td>Ran out of gas 8 miles later. The 8 miles was shorter than any other case. &ldquo;I know this car&rdquo; was the most confident statement and produced the shortest distance. The car did not care that he knew it. The car cared about fuel.</td>
+            </tr>
+            <tr>
+              <td>Case 8D</td>
+              <td>Said nothing during the drive. When the car stopped, said: &ldquo;I will wait here.&rdquo; Said pleasantly. Almost warmly. With the specific warmth of a woman who has been through this enough times to find it funny.</td>
+              <td>&ldquo;I know.&rdquo; He got out. He began walking. He was smiling slightly. She was smiling slightly. Both of them knew. Both of them had been here before. He walked. She waited. He came back. They drove to the gas station. He filled the tank. She said: &ldquo;Same time next year?&rdquo; He laughed. She laughed. The marriage was fine.</td>
+              <td>N/A &mdash; she spoke after the stop.</td>
+              <td>The research team notes Case 8D as the only case in which the walk produced a good outcome. Not because the walk was different. The walk was the same. But the couple had done this enough times to have moved past frustration and into a shared understanding that this is what happens, this is who he is, this is what she knows, and the whole thing &mdash; the sign, the gauge, the confidence, the walk, the gas can &mdash; is, at this point in the marriage, kind of funny.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">The research team notes Case 8D as the exception that proves the rule: the only time speaking improved the outcome, it was done after the walk, with humor, by a couple who had been doing this long enough to find it amusing rather than infuriating. &ldquo;Same time next year?&rdquo; is not available to all couples. It is available to couples who have earned it, and it is earned by walking for gas enough times that the walking has become part of the story rather than part of the argument.</div>
+      </div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- SECTION 9: CROSS-CULTURAL -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 9</span> Cross-Cultural Confirmation: He Does This Everywhere</h2>
+
+      <p>Dr. Asante-Morrison&rsquo;s anthropological survey confirms the &ldquo;We Can Make It&rdquo; behavior across all 34 cultures with documented automobile use. The vehicle varies. The fuel varies &mdash; gasoline, diesel, LPG, and in three documented cases, the electric equivalent of &ldquo;we have enough charge.&rdquo; The phrase varies. The wife&rsquo;s expression varies only in the specific muscles used to convey &ldquo;I know what is about to happen and I am not going to say it.&rdquo; The outcome does not vary. The car stops. The man walks.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num r">34/34</span>
+          <span class="stat-label">Cultures in which men say the local equivalent of &ldquo;we can make it&rdquo;</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num h">34/34</span>
+          <span class="stat-label">Cultures in which the wife knows they cannot make it</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num n">0/34</span>
+          <span class="stat-label">Cultures in which the wife walks for the gas</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num s">34/34</span>
+          <span class="stat-label">Cultures in which he does this again</span>
+        </div>
+      </div>
+
+      <div class="footnote">Dr. Asante-Morrison notes: &ldquo;The universality of this behavior suggests it is not learned but innate &mdash; a deep, species-level conviction that the fuel gauge is wrong and he is right. The gauge has been right in every documented case. He has been wrong in every documented case. The species-level conviction persists. Evolution has not corrected this. Evolution may not be able to correct this. The walk may be permanent.&rdquo;</div>
+    </div>
+
+    <hr class="rule-split">
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <h2><span class="sec-num">&sect; 10</span> Conclusions: He Will Do This Again</h2>
+
+      <p class="dropcap">The &ldquo;We Can Make It&rdquo; Theory is not a failure of information. The information was available. The gauge provided the information. The sign provided the information. The gas station in Millford was visible from the highway and open for business. Every piece of data required to produce the correct decision &mdash; stop for gas &mdash; was present, visible, and unambiguous. He had the data. He did not use the data. He used a feeling. The feeling was wrong. The feeling has always been wrong. The feeling will continue to be wrong.</p>
+
+      <p>The wife&rsquo;s silence is not complicity. The wife&rsquo;s silence is wisdom. She has learned, through repeated observation, that her words do not add fuel to the tank. Her words add an argument to the walk. The walk is coming either way. The argument is optional. She opts out. She is correct. She has always been correct. She will continue to be correct. She will continue to say nothing. She will continue to wait in the car. She has a podcast. She is fine.</p>
+
+      <p>The walk is not a lesson. The walk teaches nothing. The research team has documented 23 men who ran out of gas, walked to a gas station, bought a gas can, filled the gas can, walked back, poured the gas, drove to the gas station, filled the tank, and then &mdash; on the next road trip, with the same car, on the same highway, with the same wife in the same passenger seat &mdash; passed a gas station with the gauge on E and said &ldquo;we can make it.&rdquo; The walk did not update the model. The walk is not data. The walk is a thing that happened. &ldquo;We can make it&rdquo; is a thing that is believed. The believing is stronger than the walking. It has always been stronger. It will always be stronger. He will say it again. She will say nothing again. The car will stop again. He will walk again. The gas can is in the garage.</p>
+
+      <div class="pull-quote">
+        <blockquote>&ldquo;He saw the sign.<br>He saw the gauge.<br>He said &lsquo;we can make it.&rsquo;<br>They could not make it.<br>She knew.<br>She has always known.<br>He walked.<br>He bought a gas can.<br>He will do this again.<br>The gas can is in the garage.<br>He does not think he will need it.<br>He will need it.&rdquo;</blockquote>
+        <cite>&mdash; Dr. Adrian Maximus Sterling, field notes, Interstate 90<br><em>Written after the walk</em><br><em>The sunburn lasted three days</em><br><em>The gas can is in the garage</em><br><em>He does not think he will use it again</em><br><em>He will use it again</em></cite>
+      </div>
+    </div>
+
+    <hr class="rule-thick">
+
+    <div class="section references">
+      <h2><span class="sec-num">&sect;</span> References</h2>
+      <ol>
+        <li>Ravenswood-Clarke, I. (2026). &ldquo;We can make it&rdquo;: The only declarative sentence in the English language with a 0% historical accuracy rate. <em>Harvard Journal of Applied Fuel Optimism, 11</em>(7), 1&ndash;62. (&ldquo;It has been said millions of times. It has been true zero times. No other sentence in any language has maintained such total confidence in the face of such total incorrectness. &lsquo;We can make it&rsquo; is not language. It is prayer. The prayer is never answered. The gas runs out anyway.&rdquo; &mdash; Author note.)</li>
+        <li>Blackwell-Tanaka, I. (2026). Survivorship bias at 65 miles per hour: The cognitive architecture of fuel optimism. <em>Journal of Automotive Psychology, 41</em>(3), 1&ndash;48. (&ldquo;He remembers the one time he made it. He does not remember the four times he walked. The brain is not a fuel gauge. The brain is a mythology engine. The mythology says: I can make it. The fuel gauge says: you cannot. The mythology wins. The fuel gauge is right.&rdquo; &mdash; Author note.)</li>
+        <li>Abara-Whitfield, D. (2026). The dominant strategy of silence: Why she does not say &ldquo;stop for gas&rdquo; and why she is correct. <em>Harvard Journal of Applied Fuel Optimism, 11</em>(7), 63&ndash;114. (Her words do not add fuel. Her words add an argument. The fuel runs out at the same time either way. The argument is the only variable. She removes the variable. She is correct. She has always been correct.)</li>
+        <li>Venkataraman-Holloway, P. (2026). The 0.8-second override: Limbic intervention in prefrontal fuel assessment. <em>Journal of Automotive Neuroscience, 3</em>(1), 1&ndash;34. (&ldquo;The prefrontal cortex says stop. The limbic system says fine. The limbic system has no data. The limbic system has vibes. The vibes win. The vibes have never been correct. I have imaged this 47 times. I have explained it to my husband. He has run out of gas twice since.&rdquo; &mdash; Author note.)</li>
+        <li>Asante-Morrison, K. (2026). The universal walk: Cross-cultural confirmation of male fuel denial across 34 automobile cultures. <em>Journal of Cross-Cultural Automotive Behavior, 22</em>(1), 1&ndash;76. (&ldquo;Every culture. Every car. Every gauge. He says the local equivalent of &lsquo;we can make it.&rsquo; She says the local equivalent of nothing. The car says the local equivalent of stopping. He walks. In 34 of 34 cultures, he walks.&rdquo; &mdash; Author note.)</li>
+        <li>The Fuel Gauge (ongoing). Right. Has always been right. Designed by engineers to communicate the fuel level. Communicates the fuel level. He does not listen. The gauge cannot make him listen. The gauge has done its job. The gauge is not responsible for the walk. The gauge told him everything. He looked at the gauge. He looked at the gauge and said &ldquo;we can make it.&rdquo; The gauge does not have a mouth, but if it did, it would have said &ldquo;no you can&rsquo;t.&rdquo; The gauge would have been right.</li>
+        <li>The Red Gas Can, $14.99 (2026). In the garage. Purchased at a Sunoco station 2.8 miles from the spot the car stopped. Carried back. Poured. Used once. Will be used again. He does not think it will be used again. It will be used again. The gas can knows. The gas can has always known.</li>
+      </ol>
+    </div>
+
+    <div class="acknowledgments">
+      <h2 style="border-bottom:1px solid var(--rule-light);font-size:16px;margin-bottom:16px;color:var(--accent-mid);">Acknowledgments</h2>
+      <p>The research team wishes to acknowledge every man who has ever said &ldquo;we can make it&rdquo; while passing a gas station with the gauge on E. You could not make it. You have never been able to make it. The gauge told you. The sign told you. Your wife told you, or, more accurately, your wife decided not to tell you because she has told you before and it made no difference and the gas ran out at the same time either way. You looked at the gauge. The gauge said empty. You said fine. The gauge was right. You were wrong. You walked. You bought a gas can. You walked back. You poured the gas. You drove to the gas station you should have stopped at in the first place. You filled the tank. You said nothing. She said nothing. The silence was correct. The walk was the consequence. The walk was not a lesson, because you will do this again, and she knows you will do this again, and the gas can is in the garage waiting for you to do this again. The gas can is patient. The gas can has time. The gas can will be there.</p>
+      <p style="margin-top:14px;">We also wish to acknowledge every wife who has ever sat in a parked car on the shoulder of a highway while her husband walked to a gas station. You knew. You knew at the sign. You knew before the sign. You knew when the fuel light came on and he didn&rsquo;t mention it. You knew when he passed the gas station in Millford without slowing down. You knew when he said &ldquo;we can make it&rdquo; with the voice of a man who has never once, in his entire life, done the math. You said nothing. You were right to say nothing. Saying something does not add fuel. Saying something adds an argument. You chose the version without the argument. You chose correctly. You reclined your seat. You opened your podcast. You waited. He came back with the gas can. He was sunburned. He said nothing. You said nothing. The nothing was perfect. The nothing was the correct amount of communication for two people who both know what happened and neither of whom needs to say it. You are the other half of this system. The system works because you let it work. You let him drive past the station. You let the car stop. You let him walk. You wait. You are always waiting when he gets back. You are always right. You have always been right. You will always be right. He will never stop at the gas station. The gas can is in the garage.</p>
+    </div>
+
+    <div class="center-ornament" style="margin-top:44px;">&starf; &nbsp; &starf; &nbsp; &starf;</div>
+    <p style="text-align:center;font-style:italic;font-size:15px;color:var(--ink-faint);margin-top:12px;margin-bottom:6px;">&mdash; End of Paper &mdash;</p>
+    <p style="text-align:center;font-style:italic;font-size:14px;color:var(--ink-faint);margin-bottom:44px;">The gauge said E. He said &ldquo;fine.&rdquo; She said nothing. The car stopped. He walked. The gas can is in the garage. He does not think he will need it. He will need it.</p>
+
+  </main>
+
+  <footer class="paper-footer">
+    <div class="footer-title">Harvard Journal of Applied Fuel Optimism &middot; Vol. 11, Issue 7</div>
+    <div class="footer-note">&copy; The Authors &middot; Open Tank License &middot; 500,000 Walks Per Year. The Gas Can Is in the Garage. He Will Need It.</div>
+  </footer>
+
+</div>
+</body>
+</html>
