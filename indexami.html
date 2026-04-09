@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ami Kim - Drummer · Artist · Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Rajdhani:wght@400;500;600&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --crimson: #dc143c;
+            --gold: #d4af37;
+            --dark: #0a0a0a;
+            --dark-light: #1a1a1a;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--dark);
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: transparent;
+            backdrop-filter: blur(0px);
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-logo-subtitle {
+            font-size: 0.65rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            margin-top: -2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--crimson);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+
+        /* Video background is now fixed full-page, defined inline on the element */
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-subtitle {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            animation: fadeInUp 1s ease 0.6s both;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--crimson);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #ff1744;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--dark);
+            transform: translateY(-2px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 30px;
+            height: 30px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* SECTIONS GENERAL */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 2rem;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .about-content h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .about-content p {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            color: var(--crimson);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* MUSIC & VIDEOS */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: var(--crimson);
+        }
+
+        /* MERCH */
+        .merch-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .merch-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+        }
+
+        .merch-image {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, rgba(220, 20, 60, 0.1), rgba(212, 175, 55, 0.1));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 4rem;
+        }
+
+        .merch-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .merch-price {
+            font-size: 1.5rem;
+            color: var(--crimson);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        /* BAND MIZY */
+        .band-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .band-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .band-korean {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.5rem;
+            color: var(--crimson);
+            margin-bottom: 1.5rem;
+        }
+
+        .band-description {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* TEACHING */
+        .teaching-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .teaching-info {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .teaching-info h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .teaching-info p {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .teaching-topics {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .teaching-topics h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .topic-list {
+            list-style: none;
+        }
+
+        .topic-list li {
+            color: #ccc;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--glass-border);
+            font-size: 0.95rem;
+        }
+
+        .topic-list li:last-child {
+            border-bottom: none;
+        }
+
+        .topic-list li::before {
+            content: '▸ ';
+            color: var(--crimson);
+            margin-right: 0.5rem;
+        }
+
+        /* ENDORSEMENT */
+        .endorsement-banner {
+            display: block;
+            background: linear-gradient(135deg, rgba(20,14,8,0.85), rgba(40,28,12,0.85));
+            backdrop-filter: blur(14px);
+            border: 1px solid var(--gold);
+            border-radius: 14px;
+            padding: 3.5rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            box-shadow: 0 0 30px rgba(212,175,55,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .endorsement-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.15), transparent);
+            transition: left 0.8s ease;
+        }
+
+        .endorsement-banner:hover {
+            transform: translateY(-4px);
+            border-color: #f4d160;
+            box-shadow: 0 0 45px rgba(212,175,55,0.25);
+        }
+
+        .endorsement-banner:hover::before {
+            left: 100%;
+        }
+
+        .endorsement-eyebrow {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ccc;
+            margin-bottom: 0.75rem;
+        }
+
+        .endorsement-banner h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .endorsement-banner p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 1.25rem;
+        }
+
+        .endorsement-cta {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.6rem 1.5rem;
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            color: var(--gold);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .endorsement-banner:hover .endorsement-cta {
+            background: var(--gold);
+            color: #1a1208;
+        }
+
+        .hero-badge a,
+        .hero-badge {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .hero-badge a:hover {
+            color: #f4d160;
+        }
+
+        /* CONNECT */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .social-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .social-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-platform {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .social-info {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .community-button {
+            text-align: center;
+        }
+
+        /* CONTACT */
+        .contact-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-panel h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-panel p {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-email {
+            color: var(--crimson);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .contact-email:hover {
+            color: var(--gold);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark-light);
+            border-top: 1px solid var(--glass-border);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-copyright {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-korean {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        /* PARTICLE CANVAS */
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid var(--glass-border);
+                padding: 1rem 0;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 1rem 2rem;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                margin-top: 0;
+                padding-top: 60px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .teaching-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-row {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 4rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo {
+                font-size: 1.2rem;
+            }
+
+            .nav-logo-subtitle {
+                font-size: 0.55rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                gap: 0.5rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .about-image {
+                padding: 1rem;
+            }
+
+            .merch-image {
+                font-size: 3rem;
+            }
+
+            .band-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                AMI KIM
+                <div class="nav-logo-subtitle">Drummer · Artist · Creator</div>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#band">Band Mizy</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- FIXED VIDEO BACKGROUND -->
+    <video id="bgVideo" autoplay muted loop playsinline style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-10;">
+        <source src="assets/ami/video/ami_background.mp4" type="video/mp4">
+    </video>
+    <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,10,10,0.7);z-index:-9;"></div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><a href="https://www.artisanturkcymbals.com/" target="_blank" rel="noopener">Artisan Turk Cymbals Endorsed Artist</a></div>
+            <h1 class="hero-title">AMI KIM</h1>
+            <div class="hero-subtitle">아미 킴 · 드러머</div>
+            <p class="hero-tagline">Heavy metal drummer, educator, and creative force. Pushing boundaries of drum performance and teaching the next generation of musicians.</p>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/channel/UCQEBBPb7icUQo6iCEpdrkzg" class="btn btn-primary">Watch Now</a>
+                <a href="#music" class="btn btn-secondary">Listen</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2v16m-4-4l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Ami</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="assets/ami/images/ami_photo.png" alt="Drummer Ami Kim">
+            </div>
+            <div class="about-content fade-in">
+                <h3>The Journey</h3>
+                <p>Starting with piano at age 6, Ami discovered music early. By 10, she picked up the guitar, and at 15, she mastered keyboards. But when her band's drummer left, she stepped behind the kit and found her true calling.</p>
+                <p>What began as necessity became passion. Ami transformed into a master drummer, combining technical precision with creative expression. Her journey from multi-instrumentalist to drum virtuoso is a testament to dedication and artistic evolution.</p>
+                <p>Today, as an adjunct professor at Mokpo National University and an Artisan Turk Cymbals endorsed artist, Ami continues to inspire millions through her performances, covers, and teaching. She represents the fusion of classical training and modern metal performance.</p>
+                <div class="stats-row fade-in">
+                    <div class="stat">
+                        <div class="stat-number">554K+</div>
+                        <div class="stat-label">YouTube Subscribers</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100M+</div>
+                        <div class="stat-label">Total Views</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Original Albums</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music" class="fade-in">
+        <h2 class="section-title">Music</h2>
+        <div class="card-grid">
+            <a href="https://music.apple.com/us/artist/mizy/1571424881" class="card fade-in" target="_blank" rel="noopener">
+                <img src="assets/ami/images/album_free_world.png" alt="Free World" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Free World</div>
+                    <div class="card-subtitle">Band Mizy · 2nd Single</div>
+                    <div class="card-meta">2021</div>
+                </div>
+            </a>
+            <a href="https://music.apple.com/us/artist/mizy/1571424881" class="card fade-in" target="_blank" rel="noopener">
+                <img src="assets/ami/images/album_rebirth.png" alt="Rebirth" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Rebirth</div>
+                    <div class="card-subtitle">Band Mizy</div>
+                    <div class="card-meta">2021</div>
+                </div>
+            </a>
+            <a href="https://music.apple.com/us/artist/mizy/1571424881" class="card fade-in" target="_blank" rel="noopener">
+                <img src="assets/ami/images/album_power_me.png" alt="Power Me" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Power Me</div>
+                    <div class="card-subtitle">Band Mizy · 3rd Single</div>
+                    <div class="card-meta">2022</div>
+                </div>
+            </a>
+            <a href="https://music.apple.com/us/artist/mizy/1571424881" class="card fade-in" target="_blank" rel="noopener">
+                <img src="assets/ami/images/album_fly_higher.png" alt="Fly Higher" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Fly Higher</div>
+                    <div class="card-subtitle">Band Mizy · EP</div>
+                    <div class="card-meta">2023</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="fade-in">
+        <h2 class="section-title">Videos</h2>
+        <div class="card-grid">
+            <a href="https://www.youtube.com/watch?v=PC-ZdPrFzdk" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/PC-ZdPrFzdk/hqdefault.jpg" alt="Europe — The Final Countdown" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">The Final Countdown</div>
+                    <div class="card-subtitle">Europe · Drum Cover #105</div>
+                    <div class="card-meta">46M views</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Opdj-foEzlw" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/Opdj-foEzlw/hqdefault.jpg" alt="Van Halen — Jump" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Jump</div>
+                    <div class="card-subtitle">Van Halen · Drum Cover #83</div>
+                    <div class="card-meta">12M views</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=sW2TOKj6kMc" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/sW2TOKj6kMc/hqdefault.jpg" alt="Iron Maiden — Hallowed Be Thy Name" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">Hallowed Be Thy Name</div>
+                    <div class="card-subtitle">Iron Maiden · Drum Cover #26</div>
+                    <div class="card-meta">7.7M views</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=noxtsOJs4b8" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/noxtsOJs4b8/hqdefault.jpg" alt="Steelheart — She's Gone" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">She's Gone</div>
+                    <div class="card-subtitle">Steelheart · Drum Cover</div>
+                    <div class="card-meta">4.2M views</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- MERCH -->
+    <section id="merch" class="fade-in">
+        <h2 class="section-title">Merch</h2>
+        <div class="card-grid">
+            <div class="merch-card fade-in">
+                <div class="merch-image">💿</div>
+                <div class="merch-name">Full Album Collection USB</div>
+                <div class="merch-price">₩25,000</div>
+                <a href="https://www.patreon.com/amidrum" class="btn btn-secondary" target="_blank" rel="noopener">Get it</a>
+            </div>
+            <div class="merch-card fade-in">
+                <div class="merch-image">🎵</div>
+                <div class="merch-name">Wild Run — Limited Edition CD</div>
+                <div class="merch-price">₩30,000</div>
+                <a href="https://www.patreon.com/amidrum" class="btn btn-secondary" target="_blank" rel="noopener">Get it</a>
+            </div>
+            <div class="merch-card fade-in">
+                <div class="merch-image">👕</div>
+                <div class="merch-name">Drummer Ami Snare & Heel Tee</div>
+                <div class="merch-price">$28.99</div>
+                <a href="https://amidrum.creator-spring.com" class="btn btn-secondary" target="_blank" rel="noopener">Get it</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAND MIZY -->
+    <section id="band" class="fade-in">
+        <h2 class="section-title">Band Mizy</h2>
+        <div class="band-panel fade-in">
+            <div class="band-title">MIZY</div>
+            <div class="band-korean">밴드 미지</div>
+            <p class="band-description">Band Mizy represents the pinnacle of Korean heavy metal artistry. With Ami Kim on drums, the band delivers powerful, technically proficient performances that blend traditional metal with modern innovation. Their original compositions showcase intricate drum work and dynamic compositions.</p>
+            <a href="https://music.apple.com/us/artist/mizy/1571424881" class="btn btn-primary" target="_blank" rel="noopener">Explore the Music</a>
+        </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching" class="fade-in">
+        <h2 class="section-title">Teaching</h2>
+        <div class="teaching-grid">
+            <div class="teaching-info fade-in">
+                <h3>Master Your Craft</h3>
+                <p>As an adjunct professor at Mokpo National University, Ami brings decades of experience and passion to teaching. She offers personalized lessons for drummers of all levels, from beginners to advanced performers.</p>
+                <p>Whether you're interested in classical technique, metal performance, or comprehensive drum education, Ami tailors each lesson to your goals and learning style.</p>
+                <a href="https://www.patreon.com/amidrum" class="btn btn-primary" target="_blank" rel="noopener">Book a Lesson</a>
+            </div>
+            <div class="teaching-topics fade-in">
+                <h3>Topics Covered</h3>
+                <ul class="topic-list">
+                    <li>Stroke Technique & Fundamentals</li>
+                    <li>Double Bass Patterns & Endurance</li>
+                    <li>Accent Control & Dynamics</li>
+                    <li>Metal Performance Styles</li>
+                    <li>Stage Presence & Performance</li>
+                    <li>Recording Technique & Production</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENDORSEMENT -->
+    <section class="fade-in">
+        <h2 class="section-title">Official Endorsement</h2>
+        <a href="https://www.artisanturkcymbals.com/" class="endorsement-banner fade-in" target="_blank" rel="noopener">
+            <span class="endorsement-eyebrow">Handcrafted in Istanbul · 100% Hand-Hammered</span>
+            <h3>Artisan Turk Cymbals</h3>
+            <p>Proud Endorsed Artist · Since October 2021</p>
+            <span class="endorsement-cta">Visit artisanturkcymbals.com →</span>
+        </a>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="fade-in">
+        <h2 class="section-title">Connect</h2>
+        <div class="social-grid">
+            <a href="https://youtube.com/@amikim" class="social-card fade-in" target="_blank" rel="noopener">
+                <div class="social-icon">▶</div>
+                <div class="social-platform">YouTube</div>
+                <div class="social-info">554K Subscribers</div>
+            </a>
+            <a href="https://www.patreon.com/amidrum" class="social-card fade-in" target="_blank" rel="noopener">
+                <div class="social-icon">❤</div>
+                <div class="social-platform">Patreon</div>
+                <div class="social-info">Exclusive Content</div>
+            </a>
+            <a href="https://www.instagram.com/amikim_rock" class="social-card fade-in" target="_blank" rel="noopener">
+                <div class="social-icon">📷</div>
+                <div class="social-platform">Instagram</div>
+                <div class="social-info">@amikim_rock</div>
+            </a>
+            <a href="https://www.facebook.com/Ami.Kim.Drum" class="social-card fade-in" target="_blank" rel="noopener">
+                <div class="social-icon">f</div>
+                <div class="social-platform">Facebook</div>
+                <div class="social-info">Drummer Ami</div>
+            </a>
+        </div>
+        <div class="community-button">
+            <a href="https://www.patreon.com/amidrum" class="btn btn-primary" target="_blank" rel="noopener">Join the Community on Patreon</a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-panel fade-in">
+            <h3>Let's Connect</h3>
+            <p>Have questions about lessons, bookings, or collaborations? Reach out and let's create something amazing together.</p>
+            <a href="mailto:contact@amidrum.com" class="contact-email">contact@amidrum.com</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-copyright">© 2026 Ami Kim. All rights reserved.</div>
+            <div class="footer-korean">드러머 아미 · 아미 킴</div>
+        </div>
+    </footer>
+
+    <script>
+        // PARTICLE SYSTEM
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const connections = [];
+        const particleCount = 50;
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.radius = Math.random() * 2 + 1;
+                this.color = Math.random() > 0.5 ? '#dc143c' : '#d4af37';
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+                this.x = Math.max(0, Math.min(canvas.width, this.x));
+                this.y = Math.max(0, Math.min(canvas.height, this.y));
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles.length = 0;
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 150) {
+                        ctx.strokeStyle = `rgba(212, 175, 55, ${0.2 * (1 - distance / 150)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            drawConnections();
+            requestAnimationFrame(animate);
+        }
+
+        initParticles();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // NAVBAR SCROLL EFFECT
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // MOBILE MENU TOGGLE
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FADE-IN-ON-SCROLL ANIMATION
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - navbar.offsetHeight;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
