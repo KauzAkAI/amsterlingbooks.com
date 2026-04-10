@@ -23,11 +23,12 @@
 
         html {
             scroll-behavior: smooth;
+            background-color: var(--dark); /* safety fallback so nothing flashes while the iframe loads */
         }
 
         body {
             font-family: 'Rajdhani', sans-serif;
-            background-color: var(--dark);
+            background-color: transparent; /* transparent so the fixed bg video wrapper can show through */
             color: #f0f0f0;
             overflow-x: hidden;
         }
@@ -899,11 +900,17 @@
         </div>
     </nav>
 
-    <!-- FIXED VIDEO BACKGROUND -->
-    <video id="bgVideo" autoplay muted loop playsinline style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-10;">
-        <source src="assets/ami/video/ami_background.mp4" type="video/mp4">
-    </video>
-    <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,10,10,0.7);z-index:-9;"></div>
+    <!-- FIXED VIDEO BACKGROUND — Angel of Death (Slayer) drum cover, looping -->
+    <div id="bgVideoWrap" aria-hidden="true" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-10;overflow:hidden;opacity:0.85;filter:contrast(1.08) saturate(0.85) brightness(0.95);pointer-events:none;">
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/PukWu6vuRF0?autoplay=1&mute=1&loop=1&playlist=PukWu6vuRF0&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3&fs=0&cc_load_policy=0&start=8"
+            title="Angel of Death — drum cover by Ami Kim (background)"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+            style="position:absolute;top:50%;left:50%;width:177.78vh;height:56.25vw;min-width:100vw;min-height:100vh;transform:translate(-50%,-50%);border:0;pointer-events:none;"></iframe>
+    </div>
+    <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,10,10,0.55);z-index:-9;"></div>
 
     <!-- HERO -->
     <section class="hero" id="hero">
@@ -990,46 +997,105 @@
                     <div class="card-meta">2023</div>
                 </div>
             </a>
+            <a href="#ami-n-friends" class="card fade-in" style="border-color:rgba(212,175,55,0.45);box-shadow:0 0 0 1px rgba(212,175,55,0.15),0 20px 60px -20px rgba(212,175,55,0.25);position:relative;">
+                <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — with the Patrons" class="card-image">
+                <div style="position:absolute;top:0.9rem;left:0.9rem;font-family:monospace;font-size:0.58rem;font-weight:600;letter-spacing:0.18em;color:#0a0a0a;background:var(--gold);padding:0.3rem 0.55rem;border-radius:3px;z-index:3;text-transform:uppercase;">With the Patrons</div>
+                <div class="card-content">
+                    <div class="card-title">Ami n' Friends</div>
+                    <div class="card-subtitle">Drummer Ami · Original Album</div>
+                    <div class="card-meta">5 tracks</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Ami n' Friends — tracklist spotlight -->
+        <div id="ami-n-friends" class="fade-in" style="max-width:1100px;margin:4rem auto 0;display:grid;grid-template-columns:1.1fr 1.6fr;gap:3rem;align-items:center;padding:3rem;background:linear-gradient(135deg,rgba(212,175,55,0.06),rgba(10,10,10,0.4));border:1px solid rgba(212,175,55,0.2);border-radius:20px;">
+            <div style="position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,0.35);box-shadow:0 30px 80px -30px rgba(212,175,55,0.35);">
+                <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — album art" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div>
+                <div style="font-family:monospace;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem;">Featured · Album Five</div>
+                <h3 style="font-size:2rem;font-weight:600;color:#fff;margin-bottom:0.4rem;letter-spacing:-0.01em;">Ami n' Friends</h3>
+                <p style="font-size:0.95rem;color:rgba(255,255,255,0.62);margin-bottom:1.6rem;line-height:1.55;">
+                    The album she made with her community. Vocals, piano, keys, drums &mdash;
+                    all Ami. Five original songs written, performed, and produced with her Patrons.
+                </p>
+                <ul style="list-style:none;padding:0;margin:0;border-top:1px solid rgba(255,255,255,0.1);">
+                    <li style="display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;">
+                        <span style="font-family:monospace;font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;">01</span>
+                        <span><span style="font-weight:500;color:#fff;">Music</span><span style="display:block;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.15rem;">Vocals &middot; Piano</span></span>
+                        <span style="font-family:monospace;font-size:0.72rem;color:rgba(255,255,255,0.45);letter-spacing:0.08em;">&middot;&middot;&middot;</span>
+                    </li>
+                    <li style="display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;">
+                        <span style="font-family:monospace;font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;">02</span>
+                        <span><span style="font-weight:500;color:#fff;">Sparkle Eyes</span><span style="display:block;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.15rem;">Vocal showcase</span></span>
+                        <span style="font-family:monospace;font-size:0.72rem;color:rgba(255,255,255,0.45);letter-spacing:0.08em;">459 plays</span>
+                    </li>
+                    <li style="display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;">
+                        <span style="font-family:monospace;font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;">03</span>
+                        <span><span style="font-weight:500;color:#fff;">Journey of Soul</span><span style="display:block;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.15rem;">Piano &middot; Vocals &middot; Drums</span></span>
+                        <span style="font-family:monospace;font-size:0.72rem;color:rgba(255,255,255,0.45);letter-spacing:0.08em;">608 plays</span>
+                    </li>
+                    <li style="display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;">
+                        <span style="font-family:monospace;font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;">04</span>
+                        <span><span style="font-weight:500;color:#fff;">To a Peaceful World</span><span style="display:block;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.15rem;">Drums &middot; Keys &middot; Drum solo @ 4:00</span></span>
+                        <span style="font-family:monospace;font-size:0.72rem;color:rgba(255,255,255,0.45);letter-spacing:0.08em;">380 plays</span>
+                    </li>
+                    <li style="display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;padding:0.85rem 0;color:#fff;">
+                        <span style="font-family:monospace;font-size:0.7rem;color:var(--gold);letter-spacing:0.1em;">05</span>
+                        <span><span style="font-weight:500;color:#fff;">Hope for the Future</span><span style="display:block;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.15rem;">Vocals &middot; Keys</span></span>
+                        <span style="font-family:monospace;font-size:0.72rem;color:rgba(255,255,255,0.45);letter-spacing:0.08em;">363 plays</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- VIDEOS -->
+    <!-- VIDEOS — Selected by Ami, her four picks -->
     <section id="videos" class="fade-in">
-        <h2 class="section-title">Videos</h2>
+        <h2 class="section-title">Selected by Ami</h2>
+        <p class="fade-in" style="max-width:720px;margin:0 auto 2.5rem;text-align:center;color:rgba(255,255,255,0.72);font-size:1.05rem;line-height:1.6;">
+            Four songs she wants you to hear first &mdash; <em>chosen by Ami herself</em>.
+            Not the most viewed. Not the most famous. These are the ones she's proudest of.
+        </p>
         <div class="card-grid">
-            <a href="https://www.youtube.com/watch?v=PC-ZdPrFzdk" class="card fade-in" target="_blank" rel="noopener">
-                <img src="https://img.youtube.com/vi/PC-ZdPrFzdk/hqdefault.jpg" alt="Europe — The Final Countdown" class="card-image">
+            <a href="https://www.youtube.com/watch?v=PukWu6vuRF0" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/PukWu6vuRF0/hqdefault.jpg" alt="Slayer — Angel of Death, drum cover by Ami Kim" class="card-image">
                 <div class="card-content">
-                    <div class="card-title">The Final Countdown</div>
-                    <div class="card-subtitle">Europe · Drum Cover #105</div>
-                    <div class="card-meta">46M views</div>
+                    <div class="card-title">Angel of Death</div>
+                    <div class="card-subtitle">Slayer · Drum Cover</div>
+                    <div class="card-meta" style="color:var(--gold);">HER FIRST PICK</div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=Opdj-foEzlw" class="card fade-in" target="_blank" rel="noopener">
-                <img src="https://img.youtube.com/vi/Opdj-foEzlw/hqdefault.jpg" alt="Van Halen — Jump" class="card-image">
+            <a href="https://www.youtube.com/watch?v=fB7b3xpfaws" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/fB7b3xpfaws/hqdefault.jpg" alt="Muse — Time Is Running Out, drum cover by Ami Kim" class="card-image">
                 <div class="card-content">
-                    <div class="card-title">Jump</div>
-                    <div class="card-subtitle">Van Halen · Drum Cover #83</div>
-                    <div class="card-meta">12M views</div>
+                    <div class="card-title">Time Is Running Out</div>
+                    <div class="card-subtitle">Muse · Drum Cover</div>
+                    <div class="card-meta">Groove · Restraint · Precision</div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=sW2TOKj6kMc" class="card fade-in" target="_blank" rel="noopener">
-                <img src="https://img.youtube.com/vi/sW2TOKj6kMc/hqdefault.jpg" alt="Iron Maiden — Hallowed Be Thy Name" class="card-image">
+            <a href="https://www.youtube.com/watch?v=90hteUJWquc" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/90hteUJWquc/hqdefault.jpg" alt="Guns N' Roses — Don't Cry, full-band cover by Ami Kim" class="card-image">
                 <div class="card-content">
-                    <div class="card-title">Hallowed Be Thy Name</div>
-                    <div class="card-subtitle">Iron Maiden · Drum Cover #26</div>
-                    <div class="card-meta">7.7M views</div>
+                    <div class="card-title">Don't Cry</div>
+                    <div class="card-subtitle">Guns N' Roses · Full-Band Cover #70-3</div>
+                    <div class="card-meta" style="color:var(--gold);">ONE WOMAN · WHOLE BAND</div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=noxtsOJs4b8" class="card fade-in" target="_blank" rel="noopener">
-                <img src="https://img.youtube.com/vi/noxtsOJs4b8/hqdefault.jpg" alt="Steelheart — She's Gone" class="card-image">
+            <a href="https://www.youtube.com/watch?v=6-rnI_XY9jo" class="card fade-in" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/6-rnI_XY9jo/hqdefault.jpg" alt="Deep Purple — Burn, drum cover by Ami Kim" class="card-image">
                 <div class="card-content">
-                    <div class="card-title">She's Gone</div>
-                    <div class="card-subtitle">Steelheart · Drum Cover</div>
-                    <div class="card-meta">4.2M views</div>
+                    <div class="card-title">Burn</div>
+                    <div class="card-subtitle">Deep Purple · Drum Cover #103</div>
+                    <div class="card-meta">Classic Rock Firepower</div>
                 </div>
             </a>
         </div>
+        <p class="fade-in" style="max-width:720px;margin:2.5rem auto 0;text-align:center;color:rgba(255,255,255,0.62);font-size:0.95rem;line-height:1.65;font-style:italic;">
+            On &ldquo;Don't Cry&rdquo; &mdash; drums, rhythm guitar, bass, and lead vocals. All Ami. In perfect English.
+            A reminder that she isn't just a drummer. She's an entire band.
+        </p>
     </section>
 
     <!-- MERCH -->
