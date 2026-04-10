@@ -931,39 +931,26 @@ section.content {
     0 0 0 1px rgba(212, 169, 74, 0.08),
     inset 0 0 120px rgba(92, 40, 23, 0.3);
 }
-.contrast-video-wrap video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: contrast(1.05) saturate(0.92);
-}
-.contrast-video-wrap::after {
-  content: '';
+.contrast-video-wrap iframe {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 60%,
-    rgba(10, 8, 7, 0.85) 100%
-  );
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #000;
 }
+/* Caption sits BELOW the embed, not on top — YouTube needs its chrome clean */
 .contrast-video-label {
-  position: absolute;
-  bottom: 1.4rem;
-  left: 1.6rem;
-  right: 1.6rem;
-  z-index: 3;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--gold);
-  pointer-events: none;
 }
 .contrast-video-label .track {
   color: var(--bone);
@@ -972,52 +959,6 @@ section.content {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: none;
-}
-/* Click-to-play overlay button on piano video */
-.piano-play-btn {
-  position: absolute;
-  inset: 0;
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  background: radial-gradient(ellipse at center,
-    rgba(10, 8, 7, 0.25) 0%,
-    rgba(10, 8, 7, 0.55) 100%);
-  border: none;
-  cursor: pointer;
-  color: var(--gold);
-  transition: opacity 0.5s ease, background 0.4s ease, color 0.4s ease;
-  font-family: 'JetBrains Mono', monospace;
-}
-.piano-play-btn svg {
-  width: clamp(72px, 12vw, 108px);
-  height: auto;
-  filter: drop-shadow(0 8px 32px rgba(212, 169, 74, 0.35))
-          drop-shadow(0 0 24px rgba(122, 0, 0, 0.3));
-  transition: transform 0.4s ease;
-}
-.piano-play-btn:hover {
-  background: radial-gradient(ellipse at center,
-    rgba(10, 8, 7, 0.15) 0%,
-    rgba(10, 8, 7, 0.45) 100%);
-  color: var(--crimson);
-}
-.piano-play-btn:hover svg {
-  transform: scale(1.08);
-}
-.piano-play-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--bone);
-  opacity: 0.92;
-}
-.piano-play-btn.hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 .contrast-bg-note {
   position: absolute;
@@ -1328,17 +1269,16 @@ footer {
       <p>This is what the other side sounds like. Slow. Warm. A hard turn from the loudest thing on her channel. Same musician. Same hands. Different weight behind every note.</p>
       <div class="ko-quiet">클래식 작곡가 · 드러머 · 둘 다</div>
     </div>
-    <div class="contrast-video-wrap reveal" id="pianoWrap">
-      <video id="pianoVideo" loop playsinline preload="metadata" poster="assets/ami/images/ami_piano_poster.jpg">
-        <source src="assets/ami/video/ami_piano.mp4" type="video/mp4">
-      </video>
-      <button class="piano-play-btn" id="pianoPlayBtn" aria-label="Play piano composition with sound">
-        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2"/>
-          <path d="M32 26 L56 40 L32 54 Z" fill="currentColor"/>
-        </svg>
-        <span class="piano-play-label">PLAY WITH SOUND</span>
-      </button>
+    <div class="contrast-video-holder reveal">
+      <div class="contrast-video-wrap" id="pianoWrap">
+        <iframe
+          src="https://www.youtube.com/embed/YzoJ39X7DzY?rel=0&modestbranding=1&playsinline=1&color=white"
+          title="Ami Kim — solo piano composition"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
       <div class="contrast-video-label">
         <span>LIVE · COMPOSITION</span>
         <span class="track">Piano, solo.</span>
@@ -1484,35 +1424,7 @@ window.addEventListener('load', () => {
   setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1500);
 });
 
-// ---------- PIANO VIDEO — click-to-play with sound ----------
-(() => {
-  const pianoVideo = document.getElementById('pianoVideo');
-  const pianoBtn   = document.getElementById('pianoPlayBtn');
-  if (!pianoVideo || !pianoBtn) return;
-
-  pianoBtn.addEventListener('click', () => {
-    pianoVideo.muted = false;
-    pianoVideo.volume = 0.85;
-    pianoVideo.currentTime = 0;
-    const p = pianoVideo.play();
-    if (p && typeof p.then === 'function') {
-      p.then(() => {
-        pianoBtn.classList.add('hidden');
-      }).catch(() => {
-        // Fallback: if unmuted play is blocked, play muted and try to unmute on interaction
-        pianoVideo.muted = true;
-        pianoVideo.play().then(() => pianoBtn.classList.add('hidden'));
-      });
-    } else {
-      pianoBtn.classList.add('hidden');
-    }
-  });
-
-  // If the user scrolls far away while playing, auto-pause to be polite.
-  pianoVideo.addEventListener('pause', () => {
-    if (pianoVideo.ended) pianoBtn.classList.remove('hidden');
-  });
-})();
+// Piano video: native YouTube iframe handles all playback — no custom JS needed.
 
 // ---------- LENIS SMOOTH SCROLL ----------
 const lenis = new Lenis({
