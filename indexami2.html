@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMI KIM — Drummer · Artist · Creator</title>
+<meta name="description" content="Heavy metal drummer, Artisan Turk Cymbals endorsed artist, classical composition virtuoso. The official site of Ami Kim.">
+
+<!-- Variable fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+
+<!-- Libraries (2026 stack) -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<style>
+:root {
+  --ink: #0a0807;
+  --ink-2: #14100c;
+  --crimson: #7a0000;
+  --crimson-bright: #a31717;
+  --gold: #d4a94a;
+  --gold-bright: #e8c464;
+  --rosewood: #5c2817;
+  --rosewood-dark: #3d1a0f;
+  --bone: #f5f0e8;
+  --bone-dim: rgba(245, 240, 232, 0.6);
+  --glass: rgba(20, 16, 12, 0.55);
+  --glass-border: rgba(212, 169, 74, 0.18);
+  --glass-border-hot: rgba(212, 169, 74, 0.5);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: #0a0807;
+  color: var(--bone);
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Lenis smooth scroll setup */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Hide native cursor on desktop for custom cursor */
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
+
+/* Custom cursor */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: var(--gold-bright);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+}
+.cursor-ring.hover {
+  width: 64px; height: 64px;
+  border-color: var(--crimson-bright);
+  background: rgba(163, 23, 23, 0.1);
+}
+
+/* Grain overlay — 2026 must-have */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+}
+
+/* Gradient mesh animated background */
+.mesh-bg {
+  position: fixed;
+  inset: -20%;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 30%, rgba(122, 0, 0, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 80% 70%, rgba(92, 40, 23, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(212, 169, 74, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 100%);
+  filter: blur(60px);
+  animation: mesh-drift 30s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes mesh-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-3%, 2%) scale(1.1); }
+  100% { transform: translate(3%, -2%) scale(1); }
+}
+
+/* Fixed video background — layered above mesh-bg */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.35;
+  filter: contrast(1.1) saturate(0.85);
+  pointer-events: none;
+}
+.bg-video-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse at center, transparent 0%, rgba(10, 8, 7, 0.4) 60%, rgba(10, 8, 7, 0.92) 100%),
+    linear-gradient(180deg, rgba(10, 8, 7, 0.5) 0%, transparent 30%, transparent 70%, rgba(10, 8, 7, 0.8) 100%);
+  pointer-events: none;
+}
+
+/* Three.js canvas sits above video/mask but below content */
+#three-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Content wrapper — everything sits above the background stack */
+.page-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Loading screen */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--ink);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+.loader.hidden { opacity: 0; visibility: hidden; }
+.loader-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.loader-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--crimson) 0%, var(--gold) 100%);
+  width: 0;
+  animation: load-progress 1.8s ease-out forwards;
+}
+@keyframes load-progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Navigation — dark glass */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  padding: 1.2rem 3rem;
+  background: rgba(10, 8, 7, 0.4);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+nav.scrolled { background: rgba(10, 8, 7, 0.85); }
+
+.nav-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.25em;
+  color: var(--bone);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-logo span {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--bone-dim);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold-bright); }
+.nav-links a:hover::after { width: 100%; }
+
+/* HERO — the over-the-top centerpiece */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* Custom wordmark image — Nano Banana generated */
+.hero-wordmark {
+  display: block;
+  width: clamp(280px, 78vw, 1200px);
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  filter: drop-shadow(0 30px 80px rgba(122, 0, 0, 0.35))
+          drop-shadow(0 0 120px rgba(212, 169, 74, 0.12));
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero-korean {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-top: 2rem;
+  opacity: 0;
+}
+
+.hero-tagline {
+  max-width: 600px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--bone-dim);
+  margin: 2rem 0 3rem;
+  opacity: 0;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.4rem;
+  background: rgba(212, 169, 74, 0.08);
+  border: 1px solid var(--glass-border-hot);
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+}
+.hero-badge:hover {
+  background: rgba(212, 169, 74, 0.15);
+  transform: translateY(-2px);
+}
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--gold-bright);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--gold-bright);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary {
+  background: var(--crimson);
+  color: var(--bone);
+  border: 1px solid var(--crimson-bright);
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--crimson-bright) 0%, var(--rosewood) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary span { position: relative; z-index: 1; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(122, 0, 0, 0.5); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--bone);
+  border: 1px solid var(--glass-border-hot);
+  backdrop-filter: blur(10px);
+}
+.btn-secondary:hover {
+  background: rgba(212, 169, 74, 0.1);
+  border-color: var(--gold);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0;
+}
+.scroll-indicator::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--gold) 0%, transparent 100%);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+@keyframes scroll-pulse {
+  0%, 100% { transform: scaleY(1); transform-origin: top; }
+  50% { transform: scaleY(0.4); transform-origin: top; }
+}
+
+/* Infinite marquee */
+.marquee {
+  padding: 2.5rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  overflow: hidden;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+.marquee-track {
+  display: inline-flex;
+  gap: 4rem;
+  animation: marquee 40s linear infinite;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.marquee-track span { display: inline-flex; align-items: center; gap: 4rem; }
+.marquee-track .divider {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--crimson);
+}
+.marquee-track .outline-text {
+  -webkit-text-stroke: 1.5px var(--gold);
+  color: transparent;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Section setup */
+section.content {
+  padding: 8rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--bone);
+  margin-bottom: 3rem;
+}
+
+/* STATS COUNTER SECTION */
+.stats {
+  padding: 6rem 3rem;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.3);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.stat-item {
+  text-align: left;
+}
+.stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--bone);
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: baseline;
+}
+.stat-num .suffix {
+  color: var(--gold);
+  font-size: 0.6em;
+  margin-left: 0.1em;
+}
+.stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  margin-top: 0.8rem;
+}
+
+/* BENTO GRID — the main content */
+.bento {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 180px;
+  gap: 1.2rem;
+}
+
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 169, 74, 0.08) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.card:hover {
+  border-color: var(--glass-border-hot);
+  box-shadow: 0 20px 60px rgba(122, 0, 0, 0.3);
+}
+.card:hover::before { opacity: 1; }
+
+.card-about { grid-column: span 3; grid-row: span 3; }
+.card-endorse { grid-column: span 3; grid-row: span 2; }
+.card-stats { grid-column: span 2; grid-row: span 1; }
+.card-video { grid-column: span 4; grid-row: span 2; }
+.card-cymbals { grid-column: span 2; grid-row: span 2; }
+.card-band { grid-column: span 3; grid-row: span 1; }
+.card-teach { grid-column: span 3; grid-row: span 1; }
+
+.card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--bone);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+.card-body {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--bone-dim);
+}
+.card-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.card-cta {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+.card-cta:hover { gap: 0.9rem; }
+.card-cta::after { content: '→'; font-size: 0.9rem; }
+
+.card-about .portrait {
+  position: absolute;
+  top: 0; right: 0;
+  width: 45%;
+  height: 100%;
+  background:
+    linear-gradient(270deg, transparent 0%, rgba(20, 16, 12, 0.8) 100%),
+    url('assets/ami/images/ami_photo.png') center/cover;
+  opacity: 0.7;
+}
+.card-endorse {
+  background:
+    linear-gradient(135deg, rgba(122, 0, 0, 0.3) 0%, rgba(92, 40, 23, 0.5) 100%),
+    var(--glass);
+}
+.card-video .play-icon {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: rgba(212, 169, 74, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border-hot);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.card-video:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: rgba(212, 169, 74, 0.25);
+}
+.card-video .play-icon::before {
+  content: '';
+  border-left: 20px solid var(--gold-bright);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+.card-cymbals {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(212, 169, 74, 0.2) 0%, transparent 60%),
+    var(--glass);
+}
+.card-cymbals .cymbal-viz {
+  position: absolute;
+  top: 50%; right: -30%;
+  transform: translateY(-50%);
+  width: 260px; height: 260px;
+  border: 2px solid rgba(212, 169, 74, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(212, 169, 74, 0.2), inset 0 0 60px rgba(212, 169, 74, 0.1);
+  animation: rotate-slow 20s linear infinite;
+}
+.card-cymbals .cymbal-viz::before,
+.card-cymbals .cymbal-viz::after {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border: 1px solid rgba(212, 169, 74, 0.2);
+  border-radius: 50%;
+}
+.card-cymbals .cymbal-viz::after { inset: 30%; }
+@keyframes rotate-slow {
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* YouTube top videos grid */
+.videos {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.video-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+}
+.video-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--glass-border-hot);
+  box-shadow: 0 30px 60px -20px rgba(122, 0, 0, 0.45);
+}
+.video-thumb {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+.video-card:hover .video-thumb img { transform: scale(1.08); }
+.video-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(10, 8, 7, 0.85) 100%);
+  pointer-events: none;
+}
+.video-play-icon {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 62px; height: 62px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(10, 8, 7, 0.72);
+  border: 1.5px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
+  backdrop-filter: blur(4px);
+}
+.video-play-icon::before {
+  content: '';
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent var(--gold);
+  margin-left: 4px;
+}
+.video-card:hover .video-play-icon {
+  background: var(--crimson);
+  border-color: var(--bone);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+.video-card:hover .video-play-icon::before {
+  border-left-color: var(--bone);
+}
+.video-info {
+  padding: 1.2rem 1.3rem 1.4rem;
+  position: relative;
+  z-index: 2;
+}
+.video-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--bone);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+.video-artist {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(232, 226, 217, 0.6);
+  margin-bottom: 0.8rem;
+}
+.video-views {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.video-views::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--crimson);
+  box-shadow: 0 0 10px var(--crimson);
+}
+
+/* Music albums section */
+.albums {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.album {
+  aspect-ratio: 1;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+.album:hover {
+  transform: translateY(-8px);
+  border-color: var(--glass-border-hot);
+}
+.album img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.album:hover img { transform: scale(1.08); }
+.album::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(10, 8, 7, 0.9) 100%);
+  pointer-events: none;
+}
+.album-title {
+  position: absolute;
+  bottom: 1.2rem; left: 1.2rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--bone);
+  z-index: 2;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   PIANO / CONTRAST SECTION — "The Other Side"
+   A full-bleed split showing her classical side
+   as a sharp counterpoint to the metal.
+   ======================================== */
+.contrast {
+  position: relative;
+  padding: 8rem 3rem;
+  overflow: hidden;
+}
+.contrast-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.contrast-copy .eyebrow {
+  margin-bottom: 1.2rem;
+}
+.contrast-copy h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.8rem;
+  color: var(--bone);
+}
+.contrast-copy h2 em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--gold);
+  font-variation-settings: "wght" 700;
+}
+.contrast-copy p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--bone-dim);
+  max-width: 520px;
+  margin-bottom: 1.2rem;
+}
+.contrast-copy .ko-quiet {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.contrast-video-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  background: #0a0807;
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    0 40px 80px -20px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(212, 169, 74, 0.08),
+    inset 0 0 120px rgba(92, 40, 23, 0.3);
+}
+.contrast-video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.05) saturate(0.92);
+}
+.contrast-video-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    rgba(10, 8, 7, 0.85) 100%
+  );
+  pointer-events: none;
+}
+.contrast-video-label {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.6rem;
+  right: 1.6rem;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  pointer-events: none;
+}
+.contrast-video-label .track {
+  color: var(--bone);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+/* Click-to-play overlay button on piano video */
+.piano-play-btn {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background: radial-gradient(ellipse at center,
+    rgba(10, 8, 7, 0.25) 0%,
+    rgba(10, 8, 7, 0.55) 100%);
+  border: none;
+  cursor: pointer;
+  color: var(--gold);
+  transition: opacity 0.5s ease, background 0.4s ease, color 0.4s ease;
+  font-family: 'JetBrains Mono', monospace;
+}
+.piano-play-btn svg {
+  width: clamp(72px, 12vw, 108px);
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(212, 169, 74, 0.35))
+          drop-shadow(0 0 24px rgba(122, 0, 0, 0.3));
+  transition: transform 0.4s ease;
+}
+.piano-play-btn:hover {
+  background: radial-gradient(ellipse at center,
+    rgba(10, 8, 7, 0.15) 0%,
+    rgba(10, 8, 7, 0.45) 100%);
+  color: var(--crimson);
+}
+.piano-play-btn:hover svg {
+  transform: scale(1.08);
+}
+.piano-play-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--bone);
+  opacity: 0.92;
+}
+.piano-play-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.contrast-bg-note {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  opacity: 0.6;
+  writing-mode: vertical-rl;
+}
+
+/* Footer */
+footer {
+  padding: 6rem 3rem 3rem;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 1;
+}
+.footer-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-brand h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+.footer-brand .ko {
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  margin-bottom: 1.2rem;
+}
+.footer-brand p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--bone-dim);
+  max-width: 360px;
+}
+.footer-col h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+.footer-col a {
+  display: block;
+  color: var(--bone-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+.footer-col a:hover { color: var(--gold-bright); }
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--bone-dim);
+  text-transform: uppercase;
+}
+
+/* Reveal animations — set before ScrollTrigger grabs them */
+.reveal { opacity: 0; transform: translateY(40px); }
+.split-char { display: inline-block; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+  .card-about, .card-endorse, .card-stats, .card-video, .card-cymbals, .card-band, .card-teach {
+    grid-column: span 2; grid-row: auto;
+    min-height: 280px;
+  }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .albums { grid-template-columns: repeat(2, 1fr); }
+  .videos { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  section.content, .stats { padding: 5rem 1.5rem; }
+  .contrast { padding: 5rem 1.5rem; }
+  .contrast-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .contrast-bg-note { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Loading screen -->
+<div class="loader" id="loader">
+  <div class="loader-text">LOADING · DRUMMER AMI</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Grain overlay (SVG filter for film grain) -->
+<svg class="grain" xmlns="http://www.w3.org/2000/svg">
+  <filter id="noiseFilter">
+    <feTurbulence type="fractalNoise" baseFrequency="1.8" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+</svg>
+
+<!-- Gradient mesh background -->
+<div class="mesh-bg"></div>
+
+<!-- Three.js 3D scene canvas -->
+<canvas id="three-canvas"></canvas>
+
+<!-- Fixed video background -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="assets/ami/video/ami_background.mp4" type="video/mp4">
+</video>
+<div class="bg-video-mask"></div>
+
+<!-- PAGE CONTENT WRAPPER — sits above video/mesh/canvas stack -->
+<div class="page-content">
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">
+    AMI KIM
+    <span>DRUMMER · COMPOSER · ARTIST</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#piano">Piano</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#cymbals">Cymbals</a></li>
+    <li><a href="#connect">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <a href="https://www.artisanturkcymbals.com/" target="_blank" rel="noopener" class="hero-badge" data-magnetic>
+    ARTISAN TURK CYMBALS · ENDORSED ARTIST
+  </a>
+  <div class="hero-eyebrow">SEOUL · SOUTH KOREA</div>
+  <h1 class="hero-name-wrap" id="heroName" aria-label="DRUMMER AMI">
+    <img src="assets/ami/images/drummer_ami_wordmark.png"
+         alt="DRUMMER AMI"
+         class="hero-wordmark"
+         id="heroWordmark">
+  </h1>
+  <div class="hero-korean">아미 킴 · 드러머 · 작곡가</div>
+  <p class="hero-tagline">Heavy metal drummer. Classical composition virtuoso. Artisan Turk Cymbals endorsed. Building something different, one hit at a time.</p>
+  <div class="hero-buttons">
+    <a href="https://www.youtube.com/channel/UCQEBBPb7icUQo6iCEpdrkzg" class="btn btn-primary" data-magnetic><span>Watch the Work</span></a>
+    <a href="#music" class="btn btn-secondary" data-magnetic>Listen</a>
+  </div>
+  <div class="scroll-indicator">SCROLL</div>
+</section>
+
+<!-- INFINITE MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>
+      550K+ SUBSCRIBERS
+      <div class="divider"></div>
+      <span class="outline-text">100M+ VIEWS</span>
+      <div class="divider"></div>
+      ARTISAN TURK CYMBALS
+      <div class="divider"></div>
+      <span class="outline-text">CLASSICAL COMPOSITION MAJOR</span>
+      <div class="divider"></div>
+      SINCE 2021
+      <div class="divider"></div>
+      <span class="outline-text">CUSTOM BUILT STUDIO</span>
+      <div class="divider"></div>
+      SEOUL · SOUTH KOREA
+      <div class="divider"></div>
+    </span>
+    <span>
+      550K+ SUBSCRIBERS
+      <div class="divider"></div>
+      <span class="outline-text">100M+ VIEWS</span>
+      <div class="divider"></div>
+      ARTISAN TURK CYMBALS
+      <div class="divider"></div>
+      <span class="outline-text">CLASSICAL COMPOSITION MAJOR</span>
+      <div class="divider"></div>
+      SINCE 2021
+      <div class="divider"></div>
+      <span class="outline-text">CUSTOM BUILT STUDIO</span>
+      <div class="divider"></div>
+      SEOUL · SOUTH KOREA
+      <div class="divider"></div>
+    </span>
+  </div>
+</div>
+
+<!-- STATS COUNTER -->
+<section class="stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="554">0</span><span class="suffix">K+</span></div>
+      <div class="stat-label">YouTube Subscribers</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="100">0</span><span class="suffix">M+</span></div>
+      <div class="stat-label">Total Views</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="13">0</span></div>
+      <div class="stat-label">Artisan Turk Cymbals</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="15">0</span></div>
+      <div class="stat-label">Years Drumming</div>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO GRID -->
+<section class="content" id="work">
+  <div class="eyebrow reveal">THE WORK</div>
+  <h2 class="section-title reveal" data-scramble>What She Does</h2>
+  <div class="bento">
+    <div class="card card-about reveal">
+      <div class="card-label">01 · ABOUT</div>
+      <div class="card-title">Classically trained.<br/>Metal certified.</div>
+      <div class="card-body" style="max-width:55%;">From piano at six to drums at fifteen, Ami moved through every instrument her conservatory asked her to master. She chose metal because nothing else let her hit that hard. Adjunct professor at Mokpo National University. Composer, drummer, artist.</div>
+      <a href="#about" class="card-cta">Read the story</a>
+      <div class="portrait"></div>
+    </div>
+    <div class="card card-endorse reveal" id="cymbals">
+      <div class="card-label">02 · ENDORSEMENT</div>
+      <div class="card-title">Artisan Turk Cymbals</div>
+      <div class="card-body">Handcrafted in Istanbul. 100% hand-hammered. Endorsed artist since October 2021. Every cymbal in her kit tells a story older than she is.</div>
+      <a href="https://www.artisanturkcymbals.com/" target="_blank" class="card-cta">Visit artisanturkcymbals.com</a>
+    </div>
+    <div class="card card-stats reveal">
+      <div class="card-label">03 · REACH</div>
+      <div class="card-number">554K</div>
+      <div class="card-body">YouTube subscribers and growing</div>
+    </div>
+    <div class="card card-video reveal">
+      <div class="card-label">04 · LATEST COVER</div>
+      <div class="card-title">Drum Cover · Heavy Edition</div>
+      <div class="card-body">Full kit performance recorded in the shipping container studio.</div>
+      <div class="play-icon"></div>
+    </div>
+    <div class="card card-cymbals reveal">
+      <div class="card-label">05 · THE STUDIO</div>
+      <div class="card-title">Custom Built. Full Kit. No Label.</div>
+      <div class="card-body">Every take you hear is tracked and mixed inside a studio she designed and built herself, in Seoul, on her terms. No producer in the room. No label over her shoulder. Just the kit, the mics, and a drummer who knows exactly what she wants the song to sound like.</div>
+      <div class="cymbal-viz"></div>
+    </div>
+    <div class="card card-band reveal">
+      <div class="card-label">06 · BAND MIZY</div>
+      <div class="card-title">Three-piece. Loud. Unstoppable.</div>
+    </div>
+    <div class="card card-teach reveal">
+      <div class="card-label">07 · TEACHING</div>
+      <div class="card-title">Mokpo National University · Adjunct Professor</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTRAST / PIANO — the classical side -->
+<section class="contrast" id="piano">
+  <div class="contrast-bg-note">THE · OTHER · SIDE</div>
+  <div class="contrast-inner">
+    <div class="contrast-copy reveal">
+      <div class="eyebrow">08 · THE OTHER SIDE</div>
+      <h2>She hits hard.<br/>Then she plays it <em>soft</em>.</h2>
+      <p>Before the double bass and the cymbals, there was a piano and a six-year-old girl with small hands and long practice afternoons. The metal kit is what most of the world sees — the classical composition degree is how she got there.</p>
+      <p>This is what the other side sounds like. Slow. Warm. A hard turn from the loudest thing on her channel. Same musician. Same hands. Different weight behind every note.</p>
+      <div class="ko-quiet">클래식 작곡가 · 드러머 · 둘 다</div>
+    </div>
+    <div class="contrast-video-wrap reveal" id="pianoWrap">
+      <video id="pianoVideo" loop playsinline preload="metadata" poster="assets/ami/images/ami_piano_poster.jpg">
+        <source src="assets/ami/video/ami_piano.mp4" type="video/mp4">
+      </video>
+      <button class="piano-play-btn" id="pianoPlayBtn" aria-label="Play piano composition with sound">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 26 L56 40 L32 54 Z" fill="currentColor"/>
+        </svg>
+        <span class="piano-play-label">PLAY WITH SOUND</span>
+      </button>
+      <div class="contrast-video-label">
+        <span>LIVE · COMPOSITION</span>
+        <span class="track">Piano, solo.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP YOUTUBE VIDEOS — her main accomplishment -->
+<section class="content" id="videos">
+  <div class="eyebrow reveal">MOST VIEWED · YOUTUBE</div>
+  <h2 class="section-title reveal" data-scramble>The Big Four</h2>
+  <p class="reveal" style="max-width: 720px; color: rgba(232,226,217,0.72); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;">
+    Four drum covers. Nearly <strong style="color: var(--gold);">70 million views</strong> combined.
+    This is what made the rest of the world stop scrolling.
+  </p>
+  <div class="videos">
+    <a href="https://www.youtube.com/watch?v=PC-ZdPrFzdk" class="video-card reveal" target="_blank" rel="noopener">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/PC-ZdPrFzdk/hqdefault.jpg" alt="The Final Countdown — Europe, drum cover by Ami Kim">
+        <div class="video-play-icon"></div>
+      </div>
+      <div class="video-info">
+        <div class="video-title">The Final Countdown</div>
+        <div class="video-artist">Europe · Drum Cover #105</div>
+        <div class="video-views">46M views</div>
+      </div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=Opdj-foEzlw" class="video-card reveal" target="_blank" rel="noopener">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/Opdj-foEzlw/hqdefault.jpg" alt="Jump — Van Halen, drum cover by Ami Kim">
+        <div class="video-play-icon"></div>
+      </div>
+      <div class="video-info">
+        <div class="video-title">Jump</div>
+        <div class="video-artist">Van Halen · Drum Cover #83</div>
+        <div class="video-views">12M views</div>
+      </div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=sW2TOKj6kMc" class="video-card reveal" target="_blank" rel="noopener">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/sW2TOKj6kMc/hqdefault.jpg" alt="Hallowed Be Thy Name — Iron Maiden, drum cover by Ami Kim">
+        <div class="video-play-icon"></div>
+      </div>
+      <div class="video-info">
+        <div class="video-title">Hallowed Be Thy Name</div>
+        <div class="video-artist">Iron Maiden · Drum Cover #26</div>
+        <div class="video-views">7.7M views</div>
+      </div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=noxtsOJs4b8" class="video-card reveal" target="_blank" rel="noopener">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/noxtsOJs4b8/hqdefault.jpg" alt="She's Gone — Steelheart, drum cover by Ami Kim">
+        <div class="video-play-icon"></div>
+      </div>
+      <div class="video-info">
+        <div class="video-title">She's Gone</div>
+        <div class="video-artist">Steelheart · Drum Cover</div>
+        <div class="video-views">4.2M views</div>
+      </div>
+    </a>
+  </div>
+  <div class="reveal" style="max-width: 720px; margin-top: 2.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,226,217,0.45);">
+    → <a href="https://www.youtube.com/@drummer.ami" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold);">See the full channel · 554K subscribers</a>
+  </div>
+</section>
+
+<!-- MUSIC / ALBUMS -->
+<section class="content" id="music">
+  <div class="eyebrow reveal">THE CATALOG</div>
+  <h2 class="section-title reveal" data-scramble>Released Work</h2>
+  <div class="albums">
+    <div class="album reveal">
+      <img src="assets/ami/images/album_fly_higher.png" alt="Fly Higher">
+      <div class="album-title">Fly Higher</div>
+    </div>
+    <div class="album reveal">
+      <img src="assets/ami/images/album_free_world.png" alt="Free World">
+      <div class="album-title">Free World</div>
+    </div>
+    <div class="album reveal">
+      <img src="assets/ami/images/album_power_me.png" alt="Power Me">
+      <div class="album-title">Power Me</div>
+    </div>
+    <div class="album reveal">
+      <img src="assets/ami/images/album_rebirth.png" alt="Rebirth">
+      <div class="album-title">Rebirth</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="connect">
+  <div class="footer-grid">
+    <div class="footer-brand reveal">
+      <h3>AMI KIM</h3>
+      <div class="ko">아미 킴 · 드러머</div>
+      <p>Heavy metal drummer, classical composer, and Artisan Turk Cymbals endorsed artist. Based in Seoul, South Korea. Available for collaborations, sessions, and teaching inquiries worldwide.</p>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Work</h4>
+      <a href="#work">Covers</a>
+      <a href="#videos">Top Videos</a>
+      <a href="#music">Albums</a>
+      <a href="#cymbals">Cymbals</a>
+      <a href="#connect">Sessions</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Connect</h4>
+      <!-- YouTube: CONFIRMED channel URL -->
+      <a href="https://www.youtube.com/@drummer.ami" target="_blank" rel="noopener">YouTube</a>
+      <!-- Instagram: best-guess handle, Doc please verify -->
+      <a href="https://www.instagram.com/drummer.ami/" target="_blank" rel="noopener">Instagram</a>
+      <!-- Patreon: best-guess handle, Doc please verify -->
+      <a href="https://www.patreon.com/drummerami" target="_blank" rel="noopener">Patreon</a>
+      <!-- TikTok: best-guess handle, Doc please verify -->
+      <a href="https://www.tiktok.com/@drummer.ami" target="_blank" rel="noopener">TikTok</a>
+      <a href="mailto:contact@drummerami.com">Email</a>
+    </div>
+    <div class="footer-col reveal">
+      <h4>Partners</h4>
+      <a href="https://www.artisanturkcymbals.com/" target="_blank" rel="noopener">Artisan Turk Cymbals</a>
+      <!-- Band Mizy: Doc, fill in real URL -->
+      <a href="#" target="_blank" rel="noopener">Band Mizy</a>
+      <a href="https://www.mokpo.ac.kr/" target="_blank" rel="noopener">Mokpo National University</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 AMI KIM · ALL RIGHTS RESERVED</div>
+    <div>BUILT WITH ♥ FOR THE KIT</div>
+  </div>
+</footer>
+
+</div><!-- /.page-content -->
+
+<script>
+// =========================================
+// 2026 STACK — Lenis + GSAP + Three.js
+// =========================================
+
+// Hide loader after page load
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1500);
+});
+
+// ---------- PIANO VIDEO — click-to-play with sound ----------
+(() => {
+  const pianoVideo = document.getElementById('pianoVideo');
+  const pianoBtn   = document.getElementById('pianoPlayBtn');
+  if (!pianoVideo || !pianoBtn) return;
+
+  pianoBtn.addEventListener('click', () => {
+    pianoVideo.muted = false;
+    pianoVideo.volume = 0.85;
+    pianoVideo.currentTime = 0;
+    const p = pianoVideo.play();
+    if (p && typeof p.then === 'function') {
+      p.then(() => {
+        pianoBtn.classList.add('hidden');
+      }).catch(() => {
+        // Fallback: if unmuted play is blocked, play muted and try to unmute on interaction
+        pianoVideo.muted = true;
+        pianoVideo.play().then(() => pianoBtn.classList.add('hidden'));
+      });
+    } else {
+      pianoBtn.classList.add('hidden');
+    }
+  });
+
+  // If the user scrolls far away while playing, auto-pause to be polite.
+  pianoVideo.addEventListener('pause', () => {
+    if (pianoVideo.ended) pianoBtn.classList.remove('hidden');
+  });
+})();
+
+// ---------- LENIS SMOOTH SCROLL ----------
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smoothWheel: true,
+  wheelMultiplier: 1,
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// Sync Lenis with GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time) => lenis.raf(time * 1000));
+gsap.ticker.lagSmoothing(0);
+
+// ---------- CUSTOM CURSOR ----------
+const cursorDot = document.getElementById('cursorDot');
+const cursorRing = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+window.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+});
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.15;
+  ringY += (mouseY - ringY) * 0.15;
+  cursorRing.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .card, [data-magnetic]').forEach(el => {
+  el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
+  el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
+});
+
+// ---------- MAGNETIC BUTTONS ----------
+document.querySelectorAll('[data-magnetic]').forEach(el => {
+  el.addEventListener('mousemove', (e) => {
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    gsap.to(el, { x: x * 0.25, y: y * 0.25, duration: 0.5, ease: 'power3.out' });
+  });
+  el.addEventListener('mouseleave', () => {
+    gsap.to(el, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1, 0.4)' });
+  });
+});
+
+// ---------- NAV BACKGROUND ON SCROLL ----------
+ScrollTrigger.create({
+  start: 'top -80',
+  end: 99999,
+  toggleClass: { className: 'scrolled', targets: '#navbar' },
+});
+
+// ---------- HERO WORDMARK REVEAL ----------
+// Custom Nano Banana wordmark — fade, rise, and settle
+const heroTl = gsap.timeline({ delay: 1.7 });
+heroTl
+  .to('.hero-badge', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' })
+  .to('.hero-eyebrow', { opacity: 1, duration: 0.6 }, '-=0.4')
+  .to('.hero-wordmark', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 1.6,
+    ease: 'power4.out',
+  }, '-=0.3')
+  .to('.hero-korean', { opacity: 1, duration: 0.8 }, '-=0.9')
+  .to('.hero-tagline', { opacity: 1, duration: 0.8 }, '-=0.5')
+  .to('.hero-buttons', { opacity: 1, duration: 0.8 }, '-=0.4')
+  .to('.scroll-indicator', { opacity: 1, duration: 0.8 }, '-=0.4');
+
+// Hero wordmark parallax on scroll — explicit fromTo so the intro animation
+// isn't overwritten and scrolling back to top restores the visible state
+gsap.fromTo('.hero-wordmark',
+  { y: 0, scale: 1, opacity: 1 },
+  {
+    y: -100,
+    scale: 0.92,
+    opacity: 0.35,
+    ease: 'none',
+    immediateRender: false,
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 1,
+    },
+  }
+);
+
+// ---------- TEXT SCRAMBLE ON HEADLINES ----------
+const scrambleChars = '!<>-_\\/[]{}—=+*^?#________';
+class ScrambleEffect {
+  constructor(el) {
+    this.el = el;
+    this.original = el.textContent;
+    this.frame = 0;
+    this.queue = [];
+    this.update = this.update.bind(this);
+  }
+  play() {
+    const length = this.original.length;
+    this.queue = [];
+    for (let i = 0; i < length; i++) {
+      const from = '';
+      const to = this.original[i];
+      const start = Math.floor(Math.random() * 20);
+      const end = start + Math.floor(Math.random() * 20) + 10;
+      this.queue.push({ from, to, start, end, char: '' });
+    }
+    this.frame = 0;
+    cancelAnimationFrame(this.frameReq);
+    this.update();
+  }
+  update() {
+    let output = '';
+    let complete = 0;
+    for (let i = 0; i < this.queue.length; i++) {
+      let { from, to, start, end, char } = this.queue[i];
+      if (this.frame >= end) {
+        complete++;
+        output += to;
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
+          this.queue[i].char = char;
+        }
+        output += `<span style="color:var(--gold)">${char}</span>`;
+      } else {
+        output += from;
+      }
+    }
+    this.el.innerHTML = output;
+    if (complete === this.queue.length) return;
+    this.frameReq = requestAnimationFrame(this.update);
+    this.frame++;
+  }
+}
+
+document.querySelectorAll('[data-scramble]').forEach(el => {
+  const scrambler = new ScrambleEffect(el);
+  ScrollTrigger.create({
+    trigger: el,
+    start: 'top 80%',
+    onEnter: () => scrambler.play(),
+    once: true,
+  });
+});
+
+// ---------- SCROLL REVEAL FOR ELEMENTS ----------
+gsap.utils.toArray('.reveal').forEach((el) => {
+  gsap.to(el, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: el,
+      start: 'top 85%',
+      toggleActions: 'play none none reverse',
+    },
+  });
+});
+
+// ---------- COUNTER ANIMATION ----------
+document.querySelectorAll('.counter').forEach(counter => {
+  const target = parseInt(counter.dataset.target);
+  ScrollTrigger.create({
+    trigger: counter,
+    start: 'top 80%',
+    once: true,
+    onEnter: () => {
+      gsap.to(counter, {
+        textContent: target,
+        duration: 2.2,
+        ease: 'power2.out',
+        snap: { textContent: 1 },
+        onUpdate: function() {
+          counter.textContent = Math.floor(counter.textContent);
+        },
+      });
+    },
+  });
+});
+
+// ---------- CARD 3D TILT ON HOVER ----------
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    gsap.to(card, {
+      rotateY: x * 8,
+      rotateX: -y * 8,
+      duration: 0.6,
+      ease: 'power3.out',
+      transformPerspective: 1000,
+    });
+  });
+  card.addEventListener('mouseleave', () => {
+    gsap.to(card, {
+      rotateY: 0,
+      rotateX: 0,
+      duration: 0.8,
+      ease: 'elastic.out(1, 0.5)',
+    });
+  });
+});
+
+// ---------- THREE.JS 3D SCENE ----------
+// Floating metallic cymbals (torus rings) drifting in space
+const canvas = document.getElementById('three-canvas');
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.z = 8;
+
+const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+// Lights
+const ambient = new THREE.AmbientLight(0x402a14, 0.6);
+scene.add(ambient);
+const light1 = new THREE.PointLight(0xd4a94a, 2, 20);
+light1.position.set(5, 5, 5);
+scene.add(light1);
+const light2 = new THREE.PointLight(0xa31717, 1.5, 20);
+light2.position.set(-5, -3, 4);
+scene.add(light2);
+
+// Floating cymbals (torus geometries)
+const cymbals = [];
+const cymbalColors = [0xd4a94a, 0xa88039, 0xb8946f, 0xe8c464];
+for (let i = 0; i < 6; i++) {
+  const size = 0.7 + Math.random() * 0.6;
+  const geo = new THREE.TorusGeometry(size, 0.04, 16, 100);
+  const mat = new THREE.MeshStandardMaterial({
+    color: cymbalColors[i % cymbalColors.length],
+    metalness: 1,
+    roughness: 0.3,
+    emissive: 0x2a1a08,
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.position.set(
+    (Math.random() - 0.5) * 14,
+    (Math.random() - 0.5) * 8,
+    (Math.random() - 0.5) * 6 - 2
+  );
+  mesh.rotation.x = Math.random() * Math.PI;
+  mesh.rotation.y = Math.random() * Math.PI;
+  mesh.userData = {
+    rotSpeed: (Math.random() - 0.5) * 0.008,
+    driftX: (Math.random() - 0.5) * 0.003,
+    driftY: (Math.random() - 0.5) * 0.002,
+    pulseOffset: Math.random() * Math.PI * 2,
+  };
+  scene.add(mesh);
+  cymbals.push(mesh);
+}
+
+// Particle dust
+const particleCount = 200;
+const particleGeo = new THREE.BufferGeometry();
+const positions = new Float32Array(particleCount * 3);
+for (let i = 0; i < particleCount * 3; i += 3) {
+  positions[i] = (Math.random() - 0.5) * 30;
+  positions[i + 1] = (Math.random() - 0.5) * 20;
+  positions[i + 2] = (Math.random() - 0.5) * 20;
+}
+particleGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+const particleMat = new THREE.PointsMaterial({
+  color: 0xd4a94a,
+  size: 0.05,
+  transparent: true,
+  opacity: 0.6,
+});
+const particles = new THREE.Points(particleGeo, particleMat);
+scene.add(particles);
+
+// Mouse parallax
+let targetX = 0, targetY = 0;
+window.addEventListener('mousemove', (e) => {
+  targetX = (e.clientX / window.innerWidth - 0.5) * 0.5;
+  targetY = (e.clientY / window.innerHeight - 0.5) * 0.5;
+});
+
+// Scroll-based camera movement
+let scrollY = 0;
+lenis.on('scroll', ({ scroll }) => { scrollY = scroll; });
+
+// Animation loop
+const clock = new THREE.Clock();
+function animate() {
+  const elapsed = clock.getElapsedTime();
+
+  cymbals.forEach((cymbal, i) => {
+    cymbal.rotation.x += cymbal.userData.rotSpeed;
+    cymbal.rotation.y += cymbal.userData.rotSpeed * 0.7;
+    cymbal.position.x += cymbal.userData.driftX;
+    cymbal.position.y += cymbal.userData.driftY;
+    // Simulated rhythmic pulse
+    const pulse = Math.sin(elapsed * 2 + cymbal.userData.pulseOffset) * 0.05 + 1;
+    cymbal.scale.set(pulse, pulse, pulse);
+    // Wrap around
+    if (cymbal.position.x > 10) cymbal.position.x = -10;
+    if (cymbal.position.x < -10) cymbal.position.x = 10;
+    if (cymbal.position.y > 6) cymbal.position.y = -6;
+    if (cymbal.position.y < -6) cymbal.position.y = 6;
+  });
+
+  particles.rotation.y += 0.0005;
+  particles.rotation.x += 0.0002;
+
+  // Camera parallax + scroll
+  camera.position.x += (targetX - camera.position.x) * 0.04;
+  camera.position.y += (-targetY - camera.position.y) * 0.04 - scrollY * 0.0005;
+  camera.lookAt(0, 0, 0);
+
+  renderer.render(scene, camera);
+  requestAnimationFrame(animate);
+}
+animate();
+
+// Resize handler
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ---------- NAV ANCHOR LINKS WITH LENIS ----------
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const target = link.getAttribute('href');
+    if (target && target !== '#') {
+      e.preventDefault();
+      const el = document.querySelector(target);
+      if (el) lenis.scrollTo(el, { offset: -80, duration: 1.5 });
+    }
+  });
+});
+
+console.log('%c DRUMMER AMI · 2026 BUILD ', 'background:#7a0000;color:#d4a94a;font-size:14px;padding:8px;');
+</script>
+
+</body>
+</html>
