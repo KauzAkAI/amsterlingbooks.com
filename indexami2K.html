@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMI KIM — Drummer · Artist · Creator</title>
-<meta name="description" content="Heavy metal drummer, Artisan Turk Cymbals endorsed artist, classical composition virtuoso. The official site of Ami Kim.">
+<title>아미 킴 — 드러머 · 작곡가 · 아티스트</title>
+<meta name="description" content="헤비메탈 드러머, 아티잔 터크 심벌즈 공식 엔도서먼트 아티스트, 클래식 작곡 전공. 아미 킴 공식 웹사이트.">
 
-<!-- Variable fonts -->
+<!-- Variable fonts (Latin + Hangul) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400..800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
 
 <!-- Libraries (2026 stack) -->
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
@@ -39,11 +39,13 @@
 html, body {
   background: #0a0807;
   color: var(--bone);
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, sans-serif;
   font-weight: 300;
   overflow-x: hidden;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 /* Lenis smooth scroll setup */
@@ -176,7 +178,7 @@ html.lenis { height: auto; }
 }
 .loader.hidden { opacity: 0; visibility: hidden; }
 .loader-text {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   color: var(--gold);
@@ -214,7 +216,7 @@ nav {
 nav.scrolled { background: rgba(10, 8, 7, 0.85); }
 
 .nav-logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 0.25em;
@@ -225,7 +227,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
   line-height: 1;
 }
 .nav-logo span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-weight: 400;
   font-size: 0.55rem;
   letter-spacing: 0.35em;
@@ -274,7 +276,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
 }
 
 .hero-eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -308,7 +310,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
 }
 
 .hero-korean {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 300;
   letter-spacing: 0.3em;
@@ -337,7 +339,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
   border-radius: 100px;
   backdrop-filter: blur(10px);
   margin-bottom: 2rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -374,7 +376,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -419,7 +421,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -456,7 +458,7 @@ nav.scrolled { background: rgba(10, 8, 7, 0.85); }
   display: inline-flex;
   gap: 4rem;
   animation: marquee 40s linear infinite;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -486,7 +488,7 @@ section.content {
 }
 
 .eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -505,7 +507,7 @@ section.content {
 }
 
 .section-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1;
@@ -532,7 +534,7 @@ section.content {
   text-align: left;
 }
 .stat-num {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1;
@@ -547,7 +549,7 @@ section.content {
   margin-left: 0.1em;
 }
 .stat-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -601,7 +603,7 @@ section.content {
 .card-teach { grid-column: span 3; grid-row: span 1; }
 
 .card-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -609,7 +611,7 @@ section.content {
   margin-bottom: 0.8rem;
 }
 .card-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: clamp(1.4rem, 2vw, 2.2rem);
   font-weight: 700;
   line-height: 1.05;
@@ -623,7 +625,7 @@ section.content {
   color: var(--bone-dim);
 }
 .card-number {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: var(--gold);
@@ -633,7 +635,7 @@ section.content {
   position: absolute;
   bottom: 1.5rem;
   left: 2rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -797,7 +799,7 @@ section.content {
   z-index: 2;
 }
 .video-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--bone);
@@ -806,7 +808,7 @@ section.content {
   margin-bottom: 0.35rem;
 }
 .video-artist {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -817,7 +819,7 @@ section.content {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1012,7 +1014,7 @@ section.content {
 .album-title {
   position: absolute;
   bottom: 1.2rem; left: 1.2rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--bone);
@@ -1044,7 +1046,7 @@ section.content {
   margin-bottom: 1.2rem;
 }
 .contrast-copy h2 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: clamp(2.2rem, 5vw, 4.2rem);
   font-weight: 300;
   line-height: 1;
@@ -1066,7 +1068,7 @@ section.content {
   margin-bottom: 1.2rem;
 }
 .contrast-copy .ko-quiet {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 0.85rem;
   color: var(--gold);
   letter-spacing: 0.25em;
@@ -1100,7 +1102,7 @@ section.content {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -1108,7 +1110,7 @@ section.content {
 }
 .contrast-video-label .track {
   color: var(--bone);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -1118,7 +1120,7 @@ section.content {
   position: absolute;
   right: 3rem;
   top: 2rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.6rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -1145,7 +1147,7 @@ footer {
   margin-bottom: 3rem;
 }
 .footer-brand h3 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -1164,7 +1166,7 @@ footer {
   max-width: 360px;
 }
 .footer-col h4 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -1188,7 +1190,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   color: var(--bone-dim);
@@ -1283,7 +1285,7 @@ footer {
 
 <!-- Loading screen -->
 <div class="loader" id="loader">
-  <div class="loader-text">LOADING · DRUMMER AMI</div>
+  <div class="loader-text">로딩 중 · 드러머 아미</div>
   <div class="loader-bar"></div>
 </div>
 
@@ -1324,29 +1326,29 @@ footer {
 <nav id="navbar">
   <div class="nav-logo">
     AMI KIM
-    <span>DRUMMER · COMPOSER · ARTIST</span>
+    <span>드러머 · 작곡가 · 아티스트</span>
   </div>
   <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#piano">Piano</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#cymbals">Cymbals</a></li>
-    <li><a href="#connect">Contact</a></li>
+    <li><a href="#work">작품</a></li>
+    <li><a href="#videos">영상</a></li>
+    <li><a href="#piano">피아노</a></li>
+    <li><a href="#music">음악</a></li>
+    <li><a href="#cymbals">심벌</a></li>
+    <li><a href="#connect">연락</a></li>
   </ul>
   <div class="lang-toggle">
-    <a href="indexami2.html" class="active">EN</a>
+    <a href="indexami2.html">EN</a>
     <span class="sep">|</span>
-    <a href="indexami2K.html">한국어</a>
+    <a href="indexami2K.html" class="active">한국어</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <a href="https://www.artisanturkcymbals.com/" target="_blank" rel="noopener" class="hero-badge" data-magnetic>
-    ARTISAN TURK CYMBALS · ENDORSED ARTIST
+    아티잔 터크 심벌즈 · 공식 엔도서먼트 아티스트
   </a>
-  <div class="hero-eyebrow">SEOUL · SOUTH KOREA</div>
+  <div class="hero-eyebrow">대한민국 · 서울</div>
   <h1 class="hero-name-wrap" id="heroName" aria-label="DRUMMER AMI">
     <img src="assets/ami/images/drummer_ami_wordmark.png"
          alt="DRUMMER AMI"
@@ -1354,47 +1356,47 @@ footer {
          id="heroWordmark">
   </h1>
   <div class="hero-korean">아미 킴 · 드러머 · 작곡가</div>
-  <p class="hero-tagline">Heavy metal drummer. Classical composition virtuoso. Artisan Turk Cymbals endorsed. Building something different, one hit at a time.</p>
+  <p class="hero-tagline">헤비메탈 드러머. 클래식 작곡 전공. 아티잔 터크 심벌즈 공식 엔도서먼트 아티스트. 한 타 한 타, 자신만의 음악을 쌓아 올리고 있습니다.</p>
   <div class="hero-buttons">
-    <a href="https://www.youtube.com/channel/UCQEBBPb7icUQo6iCEpdrkzg" class="btn btn-primary" data-magnetic><span>Watch the Work</span></a>
-    <a href="#music" class="btn btn-secondary" data-magnetic>Listen</a>
+    <a href="https://www.youtube.com/channel/UCQEBBPb7icUQo6iCEpdrkzg" class="btn btn-primary" data-magnetic><span>작품 감상</span></a>
+    <a href="#music" class="btn btn-secondary" data-magnetic>음악 듣기</a>
   </div>
-  <div class="scroll-indicator">SCROLL</div>
+  <div class="scroll-indicator">스크롤</div>
 </section>
 
 <!-- INFINITE MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
     <span>
-      550K+ SUBSCRIBERS
+      구독자 55만+
       <div class="divider"></div>
-      <span class="outline-text">100M+ VIEWS</span>
+      <span class="outline-text">누적 조회수 1억+</span>
       <div class="divider"></div>
-      ARTISAN TURK CYMBALS
+      아티잔 터크 심벌즈
       <div class="divider"></div>
-      <span class="outline-text">CLASSICAL COMPOSITION MAJOR</span>
+      <span class="outline-text">클래식 작곡 전공</span>
       <div class="divider"></div>
-      SINCE 2021
+      2021년부터
       <div class="divider"></div>
-      <span class="outline-text">CUSTOM BUILT STUDIO</span>
+      <span class="outline-text">직접 지은 스튜디오</span>
       <div class="divider"></div>
-      SEOUL · SOUTH KOREA
+      대한민국 · 서울
       <div class="divider"></div>
     </span>
     <span>
-      550K+ SUBSCRIBERS
+      구독자 55만+
       <div class="divider"></div>
-      <span class="outline-text">100M+ VIEWS</span>
+      <span class="outline-text">누적 조회수 1억+</span>
       <div class="divider"></div>
-      ARTISAN TURK CYMBALS
+      아티잔 터크 심벌즈
       <div class="divider"></div>
-      <span class="outline-text">CLASSICAL COMPOSITION MAJOR</span>
+      <span class="outline-text">클래식 작곡 전공</span>
       <div class="divider"></div>
-      SINCE 2021
+      2021년부터
       <div class="divider"></div>
-      <span class="outline-text">CUSTOM BUILT STUDIO</span>
+      <span class="outline-text">직접 지은 스튜디오</span>
       <div class="divider"></div>
-      SEOUL · SOUTH KOREA
+      대한민국 · 서울
       <div class="divider"></div>
     </span>
   </div>
@@ -1405,65 +1407,65 @@ footer {
   <div class="stats-grid">
     <div class="stat-item reveal">
       <div class="stat-num"><span class="counter" data-target="554">0</span><span class="suffix">K+</span></div>
-      <div class="stat-label">YouTube Subscribers</div>
+      <div class="stat-label">유튜브 구독자</div>
     </div>
     <div class="stat-item reveal">
       <div class="stat-num"><span class="counter" data-target="100">0</span><span class="suffix">M+</span></div>
-      <div class="stat-label">Total Views</div>
+      <div class="stat-label">누적 조회수</div>
     </div>
     <div class="stat-item reveal">
       <div class="stat-num"><span class="counter" data-target="13">0</span></div>
-      <div class="stat-label">Artisan Turk Cymbals</div>
+      <div class="stat-label">아티잔 터크 심벌즈</div>
     </div>
     <div class="stat-item reveal">
       <div class="stat-num"><span class="counter" data-target="15">0</span></div>
-      <div class="stat-label">Years Drumming</div>
+      <div class="stat-label">드럼 경력 (년)</div>
     </div>
   </div>
 </section>
 
 <!-- BENTO GRID -->
 <section class="content" id="work">
-  <div class="eyebrow reveal">THE WORK</div>
-  <h2 class="section-title reveal" data-scramble>What She Does</h2>
+  <div class="eyebrow reveal">작품</div>
+  <h2 class="section-title reveal" data-scramble>그녀가 하는 일</h2>
   <div class="bento">
     <div class="card card-about reveal">
-      <div class="card-label">01 · ABOUT</div>
-      <div class="card-title">Classically trained.<br/>Metal certified.</div>
-      <div class="card-body" style="max-width:55%;">From piano at six to drums at fifteen, Ami moved through every instrument her conservatory asked her to master. She chose metal because nothing else let her hit that hard. Adjunct professor at Mokpo National University. Composer, drummer, artist.</div>
-      <a href="#about" class="card-cta">Read the story</a>
+      <div class="card-label">01 · 소개</div>
+      <div class="card-title">클래식으로 배웠고,<br/>메탈로 증명했습니다.</div>
+      <div class="card-body" style="max-width:55%;">여섯 살에 피아노, 열다섯에 드럼. 아미 킴은 음악원이 요구한 모든 악기를 차근차근 익혔습니다. 그중 메탈을 택한 이유는 단 하나 — 이만큼 강하게 때릴 수 있는 음악이 없었기 때문입니다. 현재 목포대학교 겸임교수로 재직 중이며, 작곡가이자 드러머이자 아티스트로 활동하고 있습니다.</div>
+      <a href="#about" class="card-cta">이야기 읽기</a>
       <div class="portrait"></div>
     </div>
     <div class="card card-endorse reveal" id="cymbals">
-      <div class="card-label">02 · ENDORSEMENT</div>
-      <div class="card-title">Artisan Turk Cymbals</div>
-      <div class="card-body">Handcrafted in Istanbul. 100% hand-hammered. Endorsed artist since October 2021. Every cymbal in her kit tells a story older than she is.</div>
-      <a href="https://www.artisanturkcymbals.com/" target="_blank" class="card-cta">Visit artisanturkcymbals.com</a>
+      <div class="card-label">02 · 엔도서먼트</div>
+      <div class="card-title">아티잔 터크 심벌즈</div>
+      <div class="card-body">이스탄불에서 전통 방식으로 한 장 한 장 손망치로 두드려 만든 심벌. 2021년 10월부터 공식 엔도서먼트 아티스트로 활동하고 있습니다. 그녀의 키트에 놓인 모든 심벌에는 그녀보다 오래된 이야기가 담겨 있습니다.</div>
+      <a href="https://www.artisanturkcymbals.com/" target="_blank" class="card-cta">artisanturkcymbals.com 방문</a>
     </div>
     <div class="card card-stats reveal">
-      <div class="card-label">03 · REACH</div>
+      <div class="card-label">03 · 도달</div>
       <div class="card-number">554K</div>
-      <div class="card-body">YouTube subscribers and growing</div>
+      <div class="card-body">계속 늘어나는 유튜브 구독자</div>
     </div>
     <div class="card card-video reveal">
-      <div class="card-label">04 · LATEST COVER</div>
-      <div class="card-title">Drum Cover · Heavy Edition</div>
-      <div class="card-body">Full kit performance recorded in the shipping container studio.</div>
+      <div class="card-label">04 · 최근 커버</div>
+      <div class="card-title">드럼 커버 · 헤비 에디션</div>
+      <div class="card-body">컨테이너 스튜디오에서 풀 키트로 녹음한 라이브 퍼포먼스.</div>
       <div class="play-icon"></div>
     </div>
     <div class="card card-cymbals reveal">
-      <div class="card-label">05 · THE STUDIO</div>
-      <div class="card-title">Custom Built. Full Kit. No Label.</div>
-      <div class="card-body">Every take you hear is tracked and mixed inside a studio she designed and built herself, in Seoul, on her terms. No producer in the room. No label over her shoulder. Just the kit, the mics, and a drummer who knows exactly what she wants the song to sound like.</div>
+      <div class="card-label">05 · 스튜디오</div>
+      <div class="card-title">직접 지은 공간. 풀 키트. 레이블 없음.</div>
+      <div class="card-body">여러분이 듣는 모든 테이크는 그녀가 직접 설계하고 지은 서울의 스튜디오에서 녹음되고 믹스됩니다. 방 안에 프로듀서도, 어깨 너머의 레이블도 없습니다. 오직 드럼 키트, 마이크, 그리고 자신의 곡이 어떤 소리여야 하는지 정확히 아는 한 명의 드러머뿐입니다.</div>
       <div class="cymbal-viz"></div>
     </div>
     <div class="card card-band reveal">
-      <div class="card-label">06 · BAND MIZY</div>
-      <div class="card-title">Three-piece. Loud. Unstoppable.</div>
+      <div class="card-label">06 · 밴드 미지</div>
+      <div class="card-title">3인조. 시끄럽고. 멈추지 않습니다.</div>
     </div>
     <div class="card card-teach reveal">
-      <div class="card-label">07 · TEACHING</div>
-      <div class="card-title">Mokpo National University · Adjunct Professor</div>
+      <div class="card-label">07 · 강의</div>
+      <div class="card-title">목포대학교 · 겸임교수</div>
     </div>
   </div>
 </section>
@@ -1473,10 +1475,10 @@ footer {
   <div class="contrast-bg-note">THE · OTHER · SIDE</div>
   <div class="contrast-inner">
     <div class="contrast-copy reveal">
-      <div class="eyebrow">08 · THE OTHER SIDE</div>
-      <h2>She hits hard.<br/>Then she plays it <em>soft</em>.</h2>
-      <p>Before the double bass and the cymbals, there was a piano and a six-year-old girl with small hands and long practice afternoons. The metal kit is what most of the world sees — the classical composition degree is how she got there.</p>
-      <p>Three and a half minutes of solo piano. You never see her face — only her hands. The left one never moves from its starting position. It's the anchor, the pulse, the drummer refusing to let go of time. The right hand slides back and forth, precise to every key, holding each note for its tone. Her body rocks gently, left to right, the way someone rocks when they're hearing the music in their head instead of reading it off a page. Every note takes its time and lands in the proper place.</p>
+      <div class="eyebrow">08 · 또 다른 얼굴</div>
+      <h2>강하게 때리고,<br/>다시 <em>부드럽게</em> 칩니다.</h2>
+      <p>더블 베이스 드럼과 심벌이 있기 전에는, 작은 손의 여섯 살 소녀와 한 대의 피아노, 그리고 긴 오후의 연습이 있었습니다. 세상이 보는 것은 메탈 키트이지만, 그녀가 그 자리에 도달한 길은 클래식 작곡 전공이었습니다.</p>
+      <p>3분 30초의 솔로 피아노. 화면에는 얼굴이 보이지 않고, 오직 두 손만 보입니다. 왼손은 처음 자리를 떠나지 않습니다. 그것이 중심이자 맥박 — 시간을 놓지 않는 드러머의 손입니다. 오른손은 건반 위를 천천히 오가며 한 음 한 음의 울림을 붙잡습니다. 그녀의 몸은 좌우로 가볍게 흔들립니다. 악보를 읽는 것이 아니라, 머릿속에 들려오는 음악을 따라가는 사람의 움직임입니다. 모든 음이 제자리에 차분히 내려앉습니다.</p>
       <div class="ko-quiet">클래식 작곡가 · 드러머 · 둘 다</div>
     </div>
     <div class="contrast-video-holder reveal">
@@ -1490,20 +1492,20 @@ footer {
         </iframe>
       </div>
       <div class="contrast-video-label">
-        <span>LIVE · COMPOSITION</span>
-        <span class="track">Piano, solo.</span>
+        <span>라이브 · 오리지널 작곡</span>
+        <span class="track">피아노, 독주.</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SELECTED BY AMI — her four picks, chosen by her, in her own words -->
+<!-- SELECTED BY AMI — her four picks, chosen by her -->
 <section class="content" id="videos">
-  <div class="eyebrow reveal">HER PICKS · FOUR SONGS</div>
-  <h2 class="section-title reveal" data-scramble>Selected by Ami</h2>
+  <div class="eyebrow reveal">아미의 선곡 · 네 곡</div>
+  <h2 class="section-title reveal" data-scramble>아미가 고른 네 곡</h2>
   <p class="reveal" style="max-width: 720px; color: rgba(232,226,217,0.72); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;">
-    Four songs she wants you to hear first &mdash; <em>chosen by Ami herself</em>.
-    Not the most viewed. Not the most famous. These are the ones she's proudest of.
+    아미 씨가 직접 고른 네 곡입니다. 조회수가 가장 높은 영상도, 가장 유명한 곡도 아닙니다 &mdash;
+    아미 씨가 여러분께 가장 먼저 보여드리고 싶어 한, 본인이 가장 자부심을 느끼는 연주입니다.
   </p>
   <div class="videos">
     <a href="https://www.youtube.com/watch?v=PukWu6vuRF0" class="video-card reveal" target="_blank" rel="noopener">
@@ -1513,8 +1515,8 @@ footer {
       </div>
       <div class="video-info">
         <div class="video-title">Angel of Death</div>
-        <div class="video-artist">Slayer · Drum Cover</div>
-        <div class="video-views" style="color: var(--gold);">HER FIRST PICK</div>
+        <div class="video-artist">Slayer · 드럼 커버</div>
+        <div class="video-views" style="color: var(--gold);">아미의 첫 번째 선곡</div>
       </div>
     </a>
     <a href="https://www.youtube.com/watch?v=fB7b3xpfaws" class="video-card reveal" target="_blank" rel="noopener">
@@ -1524,8 +1526,8 @@ footer {
       </div>
       <div class="video-info">
         <div class="video-title">Time Is Running Out</div>
-        <div class="video-artist">Muse · Drum Cover</div>
-        <div class="video-views">Groove · Restraint · Precision</div>
+        <div class="video-artist">Muse · 드럼 커버</div>
+        <div class="video-views">그루브 · 절제 · 정확도</div>
       </div>
     </a>
     <a href="https://www.youtube.com/watch?v=90hteUJWquc" class="video-card reveal" target="_blank" rel="noopener">
@@ -1535,8 +1537,8 @@ footer {
       </div>
       <div class="video-info">
         <div class="video-title">Don't Cry</div>
-        <div class="video-artist">Guns N' Roses · Full-Band Cover #70-3</div>
-        <div class="video-views" style="color: var(--gold);">ONE WOMAN · WHOLE BAND</div>
+        <div class="video-artist">Guns N' Roses · 풀밴드 커버 #70-3</div>
+        <div class="video-views" style="color: var(--gold);">한 사람이 밴드 전부</div>
       </div>
     </a>
     <a href="https://www.youtube.com/watch?v=6-rnI_XY9jo" class="video-card reveal" target="_blank" rel="noopener">
@@ -1546,24 +1548,24 @@ footer {
       </div>
       <div class="video-info">
         <div class="video-title">Burn</div>
-        <div class="video-artist">Deep Purple · Drum Cover #103</div>
-        <div class="video-views">Classic Rock Firepower</div>
+        <div class="video-artist">Deep Purple · 드럼 커버 #103</div>
+        <div class="video-views">클래식 록의 화력</div>
       </div>
     </a>
   </div>
   <p class="reveal" style="max-width: 720px; margin-top: 2rem; color: rgba(232,226,217,0.62); font-size: 0.95rem; line-height: 1.65; font-style: italic;">
-    On &ldquo;Don't Cry&rdquo; &mdash; drums, rhythm guitar, bass, and lead vocals. All Ami. In perfect English.
-    A reminder that she isn't just a drummer. She's an entire band.
+    &ldquo;Don't Cry&rdquo; 영상에서는 드럼, 리듬 기타, 베이스, 그리고 리드 보컬까지 모두 아미 씨가 직접 연주하고 부릅니다 &mdash;
+    완벽한 영어로. 아미 씨는 드러머일 뿐만 아니라, 그 자체로 하나의 밴드입니다.
   </p>
-  <div class="reveal" style="max-width: 720px; margin-top: 2.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,226,217,0.45);">
-    → <a href="https://www.youtube.com/@drummer.ami" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold);">See the full channel · 554K subscribers</a>
+  <div class="reveal" style="max-width: 720px; margin-top: 2.5rem; font-family: 'JetBrains Mono', 'Noto Sans KR', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,226,217,0.45);">
+    → <a href="https://www.youtube.com/@drummer.ami" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold);">전체 채널 보기 · 구독자 55만+</a>
   </div>
 </section>
 
 <!-- MUSIC / ALBUMS -->
 <section class="content" id="music">
-  <div class="eyebrow reveal">THE CATALOG</div>
-  <h2 class="section-title reveal" data-scramble>Released Work</h2>
+  <div class="eyebrow reveal">디스코그래피</div>
+  <h2 class="section-title reveal" data-scramble>발매 작품</h2>
   <div class="albums">
     <div class="album reveal">
       <img src="assets/ami/images/album_fly_higher.png" alt="Fly Higher">
@@ -1582,8 +1584,8 @@ footer {
       <div class="album-title">Rebirth</div>
     </div>
     <div class="album reveal album-featured">
-      <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — with the Patrons">
-      <div class="album-badge">WITH THE PATRONS</div>
+      <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — 팬들과 함께">
+      <div class="album-badge">팬들과 함께</div>
       <div class="album-title">Ami n' Friends</div>
     </div>
   </div>
@@ -1591,40 +1593,40 @@ footer {
   <!-- Ami n' Friends — tracklist spotlight -->
   <div class="tracklist-spotlight reveal">
     <div class="tracklist-art">
-      <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — album art">
+      <img src="assets/ami/images/album_ami_n_friends.png" alt="Ami n' Friends — 앨범 아트">
     </div>
     <div class="tracklist-body">
-      <div class="tracklist-eyebrow">FEATURED · ALBUM FIVE</div>
+      <div class="tracklist-eyebrow">특별 수록 · 다섯 번째 앨범</div>
       <h3>Ami n' Friends</h3>
       <p class="tracklist-sub">
-        The album she made with her community. Vocals, piano, keys, drums &mdash;
-        all Ami. Five original songs written, performed, and produced with her Patrons.
+        패트론 분들과 함께 만든 앨범입니다. 보컬, 피아노, 키보드, 드럼까지 &mdash;
+        모두 아미 씨의 연주와 노래입니다. 직접 작곡하고 프로듀싱한 다섯 곡의 오리지널 트랙이 담겨 있습니다.
       </p>
       <ul class="tracklist-table">
         <li>
           <span class="tl-num">01</span>
-          <span class="tl-title">Music<span>Vocals &middot; Piano</span></span>
+          <span class="tl-title">Music<span>보컬 &middot; 피아노</span></span>
           <span class="tl-plays">&middot;&middot;&middot;</span>
         </li>
         <li>
           <span class="tl-num">02</span>
-          <span class="tl-title">Sparkle Eyes<span>Vocal showcase</span></span>
-          <span class="tl-plays">459 plays</span>
+          <span class="tl-title">Sparkle Eyes<span>보컬 쇼케이스</span></span>
+          <span class="tl-plays">459회 재생</span>
         </li>
         <li>
           <span class="tl-num">03</span>
-          <span class="tl-title">Journey of Soul<span>Piano &middot; Vocals &middot; Drums</span></span>
-          <span class="tl-plays">608 plays</span>
+          <span class="tl-title">Journey of Soul<span>피아노 &middot; 보컬 &middot; 드럼</span></span>
+          <span class="tl-plays">608회 재생</span>
         </li>
         <li>
           <span class="tl-num">04</span>
-          <span class="tl-title">To a Peaceful World<span>Drums &middot; Keys &middot; Drum solo @ 4:00</span></span>
-          <span class="tl-plays">380 plays</span>
+          <span class="tl-title">To a Peaceful World<span>드럼 &middot; 키보드 &middot; 4:00 드럼 솔로</span></span>
+          <span class="tl-plays">380회 재생</span>
         </li>
         <li>
           <span class="tl-num">05</span>
-          <span class="tl-title">Hope for the Future<span>Vocals &middot; Keys</span></span>
-          <span class="tl-plays">363 plays</span>
+          <span class="tl-title">Hope for the Future<span>보컬 &middot; 키보드</span></span>
+          <span class="tl-plays">363회 재생</span>
         </li>
       </ul>
     </div>
@@ -1637,18 +1639,18 @@ footer {
     <div class="footer-brand reveal">
       <h3>AMI KIM</h3>
       <div class="ko">아미 킴 · 드러머</div>
-      <p>Heavy metal drummer, classical composer, and Artisan Turk Cymbals endorsed artist. Based in Seoul, South Korea. Available for collaborations, sessions, and teaching inquiries worldwide.</p>
+      <p>헤비메탈 드러머, 클래식 작곡가, 아티잔 터크 심벌즈 공식 엔도서먼트 아티스트. 대한민국 서울에서 활동하고 있으며, 협업 · 세션 · 강의 문의는 전 세계 어디서나 환영합니다.</p>
     </div>
     <div class="footer-col reveal">
-      <h4>Work</h4>
-      <a href="#work">Covers</a>
-      <a href="#videos">Top Videos</a>
-      <a href="#music">Albums</a>
-      <a href="#cymbals">Cymbals</a>
-      <a href="#connect">Sessions</a>
+      <h4>작품</h4>
+      <a href="#work">커버</a>
+      <a href="#videos">인기 영상</a>
+      <a href="#music">앨범</a>
+      <a href="#cymbals">심벌</a>
+      <a href="#connect">세션</a>
     </div>
     <div class="footer-col reveal">
-      <h4>Connect</h4>
+      <h4>연결</h4>
       <!-- YouTube: CONFIRMED channel URL -->
       <a href="https://www.youtube.com/@drummer.ami" target="_blank" rel="noopener">YouTube</a>
       <!-- Instagram: best-guess handle, Doc please verify -->
@@ -1657,19 +1659,19 @@ footer {
       <a href="https://www.patreon.com/drummerami" target="_blank" rel="noopener">Patreon</a>
       <!-- TikTok: best-guess handle, Doc please verify -->
       <a href="https://www.tiktok.com/@drummer.ami" target="_blank" rel="noopener">TikTok</a>
-      <a href="mailto:contact@drummerami.com">Email</a>
+      <a href="mailto:contact@drummerami.com">이메일</a>
     </div>
     <div class="footer-col reveal">
-      <h4>Partners</h4>
+      <h4>파트너</h4>
       <a href="https://www.artisanturkcymbals.com/" target="_blank" rel="noopener">Artisan Turk Cymbals</a>
       <!-- Band Mizy: Doc, fill in real URL -->
-      <a href="#" target="_blank" rel="noopener">Band Mizy</a>
-      <a href="https://www.mokpo.ac.kr/" target="_blank" rel="noopener">Mokpo National University</a>
+      <a href="#" target="_blank" rel="noopener">밴드 미지</a>
+      <a href="https://www.mokpo.ac.kr/" target="_blank" rel="noopener">목포대학교</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 AMI KIM · ALL RIGHTS RESERVED</div>
-    <div>BUILT WITH ♥ FOR THE KIT</div>
+    <div>© 2026 아미 킴 · 모든 권리 보유</div>
+    <div>드럼 키트를 사랑하는 마음으로 만들었습니다 ♥</div>
   </div>
 </footer>
 
