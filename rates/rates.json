@@ -1,32 +1,129 @@
 {
-  "generated_at": "2026-05-15T00:00:00+00:00",
+  "generated_at": "2026-05-16T14:06:05+00:00",
   "history": {
+    "fifteen_year_fixed_daily": [
+      {
+        "date": "2026-04-29",
+        "rate": 5.77
+      },
+      {
+        "date": "2026-04-30",
+        "rate": 5.64
+      },
+      {
+        "date": "2026-05-06",
+        "rate": 5.83
+      },
+      {
+        "date": "2026-05-07",
+        "rate": 5.72
+      },
+      {
+        "date": "2026-05-08",
+        "rate": 5.99
+      },
+      {
+        "date": "2026-05-11",
+        "rate": 6.0
+      },
+      {
+        "date": "2026-05-12",
+        "rate": 6.04
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 6.07
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 5.83
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 6.04
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 5.71
+      },
+      {
+        "date": "2026-05-15",
+        "rate": 6.1
+      }
+    ],
     "thirty_year_fixed_daily": [
-      {"date": "2026-04-14", "rate": 6.34},
-      {"date": "2026-04-17", "rate": 6.36},
-      {"date": "2026-04-22", "rate": 6.35},
-      {"date": "2026-04-25", "rate": 6.32},
-      {"date": "2026-04-30", "rate": 6.30},
-      {"date": "2026-05-05", "rate": 6.40},
-      {"date": "2026-05-07", "rate": 6.44},
-      {"date": "2026-05-08", "rate": 6.42},
-      {"date": "2026-05-11", "rate": 6.49},
-      {"date": "2026-05-12", "rate": 6.56},
-      {"date": "2026-05-13", "rate": 6.57},
-      {"date": "2026-05-14", "rate": 6.52}
+      {
+        "date": "2026-04-29",
+        "rate": 6.37
+      },
+      {
+        "date": "2026-04-30",
+        "rate": 6.3
+      },
+      {
+        "date": "2026-05-06",
+        "rate": 6.45
+      },
+      {
+        "date": "2026-05-07",
+        "rate": 6.37
+      },
+      {
+        "date": "2026-05-08",
+        "rate": 6.42
+      },
+      {
+        "date": "2026-05-11",
+        "rate": 6.49
+      },
+      {
+        "date": "2026-05-12",
+        "rate": 6.56
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 6.57
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 6.46
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 6.52
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 6.36
+      },
+      {
+        "date": "2026-05-15",
+        "rate": 6.65
+      }
     ]
   },
   "rates": {
-    "fifteen_year_fixed": {"rate": 6.04, "change": -0.03, "asof_label": "May 14 2026"},
-    "ten_year_treasury":  {"rate": 4.560, "change": 0.075},
-    "thirty_year_fixed":  {"rate": 6.52, "change": -0.05, "asof_label": "May 14 2026"}
+    "fifteen_year_fixed": {
+      "asof_label": "May 15 2026",
+      "change": 0.06,
+      "rate": 6.1
+    },
+    "ten_year_treasury": {
+      "change": 0.075,
+      "rate": 4.56
+    },
+    "thirty_year_fixed": {
+      "asof_label": "May 15 2026",
+      "change": 0.13,
+      "rate": 6.52
+    }
   },
   "reference": {
     "auto_60mo": 6.97,
     "cre_conventional_max": 8.75,
     "cre_conventional_min": 5.23,
     "fed_funds_last_change": "2025-12-11",
-    "fed_funds_lower": 3.50,
+    "fed_funds_lower": 3.5,
     "fed_funds_upper": 3.75,
     "five_one_arm": 6.48,
     "heloc_variable": 7.21,
@@ -40,10 +137,10 @@
     "sofr_overnight": 3.64,
     "thirty_fha": 6.16,
     "thirty_jumbo": 6.74,
-    "thirty_va": 6.10,
+    "thirty_va": 6.1,
     "thirty_year_treasury": 4.92,
     "two_year_treasury": 3.91
   },
-  "source": "Initial seed (May 14-15, 2026). GitHub Action will overwrite with live MND data.",
+  "source": "Mortgage News Daily (auto-fetched)",
   "warnings": []
 }
