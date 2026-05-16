@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U.S. Loan Rates Dashboard</title>
+<meta name="description" content="Live U.S. loan rates: mortgage, federal benchmarks, commercial, consumer — with charts and rate-moving news.">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --primary:#0a2540;
+  --primary-soft:#e8eef7;
+  --accent:#0570de;
+  --accent-dark:#034a9e;
+  --positive:#047857;
+  --positive-soft:#ecfdf5;
+  --negative:#b91c1c;
+  --negative-soft:#fef2f2;
+  --neutral:#475569;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --text:#0f172a;
+  --text-soft:#334155;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding:24px 20px 60px}
+.header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:8px;flex-wrap:wrap}
+.header h1{margin:0 0 4px;font-size:26px;font-weight:700;color:var(--primary);letter-spacing:-0.01em}
+.header .sub{color:var(--muted);font-size:13px;margin:0}
+.header .meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0}
+.refresh-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:none;padding:8px 14px;border-radius:6px;cursor:pointer;font-weight:600;font-size:13px;transition:background .15s}
+.refresh-btn:hover{background:var(--accent-dark)}
+.refresh-btn:disabled{background:var(--muted);cursor:wait}
+.refresh-btn svg{width:14px;height:14px}
+.refresh-status{font-size:12px;color:var(--muted)}
+.refresh-status.ok{color:var(--positive)}
+.refresh-status.err{color:var(--negative)}
+.section-title{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:28px 0 12px;display:flex;align-items:center;gap:10px}
+.section-title::after{content:"";flex:1;height:1px;background:var(--border)}
+.grid{display:grid;gap:14px}
+.grid.cards-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid.cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:980px){.grid.cards-4{grid-template-columns:repeat(2,1fr)}.grid.cards-3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid.cards-4,.grid.cards-3,.grid.cards-2{grid-template-columns:1fr}}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;position:relative;overflow:hidden}
+.card.hero{border-left:4px solid var(--accent);padding:18px 18px 16px}
+.card.hero.policy{border-left-color:var(--primary)}
+.card.hero.commercial{border-left-color:#7c3aed}
+.card.hero.consumer{border-left-color:#ea580c}
+.card .label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin-bottom:6px}
+.card .rate{font-size:30px;font-weight:700;color:var(--text);letter-spacing:-0.02em;line-height:1.05;font-variant-numeric:tabular-nums}
+.card .rate small{font-size:18px;font-weight:600;color:var(--text-soft);margin-left:1px}
+.card .delta{display:inline-flex;align-items:center;gap:4px;margin-top:6px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;font-variant-numeric:tabular-nums}
+.card .delta.up{background:var(--negative-soft);color:var(--negative)}
+.card .delta.down{background:var(--positive-soft);color:var(--positive)}
+.card .delta.flat{background:#f1f5f9;color:var(--neutral)}
+.card .note{font-size:11px;color:var(--muted);margin-top:8px}
+.card.live::after{content:"";position:absolute;top:10px;right:10px;width:8px;height:8px;background:var(--positive);border-radius:50%;box-shadow:0 0 0 0 rgba(4,120,87,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(4,120,87,.5)}70%{box-shadow:0 0 0 6px rgba(4,120,87,0)}100%{box-shadow:0 0 0 0 rgba(4,120,87,0)}}
+
+.range-bar{height:5px;background:var(--primary-soft);border-radius:99px;margin-top:6px;position:relative;overflow:hidden}
+.range-bar .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#0570de,#7c3aed);border-radius:99px}
+.range-row{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px}
+
+.chart-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.chart-card h3{margin:0 0 4px;font-size:15px;font-weight:600;color:var(--primary)}
+.chart-card .desc{font-size:12px;color:var(--muted);margin:0 0 12px}
+.chart-host{position:relative;height:240px}
+
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:880px){.news-grid{grid-template-columns:1fr}}
+.news-col{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.news-col h3{margin:0 0 4px;font-size:15px;font-weight:600;color:var(--primary);display:flex;align-items:center;gap:8px}
+.news-col h3 .pill{font-size:10px;text-transform:uppercase;letter-spacing:.08em;background:var(--primary-soft);color:var(--accent-dark);padding:2px 8px;border-radius:99px;font-weight:700}
+.news-col .desc{font-size:12px;color:var(--muted);margin:0 0 12px}
+.news-item{padding:12px 0;border-top:1px solid var(--border)}
+.news-item:first-of-type{border-top:none;padding-top:8px}
+.news-item .ni-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-bottom:6px}
+.tag-fed{background:#dbeafe;color:#1d4ed8}
+.tag-cpi{background:#fef3c7;color:#92400e}
+.tag-jobs{background:#dcfce7;color:#15803d}
+.tag-housing{background:#ffedd5;color:#9a3412}
+.tag-applications{background:#ede9fe;color:#6d28d9}
+.tag-prices{background:#fce7f3;color:#9d174d}
+.tag-conflict{background:#fee2e2;color:#991b1b}
+.news-item .ni-title{font-weight:600;color:var(--text);margin:0 0 4px;font-size:14px}
+.news-item .ni-body{font-size:13px;color:var(--text-soft);margin:0}
+.news-item .ni-impact{font-size:11px;margin-top:6px;color:var(--muted);font-style:italic}
+
+.footnote{margin-top:28px;padding:14px 16px;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;font-size:12px;color:#78350f;line-height:1.55}
+.footnote strong{color:#92400e}
+.sources{margin-top:16px;font-size:11px;color:var(--muted)}
+.sources a{color:var(--accent);text-decoration:none}
+.sources a:hover{text-decoration:underline}
+
+.auto-toggle{display:inline-flex;align-items:center;gap:8px;cursor:pointer;user-select:none;font-size:12px;color:var(--text-soft);font-weight:600}
+.auto-toggle input{position:absolute;opacity:0;pointer-events:none}
+.auto-track{position:relative;width:32px;height:18px;background:#cbd5e1;border-radius:99px;transition:background .15s}
+.auto-thumb{position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:left .15s}
+.auto-toggle input:checked + .auto-track{background:var(--positive)}
+.auto-toggle input:checked + .auto-track .auto-thumb{left:16px}
+
+@keyframes flash-up{0%{background:var(--negative-soft)}100%{background:transparent}}
+@keyframes flash-down{0%{background:var(--positive-soft)}100%{background:transparent}}
+.flash-up{animation:flash-up 1.4s ease-out}
+.flash-down{animation:flash-down 1.4s ease-out}
+
+.spinner{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div>
+      <h1>U.S. Loan Rates Dashboard</h1>
+      <p class="sub">Daily rates across mortgage, federal benchmarks, commercial, and consumer lending — with rate-moving news.</p>
+    </div>
+    <div class="meta">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="refresh-btn" id="refreshBtn" onclick="loadRates(true)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+          <span id="refreshLabel">Refresh now</span>
+        </button>
+        <label class="auto-toggle" title="Auto-refresh every 120 seconds">
+          <input type="checkbox" id="autoToggle" checked onchange="toggleAuto()">
+          <span class="auto-track"><span class="auto-thumb"></span></span>
+          <span>Auto · 2 min</span>
+        </label>
+      </div>
+      <div class="refresh-status" id="refreshStatus">Loading…</div>
+    </div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="section-title">Headline rates <span style="font-size:11px;font-weight:500;color:var(--muted);text-transform:none;letter-spacing:0">(green dot = updated by GitHub Action)</span></div>
+  <div class="grid cards-4">
+    <div class="card hero live">
+      <div class="label">30-Yr Fixed Mortgage</div>
+      <div class="rate" id="rate-30yr">—</div>
+      <span class="delta flat" id="delta-30yr">—</span>
+      <div class="note" id="asof-30yr">MND Daily Index</div>
+    </div>
+    <div class="card hero live">
+      <div class="label">15-Yr Fixed Mortgage</div>
+      <div class="rate" id="rate-15yr">—</div>
+      <span class="delta flat" id="delta-15yr">—</span>
+      <div class="note">MND Daily Index</div>
+    </div>
+    <div class="card hero live">
+      <div class="label">10-Yr Treasury Yield</div>
+      <div class="rate" id="rate-10yr">—</div>
+      <span class="delta flat" id="delta-10yr">—</span>
+      <div class="note">Drives long-term loan pricing</div>
+    </div>
+    <div class="card hero policy">
+      <div class="label">Fed Funds (Upper)</div>
+      <div class="rate" id="rate-fed">—</div>
+      <span class="delta flat" id="delta-fed">━ Held</span>
+      <div class="note" id="note-fed">Range —</div>
+    </div>
+  </div>
+
+  <!-- HOME LOANS -->
+  <div class="section-title">Home loans</div>
+  <div class="grid cards-4">
+    <div class="card"><div class="label">5/1 SOFR ARM</div><div class="rate" id="rate-arm">—</div><div class="note">Slight discount vs 30-yr fixed</div></div>
+    <div class="card"><div class="label">30-Yr Jumbo</div><div class="rate" id="rate-jumbo">—</div><div class="note">Loans above conforming limit</div></div>
+    <div class="card"><div class="label">30-Yr FHA</div><div class="rate" id="rate-fha">—</div><div class="note">Government-backed, low down</div></div>
+    <div class="card"><div class="label">30-Yr VA</div><div class="rate" id="rate-va">—</div><div class="note">Veteran/military borrowers</div></div>
+  </div>
+
+  <!-- FEDERAL -->
+  <div class="section-title">Federal benchmarks</div>
+  <div class="grid cards-4">
+    <div class="card"><div class="label">Prime Rate (WSJ)</div><div class="rate" id="rate-prime">—</div><div class="note" id="note-prime">Set by major banks</div></div>
+    <div class="card"><div class="label">SOFR (Overnight)</div><div class="rate" id="rate-sofr">—</div><div class="note">Replaced LIBOR</div></div>
+    <div class="card"><div class="label">2-Yr Treasury</div><div class="rate" id="rate-2yr">—</div><div class="note">Tracks Fed expectations</div></div>
+    <div class="card"><div class="label">30-Yr Treasury</div><div class="rate" id="rate-30tr">—</div><div class="note">Long-bond yield</div></div>
+  </div>
+
+  <!-- COMMERCIAL -->
+  <div class="section-title">Commercial &amp; small-business loans</div>
+  <div class="grid cards-3">
+    <div class="card hero commercial">
+      <div class="label">Commercial Real Estate (Conventional)</div>
+      <div class="rate" id="rate-cre">—</div>
+      <div class="range-bar"><div class="fill" style="width:72%"></div></div>
+      <div class="range-row"><span>Best A-paper</span><span>Higher-risk</span></div>
+      <div class="note">Range varies by property, credit, LTV</div>
+    </div>
+    <div class="card hero commercial">
+      <div class="label">SBA 7(a) — Variable</div>
+      <div class="rate" id="rate-sba">—</div>
+      <div class="range-bar"><div class="fill" style="width:60%"></div></div>
+      <div class="range-row"><span>Large/long term</span><span>Small/short</span></div>
+      <div class="note">Prime + spread (3.0–6.5%+)</div>
+    </div>
+    <div class="card hero commercial">
+      <div class="label">SBA 504 (CRE / Equipment)</div>
+      <div class="rate" id="rate-504">—</div>
+      <div class="note">Fixed; pegged to 10-Yr Treasury + ~3%</div>
+    </div>
+  </div>
+
+  <!-- CONSUMER -->
+  <div class="section-title">Consumer credit</div>
+  <div class="grid cards-4">
+    <div class="card hero consumer"><div class="label">Auto Loan (60-mo new)</div><div class="rate" id="rate-auto">—</div><div class="note">Super-prime ~4.66% · Subprime 16%+</div></div>
+    <div class="card hero consumer"><div class="label">HELOC (Variable)</div><div class="rate" id="rate-heloc">—</div><div class="note">National avg adjustable</div></div>
+    <div class="card hero consumer"><div class="label">Home Equity Loan (Fixed)</div><div class="rate" id="rate-he">—</div><div class="note">Fixed lump sum vs HELOC line</div></div>
+    <div class="card hero consumer"><div class="label">Personal Loan (3-yr, 700 FICO)</div><div class="rate" id="rate-pers">—</div><div class="note">Bankrate avg</div></div>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="section-title">Trends &amp; correlations</div>
+  <div class="grid cards-2">
+    <div class="chart-card">
+      <h3>30-Yr fixed mortgage — daily, last 30 days</h3>
+      <p class="desc" id="chartDesc1">Live daily series from Mortgage News Daily.</p>
+      <div class="chart-host"><canvas id="chartMtg30"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>30-Yr mortgage vs 10-Yr Treasury</h3>
+      <p class="desc">Mortgage rates track the 10-yr with a spread (currently wider than historical average).</p>
+      <div class="chart-host"><canvas id="chartMtgVsTr"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>Fed Funds rate path (12 months)</h3>
+      <p class="desc">Held at 3.50–3.75% upper bound since Dec 2025. Markets pricing ~30% odds of a HIKE by year-end.</p>
+      <div class="chart-host"><canvas id="chartFedFunds"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>CPI inflation (year-over-year)</h3>
+      <p class="desc">April CPI hit 3.8% — highest since May 2023. Energy +3.8% m/m, gasoline +28.4% YoY drove it.</p>
+      <div class="chart-host"><canvas id="chartCPI"></canvas></div>
+    </div>
+  </div>
+
+  <!-- NEWS -->
+  <div class="section-title">What's moving rates</div>
+  <div class="news-grid">
+    <div class="news-col">
+      <h3>Fed &amp; macro drivers <span class="pill">Policy</span></h3>
+      <p class="desc">Fed decisions, inflation prints, jobs reports — the underlying forces.</p>
+      <div class="news-item">
+        <span class="ni-tag tag-cpi">CPI · May 12</span>
+        <p class="ni-title">April CPI rose 3.8% YoY — hottest since May 2023</p>
+        <p class="ni-body">Headline +0.6% m/m on energy shock; core +0.4% m/m, +2.8% YoY. Shelter re-accelerated +0.6%. Gasoline +28.4% YoY.</p>
+        <p class="ni-impact">→ Pushed 10-Yr Treasury near a 1-year high; rate-cut odds collapsed.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-fed">FOMC · Apr 29</span>
+        <p class="ni-title">Fed holds at 3.50–3.75% — four dissents, most since 1992</p>
+        <p class="ni-body">Sharp split on the committee. Next meeting June 16–17 includes updated dot plot. Markets price ~30% odds of a HIKE in 2026.</p>
+        <p class="ni-impact">→ Removes cushion that had been keeping mortgage rates lower.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-jobs">Jobs · May 8</span>
+        <p class="ni-title">April payrolls +115K, unemployment steady at 4.3%</p>
+        <p class="ni-body">Cooler than March's +185K but beat consensus +55K. Health care +37K, transport +30K, retail +22K. Participation fell to 61.8%.</p>
+        <p class="ni-impact">→ Mixed signal; not weak enough to force a Fed cut.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-conflict">Geopolitics · ongoing</span>
+        <p class="ni-title">Iran conflict pushing oil higher, lifting inflation expectations</p>
+        <p class="ni-body">Energy shock that began in February has stalled disinflation and is feeding into shipping &amp; goods costs.</p>
+        <p class="ni-impact">→ Single biggest reason mortgage rates are ~50 bps higher than January.</p>
+      </div>
+    </div>
+    <div class="news-col">
+      <h3>Housing market <span class="pill">Sector</span></h3>
+      <p class="desc">Home sales, inventory, builder &amp; mortgage application data.</p>
+      <div class="news-item">
+        <span class="ni-tag tag-applications">MBA · May 7</span>
+        <p class="ni-title">Mortgage applications fall 4.4% week-over-week</p>
+        <p class="ni-body">Purchase apps -3% w/w but +5% YoY — affordability still gating activity. Refi softened with the rate backup.</p>
+        <p class="ni-impact">→ Lender demand metric; thinner pipelines = competitive rates for qualified borrowers.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-housing">Inventory · May</span>
+        <p class="ni-title">Inventory +2.3% YoY; 1.47M unsold homes end of April</p>
+        <p class="ni-body">Up 5.8% from March, up 1.4% YoY. Median list price -2.2% YoY. Roughly 36% of listings have had a price cut.</p>
+        <p class="ni-impact">→ Shifting toward buyers, but high rates still suppressing turnover.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-housing">Pending sales · May 7</span>
+        <p class="ni-title">Pending home sales jump 10% YoY</p>
+        <p class="ni-body">4-week rolling average 6.5% ahead of 2025. Homes take 43 days to go under contract (40 last year); new listings -1.8% YoY.</p>
+        <p class="ni-impact">→ Demand more resilient than headlines suggest, despite the 6%+ rate environment.</p>
+      </div>
+      <div class="news-item">
+        <span class="ni-tag tag-prices">Prices · April</span>
+        <p class="ni-title">Equity-rich homeowner share fell — but home prices nudged up</p>
+        <p class="ni-body">HELOC balances cooling as the % of "equity rich" homes (loan ≤50% of value) declined; prices still rising modestly nationally.</p>
+        <p class="ni-impact">→ HELOC volume sensitive to both rates and tappable equity.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote">
+    <strong>How to read this:</strong> Mortgage rates move primarily with the 10-Year Treasury, which itself responds to inflation, Fed expectations, and risk sentiment. The Fed Funds rate sets short-term rates and is the anchor for Prime, SOFR, HELOC, and most variable consumer loans. Today's bigger picture: an Iran-driven energy shock revived inflation, the Fed has paused with internal disagreement, and markets now price a possible HIKE rather than a cut — keeping mortgage rates near 6.5%.
+  </div>
+
+  <div class="sources">
+    <strong>Live source:</strong> <a href="https://www.mortgagenewsdaily.com/mortgage-rates" target="_blank" rel="noopener">Mortgage News Daily</a> (auto-fetched every 5 min by GitHub Actions during US market hours) ·
+    <strong>Reference:</strong>
+    <a href="https://www.federalreserve.gov/releases/h15/" target="_blank" rel="noopener">Federal Reserve H.15</a>,
+    <a href="https://fred.stlouisfed.org/series/MORTGAGE30US" target="_blank" rel="noopener">FRED MORTGAGE30US</a>,
+    <a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener">BLS CPI</a>,
+    <a href="https://www.bankrate.com/mortgages/mortgage-rates/" target="_blank" rel="noopener">Bankrate</a>,
+    <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a>,
+    <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" rel="noopener">CME FedWatch</a>.
+    <br><br>
+    <em>Static reference rates (commercial, SBA, consumer, federal benchmarks) update less frequently. Not financial advice.</em>
+  </div>
+
+</div>
+
+<script>
+// ---------- chart bootstrap (data may be replaced when rates.json arrives) ----------
+const navy = '#0a2540', accent = '#0570de', purple = '#7c3aed', orange = '#ea580c';
+const baseOpts = {
+  responsive:true, maintainAspectRatio:false,
+  plugins:{ legend:{ position:'bottom', labels:{ boxWidth:10, boxHeight:10, font:{size:11}, color:'#475569'} } },
+  scales:{
+    x:{ grid:{ display:false }, ticks:{ font:{size:10}, color:'#64748b'} },
+    y:{ grid:{ color:'#e2e8f0' }, ticks:{ font:{size:10}, color:'#64748b'} }
+  }
+};
+
+let chartMtg30 = new Chart(document.getElementById('chartMtg30'), {
+  type:'line',
+  data:{ labels:[], datasets:[{ label:'30-Yr Fixed (%)', data:[], borderColor:accent, backgroundColor:'rgba(5,112,222,0.10)', fill:true, tension:0.3, pointRadius:3, borderWidth:2 }] },
+  options:{ ...baseOpts, scales:{...baseOpts.scales, y:{...baseOpts.scales.y, ticks:{...baseOpts.scales.y.ticks, callback:v=>v.toFixed(2)+'%'}}} }
+});
+
+new Chart(document.getElementById('chartMtgVsTr'), {
+  type:'line',
+  data:{ labels:['Nov','Dec','Jan','Feb','Mar','Apr','May'],
+    datasets:[
+      { label:'30-Yr Mortgage', data:[6.85,6.45,6.05,5.95,6.10,6.32,6.46], borderColor:accent, backgroundColor:'rgba(5,112,222,0.08)', tension:0.3, pointRadius:2, borderWidth:2 },
+      { label:'10-Yr Treasury', data:[4.45,4.20,3.95,3.92,4.05,4.30,4.50], borderColor:purple, backgroundColor:'rgba(124,58,237,0.08)', tension:0.3, pointRadius:2, borderWidth:2 }
+    ]},
+  options:{ ...baseOpts, scales:{...baseOpts.scales, y:{...baseOpts.scales.y, ticks:{...baseOpts.scales.y.ticks, callback:v=>v.toFixed(2)+'%'}}} }
+});
+
+new Chart(document.getElementById('chartFedFunds'), {
+  type:'line',
+  data:{ labels:['May 25','Jul 25','Sep 25','Nov 25','Dec 25','Jan 26','Mar 26','Apr 26','Jun 26 (mkt)','Dec 26 (mkt)'],
+    datasets:[{ label:'Fed Funds upper bound (%)', data:[5.50,5.50,5.00,4.50,3.75,3.75,3.75,3.75,3.75,4.00], borderColor:navy, backgroundColor:'rgba(10,37,64,0.10)', fill:true, stepped:'before', pointRadius:3, borderWidth:2, segment:{ borderDash:c=>c.p1DataIndex>=8?[5,4]:undefined } }] },
+  options:{ ...baseOpts, scales:{...baseOpts.scales, y:{...baseOpts.scales.y, suggestedMin:3.0, suggestedMax:6.0, ticks:{...baseOpts.scales.y.ticks, callback:v=>v.toFixed(2)+'%'}}} }
+});
+
+new Chart(document.getElementById('chartCPI'), {
+  type:'bar',
+  data:{ labels:['Oct','Nov','Dec','Jan','Feb','Mar','Apr'],
+    datasets:[
+      { label:'Headline CPI YoY', data:[2.6,2.7,2.8,2.9,3.1,3.3,3.8], backgroundColor:'rgba(234,88,12,0.85)', borderRadius:4 },
+      { label:'Core CPI YoY',     data:[3.3,3.3,3.2,3.0,2.9,2.7,2.8], backgroundColor:'rgba(5,112,222,0.85)', borderRadius:4 }
+    ]},
+  options:{ ...baseOpts, scales:{...baseOpts.scales, y:{...baseOpts.scales.y, suggestedMin:2, suggestedMax:4.5, ticks:{...baseOpts.scales.y.ticks, callback:v=>v.toFixed(1)+'%'}}} }
+});
+
+// ---------- rate.json polling ----------
+const POLL_MS = 120 * 1000;
+let pollTimer = null;
+let autoOn = true;
+let inFlight = false;
+
+async function loadRates(manual){
+  if(inFlight) return;
+  inFlight = true;
+  const btn = document.getElementById('refreshBtn');
+  const label = document.getElementById('refreshLabel');
+  const status = document.getElementById('refreshStatus');
+  btn.disabled = true;
+  label.innerHTML = '<span class="spinner"></span> Loading…';
+
+  try {
+    // cache-bust so we always get the latest commit from GitHub Pages
+    const res = await fetch('./rates.json?t=' + Date.now(), { cache:'no-store' });
+    if(!res.ok) throw new Error('rates.json HTTP ' + res.status);
+    const j = await res.json();
+    applyRates(j);
+    const stamp = new Date().toLocaleTimeString('en-US', { hour:'numeric', minute:'2-digit', second:'2-digit' });
+    const gen = j.generated_at ? new Date(j.generated_at).toLocaleString('en-US', { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }) : 'unknown';
+    status.textContent = (autoOn?'Auto · ':'Manual · ') + 'data ' + gen + ' · checked ' + stamp;
+    status.className = 'refresh-status ok';
+  } catch(err) {
+    const stamp = new Date().toLocaleTimeString('en-US', { hour:'numeric', minute:'2-digit', second:'2-digit' });
+    status.textContent = 'Could not load rates.json at ' + stamp + ' — ' + (err.message||'unknown') + '. Will retry.';
+    status.className = 'refresh-status err';
+  } finally {
+    inFlight = false;
+    btn.disabled = false;
+    label.textContent = 'Refresh now';
+  }
+}
+
+function applyRates(j){
+  const r = j.rates || {};
+  const ref = j.reference || {};
+
+  setLive('rate-30yr','delta-30yr', r.thirty_year_fixed,   '%');
+  setLive('rate-15yr','delta-15yr', r.fifteen_year_fixed,  '%');
+  setLive('rate-10yr','delta-10yr', r.ten_year_treasury,   '');
+
+  setStatic('rate-fed',  ref.fed_funds_upper, '%');
+  document.getElementById('note-fed').textContent =
+    'Range ' + (ref.fed_funds_lower?.toFixed(2) ?? '?') + '%–' + (ref.fed_funds_upper?.toFixed(2) ?? '?') + '%';
+
+  setStatic('rate-arm',   ref.five_one_arm, '%');
+  setStatic('rate-jumbo', ref.thirty_jumbo, '%');
+  setStatic('rate-fha',   ref.thirty_fha, '%');
+  setStatic('rate-va',    ref.thirty_va, '%');
+
+  setStatic('rate-prime', ref.prime_rate, '%');
+  if(ref.fed_funds_last_change){
+    document.getElementById('note-prime').textContent = 'Unchanged since ' + ref.fed_funds_last_change;
+  }
+  setStatic('rate-sofr',  ref.sofr_overnight, '%');
+  setStatic('rate-2yr',   ref.two_year_treasury, '%');
+  setStatic('rate-30tr',  ref.thirty_year_treasury, '%');
+
+  if(typeof ref.cre_conventional_min === 'number'){
+    document.getElementById('rate-cre').innerHTML = ref.cre_conventional_min.toFixed(2) + '–' + ref.cre_conventional_max.toFixed(2) + '<small>%</small>';
+  }
+  if(typeof ref.sba_7a_min === 'number'){
+    document.getElementById('rate-sba').innerHTML = ref.sba_7a_min.toFixed(2) + '–' + ref.sba_7a_max.toFixed(2) + '<small>%</small>';
+  }
+  setStatic('rate-504',  ref.sba_504, '%');
+
+  setStatic('rate-auto',  ref.auto_60mo, '%');
+  setStatic('rate-heloc', ref.heloc_variable, '%');
+  setStatic('rate-he',    ref.home_equity_fixed, '%');
+  setStatic('rate-pers',  ref.personal_loan_3yr, '%');
+
+  // History chart
+  const hist = j.history?.thirty_year_fixed_daily || [];
+  if(hist.length){
+    chartMtg30.data.labels   = hist.map(p => p.date.slice(5));   // MM-DD
+    chartMtg30.data.datasets[0].data = hist.map(p => p.rate);
+    chartMtg30.update('none');
+    document.getElementById('chartDesc1').textContent =
+      'MND Daily Rate Index — ' + hist.length + ' days through ' + hist[hist.length-1].date;
+  }
+
+  // As-of label on the headline 30-yr card
+  if(r.thirty_year_fixed?.asof_label){
+    document.getElementById('asof-30yr').textContent = 'MND Daily · as of ' + r.thirty_year_fixed.asof_label;
+  }
+}
+
+function setLive(rateId, deltaId, payload, suffix){
+  if(!payload || typeof payload.rate !== 'number') return;
+  const rEl = document.getElementById(rateId);
+  const dEl = document.getElementById(deltaId);
+  const prev = parseFloat(rEl.dataset.value || 'NaN');
+  const value = payload.rate;
+  rEl.innerHTML = value.toFixed(suffix==='%' ? 2 : 3) + (suffix?'<small>'+suffix+'</small>':'');
+  rEl.dataset.value = String(value);
+  if(!isNaN(prev) && Math.abs(prev-value) > 0.0001){
+    const card = rEl.closest('.card');
+    const cls = value > prev ? 'flash-up' : 'flash-down';
+    card.classList.remove('flash-up','flash-down');
+    void card.offsetWidth;
+    card.classList.add(cls);
+  }
+  if(typeof payload.change === 'number'){
+    const up = payload.change > 0.0001;
+    const dn = payload.change < -0.0001;
+    dEl.className = 'delta ' + (up?'up':(dn?'down':'flat'));
+    dEl.textContent = (up?'▲':(dn?'▼':'━')) + ' ' + Math.abs(payload.change).toFixed(suffix==='%'?2:3) + (suffix?'%':'') + ' day';
+  } else {
+    dEl.className = 'delta flat';
+    dEl.textContent = '— flat';
+  }
+}
+
+function setStatic(id, value, suffix){
+  if(typeof value !== 'number') return;
+  document.getElementById(id).innerHTML = value.toFixed(2) + (suffix?'<small>'+suffix+'</small>':'');
+}
+
+function toggleAuto(){
+  autoOn = document.getElementById('autoToggle').checked;
+  if(autoOn){
+    schedule();
+    loadRates(false);
+  } else {
+    clearInterval(pollTimer);
+    document.getElementById('refreshStatus').textContent = 'Auto-refresh paused';
+  }
+}
+function schedule(){
+  clearInterval(pollTimer);
+  pollTimer = setInterval(() => { if(!document.hidden && !inFlight) loadRates(false); }, POLL_MS);
+}
+document.addEventListener('visibilitychange', () => {
+  if(!document.hidden && autoOn && !inFlight) loadRates(false);
+});
+
+// initial load
+loadRates(false);
+schedule();
+</script>
+</body>
+</html>
