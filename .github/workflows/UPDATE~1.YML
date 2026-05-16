@@ -1,0 +1,50 @@
+name: Update loan rates
+
+# GitHub-Actions cron is best-effort with a 5-minute minimum.
+# We schedule every 5 minutes during US business hours (9:00–17:00 ET, weekdays).
+# The dashboard page polls rates.json every 120s, so it always shows whatever
+# was most recently committed.
+on:
+  schedule:
+    # 13:00–22:00 UTC ≈ 9am–6pm ET (covers EST and EDT). Mon–Fri.
+    - cron: "*/5 13-22 * * 1-5"
+  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write            # required to commit rates.json back to the repo
+
+concurrency:
+  group: update-rates
+  cancel-in-progress: false  # let one finish before the next starts
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install --quiet requests beautifulsoup4
+
+      - name: Fetch latest rates
+        run: python scripts/fetch_rates.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "rates-bot"
+          git config user.email "rates-bot@users.noreply.github.com"
+          git add rates/rates.json
+          if git diff --cached --quiet; then
+            echo "No rate changes — nothing to commit."
+          else
+            git commit -m "chore(rates): update $(date -u +%FT%TZ)"
+            git push
+          fi
