@@ -1,129 +1,34 @@
 {
-  "generated_at": "2026-05-16T14:06:05+00:00",
-  "history": {
-    "fifteen_year_fixed_daily": [
-      {
-        "date": "2026-04-29",
-        "rate": 5.77
-      },
-      {
-        "date": "2026-04-30",
-        "rate": 5.64
-      },
-      {
-        "date": "2026-05-06",
-        "rate": 5.83
-      },
-      {
-        "date": "2026-05-07",
-        "rate": 5.72
-      },
-      {
-        "date": "2026-05-08",
-        "rate": 5.99
-      },
-      {
-        "date": "2026-05-11",
-        "rate": 6.0
-      },
-      {
-        "date": "2026-05-12",
-        "rate": 6.04
-      },
-      {
-        "date": "2026-05-13",
-        "rate": 6.07
-      },
-      {
-        "date": "2026-05-13",
-        "rate": 5.83
-      },
-      {
-        "date": "2026-05-14",
-        "rate": 6.04
-      },
-      {
-        "date": "2026-05-14",
-        "rate": 5.71
-      },
-      {
-        "date": "2026-05-15",
-        "rate": 6.1
-      }
-    ],
-    "thirty_year_fixed_daily": [
-      {
-        "date": "2026-04-29",
-        "rate": 6.37
-      },
-      {
-        "date": "2026-04-30",
-        "rate": 6.3
-      },
-      {
-        "date": "2026-05-06",
-        "rate": 6.45
-      },
-      {
-        "date": "2026-05-07",
-        "rate": 6.37
-      },
-      {
-        "date": "2026-05-08",
-        "rate": 6.42
-      },
-      {
-        "date": "2026-05-11",
-        "rate": 6.49
-      },
-      {
-        "date": "2026-05-12",
-        "rate": 6.56
-      },
-      {
-        "date": "2026-05-13",
-        "rate": 6.57
-      },
-      {
-        "date": "2026-05-13",
-        "rate": 6.46
-      },
-      {
-        "date": "2026-05-14",
-        "rate": 6.52
-      },
-      {
-        "date": "2026-05-14",
-        "rate": 6.36
-      },
-      {
-        "date": "2026-05-15",
-        "rate": 6.65
-      }
-    ]
-  },
+  "generated_at": "2026-05-16T00:00:00+00:00",
+  "source": "Initial seed (May 14-16, 2026). GitHub Action overwrites with live data.",
+  "warnings": [],
   "rates": {
-    "fifteen_year_fixed": {
-      "asof_label": "May 15 2026",
-      "change": 0.06,
-      "rate": 6.1
-    },
-    "ten_year_treasury": {
-      "change": 0.075,
-      "rate": 4.56
-    },
-    "thirty_year_fixed": {
-      "asof_label": "May 15 2026",
-      "change": 0.13,
-      "rate": 6.52
-    }
+    "thirty_year_fixed":  {"rate": 6.52, "change": -0.05, "asof_label": "May 14 2026"},
+    "fifteen_year_fixed": {"rate": 6.04, "change": -0.03, "asof_label": "May 14 2026"},
+    "ten_year_treasury":  {"rate": 4.560, "change": 0.075}
+  },
+  "history": {
+    "thirty_year_fixed_daily": [
+      {"date": "2026-04-14", "rate": 6.34},
+      {"date": "2026-04-17", "rate": 6.36},
+      {"date": "2026-04-22", "rate": 6.35},
+      {"date": "2026-04-25", "rate": 6.32},
+      {"date": "2026-04-30", "rate": 6.30},
+      {"date": "2026-05-05", "rate": 6.40},
+      {"date": "2026-05-07", "rate": 6.44},
+      {"date": "2026-05-08", "rate": 6.42},
+      {"date": "2026-05-11", "rate": 6.49},
+      {"date": "2026-05-12", "rate": 6.56},
+      {"date": "2026-05-13", "rate": 6.57},
+      {"date": "2026-05-14", "rate": 6.52}
+    ]
   },
   "reference": {
     "auto_60mo": 6.97,
     "cre_conventional_max": 8.75,
     "cre_conventional_min": 5.23,
     "fed_funds_last_change": "2025-12-11",
-    "fed_funds_lower": 3.5,
+    "fed_funds_lower": 3.50,
     "fed_funds_upper": 3.75,
     "five_one_arm": 6.48,
     "heloc_variable": 7.21,
@@ -137,10 +42,112 @@
     "sofr_overnight": 3.64,
     "thirty_fha": 6.16,
     "thirty_jumbo": 6.74,
-    "thirty_va": 6.1,
-    "thirty_year_treasury": 4.92,
+    "thirty_va": 6.10,
+    "thirty_year_treasury": 5.02,
     "two_year_treasury": 3.91
   },
-  "source": "Mortgage News Daily (auto-fetched)",
-  "warnings": []
+  "indices": {
+    "sp500":   {"value": 7408.50,  "change": -93.05,  "change_pct": -1.24},
+    "nasdaq":  {"value": 26225.14, "change": -410.36, "change_pct": -1.54},
+    "dow":     {"value": 49526.17, "change": -537.29, "change_pct": -1.07},
+    "vix":     {"value": 18.50,    "change": 1.20,    "change_pct": 6.94}
+  },
+  "commodities": {
+    "wti_oil":     {"value": 95.30, "change": 1.85,  "change_pct": 1.98, "unit": "$/bbl"},
+    "brent_oil":   {"value": 99.10, "change": 1.62,  "change_pct": 1.66, "unit": "$/bbl"},
+    "gold":        {"value": 3245,  "change": 28,    "change_pct": 0.87, "unit": "$/oz"},
+    "silver":      {"value": 38.40, "change": 0.45,  "change_pct": 1.19, "unit": "$/oz"},
+    "natural_gas": {"value": 3.85,  "change": 0.08,  "change_pct": 2.12, "unit": "$/MMBtu"},
+    "copper":      {"value": 4.62,  "change": -0.03, "change_pct": -0.65, "unit": "$/lb"},
+    "gas_unleaded":{"value": 4.42,  "change": 0.04,  "change_pct": 0.91, "unit": "$/gal"}
+  },
+  "forex": {
+    "EUR": {"rate": 0.876, "name": "Euro",          "flag": "🇪🇺", "change_pct": -0.12},
+    "GBP": {"rate": 0.763, "name": "British Pound", "flag": "🇬🇧", "change_pct": -0.21},
+    "JPY": {"rate": 155.29,"name": "Japanese Yen",  "flag": "🇯🇵", "change_pct": 0.38},
+    "CNY": {"rate": 6.785, "name": "Chinese Yuan",  "flag": "🇨🇳", "change_pct": 0.05},
+    "KRW": {"rate": 1493,  "name": "Korean Won",    "flag": "🇰🇷", "change_pct": 0.42},
+    "INR": {"rate": 95.77, "name": "Indian Rupee",  "flag": "🇮🇳", "change_pct": 0.15},
+    "CAD": {"rate": 1.346, "name": "Canadian Dollar","flag": "🇨🇦", "change_pct": 0.08},
+    "MXN": {"rate": 17.23, "name": "Mexican Peso",  "flag": "🇲🇽", "change_pct": -0.18},
+    "DXY": {"rate": 104.60,"name": "US Dollar Index","flag": "🇺🇸", "change_pct": 0.14}
+  },
+  "treasury_curve": [
+    {"tenor": "1M",  "yield": 3.62},
+    {"tenor": "3M",  "yield": 3.60},
+    {"tenor": "6M",  "yield": 3.76},
+    {"tenor": "1Y",  "yield": 3.79},
+    {"tenor": "2Y",  "yield": 3.91},
+    {"tenor": "5Y",  "yield": 4.13},
+    {"tenor": "7Y",  "yield": 4.32},
+    {"tenor": "10Y", "yield": 4.56},
+    {"tenor": "20Y", "yield": 5.01},
+    {"tenor": "30Y", "yield": 5.02}
+  ],
+  "global_bonds_10y": {
+    "US":      {"yield": 4.56, "change": 0.075, "name": "United States"},
+    "Germany": {"yield": 2.45, "change": 0.03,  "name": "Germany (Bund)"},
+    "UK":      {"yield": 4.20, "change": 0.05,  "name": "UK (Gilt)"},
+    "Japan":   {"yield": 0.95, "change": 0.01,  "name": "Japan (JGB)"},
+    "Canada":  {"yield": 3.45, "change": 0.04,  "name": "Canada"},
+    "France":  {"yield": 3.05, "change": 0.03,  "name": "France (OAT)"},
+    "China":   {"yield": 2.20, "change": 0.01,  "name": "China"},
+    "India":   {"yield": 6.85, "change": -0.02, "name": "India"}
+  },
+  "inflation": {
+    "cpi_headline":  {"value": 3.8, "prior": 3.3, "label": "CPI YoY",       "release": "May 12 2026", "next": "Jun 11 2026"},
+    "cpi_core":      {"value": 2.8, "prior": 2.7, "label": "Core CPI YoY",  "release": "May 12 2026", "next": "Jun 11 2026"},
+    "pce_headline":  {"value": 3.2, "prior": 2.9, "label": "PCE YoY",       "release": "Apr 30 2026", "next": "May 30 2026"},
+    "pce_core":      {"value": 2.6, "prior": 2.5, "label": "Core PCE YoY",  "release": "Apr 30 2026", "next": "May 30 2026"},
+    "ppi_headline":  {"value": 4.1, "prior": 3.6, "label": "PPI YoY",       "release": "May 13 2026", "next": "Jun 12 2026"}
+  },
+  "banks": {
+    "chase": {
+      "name": "Chase",
+      "url":  "https://www.chase.com/personal/mortgage/mortgage-rates",
+      "mortgage_30yr": 6.50,
+      "mortgage_15yr": 5.75,
+      "auto_new":      7.49,
+      "cd_12mo":       2.00,
+      "cd_special":    3.50,
+      "savings":       0.01
+    },
+    "wells_fargo": {
+      "name": "Wells Fargo",
+      "url":  "https://www.wellsfargo.com/mortgage/rates/",
+      "mortgage_30yr": 6.82,
+      "mortgage_15yr": 5.43,
+      "auto_new":      7.99,
+      "cd_12mo":       1.50,
+      "cd_special":    3.75,
+      "savings":       0.01
+    },
+    "bank_of_america": {
+      "name": "Bank of America",
+      "url":  "https://www.bankofamerica.com/mortgage/",
+      "mortgage_30yr": 6.63,
+      "mortgage_15yr": 5.88,
+      "auto_new":      7.39,
+      "cd_12mo":       3.40,
+      "cd_special":    4.00,
+      "savings":       0.04
+    },
+    "capital_city_bank": {
+      "name": "Capital City Bank (FL)",
+      "url":  "https://www.ccbg.com/",
+      "mortgage_30yr": 7.10,
+      "mortgage_15yr": 6.20,
+      "auto_new":      7.75,
+      "cd_12mo":       3.85,
+      "cd_special":    4.25,
+      "savings":       0.10
+    }
+  },
+  "news": [
+    {"title": "April CPI rose 3.8% YoY — hottest reading since May 2023", "url": "https://www.cnbc.com/2026/05/12/cpi-inflation-april-2026-.html", "source": "CNBC", "published": "2026-05-12"},
+    {"title": "Fed holds at 3.50–3.75%, four FOMC dissents (most since 1992)", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm", "source": "Federal Reserve", "published": "2026-04-29"},
+    {"title": "April payrolls +115K, unemployment steady at 4.3%", "url": "https://www.bls.gov/news.release/empsit.nr0.htm", "source": "BLS", "published": "2026-05-08"},
+    {"title": "Mortgage applications fall 4.4% week-over-week", "url": "https://www.housingwire.com/", "source": "MBA", "published": "2026-05-07"},
+    {"title": "10-Yr Treasury yield climbs to 4.58% on inflation, Iran-driven energy shock", "url": "https://tradingeconomics.com/united-states/government-bond-yield", "source": "TradingEconomics", "published": "2026-05-15"}
+  ]
 }
