@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.32,
-      "change_pct": 0.21,
+      "change": 0.05,
+      "change_pct": 0.01,
       "unit": "$/lb",
-      "value": 630.6
+      "value": 629.33
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,87 +61,81 @@
       "value": 4.42
     },
     "gold": {
-      "change": 0.25,
-      "change_pct": 0.01,
+      "change": 4.75,
+      "change_pct": 0.1,
       "unit": "$/oz",
-      "value": 4541.95
+      "value": 4546.45
     },
     "natural_gas": {
-      "change": 0.02,
-      "change_pct": 0.7,
+      "change": 0.04,
+      "change_pct": 1.2,
       "unit": "$/MMBtu",
-      "value": 3.013
+      "value": 3.028
     },
     "silver": {
-      "change": 75.5,
-      "change_pct": 0.99,
+      "change": 104.2,
+      "change_pct": 1.37,
       "unit": "$/oz",
-      "value": 7687.5
+      "value": 7716.2
     },
     "wti_oil": {
-      "change": 1.64,
-      "change_pct": 1.61,
+      "change": 2.52,
+      "change_pct": 2.48,
       "unit": "$/bbl",
-      "value": 103.38
+      "value": 104.26
     }
   },
   "forex": {
     "CAD": {
-      "change_pct": 0.08,
+      "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.346
+      "rate": 1.3741
     },
     "CNY": {
-      "change_pct": 0.05,
+      "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.785
-    },
-    "DXY": {
-      "change_pct": 0.14,
-      "flag": "\ud83c\uddfa\ud83c\uddf8",
-      "name": "US Dollar Index",
-      "rate": 104.6
+      "rate": 6.8002
     },
     "EUR": {
-      "change_pct": -0.12,
+      "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.876
+      "rate": 0.85852
     },
     "GBP": {
-      "change_pct": -0.21,
+      "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.763
+      "rate": 0.74708
     },
     "INR": {
-      "change_pct": 0.15,
+      "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.77
+      "rate": 96.35
     },
     "JPY": {
-      "change_pct": 0.38,
+      "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 155.29
+      "rate": 158.77
     },
     "KRW": {
-      "change_pct": 0.42,
+      "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1493
+      "rate": 1497.8
     },
     "MXN": {
-      "change_pct": -0.18,
+      "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.23
+      "rate": 17.2922
     }
   },
-  "generated_at": "2026-05-18T16:31:18+00:00",
+  "generated_at": "2026-05-18T18:22:18+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -238,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -42.7,
-      "change_pct": -0.09,
-      "value": 49483.5
+      "change": -85.4,
+      "change_pct": -0.17,
+      "value": 49440.8
     },
     "nasdaq": {
-      "change": -355.09,
-      "change_pct": -1.35,
-      "value": 25911.666
+      "change": -345.81,
+      "change_pct": -1.32,
+      "value": 25920.951
     },
     "sp500": {
-      "change": -45.6,
-      "change_pct": -0.62,
-      "value": 7362.9
+      "change": -45.1,
+      "change_pct": -0.61,
+      "value": 7363.4
     },
     "vix": {
       "change": 1.2,
@@ -297,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 18 May 2026 17:03:42",
+      "source": "CNBC",
+      "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
+      "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
+    },
+    {
       "published": "Mon, 18 May 2026 16:08:35",
       "source": "CNBC",
       "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
@@ -321,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html"
     },
     {
-      "published": "Thu, 14 May 2026 16:22:18",
-      "source": "CNBC",
-      "title": "Bessent sees 'substantial disinflation' ahead as Warsh takes over the Fed",
-      "url": "https://www.cnbc.com/2026/05/14/bessent-sees-substantial-disinflation-ahead-as-warsh-takes-over-the-fed.html"
+      "published": "Mon, 18 May 2026 18:17:00",
+      "source": "MarketWatch",
+      "title": "Nvidia\u2019s earnings will play second fiddle to these big investor debates",
+      "url": "https://www.marketwatch.com/story/nvidias-earnings-will-play-second-fiddle-to-these-big-investor-debates-908abcd2?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 16:13:00",
+      "published": "Mon, 18 May 2026 18:05:00",
       "source": "MarketWatch",
-      "title": "5 money moves that made this 32-year-old dad a millionaire in just 9 years",
-      "url": "https://www.marketwatch.com/story/5-money-moves-that-made-this-32-year-old-dad-a-millionaire-in-just-9-years-3725c0ed?mod=mw_rss_topstories"
+      "title": "\u2018How much money do you make?\u2019 Since you can\u2019t ask your date that, ask this instead.",
+      "url": "https://www.marketwatch.com/story/how-much-money-do-you-make-since-you-cant-ask-your-date-that-ask-this-instead-e28997a3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 16:13:00",
+      "published": "Mon, 18 May 2026 18:00:00",
       "source": "MarketWatch",
-      "title": "Ford takes its first big step toward being an energy business",
-      "url": "https://www.marketwatch.com/story/ford-takes-its-first-big-step-toward-being-an-energy-business-b1d72bc2?mod=mw_rss_topstories"
+      "title": "\u2018He didn\u2019t really pay attention\u2019: I told my friend he left millions on the table in retirement. Did I do the right thing?",
+      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 16:10:00",
+      "published": "Mon, 18 May 2026 17:44:00",
       "source": "MarketWatch",
-      "title": "The oil market is reaching a \u2018tipping point\u2019 that could create problems for stocks, according to this Wall Street legend",
-      "url": "https://www.marketwatch.com/story/the-oil-market-is-reaching-a-tipping-point-that-could-create-problems-for-stocks-according-to-this-wall-street-legend-8e7f9d62?mod=mw_rss_topstories"
+      "title": "Oil climbs as Trump warns the \u2018clock is ticking\u2019 on Iran, but there\u2019s a bigger danger lurking on the horizon",
+      "url": "https://www.marketwatch.com/story/oil-climbs-as-trump-warns-the-clock-is-ticking-on-iran-but-theres-a-bigger-danger-lurking-on-the-horizon-9dfa8129?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 15:33:00",
+      "published": "Mon, 18 May 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Arm\u2019s stock could rise another 45% as the \u2018renaissance of CPUs\u2019 takes hold, analyst says",
-      "url": "https://www.marketwatch.com/story/arms-stock-could-rise-another-45-as-the-renaissance-of-cpus-takes-hold-analyst-says-58f6d261?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 18 May 2026 15:24:00",
-      "source": "MarketWatch",
-      "title": "Are you \u2018doomjobbing\u2019 while looking for work? Know the signs \u2014 and do this instead.",
-      "url": "https://www.marketwatch.com/story/are-you-doomjobbing-while-looking-for-work-know-the-signs-and-do-this-instead-5f44cec3?mod=mw_rss_topstories"
+      "title": "Some people lose far more weight than others on GLP-1s like Wegovy. Here\u2019s why.",
+      "url": "https://www.marketwatch.com/story/some-people-lose-far-more-weight-than-others-on-glp-1s-like-wegovy-heres-why-9215257d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -439,7 +433,5 @@
       "yield": 5.12
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
