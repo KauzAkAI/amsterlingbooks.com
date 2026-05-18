@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.05,
-      "change_pct": 0.01,
+      "change": 3.4,
+      "change_pct": 0.54,
       "unit": "$/lb",
-      "value": 629.33
+      "value": 632.68
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 4.75,
-      "change_pct": 0.1,
+      "change": 23.35,
+      "change_pct": 0.51,
       "unit": "$/oz",
-      "value": 4546.45
+      "value": 4565.05
     },
     "natural_gas": {
       "change": 0.04,
-      "change_pct": 1.2,
+      "change_pct": 1.17,
       "unit": "$/MMBtu",
-      "value": 3.028
+      "value": 3.027
     },
     "silver": {
-      "change": 104.2,
-      "change_pct": 1.37,
+      "change": 170.0,
+      "change_pct": 2.23,
       "unit": "$/oz",
-      "value": 7716.2
+      "value": 7782.0
     },
     "wti_oil": {
-      "change": 2.52,
-      "change_pct": 2.48,
+      "change": 0.13,
+      "change_pct": 0.13,
       "unit": "$/bbl",
-      "value": 104.26
+      "value": 101.87
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2922
     }
   },
-  "generated_at": "2026-05-18T18:22:18+00:00",
+  "generated_at": "2026-05-18T20:12:25+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,25 +226,25 @@
       },
       {
         "date": "2026-05-18",
-        "rate": 6.65
+        "rate": 6.68
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": -85.4,
-      "change_pct": -0.17,
-      "value": 49440.8
+      "change": 159.9,
+      "change_pct": 0.32,
+      "value": 49686.1
     },
     "nasdaq": {
-      "change": -345.81,
-      "change_pct": -1.32,
-      "value": 25920.951
+      "change": -176.03,
+      "change_pct": -0.67,
+      "value": 26090.734
     },
     "sp500": {
-      "change": -45.1,
-      "change_pct": -0.61,
-      "value": 7363.4
+      "change": -5.4,
+      "change_pct": -0.07,
+      "value": 7403.1
     },
     "vix": {
       "change": 1.2,
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html"
     },
     {
-      "published": "Mon, 18 May 2026 18:17:00",
+      "published": "Mon, 18 May 2026 20:10:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s earnings will play second fiddle to these big investor debates",
-      "url": "https://www.marketwatch.com/story/nvidias-earnings-will-play-second-fiddle-to-these-big-investor-debates-908abcd2?mod=mw_rss_topstories"
+      "title": "Lululemon hits back at its founder after months of attacks, saying he\u2019s just jealous",
+      "url": "https://www.marketwatch.com/story/lululemon-hits-back-at-its-founder-after-months-of-attacks-saying-hes-just-jealous-e22522ec?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 18:05:00",
+      "published": "Mon, 18 May 2026 19:44:00",
       "source": "MarketWatch",
-      "title": "\u2018How much money do you make?\u2019 Since you can\u2019t ask your date that, ask this instead.",
-      "url": "https://www.marketwatch.com/story/how-much-money-do-you-make-since-you-cant-ask-your-date-that-ask-this-instead-e28997a3?mod=mw_rss_topstories"
+      "title": "Trump\u2019s IRS settlement features a $1.8 billion \u2018anti-weaponization\u2019 fund for allies. Here\u2019s who may get the money.",
+      "url": "https://www.marketwatch.com/story/trumps-irs-settlement-features-a-1-8-billion-anti-weaponization-fund-for-allies-heres-who-may-get-the-money-266e876d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 18:00:00",
+      "published": "Mon, 18 May 2026 19:40:00",
       "source": "MarketWatch",
-      "title": "\u2018He didn\u2019t really pay attention\u2019: I told my friend he left millions on the table in retirement. Did I do the right thing?",
-      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories"
+      "title": "U.S. physician tests positive for Ebola: He and six other Americans in Congo will be transported to Germany",
+      "url": "https://www.marketwatch.com/story/u-s-plans-to-move-physicians-exposed-to-rare-ebola-virus-to-germany-122af3f4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 17:44:00",
+      "published": "Mon, 18 May 2026 19:38:00",
       "source": "MarketWatch",
-      "title": "Oil climbs as Trump warns the \u2018clock is ticking\u2019 on Iran, but there\u2019s a bigger danger lurking on the horizon",
-      "url": "https://www.marketwatch.com/story/oil-climbs-as-trump-warns-the-clock-is-ticking-on-iran-but-theres-a-bigger-danger-lurking-on-the-horizon-9dfa8129?mod=mw_rss_topstories"
+      "title": "The oil market is reaching a \u2018tipping point\u2019 that could create problems for stocks, according to this Wall Street legend",
+      "url": "https://www.marketwatch.com/story/the-oil-market-is-reaching-a-tipping-point-that-could-create-problems-for-stocks-according-to-this-wall-street-legend-8e7f9d62?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 17:30:00",
+      "published": "Mon, 18 May 2026 19:31:00",
       "source": "MarketWatch",
-      "title": "Some people lose far more weight than others on GLP-1s like Wegovy. Here\u2019s why.",
-      "url": "https://www.marketwatch.com/story/some-people-lose-far-more-weight-than-others-on-glp-1s-like-wegovy-heres-why-9215257d?mod=mw_rss_topstories"
+      "title": "These 4 market sectors look frothy \u2014 and Nvidia\u2019s isn\u2019t even the biggest bubble",
+      "url": "https://www.marketwatch.com/story/these-4-market-sectors-look-frothy-and-nvidias-isnt-even-the-biggest-bubble-d740acf7?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "May 18 2026",
-      "change": 0.0,
-      "rate": 6.1
+      "change": 0.02,
+      "rate": 6.12
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "May 18 2026",
-      "change": 0.0,
+      "change": 0.03,
       "rate": 6.52
     }
   },
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.71
+      "yield": 3.69
     },
     {
       "tenor": "3M",
-      "yield": 3.69
+      "yield": 3.68
     },
     {
       "tenor": "6M",
@@ -406,15 +406,15 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.82
+      "yield": 3.81
     },
     {
       "tenor": "2Y",
-      "yield": 4.09
+      "yield": 4.07
     },
     {
       "tenor": "5Y",
-      "yield": 4.26
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
@@ -422,7 +422,7 @@
     },
     {
       "tenor": "10Y",
-      "yield": 4.59
+      "yield": 4.61
     },
     {
       "tenor": "20Y",
@@ -430,7 +430,7 @@
     },
     {
       "tenor": "30Y",
-      "yield": 5.12
+      "yield": 5.14
     }
   ],
   "warnings": []
