@@ -1,34 +1,384 @@
 {
-  "generated_at": "2026-05-16T00:00:00+00:00",
-  "source": "Initial seed (May 14-16, 2026). GitHub Action overwrites with live data.",
-  "warnings": [],
-  "rates": {
-    "thirty_year_fixed":  {"rate": 6.52, "change": -0.05, "asof_label": "May 14 2026"},
-    "fifteen_year_fixed": {"rate": 6.04, "change": -0.03, "asof_label": "May 14 2026"},
-    "ten_year_treasury":  {"rate": 4.560, "change": 0.075}
+  "banks": {
+    "bank_of_america": {
+      "auto_new": 7.39,
+      "cd_12mo": 3.4,
+      "cd_special": 4.0,
+      "mortgage_15yr": 5.88,
+      "mortgage_30yr": 6.63,
+      "name": "Bank of America",
+      "savings": 0.04,
+      "url": "https://www.bankofamerica.com/mortgage/"
+    },
+    "capital_city_bank": {
+      "auto_new": 7.75,
+      "cd_12mo": 3.85,
+      "cd_special": 4.25,
+      "mortgage_15yr": 6.2,
+      "mortgage_30yr": 7.1,
+      "name": "Capital City Bank (FL)",
+      "savings": 0.1,
+      "url": "https://www.ccbg.com/"
+    },
+    "chase": {
+      "auto_new": 7.49,
+      "cd_12mo": 2.0,
+      "cd_special": 3.5,
+      "mortgage_15yr": 5.75,
+      "mortgage_30yr": 6.5,
+      "name": "Chase",
+      "savings": 0.01,
+      "url": "https://www.chase.com/personal/mortgage/mortgage-rates"
+    },
+    "wells_fargo": {
+      "auto_new": 7.99,
+      "cd_12mo": 1.5,
+      "cd_special": 3.75,
+      "mortgage_15yr": 5.43,
+      "mortgage_30yr": 6.82,
+      "name": "Wells Fargo",
+      "savings": 0.01,
+      "url": "https://www.wellsfargo.com/mortgage/rates/"
+    }
+  },
+  "commodities": {
+    "brent_oil": {
+      "change": 1.62,
+      "change_pct": 1.66,
+      "unit": "$/bbl",
+      "value": 99.1
+    },
+    "copper": {
+      "change": 1.32,
+      "change_pct": 0.21,
+      "unit": "$/lb",
+      "value": 630.6
+    },
+    "gas_unleaded": {
+      "change": 0.04,
+      "change_pct": 0.91,
+      "unit": "$/gal",
+      "value": 4.42
+    },
+    "gold": {
+      "change": 0.25,
+      "change_pct": 0.01,
+      "unit": "$/oz",
+      "value": 4541.95
+    },
+    "natural_gas": {
+      "change": 0.02,
+      "change_pct": 0.7,
+      "unit": "$/MMBtu",
+      "value": 3.013
+    },
+    "silver": {
+      "change": 75.5,
+      "change_pct": 0.99,
+      "unit": "$/oz",
+      "value": 7687.5
+    },
+    "wti_oil": {
+      "change": 1.64,
+      "change_pct": 1.61,
+      "unit": "$/bbl",
+      "value": 103.38
+    }
+  },
+  "forex": {
+    "CAD": {
+      "change_pct": 0.08,
+      "flag": "\ud83c\udde8\ud83c\udde6",
+      "name": "Canadian Dollar",
+      "rate": 1.346
+    },
+    "CNY": {
+      "change_pct": 0.05,
+      "flag": "\ud83c\udde8\ud83c\uddf3",
+      "name": "Chinese Yuan",
+      "rate": 6.785
+    },
+    "DXY": {
+      "change_pct": 0.14,
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "name": "US Dollar Index",
+      "rate": 104.6
+    },
+    "EUR": {
+      "change_pct": -0.12,
+      "flag": "\ud83c\uddea\ud83c\uddfa",
+      "name": "Euro",
+      "rate": 0.876
+    },
+    "GBP": {
+      "change_pct": -0.21,
+      "flag": "\ud83c\uddec\ud83c\udde7",
+      "name": "British Pound",
+      "rate": 0.763
+    },
+    "INR": {
+      "change_pct": 0.15,
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "name": "Indian Rupee",
+      "rate": 95.77
+    },
+    "JPY": {
+      "change_pct": 0.38,
+      "flag": "\ud83c\uddef\ud83c\uddf5",
+      "name": "Japanese Yen",
+      "rate": 155.29
+    },
+    "KRW": {
+      "change_pct": 0.42,
+      "flag": "\ud83c\uddf0\ud83c\uddf7",
+      "name": "Korean Won",
+      "rate": 1493
+    },
+    "MXN": {
+      "change_pct": -0.18,
+      "flag": "\ud83c\uddf2\ud83c\uddfd",
+      "name": "Mexican Peso",
+      "rate": 17.23
+    }
+  },
+  "generated_at": "2026-05-18T16:31:18+00:00",
+  "global_bonds_10y": {
+    "Canada": {
+      "change": 0.04,
+      "name": "Canada",
+      "yield": 3.45
+    },
+    "China": {
+      "change": 0.01,
+      "name": "China",
+      "yield": 2.2
+    },
+    "France": {
+      "change": 0.03,
+      "name": "France (OAT)",
+      "yield": 3.05
+    },
+    "Germany": {
+      "change": 0.03,
+      "name": "Germany (Bund)",
+      "yield": 2.45
+    },
+    "India": {
+      "change": -0.02,
+      "name": "India",
+      "yield": 6.85
+    },
+    "Japan": {
+      "change": 0.01,
+      "name": "Japan (JGB)",
+      "yield": 0.95
+    },
+    "UK": {
+      "change": 0.05,
+      "name": "UK (Gilt)",
+      "yield": 4.2
+    },
+    "US": {
+      "change": 0.075,
+      "name": "United States",
+      "yield": 4.56
+    }
   },
   "history": {
     "thirty_year_fixed_daily": [
-      {"date": "2026-04-14", "rate": 6.34},
-      {"date": "2026-04-17", "rate": 6.36},
-      {"date": "2026-04-22", "rate": 6.35},
-      {"date": "2026-04-25", "rate": 6.32},
-      {"date": "2026-04-30", "rate": 6.30},
-      {"date": "2026-05-05", "rate": 6.40},
-      {"date": "2026-05-07", "rate": 6.44},
-      {"date": "2026-05-08", "rate": 6.42},
-      {"date": "2026-05-11", "rate": 6.49},
-      {"date": "2026-05-12", "rate": 6.56},
-      {"date": "2026-05-13", "rate": 6.57},
-      {"date": "2026-05-14", "rate": 6.52}
+      {
+        "date": "2026-04-29",
+        "rate": 6.37
+      },
+      {
+        "date": "2026-04-30",
+        "rate": 6.3
+      },
+      {
+        "date": "2026-05-06",
+        "rate": 6.45
+      },
+      {
+        "date": "2026-05-07",
+        "rate": 6.37
+      },
+      {
+        "date": "2026-05-11",
+        "rate": 6.49
+      },
+      {
+        "date": "2026-05-12",
+        "rate": 6.56
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 6.57
+      },
+      {
+        "date": "2026-05-13",
+        "rate": 6.46
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 6.52
+      },
+      {
+        "date": "2026-05-14",
+        "rate": 6.36
+      },
+      {
+        "date": "2026-05-15",
+        "rate": 6.65
+      },
+      {
+        "date": "2026-05-18",
+        "rate": 6.65
+      }
     ]
+  },
+  "indices": {
+    "dow": {
+      "change": -42.7,
+      "change_pct": -0.09,
+      "value": 49483.5
+    },
+    "nasdaq": {
+      "change": -355.09,
+      "change_pct": -1.35,
+      "value": 25911.666
+    },
+    "sp500": {
+      "change": -45.6,
+      "change_pct": -0.62,
+      "value": 7362.9
+    },
+    "vix": {
+      "change": 1.2,
+      "change_pct": 6.94,
+      "value": 18.5
+    }
+  },
+  "inflation": {
+    "cpi_core": {
+      "label": "Core CPI YoY",
+      "next": "Jun 11 2026",
+      "prior": 2.7,
+      "release": "May 12 2026",
+      "value": 2.8
+    },
+    "cpi_headline": {
+      "label": "CPI YoY",
+      "next": "Jun 11 2026",
+      "prior": 3.3,
+      "release": "May 12 2026",
+      "value": 3.8
+    },
+    "pce_core": {
+      "label": "Core PCE YoY",
+      "next": "May 30 2026",
+      "prior": 2.5,
+      "release": "Apr 30 2026",
+      "value": 2.6
+    },
+    "pce_headline": {
+      "label": "PCE YoY",
+      "next": "May 30 2026",
+      "prior": 2.9,
+      "release": "Apr 30 2026",
+      "value": 3.2
+    },
+    "ppi_headline": {
+      "label": "PPI YoY",
+      "next": "Jun 12 2026",
+      "prior": 3.6,
+      "release": "May 13 2026",
+      "value": 4.1
+    }
+  },
+  "news": [
+    {
+      "published": "Mon, 18 May 2026 16:08:35",
+      "source": "CNBC",
+      "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
+      "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
+    },
+    {
+      "published": "Fri, 15 May 2026 18:55:25",
+      "source": "CNBC",
+      "title": "Traders now see next Fed interest rate move as a hike following inflation surge",
+      "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
+    },
+    {
+      "published": "Mon, 18 May 2026 16:11:13",
+      "source": "CNBC",
+      "title": "Inflation rate projected to hit 6% in the second quarter, top economic forecasters say",
+      "url": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html"
+    },
+    {
+      "published": "Thu, 14 May 2026 19:26:20",
+      "source": "CNBC",
+      "title": "Bond market believes Fed behind the curve on inflation as Warsh takes over",
+      "url": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html"
+    },
+    {
+      "published": "Thu, 14 May 2026 16:22:18",
+      "source": "CNBC",
+      "title": "Bessent sees 'substantial disinflation' ahead as Warsh takes over the Fed",
+      "url": "https://www.cnbc.com/2026/05/14/bessent-sees-substantial-disinflation-ahead-as-warsh-takes-over-the-fed.html"
+    },
+    {
+      "published": "Mon, 18 May 2026 16:13:00",
+      "source": "MarketWatch",
+      "title": "5 money moves that made this 32-year-old dad a millionaire in just 9 years",
+      "url": "https://www.marketwatch.com/story/5-money-moves-that-made-this-32-year-old-dad-a-millionaire-in-just-9-years-3725c0ed?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 18 May 2026 16:13:00",
+      "source": "MarketWatch",
+      "title": "Ford takes its first big step toward being an energy business",
+      "url": "https://www.marketwatch.com/story/ford-takes-its-first-big-step-toward-being-an-energy-business-b1d72bc2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 18 May 2026 16:10:00",
+      "source": "MarketWatch",
+      "title": "The oil market is reaching a \u2018tipping point\u2019 that could create problems for stocks, according to this Wall Street legend",
+      "url": "https://www.marketwatch.com/story/the-oil-market-is-reaching-a-tipping-point-that-could-create-problems-for-stocks-according-to-this-wall-street-legend-8e7f9d62?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 18 May 2026 15:33:00",
+      "source": "MarketWatch",
+      "title": "Arm\u2019s stock could rise another 45% as the \u2018renaissance of CPUs\u2019 takes hold, analyst says",
+      "url": "https://www.marketwatch.com/story/arms-stock-could-rise-another-45-as-the-renaissance-of-cpus-takes-hold-analyst-says-58f6d261?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 18 May 2026 15:24:00",
+      "source": "MarketWatch",
+      "title": "Are you \u2018doomjobbing\u2019 while looking for work? Know the signs \u2014 and do this instead.",
+      "url": "https://www.marketwatch.com/story/are-you-doomjobbing-while-looking-for-work-know-the-signs-and-do-this-instead-5f44cec3?mod=mw_rss_topstories"
+    }
+  ],
+  "rates": {
+    "fifteen_year_fixed": {
+      "asof_label": "May 18 2026",
+      "change": 0.0,
+      "rate": 6.1
+    },
+    "ten_year_treasury": {
+      "change": 0.075,
+      "rate": 4.56
+    },
+    "thirty_year_fixed": {
+      "asof_label": "May 18 2026",
+      "change": 0.0,
+      "rate": 6.52
+    }
   },
   "reference": {
     "auto_60mo": 6.97,
     "cre_conventional_max": 8.75,
     "cre_conventional_min": 5.23,
     "fed_funds_last_change": "2025-12-11",
-    "fed_funds_lower": 3.50,
+    "fed_funds_lower": 3.5,
     "fed_funds_upper": 3.75,
     "five_one_arm": 6.48,
     "heloc_variable": 7.21,
@@ -42,112 +392,54 @@
     "sofr_overnight": 3.64,
     "thirty_fha": 6.16,
     "thirty_jumbo": 6.74,
-    "thirty_va": 6.10,
+    "thirty_va": 6.1,
     "thirty_year_treasury": 5.02,
     "two_year_treasury": 3.91
   },
-  "indices": {
-    "sp500":   {"value": 7408.50,  "change": -93.05,  "change_pct": -1.24},
-    "nasdaq":  {"value": 26225.14, "change": -410.36, "change_pct": -1.54},
-    "dow":     {"value": 49526.17, "change": -537.29, "change_pct": -1.07},
-    "vix":     {"value": 18.50,    "change": 1.20,    "change_pct": 6.94}
-  },
-  "commodities": {
-    "wti_oil":     {"value": 95.30, "change": 1.85,  "change_pct": 1.98, "unit": "$/bbl"},
-    "brent_oil":   {"value": 99.10, "change": 1.62,  "change_pct": 1.66, "unit": "$/bbl"},
-    "gold":        {"value": 3245,  "change": 28,    "change_pct": 0.87, "unit": "$/oz"},
-    "silver":      {"value": 38.40, "change": 0.45,  "change_pct": 1.19, "unit": "$/oz"},
-    "natural_gas": {"value": 3.85,  "change": 0.08,  "change_pct": 2.12, "unit": "$/MMBtu"},
-    "copper":      {"value": 4.62,  "change": -0.03, "change_pct": -0.65, "unit": "$/lb"},
-    "gas_unleaded":{"value": 4.42,  "change": 0.04,  "change_pct": 0.91, "unit": "$/gal"}
-  },
-  "forex": {
-    "EUR": {"rate": 0.876, "name": "Euro",          "flag": "🇪🇺", "change_pct": -0.12},
-    "GBP": {"rate": 0.763, "name": "British Pound", "flag": "🇬🇧", "change_pct": -0.21},
-    "JPY": {"rate": 155.29,"name": "Japanese Yen",  "flag": "🇯🇵", "change_pct": 0.38},
-    "CNY": {"rate": 6.785, "name": "Chinese Yuan",  "flag": "🇨🇳", "change_pct": 0.05},
-    "KRW": {"rate": 1493,  "name": "Korean Won",    "flag": "🇰🇷", "change_pct": 0.42},
-    "INR": {"rate": 95.77, "name": "Indian Rupee",  "flag": "🇮🇳", "change_pct": 0.15},
-    "CAD": {"rate": 1.346, "name": "Canadian Dollar","flag": "🇨🇦", "change_pct": 0.08},
-    "MXN": {"rate": 17.23, "name": "Mexican Peso",  "flag": "🇲🇽", "change_pct": -0.18},
-    "DXY": {"rate": 104.60,"name": "US Dollar Index","flag": "🇺🇸", "change_pct": 0.14}
-  },
+  "source": "Live (MND + frankfurter + stooq + RSS)",
   "treasury_curve": [
-    {"tenor": "1M",  "yield": 3.62},
-    {"tenor": "3M",  "yield": 3.60},
-    {"tenor": "6M",  "yield": 3.76},
-    {"tenor": "1Y",  "yield": 3.79},
-    {"tenor": "2Y",  "yield": 3.91},
-    {"tenor": "5Y",  "yield": 4.13},
-    {"tenor": "7Y",  "yield": 4.32},
-    {"tenor": "10Y", "yield": 4.56},
-    {"tenor": "20Y", "yield": 5.01},
-    {"tenor": "30Y", "yield": 5.02}
-  ],
-  "global_bonds_10y": {
-    "US":      {"yield": 4.56, "change": 0.075, "name": "United States"},
-    "Germany": {"yield": 2.45, "change": 0.03,  "name": "Germany (Bund)"},
-    "UK":      {"yield": 4.20, "change": 0.05,  "name": "UK (Gilt)"},
-    "Japan":   {"yield": 0.95, "change": 0.01,  "name": "Japan (JGB)"},
-    "Canada":  {"yield": 3.45, "change": 0.04,  "name": "Canada"},
-    "France":  {"yield": 3.05, "change": 0.03,  "name": "France (OAT)"},
-    "China":   {"yield": 2.20, "change": 0.01,  "name": "China"},
-    "India":   {"yield": 6.85, "change": -0.02, "name": "India"}
-  },
-  "inflation": {
-    "cpi_headline":  {"value": 3.8, "prior": 3.3, "label": "CPI YoY",       "release": "May 12 2026", "next": "Jun 11 2026"},
-    "cpi_core":      {"value": 2.8, "prior": 2.7, "label": "Core CPI YoY",  "release": "May 12 2026", "next": "Jun 11 2026"},
-    "pce_headline":  {"value": 3.2, "prior": 2.9, "label": "PCE YoY",       "release": "Apr 30 2026", "next": "May 30 2026"},
-    "pce_core":      {"value": 2.6, "prior": 2.5, "label": "Core PCE YoY",  "release": "Apr 30 2026", "next": "May 30 2026"},
-    "ppi_headline":  {"value": 4.1, "prior": 3.6, "label": "PPI YoY",       "release": "May 13 2026", "next": "Jun 12 2026"}
-  },
-  "banks": {
-    "chase": {
-      "name": "Chase",
-      "url":  "https://www.chase.com/personal/mortgage/mortgage-rates",
-      "mortgage_30yr": 6.50,
-      "mortgage_15yr": 5.75,
-      "auto_new":      7.49,
-      "cd_12mo":       2.00,
-      "cd_special":    3.50,
-      "savings":       0.01
+    {
+      "tenor": "1M",
+      "yield": 3.71
     },
-    "wells_fargo": {
-      "name": "Wells Fargo",
-      "url":  "https://www.wellsfargo.com/mortgage/rates/",
-      "mortgage_30yr": 6.82,
-      "mortgage_15yr": 5.43,
-      "auto_new":      7.99,
-      "cd_12mo":       1.50,
-      "cd_special":    3.75,
-      "savings":       0.01
+    {
+      "tenor": "3M",
+      "yield": 3.69
     },
-    "bank_of_america": {
-      "name": "Bank of America",
-      "url":  "https://www.bankofamerica.com/mortgage/",
-      "mortgage_30yr": 6.63,
-      "mortgage_15yr": 5.88,
-      "auto_new":      7.39,
-      "cd_12mo":       3.40,
-      "cd_special":    4.00,
-      "savings":       0.04
+    {
+      "tenor": "6M",
+      "yield": 3.77
     },
-    "capital_city_bank": {
-      "name": "Capital City Bank (FL)",
-      "url":  "https://www.ccbg.com/",
-      "mortgage_30yr": 7.10,
-      "mortgage_15yr": 6.20,
-      "auto_new":      7.75,
-      "cd_12mo":       3.85,
-      "cd_special":    4.25,
-      "savings":       0.10
+    {
+      "tenor": "1Y",
+      "yield": 3.82
+    },
+    {
+      "tenor": "2Y",
+      "yield": 4.09
+    },
+    {
+      "tenor": "5Y",
+      "yield": 4.26
+    },
+    {
+      "tenor": "7Y",
+      "yield": 4.43
+    },
+    {
+      "tenor": "10Y",
+      "yield": 4.59
+    },
+    {
+      "tenor": "20Y",
+      "yield": 5.14
+    },
+    {
+      "tenor": "30Y",
+      "yield": 5.12
     }
-  },
-  "news": [
-    {"title": "April CPI rose 3.8% YoY — hottest reading since May 2023", "url": "https://www.cnbc.com/2026/05/12/cpi-inflation-april-2026-.html", "source": "CNBC", "published": "2026-05-12"},
-    {"title": "Fed holds at 3.50–3.75%, four FOMC dissents (most since 1992)", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm", "source": "Federal Reserve", "published": "2026-04-29"},
-    {"title": "April payrolls +115K, unemployment steady at 4.3%", "url": "https://www.bls.gov/news.release/empsit.nr0.htm", "source": "BLS", "published": "2026-05-08"},
-    {"title": "Mortgage applications fall 4.4% week-over-week", "url": "https://www.housingwire.com/", "source": "MBA", "published": "2026-05-07"},
-    {"title": "10-Yr Treasury yield climbs to 4.58% on inflation, Iran-driven energy shock", "url": "https://tradingeconomics.com/united-states/government-bond-yield", "source": "TradingEconomics", "published": "2026-05-15"}
+  ],
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   ]
 }
