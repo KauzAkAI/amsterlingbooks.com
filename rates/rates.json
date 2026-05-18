@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 3.4,
-      "change_pct": 0.54,
+      "change": 4.32,
+      "change_pct": 0.69,
       "unit": "$/lb",
-      "value": 632.68
+      "value": 633.6
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 23.35,
-      "change_pct": 0.51,
+      "change": 29.1,
+      "change_pct": 0.64,
       "unit": "$/oz",
-      "value": 4565.05
+      "value": 4570.8
     },
     "natural_gas": {
-      "change": 0.04,
-      "change_pct": 1.17,
+      "change": 0.03,
+      "change_pct": 1.07,
       "unit": "$/MMBtu",
-      "value": 3.027
+      "value": 3.024
     },
     "silver": {
-      "change": 170.0,
-      "change_pct": 2.23,
+      "change": 198.5,
+      "change_pct": 2.61,
       "unit": "$/oz",
-      "value": 7782.0
+      "value": 7810.5
     },
     "wti_oil": {
-      "change": 0.13,
-      "change_pct": 0.13,
+      "change": 0.75,
+      "change_pct": 0.74,
       "unit": "$/bbl",
-      "value": 101.87
+      "value": 102.49
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2922
     }
   },
-  "generated_at": "2026-05-18T20:12:25+00:00",
+  "generated_at": "2026-05-18T21:41:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html"
     },
     {
-      "published": "Mon, 18 May 2026 20:10:00",
+      "published": "Mon, 18 May 2026 21:25:00",
       "source": "MarketWatch",
-      "title": "Lululemon hits back at its founder after months of attacks, saying he\u2019s just jealous",
-      "url": "https://www.marketwatch.com/story/lululemon-hits-back-at-its-founder-after-months-of-attacks-saying-hes-just-jealous-e22522ec?mod=mw_rss_topstories"
+      "title": "The S&P 500 and most of its stocks are heading in opposite directions at a record pace. What investors should know.",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-and-most-of-its-stocks-are-heading-in-opposite-directions-at-a-record-pace-what-investors-should-know-2a6c55a5?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 19:44:00",
+      "published": "Mon, 18 May 2026 21:22:00",
       "source": "MarketWatch",
-      "title": "Trump\u2019s IRS settlement features a $1.8 billion \u2018anti-weaponization\u2019 fund for allies. Here\u2019s who may get the money.",
-      "url": "https://www.marketwatch.com/story/trumps-irs-settlement-features-a-1-8-billion-anti-weaponization-fund-for-allies-heres-who-may-get-the-money-266e876d?mod=mw_rss_topstories"
+      "title": "Elon Musk loses his case against OpenAI and Sam Altman after just two hours of jury deliberation",
+      "url": "https://www.marketwatch.com/story/elon-musk-has-lost-his-case-against-openai-and-sam-altman-b0998cff?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 19:40:00",
+      "published": "Mon, 18 May 2026 21:12:00",
       "source": "MarketWatch",
-      "title": "U.S. physician tests positive for Ebola: He and six other Americans in Congo will be transported to Germany",
-      "url": "https://www.marketwatch.com/story/u-s-plans-to-move-physicians-exposed-to-rare-ebola-virus-to-germany-122af3f4?mod=mw_rss_topstories"
+      "title": "What NextEra and Dominion\u2019s giant utility merger means for your electric bill",
+      "url": "https://www.marketwatch.com/story/what-nextera-and-dominions-giant-utility-merger-means-for-your-electric-bill-94e0784d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 19:38:00",
+      "published": "Mon, 18 May 2026 20:51:00",
       "source": "MarketWatch",
-      "title": "The oil market is reaching a \u2018tipping point\u2019 that could create problems for stocks, according to this Wall Street legend",
-      "url": "https://www.marketwatch.com/story/the-oil-market-is-reaching-a-tipping-point-that-could-create-problems-for-stocks-according-to-this-wall-street-legend-8e7f9d62?mod=mw_rss_topstories"
+      "title": "The options market is flashing an ominous sign about Nvidia\u2019s looming earnings",
+      "url": "https://www.marketwatch.com/story/the-options-market-is-flashing-an-ominous-sign-about-nvidias-looming-earnings-2b55b7f4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 19:31:00",
+      "published": "Mon, 18 May 2026 20:15:00",
       "source": "MarketWatch",
-      "title": "These 4 market sectors look frothy \u2014 and Nvidia\u2019s isn\u2019t even the biggest bubble",
-      "url": "https://www.marketwatch.com/story/these-4-market-sectors-look-frothy-and-nvidias-isnt-even-the-biggest-bubble-d740acf7?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m already feeling anxious\u2019: My ex-husband offered to give me a $30,000 lump sum for child support. Is there a catch?",
+      "url": "https://www.marketwatch.com/story/im-already-feeling-anxious-my-ex-husband-offered-to-give-me-a-30-000-lump-sum-for-child-support-is-there-a-catch-b1a20e20?mod=mw_rss_topstories"
     }
   ],
   "rates": {
