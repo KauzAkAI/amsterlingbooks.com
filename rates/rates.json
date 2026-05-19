@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -14.1,
-      "change_pct": -2.23,
+      "change": 1.28,
+      "change_pct": 0.21,
       "unit": "$/lb",
-      "value": 619.4
+      "value": 620.35
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -88.42,
-      "change_pct": -1.93,
+      "change": 1.33,
+      "change_pct": 0.03,
       "unit": "$/oz",
-      "value": 4485.2
+      "value": 4486.9
     },
     "natural_gas": {
-      "change": 0.09,
-      "change_pct": 2.98,
+      "change": -0.0,
+      "change_pct": -0.06,
       "unit": "$/MMBtu",
-      "value": 3.114
+      "value": 3.113
     },
     "silver": {
-      "change": -292.9,
-      "change_pct": -3.75,
+      "change": 15.2,
+      "change_pct": 0.2,
       "unit": "$/oz",
-      "value": 7515.9
+      "value": 7431.0
     },
     "wti_oil": {
-      "change": -3.14,
-      "change_pct": -3.07,
+      "change": -0.04,
+      "change_pct": -0.04,
       "unit": "$/bbl",
-      "value": 99.13
+      "value": 104.22
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3425
     }
   },
-  "generated_at": "2026-05-19T21:50:36+00:00",
+  "generated_at": "2026-05-19T22:59:30+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -332.6,
+      "change": -332.65,
       "change_pct": -0.67,
-      "value": 49363.9
+      "value": 49363.88
     },
     "nasdaq": {
-      "change": -41.25,
-      "change_pct": -0.16,
-      "value": 25870.709
+      "change": -52.78,
+      "change_pct": -0.2,
+      "value": 25870.71
     },
     "sp500": {
-      "change": -12.0,
-      "change_pct": -0.16,
-      "value": 7353.6
+      "change": -22.14,
+      "change_pct": -0.3,
+      "value": 7353.61
     },
     "vix": {
       "change": 1.2,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html"
     },
     {
+      "published": "Tue, 19 May 2026 22:31:00",
+      "source": "MarketWatch",
+      "title": "Buckle up for $120 oil changes. Why car care is about to get more expensive.",
+      "url": "https://www.marketwatch.com/story/buckle-up-for-120-oil-changes-why-car-care-is-about-to-get-more-expensive-c542615c?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 19 May 2026 21:46:00",
       "source": "MarketWatch",
       "title": "These charts offer a warning to the next generation \u2014 a new era of higher Treasury yields may be coming",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Home Depot says its sales are healthy, but here\u2019s where customers are holding back",
       "url": "https://www.marketwatch.com/story/home-depots-stock-rises-as-the-full-year-outlook-was-kept-intact-a-relief-for-worried-investors-75cdfb7c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 20:29:00",
-      "source": "MarketWatch",
-      "title": "Shein\u2019s reported purchase of Everlane shows that price trumps principles for many shoppers today",
-      "url": "https://www.marketwatch.com/story/millennial-era-retail-was-supposed-to-have-principles-but-lower-prices-have-won-out-31498633?mod=mw_rss_topstories"
     }
   ],
   "rates": {
