@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.23,
-      "change_pct": 0.04,
+      "change": -13.85,
+      "change_pct": -2.19,
       "unit": "$/lb",
-      "value": 633.73
+      "value": 619.65
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 13.33,
-      "change_pct": 0.29,
+      "change": -61.37,
+      "change_pct": -1.34,
       "unit": "$/oz",
-      "value": 4586.95
+      "value": 4512.25
     },
     "natural_gas": {
-      "change": 0.0,
-      "change_pct": 0.03,
+      "change": 0.05,
+      "change_pct": 1.75,
       "unit": "$/MMBtu",
-      "value": 3.025
+      "value": 3.077
     },
     "silver": {
-      "change": 111.7,
-      "change_pct": 1.43,
+      "change": -321.8,
+      "change_pct": -4.12,
       "unit": "$/oz",
-      "value": 7920.5
+      "value": 7487.0
     },
     "wti_oil": {
-      "change": 0.0,
-      "change_pct": 0.0,
+      "change": 1.52,
+      "change_pct": 1.49,
       "unit": "$/bbl",
-      "value": 102.27
+      "value": 103.79
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3741
+      "rate": 1.3756
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8002
+      "rate": 6.8061
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85852
+      "rate": 0.86059
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74708
+      "rate": 0.74588
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.35
+      "rate": 96.54
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.77
+      "rate": 159.11
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1497.8
+      "rate": 1508.75
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2922
+      "rate": 17.3425
     }
   },
-  "generated_at": "2026-05-18T23:50:35+00:00",
+  "generated_at": "2026-05-19T16:28:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.37
       },
       {
-        "date": "2026-05-11",
-        "rate": 6.49
-      },
-      {
         "date": "2026-05-12",
         "rate": 6.56
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-18",
         "rate": 6.68
+      },
+      {
+        "date": "2026-05-19",
+        "rate": 6.75
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 205.08,
-      "change_pct": 0.41,
-      "value": 49686.12
+      "change": -165.1,
+      "change_pct": -0.33,
+      "value": 49531.4
     },
     "nasdaq": {
-      "change": -198.76,
-      "change_pct": -0.76,
-      "value": 26090.73
+      "change": -47.5,
+      "change_pct": -0.18,
+      "value": 25864.457
     },
     "sp500": {
-      "change": -25.98,
-      "change_pct": -0.35,
-      "value": 7389.09
+      "change": -1.3,
+      "change_pct": -0.02,
+      "value": 7364.3
     },
     "vix": {
       "change": 1.2,
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Mon, 18 May 2026 17:03:42",
+      "published": "Tue, 19 May 2026 13:29:40",
+      "source": "CNBC",
+      "title": "The AI economy is rewriting the American Dream \u2014 and blue-collar workers are poised to win",
+      "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
+    },
+    {
+      "published": "Tue, 19 May 2026 11:37:27",
       "source": "CNBC",
       "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html"
     },
     {
-      "published": "Thu, 14 May 2026 19:26:20",
-      "source": "CNBC",
-      "title": "Bond market believes Fed behind the curve on inflation as Warsh takes over",
-      "url": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html"
+      "published": "Tue, 19 May 2026 16:26:00",
+      "source": "MarketWatch",
+      "title": "Trump says he\u2019ll let Warsh \u2018do what he wants to do\u2019 with interest rates. It\u2019s a remark that Fed watchers have been bracing for.",
+      "url": "https://www.marketwatch.com/story/trump-says-hell-let-warsh-do-what-he-wants-to-do-with-interest-rates-its-a-remark-that-fed-watchers-have-been-bracing-for-2b014504?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 23:19:00",
+      "published": "Tue, 19 May 2026 16:14:00",
       "source": "MarketWatch",
-      "title": "What NextEra and Dominion\u2019s giant utility merger means for your electric bill",
-      "url": "https://www.marketwatch.com/story/what-nextera-and-dominions-giant-utility-merger-means-for-your-electric-bill-94e0784d?mod=mw_rss_topstories"
+      "title": "Crude oil is going the long way around the world as countries scramble to plug Hormuz supply hole",
+      "url": "https://www.marketwatch.com/story/crude-oil-is-going-the-long-way-around-the-world-as-countries-scramble-to-plug-hormuz-supply-hole-af065aaf?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 22:42:00",
+      "published": "Tue, 19 May 2026 16:05:00",
       "source": "MarketWatch",
-      "title": "Lululemon hits back at its founder after months of attacks, saying he\u2019s just jealous",
-      "url": "https://www.marketwatch.com/story/lululemon-hits-back-at-its-founder-after-months-of-attacks-saying-hes-just-jealous-e22522ec?mod=mw_rss_topstories"
+      "title": "5 money moves that made this 32-year-old dad a millionaire in just 9 years",
+      "url": "https://www.marketwatch.com/story/5-money-moves-that-made-this-32-year-old-dad-a-millionaire-in-just-9-years-3725c0ed?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 22:23:00",
+      "published": "Tue, 19 May 2026 15:14:00",
       "source": "MarketWatch",
-      "title": "Oil climbs as Trump warns the \u2018clock is ticking\u2019 on Iran, but there\u2019s a bigger danger lurking on the horizon",
-      "url": "https://www.marketwatch.com/story/oil-climbs-as-trump-warns-the-clock-is-ticking-on-iran-but-theres-a-bigger-danger-lurking-on-the-horizon-9dfa8129?mod=mw_rss_topstories"
+      "title": "\u2018How much money do you make?\u2019 Since you can\u2019t ask your date that, ask this instead.",
+      "url": "https://www.marketwatch.com/story/how-much-money-do-you-make-since-you-cant-ask-your-date-that-ask-this-instead-e28997a3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 18 May 2026 22:17:00",
+      "published": "Tue, 19 May 2026 15:09:00",
       "source": "MarketWatch",
-      "title": "ServiceNow\u2019s stock notches best day in a year\u00a0\u2014 flashing a green light for the software sector",
-      "url": "https://www.marketwatch.com/story/servicenows-stock-heads-for-best-day-in-a-year-flashing-a-green-light-for-the-software-sector-2d916cfd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 18 May 2026 22:11:00",
-      "source": "MarketWatch",
-      "title": "Ford takes its first big step toward being an energy business",
-      "url": "https://www.marketwatch.com/story/ford-takes-its-first-big-step-toward-being-an-energy-business-b1d72bc2?mod=mw_rss_topstories"
+      "title": "Buy now, pay maybe? This new crypto card brings \u2018the casino to the checkout line\u2019",
+      "url": "https://www.marketwatch.com/story/buy-now-pay-maybe-this-new-crypto-card-brings-the-casino-to-the-checkout-line-093fbe57?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 18 2026",
-      "change": 0.02,
-      "rate": 6.12
+      "asof_label": "May 19 2026",
+      "change": 0.13,
+      "rate": 6.25
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 18 2026",
-      "change": 0.03,
+      "asof_label": "May 19 2026",
+      "change": 0.07,
       "rate": 6.52
     }
   },
