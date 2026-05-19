@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -14.13,
+      "change": -14.1,
       "change_pct": -2.23,
       "unit": "$/lb",
-      "value": 619.37
+      "value": 619.4
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -85.3,
-      "change_pct": -1.87,
+      "change": -88.42,
+      "change_pct": -1.93,
       "unit": "$/oz",
-      "value": 4488.32
+      "value": 4485.2
     },
     "natural_gas": {
-      "change": 0.1,
-      "change_pct": 3.14,
+      "change": 0.09,
+      "change_pct": 2.98,
       "unit": "$/MMBtu",
-      "value": 3.119
+      "value": 3.114
     },
     "silver": {
-      "change": -390.3,
-      "change_pct": -5.0,
+      "change": -292.9,
+      "change_pct": -3.75,
       "unit": "$/oz",
-      "value": 7418.5
+      "value": 7515.9
     },
     "wti_oil": {
-      "change": 2.17,
-      "change_pct": 2.12,
+      "change": -3.14,
+      "change_pct": -3.07,
       "unit": "$/bbl",
-      "value": 104.44
+      "value": 99.13
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3425
     }
   },
-  "generated_at": "2026-05-19T20:15:38+00:00",
+  "generated_at": "2026-05-19T21:50:36+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Tue, 19 May 2026 13:29:40",
+      "published": "Tue, 19 May 2026 20:22:54",
       "source": "CNBC",
       "title": "The AI economy is rewriting the American Dream \u2014 and blue-collar workers are poised to win",
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html"
     },
     {
-      "published": "Tue, 19 May 2026 20:01:00",
+      "published": "Tue, 19 May 2026 21:46:00",
       "source": "MarketWatch",
-      "title": "What\u2019s going on in sustainable fashion? How lower prices trumped principles.",
+      "title": "These charts offer a warning to the next generation \u2014 a new era of higher Treasury yields may be coming",
+      "url": "https://www.marketwatch.com/story/these-charts-offer-a-warning-to-the-next-generation-a-new-era-of-higher-rates-may-be-coming-ee913d36?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 19 May 2026 21:31:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s why Astera Labs\u2019 stock just staged a big gain",
+      "url": "https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 19 May 2026 20:41:00",
+      "source": "MarketWatch",
+      "title": "CoreWeave\u2019s stock falls as new Google cloud venture may signal more competition ahead",
+      "url": "https://www.marketwatch.com/story/coreweaves-stock-falls-as-new-google-cloud-venture-may-signal-more-competition-ahead-7bd7fb30?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 19 May 2026 20:35:00",
+      "source": "MarketWatch",
+      "title": "Home Depot says its sales are healthy, but here\u2019s where customers are holding back",
+      "url": "https://www.marketwatch.com/story/home-depots-stock-rises-as-the-full-year-outlook-was-kept-intact-a-relief-for-worried-investors-75cdfb7c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 19 May 2026 20:29:00",
+      "source": "MarketWatch",
+      "title": "Shein\u2019s reported purchase of Everlane shows that price trumps principles for many shoppers today",
       "url": "https://www.marketwatch.com/story/millennial-era-retail-was-supposed-to-have-principles-but-lower-prices-have-won-out-31498633?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 19:53:00",
-      "source": "MarketWatch",
-      "title": "FCC chair is accused of illegally trying to rein in the media. Here are his biggest controversies.",
-      "url": "https://www.marketwatch.com/story/fcc-chair-is-accused-of-illegally-trying-to-rein-in-the-media-here-are-his-biggest-controversies-7c1a5c5d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 19:30:00",
-      "source": "MarketWatch",
-      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
-      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 19:05:00",
-      "source": "MarketWatch",
-      "title": "This new \u2018buy-now-pay-maybe\u2019 crypto card may refund some of your purchases \u2014 but at what cost?",
-      "url": "https://www.marketwatch.com/story/buy-now-pay-maybe-this-new-crypto-card-brings-the-casino-to-the-checkout-line-093fbe57?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 19:04:00",
-      "source": "MarketWatch",
-      "title": "\u2018He didn\u2019t really pay attention\u2019: I told my friend he left millions on the table in retirement. Did I do the right thing?",
-      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
