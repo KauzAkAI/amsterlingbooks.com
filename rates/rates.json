@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.28,
-      "change_pct": 0.21,
+      "change": 11.98,
+      "change_pct": 1.94,
       "unit": "$/lb",
-      "value": 620.35
+      "value": 631.05
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 1.33,
-      "change_pct": 0.03,
+      "change": 42.38,
+      "change_pct": 0.94,
       "unit": "$/oz",
-      "value": 4486.9
+      "value": 4527.95
     },
     "natural_gas": {
-      "change": -0.0,
-      "change_pct": -0.06,
+      "change": -0.08,
+      "change_pct": -2.6,
       "unit": "$/MMBtu",
-      "value": 3.113
+      "value": 3.034
     },
     "silver": {
-      "change": 15.2,
-      "change_pct": 0.2,
+      "change": 178.7,
+      "change_pct": 2.41,
       "unit": "$/oz",
-      "value": 7431.0
+      "value": 7594.5
     },
     "wti_oil": {
-      "change": -0.04,
-      "change_pct": -0.04,
+      "change": -3.95,
+      "change_pct": -3.79,
       "unit": "$/bbl",
-      "value": 104.22
+      "value": 100.31
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3756
+      "rate": 1.3758
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8061
+      "rate": 6.8028
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86059
+      "rate": 0.86207
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74588
+      "rate": 0.74616
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.54
+      "rate": 96.83
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.11
+      "rate": 159.03
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1508.75
+      "rate": 1505.44
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3425
+      "rate": 17.3681
     }
   },
-  "generated_at": "2026-05-19T22:59:30+00:00",
+  "generated_at": "2026-05-20T16:30:26+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -332.65,
-      "change_pct": -0.67,
-      "value": 49363.88
+      "change": 307.1,
+      "change_pct": 0.62,
+      "value": 49819.7
     },
     "nasdaq": {
-      "change": -52.78,
-      "change_pct": -0.2,
-      "value": 25870.71
+      "change": 155.5,
+      "change_pct": 0.6,
+      "value": 26147.977
     },
     "sp500": {
-      "change": -22.14,
-      "change_pct": -0.3,
-      "value": 7353.61
+      "change": 29.9,
+      "change_pct": 0.41,
+      "value": 7408.0
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 20 May 2026 08:15:15",
+      "source": "CNBC",
+      "title": "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets",
+      "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
+    },
+    {
       "published": "Tue, 19 May 2026 20:22:54",
       "source": "CNBC",
       "title": "The AI economy is rewriting the American Dream \u2014 and blue-collar workers are poised to win",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
     },
     {
-      "published": "Mon, 18 May 2026 16:11:13",
-      "source": "CNBC",
-      "title": "Inflation rate projected to hit 6% in the second quarter, top economic forecasters say",
-      "url": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html"
+      "published": "Wed, 20 May 2026 16:18:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s why Target\u2019s turnaround may not be as smooth as the latest results imply",
+      "url": "https://www.marketwatch.com/story/targets-turnaround-involves-upscale-baby-gear-and-revamped-shopping-carts-and-its-starting-to-pay-off-eda9ba67?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 19 May 2026 22:31:00",
+      "published": "Wed, 20 May 2026 16:06:00",
       "source": "MarketWatch",
-      "title": "Buckle up for $120 oil changes. Why car care is about to get more expensive.",
-      "url": "https://www.marketwatch.com/story/buckle-up-for-120-oil-changes-why-car-care-is-about-to-get-more-expensive-c542615c?mod=mw_rss_topstories"
+      "title": "Want to live a more meaningful life? Write your own obituary.",
+      "url": "https://www.marketwatch.com/story/writing-your-own-obituary-can-help-you-live-a-better-life-heres-how-to-get-started-d3076941?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 19 May 2026 21:46:00",
+      "published": "Wed, 20 May 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "These charts offer a warning to the next generation \u2014 a new era of higher Treasury yields may be coming",
-      "url": "https://www.marketwatch.com/story/these-charts-offer-a-warning-to-the-next-generation-a-new-era-of-higher-rates-may-be-coming-ee913d36?mod=mw_rss_topstories"
+      "title": "Global oil prices drop below $106 a barrel on hopes that U.S.-Iran war will soon end",
+      "url": "https://www.marketwatch.com/story/oil-prices-decline-after-trump-reaffirmed-he-would-end-the-war-in-iran-very-quickly-f5148dd4?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 19 May 2026 21:31:00",
+      "published": "Wed, 20 May 2026 15:49:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s why Astera Labs\u2019 stock just staged a big gain",
-      "url": "https://www.marketwatch.com/story/heres-why-astera-labs-stock-just-staged-a-big-gain-ddb2139b?mod=mw_rss_topstories"
+      "title": "\u2018He didn\u2019t really pay attention\u2019: I told my friend he left millions on the table in retirement. Did I do the right thing?",
+      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 19 May 2026 20:41:00",
+      "published": "Wed, 20 May 2026 15:48:00",
       "source": "MarketWatch",
-      "title": "CoreWeave\u2019s stock falls as new Google cloud venture may signal more competition ahead",
-      "url": "https://www.marketwatch.com/story/coreweaves-stock-falls-as-new-google-cloud-venture-may-signal-more-competition-ahead-7bd7fb30?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 19 May 2026 20:35:00",
-      "source": "MarketWatch",
-      "title": "Home Depot says its sales are healthy, but here\u2019s where customers are holding back",
-      "url": "https://www.marketwatch.com/story/home-depots-stock-rises-as-the-full-year-outlook-was-kept-intact-a-relief-for-worried-investors-75cdfb7c?mod=mw_rss_topstories"
+      "title": "Micron\u2019s stock gets a boost. Are Samsung\u2019s problems helping?",
+      "url": "https://www.marketwatch.com/story/microns-stock-gets-a-boost-are-samsungs-problems-helping-e4de7e32?mod=mw_rss_topstories"
     }
   ],
   "rates": {
