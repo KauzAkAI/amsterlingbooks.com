@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -1.05,
-      "change_pct": -0.17,
+      "change": -0.55,
+      "change_pct": -0.09,
       "unit": "$/lb",
-      "value": 632.48
+      "value": 632.98
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -2.35,
-      "change_pct": -0.05,
+      "change": 1.32,
+      "change_pct": 0.03,
       "unit": "$/oz",
-      "value": 4542.9
+      "value": 4546.57
     },
     "natural_gas": {
-      "change": 0.0,
-      "change_pct": 0.03,
+      "change": 0.01,
+      "change_pct": 0.26,
       "unit": "$/MMBtu",
-      "value": 3.035
+      "value": 3.042
     },
     "silver": {
-      "change": -13.5,
-      "change_pct": -0.18,
+      "change": 4.0,
+      "change_pct": 0.05,
       "unit": "$/oz",
-      "value": 7598.3
+      "value": 7615.8
     },
     "wti_oil": {
-      "change": 0.0,
-      "change_pct": 0.0,
+      "change": -0.04,
+      "change_pct": -0.04,
       "unit": "$/bbl",
-      "value": 98.97
+      "value": 98.93
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3681
     }
   },
-  "generated_at": "2026-05-20T22:44:26+00:00",
+  "generated_at": "2026-05-20T23:57:48+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
     },
     {
+      "published": "Wed, 20 May 2026 22:51:00",
+      "source": "MarketWatch",
+      "title": "Gen Z may be shying away from buying cosmetics, as higher gas prices hit spending",
+      "url": "https://www.marketwatch.com/story/gen-z-may-be-shying-away-from-cosmetics-as-higher-gas-prices-hit-spending-9f9ccbf8?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 20 May 2026 22:43:00",
+      "source": "MarketWatch",
+      "title": "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
+      "url": "https://www.marketwatch.com/story/investors-are-flocking-to-an-offshore-crypto-platform-for-an-early-shot-at-trading-the-spacex-ipo-4ec49f10?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 20 May 2026 22:36:00",
       "source": "MarketWatch",
       "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "The \u2018stunning\u2019 end to Trump\u2019s case against the IRS raises tax-law questions that will be analyzed for years",
       "url": "https://www.marketwatch.com/story/the-stunning-end-to-trumps-case-against-the-irs-raises-tax-law-questions-that-will-be-analyzed-for-years-abe2bf79?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 22:15:00",
-      "source": "MarketWatch",
-      "title": "I was bought out of the family business for $160,000. My relatives each made $3 million when it sold. Was I cheated?",
-      "url": "https://www.marketwatch.com/story/i-was-bought-out-of-the-family-business-for-160-000-my-relatives-each-made-3-million-when-it-sold-was-i-cheated-8cee0523?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 21:56:00",
-      "source": "MarketWatch",
-      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
-      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
