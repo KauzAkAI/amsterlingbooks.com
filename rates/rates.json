@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 14.43,
-      "change_pct": 2.33,
+      "change": -1.05,
+      "change_pct": -0.17,
       "unit": "$/lb",
-      "value": 633.5
+      "value": 632.48
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 60.58,
-      "change_pct": 1.35,
+      "change": -2.35,
+      "change_pct": -0.05,
       "unit": "$/oz",
-      "value": 4546.15
+      "value": 4542.9
     },
     "natural_gas": {
-      "change": -0.08,
-      "change_pct": -2.63,
+      "change": 0.0,
+      "change_pct": 0.03,
       "unit": "$/MMBtu",
-      "value": 3.033
+      "value": 3.035
     },
     "silver": {
-      "change": 203.4,
-      "change_pct": 2.74,
+      "change": -13.5,
+      "change_pct": -0.18,
       "unit": "$/oz",
-      "value": 7619.2
+      "value": 7598.3
     },
     "wti_oil": {
-      "change": -5.26,
-      "change_pct": -5.05,
+      "change": 0.0,
+      "change_pct": 0.0,
       "unit": "$/bbl",
-      "value": 99.0
+      "value": 98.97
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3681
     }
   },
-  "generated_at": "2026-05-20T21:08:30+00:00",
+  "generated_at": "2026-05-20T22:44:26+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": 496.8,
-      "change_pct": 1.0,
+      "change": 660.6,
+      "change_pct": 1.34,
       "value": 50009.4
     },
     "nasdaq": {
-      "change": 277.88,
+      "change": 278.85,
       "change_pct": 1.07,
       "value": 26270.36
     },
     "sp500": {
-      "change": 54.9,
-      "change_pct": 0.74,
+      "change": 63.8,
+      "change_pct": 0.87,
       "value": 7433.0
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
     },
     {
-      "published": "Wed, 20 May 2026 20:38:00",
+      "published": "Wed, 20 May 2026 22:36:00",
       "source": "MarketWatch",
-      "title": "I found my co-worker\u2019s W-2 in a book \u2014 she makes $15,000 more than me for the same job. What should I do?",
-      "url": "https://www.marketwatch.com/story/i-found-my-coworkers-w-2-in-a-book-she-makes-15-000-more-than-me-for-the-same-job-what-should-i-do-2ada147a?mod=mw_rss_topstories"
+      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
+      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 20:32:00",
+      "published": "Wed, 20 May 2026 22:36:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s why Target\u2019s turnaround may not be as smooth as the latest results imply",
-      "url": "https://www.marketwatch.com/story/targets-turnaround-involves-upscale-baby-gear-and-revamped-shopping-carts-and-its-starting-to-pay-off-eda9ba67?mod=mw_rss_topstories"
+      "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
+      "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 20:30:00",
+      "published": "Wed, 20 May 2026 22:24:00",
+      "source": "MarketWatch",
+      "title": "The \u2018stunning\u2019 end to Trump\u2019s case against the IRS raises tax-law questions that will be analyzed for years",
+      "url": "https://www.marketwatch.com/story/the-stunning-end-to-trumps-case-against-the-irs-raises-tax-law-questions-that-will-be-analyzed-for-years-abe2bf79?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 20 May 2026 22:15:00",
+      "source": "MarketWatch",
+      "title": "I was bought out of the family business for $160,000. My relatives each made $3 million when it sold. Was I cheated?",
+      "url": "https://www.marketwatch.com/story/i-was-bought-out-of-the-family-business-for-160-000-my-relatives-each-made-3-million-when-it-sold-was-i-cheated-8cee0523?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 20 May 2026 21:56:00",
       "source": "MarketWatch",
       "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
       "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 20:27:00",
-      "source": "MarketWatch",
-      "title": "Has Google lost its AI edge? How its \u2018unexciting\u2019 strategy could actually pay off.",
-      "url": "https://www.marketwatch.com/story/has-google-lost-its-ai-edge-how-its-unexciting-strategy-could-actually-pay-off-c897b81c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 20:25:00",
-      "source": "MarketWatch",
-      "title": "Constellation\u2019s and Vistra\u2019s stocks rally as power-grid operator speeds up data-center deals",
-      "url": "https://www.marketwatch.com/story/constellations-and-vistras-stocks-rally-as-power-grid-operator-speeds-up-data-center-deals-67b95021?mod=mw_rss_topstories"
     }
   ],
   "rates": {
