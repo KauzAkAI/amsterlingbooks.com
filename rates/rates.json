@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 11.98,
-      "change_pct": 1.94,
+      "change": 15.06,
+      "change_pct": 2.43,
       "unit": "$/lb",
-      "value": 631.05
+      "value": 634.13
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,22 +61,22 @@
       "value": 4.42
     },
     "gold": {
-      "change": 42.38,
-      "change_pct": 0.94,
+      "change": 61.13,
+      "change_pct": 1.36,
       "unit": "$/oz",
-      "value": 4527.95
+      "value": 4546.7
     },
     "natural_gas": {
-      "change": -0.08,
-      "change_pct": -2.6,
+      "change": -0.07,
+      "change_pct": -2.25,
       "unit": "$/MMBtu",
-      "value": 3.034
+      "value": 3.045
     },
     "silver": {
-      "change": 178.7,
-      "change_pct": 2.41,
+      "change": 244.5,
+      "change_pct": 3.3,
       "unit": "$/oz",
-      "value": 7594.5
+      "value": 7660.3
     },
     "wti_oil": {
       "change": -3.95,
@@ -135,7 +135,7 @@
       "rate": 17.3681
     }
   },
-  "generated_at": "2026-05-20T16:30:26+00:00",
+  "generated_at": "2026-05-20T19:03:21+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.37
       },
       {
-        "date": "2026-05-12",
-        "rate": 6.56
-      },
-      {
         "date": "2026-05-13",
         "rate": 6.57
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-19",
         "rate": 6.75
+      },
+      {
+        "date": "2026-05-20",
+        "rate": 6.67
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 307.1,
-      "change_pct": 0.62,
-      "value": 49819.7
+      "change": 483.5,
+      "change_pct": 0.98,
+      "value": 49996.1
     },
     "nasdaq": {
-      "change": 155.5,
-      "change_pct": 0.6,
-      "value": 26147.977
+      "change": 221.71,
+      "change_pct": 0.85,
+      "value": 26214.193
     },
     "sp500": {
-      "change": 29.9,
-      "change_pct": 0.41,
-      "value": 7408.0
+      "change": 46.4,
+      "change_pct": 0.63,
+      "value": 7424.5
     },
     "vix": {
       "change": 1.2,
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
     },
     {
-      "published": "Wed, 20 May 2026 16:18:00",
+      "published": "Wed, 20 May 2026 18:42:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s why Target\u2019s turnaround may not be as smooth as the latest results imply",
-      "url": "https://www.marketwatch.com/story/targets-turnaround-involves-upscale-baby-gear-and-revamped-shopping-carts-and-its-starting-to-pay-off-eda9ba67?mod=mw_rss_topstories"
+      "title": "Vox\u2019s sale marks the end of an era for a once-booming form of digital media. Here\u2019s how it all came undone.",
+      "url": "https://www.marketwatch.com/story/voxs-sale-marks-the-end-of-an-era-for-a-once-booming-form-of-digital-media-heres-how-it-all-came-undone-8a15d530?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 16:06:00",
+      "published": "Wed, 20 May 2026 18:04:00",
       "source": "MarketWatch",
-      "title": "Want to live a more meaningful life? Write your own obituary.",
-      "url": "https://www.marketwatch.com/story/writing-your-own-obituary-can-help-you-live-a-better-life-heres-how-to-get-started-d3076941?mod=mw_rss_topstories"
+      "title": "Fed minutes show increased chances of interest-rate hike",
+      "url": "https://www.marketwatch.com/story/fed-minutes-show-increased-chances-of-interest-rate-hike-e808453b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 16:00:00",
+      "published": "Wed, 20 May 2026 17:51:00",
       "source": "MarketWatch",
-      "title": "Global oil prices drop below $106 a barrel on hopes that U.S.-Iran war will soon end",
+      "title": "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation.",
+      "url": "https://www.marketwatch.com/story/artificial-intelligence-was-supposed-to-reduce-prices-instead-ai-is-boosting-inflation-d7dbec01?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 20 May 2026 17:34:00",
+      "source": "MarketWatch",
+      "title": "GameStop ups its stake in eBay after its buyout bid was rejected",
+      "url": "https://www.marketwatch.com/story/gamestop-appears-no-closer-to-taking-over-ebay-it-upped-its-stake-in-the-auction-site-anyway-e8b2d2df?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 20 May 2026 17:30:00",
+      "source": "MarketWatch",
+      "title": "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end",
       "url": "https://www.marketwatch.com/story/oil-prices-decline-after-trump-reaffirmed-he-would-end-the-war-in-iran-very-quickly-f5148dd4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 15:49:00",
-      "source": "MarketWatch",
-      "title": "\u2018He didn\u2019t really pay attention\u2019: I told my friend he left millions on the table in retirement. Did I do the right thing?",
-      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 15:48:00",
-      "source": "MarketWatch",
-      "title": "Micron\u2019s stock gets a boost. Are Samsung\u2019s problems helping?",
-      "url": "https://www.marketwatch.com/story/microns-stock-gets-a-boost-are-samsungs-problems-helping-e4de7e32?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 19 2026",
-      "change": 0.13,
-      "rate": 6.25
+      "asof_label": "May 20 2026",
+      "change": -0.03,
+      "rate": 6.22
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 19 2026",
-      "change": 0.07,
+      "asof_label": "May 20 2026",
+      "change": -0.08,
       "rate": 6.52
     }
   },
