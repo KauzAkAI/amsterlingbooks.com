@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 15.06,
-      "change_pct": 2.43,
+      "change": 14.43,
+      "change_pct": 2.33,
       "unit": "$/lb",
-      "value": 634.13
+      "value": 633.5
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 61.13,
-      "change_pct": 1.36,
+      "change": 60.58,
+      "change_pct": 1.35,
       "unit": "$/oz",
-      "value": 4546.7
+      "value": 4546.15
     },
     "natural_gas": {
-      "change": -0.07,
-      "change_pct": -2.25,
+      "change": -0.08,
+      "change_pct": -2.63,
       "unit": "$/MMBtu",
-      "value": 3.045
+      "value": 3.033
     },
     "silver": {
-      "change": 244.5,
-      "change_pct": 3.3,
+      "change": 203.4,
+      "change_pct": 2.74,
       "unit": "$/oz",
-      "value": 7660.3
+      "value": 7619.2
     },
     "wti_oil": {
-      "change": -3.95,
-      "change_pct": -3.79,
+      "change": -5.26,
+      "change_pct": -5.05,
       "unit": "$/bbl",
-      "value": 100.31
+      "value": 99.0
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3681
     }
   },
-  "generated_at": "2026-05-20T19:03:21+00:00",
+  "generated_at": "2026-05-20T21:08:30+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 483.5,
-      "change_pct": 0.98,
-      "value": 49996.1
+      "change": 496.8,
+      "change_pct": 1.0,
+      "value": 50009.4
     },
     "nasdaq": {
-      "change": 221.71,
-      "change_pct": 0.85,
-      "value": 26214.193
+      "change": 277.88,
+      "change_pct": 1.07,
+      "value": 26270.36
     },
     "sp500": {
-      "change": 46.4,
-      "change_pct": 0.63,
-      "value": 7424.5
+      "change": 54.9,
+      "change_pct": 0.74,
+      "value": 7433.0
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
     },
     {
-      "published": "Wed, 20 May 2026 18:42:00",
+      "published": "Wed, 20 May 2026 20:38:00",
       "source": "MarketWatch",
-      "title": "Vox\u2019s sale marks the end of an era for a once-booming form of digital media. Here\u2019s how it all came undone.",
-      "url": "https://www.marketwatch.com/story/voxs-sale-marks-the-end-of-an-era-for-a-once-booming-form-of-digital-media-heres-how-it-all-came-undone-8a15d530?mod=mw_rss_topstories"
+      "title": "I found my co-worker\u2019s W-2 in a book \u2014 she makes $15,000 more than me for the same job. What should I do?",
+      "url": "https://www.marketwatch.com/story/i-found-my-coworkers-w-2-in-a-book-she-makes-15-000-more-than-me-for-the-same-job-what-should-i-do-2ada147a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 18:04:00",
+      "published": "Wed, 20 May 2026 20:32:00",
       "source": "MarketWatch",
-      "title": "Fed minutes show increased chances of interest-rate hike",
-      "url": "https://www.marketwatch.com/story/fed-minutes-show-increased-chances-of-interest-rate-hike-e808453b?mod=mw_rss_topstories"
+      "title": "Here\u2019s why Target\u2019s turnaround may not be as smooth as the latest results imply",
+      "url": "https://www.marketwatch.com/story/targets-turnaround-involves-upscale-baby-gear-and-revamped-shopping-carts-and-its-starting-to-pay-off-eda9ba67?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 17:51:00",
+      "published": "Wed, 20 May 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation.",
-      "url": "https://www.marketwatch.com/story/artificial-intelligence-was-supposed-to-reduce-prices-instead-ai-is-boosting-inflation-d7dbec01?mod=mw_rss_topstories"
+      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
+      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 17:34:00",
+      "published": "Wed, 20 May 2026 20:27:00",
       "source": "MarketWatch",
-      "title": "GameStop ups its stake in eBay after its buyout bid was rejected",
-      "url": "https://www.marketwatch.com/story/gamestop-appears-no-closer-to-taking-over-ebay-it-upped-its-stake-in-the-auction-site-anyway-e8b2d2df?mod=mw_rss_topstories"
+      "title": "Has Google lost its AI edge? How its \u2018unexciting\u2019 strategy could actually pay off.",
+      "url": "https://www.marketwatch.com/story/has-google-lost-its-ai-edge-how-its-unexciting-strategy-could-actually-pay-off-c897b81c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 17:30:00",
+      "published": "Wed, 20 May 2026 20:25:00",
       "source": "MarketWatch",
-      "title": "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end",
-      "url": "https://www.marketwatch.com/story/oil-prices-decline-after-trump-reaffirmed-he-would-end-the-war-in-iran-very-quickly-f5148dd4?mod=mw_rss_topstories"
+      "title": "Constellation\u2019s and Vistra\u2019s stocks rally as power-grid operator speeds up data-center deals",
+      "url": "https://www.marketwatch.com/story/constellations-and-vistras-stocks-rally-as-power-grid-operator-speeds-up-data-center-deals-67b95021?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.66
+      "yield": 3.65
     },
     {
       "tenor": "3M",
-      "yield": 3.67
+      "yield": 3.65
     },
     {
       "tenor": "6M",
-      "yield": 3.77
+      "yield": 3.75
     },
     {
       "tenor": "1Y",
-      "yield": 3.83
+      "yield": 3.79
     },
     {
       "tenor": "2Y",
-      "yield": 4.13
+      "yield": 4.04
     },
     {
       "tenor": "5Y",
-      "yield": 4.32
+      "yield": 4.22
     },
     {
       "tenor": "7Y",
-      "yield": 4.5
+      "yield": 4.39
     },
     {
       "tenor": "10Y",
-      "yield": 4.67
+      "yield": 4.57
     },
     {
       "tenor": "20Y",
-      "yield": 5.19
+      "yield": 5.1
     },
     {
       "tenor": "30Y",
-      "yield": 5.18
+      "yield": 5.11
     }
   ],
   "warnings": []
