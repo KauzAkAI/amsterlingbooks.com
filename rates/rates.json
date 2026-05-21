@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -3.71,
-      "change_pct": -0.59,
+      "change": 1.42,
+      "change_pct": 0.22,
       "unit": "$/lb",
-      "value": 629.82
+      "value": 634.95
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -26.45,
-      "change_pct": -0.58,
-      "unit": "$/oz",
-      "value": 4518.8
-    },
-    "natural_gas": {
-      "change": 0.01,
-      "change_pct": 0.43,
-      "unit": "$/MMBtu",
-      "value": 3.047
-    },
-    "silver": {
-      "change": 5.2,
+      "change": 3.3,
       "change_pct": 0.07,
       "unit": "$/oz",
-      "value": 7617.0
+      "value": 4548.55
+    },
+    "natural_gas": {
+      "change": -0.01,
+      "change_pct": -0.43,
+      "unit": "$/MMBtu",
+      "value": 3.021
+    },
+    "silver": {
+      "change": 101.7,
+      "change_pct": 1.34,
+      "unit": "$/oz",
+      "value": 7713.5
     },
     "wti_oil": {
-      "change": 1.46,
-      "change_pct": 1.48,
+      "change": -2.12,
+      "change_pct": -2.14,
       "unit": "$/bbl",
-      "value": 100.43
+      "value": 96.85
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3515
     }
   },
-  "generated_at": "2026-05-21T16:21:10+00:00",
+  "generated_at": "2026-05-21T18:18:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-05-13",
-        "rate": 6.57
-      },
-      {
-        "date": "2026-05-13",
         "rate": 6.46
       },
       {
@@ -226,25 +222,29 @@
       },
       {
         "date": "2026-05-21",
+        "rate": 6.7
+      },
+      {
+        "date": "2026-05-21",
         "rate": 6.51
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 63.8,
-      "change_pct": 0.13,
-      "value": 49927.2
+      "change": 432.0,
+      "change_pct": 0.87,
+      "value": 50295.4
     },
     "nasdaq": {
-      "change": 26.72,
-      "change_pct": 0.1,
-      "value": 26164.676
+      "change": 166.25,
+      "change_pct": 0.64,
+      "value": 26304.21
     },
     "sp500": {
-      "change": 8.9,
-      "change_pct": 0.12,
-      "value": 7410.6
+      "change": 43.9,
+      "change_pct": 0.59,
+      "value": 7445.6
     },
     "vix": {
       "change": 1.2,
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
     },
     {
-      "published": "Thu, 21 May 2026 16:15:00",
+      "published": "Thu, 21 May 2026 18:06:00",
       "source": "MarketWatch",
-      "title": "Canada and India now have generic Wegovy. Here\u2019s why the U.S. doesn\u2019t.",
-      "url": "https://www.marketwatch.com/story/canada-and-india-now-have-generic-wegovy-heres-why-the-u-s-doesnt-db18b6b7?mod=mw_rss_topstories"
+      "title": "I\u2019m 66 and have $85,000 in my HSA. When should I start spending it?",
+      "url": "https://www.marketwatch.com/story/im-66-and-have-85-000-in-my-hsa-should-i-spend-it-all-by-a-certain-age-66939bd9?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 16:14:00",
+      "published": "Thu, 21 May 2026 18:04:00",
       "source": "MarketWatch",
-      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
-      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
+      "title": "Trump\u2019s AI executive order was set to feature voluntary participation by companies. He has delayed it.",
+      "url": "https://www.marketwatch.com/story/trumps-ai-executive-order-was-set-to-feature-voluntary-participation-by-companies-he-has-delayed-it-a46ba03d?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 16:04:00",
+      "published": "Thu, 21 May 2026 18:02:00",
       "source": "MarketWatch",
-      "title": "Mortgage rates jump to more than 6.5% \u2014 the highest level since the Iran war started",
-      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-to-more-than-6-5-the-highest-level-since-the-iran-war-started-41728b4e?mod=mw_rss_topstories"
+      "title": "Oil prices turn lower on hopes for Iran deal; crude supplies are declining as travel season starts Memorial Day weekend",
+      "url": "https://www.marketwatch.com/story/as-iran-war-drags-on-this-is-how-quickly-global-oil-stocks-are-being-depleted-and-travel-season-is-starting-soon-c6948319?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 15:45:00",
+      "published": "Thu, 21 May 2026 17:41:00",
       "source": "MarketWatch",
-      "title": "The surprising cost of caring for aging parents: divorce",
-      "url": "https://www.marketwatch.com/story/the-surprising-cost-of-caring-for-aging-parents-divorce-2ff83fce?mod=mw_rss_topstories"
+      "title": "The bond market just flipped the script on investors \u2014 Wall Street is acting like nothing\u2019s wrong",
+      "url": "https://www.marketwatch.com/story/the-bond-market-just-flipped-the-script-on-investors-wall-street-is-acting-like-nothings-wrong-f321cc5b?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 15:30:00",
+      "published": "Thu, 21 May 2026 17:26:00",
       "source": "MarketWatch",
-      "title": "This hack can save you hundreds on airfare this summer",
-      "url": "https://www.marketwatch.com/story/this-hack-can-save-you-hundreds-on-airfare-this-summer-d083bd2f?mod=mw_rss_topstories"
+      "title": "People are putting less gas in their tanks as high prices crimp budgets, Walmart says",
+      "url": "https://www.marketwatch.com/story/walmart-sees-slowing-sales-growth-and-warns-of-a-profit-miss-in-contrast-to-rival-target-1f114fa0?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 20 2026",
-      "change": -0.03,
-      "rate": 6.22
+      "asof_label": "May 21 2026",
+      "change": 0.02,
+      "rate": 6.24
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 20 2026",
-      "change": -0.08,
+      "asof_label": "May 21 2026",
+      "change": 0.03,
       "rate": 6.52
     }
   },
