@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.0,
-      "change_pct": 0.16,
+      "change": 0.97,
+      "change_pct": 0.15,
       "unit": "$/lb",
-      "value": 634.53
+      "value": 634.5
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -2.13,
-      "change_pct": -0.05,
+      "change": -1.55,
+      "change_pct": -0.03,
       "unit": "$/oz",
-      "value": 4543.12
+      "value": 4543.7
     },
     "natural_gas": {
-      "change": -0.05,
-      "change_pct": -1.65,
+      "change": -0.02,
+      "change_pct": -0.53,
       "unit": "$/MMBtu",
-      "value": 2.984
+      "value": 3.018
     },
     "silver": {
-      "change": 84.7,
-      "change_pct": 1.11,
+      "change": 94.0,
+      "change_pct": 1.23,
       "unit": "$/oz",
-      "value": 7696.5
+      "value": 7705.8
     },
     "wti_oil": {
-      "change": -1.32,
-      "change_pct": -1.33,
+      "change": -0.97,
+      "change_pct": -0.98,
       "unit": "$/bbl",
-      "value": 97.65
+      "value": 98.0
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3515
     }
   },
-  "generated_at": "2026-05-21T20:16:42+00:00",
+  "generated_at": "2026-05-21T21:53:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
     },
     {
+      "published": "Thu, 21 May 2026 21:24:00",
+      "source": "MarketWatch",
+      "title": "People are putting less gas in their tanks as high prices crimp budgets, Walmart says",
+      "url": "https://www.marketwatch.com/story/walmart-sees-slowing-sales-growth-and-warns-of-a-profit-miss-in-contrast-to-rival-target-1f114fa0?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 21 May 2026 21:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018My husband is leery of my plan\u2019: We are both 60 and have $5 million. Is now a good time to dip into our savings?",
+      "url": "https://www.marketwatch.com/story/my-husband-is-leery-of-my-plan-we-are-both-60-and-have-5-million-is-now-a-good-time-to-dip-into-our-savings-4c609266?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 21 May 2026 20:45:00",
+      "source": "MarketWatch",
+      "title": "Quantum stocks soar as the Trump administration looks to be buying in",
+      "url": "https://www.marketwatch.com/story/quantum-stocks-soar-as-trump-administration-is-reportedly-buying-in-d6ed17b2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 21 May 2026 20:01:00",
       "source": "MarketWatch",
       "title": "NYC\u2019s Mamdani boasts new $50 World Cup ticket program: \u2018That is five lattes in New York City!\u2019",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "Elon Musk\u2019s xAI is draining SpaceX\u2019s cash, with little to show for it",
       "url": "https://www.marketwatch.com/story/elon-musks-xai-is-draining-spacexs-cash-with-little-to-show-for-it-9517874d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 21 May 2026 19:05:00",
-      "source": "MarketWatch",
-      "title": "Annuity payouts are the highest they\u2019ve been in years. Thanks, inflation.",
-      "url": "https://www.marketwatch.com/story/annuity-payouts-are-the-highest-theyve-been-in-years-thanks-inflation-d4d3f565?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 21 May 2026 18:58:00",
-      "source": "MarketWatch",
-      "title": "Quantum stocks soar as the Trump administration looks to be buying in",
-      "url": "https://www.marketwatch.com/story/quantum-stocks-soar-as-trump-administration-is-reportedly-buying-in-d6ed17b2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 21 May 2026 18:47:00",
-      "source": "MarketWatch",
-      "title": "Local TV faces financial pinch as political ad spending increasingly moves online",
-      "url": "https://www.marketwatch.com/story/local-tv-faces-financial-pinch-as-political-ad-spending-increasingly-moves-online-73c73d24?mod=mw_rss_topstories"
     }
   ],
   "rates": {
