@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -0.55,
-      "change_pct": -0.09,
+      "change": -3.71,
+      "change_pct": -0.59,
       "unit": "$/lb",
-      "value": 632.98
+      "value": 629.82
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 1.32,
-      "change_pct": 0.03,
+      "change": -26.45,
+      "change_pct": -0.58,
       "unit": "$/oz",
-      "value": 4546.57
+      "value": 4518.8
     },
     "natural_gas": {
       "change": 0.01,
-      "change_pct": 0.26,
+      "change_pct": 0.43,
       "unit": "$/MMBtu",
-      "value": 3.042
+      "value": 3.047
     },
     "silver": {
-      "change": 4.0,
-      "change_pct": 0.05,
+      "change": 5.2,
+      "change_pct": 0.07,
       "unit": "$/oz",
-      "value": 7615.8
+      "value": 7617.0
     },
     "wti_oil": {
-      "change": -0.04,
-      "change_pct": -0.04,
+      "change": 1.46,
+      "change_pct": 1.48,
       "unit": "$/bbl",
-      "value": 98.93
+      "value": 100.43
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3758
+      "rate": 1.377
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8028
+      "rate": 6.8022
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86207
+      "rate": 0.86214
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74616
+      "rate": 0.74518
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.83
+      "rate": 96.21
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.03
+      "rate": 159.14
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1505.44
+      "rate": 1508.74
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3681
+      "rate": 17.3515
     }
   },
-  "generated_at": "2026-05-20T23:57:48+00:00",
+  "generated_at": "2026-05-21T16:21:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,10 +185,6 @@
         "rate": 6.37
       },
       {
-        "date": "2026-04-30",
-        "rate": 6.3
-      },
-      {
         "date": "2026-05-06",
         "rate": 6.45
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-20",
         "rate": 6.67
+      },
+      {
+        "date": "2026-05-21",
+        "rate": 6.51
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 660.6,
-      "change_pct": 1.34,
-      "value": 50009.4
+      "change": 63.8,
+      "change_pct": 0.13,
+      "value": 49927.2
     },
     "nasdaq": {
-      "change": 278.85,
-      "change_pct": 1.07,
-      "value": 26270.36
+      "change": 26.72,
+      "change_pct": 0.1,
+      "value": 26164.676
     },
     "sp500": {
-      "change": 63.8,
-      "change_pct": 0.87,
-      "value": 7433.0
+      "change": 8.9,
+      "change_pct": 0.12,
+      "value": 7410.6
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 21 May 2026 08:42:03",
+      "source": "CNBC",
+      "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
+      "url": "https://www.cnbc.com/2026/05/21/uk-gcc-trade-deal-bahrain-gulf-investment.html"
+    },
+    {
       "published": "Wed, 20 May 2026 08:15:15",
       "source": "CNBC",
       "title": "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
     },
     {
-      "published": "Fri, 15 May 2026 18:55:25",
-      "source": "CNBC",
-      "title": "Traders now see next Fed interest rate move as a hike following inflation surge",
-      "url": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
+      "published": "Thu, 21 May 2026 16:15:00",
+      "source": "MarketWatch",
+      "title": "Canada and India now have generic Wegovy. Here\u2019s why the U.S. doesn\u2019t.",
+      "url": "https://www.marketwatch.com/story/canada-and-india-now-have-generic-wegovy-heres-why-the-u-s-doesnt-db18b6b7?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 22:51:00",
+      "published": "Thu, 21 May 2026 16:14:00",
       "source": "MarketWatch",
-      "title": "Gen Z may be shying away from buying cosmetics, as higher gas prices hit spending",
-      "url": "https://www.marketwatch.com/story/gen-z-may-be-shying-away-from-cosmetics-as-higher-gas-prices-hit-spending-9f9ccbf8?mod=mw_rss_topstories"
+      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
+      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 22:43:00",
+      "published": "Thu, 21 May 2026 16:04:00",
       "source": "MarketWatch",
-      "title": "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
-      "url": "https://www.marketwatch.com/story/investors-are-flocking-to-an-offshore-crypto-platform-for-an-early-shot-at-trading-the-spacex-ipo-4ec49f10?mod=mw_rss_topstories"
+      "title": "Mortgage rates jump to more than 6.5% \u2014 the highest level since the Iran war started",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-to-more-than-6-5-the-highest-level-since-the-iran-war-started-41728b4e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 22:36:00",
+      "published": "Thu, 21 May 2026 15:45:00",
       "source": "MarketWatch",
-      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
-      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
+      "title": "The surprising cost of caring for aging parents: divorce",
+      "url": "https://www.marketwatch.com/story/the-surprising-cost-of-caring-for-aging-parents-divorce-2ff83fce?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 20 May 2026 22:36:00",
+      "published": "Thu, 21 May 2026 15:30:00",
       "source": "MarketWatch",
-      "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
-      "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 20 May 2026 22:24:00",
-      "source": "MarketWatch",
-      "title": "The \u2018stunning\u2019 end to Trump\u2019s case against the IRS raises tax-law questions that will be analyzed for years",
-      "url": "https://www.marketwatch.com/story/the-stunning-end-to-trumps-case-against-the-irs-raises-tax-law-questions-that-will-be-analyzed-for-years-abe2bf79?mod=mw_rss_topstories"
+      "title": "This hack can save you hundreds on airfare this summer",
+      "url": "https://www.marketwatch.com/story/this-hack-can-save-you-hundreds-on-airfare-this-summer-d083bd2f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
