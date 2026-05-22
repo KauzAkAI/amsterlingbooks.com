@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 3.23,
-      "change_pct": 0.51,
+      "change": 4.83,
+      "change_pct": 0.76,
       "unit": "$/lb",
-      "value": 637.6
+      "value": 639.2
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -28.7,
-      "change_pct": -0.63,
+      "change": -24.08,
+      "change_pct": -0.53,
       "unit": "$/oz",
-      "value": 4517.5
+      "value": 4522.12
     },
     "natural_gas": {
-      "change": -0.09,
-      "change_pct": -2.86,
+      "change": -0.11,
+      "change_pct": -3.53,
       "unit": "$/MMBtu",
-      "value": 2.916
+      "value": 2.896
     },
     "silver": {
-      "change": -97.8,
-      "change_pct": -1.27,
+      "change": -81.0,
+      "change_pct": -1.05,
       "unit": "$/oz",
-      "value": 7613.0
+      "value": 7629.8
     },
     "wti_oil": {
-      "change": -0.79,
-      "change_pct": -0.81,
+      "change": -1.73,
+      "change_pct": -1.77,
       "unit": "$/bbl",
-      "value": 96.88
+      "value": 95.94
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3385
     }
   },
-  "generated_at": "2026-05-22T15:52:18+00:00",
+  "generated_at": "2026-05-22T17:50:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-04-29",
-        "rate": 6.37
-      },
-      {
         "date": "2026-05-06",
         "rate": 6.45
       },
@@ -195,10 +191,6 @@
       {
         "date": "2026-05-13",
         "rate": 6.46
-      },
-      {
-        "date": "2026-05-14",
-        "rate": 6.52
       },
       {
         "date": "2026-05-14",
@@ -221,30 +213,38 @@
         "rate": 6.67
       },
       {
+        "date": "2026-05-20",
+        "rate": 6.56
+      },
+      {
         "date": "2026-05-21",
         "rate": 6.65
       },
       {
         "date": "2026-05-21",
         "rate": 6.51
+      },
+      {
+        "date": "2026-05-22",
+        "rate": 6.65
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 136.5,
-      "change_pct": 0.27,
-      "value": 50706.2
+      "change": 177.2,
+      "change_pct": 0.35,
+      "value": 50746.9
     },
     "nasdaq": {
-      "change": 55.82,
-      "change_pct": 0.21,
-      "value": 26443.332
+      "change": 60.91,
+      "change_pct": 0.23,
+      "value": 26448.414
     },
     "sp500": {
-      "change": 17.2,
-      "change_pct": 0.23,
-      "value": 7494.6
+      "change": 18.0,
+      "change_pct": 0.24,
+      "value": 7495.4
     },
     "vix": {
       "change": 1.2,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Fri, 22 May 2026 14:55:12",
+      "published": "Fri, 22 May 2026 16:13:30",
       "source": "CNBC",
       "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
       "url": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
     },
     {
-      "published": "Fri, 22 May 2026 15:30:00",
+      "published": "Fri, 22 May 2026 17:39:00",
       "source": "MarketWatch",
-      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
-      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s on a new path, and if you own an S&P 500 index fund your money is riding on it",
+      "url": "https://www.marketwatch.com/story/nvidias-on-a-new-path-and-if-you-own-an-s-p-500-index-fund-your-money-is-riding-on-it-be0be5ec?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 15:28:00",
+      "published": "Fri, 22 May 2026 17:39:00",
       "source": "MarketWatch",
-      "title": "Annuity payouts are the highest they\u2019ve been in years. Thanks, inflation.",
-      "url": "https://www.marketwatch.com/story/annuity-payouts-are-the-highest-theyve-been-in-years-thanks-inflation-d4d3f565?mod=mw_rss_topstories"
+      "title": "I almost fell for a scammer. This one rule saved me \u2014 and could help you, too.",
+      "url": "https://www.marketwatch.com/story/i-almost-fell-for-scammer-this-one-rule-saved-me-and-could-help-you-too-8c3bcf78?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 15:20:00",
+      "published": "Fri, 22 May 2026 17:11:00",
       "source": "MarketWatch",
-      "title": "I\u2019m in my 30s and half my money is in Vanguard\u2019s Information Technology ETF. Is that risky?",
-      "url": "https://www.marketwatch.com/story/im-in-my-30s-and-half-my-money-is-in-vanguards-information-technology-etf-is-that-risky-1bab4a66?mod=mw_rss_topstories"
+      "title": "This bond strategy can protect your portfolio even if interest rates go up",
+      "url": "https://www.marketwatch.com/story/this-bond-strategy-can-protect-your-portfolio-even-if-interest-rates-go-up-9e9418cb?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 14:40:00",
+      "published": "Fri, 22 May 2026 17:11:00",
       "source": "MarketWatch",
-      "title": "Nvidia can deliver chips \u2014 but it can\u2019t buy Big Tech out of its credit and power-grid crisis",
-      "url": "https://www.marketwatch.com/story/nvidia-can-deliver-chips-but-it-cant-buy-big-tech-out-of-its-credit-and-power-grid-crisis-9c114e62?mod=mw_rss_topstories"
+      "title": "Trump tells Warsh \u2018to be totally independent\u2019 as Fed chair. \u2018Don\u2019t look at me,\u2019 president says.",
+      "url": "https://www.marketwatch.com/story/trump-tells-warsh-to-be-totally-independent-as-fed-chair-dont-look-at-me-president-says-051c3740?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 14:39:00",
+      "published": "Fri, 22 May 2026 16:40:00",
       "source": "MarketWatch",
-      "title": "An adviser told me I can save 35% of the taxes on a Roth conversion. Is that true?",
-      "url": "https://www.marketwatch.com/story/an-adviser-told-me-i-can-save-35-of-the-taxes-on-a-roth-conversion-is-that-true-7f4b4268?mod=mw_rss_topstories"
+      "title": "BJ\u2019s Wholesale\u2019s earnings show that cheap gas matters for people",
+      "url": "https://www.marketwatch.com/story/bjs-wholesales-earnings-show-that-cheap-gas-matters-for-people-8469d937?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 21 2026",
-      "change": -0.02,
+      "asof_label": "May 22 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
