@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 4.83,
-      "change_pct": 0.76,
+      "change": 3.6,
+      "change_pct": 0.57,
       "unit": "$/lb",
-      "value": 639.2
+      "value": 637.97
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -24.08,
-      "change_pct": -0.53,
+      "change": -36.5,
+      "change_pct": -0.8,
       "unit": "$/oz",
-      "value": 4522.12
+      "value": 4509.7
     },
     "natural_gas": {
-      "change": -0.11,
-      "change_pct": -3.53,
+      "change": -0.09,
+      "change_pct": -3.03,
       "unit": "$/MMBtu",
-      "value": 2.896
+      "value": 2.911
     },
     "silver": {
-      "change": -81.0,
-      "change_pct": -1.05,
+      "change": -120.0,
+      "change_pct": -1.56,
       "unit": "$/oz",
-      "value": 7629.8
+      "value": 7590.8
     },
     "wti_oil": {
-      "change": -1.73,
-      "change_pct": -1.77,
+      "change": -0.96,
+      "change_pct": -0.98,
       "unit": "$/bbl",
-      "value": 95.94
+      "value": 96.71
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3385
     }
   },
-  "generated_at": "2026-05-22T17:50:43+00:00",
+  "generated_at": "2026-05-22T19:28:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 177.2,
-      "change_pct": 0.35,
-      "value": 50746.9
+      "change": 71.6,
+      "change_pct": 0.14,
+      "value": 50641.3
     },
     "nasdaq": {
-      "change": 60.91,
-      "change_pct": 0.23,
-      "value": 26448.414
+      "change": -43.13,
+      "change_pct": -0.16,
+      "value": 26344.377
     },
     "sp500": {
-      "change": 18.0,
-      "change_pct": 0.24,
-      "value": 7495.4
+      "change": -0.4,
+      "change_pct": -0.01,
+      "value": 7477.0
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
     },
     {
+      "published": "Fri, 22 May 2026 19:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018We have longevity in the family\u2019: My sister is turning 67. Should she wait until 70 to claim Social Security?",
+      "url": "https://www.marketwatch.com/story/we-have-longevity-in-the-family-my-sister-is-turning-67-should-she-wait-until-70-to-claim-social-security-812087a4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 22 May 2026 19:13:00",
+      "source": "MarketWatch",
+      "title": "Memorial Day sales mark down fridges and dishwashers. Too bad many Americans aren\u2019t buying them right now.",
+      "url": "https://www.marketwatch.com/story/cant-afford-to-buy-a-new-fridge-or-dishwasher-over-memorial-day-a-better-holiday-sale-is-coming-up-2355cded?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 22 May 2026 18:26:00",
+      "source": "MarketWatch",
+      "title": "Americans are paying $2 billion more for gas this Memorial Day weekend than they did last year",
+      "url": "https://www.marketwatch.com/story/americans-are-paying-2-billion-more-for-gas-this-memorial-day-weekend-than-they-did-last-year-632a7c56?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 22 May 2026 17:58:00",
+      "source": "MarketWatch",
+      "title": "The oil shock meets the Fed \u2018curse\u2019: What Kevin Warsh means for your portfolio",
+      "url": "https://www.marketwatch.com/story/the-new-fed-chair-curse-and-100-plus-oil-are-already-testing-kevin-warsh-and-the-stock-market-718b919d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 22 May 2026 17:39:00",
       "source": "MarketWatch",
       "title": "Nvidia\u2019s on a new path, and if you own an S&P 500 index fund your money is riding on it",
       "url": "https://www.marketwatch.com/story/nvidias-on-a-new-path-and-if-you-own-an-s-p-500-index-fund-your-money-is-riding-on-it-be0be5ec?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 17:39:00",
-      "source": "MarketWatch",
-      "title": "I almost fell for a scammer. This one rule saved me \u2014 and could help you, too.",
-      "url": "https://www.marketwatch.com/story/i-almost-fell-for-scammer-this-one-rule-saved-me-and-could-help-you-too-8c3bcf78?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 17:11:00",
-      "source": "MarketWatch",
-      "title": "This bond strategy can protect your portfolio even if interest rates go up",
-      "url": "https://www.marketwatch.com/story/this-bond-strategy-can-protect-your-portfolio-even-if-interest-rates-go-up-9e9418cb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 17:11:00",
-      "source": "MarketWatch",
-      "title": "Trump tells Warsh \u2018to be totally independent\u2019 as Fed chair. \u2018Don\u2019t look at me,\u2019 president says.",
-      "url": "https://www.marketwatch.com/story/trump-tells-warsh-to-be-totally-independent-as-fed-chair-dont-look-at-me-president-says-051c3740?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 16:40:00",
-      "source": "MarketWatch",
-      "title": "BJ\u2019s Wholesale\u2019s earnings show that cheap gas matters for people",
-      "url": "https://www.marketwatch.com/story/bjs-wholesales-earnings-show-that-cheap-gas-matters-for-people-8469d937?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,19 +402,19 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.78
+      "yield": 3.79
     },
     {
       "tenor": "1Y",
-      "yield": 3.83
+      "yield": 3.86
     },
     {
       "tenor": "2Y",
-      "yield": 4.08
+      "yield": 4.13
     },
     {
       "tenor": "5Y",
-      "yield": 4.25
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
@@ -422,15 +422,15 @@
     },
     {
       "tenor": "10Y",
-      "yield": 4.57
+      "yield": 4.56
     },
     {
       "tenor": "20Y",
-      "yield": 5.09
+      "yield": 5.06
     },
     {
       "tenor": "30Y",
-      "yield": 5.1
+      "yield": 5.07
     }
   ],
   "warnings": []
