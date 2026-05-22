@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 3.96,
-      "change_pct": 0.62,
+      "change": 3.53,
+      "change_pct": 0.56,
       "unit": "$/lb",
-      "value": 638.33
+      "value": 637.9
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -36.9,
-      "change_pct": -0.81,
+      "change": -23.0,
+      "change_pct": -0.51,
       "unit": "$/oz",
-      "value": 4509.3
+      "value": 4523.2
     },
     "natural_gas": {
-      "change": -0.08,
-      "change_pct": -2.76,
+      "change": -0.09,
+      "change_pct": -3.16,
       "unit": "$/MMBtu",
-      "value": 2.919
+      "value": 2.907
     },
     "silver": {
-      "change": -126.8,
-      "change_pct": -1.64,
+      "change": -90.9,
+      "change_pct": -1.18,
       "unit": "$/oz",
-      "value": 7584.0
+      "value": 7619.9
     },
     "wti_oil": {
-      "change": -0.77,
-      "change_pct": -0.79,
+      "change": -0.67,
+      "change_pct": -0.69,
       "unit": "$/bbl",
-      "value": 96.9
+      "value": 97.0
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3385
     }
   },
-  "generated_at": "2026-05-22T20:55:13+00:00",
+  "generated_at": "2026-05-22T22:13:25+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
     },
     {
+      "published": "Fri, 22 May 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
+      "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 22 May 2026 20:56:00",
+      "source": "MarketWatch",
+      "title": "Worried about private credit? Stay away from this even riskier investment right now.",
+      "url": "https://www.marketwatch.com/story/worried-about-private-credit-stay-away-from-this-even-riskier-investment-right-now-bfb79b43?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 22 May 2026 20:38:00",
       "source": "MarketWatch",
       "title": "IMAX has bucked the trend as the movie-theater business fades \u2014 here\u2019s why it\u2019s so attractive to would-be buyers",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018Buffett Indicator\u2019 warns of a market top \u2014 8 crucial signs that stocks are running on fumes",
       "url": "https://www.marketwatch.com/story/buffett-indicator-warns-of-a-market-top-8-crucial-signs-that-stocks-are-running-on-fumes-12e4b4d8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 20:28:00",
-      "source": "MarketWatch",
-      "title": "Ford\u2019s stock climbs to highest close in three years. Here\u2019s what\u2019s behind its run.",
-      "url": "https://www.marketwatch.com/story/fords-stock-climbs-to-highest-close-in-three-years-heres-whats-behind-its-run-9fa2e378?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 20:01:00",
-      "source": "MarketWatch",
-      "title": "Kevin Warsh walks into a trap where the Fed can\u2019t cut rates even if it wants to",
-      "url": "https://www.marketwatch.com/story/kevin-warsh-walks-into-a-trap-where-the-fed-cant-cut-rates-even-if-it-wants-to-8475e97c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
