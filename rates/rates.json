@@ -135,7 +135,7 @@
       "rate": 17.3385
     }
   },
-  "generated_at": "2026-05-22T22:13:25+00:00",
+  "generated_at": "2026-05-22T23:35:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": 10.0,
-      "change_pct": 0.02,
+      "change": 145.0,
+      "change_pct": 0.29,
       "value": 50579.7
     },
     "nasdaq": {
-      "change": -43.54,
-      "change_pct": -0.16,
+      "change": -37.59,
+      "change_pct": -0.14,
       "value": 26343.97
     },
     "sp500": {
-      "change": -3.9,
-      "change_pct": -0.05,
+      "change": 4.7,
+      "change_pct": 0.06,
       "value": 7473.5
     },
     "vix": {
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
     },
     {
+      "published": "Fri, 22 May 2026 23:15:00",
+      "source": "MarketWatch",
+      "title": "This 2008 \u2018train wreck\u2019 oil scenario could unfold if Hormuz isn\u2019t opened by end of August",
+      "url": "https://www.marketwatch.com/story/this-2008-train-wreck-oil-scenario-could-unfold-if-hormuz-isnt-opened-by-end-of-august-75b74bb1?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 22 May 2026 21:45:00",
       "source": "MarketWatch",
       "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The oil shock meets the Fed \u2018curse\u2019: What Kevin Warsh means for your portfolio",
       "url": "https://www.marketwatch.com/story/the-new-fed-chair-curse-and-100-plus-oil-are-already-testing-kevin-warsh-and-the-stock-market-718b919d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 20:32:00",
-      "source": "MarketWatch",
-      "title": "\u2018Buffett Indicator\u2019 warns of a market top \u2014 8 crucial signs that stocks are running on fumes",
-      "url": "https://www.marketwatch.com/story/buffett-indicator-warns-of-a-market-top-8-crucial-signs-that-stocks-are-running-on-fumes-12e4b4d8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
