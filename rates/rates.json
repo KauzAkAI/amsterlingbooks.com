@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.68,
-      "change_pct": 0.11,
+      "change": 3.23,
+      "change_pct": 0.51,
       "unit": "$/lb",
-      "value": 635.05
+      "value": 637.6
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -1.98,
-      "change_pct": -0.04,
+      "change": -28.7,
+      "change_pct": -0.63,
       "unit": "$/oz",
-      "value": 4544.22
+      "value": 4517.5
     },
     "natural_gas": {
-      "change": -0.01,
-      "change_pct": -0.23,
+      "change": -0.09,
+      "change_pct": -2.86,
       "unit": "$/MMBtu",
-      "value": 2.995
+      "value": 2.916
     },
     "silver": {
-      "change": -2.8,
-      "change_pct": -0.04,
+      "change": -97.8,
+      "change_pct": -1.27,
       "unit": "$/oz",
-      "value": 7708.0
+      "value": 7613.0
     },
     "wti_oil": {
-      "change": 0.19,
-      "change_pct": 0.19,
+      "change": -0.79,
+      "change_pct": -0.81,
       "unit": "$/bbl",
-      "value": 97.86
+      "value": 96.88
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.377
+      "rate": 1.3801
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8022
+      "rate": 6.7953
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86214
+      "rate": 0.86244
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74518
+      "rate": 0.7453
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.21
+      "rate": 95.7
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.14
+      "rate": 159.15
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1508.74
+      "rate": 1517.55
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3515
+      "rate": 17.3385
     }
   },
-  "generated_at": "2026-05-21T23:05:22+00:00",
+  "generated_at": "2026-05-22T15:52:18+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 301.9,
-      "change_pct": 0.6,
-      "value": 50285.7
+      "change": 136.5,
+      "change_pct": 0.27,
+      "value": 50706.2
     },
     "nasdaq": {
-      "change": 149.48,
-      "change_pct": 0.57,
-      "value": 26293.1
+      "change": 55.82,
+      "change_pct": 0.21,
+      "value": 26443.332
     },
     "sp500": {
-      "change": 34.9,
-      "change_pct": 0.47,
-      "value": 7445.7
+      "change": 17.2,
+      "change_pct": 0.23,
+      "value": 7494.6
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 22 May 2026 14:55:12",
+      "source": "CNBC",
+      "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
+      "url": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html"
+    },
+    {
       "published": "Thu, 21 May 2026 08:42:03",
       "source": "CNBC",
       "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
@@ -315,47 +321,41 @@
       "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
     },
     {
-      "published": "Mon, 18 May 2026 16:08:35",
-      "source": "CNBC",
-      "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
-      "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
-    },
-    {
-      "published": "Thu, 21 May 2026 23:00:00",
+      "published": "Fri, 22 May 2026 15:30:00",
       "source": "MarketWatch",
-      "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
-      "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
+      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
+      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 22:33:00",
+      "published": "Fri, 22 May 2026 15:28:00",
       "source": "MarketWatch",
-      "title": "Your bond portfolio is facing a \u2018termite\u2019 infestation far worse than Jamie Dimon\u2019s \u2018cockroaches\u2019",
-      "url": "https://www.marketwatch.com/story/credit-termites-are-lurking-in-the-bond-market-and-eating-away-at-your-portfolio-3f6be6e9?mod=mw_rss_topstories"
+      "title": "Annuity payouts are the highest they\u2019ve been in years. Thanks, inflation.",
+      "url": "https://www.marketwatch.com/story/annuity-payouts-are-the-highest-theyve-been-in-years-thanks-inflation-d4d3f565?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 22:32:00",
+      "published": "Fri, 22 May 2026 15:20:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m in my 30s and half my money is in Vanguard\u2019s Information Technology ETF. Is that risky?",
+      "url": "https://www.marketwatch.com/story/im-in-my-30s-and-half-my-money-is-in-vanguards-information-technology-etf-is-that-risky-1bab4a66?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 22 May 2026 14:40:00",
       "source": "MarketWatch",
       "title": "Nvidia can deliver chips \u2014 but it can\u2019t buy Big Tech out of its credit and power-grid crisis",
       "url": "https://www.marketwatch.com/story/nvidia-can-deliver-chips-but-it-cant-buy-big-tech-out-of-its-credit-and-power-grid-crisis-9c114e62?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 21 May 2026 22:30:00",
+      "published": "Fri, 22 May 2026 14:39:00",
       "source": "MarketWatch",
-      "title": "The bond market just flipped the script on investors \u2014 Wall Street is acting like nothing\u2019s wrong",
-      "url": "https://www.marketwatch.com/story/the-bond-market-just-flipped-the-script-on-investors-wall-street-is-acting-like-nothings-wrong-f321cc5b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 21 May 2026 22:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
-      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
+      "title": "An adviser told me I can save 35% of the taxes on a Roth conversion. Is that true?",
+      "url": "https://www.marketwatch.com/story/an-adviser-told-me-i-can-save-35-of-the-taxes-on-a-roth-conversion-is-that-true-7f4b4268?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 21 2026",
-      "change": 0.0,
-      "rate": 6.22
+      "asof_label": "May 22 2026",
+      "change": 0.01,
+      "rate": 6.23
     },
     "ten_year_treasury": {
       "change": 0.075,
