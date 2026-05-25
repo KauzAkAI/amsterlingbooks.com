@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.2,
-      "change_pct": 0.19,
+      "change": 2.3,
+      "change_pct": 0.36,
       "unit": "$/lb",
-      "value": 646.08
+      "value": 647.18
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 33.22,
-      "change_pct": 0.73,
+      "change": 26.47,
+      "change_pct": 0.58,
       "unit": "$/oz",
-      "value": 4606.42
+      "value": 4599.67
     },
     "natural_gas": {
       "change": 0.04,
-      "change_pct": 1.33,
+      "change_pct": 1.23,
       "unit": "$/MMBtu",
-      "value": 3.048
+      "value": 3.045
     },
     "silver": {
-      "change": 114.3,
-      "change_pct": 1.48,
+      "change": 134.0,
+      "change_pct": 1.74,
       "unit": "$/oz",
-      "value": 7812.3
+      "value": 7832.0
     },
     "wti_oil": {
-      "change": -1.53,
-      "change_pct": -1.65,
+      "change": -2.14,
+      "change_pct": -2.31,
       "unit": "$/bbl",
-      "value": 90.99
+      "value": 90.38
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2679
     }
   },
-  "generated_at": "2026-05-25T15:55:48+00:00",
+  "generated_at": "2026-05-25T17:50:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
     },
     {
+      "published": "Mon, 25 May 2026 17:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018There is zero transparency\u2019: My friend\u2019s sister controls their mother\u2019s estate. How can we stop her from stealing?",
+      "url": "https://www.marketwatch.com/story/there-is-zero-transparency-my-friends-sister-controls-their-mothers-estate-how-can-we-stop-her-from-stealing-a1a34ac8?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 25 May 2026 15:49:00",
       "source": "MarketWatch",
       "title": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
       "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 13:30:00",
-      "source": "MarketWatch",
-      "title": "Mastercard\u2019s stock is up 11,000% since its IPO 20 years ago. What comes next?",
-      "url": "https://www.marketwatch.com/story/mastercards-stock-is-up-11-000-since-its-ipo-20-years-ago-what-comes-next-deb949eb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
