@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.07,
-      "change_pct": 0.17,
+      "change": 0.0,
+      "change_pct": 0.0,
       "unit": "$/lb",
-      "value": 645.95
+      "value": 646.75
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 31.7,
-      "change_pct": 0.69,
+      "change": 8.06,
+      "change_pct": 0.18,
       "unit": "$/oz",
-      "value": 4604.9
+      "value": 4613.4
     },
     "natural_gas": {
-      "change": 0.04,
-      "change_pct": 1.16,
+      "change": -0.01,
+      "change_pct": -0.2,
       "unit": "$/MMBtu",
-      "value": 3.043
+      "value": 3.037
     },
     "silver": {
-      "change": 137.0,
-      "change_pct": 1.78,
+      "change": 25.8,
+      "change_pct": 0.33,
       "unit": "$/oz",
-      "value": 7835.0
+      "value": 7862.3
     },
     "wti_oil": {
-      "change": -2.21,
-      "change_pct": -2.39,
+      "change": -0.14,
+      "change_pct": -0.15,
       "unit": "$/bbl",
-      "value": 90.31
+      "value": 90.88
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2679
     }
   },
-  "generated_at": "2026-05-25T21:58:17+00:00",
+  "generated_at": "2026-05-25T23:17:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,16 +321,16 @@
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
     },
     {
-      "published": "Mon, 25 May 2026 19:50:00",
-      "source": "MarketWatch",
-      "title": "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
-      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 19:40:00",
+      "published": "Mon, 25 May 2026 22:23:00",
       "source": "MarketWatch",
       "title": "Oil prices tumble as deal to end Iran war appears close, though Trump says there\u2019s no rush",
       "url": "https://www.marketwatch.com/story/trump-says-theres-no-rush-as-deal-to-end-iran-war-reopen-strait-of-hormuz-appears-close-c60056c0?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 25 May 2026 19:50:00",
+      "source": "MarketWatch",
+      "title": "These underdogs are a big reason why S&P 500 profit growth is the fastest in nearly 5 years",
+      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
     },
     {
       "published": "Mon, 25 May 2026 18:30:00",
