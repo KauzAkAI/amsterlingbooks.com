@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 2.3,
-      "change_pct": 0.36,
+      "change": 1.69,
+      "change_pct": 0.26,
       "unit": "$/lb",
-      "value": 647.18
+      "value": 646.57
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 26.47,
-      "change_pct": 0.58,
+      "change": 31.9,
+      "change_pct": 0.7,
       "unit": "$/oz",
-      "value": 4599.67
+      "value": 4605.1
     },
     "natural_gas": {
       "change": 0.04,
-      "change_pct": 1.23,
+      "change_pct": 1.16,
       "unit": "$/MMBtu",
-      "value": 3.045
+      "value": 3.043
     },
     "silver": {
-      "change": 134.0,
-      "change_pct": 1.74,
+      "change": 142.0,
+      "change_pct": 1.84,
       "unit": "$/oz",
-      "value": 7832.0
+      "value": 7840.0
     },
     "wti_oil": {
-      "change": -2.14,
-      "change_pct": -2.31,
+      "change": -2.21,
+      "change_pct": -2.39,
       "unit": "$/bbl",
-      "value": 90.38
+      "value": 90.31
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2679
     }
   },
-  "generated_at": "2026-05-25T17:50:06+00:00",
+  "generated_at": "2026-05-25T19:19:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
     },
     {
+      "published": "Mon, 25 May 2026 18:30:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m 67. Our family trust earns $300,000 annually for my kids. How do I ensure they won\u2019t get killed on taxes?",
+      "url": "https://www.marketwatch.com/story/im-67-our-family-trust-earns-300-000-annually-for-my-kids-how-do-i-ensure-they-wont-get-killed-on-taxes-ee0c35d6?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 25 May 2026 17:45:00",
       "source": "MarketWatch",
       "title": "\u2018There is zero transparency\u2019: My friend\u2019s sister controls their mother\u2019s estate. How can we stop her from stealing?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
       "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 13:45:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
-      "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
     }
   ],
   "rates": {
