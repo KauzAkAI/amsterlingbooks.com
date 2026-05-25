@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 3.53,
-      "change_pct": 0.56,
+      "change": 1.2,
+      "change_pct": 0.19,
       "unit": "$/lb",
-      "value": 637.9
+      "value": 646.08
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -23.0,
-      "change_pct": -0.51,
+      "change": 33.22,
+      "change_pct": 0.73,
       "unit": "$/oz",
-      "value": 4523.2
+      "value": 4606.42
     },
     "natural_gas": {
-      "change": -0.09,
-      "change_pct": -3.16,
+      "change": 0.04,
+      "change_pct": 1.33,
       "unit": "$/MMBtu",
-      "value": 2.907
+      "value": 3.048
     },
     "silver": {
-      "change": -90.9,
-      "change_pct": -1.18,
+      "change": 114.3,
+      "change_pct": 1.48,
       "unit": "$/oz",
-      "value": 7619.9
+      "value": 7812.3
     },
     "wti_oil": {
-      "change": -0.67,
-      "change_pct": -0.69,
+      "change": -1.53,
+      "change_pct": -1.65,
       "unit": "$/bbl",
-      "value": 97.0
+      "value": 90.99
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3801
+      "rate": 1.3813
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7953
+      "rate": 6.7843
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86244
+      "rate": 0.85889
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7453
+      "rate": 0.74083
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.7
+      "rate": 95.24
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.15
+      "rate": 158.93
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1517.55
+      "rate": 1513.75
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3385
+      "rate": 17.2679
     }
   },
-  "generated_at": "2026-05-22T23:35:15+00:00",
+  "generated_at": "2026-05-25T15:55:48+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Sat, 23 May 2026 12:32:36",
+      "source": "CNBC",
+      "title": "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
+      "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
+    },
+    {
       "published": "Fri, 22 May 2026 16:13:30",
       "source": "CNBC",
       "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
     },
     {
-      "published": "Tue, 19 May 2026 11:37:27",
-      "source": "CNBC",
-      "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
-      "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
-    },
-    {
-      "published": "Fri, 22 May 2026 23:15:00",
+      "published": "Mon, 25 May 2026 15:49:00",
       "source": "MarketWatch",
-      "title": "This 2008 \u2018train wreck\u2019 oil scenario could unfold if Hormuz isn\u2019t opened by end of August",
-      "url": "https://www.marketwatch.com/story/this-2008-train-wreck-oil-scenario-could-unfold-if-hormuz-isnt-opened-by-end-of-august-75b74bb1?mod=mw_rss_topstories"
+      "title": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
+      "url": "https://www.marketwatch.com/story/is-the-stock-market-closed-on-memorial-day-does-the-post-office-deliver-mail-bba7ef11?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 21:45:00",
+      "published": "Mon, 25 May 2026 14:16:00",
+      "source": "MarketWatch",
+      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
+      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 25 May 2026 14:00:00",
+      "source": "MarketWatch",
+      "title": "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
+      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 25 May 2026 13:45:00",
       "source": "MarketWatch",
       "title": "I\u2019m selling my $1 million home. Will my agent really charge less than a 6% commission?",
       "url": "https://www.marketwatch.com/story/im-selling-my-1-million-maui-home-will-my-agent-charge-me-less-than-a-6-commission-ed06c0f1?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 22 May 2026 20:56:00",
+      "published": "Mon, 25 May 2026 13:30:00",
       "source": "MarketWatch",
-      "title": "Worried about private credit? Stay away from this even riskier investment right now.",
-      "url": "https://www.marketwatch.com/story/worried-about-private-credit-stay-away-from-this-even-riskier-investment-right-now-bfb79b43?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 20:38:00",
-      "source": "MarketWatch",
-      "title": "IMAX has bucked the trend as the movie-theater business fades \u2014 here\u2019s why it\u2019s so attractive to would-be buyers",
-      "url": "https://www.marketwatch.com/story/imax-has-bucked-the-trend-as-the-movie-theater-business-fades-heres-why-its-so-attractive-to-would-be-buyers-c703b489?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 22 May 2026 20:33:00",
-      "source": "MarketWatch",
-      "title": "The oil shock meets the Fed \u2018curse\u2019: What Kevin Warsh means for your portfolio",
-      "url": "https://www.marketwatch.com/story/the-new-fed-chair-curse-and-100-plus-oil-are-already-testing-kevin-warsh-and-the-stock-market-718b919d?mod=mw_rss_topstories"
+      "title": "Mastercard\u2019s stock is up 11,000% since its IPO 20 years ago. What comes next?",
+      "url": "https://www.marketwatch.com/story/mastercards-stock-is-up-11-000-since-its-ipo-20-years-ago-what-comes-next-deb949eb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
