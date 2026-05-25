@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.69,
-      "change_pct": 0.26,
+      "change": 2.12,
+      "change_pct": 0.33,
       "unit": "$/lb",
-      "value": 646.57
+      "value": 647.0
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -135,7 +135,7 @@
       "rate": 17.2679
     }
   },
-  "generated_at": "2026-05-25T19:19:46+00:00",
+  "generated_at": "2026-05-25T20:47:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
     },
     {
+      "published": "Mon, 25 May 2026 19:50:00",
+      "source": "MarketWatch",
+      "title": "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
+      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 25 May 2026 19:40:00",
+      "source": "MarketWatch",
+      "title": "Oil prices tumble as deal to end Iran war appears close, though Trump says there\u2019s no rush",
+      "url": "https://www.marketwatch.com/story/trump-says-theres-no-rush-as-deal-to-end-iran-war-reopen-strait-of-hormuz-appears-close-c60056c0?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 25 May 2026 18:30:00",
       "source": "MarketWatch",
       "title": "I\u2019m 67. Our family trust earns $300,000 annually for my kids. How do I ensure they won\u2019t get killed on taxes?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
       "url": "https://www.marketwatch.com/story/is-the-stock-market-closed-on-memorial-day-does-the-post-office-deliver-mail-bba7ef11?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 14:16:00",
-      "source": "MarketWatch",
-      "title": "I inherited a house. My CPA says I should sell within a year to avoid capital gains. Is he right?",
-      "url": "https://www.marketwatch.com/story/i-inherited-a-house-my-cpa-says-i-should-sell-within-a-year-to-avoid-capital-gains-is-he-right-d0909486?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 14:00:00",
-      "source": "MarketWatch",
-      "title": "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
-      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
     }
   ],
   "rates": {
