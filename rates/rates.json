@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.0,
-      "change_pct": 0.0,
+      "change": -7.0,
+      "change_pct": -1.08,
       "unit": "$/lb",
-      "value": 646.75
+      "value": 639.75
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 8.06,
-      "change_pct": 0.18,
+      "change": -68.69,
+      "change_pct": -1.49,
       "unit": "$/oz",
-      "value": 4613.4
+      "value": 4536.65
     },
     "natural_gas": {
-      "change": -0.01,
-      "change_pct": -0.2,
+      "change": 0.01,
+      "change_pct": 0.23,
       "unit": "$/MMBtu",
-      "value": 3.037
+      "value": 3.05
     },
     "silver": {
-      "change": 25.8,
-      "change_pct": 0.33,
+      "change": -201.5,
+      "change_pct": -2.57,
       "unit": "$/oz",
-      "value": 7862.3
+      "value": 7635.0
     },
     "wti_oil": {
-      "change": -0.14,
-      "change_pct": -0.15,
+      "change": 3.23,
+      "change_pct": 3.55,
       "unit": "$/bbl",
-      "value": 90.88
+      "value": 94.25
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3813
+      "rate": 1.3812
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7843
+      "rate": 6.7852
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85889
+      "rate": 0.85955
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74083
+      "rate": 0.74244
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.24
+      "rate": 95.69
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.93
+      "rate": 159.21
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1513.75
+      "rate": 1505.3
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2679
+      "rate": 17.2881
     }
   },
-  "generated_at": "2026-05-25T23:17:16+00:00",
+  "generated_at": "2026-05-26T16:49:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.36
       },
       {
-        "date": "2026-05-15",
-        "rate": 6.65
-      },
-      {
         "date": "2026-05-18",
         "rate": 6.68
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-22",
         "rate": 6.65
+      },
+      {
+        "date": "2026-05-26",
+        "rate": 6.61
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 145.0,
-      "change_pct": 0.29,
-      "value": 50579.7
+      "change": -276.1,
+      "change_pct": -0.54,
+      "value": 50426.4
     },
     "nasdaq": {
-      "change": -37.59,
-      "change_pct": -0.14,
-      "value": 26343.97
+      "change": -3.84,
+      "change_pct": -0.01,
+      "value": 26588.477
     },
     "sp500": {
-      "change": 4.7,
-      "change_pct": 0.06,
-      "value": 7473.5
+      "change": -11.5,
+      "change_pct": -0.15,
+      "value": 7507.1
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 26 May 2026 13:53:22",
+      "source": "CNBC",
+      "title": "ECB 'will do what is necessary' to tame inflation, Bank of France governor tells CNBC",
+      "url": "https://www.cnbc.com/2026/05/26/ecb-villeroy-inflation-iran-war.html"
+    },
+    {
       "published": "Sat, 23 May 2026 12:32:36",
       "source": "CNBC",
       "title": "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Tue, 19 May 2026 20:22:54",
-      "source": "CNBC",
-      "title": "The AI economy is rewriting the American Dream \u2014 and blue-collar workers are poised to win",
-      "url": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html"
-    },
-    {
-      "published": "Mon, 25 May 2026 22:23:00",
+      "published": "Tue, 26 May 2026 16:22:00",
       "source": "MarketWatch",
-      "title": "Oil prices tumble as deal to end Iran war appears close, though Trump says there\u2019s no rush",
-      "url": "https://www.marketwatch.com/story/trump-says-theres-no-rush-as-deal-to-end-iran-war-reopen-strait-of-hormuz-appears-close-c60056c0?mod=mw_rss_topstories"
+      "title": "This bear market signal Wall Street ignores is putting your money at risk right now",
+      "url": "https://www.marketwatch.com/story/this-bear-market-signal-wall-street-ignores-is-putting-your-money-at-risk-right-now-46f1fcf3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 25 May 2026 19:50:00",
+      "published": "Tue, 26 May 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "These underdogs are a big reason why S&P 500 profit growth is the fastest in nearly 5 years",
-      "url": "https://www.marketwatch.com/story/these-underdogs-are-a-big-reason-s-p-500-profit-growth-is-the-fastest-in-nearly-5-years-4a43f142?mod=mw_rss_topstories"
+      "title": "More than 9 million people are missing out on $58 billion in food and medical benefits. Are you one of them?",
+      "url": "https://www.marketwatch.com/story/more-than-9-million-people-are-missing-out-on-58-billion-in-food-and-medical-benefits-are-you-one-of-them-d2e79770?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 25 May 2026 18:30:00",
+      "published": "Tue, 26 May 2026 16:15:00",
+      "source": "MarketWatch",
+      "title": "Micron\u2019s stock soars as UBS slaps on an out-of-sight price target",
+      "url": "https://www.marketwatch.com/story/microns-stock-soars-as-ubs-slaps-on-an-out-of-sight-price-target-77e75b8e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 26 May 2026 16:00:00",
       "source": "MarketWatch",
       "title": "I\u2019m 67. Our family trust earns $300,000 annually for my kids. How do I ensure they won\u2019t get killed on taxes?",
       "url": "https://www.marketwatch.com/story/im-67-our-family-trust-earns-300-000-annually-for-my-kids-how-do-i-ensure-they-wont-get-killed-on-taxes-ee0c35d6?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 25 May 2026 17:45:00",
+      "published": "Tue, 26 May 2026 15:47:00",
       "source": "MarketWatch",
-      "title": "\u2018There is zero transparency\u2019: My friend\u2019s sister controls their mother\u2019s estate. How can we stop her from stealing?",
-      "url": "https://www.marketwatch.com/story/there-is-zero-transparency-my-friends-sister-controls-their-mothers-estate-how-can-we-stop-her-from-stealing-a1a34ac8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 25 May 2026 15:49:00",
-      "source": "MarketWatch",
-      "title": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
-      "url": "https://www.marketwatch.com/story/is-the-stock-market-closed-on-memorial-day-does-the-post-office-deliver-mail-bba7ef11?mod=mw_rss_topstories"
+      "title": "Space stocks are rocketing as SpaceX keeps making pre-IPO headlines with first Starship launch",
+      "url": "https://www.marketwatch.com/story/space-stocks-are-rocketing-as-spacex-keeps-making-pre-ipo-headlines-with-first-starship-launch-17c76a46?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 22 2026",
-      "change": 0.01,
-      "rate": 6.23
+      "asof_label": "May 26 2026",
+      "change": -0.09,
+      "rate": 6.14
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 22 2026",
-      "change": 0.0,
+      "asof_label": "May 26 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
