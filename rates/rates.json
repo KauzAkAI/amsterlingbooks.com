@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -4.42,
-      "change_pct": -0.68,
+      "change": 0.06,
+      "change_pct": 0.01,
       "unit": "$/lb",
-      "value": 642.33
+      "value": 642.28
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -63.74,
-      "change_pct": -1.38,
+      "change": -8.51,
+      "change_pct": -0.19,
       "unit": "$/oz",
-      "value": 4541.6
+      "value": 4533.59
     },
     "natural_gas": {
-      "change": -0.04,
-      "change_pct": -1.15,
+      "change": 0.0,
+      "change_pct": 0.0,
       "unit": "$/MMBtu",
-      "value": 3.008
+      "value": 3.011
     },
     "silver": {
-      "change": -109.0,
-      "change_pct": -1.39,
+      "change": -5.8,
+      "change_pct": -0.07,
       "unit": "$/oz",
-      "value": 7727.5
+      "value": 7731.5
     },
     "wti_oil": {
-      "change": 2.52,
-      "change_pct": 2.77,
+      "change": 0.07,
+      "change_pct": 0.07,
       "unit": "$/bbl",
-      "value": 93.54
+      "value": 93.57
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-05-26T21:02:16+00:00",
+  "generated_at": "2026-05-26T22:38:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": -240.8,
-      "change_pct": -0.47,
+      "change": -224.5,
+      "change_pct": -0.44,
       "value": 50461.7
     },
     "nasdaq": {
-      "change": 63.86,
-      "change_pct": 0.24,
+      "change": 65.68,
+      "change_pct": 0.25,
       "value": 26656.18
     },
     "sp500": {
-      "change": 0.5,
-      "change_pct": 0.01,
+      "change": 7.3,
+      "change_pct": 0.1,
       "value": 7519.1
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Tue, 26 May 2026 21:01:00",
+      "published": "Tue, 26 May 2026 22:21:00",
       "source": "MarketWatch",
-      "title": "Why double-digit earnings growth won\u2019t stop the next bear market",
-      "url": "https://www.marketwatch.com/story/why-double-digit-earnings-growth-wont-stop-the-next-bear-market-791ae3ef?mod=mw_rss_topstories"
+      "title": "\u2018The timing couldn\u2019t have been better\u2019 for investors in MSGS as the Knicks make the NBA Finals",
+      "url": "https://www.marketwatch.com/story/the-timing-couldnt-have-been-better-for-investors-in-msgs-as-the-knicks-make-the-nba-finals-96b0543a?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 20:46:00",
+      "published": "Tue, 26 May 2026 21:55:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock reaches a major milestone as UBS slaps on an out-of-sight price target",
-      "url": "https://www.marketwatch.com/story/microns-stock-soars-as-ubs-slaps-on-an-out-of-sight-price-target-77e75b8e?mod=mw_rss_topstories"
+      "title": "How a stock market \u2018melt-up\u2019 could carry the S&P 500 to 8,000 or beyond",
+      "url": "https://www.marketwatch.com/story/how-a-stock-market-melt-up-could-carry-the-s-p-500-to-8-000-or-beyond-b9b85619?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 20:30:00",
+      "published": "Tue, 26 May 2026 21:42:00",
       "source": "MarketWatch",
-      "title": "Happy birthday, Dow! Being 130 years old doesn\u2019t make it too antiquated to follow.",
-      "url": "https://www.marketwatch.com/story/happy-birthday-dow-being-130-years-old-doesnt-make-it-too-antiquated-to-follow-52f921b0?mod=mw_rss_topstories"
+      "title": "SpaceX just won a $2 billion contract to make satellites for the Space Force",
+      "url": "https://www.marketwatch.com/story/spacex-just-won-a-2-billion-contract-to-make-satellites-for-the-space-force-f4733f10?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 20:20:00",
+      "published": "Tue, 26 May 2026 21:35:00",
       "source": "MarketWatch",
-      "title": "This new quantum stock could debut with a valuation of nearly $13 billion",
-      "url": "https://www.marketwatch.com/story/this-new-quantum-stock-could-debut-with-a-valuation-of-nearly-13-billion-9593b4e4?mod=mw_rss_topstories"
+      "title": "Gen Z demands bigger bargains \u2014 driving gains for discount retailers like Walmart and Ross",
+      "url": "https://www.marketwatch.com/story/gen-z-demands-bigger-bargains-driving-gains-for-discounters-like-walmart-and-ross-377b20fd?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 19:52:00",
+      "published": "Tue, 26 May 2026 21:04:00",
       "source": "MarketWatch",
-      "title": "My student loans are paused until 2028. Should I pay them now anyway?",
-      "url": "https://www.marketwatch.com/story/my-student-loans-are-paused-until-2028-should-i-pay-them-now-anyway-136fe97e?mod=mw_rss_topstories"
+      "title": "The bond market has been rocked by a violent selloff. Here\u2019s how to play it.",
+      "url": "https://www.marketwatch.com/story/where-to-invest-in-bonds-right-now-after-the-markets-violent-selloff-ccad2a26?mod=mw_rss_topstories"
     }
   ],
   "rates": {
