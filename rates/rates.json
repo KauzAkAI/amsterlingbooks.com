@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.06,
-      "change_pct": 0.01,
+      "change": 1.51,
+      "change_pct": 0.24,
       "unit": "$/lb",
-      "value": 642.28
+      "value": 643.73
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -8.51,
-      "change_pct": -0.19,
+      "change": 13.2,
+      "change_pct": 0.29,
       "unit": "$/oz",
-      "value": 4533.59
+      "value": 4555.3
     },
     "natural_gas": {
       "change": 0.0,
-      "change_pct": 0.0,
+      "change_pct": 0.07,
       "unit": "$/MMBtu",
-      "value": 3.011
+      "value": 3.013
     },
     "silver": {
-      "change": -5.8,
-      "change_pct": -0.07,
+      "change": 39.5,
+      "change_pct": 0.51,
       "unit": "$/oz",
-      "value": 7731.5
+      "value": 7776.8
     },
     "wti_oil": {
-      "change": 0.07,
-      "change_pct": 0.07,
+      "change": -0.37,
+      "change_pct": -0.4,
       "unit": "$/bbl",
-      "value": 93.57
+      "value": 93.13
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-05-26T22:38:12+00:00",
+  "generated_at": "2026-05-26T23:49:28+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
