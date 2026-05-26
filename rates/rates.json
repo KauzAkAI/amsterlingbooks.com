@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -5.58,
-      "change_pct": -0.86,
+      "change": -4.42,
+      "change_pct": -0.68,
       "unit": "$/lb",
-      "value": 641.17
+      "value": 642.33
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -73.22,
-      "change_pct": -1.59,
+      "change": -63.74,
+      "change_pct": -1.38,
       "unit": "$/oz",
-      "value": 4532.12
+      "value": 4541.6
     },
     "natural_gas": {
-      "change": -0.03,
-      "change_pct": -0.99,
+      "change": -0.04,
+      "change_pct": -1.15,
       "unit": "$/MMBtu",
-      "value": 3.013
+      "value": 3.008
     },
     "silver": {
-      "change": -136.2,
-      "change_pct": -1.74,
+      "change": -109.0,
+      "change_pct": -1.39,
       "unit": "$/oz",
-      "value": 7700.3
+      "value": 7727.5
     },
     "wti_oil": {
-      "change": 2.93,
-      "change_pct": 3.22,
+      "change": 2.52,
+      "change_pct": 2.77,
       "unit": "$/bbl",
-      "value": 93.95
+      "value": 93.54
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-05-26T19:13:44+00:00",
+  "generated_at": "2026-05-26T21:02:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -338.6,
-      "change_pct": -0.67,
-      "value": 50363.9
+      "change": -240.8,
+      "change_pct": -0.47,
+      "value": 50461.7
     },
     "nasdaq": {
-      "change": 9.86,
-      "change_pct": 0.04,
-      "value": 26602.176
+      "change": 63.86,
+      "change_pct": 0.24,
+      "value": 26656.18
     },
     "sp500": {
-      "change": -8.1,
-      "change_pct": -0.11,
-      "value": 7510.5
+      "change": 0.5,
+      "change_pct": 0.01,
+      "value": 7519.1
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Tue, 26 May 2026 18:58:00",
+      "published": "Tue, 26 May 2026 21:01:00",
       "source": "MarketWatch",
-      "title": "\u2018I feel like I\u2019m living a lie\u2019: My husband and I pretend we\u2019re strapped for cash in front of friends. Is that bad?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-im-living-a-lie-my-husband-and-i-pretend-were-strapped-for-cash-in-front-of-friends-is-that-bad-1cf6104a?mod=mw_rss_topstories"
+      "title": "Why double-digit earnings growth won\u2019t stop the next bear market",
+      "url": "https://www.marketwatch.com/story/why-double-digit-earnings-growth-wont-stop-the-next-bear-market-791ae3ef?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 18:48:00",
+      "published": "Tue, 26 May 2026 20:46:00",
       "source": "MarketWatch",
-      "title": "Americans feel worse than ever, a consumer survey shows. The White House says that\u2019s bunk. Who\u2019s right?",
-      "url": "https://www.marketwatch.com/story/americans-feel-worse-than-ever-a-consumer-survey-shows-the-white-house-says-thats-bunk-whos-right-4f4f1406?mod=mw_rss_topstories"
+      "title": "Micron\u2019s stock reaches a major milestone as UBS slaps on an out-of-sight price target",
+      "url": "https://www.marketwatch.com/story/microns-stock-soars-as-ubs-slaps-on-an-out-of-sight-price-target-77e75b8e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 17:53:00",
+      "published": "Tue, 26 May 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "Putting your baby to work as a model could net them $5.7 million by age 60. Here\u2019s the legit way to do it.",
-      "url": "https://www.marketwatch.com/story/putting-your-baby-to-work-as-a-model-could-net-them-5-7-million-by-age-60-heres-the-legit-way-to-do-it-9f34562f?mod=mw_rss_topstories"
+      "title": "Happy birthday, Dow! Being 130 years old doesn\u2019t make it too antiquated to follow.",
+      "url": "https://www.marketwatch.com/story/happy-birthday-dow-being-130-years-old-doesnt-make-it-too-antiquated-to-follow-52f921b0?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 17:35:00",
+      "published": "Tue, 26 May 2026 20:20:00",
       "source": "MarketWatch",
-      "title": "My friend, 62, earns $20,000 a year. Should she take Social Security now \u2014 and claim survivor\u2019s benefit at 67?",
-      "url": "https://www.marketwatch.com/story/my-friend-62-earns-20-000-a-year-should-she-take-social-security-now-or-claim-survivors-benefit-at-67-c661bdca?mod=mw_rss_topstories"
+      "title": "This new quantum stock could debut with a valuation of nearly $13 billion",
+      "url": "https://www.marketwatch.com/story/this-new-quantum-stock-could-debut-with-a-valuation-of-nearly-13-billion-9593b4e4?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 17:03:00",
+      "published": "Tue, 26 May 2026 19:52:00",
       "source": "MarketWatch",
-      "title": "Starlink signs a new airline customer as it races to be the top in-flight internet provider",
-      "url": "https://www.marketwatch.com/story/starlink-signs-a-new-airline-customer-as-it-races-to-be-the-top-in-flight-internet-provider-4e08e2cf?mod=mw_rss_topstories"
+      "title": "My student loans are paused until 2028. Should I pay them now anyway?",
+      "url": "https://www.marketwatch.com/story/my-student-loans-are-paused-until-2028-should-i-pay-them-now-anyway-136fe97e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.79
+      "yield": 3.8
     },
     {
       "tenor": "1Y",
-      "yield": 3.86
+      "yield": 3.82
     },
     {
       "tenor": "2Y",
-      "yield": 4.13
+      "yield": 4.01
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.19
     },
     {
       "tenor": "7Y",
-      "yield": 4.41
+      "yield": 4.33
     },
     {
       "tenor": "10Y",
-      "yield": 4.56
+      "yield": 4.5
     },
     {
       "tenor": "20Y",
-      "yield": 5.06
+      "yield": 5.03
     },
     {
       "tenor": "30Y",
-      "yield": 5.07
+      "yield": 5.03
     }
   ],
   "warnings": []
