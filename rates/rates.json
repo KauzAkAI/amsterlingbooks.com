@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -7.0,
-      "change_pct": -1.08,
+      "change": -5.58,
+      "change_pct": -0.86,
       "unit": "$/lb",
-      "value": 639.75
+      "value": 641.17
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -68.69,
-      "change_pct": -1.49,
+      "change": -73.22,
+      "change_pct": -1.59,
       "unit": "$/oz",
-      "value": 4536.65
+      "value": 4532.12
     },
     "natural_gas": {
-      "change": 0.01,
-      "change_pct": 0.23,
+      "change": -0.03,
+      "change_pct": -0.99,
       "unit": "$/MMBtu",
-      "value": 3.05
+      "value": 3.013
     },
     "silver": {
-      "change": -201.5,
-      "change_pct": -2.57,
+      "change": -136.2,
+      "change_pct": -1.74,
       "unit": "$/oz",
-      "value": 7635.0
+      "value": 7700.3
     },
     "wti_oil": {
-      "change": 3.23,
-      "change_pct": 3.55,
+      "change": 2.93,
+      "change_pct": 3.22,
       "unit": "$/bbl",
-      "value": 94.25
+      "value": 93.95
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-05-26T16:49:14+00:00",
+  "generated_at": "2026-05-26T19:13:44+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -276.1,
-      "change_pct": -0.54,
-      "value": 50426.4
+      "change": -338.6,
+      "change_pct": -0.67,
+      "value": 50363.9
     },
     "nasdaq": {
-      "change": -3.84,
-      "change_pct": -0.01,
-      "value": 26588.477
+      "change": 9.86,
+      "change_pct": 0.04,
+      "value": 26602.176
     },
     "sp500": {
-      "change": -11.5,
-      "change_pct": -0.15,
-      "value": 7507.1
+      "change": -8.1,
+      "change_pct": -0.11,
+      "value": 7510.5
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Tue, 26 May 2026 16:22:00",
+      "published": "Tue, 26 May 2026 18:58:00",
       "source": "MarketWatch",
-      "title": "This bear market signal Wall Street ignores is putting your money at risk right now",
-      "url": "https://www.marketwatch.com/story/this-bear-market-signal-wall-street-ignores-is-putting-your-money-at-risk-right-now-46f1fcf3?mod=mw_rss_topstories"
+      "title": "\u2018I feel like I\u2019m living a lie\u2019: My husband and I pretend we\u2019re strapped for cash in front of friends. Is that bad?",
+      "url": "https://www.marketwatch.com/story/i-feel-like-im-living-a-lie-my-husband-and-i-pretend-were-strapped-for-cash-in-front-of-friends-is-that-bad-1cf6104a?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 16:15:00",
+      "published": "Tue, 26 May 2026 18:48:00",
       "source": "MarketWatch",
-      "title": "More than 9 million people are missing out on $58 billion in food and medical benefits. Are you one of them?",
-      "url": "https://www.marketwatch.com/story/more-than-9-million-people-are-missing-out-on-58-billion-in-food-and-medical-benefits-are-you-one-of-them-d2e79770?mod=mw_rss_topstories"
+      "title": "Americans feel worse than ever, a consumer survey shows. The White House says that\u2019s bunk. Who\u2019s right?",
+      "url": "https://www.marketwatch.com/story/americans-feel-worse-than-ever-a-consumer-survey-shows-the-white-house-says-thats-bunk-whos-right-4f4f1406?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 16:15:00",
+      "published": "Tue, 26 May 2026 17:53:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock soars as UBS slaps on an out-of-sight price target",
-      "url": "https://www.marketwatch.com/story/microns-stock-soars-as-ubs-slaps-on-an-out-of-sight-price-target-77e75b8e?mod=mw_rss_topstories"
+      "title": "Putting your baby to work as a model could net them $5.7 million by age 60. Here\u2019s the legit way to do it.",
+      "url": "https://www.marketwatch.com/story/putting-your-baby-to-work-as-a-model-could-net-them-5-7-million-by-age-60-heres-the-legit-way-to-do-it-9f34562f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 16:00:00",
+      "published": "Tue, 26 May 2026 17:35:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 67. Our family trust earns $300,000 annually for my kids. How do I ensure they won\u2019t get killed on taxes?",
-      "url": "https://www.marketwatch.com/story/im-67-our-family-trust-earns-300-000-annually-for-my-kids-how-do-i-ensure-they-wont-get-killed-on-taxes-ee0c35d6?mod=mw_rss_topstories"
+      "title": "My friend, 62, earns $20,000 a year. Should she take Social Security now \u2014 and claim survivor\u2019s benefit at 67?",
+      "url": "https://www.marketwatch.com/story/my-friend-62-earns-20-000-a-year-should-she-take-social-security-now-or-claim-survivors-benefit-at-67-c661bdca?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 15:47:00",
+      "published": "Tue, 26 May 2026 17:03:00",
       "source": "MarketWatch",
-      "title": "Space stocks are rocketing as SpaceX keeps making pre-IPO headlines with first Starship launch",
-      "url": "https://www.marketwatch.com/story/space-stocks-are-rocketing-as-spacex-keeps-making-pre-ipo-headlines-with-first-starship-launch-17c76a46?mod=mw_rss_topstories"
+      "title": "Starlink signs a new airline customer as it races to be the top in-flight internet provider",
+      "url": "https://www.marketwatch.com/story/starlink-signs-a-new-airline-customer-as-it-races-to-be-the-top-in-flight-internet-provider-4e08e2cf?mod=mw_rss_topstories"
     }
   ],
   "rates": {
