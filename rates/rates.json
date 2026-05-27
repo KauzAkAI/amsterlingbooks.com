@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.51,
-      "change_pct": 0.24,
+      "change": -7.69,
+      "change_pct": -1.2,
       "unit": "$/lb",
-      "value": 643.73
+      "value": 634.53
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 13.2,
-      "change_pct": 0.29,
+      "change": -57.34,
+      "change_pct": -1.26,
       "unit": "$/oz",
-      "value": 4555.3
+      "value": 4484.76
     },
     "natural_gas": {
-      "change": 0.0,
-      "change_pct": 0.07,
+      "change": 0.12,
+      "change_pct": 4.02,
       "unit": "$/MMBtu",
-      "value": 3.013
+      "value": 3.132
     },
     "silver": {
-      "change": 39.5,
-      "change_pct": 0.51,
+      "change": -231.3,
+      "change_pct": -2.99,
       "unit": "$/oz",
-      "value": 7776.8
+      "value": 7506.0
     },
     "wti_oil": {
-      "change": -0.37,
-      "change_pct": -0.4,
+      "change": -3.95,
+      "change_pct": -4.22,
       "unit": "$/bbl",
-      "value": 93.13
+      "value": 89.55
     }
   },
   "forex": {
@@ -90,25 +90,25 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3812
+      "rate": 1.3834
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7852
+      "rate": 6.7821
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85955
+      "rate": 0.85933
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74244
+      "rate": 0.74433
     },
     "INR": {
       "change_pct": 0,
@@ -120,22 +120,22 @@
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.21
+      "rate": 159.42
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1505.3
+      "rate": 1499.7
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2881
+      "rate": 17.3189
     }
   },
-  "generated_at": "2026-05-26T23:49:28+00:00",
+  "generated_at": "2026-05-27T16:42:11+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -224.5,
-      "change_pct": -0.44,
-      "value": 50461.7
+      "change": 108.5,
+      "change_pct": 0.21,
+      "value": 50686.9
     },
     "nasdaq": {
-      "change": 65.68,
-      "change_pct": 0.25,
-      "value": 26656.18
+      "change": -23.82,
+      "change_pct": -0.09,
+      "value": 26669.504
     },
     "sp500": {
-      "change": 7.3,
-      "change_pct": 0.1,
-      "value": 7519.1
+      "change": -6.0,
+      "change_pct": -0.08,
+      "value": 7520.3
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Tue, 26 May 2026 22:21:00",
+      "published": "Wed, 27 May 2026 16:23:00",
       "source": "MarketWatch",
-      "title": "\u2018The timing couldn\u2019t have been better\u2019 for investors in MSGS as the Knicks make the NBA Finals",
-      "url": "https://www.marketwatch.com/story/the-timing-couldnt-have-been-better-for-investors-in-msgs-as-the-knicks-make-the-nba-finals-96b0543a?mod=mw_rss_topstories"
+      "title": "Momentus\u2019s stock nearly triples in 2 days as the space company raises more cash from investors",
+      "url": "https://www.marketwatch.com/story/momentuss-stock-nearly-triples-in-2-days-as-the-space-company-raises-more-cash-from-investors-b2c9a088?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 21:55:00",
+      "published": "Wed, 27 May 2026 15:54:00",
       "source": "MarketWatch",
-      "title": "How a stock market \u2018melt-up\u2019 could carry the S&P 500 to 8,000 or beyond",
-      "url": "https://www.marketwatch.com/story/how-a-stock-market-melt-up-could-carry-the-s-p-500-to-8-000-or-beyond-b9b85619?mod=mw_rss_topstories"
+      "title": "Cancer treatment already costs hundreds of thousands of dollars \u2014 and it\u2019s about to get even worse",
+      "url": "https://www.marketwatch.com/story/cancer-treatment-already-costs-hundreds-of-thousands-of-dollars-and-its-about-to-get-even-worse-5f0ac8a3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 21:42:00",
+      "published": "Wed, 27 May 2026 15:37:00",
       "source": "MarketWatch",
-      "title": "SpaceX just won a $2 billion contract to make satellites for the Space Force",
-      "url": "https://www.marketwatch.com/story/spacex-just-won-a-2-billion-contract-to-make-satellites-for-the-space-force-f4733f10?mod=mw_rss_topstories"
+      "title": "This bear market signal Wall Street ignores is putting your money at risk right now",
+      "url": "https://www.marketwatch.com/story/this-bear-market-signal-wall-street-ignores-is-putting-your-money-at-risk-right-now-46f1fcf3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 21:35:00",
+      "published": "Wed, 27 May 2026 15:34:00",
       "source": "MarketWatch",
-      "title": "Gen Z demands bigger bargains \u2014 driving gains for discount retailers like Walmart and Ross",
-      "url": "https://www.marketwatch.com/story/gen-z-demands-bigger-bargains-driving-gains-for-discounters-like-walmart-and-ross-377b20fd?mod=mw_rss_topstories"
+      "title": "Micron investors are partying like it\u2019s 1987. Analysts say the stock still looks pretty cheap.",
+      "url": "https://www.marketwatch.com/story/micron-investors-are-partying-like-its-1987-and-the-stock-still-looks-pretty-cheap-7060ee53?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 26 May 2026 21:04:00",
+      "published": "Wed, 27 May 2026 15:32:00",
       "source": "MarketWatch",
-      "title": "The bond market has been rocked by a violent selloff. Here\u2019s how to play it.",
-      "url": "https://www.marketwatch.com/story/where-to-invest-in-bonds-right-now-after-the-markets-violent-selloff-ccad2a26?mod=mw_rss_topstories"
+      "title": "Why America is losing the AI productivity war to 3.5 million Chinese STEM graduates",
+      "url": "https://www.marketwatch.com/story/why-america-is-losing-the-ai-productivity-war-to-3-5-million-chinese-stem-graduates-4ffeb298?mod=mw_rss_topstories"
     }
   ],
   "rates": {
