@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -7.69,
-      "change_pct": -1.2,
+      "change": -9.22,
+      "change_pct": -1.44,
       "unit": "$/lb",
-      "value": 634.53
+      "value": 633.0
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -67,22 +67,22 @@
       "value": 4484.76
     },
     "natural_gas": {
-      "change": 0.12,
-      "change_pct": 4.02,
+      "change": 0.09,
+      "change_pct": 2.86,
       "unit": "$/MMBtu",
-      "value": 3.132
+      "value": 3.097
     },
     "silver": {
-      "change": -231.3,
-      "change_pct": -2.99,
+      "change": -233.8,
+      "change_pct": -3.02,
       "unit": "$/oz",
-      "value": 7506.0
+      "value": 7503.5
     },
     "wti_oil": {
-      "change": -3.95,
-      "change_pct": -4.22,
+      "change": -4.55,
+      "change_pct": -4.87,
       "unit": "$/bbl",
-      "value": 89.55
+      "value": 88.95
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3189
     }
   },
-  "generated_at": "2026-05-27T16:42:11+00:00",
+  "generated_at": "2026-05-27T19:08:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.36
       },
       {
-        "date": "2026-05-18",
-        "rate": 6.68
-      },
-      {
         "date": "2026-05-19",
         "rate": 6.75
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-26",
         "rate": 6.61
+      },
+      {
+        "date": "2026-05-27",
+        "rate": 6.61
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 108.5,
-      "change_pct": 0.21,
-      "value": 50686.9
+      "change": 122.0,
+      "change_pct": 0.24,
+      "value": 50700.4
     },
     "nasdaq": {
-      "change": -23.82,
-      "change_pct": -0.09,
-      "value": 26669.504
+      "change": -13.73,
+      "change_pct": -0.05,
+      "value": 26679.594
     },
     "sp500": {
-      "change": -6.0,
-      "change_pct": -0.08,
-      "value": 7520.3
+      "change": -0.2,
+      "change_pct": -0.0,
+      "value": 7526.1
     },
     "vix": {
       "change": 1.2,
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Wed, 27 May 2026 16:23:00",
+      "published": "Wed, 27 May 2026 19:05:00",
       "source": "MarketWatch",
-      "title": "Momentus\u2019s stock nearly triples in 2 days as the space company raises more cash from investors",
-      "url": "https://www.marketwatch.com/story/momentuss-stock-nearly-triples-in-2-days-as-the-space-company-raises-more-cash-from-investors-b2c9a088?mod=mw_rss_topstories"
+      "title": "America is losing the AI productivity war to 3.5 million Chinese STEM graduates",
+      "url": "https://www.marketwatch.com/story/why-america-is-losing-the-ai-productivity-war-to-3-5-million-chinese-stem-graduates-4ffeb298?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 15:54:00",
+      "published": "Wed, 27 May 2026 18:56:00",
       "source": "MarketWatch",
-      "title": "Cancer treatment already costs hundreds of thousands of dollars \u2014 and it\u2019s about to get even worse",
-      "url": "https://www.marketwatch.com/story/cancer-treatment-already-costs-hundreds-of-thousands-of-dollars-and-its-about-to-get-even-worse-5f0ac8a3?mod=mw_rss_topstories"
+      "title": "Why double-digit earnings growth won\u2019t stop the next bear market",
+      "url": "https://www.marketwatch.com/story/why-double-digit-earnings-growth-wont-stop-the-next-bear-market-791ae3ef?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 15:37:00",
-      "source": "MarketWatch",
-      "title": "This bear market signal Wall Street ignores is putting your money at risk right now",
-      "url": "https://www.marketwatch.com/story/this-bear-market-signal-wall-street-ignores-is-putting-your-money-at-risk-right-now-46f1fcf3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 15:34:00",
+      "published": "Wed, 27 May 2026 18:32:00",
       "source": "MarketWatch",
       "title": "Micron investors are partying like it\u2019s 1987. Analysts say the stock still looks pretty cheap.",
       "url": "https://www.marketwatch.com/story/micron-investors-are-partying-like-its-1987-and-the-stock-still-looks-pretty-cheap-7060ee53?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 15:32:00",
+      "published": "Wed, 27 May 2026 18:28:00",
       "source": "MarketWatch",
-      "title": "Why America is losing the AI productivity war to 3.5 million Chinese STEM graduates",
-      "url": "https://www.marketwatch.com/story/why-america-is-losing-the-ai-productivity-war-to-3-5-million-chinese-stem-graduates-4ffeb298?mod=mw_rss_topstories"
+      "title": "Big Tech gets the AI profits. You get the higher utility bills.",
+      "url": "https://www.marketwatch.com/story/in-america-big-techs-ai-data-centers-come-first-and-your-community-will-be-last-to-know-06a3fce4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 27 May 2026 17:50:00",
+      "source": "MarketWatch",
+      "title": "China\u2019s next export shock walks on two legs \u2014 and costs less than a used car",
+      "url": "https://www.marketwatch.com/story/chinas-next-export-shock-walks-on-two-legs-and-costs-less-than-a-used-car-f0becf3f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 26 2026",
-      "change": -0.09,
-      "rate": 6.14
+      "asof_label": "May 27 2026",
+      "change": -0.02,
+      "rate": 6.12
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 26 2026",
-      "change": -0.04,
+      "asof_label": "May 27 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
