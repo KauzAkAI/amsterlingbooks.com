@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -8.39,
-      "change_pct": -1.31,
+      "change": 0.21,
+      "change_pct": 0.03,
       "unit": "$/lb",
-      "value": 633.83
+      "value": 633.68
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -53.6,
-      "change_pct": -1.18,
+      "change": -3.71,
+      "change_pct": -0.08,
       "unit": "$/oz",
-      "value": 4488.5
+      "value": 4488.26
     },
     "natural_gas": {
-      "change": 0.08,
-      "change_pct": 2.56,
+      "change": -0.0,
+      "change_pct": -0.16,
       "unit": "$/MMBtu",
-      "value": 3.088
+      "value": 3.08
     },
     "silver": {
-      "change": -248.8,
-      "change_pct": -3.22,
+      "change": -6.0,
+      "change_pct": -0.08,
       "unit": "$/oz",
-      "value": 7488.5
+      "value": 7492.3
     },
     "wti_oil": {
-      "change": -4.09,
-      "change_pct": -4.37,
+      "change": 0.17,
+      "change_pct": 0.19,
       "unit": "$/bbl",
-      "value": 89.41
+      "value": 89.62
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3189
     }
   },
-  "generated_at": "2026-05-27T21:14:40+00:00",
+  "generated_at": "2026-05-27T22:53:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": 65.9,
-      "change_pct": 0.13,
+      "change": 157.1,
+      "change_pct": 0.31,
       "value": 50644.3
     },
     "nasdaq": {
-      "change": -18.59,
-      "change_pct": -0.07,
-      "value": 26674.734
+      "change": -20.71,
+      "change_pct": -0.08,
+      "value": 26674.73
     },
     "sp500": {
-      "change": -5.9,
-      "change_pct": -0.08,
+      "change": -5.6,
+      "change_pct": -0.07,
       "value": 7520.4
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Wed, 27 May 2026 21:12:00",
+      "published": "Wed, 27 May 2026 22:49:00",
       "source": "MarketWatch",
-      "title": "Big Tech gets the AI profits \u2014 and you get the higher utility bills",
-      "url": "https://www.marketwatch.com/story/in-america-big-techs-ai-data-centers-come-first-and-your-community-will-be-last-to-know-06a3fce4?mod=mw_rss_topstories"
+      "title": "Momentus\u2019s stock nearly triples in 2 days as the space company raises more cash from investors",
+      "url": "https://www.marketwatch.com/story/momentuss-stock-nearly-triples-in-2-days-as-the-space-company-raises-more-cash-from-investors-b2c9a088?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 21:00:00",
+      "published": "Wed, 27 May 2026 22:45:00",
       "source": "MarketWatch",
-      "title": "My golf buddy dropped me when I didn\u2019t make him my financial adviser. Be careful who you trust.",
-      "url": "https://www.marketwatch.com/story/my-golf-buddy-dropped-me-when-i-didnt-make-him-my-financial-adviser-be-careful-who-you-trust-b5c00854?mod=mw_rss_topstories"
+      "title": "Micron investors are partying like it\u2019s 1987. Analysts say the stock still looks pretty cheap.",
+      "url": "https://www.marketwatch.com/story/micron-investors-are-partying-like-its-1987-and-the-stock-still-looks-pretty-cheap-7060ee53?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 20:57:00",
+      "published": "Wed, 27 May 2026 22:43:00",
       "source": "MarketWatch",
-      "title": "Salesforce shares sink on soft revenue outlook as AI disruption concerns linger",
-      "url": "https://www.marketwatch.com/story/salesforce-shares-sink-on-soft-revenue-outlook-as-ai-disruption-concerns-linger-45dcf0e5?mod=mw_rss_topstories"
+      "title": "Zscaler\u2019s stock sees record drop after investors are blindsided by a disappointing outlook",
+      "url": "https://www.marketwatch.com/story/zscalers-stock-seeing-record-drop-after-investors-are-blindsided-by-a-disappointing-outlook-b010fa72?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 20:53:00",
+      "published": "Wed, 27 May 2026 22:40:00",
       "source": "MarketWatch",
-      "title": "The surge in chip stocks this year is putting the dot-com rally to shame",
-      "url": "https://www.marketwatch.com/story/the-surge-in-chip-stocks-this-year-is-putting-the-dot-com-rally-to-shame-18ab1d24?mod=mw_rss_topstories"
+      "title": "Investors betting the Iran war is ending are buying up travel stocks",
+      "url": "https://www.marketwatch.com/story/investors-betting-the-iran-war-is-ending-are-buying-up-travel-stocks-a7921f97?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 20:22:00",
+      "published": "Wed, 27 May 2026 22:31:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m unsure of the best approach\u2019: My father, 91, is in hospice care. He left his six children CDs. Can we cash out?",
-      "url": "https://www.marketwatch.com/story/im-unsure-of-the-best-approach-my-father-91-is-in-hospice-care-he-left-his-six-children-cds-can-we-cash-out-72006059?mod=mw_rss_topstories"
+      "title": "Stocks just scored a trifecta of record closes for the first time in 2026. What to expect next.",
+      "url": "https://www.marketwatch.com/story/stocks-just-scored-a-trifecta-of-record-closes-for-the-first-time-in-2026-what-to-expect-next-cb625d40?mod=mw_rss_topstories"
     }
   ],
   "rates": {
