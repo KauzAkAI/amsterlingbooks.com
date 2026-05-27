@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -9.22,
-      "change_pct": -1.44,
+      "change": -8.39,
+      "change_pct": -1.31,
       "unit": "$/lb",
-      "value": 633.0
+      "value": 633.83
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -57.34,
-      "change_pct": -1.26,
+      "change": -53.6,
+      "change_pct": -1.18,
       "unit": "$/oz",
-      "value": 4484.76
+      "value": 4488.5
     },
     "natural_gas": {
-      "change": 0.09,
-      "change_pct": 2.86,
+      "change": 0.08,
+      "change_pct": 2.56,
       "unit": "$/MMBtu",
-      "value": 3.097
+      "value": 3.088
     },
     "silver": {
-      "change": -233.8,
-      "change_pct": -3.02,
+      "change": -248.8,
+      "change_pct": -3.22,
       "unit": "$/oz",
-      "value": 7503.5
+      "value": 7488.5
     },
     "wti_oil": {
-      "change": -4.55,
-      "change_pct": -4.87,
+      "change": -4.09,
+      "change_pct": -4.37,
       "unit": "$/bbl",
-      "value": 88.95
+      "value": 89.41
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3189
     }
   },
-  "generated_at": "2026-05-27T19:08:09+00:00",
+  "generated_at": "2026-05-27T21:14:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 122.0,
-      "change_pct": 0.24,
-      "value": 50700.4
+      "change": 65.9,
+      "change_pct": 0.13,
+      "value": 50644.3
     },
     "nasdaq": {
-      "change": -13.73,
-      "change_pct": -0.05,
-      "value": 26679.594
+      "change": -18.59,
+      "change_pct": -0.07,
+      "value": 26674.734
     },
     "sp500": {
-      "change": -0.2,
-      "change_pct": -0.0,
-      "value": 7526.1
+      "change": -5.9,
+      "change_pct": -0.08,
+      "value": 7520.4
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
     },
     {
-      "published": "Wed, 27 May 2026 19:05:00",
+      "published": "Wed, 27 May 2026 21:12:00",
       "source": "MarketWatch",
-      "title": "America is losing the AI productivity war to 3.5 million Chinese STEM graduates",
-      "url": "https://www.marketwatch.com/story/why-america-is-losing-the-ai-productivity-war-to-3-5-million-chinese-stem-graduates-4ffeb298?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 18:56:00",
-      "source": "MarketWatch",
-      "title": "Why double-digit earnings growth won\u2019t stop the next bear market",
-      "url": "https://www.marketwatch.com/story/why-double-digit-earnings-growth-wont-stop-the-next-bear-market-791ae3ef?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 18:32:00",
-      "source": "MarketWatch",
-      "title": "Micron investors are partying like it\u2019s 1987. Analysts say the stock still looks pretty cheap.",
-      "url": "https://www.marketwatch.com/story/micron-investors-are-partying-like-its-1987-and-the-stock-still-looks-pretty-cheap-7060ee53?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 18:28:00",
-      "source": "MarketWatch",
-      "title": "Big Tech gets the AI profits. You get the higher utility bills.",
+      "title": "Big Tech gets the AI profits \u2014 and you get the higher utility bills",
       "url": "https://www.marketwatch.com/story/in-america-big-techs-ai-data-centers-come-first-and-your-community-will-be-last-to-know-06a3fce4?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 17:50:00",
+      "published": "Wed, 27 May 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "China\u2019s next export shock walks on two legs \u2014 and costs less than a used car",
-      "url": "https://www.marketwatch.com/story/chinas-next-export-shock-walks-on-two-legs-and-costs-less-than-a-used-car-f0becf3f?mod=mw_rss_topstories"
+      "title": "My golf buddy dropped me when I didn\u2019t make him my financial adviser. Be careful who you trust.",
+      "url": "https://www.marketwatch.com/story/my-golf-buddy-dropped-me-when-i-didnt-make-him-my-financial-adviser-be-careful-who-you-trust-b5c00854?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 27 May 2026 20:57:00",
+      "source": "MarketWatch",
+      "title": "Salesforce shares sink on soft revenue outlook as AI disruption concerns linger",
+      "url": "https://www.marketwatch.com/story/salesforce-shares-sink-on-soft-revenue-outlook-as-ai-disruption-concerns-linger-45dcf0e5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 27 May 2026 20:53:00",
+      "source": "MarketWatch",
+      "title": "The surge in chip stocks this year is putting the dot-com rally to shame",
+      "url": "https://www.marketwatch.com/story/the-surge-in-chip-stocks-this-year-is-putting-the-dot-com-rally-to-shame-18ab1d24?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 27 May 2026 20:22:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m unsure of the best approach\u2019: My father, 91, is in hospice care. He left his six children CDs. Can we cash out?",
+      "url": "https://www.marketwatch.com/story/im-unsure-of-the-best-approach-my-father-91-is-in-hospice-care-he-left-his-six-children-cds-can-we-cash-out-72006059?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.8
+      "yield": 3.79
     },
     {
       "tenor": "1Y",
-      "yield": 3.82
+      "yield": 3.8
     },
     {
       "tenor": "2Y",
-      "yield": 4.01
+      "yield": 4.0
     },
     {
       "tenor": "5Y",
-      "yield": 4.19
+      "yield": 4.17
     },
     {
       "tenor": "7Y",
-      "yield": 4.33
+      "yield": 4.32
     },
     {
       "tenor": "10Y",
-      "yield": 4.5
+      "yield": 4.48
     },
     {
       "tenor": "20Y",
-      "yield": 5.03
+      "yield": 5.01
     },
     {
       "tenor": "30Y",
-      "yield": 5.03
+      "yield": 5.01
     }
   ],
   "warnings": []
