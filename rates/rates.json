@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 8.96,
-      "change_pct": 1.41,
+      "change": 8.66,
+      "change_pct": 1.37,
       "unit": "$/lb",
-      "value": 642.43
+      "value": 642.13
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 49.28,
-      "change_pct": 1.1,
+      "change": 38.73,
+      "change_pct": 0.86,
       "unit": "$/oz",
-      "value": 4541.25
+      "value": 4530.7
     },
     "natural_gas": {
-      "change": 0.17,
-      "change_pct": 5.61,
+      "change": 0.2,
+      "change_pct": 6.55,
       "unit": "$/MMBtu",
-      "value": 3.258
+      "value": 3.287
     },
     "silver": {
-      "change": 105.0,
-      "change_pct": 1.4,
+      "change": 95.2,
+      "change_pct": 1.27,
       "unit": "$/oz",
-      "value": 7603.3
+      "value": 7593.5
     },
     "wti_oil": {
-      "change": -1.17,
-      "change_pct": -1.31,
+      "change": -0.26,
+      "change_pct": -0.29,
       "unit": "$/bbl",
-      "value": 88.28
+      "value": 89.19
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3883
     }
   },
-  "generated_at": "2026-05-28T16:59:42+00:00",
+  "generated_at": "2026-05-28T19:43:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 235.3,
-      "change_pct": 0.47,
-      "value": 50705.3
+      "change": 189.2,
+      "change_pct": 0.37,
+      "value": 50659.2
     },
     "nasdaq": {
-      "change": 201.1,
-      "change_pct": 0.75,
-      "value": 26886.77
+      "change": 239.19,
+      "change_pct": 0.9,
+      "value": 26924.865
     },
     "sp500": {
-      "change": 48.5,
-      "change_pct": 0.65,
-      "value": 7565.3
+      "change": 48.2,
+      "change_pct": 0.64,
+      "value": 7565.0
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
     },
     {
-      "published": "Thu, 28 May 2026 16:44:00",
+      "published": "Thu, 28 May 2026 19:39:00",
       "source": "MarketWatch",
-      "title": "Google engineer charged after making $1.2 million on Polymarket bets \u2014 showing insider trading is becoming everyone\u2019s problem",
-      "url": "https://www.marketwatch.com/story/google-engineer-charged-after-making-1-2-million-on-polymarket-bets-showing-insider-trading-is-becoming-everyones-problem-5f2a0063?mod=mw_rss_topstories"
+      "title": "Oil prices show mixed reaction as White House backs report on progress toward Iran peace deal",
+      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-fresh-round-of-strikes-between-u-s-and-iran-pushing-peace-deal-into-doubt-4d20336b?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 16:28:00",
+      "published": "Thu, 28 May 2026 19:38:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s the real story behind the record drop in America\u2019s oil reserves",
-      "url": "https://www.marketwatch.com/story/we-have-plenty-heres-the-real-story-behind-the-record-drop-in-americas-oil-reserves-9c8de9d5?mod=mw_rss_topstories"
+      "title": "The new bipartisan college-sports bill is bad news for the richest NIL athletes. Here\u2019s why.",
+      "url": "https://www.marketwatch.com/story/the-new-bipartisan-college-sports-bill-is-bad-news-for-the-richest-nil-athletes-heres-why-c3f3a3ff?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 16:17:00",
+      "published": "Thu, 28 May 2026 19:15:00",
       "source": "MarketWatch",
-      "title": "Mortgage rates inch up to 6.53% \u2014 the latest blow for sidelined spring buyers",
-      "url": "https://www.marketwatch.com/story/mortgage-rates-inch-up-to-6-53-the-latest-blow-for-sidelined-spring-buyers-cccc71a9?mod=mw_rss_topstories"
+      "title": "Anthropic nears $1 trillion valuation, leapfrogging OpenAI",
+      "url": "https://www.marketwatch.com/story/anthropic-nears-1-trillion-valuation-leapfrogging-openai-ac2dc81f?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 16:11:00",
+      "published": "Thu, 28 May 2026 19:08:00",
       "source": "MarketWatch",
-      "title": "I\u2019m setting up brokerage accounts for my grandkids in my daughter\u2019s name. Is that wise \u2014 or am I asking for trouble?",
-      "url": "https://www.marketwatch.com/story/im-setting-up-brokerage-accounts-for-my-grandkids-in-my-daughters-name-is-that-wise-or-am-i-asking-for-trouble-6728b2b2?mod=mw_rss_topstories"
+      "title": "Lilly\u2019s GLP-1 medications will soon be covered by CVS, potentially opening access for millions of Americans",
+      "url": "https://www.marketwatch.com/story/lillys-glp-1-medications-will-soon-be-covered-by-cvs-potentially-opening-access-for-millions-of-americans-b7704707?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 15:57:00",
+      "published": "Thu, 28 May 2026 18:59:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s major AI compute deal with Anthropic could end a lot sooner than expected",
-      "url": "https://www.marketwatch.com/story/spacexs-major-ai-compute-deal-with-anthropic-could-end-a-lot-sooner-than-expected-30f46b83?mod=mw_rss_topstories"
+      "title": "Even the Ronald Reagan Institute doesn\u2019t believe the \u2018waste, fraud and abuse\u2019 baloney",
+      "url": "https://www.marketwatch.com/story/even-the-ronald-reagan-institute-doesnt-believe-the-waste-fraud-and-abuse-baloney-629a6447?mod=mw_rss_topstories"
     }
   ],
   "rates": {
