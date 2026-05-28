@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 8.71,
-      "change_pct": 1.37,
+      "change": 0.15,
+      "change_pct": 0.02,
       "unit": "$/lb",
-      "value": 642.18
+      "value": 642.1
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 36.28,
-      "change_pct": 0.81,
+      "change": -2.6,
+      "change_pct": -0.06,
       "unit": "$/oz",
-      "value": 4528.25
+      "value": 4524.65
     },
     "natural_gas": {
-      "change": 0.22,
-      "change_pct": 7.07,
+      "change": -0.01,
+      "change_pct": -0.39,
       "unit": "$/MMBtu",
-      "value": 3.303
+      "value": 3.298
     },
     "silver": {
-      "change": 93.2,
-      "change_pct": 1.24,
+      "change": -3.5,
+      "change_pct": -0.05,
       "unit": "$/oz",
-      "value": 7591.5
+      "value": 7595.0
     },
     "wti_oil": {
-      "change": -0.92,
-      "change_pct": -1.03,
+      "change": -0.31,
+      "change_pct": -0.35,
       "unit": "$/bbl",
-      "value": 88.53
+      "value": 88.38
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3883
     }
   },
-  "generated_at": "2026-05-28T21:46:37+00:00",
+  "generated_at": "2026-05-28T23:03:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": 199.0,
-      "change_pct": 0.39,
+      "change": 8.0,
+      "change_pct": 0.02,
       "value": 50669.0
     },
     "nasdaq": {
-      "change": 231.8,
+      "change": 230.94,
       "change_pct": 0.87,
       "value": 26917.47
     },
     "sp500": {
-      "change": 46.8,
-      "change_pct": 0.62,
+      "change": 43.8,
+      "change_pct": 0.58,
       "value": 7563.6
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
     },
     {
+      "published": "Thu, 28 May 2026 22:44:00",
+      "source": "MarketWatch",
+      "title": "Costco gas demand hits records, as shoppers try stay ahead of future price spikes",
+      "url": "https://www.marketwatch.com/story/higher-gas-prices-are-driving-people-to-membership-retailers-and-costco-is-the-latest-to-benefit-3566c533?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 28 May 2026 21:58:00",
+      "source": "MarketWatch",
+      "title": "The Iran war costs more than you think \u2014 it boosts inflation and threatens stocks",
+      "url": "https://www.marketwatch.com/story/the-true-cost-of-the-iran-war-is-billions-more-than-the-pentagon-says-and-were-paying-for-it-7bf90988?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 28 May 2026 21:58:00",
+      "source": "MarketWatch",
+      "title": "This overvalued stock market just flashed a rare buy signal",
+      "url": "https://www.marketwatch.com/story/this-overvalued-stock-market-just-flashed-a-rare-buy-signal-05bce4b1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 28 May 2026 21:46:00",
+      "source": "MarketWatch",
+      "title": "67 million kids haven\u2019t signed up for \u2018Trump accounts.\u2019 Here\u2019s what they could be missing out on.",
+      "url": "https://www.marketwatch.com/story/67-million-kids-havent-signed-up-for-trump-accounts-heres-what-they-could-be-missing-out-on-ea56dff9?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 28 May 2026 21:39:00",
       "source": "MarketWatch",
       "title": "Want an alternative to chip stocks? This sector with an AI angle is breaking out.",
       "url": "https://www.marketwatch.com/story/want-an-alternative-to-chip-stocks-this-sector-with-an-ai-angle-is-breaking-out-8a34b2a7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 28 May 2026 21:20:00",
-      "source": "MarketWatch",
-      "title": "The Iran war may be winding down, but the era of $60 oil could be over",
-      "url": "https://www.marketwatch.com/story/the-iran-war-may-be-winding-down-but-the-era-of-60-oil-could-be-over-a2ea7066?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 28 May 2026 21:14:00",
-      "source": "MarketWatch",
-      "title": "The Iran war costs billions more than the Pentagon admits \u2014 and it\u2019s hitting your credit card bill",
-      "url": "https://www.marketwatch.com/story/the-true-cost-of-the-iran-war-is-billions-more-than-the-pentagon-says-and-were-paying-for-it-7bf90988?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 28 May 2026 21:06:00",
-      "source": "MarketWatch",
-      "title": "Higher gas prices are driving people to membership retailers \u2014 and Costco is the latest to benefit",
-      "url": "https://www.marketwatch.com/story/higher-gas-prices-are-driving-people-to-membership-retailers-and-costco-is-the-latest-to-benefit-3566c533?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 28 May 2026 21:00:00",
-      "source": "MarketWatch",
-      "title": "An Iran deal could actually trigger a painful stock-market selloff, despite Wall Street\u2019s optimism",
-      "url": "https://www.marketwatch.com/story/an-iran-deal-could-actually-trigger-a-painful-stock-market-selloff-despite-wall-streets-optimism-82758d41?mod=mw_rss_topstories"
     }
   ],
   "rates": {
