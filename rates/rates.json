@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -0.39,
-      "change_pct": -0.06,
+      "change": 8.96,
+      "change_pct": 1.41,
       "unit": "$/lb",
-      "value": 633.08
+      "value": 642.43
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -11.92,
-      "change_pct": -0.27,
+      "change": 49.28,
+      "change_pct": 1.1,
       "unit": "$/oz",
-      "value": 4480.05
+      "value": 4541.25
     },
     "natural_gas": {
-      "change": -0.0,
-      "change_pct": -0.16,
+      "change": 0.17,
+      "change_pct": 5.61,
       "unit": "$/MMBtu",
-      "value": 3.08
+      "value": 3.258
     },
     "silver": {
-      "change": -24.8,
-      "change_pct": -0.33,
+      "change": 105.0,
+      "change_pct": 1.4,
       "unit": "$/oz",
-      "value": 7473.5
+      "value": 7603.3
     },
     "wti_oil": {
-      "change": 0.96,
-      "change_pct": 1.07,
+      "change": -1.17,
+      "change_pct": -1.31,
       "unit": "$/bbl",
-      "value": 90.41
+      "value": 88.28
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3834
+      "rate": 1.3854
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7821
+      "rate": 6.7799
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85933
+      "rate": 0.86081
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74433
+      "rate": 0.74602
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.69
+      "rate": 95.7
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.42
+      "rate": 159.46
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1499.7
+      "rate": 1502.83
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3189
+      "rate": 17.3883
     }
   },
-  "generated_at": "2026-05-28T00:01:08+00:00",
+  "generated_at": "2026-05-28T16:59:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.45
       },
       {
-        "date": "2026-05-07",
-        "rate": 6.37
-      },
-      {
         "date": "2026-05-13",
         "rate": 6.46
       },
       {
         "date": "2026-05-14",
         "rate": 6.36
-      },
-      {
-        "date": "2026-05-19",
-        "rate": 6.75
       },
       {
         "date": "2026-05-20",
@@ -227,24 +219,32 @@
       {
         "date": "2026-05-27",
         "rate": 6.61
+      },
+      {
+        "date": "2026-05-28",
+        "rate": 6.59
+      },
+      {
+        "date": "2026-05-28",
+        "rate": 6.53
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 157.1,
-      "change_pct": 0.31,
-      "value": 50644.3
+      "change": 235.3,
+      "change_pct": 0.47,
+      "value": 50705.3
     },
     "nasdaq": {
-      "change": -20.71,
-      "change_pct": -0.08,
-      "value": 26674.73
+      "change": 201.1,
+      "change_pct": 0.75,
+      "value": 26886.77
     },
     "sp500": {
-      "change": -5.6,
-      "change_pct": -0.07,
-      "value": 7520.4
+      "change": 48.5,
+      "change_pct": 0.65,
+      "value": 7565.3
     },
     "vix": {
       "change": 1.2,
@@ -291,9 +291,21 @@
   },
   "news": [
     {
-      "published": "Wed, 27 May 2026 23:59:41",
+      "published": "Thu, 28 May 2026 15:15:19",
       "source": "CNBC",
-      "title": "Fed\u2019s Kashkari says inflation fight takes priority as labor market is 'in decent shape'",
+      "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed\u2019s preferred gauge shows",
+      "url": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html"
+    },
+    {
+      "published": "Thu, 28 May 2026 06:08:44",
+      "source": "CNBC",
+      "title": "Energy inflation has been more persistent than expected, Fed's Goolsbee tells CNBC",
+      "url": "https://www.cnbc.com/2026/05/28/goolsbee-iran-energy-inflation-asia-stagflation-shock-ai-artificial-intelligence-jobs.html"
+    },
+    {
+      "published": "Thu, 28 May 2026 06:06:02",
+      "source": "CNBC",
+      "title": "Fed\u2019s Kashkari tells CNBC that inflation fight takes priority as labor market is 'in decent shape'",
       "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
     },
     {
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
     },
     {
-      "published": "Fri, 22 May 2026 16:13:30",
-      "source": "CNBC",
-      "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
-      "url": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html"
-    },
-    {
-      "published": "Thu, 21 May 2026 08:42:03",
-      "source": "CNBC",
-      "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
-      "url": "https://www.cnbc.com/2026/05/21/uk-gcc-trade-deal-bahrain-gulf-investment.html"
-    },
-    {
-      "published": "Wed, 27 May 2026 23:15:00",
+      "published": "Thu, 28 May 2026 16:44:00",
       "source": "MarketWatch",
-      "title": "Snowflake\u2019s stock is on fire as AI acceleration drives record product-revenue growth",
-      "url": "https://www.marketwatch.com/story/snowflakes-stock-is-on-fire-as-ai-acceleration-drives-record-product-revenue-growth-fdc80a57?mod=mw_rss_topstories"
+      "title": "Google engineer charged after making $1.2 million on Polymarket bets \u2014 showing insider trading is becoming everyone\u2019s problem",
+      "url": "https://www.marketwatch.com/story/google-engineer-charged-after-making-1-2-million-on-polymarket-bets-showing-insider-trading-is-becoming-everyones-problem-5f2a0063?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 23:00:00",
+      "published": "Thu, 28 May 2026 16:28:00",
       "source": "MarketWatch",
-      "title": "\u2018I feel like I\u2019m living a lie\u2019: My husband and I pretend we\u2019re strapped for cash in front of friends. Is that bad?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-im-living-a-lie-my-husband-and-i-pretend-were-strapped-for-cash-in-front-of-friends-is-that-bad-1cf6104a?mod=mw_rss_topstories"
+      "title": "Here\u2019s the real story behind the record drop in America\u2019s oil reserves",
+      "url": "https://www.marketwatch.com/story/we-have-plenty-heres-the-real-story-behind-the-record-drop-in-americas-oil-reserves-9c8de9d5?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 22:49:00",
+      "published": "Thu, 28 May 2026 16:17:00",
       "source": "MarketWatch",
-      "title": "Momentus\u2019s stock nearly triples in 2 days as the space company raises more cash from investors",
-      "url": "https://www.marketwatch.com/story/momentuss-stock-nearly-triples-in-2-days-as-the-space-company-raises-more-cash-from-investors-b2c9a088?mod=mw_rss_topstories"
+      "title": "Mortgage rates inch up to 6.53% \u2014 the latest blow for sidelined spring buyers",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-inch-up-to-6-53-the-latest-blow-for-sidelined-spring-buyers-cccc71a9?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 22:45:00",
+      "published": "Thu, 28 May 2026 16:11:00",
       "source": "MarketWatch",
-      "title": "Micron investors are partying like it\u2019s 1987. Analysts say the stock still looks pretty cheap.",
-      "url": "https://www.marketwatch.com/story/micron-investors-are-partying-like-its-1987-and-the-stock-still-looks-pretty-cheap-7060ee53?mod=mw_rss_topstories"
+      "title": "I\u2019m setting up brokerage accounts for my grandkids in my daughter\u2019s name. Is that wise \u2014 or am I asking for trouble?",
+      "url": "https://www.marketwatch.com/story/im-setting-up-brokerage-accounts-for-my-grandkids-in-my-daughters-name-is-that-wise-or-am-i-asking-for-trouble-6728b2b2?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 27 May 2026 22:43:00",
+      "published": "Thu, 28 May 2026 15:57:00",
       "source": "MarketWatch",
-      "title": "Zscaler\u2019s stock sees record drop after investors are blindsided by a disappointing outlook",
-      "url": "https://www.marketwatch.com/story/zscalers-stock-seeing-record-drop-after-investors-are-blindsided-by-a-disappointing-outlook-b010fa72?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s major AI compute deal with Anthropic could end a lot sooner than expected",
+      "url": "https://www.marketwatch.com/story/spacexs-major-ai-compute-deal-with-anthropic-could-end-a-lot-sooner-than-expected-30f46b83?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 27 2026",
-      "change": -0.02,
-      "rate": 6.12
+      "asof_label": "May 28 2026",
+      "change": -0.01,
+      "rate": 6.11
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 27 2026",
-      "change": 0.0,
+      "asof_label": "May 28 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
