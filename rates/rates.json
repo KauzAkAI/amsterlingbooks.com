@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.21,
-      "change_pct": 0.03,
+      "change": -0.39,
+      "change_pct": -0.06,
       "unit": "$/lb",
-      "value": 633.68
+      "value": 633.08
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,10 +61,10 @@
       "value": 4.42
     },
     "gold": {
-      "change": -3.71,
-      "change_pct": -0.08,
+      "change": -11.92,
+      "change_pct": -0.27,
       "unit": "$/oz",
-      "value": 4488.26
+      "value": 4480.05
     },
     "natural_gas": {
       "change": -0.0,
@@ -73,16 +73,16 @@
       "value": 3.08
     },
     "silver": {
-      "change": -6.0,
-      "change_pct": -0.08,
+      "change": -24.8,
+      "change_pct": -0.33,
       "unit": "$/oz",
-      "value": 7492.3
+      "value": 7473.5
     },
     "wti_oil": {
-      "change": 0.17,
-      "change_pct": 0.19,
+      "change": 0.96,
+      "change_pct": 1.07,
       "unit": "$/bbl",
-      "value": 89.62
+      "value": 90.41
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3189
     }
   },
-  "generated_at": "2026-05-27T22:53:09+00:00",
+  "generated_at": "2026-05-28T00:01:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 27 May 2026 23:59:41",
+      "source": "CNBC",
+      "title": "Fed\u2019s Kashkari says inflation fight takes priority as labor market is 'in decent shape'",
+      "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
+    },
+    {
       "published": "Tue, 26 May 2026 13:53:22",
       "source": "CNBC",
       "title": "ECB 'will do what is necessary' to tame inflation, Bank of France governor tells CNBC",
@@ -315,10 +321,16 @@
       "url": "https://www.cnbc.com/2026/05/21/uk-gcc-trade-deal-bahrain-gulf-investment.html"
     },
     {
-      "published": "Wed, 20 May 2026 08:15:15",
-      "source": "CNBC",
-      "title": "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets",
-      "url": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html"
+      "published": "Wed, 27 May 2026 23:15:00",
+      "source": "MarketWatch",
+      "title": "Snowflake\u2019s stock is on fire as AI acceleration drives record product-revenue growth",
+      "url": "https://www.marketwatch.com/story/snowflakes-stock-is-on-fire-as-ai-acceleration-drives-record-product-revenue-growth-fdc80a57?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 27 May 2026 23:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I feel like I\u2019m living a lie\u2019: My husband and I pretend we\u2019re strapped for cash in front of friends. Is that bad?",
+      "url": "https://www.marketwatch.com/story/i-feel-like-im-living-a-lie-my-husband-and-i-pretend-were-strapped-for-cash-in-front-of-friends-is-that-bad-1cf6104a?mod=mw_rss_topstories"
     },
     {
       "published": "Wed, 27 May 2026 22:49:00",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Zscaler\u2019s stock sees record drop after investors are blindsided by a disappointing outlook",
       "url": "https://www.marketwatch.com/story/zscalers-stock-seeing-record-drop-after-investors-are-blindsided-by-a-disappointing-outlook-b010fa72?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 22:40:00",
-      "source": "MarketWatch",
-      "title": "Investors betting the Iran war is ending are buying up travel stocks",
-      "url": "https://www.marketwatch.com/story/investors-betting-the-iran-war-is-ending-are-buying-up-travel-stocks-a7921f97?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 27 May 2026 22:31:00",
-      "source": "MarketWatch",
-      "title": "Stocks just scored a trifecta of record closes for the first time in 2026. What to expect next.",
-      "url": "https://www.marketwatch.com/story/stocks-just-scored-a-trifecta-of-record-closes-for-the-first-time-in-2026-what-to-expect-next-cb625d40?mod=mw_rss_topstories"
     }
   ],
   "rates": {
