@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 8.66,
+      "change": 8.71,
       "change_pct": 1.37,
       "unit": "$/lb",
-      "value": 642.13
+      "value": 642.18
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 38.73,
-      "change_pct": 0.86,
+      "change": 36.28,
+      "change_pct": 0.81,
       "unit": "$/oz",
-      "value": 4530.7
+      "value": 4528.25
     },
     "natural_gas": {
-      "change": 0.2,
-      "change_pct": 6.55,
+      "change": 0.22,
+      "change_pct": 7.07,
       "unit": "$/MMBtu",
-      "value": 3.287
+      "value": 3.303
     },
     "silver": {
-      "change": 95.2,
-      "change_pct": 1.27,
+      "change": 93.2,
+      "change_pct": 1.24,
       "unit": "$/oz",
-      "value": 7593.5
+      "value": 7591.5
     },
     "wti_oil": {
-      "change": -0.26,
-      "change_pct": -0.29,
+      "change": -0.92,
+      "change_pct": -1.03,
       "unit": "$/bbl",
-      "value": 89.19
+      "value": 88.53
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3883
     }
   },
-  "generated_at": "2026-05-28T19:43:13+00:00",
+  "generated_at": "2026-05-28T21:46:37+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 189.2,
-      "change_pct": 0.37,
-      "value": 50659.2
+      "change": 199.0,
+      "change_pct": 0.39,
+      "value": 50669.0
     },
     "nasdaq": {
-      "change": 239.19,
-      "change_pct": 0.9,
-      "value": 26924.865
+      "change": 231.8,
+      "change_pct": 0.87,
+      "value": 26917.47
     },
     "sp500": {
-      "change": 48.2,
-      "change_pct": 0.64,
-      "value": 7565.0
+      "change": 46.8,
+      "change_pct": 0.62,
+      "value": 7563.6
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
     },
     {
-      "published": "Thu, 28 May 2026 19:39:00",
+      "published": "Thu, 28 May 2026 21:39:00",
       "source": "MarketWatch",
-      "title": "Oil prices show mixed reaction as White House backs report on progress toward Iran peace deal",
-      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-fresh-round-of-strikes-between-u-s-and-iran-pushing-peace-deal-into-doubt-4d20336b?mod=mw_rss_topstories"
+      "title": "Want an alternative to chip stocks? This sector with an AI angle is breaking out.",
+      "url": "https://www.marketwatch.com/story/want-an-alternative-to-chip-stocks-this-sector-with-an-ai-angle-is-breaking-out-8a34b2a7?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 19:38:00",
+      "published": "Thu, 28 May 2026 21:20:00",
       "source": "MarketWatch",
-      "title": "The new bipartisan college-sports bill is bad news for the richest NIL athletes. Here\u2019s why.",
-      "url": "https://www.marketwatch.com/story/the-new-bipartisan-college-sports-bill-is-bad-news-for-the-richest-nil-athletes-heres-why-c3f3a3ff?mod=mw_rss_topstories"
+      "title": "The Iran war may be winding down, but the era of $60 oil could be over",
+      "url": "https://www.marketwatch.com/story/the-iran-war-may-be-winding-down-but-the-era-of-60-oil-could-be-over-a2ea7066?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 19:15:00",
+      "published": "Thu, 28 May 2026 21:14:00",
       "source": "MarketWatch",
-      "title": "Anthropic nears $1 trillion valuation, leapfrogging OpenAI",
-      "url": "https://www.marketwatch.com/story/anthropic-nears-1-trillion-valuation-leapfrogging-openai-ac2dc81f?mod=mw_rss_topstories"
+      "title": "The Iran war costs billions more than the Pentagon admits \u2014 and it\u2019s hitting your credit card bill",
+      "url": "https://www.marketwatch.com/story/the-true-cost-of-the-iran-war-is-billions-more-than-the-pentagon-says-and-were-paying-for-it-7bf90988?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 19:08:00",
+      "published": "Thu, 28 May 2026 21:06:00",
       "source": "MarketWatch",
-      "title": "Lilly\u2019s GLP-1 medications will soon be covered by CVS, potentially opening access for millions of Americans",
-      "url": "https://www.marketwatch.com/story/lillys-glp-1-medications-will-soon-be-covered-by-cvs-potentially-opening-access-for-millions-of-americans-b7704707?mod=mw_rss_topstories"
+      "title": "Higher gas prices are driving people to membership retailers \u2014 and Costco is the latest to benefit",
+      "url": "https://www.marketwatch.com/story/higher-gas-prices-are-driving-people-to-membership-retailers-and-costco-is-the-latest-to-benefit-3566c533?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 18:59:00",
+      "published": "Thu, 28 May 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "Even the Ronald Reagan Institute doesn\u2019t believe the \u2018waste, fraud and abuse\u2019 baloney",
-      "url": "https://www.marketwatch.com/story/even-the-ronald-reagan-institute-doesnt-believe-the-waste-fraud-and-abuse-baloney-629a6447?mod=mw_rss_topstories"
+      "title": "An Iran deal could actually trigger a painful stock-market selloff, despite Wall Street\u2019s optimism",
+      "url": "https://www.marketwatch.com/story/an-iran-deal-could-actually-trigger-a-painful-stock-market-selloff-despite-wall-streets-optimism-82758d41?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,7 +398,7 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.68
+      "yield": 3.69
     },
     {
       "tenor": "6M",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.0
+      "yield": 3.99
     },
     {
       "tenor": "5Y",
-      "yield": 4.17
+      "yield": 4.15
     },
     {
       "tenor": "7Y",
-      "yield": 4.32
+      "yield": 4.29
     },
     {
       "tenor": "10Y",
-      "yield": 4.48
+      "yield": 4.45
     },
     {
       "tenor": "20Y",
-      "yield": 5.01
+      "yield": 4.98
     },
     {
       "tenor": "30Y",
-      "yield": 5.01
+      "yield": 4.98
     }
   ],
   "warnings": []
