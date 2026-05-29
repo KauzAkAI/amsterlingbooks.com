@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -2.32,
-      "change_pct": -0.36,
+      "change": 0.0,
+      "change_pct": 0.0,
       "unit": "$/lb",
-      "value": 639.63
+      "value": 641.95
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,22 +61,22 @@
       "value": 4.42
     },
     "gold": {
-      "change": 42.65,
-      "change_pct": 0.94,
+      "change": 65.75,
+      "change_pct": 1.45,
       "unit": "$/oz",
-      "value": 4569.9
+      "value": 4593.0
     },
     "natural_gas": {
-      "change": -0.04,
-      "change_pct": -1.15,
+      "change": -0.02,
+      "change_pct": -0.63,
       "unit": "$/MMBtu",
-      "value": 3.273
+      "value": 3.29
     },
     "silver": {
-      "change": -41.8,
-      "change_pct": -0.55,
+      "change": 18.8,
+      "change_pct": 0.25,
       "unit": "$/oz",
-      "value": 7556.7
+      "value": 7617.3
     },
     "wti_oil": {
       "change": -0.93,
@@ -135,7 +135,7 @@
       "rate": 17.3394
     }
   },
-  "generated_at": "2026-05-29T21:25:50+00:00",
+  "generated_at": "2026-05-29T22:53:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -237,8 +237,8 @@
       "value": 51032.5
     },
     "nasdaq": {
-      "change": 17.75,
-      "change_pct": 0.07,
+      "change": 11.78,
+      "change_pct": 0.04,
       "value": 26972.62
     },
     "sp500": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
     },
     {
+      "published": "Fri, 29 May 2026 22:09:00",
+      "source": "MarketWatch",
+      "title": "A mystery man tried to buy Playboy\u2019s high-end lingerie business. It turned out to all be a scam.",
+      "url": "https://www.marketwatch.com/story/a-mystery-man-tried-to-buy-playboys-high-end-lingerie-business-it-turned-out-to-all-be-a-scam-4d8c0ae9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 29 May 2026 21:49:00",
+      "source": "MarketWatch",
+      "title": "Gap and American Eagle shares both get crushed \u2014 and neither retailer is blaming the economy",
+      "url": "https://www.marketwatch.com/story/gap-and-american-eagle-stock-are-both-getting-crushed-and-neither-retailer-is-blaming-the-economy-6290fa6a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 29 May 2026 21:35:00",
+      "source": "MarketWatch",
+      "title": "Oil slides, stocks climb as Trump puts off determination on Iran proposal",
+      "url": "https://www.marketwatch.com/story/oil-prices-slide-as-trump-says-the-u-s-is-close-to-an-iran-deal-8af9ece2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 29 May 2026 21:24:00",
+      "source": "MarketWatch",
+      "title": "ServiceNow\u2019s stock soars to a historic month as AI fears fade across software",
+      "url": "https://www.marketwatch.com/story/servicenows-stock-soars-toward-historic-month-as-ai-fears-fade-across-software-31854b69?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 29 May 2026 21:00:00",
       "source": "MarketWatch",
       "title": "Dell\u2019s stunning 33% stock rally gave a big boost to shares of other server makers",
       "url": "https://www.marketwatch.com/story/dells-stunning-30-stock-rally-is-giving-a-big-boost-to-shares-of-other-server-makers-78292f16?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 29 May 2026 20:55:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s the real story behind the record drop in America\u2019s oil reserves",
-      "url": "https://www.marketwatch.com/story/we-have-plenty-heres-the-real-story-behind-the-record-drop-in-americas-oil-reserves-9c8de9d5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 29 May 2026 20:43:00",
-      "source": "MarketWatch",
-      "title": "These S&P 500 stocks soared the most during the AI-driven May rally",
-      "url": "https://www.marketwatch.com/story/these-s-p-500-stocks-have-soared-the-most-during-the-ai-driven-may-rally-570ad48f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 29 May 2026 20:28:00",
-      "source": "MarketWatch",
-      "title": "Space stocks tumble after a Blue Origin rocket explodes and SpaceX\u2019s valuation gets a reality check",
-      "url": "https://www.marketwatch.com/story/space-stocks-are-falling-after-a-blue-origin-rocket-explodes-and-spacexs-valuation-gets-a-reality-check-230ae49f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 29 May 2026 20:18:00",
-      "source": "MarketWatch",
-      "title": "One of the hottest crypto products in the world is finally coming to the U.S.",
-      "url": "https://www.marketwatch.com/story/one-of-the-hottest-crypto-products-in-the-world-is-finally-coming-to-the-u-s-96e9dfa6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
