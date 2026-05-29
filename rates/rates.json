@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.15,
-      "change_pct": 0.02,
+      "change": -3.07,
+      "change_pct": -0.48,
       "unit": "$/lb",
-      "value": 642.1
+      "value": 638.88
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -2.6,
-      "change_pct": -0.06,
+      "change": 65.45,
+      "change_pct": 1.45,
       "unit": "$/oz",
-      "value": 4524.65
+      "value": 4592.7
     },
     "natural_gas": {
-      "change": -0.01,
-      "change_pct": -0.39,
+      "change": 0.02,
+      "change_pct": 0.69,
       "unit": "$/MMBtu",
-      "value": 3.298
+      "value": 3.334
     },
     "silver": {
-      "change": -3.5,
-      "change_pct": -0.05,
+      "change": 2.0,
+      "change_pct": 0.03,
       "unit": "$/oz",
-      "value": 7595.0
+      "value": 7600.5
     },
     "wti_oil": {
-      "change": -0.31,
-      "change_pct": -0.35,
+      "change": -1.9,
+      "change_pct": -2.14,
       "unit": "$/bbl",
-      "value": 88.38
+      "value": 86.79
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3854
+      "rate": 1.3805
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7799
+      "rate": 6.7668
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86081
+      "rate": 0.85881
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74602
+      "rate": 0.74479
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.7
+      "rate": 95.0
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.46
+      "rate": 159.27
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1502.83
+      "rate": 1506.27
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3883
+      "rate": 17.3394
     }
   },
-  "generated_at": "2026-05-28T23:03:57+00:00",
+  "generated_at": "2026-05-29T16:50:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-05-20",
-        "rate": 6.67
-      },
-      {
-        "date": "2026-05-20",
         "rate": 6.56
       },
       {
@@ -227,24 +223,28 @@
       {
         "date": "2026-05-28",
         "rate": 6.53
+      },
+      {
+        "date": "2026-05-29",
+        "rate": 6.56
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 8.0,
-      "change_pct": 0.02,
-      "value": 50669.0
+      "change": 239.3,
+      "change_pct": 0.47,
+      "value": 51013.2
     },
     "nasdaq": {
-      "change": 230.94,
-      "change_pct": 0.87,
-      "value": 26917.47
+      "change": 50.72,
+      "change_pct": 0.19,
+      "value": 27005.59
     },
     "sp500": {
-      "change": 43.8,
-      "change_pct": 0.58,
-      "value": 7563.6
+      "change": 8.5,
+      "change_pct": 0.11,
+      "value": 7587.8
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 29 May 2026 12:24:17",
+      "source": "CNBC",
+      "title": "How the \u2018double scar\u2019 of past inflation woes and geopolitical shocks amid the Iran war is hitting consumers",
+      "url": "https://www.cnbc.com/2026/05/29/iran-war-inflation-stagflation-eu-ecb-consumer-prices.html"
+    },
+    {
       "published": "Thu, 28 May 2026 15:15:19",
       "source": "CNBC",
       "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed\u2019s preferred gauge shows",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/05/26/ecb-villeroy-inflation-iran-war.html"
     },
     {
-      "published": "Sat, 23 May 2026 12:32:36",
-      "source": "CNBC",
-      "title": "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
-      "url": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html"
+      "published": "Fri, 29 May 2026 16:42:00",
+      "source": "MarketWatch",
+      "title": "ServiceNow\u2019s stock soars toward historic month as AI fears fade across software",
+      "url": "https://www.marketwatch.com/story/servicenows-stock-soars-toward-historic-month-as-ai-fears-fade-across-software-31854b69?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 22:44:00",
+      "published": "Fri, 29 May 2026 15:54:00",
       "source": "MarketWatch",
-      "title": "Costco gas demand hits records, as shoppers try stay ahead of future price spikes",
-      "url": "https://www.marketwatch.com/story/higher-gas-prices-are-driving-people-to-membership-retailers-and-costco-is-the-latest-to-benefit-3566c533?mod=mw_rss_topstories"
+      "title": "Even the Ronald Reagan Institute doesn\u2019t believe the \u2018waste, fraud and abuse\u2019 baloney",
+      "url": "https://www.marketwatch.com/story/even-the-ronald-reagan-institute-doesnt-believe-the-waste-fraud-and-abuse-baloney-629a6447?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 21:58:00",
+      "published": "Fri, 29 May 2026 15:48:00",
       "source": "MarketWatch",
-      "title": "The Iran war costs more than you think \u2014 it boosts inflation and threatens stocks",
-      "url": "https://www.marketwatch.com/story/the-true-cost-of-the-iran-war-is-billions-more-than-the-pentagon-says-and-were-paying-for-it-7bf90988?mod=mw_rss_topstories"
+      "title": "Oil prices slide as Trump says the U.S. is close to an Iran deal",
+      "url": "https://www.marketwatch.com/story/oil-prices-slide-as-trump-says-the-u-s-is-close-to-an-iran-deal-8af9ece2?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 21:58:00",
+      "published": "Fri, 29 May 2026 15:43:00",
       "source": "MarketWatch",
-      "title": "This overvalued stock market just flashed a rare buy signal",
-      "url": "https://www.marketwatch.com/story/this-overvalued-stock-market-just-flashed-a-rare-buy-signal-05bce4b1?mod=mw_rss_topstories"
+      "title": "Elon Musk\u2019s SpaceX IPO could quickly launch into your retirement plan",
+      "url": "https://www.marketwatch.com/story/elon-musks-spacex-ipo-could-quickly-launch-into-your-retirement-plan-30c17279?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 28 May 2026 21:46:00",
+      "published": "Fri, 29 May 2026 15:41:00",
       "source": "MarketWatch",
-      "title": "67 million kids haven\u2019t signed up for \u2018Trump accounts.\u2019 Here\u2019s what they could be missing out on.",
-      "url": "https://www.marketwatch.com/story/67-million-kids-havent-signed-up-for-trump-accounts-heres-what-they-could-be-missing-out-on-ea56dff9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 28 May 2026 21:39:00",
-      "source": "MarketWatch",
-      "title": "Want an alternative to chip stocks? This sector with an AI angle is breaking out.",
-      "url": "https://www.marketwatch.com/story/want-an-alternative-to-chip-stocks-this-sector-with-an-ai-angle-is-breaking-out-8a34b2a7?mod=mw_rss_topstories"
+      "title": "\u2018He threatened to cut the roots\u2019: A tree fell onto my neighbor\u2019s property during a storm. Then all hell broke loose.",
+      "url": "https://www.marketwatch.com/story/he-threatened-to-cut-the-roots-a-tree-fell-onto-my-neighbors-property-during-a-storm-then-all-hell-broke-loose-90da5af2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "May 28 2026",
-      "change": -0.01,
-      "rate": 6.11
+      "asof_label": "May 29 2026",
+      "change": -0.02,
+      "rate": 6.09
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "May 28 2026",
-      "change": -0.02,
+      "asof_label": "May 29 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
