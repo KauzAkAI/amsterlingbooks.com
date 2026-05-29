@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -3.07,
-      "change_pct": -0.48,
+      "change": -1.37,
+      "change_pct": -0.21,
       "unit": "$/lb",
-      "value": 638.88
+      "value": 640.58
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 65.45,
-      "change_pct": 1.45,
+      "change": 58.51,
+      "change_pct": 1.29,
       "unit": "$/oz",
-      "value": 4592.7
+      "value": 4585.76
     },
     "natural_gas": {
-      "change": 0.02,
-      "change_pct": 0.69,
+      "change": -0.03,
+      "change_pct": -0.79,
       "unit": "$/MMBtu",
-      "value": 3.334
+      "value": 3.285
     },
     "silver": {
-      "change": 2.0,
-      "change_pct": 0.03,
+      "change": -7.0,
+      "change_pct": -0.09,
       "unit": "$/oz",
-      "value": 7600.5
+      "value": 7591.5
     },
     "wti_oil": {
-      "change": -1.9,
-      "change_pct": -2.14,
+      "change": -0.98,
+      "change_pct": -1.1,
       "unit": "$/bbl",
-      "value": 86.79
+      "value": 87.71
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.3394
     }
   },
-  "generated_at": "2026-05-29T16:50:50+00:00",
+  "generated_at": "2026-05-29T19:30:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-05-06",
-        "rate": 6.45
-      },
-      {
         "date": "2026-05-13",
         "rate": 6.46
       },
@@ -217,6 +213,10 @@
         "rate": 6.61
       },
       {
+        "date": "2026-05-27",
+        "rate": 6.65
+      },
+      {
         "date": "2026-05-28",
         "rate": 6.59
       },
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 239.3,
-      "change_pct": 0.47,
-      "value": 51013.2
+      "change": 286.9,
+      "change_pct": 0.57,
+      "value": 51060.8
     },
     "nasdaq": {
-      "change": 50.72,
-      "change_pct": 0.19,
-      "value": 27005.59
+      "change": 30.12,
+      "change_pct": 0.11,
+      "value": 26984.988
     },
     "sp500": {
-      "change": 8.5,
-      "change_pct": 0.11,
-      "value": 7587.8
+      "change": 7.8,
+      "change_pct": 0.1,
+      "value": 7587.1
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 29 May 2026 18:39:57",
+      "source": "CNBC",
+      "title": "Iran war cost: Average U.S. household paying $450 more on gas and energy",
+      "url": "https://www.cnbc.com/2026/05/29/energy-costs-inflation-iran-war-trump.html"
+    },
+    {
       "published": "Fri, 29 May 2026 12:24:17",
       "source": "CNBC",
       "title": "How the \u2018double scar\u2019 of past inflation woes and geopolitical shocks amid the Iran war is hitting consumers",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
     },
     {
-      "published": "Tue, 26 May 2026 13:53:22",
-      "source": "CNBC",
-      "title": "ECB 'will do what is necessary' to tame inflation, Bank of France governor tells CNBC",
-      "url": "https://www.cnbc.com/2026/05/26/ecb-villeroy-inflation-iran-war.html"
+      "published": "Fri, 29 May 2026 19:26:00",
+      "source": "MarketWatch",
+      "title": "Space stocks tumble after a Blue Origin rocket explodes and SpaceX\u2019s valuation gets a reality check",
+      "url": "https://www.marketwatch.com/story/space-stocks-are-falling-after-a-blue-origin-rocket-explodes-and-spacexs-valuation-gets-a-reality-check-230ae49f?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 29 May 2026 16:42:00",
+      "published": "Fri, 29 May 2026 19:23:00",
       "source": "MarketWatch",
-      "title": "ServiceNow\u2019s stock soars toward historic month as AI fears fade across software",
-      "url": "https://www.marketwatch.com/story/servicenows-stock-soars-toward-historic-month-as-ai-fears-fade-across-software-31854b69?mod=mw_rss_topstories"
+      "title": "Changes at CBS put pressure on California AG to challenge Paramount-Warner Bros. deal",
+      "url": "https://www.marketwatch.com/story/changes-at-cbs-put-pressure-on-california-ag-to-challenge-paramount-warner-bros-deal-8b3dcec3?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 29 May 2026 15:54:00",
+      "published": "Fri, 29 May 2026 19:17:00",
       "source": "MarketWatch",
-      "title": "Even the Ronald Reagan Institute doesn\u2019t believe the \u2018waste, fraud and abuse\u2019 baloney",
-      "url": "https://www.marketwatch.com/story/even-the-ronald-reagan-institute-doesnt-believe-the-waste-fraud-and-abuse-baloney-629a6447?mod=mw_rss_topstories"
+      "title": "\u2018It is such a fine line\u2019: I am a CFP and see nothing wrong with networking on the golf course. Am I wrong?",
+      "url": "https://www.marketwatch.com/story/it-is-such-a-fine-line-i-am-a-cfp-and-see-nothing-wrong-with-networking-on-the-golf-course-am-i-wrong-50a698e8?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 29 May 2026 15:48:00",
+      "published": "Fri, 29 May 2026 18:54:00",
       "source": "MarketWatch",
-      "title": "Oil prices slide as Trump says the U.S. is close to an Iran deal",
-      "url": "https://www.marketwatch.com/story/oil-prices-slide-as-trump-says-the-u-s-is-close-to-an-iran-deal-8af9ece2?mod=mw_rss_topstories"
+      "title": "The \u2018Three A\u2019s\u2019 are keeping the economy afloat during Iran war. Is it enough to avoid recession?",
+      "url": "https://www.marketwatch.com/story/the-three-as-are-keeping-the-economy-afloat-during-iran-war-is-it-enough-to-avoid-recession-9769e907?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 29 May 2026 15:43:00",
+      "published": "Fri, 29 May 2026 18:23:00",
       "source": "MarketWatch",
-      "title": "Elon Musk\u2019s SpaceX IPO could quickly launch into your retirement plan",
-      "url": "https://www.marketwatch.com/story/elon-musks-spacex-ipo-could-quickly-launch-into-your-retirement-plan-30c17279?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 29 May 2026 15:41:00",
-      "source": "MarketWatch",
-      "title": "\u2018He threatened to cut the roots\u2019: A tree fell onto my neighbor\u2019s property during a storm. Then all hell broke loose.",
-      "url": "https://www.marketwatch.com/story/he-threatened-to-cut-the-roots-a-tree-fell-onto-my-neighbors-property-during-a-storm-then-all-hell-broke-loose-90da5af2?mod=mw_rss_topstories"
+      "title": "The company behind the White House\u2019s UFC event says rivals \u2018would kill\u2019 for the opportunity. Critics say that\u2019s a problem.",
+      "url": "https://www.marketwatch.com/story/the-company-behind-the-white-houses-ufc-event-says-rivals-would-kill-for-the-opportunity-critics-say-thats-a-problem-bf463d8d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
