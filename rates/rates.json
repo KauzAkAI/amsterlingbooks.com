@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 19.63,
-      "change_pct": 3.08,
+      "change": 18.75,
+      "change_pct": 2.94,
       "unit": "$/lb",
-      "value": 657.93
+      "value": 657.05
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -37.0,
-      "change_pct": -0.81,
+      "change": -39.6,
+      "change_pct": -0.87,
       "unit": "$/oz",
-      "value": 4517.4
+      "value": 4514.8
     },
     "natural_gas": {
       "change": -0.17,
-      "change_pct": -5.07,
+      "change_pct": -5.13,
       "unit": "$/MMBtu",
-      "value": 3.181
+      "value": 3.179
     },
     "silver": {
-      "change": 130.2,
-      "change_pct": 1.76,
+      "change": 98.2,
+      "change_pct": 1.32,
       "unit": "$/oz",
-      "value": 7549.0
+      "value": 7517.0
     },
     "wti_oil": {
-      "change": 3.47,
-      "change_pct": 3.9,
+      "change": 3.52,
+      "change_pct": 3.96,
       "unit": "$/bbl",
-      "value": 92.42
+      "value": 92.47
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.327
     }
   },
-  "generated_at": "2026-06-01T18:44:13+00:00",
+  "generated_at": "2026-06-01T21:54:48+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 227.5,
-      "change_pct": 0.45,
-      "value": 51060.1
+      "change": 246.3,
+      "change_pct": 0.48,
+      "value": 51078.9
     },
     "nasdaq": {
-      "change": 223.34,
-      "change_pct": 0.83,
-      "value": 27161.74
+      "change": 148.41,
+      "change_pct": 0.55,
+      "value": 27086.809
     },
     "sp500": {
-      "change": 47.3,
-      "change_pct": 0.63,
-      "value": 7615.1
+      "change": 32.2,
+      "change_pct": 0.43,
+      "value": 7600.0
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
     },
     {
-      "published": "Mon, 01 Jun 2026 18:31:00",
+      "published": "Mon, 01 Jun 2026 21:39:00",
       "source": "MarketWatch",
-      "title": "Global oil prices trim early gains but still top $95 a barrel after Trump says peace talks with Iran are back on following a pause",
-      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-fresh-wave-of-attacks-between-u-s-and-iran-fbcdd5ed?mod=mw_rss_topstories"
+      "title": "OpenAI\u2019s next legal battle is against states who claim its models are dangerous",
+      "url": "https://www.marketwatch.com/story/openais-next-legal-battle-is-against-states-who-claim-its-models-are-dangerous-04b093d7?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 18:27:00",
+      "published": "Mon, 01 Jun 2026 21:27:00",
       "source": "MarketWatch",
-      "title": "My golf buddy dropped me when I didn\u2019t ask him to be my financial adviser. Was I naive?",
-      "url": "https://www.marketwatch.com/story/my-golf-buddy-dropped-me-when-i-didnt-make-him-my-financial-adviser-be-careful-who-you-trust-b5c00854?mod=mw_rss_topstories"
+      "title": "Many big oil tankers remain stuck in the Strait of Hormuz \u2014 and may not return once they escape",
+      "url": "https://www.marketwatch.com/story/many-big-oil-tankers-remain-stuck-in-strait-of-hormuz-and-may-not-return-once-they-escape-5b344e49?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 18:20:00",
+      "published": "Mon, 01 Jun 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "\u2018I have no preexisting conditions\u2019: I\u2019m 56, earn $198,000 and want to retire early. Can I afford private healthcare?",
-      "url": "https://www.marketwatch.com/story/i-have-no-preexisting-conditions-im-56-earn-198-000-and-want-to-retire-early-can-i-afford-private-healthcare-e80cdd26?mod=mw_rss_topstories"
+      "title": "Investors are piling into bullish options bets \u2014 another sign that the stock market is getting overheated",
+      "url": "https://www.marketwatch.com/story/investors-are-piling-into-bullish-options-bets-another-sign-that-the-stock-market-is-getting-overheated-96c5fd15?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 18:08:00",
+      "published": "Mon, 01 Jun 2026 20:55:00",
       "source": "MarketWatch",
-      "title": "Did Trump spark an IBM stock rally? It\u2019s complicated.",
-      "url": "https://www.marketwatch.com/story/did-trump-spark-an-ibm-stock-rally-its-complicated-5421f6ba?mod=mw_rss_topstories"
+      "title": "The AI trade is remaking the global stock-market order",
+      "url": "https://www.marketwatch.com/story/the-ai-trade-is-remaking-the-global-stock-market-order-a639ecc4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 17:44:00",
+      "published": "Mon, 01 Jun 2026 20:51:00",
       "source": "MarketWatch",
-      "title": "Anthropic just set the stage for a blockbuster IPO \u2014\u00a0beating OpenAI to the punch",
-      "url": "https://www.marketwatch.com/story/anthropic-just-set-the-stage-for-a-blockbuster-ipo-beating-openai-to-the-punch-4cde9d9f?mod=mw_rss_topstories"
+      "title": "The federal government plans to make it harder for you to sue your employer over alternative 401(k) investment options",
+      "url": "https://www.marketwatch.com/story/the-federal-government-plans-to-make-it-harder-for-you-to-sue-your-employer-over-alternative-401-k-investment-options-8b53b0e6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,35 +398,35 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.69
-    },
-    {
-      "tenor": "6M",
       "yield": 3.78
     },
     {
-      "tenor": "1Y",
+      "tenor": "6M",
       "yield": 3.79
     },
     {
+      "tenor": "1Y",
+      "yield": 3.83
+    },
+    {
       "tenor": "2Y",
-      "yield": 3.98
+      "yield": 4.05
     },
     {
       "tenor": "5Y",
-      "yield": 4.13
+      "yield": 4.18
     },
     {
       "tenor": "7Y",
-      "yield": 4.27
+      "yield": 4.32
     },
     {
       "tenor": "10Y",
-      "yield": 4.45
+      "yield": 4.47
     },
     {
       "tenor": "20Y",
-      "yield": 4.98
+      "yield": 4.99
     },
     {
       "tenor": "30Y",
