@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 9.67,
-      "change_pct": 1.47,
+      "change": 11.4,
+      "change_pct": 1.74,
       "unit": "$/lb",
-      "value": 665.65
+      "value": 667.38
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 0.82,
-      "change_pct": 0.02,
+      "change": 6.5,
+      "change_pct": 0.14,
       "unit": "$/oz",
-      "value": 4514.57
+      "value": 4520.25
     },
     "natural_gas": {
       "change": -0.03,
-      "change_pct": -1.0,
+      "change_pct": -0.91,
       "unit": "$/MMBtu",
-      "value": 3.162
+      "value": 3.165
     },
     "silver": {
-      "change": 22.0,
-      "change_pct": 0.29,
+      "change": 31.8,
+      "change_pct": 0.42,
       "unit": "$/oz",
-      "value": 7539.5
+      "value": 7549.3
     },
     "wti_oil": {
-      "change": 1.12,
-      "change_pct": 1.21,
+      "change": 0.98,
+      "change_pct": 1.06,
       "unit": "$/bbl",
-      "value": 93.62
+      "value": 93.48
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.283
     }
   },
-  "generated_at": "2026-06-02T17:46:50+00:00",
+  "generated_at": "2026-06-02T20:31:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 341.6,
-      "change_pct": 0.67,
-      "value": 51233.3
+      "change": 416.1,
+      "change_pct": 0.82,
+      "value": 51307.8
     },
     "nasdaq": {
-      "change": 77.67,
-      "change_pct": 0.29,
-      "value": 27091.107
+      "change": 80.46,
+      "change_pct": 0.3,
+      "value": 27093.9
     },
     "sp500": {
-      "change": 12.5,
-      "change_pct": 0.16,
-      "value": 7607.9
+      "change": 14.4,
+      "change_pct": 0.19,
+      "value": 7609.8
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html"
     },
     {
-      "published": "Tue, 02 Jun 2026 17:35:00",
+      "published": "Tue, 02 Jun 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "Americans are using buy-now-pay-later for gas and groceries, showing just how expensive daily necessities are now",
-      "url": "https://www.marketwatch.com/story/americans-are-using-buy-now-pay-later-for-gas-and-groceries-showing-just-how-expensive-daily-necessities-are-now-25a041b3?mod=mw_rss_topstories"
+      "title": "My sister, mother and I are giving my son $20,000 toward a down payment. Do we report it to the IRS?",
+      "url": "https://www.marketwatch.com/story/my-sister-mother-and-i-are-giving-my-son-20-000-toward-a-down-payment-do-we-report-it-to-the-irs-a20f2408?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 17:34:00",
+      "published": "Tue, 02 Jun 2026 19:44:00",
       "source": "MarketWatch",
-      "title": "Many Americans now need $20,000 in an emergency savings fund. Yes, really.",
-      "url": "https://www.marketwatch.com/story/many-americans-now-need-20-000-in-an-emergency-savings-fund-yes-really-d71dbf76?mod=mw_rss_topstories"
+      "title": "Beyond the \u2018brazen theft\u2019 of news: The entire $12 trillion creative economy may now be at risk from AI",
+      "url": "https://www.marketwatch.com/story/beyond-the-brazen-theft-of-news-the-entire-12-trillion-creative-economy-may-now-be-at-risk-from-ai-7c993830?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 17:33:00",
+      "published": "Tue, 02 Jun 2026 19:38:00",
       "source": "MarketWatch",
-      "title": "One way to get hired right now: Be willing to go to the office five days a week",
-      "url": "https://www.marketwatch.com/story/one-way-to-get-hired-right-now-be-willing-to-go-to-the-office-five-days-a-week-715be041?mod=mw_rss_topstories"
+      "title": "My late husband had a higher Social Security benefit. We both claimed at 62. Can I get more on his record?",
+      "url": "https://www.marketwatch.com/story/my-late-husband-had-a-higher-social-security-benefit-we-both-claimed-at-62-can-i-get-more-on-his-record-3a68aaca?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 17:00:00",
+      "published": "Tue, 02 Jun 2026 19:34:00",
       "source": "MarketWatch",
-      "title": "The S&P 500 has only risen this quickly 4 times since WWII. Once, a historic stock-market crash followed.",
-      "url": "https://www.marketwatch.com/story/the-s-p-500-has-only-risen-this-quickly-4-times-since-wwii-once-a-historic-stock-market-crash-followed-ed41ab2d?mod=mw_rss_topstories"
+      "title": "Victoria\u2019s Secret\u2019s stock is on track for its best day ever. It came down to better bras.",
+      "url": "https://www.marketwatch.com/story/victorias-secrets-stock-is-on-track-for-its-best-day-ever-it-came-down-to-better-bras-fb82f017?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 16:50:00",
+      "published": "Tue, 02 Jun 2026 19:17:00",
       "source": "MarketWatch",
-      "title": "The Iran war is jacking up fertilizer prices and forcing farmers to make tough calls. \u2018If I guess wrong, I lose the farm.\u2019",
-      "url": "https://www.marketwatch.com/story/the-iran-war-is-jacking-up-fertilizer-prices-and-forcing-farmers-to-make-tough-calls-if-i-guess-wrong-i-lose-the-farm-dc30c979?mod=mw_rss_topstories"
+      "title": "Trump signs a scaled-back executive order on AI. Critics say it\u2019s almost meaningless.",
+      "url": "https://www.marketwatch.com/story/trump-signs-an-executive-order-on-ai-after-its-scaled-back-critics-says-its-almost-meaningless-ec1c25b9?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,15 +398,15 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.78
+      "yield": 3.77
     },
     {
       "tenor": "6M",
-      "yield": 3.79
+      "yield": 3.78
     },
     {
       "tenor": "1Y",
-      "yield": 3.83
+      "yield": 3.82
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.18
+      "yield": 4.17
     },
     {
       "tenor": "7Y",
-      "yield": 4.32
+      "yield": 4.31
     },
     {
       "tenor": "10Y",
-      "yield": 4.47
+      "yield": 4.46
     },
     {
       "tenor": "20Y",
-      "yield": 4.99
+      "yield": 4.97
     },
     {
       "tenor": "30Y",
-      "yield": 4.99
+      "yield": 4.97
     }
   ],
   "warnings": []
