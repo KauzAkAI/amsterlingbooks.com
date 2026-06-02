@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 0.7,
-      "change_pct": 0.11,
+      "change": 9.67,
+      "change_pct": 1.47,
       "unit": "$/lb",
-      "value": 656.68
+      "value": 665.65
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -0.66,
-      "change_pct": -0.01,
+      "change": 0.82,
+      "change_pct": 0.02,
       "unit": "$/oz",
-      "value": 4513.09
+      "value": 4514.57
     },
     "natural_gas": {
-      "change": -0.01,
-      "change_pct": -0.31,
+      "change": -0.03,
+      "change_pct": -1.0,
       "unit": "$/MMBtu",
-      "value": 3.184
+      "value": 3.162
     },
     "silver": {
-      "change": 13.5,
-      "change_pct": 0.18,
+      "change": 22.0,
+      "change_pct": 0.29,
       "unit": "$/oz",
-      "value": 7531.0
+      "value": 7539.5
     },
     "wti_oil": {
-      "change": -0.33,
-      "change_pct": -0.36,
+      "change": 1.12,
+      "change_pct": 1.21,
       "unit": "$/bbl",
-      "value": 92.17
+      "value": 93.62
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.383
+      "rate": 1.3837
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7651
+      "rate": 6.7626
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85866
+      "rate": 0.85844
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74268
+      "rate": 0.74225
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.99
+      "rate": 95.27
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.49
+      "rate": 159.75
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1508.64
+      "rate": 1517.15
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.327
+      "rate": 17.283
     }
   },
-  "generated_at": "2026-06-01T23:39:17+00:00",
+  "generated_at": "2026-06-02T17:46:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.51
       },
       {
-        "date": "2026-05-22",
-        "rate": 6.65
-      },
-      {
         "date": "2026-05-26",
         "rate": 6.61
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-06-01",
         "rate": 6.6
+      },
+      {
+        "date": "2026-06-02",
+        "rate": 6.57
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": -82.2,
-      "change_pct": -0.16,
-      "value": 51078.9
+      "change": 341.6,
+      "change_pct": 0.67,
+      "value": 51233.3
     },
     "nasdaq": {
-      "change": 134.23,
-      "change_pct": 0.5,
-      "value": 27086.81
+      "change": 77.67,
+      "change_pct": 0.29,
+      "value": 27091.107
     },
     "sp500": {
-      "change": 17.7,
-      "change_pct": 0.23,
-      "value": 7600.0
+      "change": 12.5,
+      "change_pct": 0.16,
+      "value": 7607.9
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 02 Jun 2026 15:38:02",
+      "source": "CNBC",
+      "title": "Job openings in April surged to 7.6 million, the highest in nearly two years",
+      "url": "https://www.cnbc.com/2026/06/02/job-openings-april-2026.html"
+    },
+    {
+      "published": "Tue, 02 Jun 2026 09:47:08",
+      "source": "CNBC",
+      "title": "Inflation hits 3.2% in the euro zone as Iran war pushes energy costs higher",
+      "url": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html"
+    },
+    {
       "published": "Fri, 29 May 2026 19:58:45",
       "source": "CNBC",
       "title": "Iran war cost: Average U.S. household paying $450 more on gas and energy",
@@ -309,52 +321,40 @@
       "url": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html"
     },
     {
-      "published": "Thu, 28 May 2026 06:08:44",
-      "source": "CNBC",
-      "title": "Energy inflation has been more persistent than expected, Fed's Goolsbee tells CNBC",
-      "url": "https://www.cnbc.com/2026/05/28/goolsbee-iran-energy-inflation-asia-stagflation-shock-ai-artificial-intelligence-jobs.html"
-    },
-    {
-      "published": "Thu, 28 May 2026 06:06:02",
-      "source": "CNBC",
-      "title": "Fed\u2019s Kashkari tells CNBC that inflation fight takes priority as labor market is 'in decent shape'",
-      "url": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html"
-    },
-    {
-      "published": "Mon, 01 Jun 2026 23:14:00",
+      "published": "Tue, 02 Jun 2026 17:35:00",
       "source": "MarketWatch",
-      "title": "As Micron\u2019s stock blows past $1,000, Wall Street sees more gains in store",
-      "url": "https://www.marketwatch.com/story/as-microns-stock-blows-past-1-000-wall-street-sees-more-gains-in-store-755a51f9?mod=mw_rss_topstories"
+      "title": "Americans are using buy-now-pay-later for gas and groceries, showing just how expensive daily necessities are now",
+      "url": "https://www.marketwatch.com/story/americans-are-using-buy-now-pay-later-for-gas-and-groceries-showing-just-how-expensive-daily-necessities-are-now-25a041b3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 23:10:00",
+      "published": "Tue, 02 Jun 2026 17:34:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 55, married and want a $1.5 million long-term care policy. Can I expect any nasty surprises?",
-      "url": "https://www.marketwatch.com/story/im-55-married-and-want-a-1-5-million-long-term-care-policy-do-i-get-a-traditional-or-hybrid-f4338fc5?mod=mw_rss_topstories"
+      "title": "Many Americans now need $20,000 in an emergency savings fund. Yes, really.",
+      "url": "https://www.marketwatch.com/story/many-americans-now-need-20-000-in-an-emergency-savings-fund-yes-really-d71dbf76?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 22:40:00",
+      "published": "Tue, 02 Jun 2026 17:33:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s what\u2019s worth streaming in June 2026 on Netflix, Hulu, HBO Max and more",
-      "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-june-2026-on-netflix-hulu-hbo-max-and-more-7c73c539?mod=mw_rss_topstories"
+      "title": "One way to get hired right now: Be willing to go to the office five days a week",
+      "url": "https://www.marketwatch.com/story/one-way-to-get-hired-right-now-be-willing-to-go-to-the-office-five-days-a-week-715be041?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 22:10:00",
+      "published": "Tue, 02 Jun 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "I am 71. Would it be foolish to sell $10,000 in shares to visit my grandchildren in Thailand?",
-      "url": "https://www.marketwatch.com/story/i-am-71-and-comfortable-should-i-sell-10-000-in-stock-to-visit-my-grandkids-in-thailand-or-dip-into-my-50-000-savings-16230c6a?mod=mw_rss_topstories"
+      "title": "The S&P 500 has only risen this quickly 4 times since WWII. Once, a historic stock-market crash followed.",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-has-only-risen-this-quickly-4-times-since-wwii-once-a-historic-stock-market-crash-followed-ed41ab2d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 01 Jun 2026 22:04:00",
+      "published": "Tue, 02 Jun 2026 16:50:00",
       "source": "MarketWatch",
-      "title": "Alphabet asks shareholders to foot an $80 billion bill for AI expansion",
-      "url": "https://www.marketwatch.com/story/alphabet-asks-shareholders-to-foot-an-80-billion-bill-for-ai-expansion-de8492fa?mod=mw_rss_topstories"
+      "title": "The Iran war is jacking up fertilizer prices and forcing farmers to make tough calls. \u2018If I guess wrong, I lose the farm.\u2019",
+      "url": "https://www.marketwatch.com/story/the-iran-war-is-jacking-up-fertilizer-prices-and-forcing-farmers-to-make-tough-calls-if-i-guess-wrong-i-lose-the-farm-dc30c979?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 01 2026",
-      "change": 0.01,
+      "asof_label": "Jun 02 2026",
+      "change": 0.0,
       "rate": 6.1
     },
     "ten_year_treasury": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 01 2026",
-      "change": 0.04,
+      "asof_label": "Jun 02 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
