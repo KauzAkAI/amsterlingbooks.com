@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -19.28,
-      "change_pct": -2.89,
+      "change": 0.37,
+      "change_pct": 0.06,
       "unit": "$/lb",
-      "value": 648.47
+      "value": 648.45
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -57.39,
-      "change_pct": -1.27,
+      "change": 8.42,
+      "change_pct": 0.19,
       "unit": "$/oz",
-      "value": 4462.7
+      "value": 4473.97
     },
     "natural_gas": {
-      "change": 0.09,
-      "change_pct": 2.78,
+      "change": -0.01,
+      "change_pct": -0.22,
       "unit": "$/MMBtu",
-      "value": 3.255
+      "value": 3.239
     },
     "silver": {
-      "change": -249.5,
-      "change_pct": -3.31,
+      "change": 18.5,
+      "change_pct": 0.25,
       "unit": "$/oz",
-      "value": 7296.8
+      "value": 7326.0
     },
     "wti_oil": {
-      "change": 2.37,
-      "change_pct": 2.53,
+      "change": -0.28,
+      "change_pct": -0.29,
       "unit": "$/bbl",
-      "value": 96.2
+      "value": 95.47
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2912
     }
   },
-  "generated_at": "2026-06-03T21:28:41+00:00",
+  "generated_at": "2026-06-03T23:19:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": -351.4,
-      "change_pct": -0.69,
+      "change": -533.8,
+      "change_pct": -1.04,
       "value": 50687.1
     },
     "nasdaq": {
       "change": -238.87,
       "change_pct": -0.88,
-      "value": 26853.977
+      "value": 26853.97
     },
     "sp500": {
-      "change": -47.0,
-      "change_pct": -0.62,
+      "change": -51.6,
+      "change_pct": -0.68,
       "value": 7553.7
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html"
     },
     {
-      "published": "Wed, 03 Jun 2026 21:21:00",
+      "published": "Wed, 03 Jun 2026 23:16:00",
       "source": "MarketWatch",
-      "title": "SpaceX is set to crush global records by targeting a massive IPO haul of up to $86 billion",
-      "url": "https://www.marketwatch.com/story/spacex-is-set-to-crush-global-records-by-targeting-a-massive-ipo-haul-of-up-to-86-billion-bd08f1ba?mod=mw_rss_topstories"
+      "title": "CrowdStrike\u2019s stock falls as investors find more reason to pan cybersecurity earnings",
+      "url": "https://www.marketwatch.com/story/crowdstrikes-stock-falls-as-investors-find-more-reason-to-pan-cybersecurity-earnings-d1b5f619?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 21:07:00",
+      "published": "Wed, 03 Jun 2026 23:08:00",
       "source": "MarketWatch",
-      "title": "I want to give my brother and his kids $5,000 each. My financial adviser is reluctant. Who\u2019s right?",
-      "url": "https://www.marketwatch.com/story/i-want-to-give-my-brother-and-his-kids-5-000-each-my-financial-adviser-is-reluctant-whos-right-47cbb74e?mod=mw_rss_topstories"
+      "title": "Broadcom\u2019s stock falls despite accelerating AI-chip growth",
+      "url": "https://www.marketwatch.com/story/broadcoms-stock-falls-despite-accelerating-ai-chip-growth-7731ee89?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 21:03:00",
+      "published": "Wed, 03 Jun 2026 22:26:00",
       "source": "MarketWatch",
-      "title": "\u2018Squeezing more life out of every dollar\u2019: How inflation is forcing a new reality on American families and amplifying the economy\u2019s \u2018K shape\u2019",
-      "url": "https://www.marketwatch.com/story/squeezing-more-life-out-of-every-dollar-how-inflation-is-forcing-a-new-reality-on-american-families-and-amplifying-the-economys-k-shape-c3ba42de?mod=mw_rss_topstories"
+      "title": "How single-stock turbulence presents \u2018asymmetric\u2019 downside risk for a rather calm S&P 500",
+      "url": "https://www.marketwatch.com/story/how-single-stock-turbulence-presents-asymmetric-downside-risk-for-a-rather-calm-s-p-500-9748b2d8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 20:58:00",
+      "published": "Wed, 03 Jun 2026 22:14:00",
       "source": "MarketWatch",
-      "title": "Stocks take a breather on Wednesday as torrid rally cools \u2014 putting potentially historic S&P 500 winning streak in jeopardy",
-      "url": "https://www.marketwatch.com/story/stocks-take-a-breather-on-wednesday-as-torrid-rally-cools-putting-potentially-historic-s-p-500-winning-streak-in-jeopardy-d0779c2e?mod=mw_rss_topstories"
+      "title": "The Fed can\u2019t protect consumers from supply shocks and price gouging \u2014 but Congress can",
+      "url": "https://www.marketwatch.com/story/the-2-types-of-inflation-the-fed-cant-control-and-how-congress-must-protect-your-wallet-7ac2079a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 20:57:00",
+      "published": "Wed, 03 Jun 2026 22:09:00",
       "source": "MarketWatch",
-      "title": "The 6% solution is gone: How overcrowded AI-powered trading has erased investors\u2019 advantage",
-      "url": "https://www.marketwatch.com/story/the-6-solution-is-gone-how-overcrowded-ai-powered-trading-has-erased-investors-advantage-635882bd?mod=mw_rss_topstories"
+      "title": "I am 71. Would it be foolish to sell $10,000 in stock to visit my grandchildren in Thailand?",
+      "url": "https://www.marketwatch.com/story/i-am-71-and-comfortable-should-i-sell-10-000-in-stock-to-visit-my-grandkids-in-thailand-or-dip-into-my-50-000-savings-16230c6a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
