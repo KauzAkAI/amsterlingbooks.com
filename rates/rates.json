@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -1.3,
-      "change_pct": -0.19,
+      "change": -17.77,
+      "change_pct": -2.66,
       "unit": "$/lb",
-      "value": 666.45
+      "value": 649.98
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -13.83,
-      "change_pct": -0.31,
+      "change": -52.47,
+      "change_pct": -1.16,
       "unit": "$/oz",
-      "value": 4506.26
+      "value": 4467.62
     },
     "natural_gas": {
-      "change": 0.0,
-      "change_pct": 0.09,
+      "change": 0.05,
+      "change_pct": 1.52,
       "unit": "$/MMBtu",
-      "value": 3.17
+      "value": 3.215
     },
     "silver": {
-      "change": -33.8,
-      "change_pct": -0.45,
+      "change": -189.3,
+      "change_pct": -2.51,
       "unit": "$/oz",
-      "value": 7512.5
+      "value": 7357.0
     },
     "wti_oil": {
-      "change": 0.84,
-      "change_pct": 0.9,
+      "change": 2.32,
+      "change_pct": 2.47,
       "unit": "$/bbl",
-      "value": 94.67
+      "value": 96.15
     }
   },
   "forex": {
@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3837
+      "rate": 1.3857
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7626
+      "rate": 6.7694
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85844
+      "rate": 0.86103
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74225
+      "rate": 0.74367
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.27
+      "rate": 95.71
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.75
+      "rate": 159.86
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1517.15
+      "rate": 1530.99
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.283
+      "rate": 17.2912
     }
   },
-  "generated_at": "2026-06-03T00:17:56+00:00",
+  "generated_at": "2026-06-03T18:02:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.51
       },
       {
-        "date": "2026-05-26",
-        "rate": 6.61
-      },
-      {
         "date": "2026-05-27",
         "rate": 6.61
       },
@@ -227,24 +223,28 @@
       {
         "date": "2026-06-02",
         "rate": 6.57
+      },
+      {
+        "date": "2026-06-03",
+        "rate": 6.61
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 395.0,
-      "change_pct": 0.78,
-      "value": 51307.8
+      "change": -147.8,
+      "change_pct": -0.29,
+      "value": 50890.7
     },
     "nasdaq": {
-      "change": 63.83,
-      "change_pct": 0.24,
-      "value": 27093.9
+      "change": -206.41,
+      "change_pct": -0.76,
+      "value": 26886.432
     },
     "sp500": {
-      "change": 14.4,
-      "change_pct": 0.19,
-      "value": 7609.8
+      "change": -29.2,
+      "change_pct": -0.38,
+      "value": 7571.5
     },
     "vix": {
       "change": 1.2,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Wed, 03 Jun 2026 14:28:44",
+      "source": "CNBC",
+      "title": "Private payrolls grew by 122,000 in May, stronger than expected, ADP reports",
+      "url": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html"
+    },
+    {
+      "published": "Wed, 03 Jun 2026 10:05:32",
+      "source": "CNBC",
+      "title": "U.S. proposes fresh tariffs on 60 economies over forced labor trade practices",
+      "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
+    },
+    {
+      "published": "Wed, 03 Jun 2026 14:07:23",
+      "source": "CNBC",
+      "title": "U.S., Iran intensify attacks as ceasefire frays, peace talks stall",
+      "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
+    },
+    {
       "published": "Tue, 02 Jun 2026 15:38:02",
       "source": "CNBC",
       "title": "Job openings in April surged to 7.6 million, the highest in nearly two years",
@@ -303,67 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html"
     },
     {
-      "published": "Fri, 29 May 2026 19:58:45",
-      "source": "CNBC",
-      "title": "Iran war cost: Average U.S. household paying $450 more on gas and energy",
-      "url": "https://www.cnbc.com/2026/05/29/energy-costs-inflation-iran-war-trump.html"
-    },
-    {
-      "published": "Fri, 29 May 2026 12:24:17",
-      "source": "CNBC",
-      "title": "How the \u2018double scar\u2019 of past inflation woes and geopolitical shocks amid the Iran war is hitting consumers",
-      "url": "https://www.cnbc.com/2026/05/29/iran-war-inflation-stagflation-eu-ecb-consumer-prices.html"
-    },
-    {
-      "published": "Thu, 28 May 2026 15:15:19",
-      "source": "CNBC",
-      "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed\u2019s preferred gauge shows",
-      "url": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html"
-    },
-    {
-      "published": "Tue, 02 Jun 2026 23:44:00",
+      "published": "Wed, 03 Jun 2026 18:00:00",
       "source": "MarketWatch",
-      "title": "The 6% solution is gone: How overcrowded AI-powered trading has erased investors\u2019 advantage",
-      "url": "https://www.marketwatch.com/story/the-6-solution-is-gone-how-overcrowded-ai-powered-trading-has-erased-investors-advantage-635882bd?mod=mw_rss_topstories"
+      "title": "I want to give my brother and his kids $5,000 each. My financial adviser is reluctant. Who\u2019s right?",
+      "url": "https://www.marketwatch.com/story/i-want-to-give-my-brother-and-his-kids-5-000-each-my-financial-adviser-is-reluctant-whos-right-47cbb74e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 23:21:00",
+      "published": "Wed, 03 Jun 2026 17:58:00",
       "source": "MarketWatch",
-      "title": "Most robo-advisers will never get the keys to Wall Street\u2019s AI-conjured stock picks",
-      "url": "https://www.marketwatch.com/story/wall-street-keeps-its-ai-stock-picking-secrets-heres-what-robo-advisers-actually-do-93871e31?mod=mw_rss_topstories"
+      "title": "I\u2019m 73 and living 100% off dividends from my stocks. How can I create even more income?",
+      "url": "https://www.marketwatch.com/story/im-73-and-living-100-off-dividends-from-my-stocks-how-can-i-create-even-more-income-74b372f1?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 22:39:00",
+      "published": "Wed, 03 Jun 2026 17:50:00",
       "source": "MarketWatch",
-      "title": "Alphabet\u2019s relentless AI spending is giving new shine to Broadcom\u2019s stock",
-      "url": "https://www.marketwatch.com/story/alphabets-relentless-ai-spending-is-giving-new-shine-to-broadcoms-stock-abfb34b5?mod=mw_rss_topstories"
+      "title": "Here\u2019s advice on how to pick a doctor \u2014 from a doctor.",
+      "url": "https://www.marketwatch.com/story/do-ask-a-friend-dont-pay-attention-to-ads-heres-advice-on-how-to-pick-a-doctor-from-a-doctor-93bbdaf2?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 22:30:00",
+      "published": "Wed, 03 Jun 2026 17:36:00",
       "source": "MarketWatch",
-      "title": "This space stock rises as Blue Origin predicts quick recovery from big explosion",
-      "url": "https://www.marketwatch.com/story/this-space-stock-is-rising-as-blue-origin-predicts-quick-recovery-from-big-explosion-03028f75?mod=mw_rss_topstories"
+      "title": "AT&T\u2019s stock is seeing its worst day in 8 months as the SpaceX threat comes into focus",
+      "url": "https://www.marketwatch.com/story/at-ts-stock-is-seeing-its-worst-day-in-8-months-as-the-spacex-threat-comes-into-focus-fd79acc9?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 02 Jun 2026 22:27:00",
+      "published": "Wed, 03 Jun 2026 17:18:00",
       "source": "MarketWatch",
-      "title": "Victoria\u2019s Secret\u2019s stock just had its best day ever. It came down to better bras.",
-      "url": "https://www.marketwatch.com/story/victorias-secrets-stock-is-on-track-for-its-best-day-ever-it-came-down-to-better-bras-fb82f017?mod=mw_rss_topstories"
+      "title": "Oil prices look to end at highest levels in over a week: \u2018Oil tanks are getting emptier each week Hormuz stays closed\u2019",
+      "url": "https://www.marketwatch.com/story/oil-prices-rally-for-a-third-straight-day-as-peace-deal-hopes-teeter-6a0b1635?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 02 2026",
-      "change": 0.0,
-      "rate": 6.1
+      "asof_label": "Jun 03 2026",
+      "change": 0.03,
+      "rate": 6.13
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 02 2026",
-      "change": -0.03,
+      "asof_label": "Jun 03 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
