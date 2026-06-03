@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -17.77,
-      "change_pct": -2.66,
+      "change": -19.28,
+      "change_pct": -2.89,
       "unit": "$/lb",
-      "value": 649.98
+      "value": 648.47
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -52.47,
-      "change_pct": -1.16,
+      "change": -57.39,
+      "change_pct": -1.27,
       "unit": "$/oz",
-      "value": 4467.62
+      "value": 4462.7
     },
     "natural_gas": {
-      "change": 0.05,
-      "change_pct": 1.52,
+      "change": 0.09,
+      "change_pct": 2.78,
       "unit": "$/MMBtu",
-      "value": 3.215
+      "value": 3.255
     },
     "silver": {
-      "change": -189.3,
-      "change_pct": -2.51,
+      "change": -249.5,
+      "change_pct": -3.31,
       "unit": "$/oz",
-      "value": 7357.0
+      "value": 7296.8
     },
     "wti_oil": {
-      "change": 2.32,
-      "change_pct": 2.47,
+      "change": 2.37,
+      "change_pct": 2.53,
       "unit": "$/bbl",
-      "value": 96.15
+      "value": 96.2
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2912
     }
   },
-  "generated_at": "2026-06-03T18:02:59+00:00",
+  "generated_at": "2026-06-03T21:28:41+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": -147.8,
-      "change_pct": -0.29,
-      "value": 50890.7
+      "change": -351.4,
+      "change_pct": -0.69,
+      "value": 50687.1
     },
     "nasdaq": {
-      "change": -206.41,
-      "change_pct": -0.76,
-      "value": 26886.432
+      "change": -238.87,
+      "change_pct": -0.88,
+      "value": 26853.977
     },
     "sp500": {
-      "change": -29.2,
-      "change_pct": -0.38,
-      "value": 7571.5
+      "change": -47.0,
+      "change_pct": -0.62,
+      "value": 7553.7
     },
     "vix": {
       "change": 1.2,
@@ -303,7 +303,7 @@
       "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
     },
     {
-      "published": "Wed, 03 Jun 2026 14:07:23",
+      "published": "Wed, 03 Jun 2026 21:05:19",
       "source": "CNBC",
       "title": "U.S., Iran intensify attacks as ceasefire frays, peace talks stall",
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html"
     },
     {
-      "published": "Wed, 03 Jun 2026 18:00:00",
+      "published": "Wed, 03 Jun 2026 21:21:00",
+      "source": "MarketWatch",
+      "title": "SpaceX is set to crush global records by targeting a massive IPO haul of up to $86 billion",
+      "url": "https://www.marketwatch.com/story/spacex-is-set-to-crush-global-records-by-targeting-a-massive-ipo-haul-of-up-to-86-billion-bd08f1ba?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 03 Jun 2026 21:07:00",
       "source": "MarketWatch",
       "title": "I want to give my brother and his kids $5,000 each. My financial adviser is reluctant. Who\u2019s right?",
       "url": "https://www.marketwatch.com/story/i-want-to-give-my-brother-and-his-kids-5-000-each-my-financial-adviser-is-reluctant-whos-right-47cbb74e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 17:58:00",
+      "published": "Wed, 03 Jun 2026 21:03:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 73 and living 100% off dividends from my stocks. How can I create even more income?",
-      "url": "https://www.marketwatch.com/story/im-73-and-living-100-off-dividends-from-my-stocks-how-can-i-create-even-more-income-74b372f1?mod=mw_rss_topstories"
+      "title": "\u2018Squeezing more life out of every dollar\u2019: How inflation is forcing a new reality on American families and amplifying the economy\u2019s \u2018K shape\u2019",
+      "url": "https://www.marketwatch.com/story/squeezing-more-life-out-of-every-dollar-how-inflation-is-forcing-a-new-reality-on-american-families-and-amplifying-the-economys-k-shape-c3ba42de?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 17:50:00",
+      "published": "Wed, 03 Jun 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s advice on how to pick a doctor \u2014 from a doctor.",
-      "url": "https://www.marketwatch.com/story/do-ask-a-friend-dont-pay-attention-to-ads-heres-advice-on-how-to-pick-a-doctor-from-a-doctor-93bbdaf2?mod=mw_rss_topstories"
+      "title": "Stocks take a breather on Wednesday as torrid rally cools \u2014 putting potentially historic S&P 500 winning streak in jeopardy",
+      "url": "https://www.marketwatch.com/story/stocks-take-a-breather-on-wednesday-as-torrid-rally-cools-putting-potentially-historic-s-p-500-winning-streak-in-jeopardy-d0779c2e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 03 Jun 2026 17:36:00",
+      "published": "Wed, 03 Jun 2026 20:57:00",
       "source": "MarketWatch",
-      "title": "AT&T\u2019s stock is seeing its worst day in 8 months as the SpaceX threat comes into focus",
-      "url": "https://www.marketwatch.com/story/at-ts-stock-is-seeing-its-worst-day-in-8-months-as-the-spacex-threat-comes-into-focus-fd79acc9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 03 Jun 2026 17:18:00",
-      "source": "MarketWatch",
-      "title": "Oil prices look to end at highest levels in over a week: \u2018Oil tanks are getting emptier each week Hormuz stays closed\u2019",
-      "url": "https://www.marketwatch.com/story/oil-prices-rally-for-a-third-straight-day-as-peace-deal-hopes-teeter-6a0b1635?mod=mw_rss_topstories"
+      "title": "The 6% solution is gone: How overcrowded AI-powered trading has erased investors\u2019 advantage",
+      "url": "https://www.marketwatch.com/story/the-6-solution-is-gone-how-overcrowded-ai-powered-trading-has-erased-investors-advantage-635882bd?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.72
+      "yield": 3.71
     },
     {
       "tenor": "3M",
-      "yield": 3.77
+      "yield": 3.78
     },
     {
       "tenor": "6M",
@@ -406,31 +406,31 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.82
+      "yield": 3.84
     },
     {
       "tenor": "2Y",
-      "yield": 4.05
+      "yield": 4.08
     },
     {
       "tenor": "5Y",
-      "yield": 4.17
+      "yield": 4.21
     },
     {
       "tenor": "7Y",
-      "yield": 4.31
+      "yield": 4.34
     },
     {
       "tenor": "10Y",
-      "yield": 4.46
+      "yield": 4.49
     },
     {
       "tenor": "20Y",
-      "yield": 4.97
+      "yield": 5.0
     },
     {
       "tenor": "30Y",
-      "yield": 4.97
+      "yield": 4.99
     }
   ],
   "warnings": []
