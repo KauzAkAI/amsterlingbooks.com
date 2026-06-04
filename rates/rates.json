@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 6.54,
-      "change_pct": 1.01,
+      "change": 5.1,
+      "change_pct": 0.79,
       "unit": "$/lb",
-      "value": 654.62
+      "value": 653.18
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 35.65,
-      "change_pct": 0.8,
+      "change": 38.07,
+      "change_pct": 0.85,
       "unit": "$/oz",
-      "value": 4501.2
+      "value": 4503.62
     },
     "natural_gas": {
-      "change": 0.09,
-      "change_pct": 2.74,
+      "change": 0.11,
+      "change_pct": 3.3,
       "unit": "$/MMBtu",
-      "value": 3.335
+      "value": 3.353
     },
     "silver": {
-      "change": 99.5,
-      "change_pct": 1.36,
+      "change": 109.0,
+      "change_pct": 1.49,
       "unit": "$/oz",
-      "value": 7407.0
+      "value": 7416.5
     },
     "wti_oil": {
-      "change": -2.45,
-      "change_pct": -2.56,
+      "change": -2.76,
+      "change_pct": -2.88,
       "unit": "$/bbl",
-      "value": 93.3
+      "value": 92.99
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2826
     }
   },
-  "generated_at": "2026-06-04T18:35:50+00:00",
+  "generated_at": "2026-06-04T20:52:35+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,19 +232,19 @@
   },
   "indices": {
     "dow": {
-      "change": 378.5,
-      "change_pct": 0.74,
-      "value": 51573.7
+      "change": 366.7,
+      "change_pct": 0.72,
+      "value": 51561.9
     },
     "nasdaq": {
-      "change": 339.1,
-      "change_pct": 1.28,
-      "value": 26908.486
+      "change": 261.57,
+      "change_pct": 0.98,
+      "value": 26830.957
     },
     "sp500": {
-      "change": 67.0,
-      "change_pct": 0.89,
-      "value": 7593.1
+      "change": 58.2,
+      "change_pct": 0.77,
+      "value": 7584.3
     },
     "vix": {
       "change": 1.2,
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Thu, 04 Jun 2026 18:19:10",
+      "published": "Thu, 04 Jun 2026 19:27:13",
+      "source": "CNBC",
+      "title": "The May jobs report will be released Friday. Here's what to expect",
+      "url": "https://www.cnbc.com/2026/06/04/the-may-jobs-report-will-be-released-friday-heres-what-to-expect.html"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 18:55:32",
       "source": "CNBC",
       "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
       "url": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html"
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Tue, 02 Jun 2026 15:38:02",
-      "source": "CNBC",
-      "title": "Job openings in April surged to 7.6 million, the highest in nearly two years",
-      "url": "https://www.cnbc.com/2026/06/02/job-openings-april-2026.html"
+      "published": "Thu, 04 Jun 2026 20:34:00",
+      "source": "MarketWatch",
+      "title": "Why Broadcom\u2019s stock is falling so hard after earnings",
+      "url": "https://www.marketwatch.com/story/why-broadcoms-stock-is-falling-so-hard-after-earnings-88c6db5e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 18:30:00",
+      "published": "Thu, 04 Jun 2026 20:31:00",
       "source": "MarketWatch",
-      "title": "I own a house with my sister, but the mortgage is in her name. Could this come back to bite me?",
-      "url": "https://www.marketwatch.com/story/my-older-sister-and-i-co-own-a-home-where-my-son-lives-what-happens-if-she-dies-2913b928?mod=mw_rss_topstories"
+      "title": "Are you financially fulfilled? If not, your retirement plans are in danger.",
+      "url": "https://www.marketwatch.com/story/are-you-financially-fulfilled-if-not-your-retirement-plans-are-in-danger-81e3531c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 18:30:00",
+      "published": "Thu, 04 Jun 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "Wasted AI budgets at Nvidia, Uber, Microsoft and others sink \u2018tokenmaxxing\u2019 and trigger hiring",
+      "title": "The IPO of this power generator for data centers quietly outshines Quantinuum",
+      "url": "https://www.marketwatch.com/story/the-ipo-of-this-power-generator-for-data-centers-quietly-outshines-quantinuum-d5d3124c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 20:13:00",
+      "source": "MarketWatch",
+      "title": "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
+      "url": "https://www.marketwatch.com/story/social-security-is-looking-at-a-500-a-month-cut-could-a-new-bipartisan-commission-make-a-difference-5e9d358a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 20:09:00",
+      "source": "MarketWatch",
+      "title": "Wasted AI budgets at Uber, Microsoft and Nvidia trigger hiring \u2014 because human workers are cheaper",
       "url": "https://www.marketwatch.com/story/the-job-market-is-actually-getting-a-boost-from-ai-turns-out-human-workers-are-cheaper-35b03640?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 17:54:00",
-      "source": "MarketWatch",
-      "title": "\u2018This is a tricky subject\u2019: We\u2019re in our 70s and our only child is 40. Do we reveal that we\u2019re leaving her everything?",
-      "url": "https://www.marketwatch.com/story/it-makes-us-feel-uncomfortable-were-in-our-70s-and-our-only-child-is-40-do-we-tell-her-were-leaving-her-everything-28421776?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 17:53:00",
-      "source": "MarketWatch",
-      "title": "Elon Musk\u2019s Social Security audit was an embarrassment. The real fraud is political.",
-      "url": "https://www.marketwatch.com/story/elon-musks-social-security-audit-was-an-embarrassment-the-real-fraud-is-political-c087b4b1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 17:42:00",
-      "source": "MarketWatch",
-      "title": "Quantinuum\u2019s stock pops after IPO as Wall Street buys into the quantum boom",
-      "url": "https://www.marketwatch.com/story/quantinuums-stock-set-to-pop-after-ipo-as-wall-street-buys-into-the-quantum-boom-8f2e83b9?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -406,31 +406,31 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.84
+      "yield": 3.82
     },
     {
       "tenor": "2Y",
-      "yield": 4.08
+      "yield": 4.05
     },
     {
       "tenor": "5Y",
-      "yield": 4.21
+      "yield": 4.18
     },
     {
       "tenor": "7Y",
-      "yield": 4.34
+      "yield": 4.32
     },
     {
       "tenor": "10Y",
-      "yield": 4.49
+      "yield": 4.47
     },
     {
       "tenor": "20Y",
-      "yield": 5.0
+      "yield": 4.98
     },
     {
       "tenor": "30Y",
-      "yield": 4.99
+      "yield": 4.97
     }
   ],
   "warnings": []
