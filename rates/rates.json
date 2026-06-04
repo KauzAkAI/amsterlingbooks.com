@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 1.63,
-      "change_pct": 0.25,
+      "change": -0.23,
+      "change_pct": -0.04,
       "unit": "$/lb",
-      "value": 653.63
+      "value": 651.77
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 4.14,
-      "change_pct": 0.09,
+      "change": -10.76,
+      "change_pct": -0.24,
       "unit": "$/oz",
-      "value": 4504.9
+      "value": 4490.0
     },
     "natural_gas": {
-      "change": 0.0,
-      "change_pct": 0.09,
+      "change": 0.01,
+      "change_pct": 0.24,
       "unit": "$/MMBtu",
-      "value": 3.355
+      "value": 3.36
     },
     "silver": {
-      "change": 3.7,
-      "change_pct": 0.05,
+      "change": -9.8,
+      "change_pct": -0.13,
       "unit": "$/oz",
-      "value": 7421.0
+      "value": 7407.5
     },
     "wti_oil": {
-      "change": -0.06,
-      "change_pct": -0.06,
+      "change": 0.09,
+      "change_pct": 0.1,
       "unit": "$/bbl",
-      "value": 92.78
+      "value": 92.93
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2826
     }
   },
-  "generated_at": "2026-06-04T22:21:20+00:00",
+  "generated_at": "2026-06-04T23:44:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Thu, 04 Jun 2026 21:49:00",
+      "published": "Thu, 04 Jun 2026 22:56:00",
       "source": "MarketWatch",
-      "title": "\u2018This is a tricky subject\u2019: We\u2019re in our 70s and our only child is 40. Do we reveal that we\u2019re leaving her everything?",
-      "url": "https://www.marketwatch.com/story/it-makes-us-feel-uncomfortable-were-in-our-70s-and-our-only-child-is-40-do-we-tell-her-were-leaving-her-everything-28421776?mod=mw_rss_topstories"
+      "title": "This investing strategy digs deeper to find hidden stocks riding the AI wave",
+      "url": "https://www.marketwatch.com/story/this-investing-strategy-digs-deeper-to-find-hidden-stocks-riding-the-ai-wave-2cfcccd9?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 21:28:00",
+      "published": "Thu, 04 Jun 2026 22:51:00",
       "source": "MarketWatch",
-      "title": "You\u2019re going to pay tax on RMDs \u2014 there\u2019s no way around it. Or is there?",
-      "url": "https://www.marketwatch.com/story/youre-going-to-pay-tax-on-rmds-theres-no-way-around-it-or-is-there-26e864cf?mod=mw_rss_topstories"
+      "title": "I\u2019m 55, married and want a $1.5 million long-term care policy. Do I get a traditional or hybrid?",
+      "url": "https://www.marketwatch.com/story/im-55-married-and-want-a-1-5-million-long-term-care-policy-do-i-get-a-traditional-or-hybrid-f4338fc5?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 21:13:00",
+      "published": "Thu, 04 Jun 2026 22:50:00",
       "source": "MarketWatch",
-      "title": "Quantinuum\u2019s buzzy IPO ends with a whimper as stock gives back early gains",
-      "url": "https://www.marketwatch.com/story/quantinuums-stock-set-to-pop-after-ipo-as-wall-street-buys-into-the-quantum-boom-8f2e83b9?mod=mw_rss_topstories"
+      "title": "Marvell looks poised to finally get a spot in the S&P 500 after explosive stock surge",
+      "url": "https://www.marketwatch.com/story/marvell-looks-poised-to-finally-get-a-spot-in-the-s-p-500-after-explosive-stock-surge-02d952c6?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 21:06:00",
+      "published": "Thu, 04 Jun 2026 22:40:00",
       "source": "MarketWatch",
-      "title": "Why Broadcom\u2019s stock is falling so hard after earnings",
-      "url": "https://www.marketwatch.com/story/why-broadcoms-stock-is-falling-so-hard-after-earnings-88c6db5e?mod=mw_rss_topstories"
+      "title": "South Korea is the ultimate backdoor tech play \u2014 but stock investors now face a looming threat",
+      "url": "https://www.marketwatch.com/story/south-korea-is-the-ultimate-backdoor-tech-play-but-stock-investors-now-face-a-looming-threat-25065699?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 21:05:00",
+      "published": "Thu, 04 Jun 2026 22:30:00",
       "source": "MarketWatch",
-      "title": "A war-weary Treasury market faces a fresh test with Friday\u2019s jobs report",
-      "url": "https://www.marketwatch.com/story/a-war-weary-treasury-market-faces-a-fresh-test-with-fridays-jobs-report-73789d8a?mod=mw_rss_topstories"
+      "title": "I own a house with my sister, but the mortgage is in her name. Could this come back to bite me?",
+      "url": "https://www.marketwatch.com/story/my-older-sister-and-i-co-own-a-home-where-my-son-lives-what-happens-if-she-dies-2913b928?mod=mw_rss_topstories"
     }
   ],
   "rates": {
