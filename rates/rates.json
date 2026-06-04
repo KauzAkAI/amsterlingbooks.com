@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": 5.5,
-      "change_pct": 0.85,
+      "change": 6.54,
+      "change_pct": 1.01,
       "unit": "$/lb",
-      "value": 653.58
+      "value": 654.62
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": 46.54,
-      "change_pct": 1.04,
+      "change": 35.65,
+      "change_pct": 0.8,
       "unit": "$/oz",
-      "value": 4512.09
+      "value": 4501.2
     },
     "natural_gas": {
       "change": 0.09,
-      "change_pct": 2.83,
+      "change_pct": 2.74,
       "unit": "$/MMBtu",
-      "value": 3.338
+      "value": 3.335
     },
     "silver": {
-      "change": 110.5,
-      "change_pct": 1.51,
+      "change": 99.5,
+      "change_pct": 1.36,
       "unit": "$/oz",
-      "value": 7418.0
+      "value": 7407.0
     },
     "wti_oil": {
-      "change": -2.78,
-      "change_pct": -2.9,
+      "change": -2.45,
+      "change_pct": -2.56,
       "unit": "$/bbl",
-      "value": 92.97
+      "value": 93.3
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2826
     }
   },
-  "generated_at": "2026-06-04T16:25:42+00:00",
+  "generated_at": "2026-06-04T18:35:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-05-27",
-        "rate": 6.61
-      },
-      {
-        "date": "2026-05-27",
         "rate": 6.65
       },
       {
@@ -226,25 +222,29 @@
       },
       {
         "date": "2026-06-04",
+        "rate": 6.58
+      },
+      {
+        "date": "2026-06-04",
         "rate": 6.48
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": 426.0,
-      "change_pct": 0.83,
-      "value": 51621.2
+      "change": 378.5,
+      "change_pct": 0.74,
+      "value": 51573.7
     },
     "nasdaq": {
-      "change": 245.49,
-      "change_pct": 0.92,
-      "value": 26814.873
+      "change": 339.1,
+      "change_pct": 1.28,
+      "value": 26908.486
     },
     "sp500": {
-      "change": 54.6,
-      "change_pct": 0.73,
-      "value": 7580.7
+      "change": 67.0,
+      "change_pct": 0.89,
+      "value": 7593.1
     },
     "vix": {
       "change": 1.2,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Thu, 04 Jun 2026 16:13:18",
+      "published": "Thu, 04 Jun 2026 18:19:10",
       "source": "CNBC",
       "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
       "url": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html"
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/02/job-openings-april-2026.html"
     },
     {
-      "published": "Thu, 04 Jun 2026 16:17:00",
+      "published": "Thu, 04 Jun 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Elon Musk\u2019s SpaceX paid to secure its ticker symbol ahead of blockbuster IPO",
-      "url": "https://www.marketwatch.com/story/elon-musks-spacex-paid-to-secure-its-ticker-symbol-ahead-of-blockbuster-ipo-61a57e6b?mod=mw_rss_topstories"
+      "title": "I own a house with my sister, but the mortgage is in her name. Could this come back to bite me?",
+      "url": "https://www.marketwatch.com/story/my-older-sister-and-i-co-own-a-home-where-my-son-lives-what-happens-if-she-dies-2913b928?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 16:11:00",
+      "published": "Thu, 04 Jun 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Quantinuum\u2019s stock set to pop after IPO as Wall Street buys into the quantum boom",
+      "title": "Wasted AI budgets at Nvidia, Uber, Microsoft and others sink \u2018tokenmaxxing\u2019 and trigger hiring",
+      "url": "https://www.marketwatch.com/story/the-job-market-is-actually-getting-a-boost-from-ai-turns-out-human-workers-are-cheaper-35b03640?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 17:54:00",
+      "source": "MarketWatch",
+      "title": "\u2018This is a tricky subject\u2019: We\u2019re in our 70s and our only child is 40. Do we reveal that we\u2019re leaving her everything?",
+      "url": "https://www.marketwatch.com/story/it-makes-us-feel-uncomfortable-were-in-our-70s-and-our-only-child-is-40-do-we-tell-her-were-leaving-her-everything-28421776?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 17:53:00",
+      "source": "MarketWatch",
+      "title": "Elon Musk\u2019s Social Security audit was an embarrassment. The real fraud is political.",
+      "url": "https://www.marketwatch.com/story/elon-musks-social-security-audit-was-an-embarrassment-the-real-fraud-is-political-c087b4b1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 04 Jun 2026 17:42:00",
+      "source": "MarketWatch",
+      "title": "Quantinuum\u2019s stock pops after IPO as Wall Street buys into the quantum boom",
       "url": "https://www.marketwatch.com/story/quantinuums-stock-set-to-pop-after-ipo-as-wall-street-buys-into-the-quantum-boom-8f2e83b9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 15:42:00",
-      "source": "MarketWatch",
-      "title": "The Fed can\u2019t protect consumers from supply shocks and price gouging \u2014 but Congress can",
-      "url": "https://www.marketwatch.com/story/the-2-types-of-inflation-the-fed-cant-control-and-how-congress-must-protect-your-wallet-7ac2079a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 15:37:00",
-      "source": "MarketWatch",
-      "title": "Gas prices could go even higher this summer due to this quiet shift at U.S. refineries",
-      "url": "https://www.marketwatch.com/story/think-gas-prices-are-high-now-this-quiet-shift-at-u-s-refineries-could-trigger-an-even-more-painful-summer-9f788044?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 04 Jun 2026 15:18:00",
-      "source": "MarketWatch",
-      "title": "You\u2019re going to pay tax on RMDs \u2014 there\u2019s no way around it. Or is there?",
-      "url": "https://www.marketwatch.com/story/youre-going-to-pay-tax-on-rmds-theres-no-way-around-it-or-is-there-26e864cf?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 03 2026",
-      "change": 0.03,
-      "rate": 6.13
+      "asof_label": "Jun 04 2026",
+      "change": -0.02,
+      "rate": 6.11
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 03 2026",
-      "change": 0.04,
+      "asof_label": "Jun 04 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
