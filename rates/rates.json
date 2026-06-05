@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -0.23,
-      "change_pct": -0.04,
+      "change": -24.12,
+      "change_pct": -3.7,
       "unit": "$/lb",
-      "value": 651.77
+      "value": 627.88
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -61,16 +61,16 @@
       "value": 4.42
     },
     "gold": {
-      "change": -10.76,
-      "change_pct": -0.24,
+      "change": -144.86,
+      "change_pct": -3.22,
       "unit": "$/oz",
-      "value": 4490.0
+      "value": 4355.9
     },
     "natural_gas": {
-      "change": 0.01,
-      "change_pct": 0.24,
+      "change": -0.12,
+      "change_pct": -3.46,
       "unit": "$/MMBtu",
-      "value": 3.36
+      "value": 3.236
     },
     "silver": {
       "change": -9.8,
@@ -79,10 +79,10 @@
       "value": 7407.5
     },
     "wti_oil": {
-      "change": 0.09,
-      "change_pct": 0.1,
+      "change": -2.03,
+      "change_pct": -2.19,
       "unit": "$/bbl",
-      "value": 92.93
+      "value": 90.81
     }
   },
   "forex": {
@@ -90,13 +90,13 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3897
+      "rate": 1.3882
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7739
+      "rate": 6.7656
     },
     "EUR": {
       "change_pct": 0,
@@ -108,34 +108,34 @@
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74304
+      "rate": 0.74255
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.78
+      "rate": 94.95
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.8
+      "rate": 159.86
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1532.52
+      "rate": 1540.93
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2826
+      "rate": 17.2706
     }
   },
-  "generated_at": "2026-06-04T23:44:38+00:00",
+  "generated_at": "2026-06-05T16:06:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,9 +232,9 @@
   },
   "indices": {
     "dow": {
-      "change": 575.8,
-      "change_pct": 1.13,
-      "value": 51561.9
+      "change": -365.0,
+      "change_pct": -0.71,
+      "value": 51231.7
     },
     "nasdaq": {
       "change": 251.66,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Thu, 04 Jun 2026 22:56:00",
+      "published": "Fri, 05 Jun 2026 15:49:00",
       "source": "MarketWatch",
-      "title": "This investing strategy digs deeper to find hidden stocks riding the AI wave",
-      "url": "https://www.marketwatch.com/story/this-investing-strategy-digs-deeper-to-find-hidden-stocks-riding-the-ai-wave-2cfcccd9?mod=mw_rss_topstories"
+      "title": "Here\u2019s what wild single-stock price swings may signal for your index fund",
+      "url": "https://www.marketwatch.com/story/heres-what-wild-single-stock-price-swings-may-signal-for-your-index-fund-9f401623?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 22:51:00",
+      "published": "Fri, 05 Jun 2026 14:42:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 55, married and want a $1.5 million long-term care policy. Do I get a traditional or hybrid?",
-      "url": "https://www.marketwatch.com/story/im-55-married-and-want-a-1-5-million-long-term-care-policy-do-i-get-a-traditional-or-hybrid-f4338fc5?mod=mw_rss_topstories"
+      "title": "\u2018DOGE\u2019 wanted to declare 2.7 million people \u2018dead\u2019 at Social Security: whistleblower",
+      "url": "https://www.marketwatch.com/story/doge-wanted-to-declare-2-7-million-people-dead-at-social-security-whistleblower-e195065b?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 22:50:00",
+      "published": "Fri, 05 Jun 2026 14:12:00",
       "source": "MarketWatch",
-      "title": "Marvell looks poised to finally get a spot in the S&P 500 after explosive stock surge",
-      "url": "https://www.marketwatch.com/story/marvell-looks-poised-to-finally-get-a-spot-in-the-s-p-500-after-explosive-stock-surge-02d952c6?mod=mw_rss_topstories"
+      "title": "California\u2019s proposed \u2018billionaire tax\u2019 is a terrible idea. We should do this instead.",
+      "url": "https://www.marketwatch.com/story/californias-proposed-billionaire-tax-is-moronic-we-should-do-this-instead-de61bca8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 22:40:00",
+      "published": "Fri, 05 Jun 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "South Korea is the ultimate backdoor tech play \u2014 but stock investors now face a looming threat",
-      "url": "https://www.marketwatch.com/story/south-korea-is-the-ultimate-backdoor-tech-play-but-stock-investors-now-face-a-looming-threat-25065699?mod=mw_rss_topstories"
+      "title": "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
+      "url": "https://www.marketwatch.com/story/social-security-is-looking-at-a-500-a-month-cut-could-a-new-bipartisan-commission-make-a-difference-5e9d358a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 04 Jun 2026 22:30:00",
+      "published": "Fri, 05 Jun 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "I own a house with my sister, but the mortgage is in her name. Could this come back to bite me?",
-      "url": "https://www.marketwatch.com/story/my-older-sister-and-i-co-own-a-home-where-my-son-lives-what-happens-if-she-dies-2913b928?mod=mw_rss_topstories"
+      "title": "We thought we found the perfect luxury retirement community, but it\u2019s millions of dollars in debt. Are we trapped?",
+      "url": "https://www.marketwatch.com/story/we-thought-we-found-the-perfect-luxury-retirement-community-but-its-millions-of-dollars-in-debt-are-we-trapped-cde2e8f5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
