@@ -61,16 +61,16 @@
       "value": 4.42
     },
     "gold": {
-      "change": -162.94,
-      "change_pct": -3.62,
+      "change": -146.86,
+      "change_pct": -3.26,
       "unit": "$/oz",
-      "value": 4337.82
+      "value": 4353.9
     },
     "natural_gas": {
-      "change": -0.14,
-      "change_pct": -4.18,
+      "change": -0.12,
+      "change_pct": -3.67,
       "unit": "$/MMBtu",
-      "value": 3.212
+      "value": 3.229
     },
     "silver": {
       "change": -643.8,
@@ -79,10 +79,10 @@
       "value": 6773.5
     },
     "wti_oil": {
-      "change": -2.46,
-      "change_pct": -2.65,
+      "change": -2.59,
+      "change_pct": -2.79,
       "unit": "$/bbl",
-      "value": 90.38
+      "value": 90.25
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2706
     }
   },
-  "generated_at": "2026-06-05T20:12:56+00:00",
+  "generated_at": "2026-06-05T21:48:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -242,9 +242,9 @@
       "value": 25709.432
     },
     "sp500": {
-      "change": -88.6,
-      "change_pct": -1.18,
-      "value": 7447.0
+      "change": -151.9,
+      "change_pct": -2.02,
+      "value": 7383.7
     },
     "vix": {
       "change": 1.2,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Fri, 05 Jun 2026 19:59:00",
+      "published": "Fri, 05 Jun 2026 21:30:00",
       "source": "MarketWatch",
-      "title": "For the first time ever, an S&P 500 ETF has over $1 trillion in assets. Here\u2019s why that should worry you.",
-      "url": "https://www.marketwatch.com/story/for-the-first-time-ever-an-s-p-500-etf-has-over-1-trillion-in-assets-heres-why-that-should-worry-you-d3ee21ad?mod=mw_rss_topstories"
+      "title": "\u2018No one wears bling\u2019: What does it say about America if people are afraid to wear their jewelry?",
+      "url": "https://www.marketwatch.com/story/no-one-seems-to-wear-their-bling-is-it-safe-to-show-off-your-expensive-jewelry-a807bc55?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 19:40:00",
+      "published": "Fri, 05 Jun 2026 21:27:00",
       "source": "MarketWatch",
-      "title": "This hot new financial product has Wall Street spooked. What you should know before trying it out.",
-      "url": "https://www.marketwatch.com/story/this-hot-new-financial-product-has-wall-street-spooked-what-you-should-know-before-trying-it-out-d73c6864?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 19:30:00",
-      "source": "MarketWatch",
-      "title": "How this traveler booked a $16,000 first-class Emirates flight for $400 \u2014 and you can, too",
-      "url": "https://www.marketwatch.com/story/this-credit-card-pointsmaxxer-booked-a-16-000-first-class-emirates-flight-for-400-and-you-can-too-46f99294?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 19:30:00",
-      "source": "MarketWatch",
-      "title": "An S&P 500 shake-up is moments away. These stocks could soon earn spots in the index.",
+      "title": "Marvell gets a spot in the S&P 500 \u2014 along with this data-center play",
       "url": "https://www.marketwatch.com/story/an-s-p-500-shakeup-is-hours-away-these-stocks-could-soon-earn-spots-in-the-index-a9b64d67?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 18:41:00",
+      "published": "Fri, 05 Jun 2026 21:15:00",
       "source": "MarketWatch",
-      "title": "Nearly half of workers 55 and older don\u2019t plan on using AI in their jobs. How to make it work for you.",
-      "url": "https://www.marketwatch.com/story/nearly-half-of-workers-55-and-older-dont-plan-on-using-ai-in-their-jobs-how-to-make-it-work-for-you-07638c61?mod=mw_rss_topstories"
+      "title": "First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.",
+      "url": "https://www.marketwatch.com/story/first-google-then-meta-big-tech-may-increasingly-sell-stock-to-bankroll-820-billion-ai-boom-83c69030?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 21:10:00",
+      "source": "MarketWatch",
+      "title": "These stocks fell the most Friday as Big Tech took a dive",
+      "url": "https://www.marketwatch.com/story/these-stocks-fell-the-most-friday-as-big-tech-took-a-dive-bf692616?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 21:03:00",
+      "source": "MarketWatch",
+      "title": "Marvell, Micron shares tumble as the chip sector suffers its worst day in 6 years",
+      "url": "https://www.marketwatch.com/story/marvell-micron-shares-tumble-as-the-chip-sector-suffers-its-worst-day-in-6-years-a7c1701a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
