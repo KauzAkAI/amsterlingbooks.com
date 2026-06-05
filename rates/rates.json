@@ -49,10 +49,10 @@
       "value": 99.1
     },
     "copper": {
-      "change": -24.12,
-      "change_pct": -3.7,
+      "change": -24.0,
+      "change_pct": -3.68,
       "unit": "$/lb",
-      "value": 627.88
+      "value": 628.0
     },
     "gas_unleaded": {
       "change": 0.04,
@@ -135,7 +135,7 @@
       "rate": 17.2706
     }
   },
-  "generated_at": "2026-06-05T21:48:46+00:00",
+  "generated_at": "2026-06-05T22:57:30+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -232,18 +232,18 @@
   },
   "indices": {
     "dow": {
-      "change": -729.9,
-      "change_pct": -1.41,
+      "change": -743.2,
+      "change_pct": -1.44,
       "value": 50866.8
     },
     "nasdaq": {
-      "change": -812.34,
-      "change_pct": -3.06,
-      "value": 25709.432
+      "change": -827.16,
+      "change_pct": -3.12,
+      "value": 25709.43
     },
     "sp500": {
-      "change": -151.9,
-      "change_pct": -2.02,
+      "change": -153.7,
+      "change_pct": -2.04,
       "value": 7383.7
     },
     "vix": {
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
+      "published": "Fri, 05 Jun 2026 22:27:00",
+      "source": "MarketWatch",
+      "title": "S&P 500 sees $1.8 trillion wipeout, Nasdaq tallies biggest point drop on record. Here\u2019s what investors need to know about Friday\u2019s selloff.",
+      "url": "https://www.marketwatch.com/story/s-p-500-sees-1-8-trillion-wipeout-nasdaq-tallies-biggest-point-drop-on-record-heres-what-investors-need-to-know-about-fridays-selloff-4eb7b490?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 22:07:00",
+      "source": "MarketWatch",
+      "title": "\u2018This would be a one-time event\u2019: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
+      "url": "https://www.marketwatch.com/story/this-would-be-a-one-time-event-how-can-i-take-extra-money-from-my-401-k-without-triggering-higher-medicare-premiums-fef1586d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 22:07:00",
+      "source": "MarketWatch",
+      "title": "We thought we found the perfect luxury retirement community, but it\u2019s millions of dollars in debt. Are we trapped?",
+      "url": "https://www.marketwatch.com/story/we-thought-we-found-the-perfect-luxury-retirement-community-but-its-millions-of-dollars-in-debt-are-we-trapped-cde2e8f5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 21:58:00",
+      "source": "MarketWatch",
+      "title": "Bitcoin is suffering from an \u2018attention\u2019 deficit, as momentum traders have moved on",
+      "url": "https://www.marketwatch.com/story/bitcoin-is-suffering-from-an-attention-deficit-as-momentum-traders-have-moved-on-17d2c140?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 05 Jun 2026 21:30:00",
       "source": "MarketWatch",
       "title": "\u2018No one wears bling\u2019: What does it say about America if people are afraid to wear their jewelry?",
       "url": "https://www.marketwatch.com/story/no-one-seems-to-wear-their-bling-is-it-safe-to-show-off-your-expensive-jewelry-a807bc55?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 21:27:00",
-      "source": "MarketWatch",
-      "title": "Marvell gets a spot in the S&P 500 \u2014 along with this data-center play",
-      "url": "https://www.marketwatch.com/story/an-s-p-500-shakeup-is-hours-away-these-stocks-could-soon-earn-spots-in-the-index-a9b64d67?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 21:15:00",
-      "source": "MarketWatch",
-      "title": "First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.",
-      "url": "https://www.marketwatch.com/story/first-google-then-meta-big-tech-may-increasingly-sell-stock-to-bankroll-820-billion-ai-boom-83c69030?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 21:10:00",
-      "source": "MarketWatch",
-      "title": "These stocks fell the most Friday as Big Tech took a dive",
-      "url": "https://www.marketwatch.com/story/these-stocks-fell-the-most-friday-as-big-tech-took-a-dive-bf692616?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 21:03:00",
-      "source": "MarketWatch",
-      "title": "Marvell, Micron shares tumble as the chip sector suffers its worst day in 6 years",
-      "url": "https://www.marketwatch.com/story/marvell-micron-shares-tumble-as-the-chip-sector-suffers-its-worst-day-in-6-years-a7c1701a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
