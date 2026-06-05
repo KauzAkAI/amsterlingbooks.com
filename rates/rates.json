@@ -61,28 +61,28 @@
       "value": 4.42
     },
     "gold": {
-      "change": -144.89,
-      "change_pct": -3.22,
+      "change": -162.94,
+      "change_pct": -3.62,
       "unit": "$/oz",
-      "value": 4355.87
+      "value": 4337.82
     },
     "natural_gas": {
       "change": -0.14,
-      "change_pct": -4.06,
+      "change_pct": -4.18,
       "unit": "$/MMBtu",
-      "value": 3.216
+      "value": 3.212
     },
     "silver": {
-      "change": -9.8,
-      "change_pct": -0.13,
+      "change": -643.8,
+      "change_pct": -8.68,
       "unit": "$/oz",
-      "value": 7407.5
+      "value": 6773.5
     },
     "wti_oil": {
-      "change": -2.66,
-      "change_pct": -2.87,
+      "change": -2.46,
+      "change_pct": -2.65,
       "unit": "$/bbl",
-      "value": 90.18
+      "value": 90.38
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2706
     }
   },
-  "generated_at": "2026-06-05T18:07:09+00:00",
+  "generated_at": "2026-06-05T20:12:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-05-13",
-        "rate": 6.46
-      },
-      {
         "date": "2026-05-20",
         "rate": 6.56
       },
@@ -217,6 +213,10 @@
         "rate": 6.61
       },
       {
+        "date": "2026-06-03",
+        "rate": 6.57
+      },
+      {
         "date": "2026-06-04",
         "rate": 6.58
       },
@@ -232,14 +232,14 @@
   },
   "indices": {
     "dow": {
-      "change": -490.4,
-      "change_pct": -0.95,
-      "value": 51106.3
+      "change": -729.9,
+      "change_pct": -1.41,
+      "value": 50866.8
     },
     "nasdaq": {
-      "change": -512.7,
-      "change_pct": -1.93,
-      "value": 26009.08
+      "change": -812.34,
+      "change_pct": -3.06,
+      "value": 25709.432
     },
     "sp500": {
       "change": -88.6,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Fri, 05 Jun 2026 18:03:00",
+      "published": "Fri, 05 Jun 2026 19:59:00",
       "source": "MarketWatch",
-      "title": "AI may be killing some high-tech jobs, but it\u2019s also creating others. See who\u2019s winning and losing.",
-      "url": "https://www.marketwatch.com/story/ai-may-be-killing-some-high-tech-jobs-but-its-also-creating-others-see-whos-winning-and-losing-9dc839e6?mod=mw_rss_topstories"
+      "title": "For the first time ever, an S&P 500 ETF has over $1 trillion in assets. Here\u2019s why that should worry you.",
+      "url": "https://www.marketwatch.com/story/for-the-first-time-ever-an-s-p-500-etf-has-over-1-trillion-in-assets-heres-why-that-should-worry-you-d3ee21ad?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 17:48:00",
+      "published": "Fri, 05 Jun 2026 19:40:00",
       "source": "MarketWatch",
-      "title": "This credit-card pointsmaxxer booked a $16,000 first-class Emirates flight for $400 \u2014 and you can, too",
+      "title": "This hot new financial product has Wall Street spooked. What you should know before trying it out.",
+      "url": "https://www.marketwatch.com/story/this-hot-new-financial-product-has-wall-street-spooked-what-you-should-know-before-trying-it-out-d73c6864?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 19:30:00",
+      "source": "MarketWatch",
+      "title": "How this traveler booked a $16,000 first-class Emirates flight for $400 \u2014 and you can, too",
       "url": "https://www.marketwatch.com/story/this-credit-card-pointsmaxxer-booked-a-16-000-first-class-emirates-flight-for-400-and-you-can-too-46f99294?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 17:44:00",
+      "published": "Fri, 05 Jun 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "Elon Musk needs the cultish support of everyday investors to pull off the massive SpaceX IPO",
-      "url": "https://www.marketwatch.com/story/elon-musk-needs-the-cultish-support-of-everyday-investors-to-pull-off-the-massive-spacex-ipo-08e7ea49?mod=mw_rss_topstories"
+      "title": "An S&P 500 shake-up is moments away. These stocks could soon earn spots in the index.",
+      "url": "https://www.marketwatch.com/story/an-s-p-500-shakeup-is-hours-away-these-stocks-could-soon-earn-spots-in-the-index-a9b64d67?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 17:26:00",
+      "published": "Fri, 05 Jun 2026 18:41:00",
       "source": "MarketWatch",
-      "title": "\u2018DOGE\u2019 wanted to declare 2.7 million people \u2018dead\u2019 at Social Security: whistleblower",
-      "url": "https://www.marketwatch.com/story/doge-wanted-to-declare-2-7-million-people-dead-at-social-security-whistleblower-e195065b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 17:18:00",
-      "source": "MarketWatch",
-      "title": "A \u2018rudderless\u2019 Lululemon needs to ditch logos and get back to basics, analysts say",
-      "url": "https://www.marketwatch.com/story/a-rudderless-lululemon-needs-to-ditch-logos-and-get-back-to-basics-analysts-say-0e120022?mod=mw_rss_topstories"
+      "title": "Nearly half of workers 55 and older don\u2019t plan on using AI in their jobs. How to make it work for you.",
+      "url": "https://www.marketwatch.com/story/nearly-half-of-workers-55-and-older-dont-plan-on-using-ai-in-their-jobs-how-to-make-it-work-for-you-07638c61?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.78
+      "yield": 3.81
     },
     {
       "tenor": "1Y",
-      "yield": 3.82
+      "yield": 3.88
     },
     {
       "tenor": "2Y",
-      "yield": 4.05
+      "yield": 4.17
     },
     {
       "tenor": "5Y",
-      "yield": 4.18
+      "yield": 4.29
     },
     {
       "tenor": "7Y",
-      "yield": 4.32
+      "yield": 4.41
     },
     {
       "tenor": "10Y",
-      "yield": 4.47
+      "yield": 4.55
     },
     {
       "tenor": "20Y",
-      "yield": 4.98
+      "yield": 5.03
     },
     {
       "tenor": "30Y",
-      "yield": 4.97
+      "yield": 5.01
     }
   ],
   "warnings": []
