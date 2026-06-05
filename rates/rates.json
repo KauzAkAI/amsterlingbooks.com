@@ -61,16 +61,16 @@
       "value": 4.42
     },
     "gold": {
-      "change": -144.86,
+      "change": -144.89,
       "change_pct": -3.22,
       "unit": "$/oz",
-      "value": 4355.9
+      "value": 4355.87
     },
     "natural_gas": {
-      "change": -0.12,
-      "change_pct": -3.46,
+      "change": -0.14,
+      "change_pct": -4.06,
       "unit": "$/MMBtu",
-      "value": 3.236
+      "value": 3.216
     },
     "silver": {
       "change": -9.8,
@@ -79,10 +79,10 @@
       "value": 7407.5
     },
     "wti_oil": {
-      "change": -2.03,
-      "change_pct": -2.19,
+      "change": -2.66,
+      "change_pct": -2.87,
       "unit": "$/bbl",
-      "value": 90.81
+      "value": 90.18
     }
   },
   "forex": {
@@ -135,7 +135,7 @@
       "rate": 17.2706
     }
   },
-  "generated_at": "2026-06-05T16:06:07+00:00",
+  "generated_at": "2026-06-05T18:07:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-05-28",
-        "rate": 6.59
-      },
-      {
-        "date": "2026-05-28",
         "rate": 6.53
       },
       {
@@ -227,24 +223,28 @@
       {
         "date": "2026-06-04",
         "rate": 6.48
+      },
+      {
+        "date": "2026-06-05",
+        "rate": 6.66
       }
     ]
   },
   "indices": {
     "dow": {
-      "change": -365.0,
-      "change_pct": -0.71,
-      "value": 51231.7
+      "change": -490.4,
+      "change_pct": -0.95,
+      "value": 51106.3
     },
     "nasdaq": {
-      "change": 251.66,
-      "change_pct": 0.95,
-      "value": 26830.96
+      "change": -512.7,
+      "change_pct": -1.93,
+      "value": 26009.08
     },
     "sp500": {
-      "change": 67.8,
-      "change_pct": 0.9,
-      "value": 7584.3
+      "change": -88.6,
+      "change_pct": -1.18,
+      "value": 7447.0
     },
     "vix": {
       "change": 1.2,
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
     },
     {
-      "published": "Fri, 05 Jun 2026 15:49:00",
+      "published": "Fri, 05 Jun 2026 18:03:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s what wild single-stock price swings may signal for your index fund",
-      "url": "https://www.marketwatch.com/story/heres-what-wild-single-stock-price-swings-may-signal-for-your-index-fund-9f401623?mod=mw_rss_topstories"
+      "title": "AI may be killing some high-tech jobs, but it\u2019s also creating others. See who\u2019s winning and losing.",
+      "url": "https://www.marketwatch.com/story/ai-may-be-killing-some-high-tech-jobs-but-its-also-creating-others-see-whos-winning-and-losing-9dc839e6?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 14:42:00",
+      "published": "Fri, 05 Jun 2026 17:48:00",
+      "source": "MarketWatch",
+      "title": "This credit-card pointsmaxxer booked a $16,000 first-class Emirates flight for $400 \u2014 and you can, too",
+      "url": "https://www.marketwatch.com/story/this-credit-card-pointsmaxxer-booked-a-16-000-first-class-emirates-flight-for-400-and-you-can-too-46f99294?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 17:44:00",
+      "source": "MarketWatch",
+      "title": "Elon Musk needs the cultish support of everyday investors to pull off the massive SpaceX IPO",
+      "url": "https://www.marketwatch.com/story/elon-musk-needs-the-cultish-support-of-everyday-investors-to-pull-off-the-massive-spacex-ipo-08e7ea49?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 05 Jun 2026 17:26:00",
       "source": "MarketWatch",
       "title": "\u2018DOGE\u2019 wanted to declare 2.7 million people \u2018dead\u2019 at Social Security: whistleblower",
       "url": "https://www.marketwatch.com/story/doge-wanted-to-declare-2-7-million-people-dead-at-social-security-whistleblower-e195065b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 14:12:00",
+      "published": "Fri, 05 Jun 2026 17:18:00",
       "source": "MarketWatch",
-      "title": "California\u2019s proposed \u2018billionaire tax\u2019 is a terrible idea. We should do this instead.",
-      "url": "https://www.marketwatch.com/story/californias-proposed-billionaire-tax-is-moronic-we-should-do-this-instead-de61bca8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 14:00:00",
-      "source": "MarketWatch",
-      "title": "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
-      "url": "https://www.marketwatch.com/story/social-security-is-looking-at-a-500-a-month-cut-could-a-new-bipartisan-commission-make-a-difference-5e9d358a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 14:00:00",
-      "source": "MarketWatch",
-      "title": "We thought we found the perfect luxury retirement community, but it\u2019s millions of dollars in debt. Are we trapped?",
-      "url": "https://www.marketwatch.com/story/we-thought-we-found-the-perfect-luxury-retirement-community-but-its-millions-of-dollars-in-debt-are-we-trapped-cde2e8f5?mod=mw_rss_topstories"
+      "title": "A \u2018rudderless\u2019 Lululemon needs to ditch logos and get back to basics, analysts say",
+      "url": "https://www.marketwatch.com/story/a-rudderless-lululemon-needs-to-ditch-logos-and-get-back-to-basics-analysts-say-0e120022?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 04 2026",
-      "change": -0.02,
-      "rate": 6.11
+      "asof_label": "Jun 05 2026",
+      "change": 0.02,
+      "rate": 6.13
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 04 2026",
-      "change": -0.03,
+      "asof_label": "Jun 05 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
