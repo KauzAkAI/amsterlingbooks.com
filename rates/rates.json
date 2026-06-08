@@ -135,7 +135,7 @@
       "rate": 17.4125
     }
   },
-  "generated_at": "2026-06-08T19:21:25+00:00",
+  "generated_at": "2026-06-08T21:21:23+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
     },
     {
-      "published": "Mon, 08 Jun 2026 18:21:00",
+      "published": "Mon, 08 Jun 2026 21:10:00",
       "source": "MarketWatch",
-      "title": "Your next videogame console could cost $1,000 \u2014 and it has nothing to do with better hardware",
-      "url": "https://www.marketwatch.com/story/your-next-videogame-console-could-cost-1-000-and-it-has-nothing-to-do-with-better-hardware-8cb180dd?mod=mw_rss_topstories"
+      "title": "\u2018I have no experience with investing\u2019: I inherited $2,000. I\u2019m 42 with two children. What should I do with this money?",
+      "url": "https://www.marketwatch.com/story/i-have-no-experience-with-investing-i-inherited-2-000-im-42-with-two-children-what-should-i-do-with-this-money-7b0de230?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 18:06:00",
+      "published": "Mon, 08 Jun 2026 21:01:00",
       "source": "MarketWatch",
-      "title": "\u2018DOGE\u2019 wanted to declare 2.7 million people \u2018dead\u2019 at Social Security: whistleblower",
-      "url": "https://www.marketwatch.com/story/doge-wanted-to-declare-2-7-million-people-dead-at-social-security-whistleblower-e195065b?mod=mw_rss_topstories"
+      "title": "Eli Lilly stock rises after late-stage trial of next-generation weight-loss drug",
+      "url": "https://www.marketwatch.com/story/eli-lilly-stock-jumps-after-late-stage-trial-of-next-generation-weight-loss-drug-edfae9a2?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 18:05:00",
+      "published": "Mon, 08 Jun 2026 20:55:00",
       "source": "MarketWatch",
-      "title": "BofA sees \u2018red flags\u2019 in the U.S. stock market. Here\u2019s what to buy now.",
-      "url": "https://www.marketwatch.com/story/bofa-sees-red-flags-in-the-u-s-stock-market-heres-what-to-buy-now-4d7ba245?mod=mw_rss_topstories"
+      "title": "Micron\u2019s stock bounces back in a big way: \u2018The memory trade is alive and well\u2019",
+      "url": "https://www.marketwatch.com/story/microns-stock-bounces-back-in-a-big-way-the-memory-trade-is-alive-and-well-3466929f?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 17:42:00",
+      "published": "Mon, 08 Jun 2026 20:52:00",
       "source": "MarketWatch",
-      "title": "The great gold myth: Why the precious metal isn\u2019t the war hedge we\u2019re told it is",
-      "url": "https://www.marketwatch.com/story/gold-has-tumbled-during-the-iran-war-exposing-a-massive-myth-about-geopolitical-risk-15bd2c94?mod=mw_rss_topstories"
+      "title": "Inflation could top 4% this week. The bond market wants Fed Chair Warsh to prove he\u2019ll fight it.",
+      "url": "https://www.marketwatch.com/story/inflation-could-top-4-this-week-the-bond-market-wants-fed-chair-warsh-to-prove-hell-fight-it-fbb6b04b?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 17:36:00",
+      "published": "Mon, 08 Jun 2026 20:52:00",
       "source": "MarketWatch",
-      "title": "Think a tax extension buys you more time to pay? The IRS has some bad news for you.",
-      "url": "https://www.marketwatch.com/story/filed-an-extension-for-your-income-taxes-the-irs-is-still-charging-you-fdea68a0?mod=mw_rss_topstories"
+      "title": "Intel\u2019s stock soars as the company\u2019s \u2018blue-chip roster\u2019 of customers looks to be growing",
+      "url": "https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.71
+      "yield": 3.7
     },
     {
       "tenor": "3M",
-      "yield": 3.78
+      "yield": 3.8
     },
     {
       "tenor": "6M",
-      "yield": 3.81
+      "yield": 3.83
     },
     {
       "tenor": "1Y",
-      "yield": 3.88
+      "yield": 3.85
     },
     {
       "tenor": "2Y",
-      "yield": 4.17
+      "yield": 4.15
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 4.41
+      "yield": 4.42
     },
     {
       "tenor": "10Y",
-      "yield": 4.55
+      "yield": 4.56
     },
     {
       "tenor": "20Y",
-      "yield": 5.03
+      "yield": 5.05
     },
     {
       "tenor": "30Y",
-      "yield": 5.01
+      "yield": 5.03
     }
   ],
   "warnings": []
