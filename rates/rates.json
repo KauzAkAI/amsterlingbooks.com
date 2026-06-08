@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3882
+      "rate": 1.3937
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7656
+      "rate": 6.7819
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85911
+      "rate": 0.86655
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74255
+      "rate": 0.74835
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.95
+      "rate": 95.71
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.86
+      "rate": 159.97
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1540.93
+      "rate": 1527.95
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2706
+      "rate": 17.4125
     }
   },
-  "generated_at": "2026-06-05T22:57:30+00:00",
+  "generated_at": "2026-06-08T16:52:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.53
       },
       {
-        "date": "2026-05-29",
-        "rate": 6.56
-      },
-      {
         "date": "2026-06-01",
         "rate": 6.6
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-05",
         "rate": 6.66
+      },
+      {
+        "date": "2026-06-08",
+        "rate": 6.68
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 08 Jun 2026 16:13:12",
+      "source": "CNBC",
+      "title": "Household worries over finances hit highest level since July 2022, New York Fed survey shows",
+      "url": "https://www.cnbc.com/2026/06/08/household-financial-worries-at-highest-level-since-2022-new-york-fed-says.html"
+    },
+    {
       "published": "Thu, 04 Jun 2026 22:12:06",
       "source": "CNBC",
       "title": "The May jobs report will be released Friday. Here's what to expect",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
     },
     {
-      "published": "Wed, 03 Jun 2026 21:05:19",
-      "source": "CNBC",
-      "title": "U.S., Iran intensify attacks as ceasefire frays, peace talks stall",
-      "url": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 22:27:00",
-      "source": "MarketWatch",
-      "title": "S&P 500 sees $1.8 trillion wipeout, Nasdaq tallies biggest point drop on record. Here\u2019s what investors need to know about Friday\u2019s selloff.",
-      "url": "https://www.marketwatch.com/story/s-p-500-sees-1-8-trillion-wipeout-nasdaq-tallies-biggest-point-drop-on-record-heres-what-investors-need-to-know-about-fridays-selloff-4eb7b490?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 22:07:00",
-      "source": "MarketWatch",
-      "title": "\u2018This would be a one-time event\u2019: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
-      "url": "https://www.marketwatch.com/story/this-would-be-a-one-time-event-how-can-i-take-extra-money-from-my-401-k-without-triggering-higher-medicare-premiums-fef1586d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 05 Jun 2026 22:07:00",
+      "published": "Mon, 08 Jun 2026 16:40:00",
       "source": "MarketWatch",
       "title": "We thought we found the perfect luxury retirement community, but it\u2019s millions of dollars in debt. Are we trapped?",
       "url": "https://www.marketwatch.com/story/we-thought-we-found-the-perfect-luxury-retirement-community-but-its-millions-of-dollars-in-debt-are-we-trapped-cde2e8f5?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 21:58:00",
+      "published": "Mon, 08 Jun 2026 16:39:00",
       "source": "MarketWatch",
-      "title": "Bitcoin is suffering from an \u2018attention\u2019 deficit, as momentum traders have moved on",
-      "url": "https://www.marketwatch.com/story/bitcoin-is-suffering-from-an-attention-deficit-as-momentum-traders-have-moved-on-17d2c140?mod=mw_rss_topstories"
+      "title": "Intel\u2019s stock soars as the company\u2019s \u2018blue-chip roster\u2019 of customers looks to be growing",
+      "url": "https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 05 Jun 2026 21:30:00",
+      "published": "Mon, 08 Jun 2026 16:37:00",
       "source": "MarketWatch",
-      "title": "\u2018No one wears bling\u2019: What does it say about America if people are afraid to wear their jewelry?",
-      "url": "https://www.marketwatch.com/story/no-one-seems-to-wear-their-bling-is-it-safe-to-show-off-your-expensive-jewelry-a807bc55?mod=mw_rss_topstories"
+      "title": "Millions of grandparents are spending their retirements raising their grandkids \u2014 and it\u2019s taking a financial toll",
+      "url": "https://www.marketwatch.com/story/millions-of-grandparents-are-spending-their-retirements-raising-their-grandkids-and-its-taking-a-financial-toll-5ddc4102?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 08 Jun 2026 15:54:00",
+      "source": "MarketWatch",
+      "title": "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
+      "url": "https://www.marketwatch.com/story/social-security-is-looking-at-a-500-a-month-cut-could-a-new-bipartisan-commission-make-a-difference-5e9d358a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 08 Jun 2026 15:29:00",
+      "source": "MarketWatch",
+      "title": "Will you be audited by Trump\u2019s IRS? New data says there\u2019s one group that can breathe a lot easier.",
+      "url": "https://www.marketwatch.com/story/will-you-be-audited-by-trumps-irs-new-data-says-theres-one-group-that-can-breathe-a-lot-easier-43b68411?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 05 2026",
-      "change": 0.02,
-      "rate": 6.13
+      "asof_label": "Jun 08 2026",
+      "change": 0.07,
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 05 2026",
-      "change": 0.08,
+      "asof_label": "Jun 08 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
