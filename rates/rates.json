@@ -135,7 +135,7 @@
       "rate": 17.3818
     }
   },
-  "generated_at": "2026-06-09T18:22:24+00:00",
+  "generated_at": "2026-06-09T20:27:24+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 09 Jun 2026 19:49:59",
+      "source": "CNBC",
+      "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect",
+      "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html"
+    },
+    {
       "published": "Mon, 08 Jun 2026 16:13:12",
       "source": "CNBC",
       "title": "Household worries over finances hit highest level since July 2022, New York Fed survey shows",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html"
     },
     {
-      "published": "Thu, 04 Jun 2026 08:29:56",
-      "source": "CNBC",
-      "title": "U.S. proposes fresh tariffs on 60 economies over forced labor trade practices",
-      "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
-    },
-    {
-      "published": "Tue, 09 Jun 2026 17:06:00",
+      "published": "Tue, 09 Jun 2026 20:23:00",
       "source": "MarketWatch",
       "title": "A powerful inflation storm is brewing \u2014 and your portfolio isn\u2019t ready",
       "url": "https://www.marketwatch.com/story/an-inflation-storm-is-brewing-in-the-pacific-ocean-and-your-portfolio-isnt-ready-f200fc60?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 17:03:00",
+      "published": "Tue, 09 Jun 2026 20:21:00",
       "source": "MarketWatch",
-      "title": "Social Security faces insolvency in 2032, when it would pay only 78% of benefits",
-      "url": "https://www.marketwatch.com/story/social-security-faces-insolvency-in-2032-when-it-would-pay-only-78-of-benefits-b0f0df22?mod=mw_rss_topstories"
+      "title": "Adobe needs a new CEO to make bold AI moves, and its choice could be revealed on Thursday",
+      "url": "https://www.marketwatch.com/story/adobe-needs-a-new-ceo-to-make-bold-ai-moves-and-its-choice-could-be-revealed-on-thursday-31269df8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 16:45:00",
-      "source": "MarketWatch",
-      "title": "Oil prices are defying a worst-case energy crisis \u2014 but workarounds won\u2019t last forever",
-      "url": "https://www.marketwatch.com/story/oil-prices-are-defying-a-worst-case-energy-crisis-but-workarounds-wont-last-forever-9081cbdc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 09 Jun 2026 16:41:00",
+      "published": "Tue, 09 Jun 2026 20:16:00",
       "source": "MarketWatch",
       "title": "Your tech portfolio could be on the wrong side of the AI boom",
       "url": "https://www.marketwatch.com/story/your-next-videogame-console-could-cost-1-000-and-it-has-nothing-to-do-with-better-hardware-8cb180dd?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 16:40:00",
+      "published": "Tue, 09 Jun 2026 20:14:00",
       "source": "MarketWatch",
-      "title": "Washington is quietly changing the rules for this vital American industry \u2014 and the timing couldn\u2019t be worse",
-      "url": "https://www.marketwatch.com/story/washington-is-quietly-changing-the-rules-for-americas-railroads-and-the-timing-couldnt-be-worse-5a12538a?mod=mw_rss_topstories"
+      "title": "Fund a grandchild\u2019s retirement tax-free from birth \u2014 if you can trust an 18-year-old with the money",
+      "url": "https://www.marketwatch.com/story/fund-a-grandchilds-retirement-tax-free-from-birth-if-you-can-trust-an-18-year-old-with-the-money-6993ffbd?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 09 Jun 2026 20:07:00",
+      "source": "MarketWatch",
+      "title": "When a World Cup team loses, its country\u2019s stock market also goes down. Here\u2019s the weird reason why.",
+      "url": "https://www.marketwatch.com/story/the-weird-reason-why-a-teams-world-cup-loss-can-trigger-a-sharp-drop-in-stock-prices-ac385f51?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.7
+      "yield": 3.69
     },
     {
       "tenor": "3M",
-      "yield": 3.8
+      "yield": 3.79
     },
     {
       "tenor": "6M",
-      "yield": 3.83
+      "yield": 3.82
     },
     {
       "tenor": "1Y",
-      "yield": 3.85
+      "yield": 3.9
     },
     {
       "tenor": "2Y",
-      "yield": 4.15
+      "yield": 4.13
     },
     {
       "tenor": "5Y",
-      "yield": 4.29
+      "yield": 4.26
     },
     {
       "tenor": "7Y",
-      "yield": 4.42
+      "yield": 4.39
     },
     {
       "tenor": "10Y",
-      "yield": 4.56
+      "yield": 4.53
     },
     {
       "tenor": "20Y",
-      "yield": 5.05
+      "yield": 5.02
     },
     {
       "tenor": "30Y",
-      "yield": 5.03
+      "yield": 5.01
     }
   ],
   "warnings": []
