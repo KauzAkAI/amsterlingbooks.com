@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3937
+      "rate": 1.3921
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7819
+      "rate": 6.7715
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86655
+      "rate": 0.86408
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74835
+      "rate": 0.74605
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.71
+      "rate": 95.35
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.97
+      "rate": 160.16
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1527.95
+      "rate": 1525.48
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4125
+      "rate": 17.3818
     }
   },
-  "generated_at": "2026-06-08T22:55:34+00:00",
+  "generated_at": "2026-06-09T16:09:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.53
       },
       {
-        "date": "2026-06-01",
-        "rate": 6.6
-      },
-      {
         "date": "2026-06-02",
         "rate": 6.57
       },
@@ -226,6 +222,10 @@
       },
       {
         "date": "2026-06-08",
+        "rate": 6.68
+      },
+      {
+        "date": "2026-06-09",
         "rate": 6.68
       }
     ]
@@ -321,40 +321,40 @@
       "url": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html"
     },
     {
-      "published": "Mon, 08 Jun 2026 22:33:00",
+      "published": "Tue, 09 Jun 2026 16:07:00",
       "source": "MarketWatch",
-      "title": "Knicks ticket prices plunge more than 50% ahead of Game 3 at MSG \u2014 but not just because Trump\u2019s going",
-      "url": "https://www.marketwatch.com/story/knicks-ticket-prices-plunge-more-than-50-ahead-of-game-3-at-msg-but-not-just-because-trumps-going-b7944acf?mod=mw_rss_topstories"
+      "title": "Social Security faces insolvency in 2032, when it would pay only 78% of benefits",
+      "url": "https://www.marketwatch.com/story/social-security-faces-insolvency-in-2032-when-it-would-pay-only-78-of-benefits-b0f0df22?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 21:55:00",
+      "published": "Tue, 09 Jun 2026 16:06:00",
       "source": "MarketWatch",
-      "title": "OpenAI files confidentially for IPO \u2014 but there\u2019s a catch",
-      "url": "https://www.marketwatch.com/story/openai-files-confidentially-for-ipo-but-theres-a-catch-3f13fc13?mod=mw_rss_topstories"
+      "title": "You can calculate the exact impact a reduced Social Security check will have on your retirement success",
+      "url": "https://www.marketwatch.com/story/you-can-calculate-the-exact-impact-a-reduced-social-security-check-will-have-on-your-retirement-success-f0f58429?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 21:45:00",
+      "published": "Tue, 09 Jun 2026 15:22:00",
       "source": "MarketWatch",
-      "title": "My golf buddy worked as a financial adviser. Here\u2019s how I knew his friendship was fake.",
-      "url": "https://www.marketwatch.com/story/my-golf-buddy-worked-as-a-financial-adviser-heres-how-i-really-knew-his-friendship-was-fake-9e5695d5?mod=mw_rss_topstories"
+      "title": "This proposed federal budget cut could eliminate job training for 42,000 vulnerable seniors",
+      "url": "https://www.marketwatch.com/story/this-proposed-federal-budget-cut-could-eliminate-job-training-for-42-000-vulnerable-seniors-2520ac73?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 21:44:00",
+      "published": "Tue, 09 Jun 2026 15:04:00",
       "source": "MarketWatch",
-      "title": "Your tech portfolio could be on the wrong side of the AI boom",
-      "url": "https://www.marketwatch.com/story/your-next-videogame-console-could-cost-1-000-and-it-has-nothing-to-do-with-better-hardware-8cb180dd?mod=mw_rss_topstories"
+      "title": "These ETFs surged thanks to early SpaceX stakes. What happens to them after the IPO?",
+      "url": "https://www.marketwatch.com/story/these-etfs-surged-thanks-to-early-spacex-stakes-what-happens-to-them-after-the-ipo-96a2a8f8?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 08 Jun 2026 21:37:00",
+      "published": "Tue, 09 Jun 2026 14:54:00",
       "source": "MarketWatch",
-      "title": "An inflation storm is brewing in the Pacific Ocean \u2014 and your portfolio isn\u2019t ready",
-      "url": "https://www.marketwatch.com/story/an-inflation-storm-is-brewing-in-the-pacific-ocean-and-your-portfolio-isnt-ready-f200fc60?mod=mw_rss_topstories"
+      "title": "This stock-market strategy has cheap exposure to AI and points to an advantage for closed-end funds",
+      "url": "https://www.marketwatch.com/story/this-investing-strategy-has-beaten-the-market-with-exposure-to-cheap-ai-stocks-5e743b12?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 08 2026",
-      "change": 0.07,
+      "asof_label": "Jun 09 2026",
+      "change": 0.0,
       "rate": 6.2
     },
     "ten_year_treasury": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 08 2026",
-      "change": 0.02,
+      "asof_label": "Jun 09 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
