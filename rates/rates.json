@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3921
+      "rate": 1.3929
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7715
+      "rate": 6.7807
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86408
+      "rate": 0.86663
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74605
+      "rate": 0.74727
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.35
+      "rate": 95.27
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.16
+      "rate": 160.49
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1525.48
+      "rate": 1524.5
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3818
+      "rate": 17.479
     }
   },
-  "generated_at": "2026-06-09T23:44:43+00:00",
+  "generated_at": "2026-06-10T16:41:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.53
       },
       {
-        "date": "2026-06-02",
-        "rate": 6.57
-      },
-      {
         "date": "2026-06-03",
         "rate": 6.61
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-09",
         "rate": 6.68
+      },
+      {
+        "date": "2026-06-10",
+        "rate": 6.67
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Wed, 10 Jun 2026 14:30:31",
+      "source": "CNBC",
+      "title": "Consumer prices rose 4.2% annually in May, highest in three years",
+      "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
+    },
+    {
+      "published": "Wed, 10 Jun 2026 08:25:22",
+      "source": "CNBC",
+      "title": "Energy prices take center stage as the ECB prepares to decide on rates",
+      "url": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html"
+    },
+    {
       "published": "Tue, 09 Jun 2026 19:49:59",
       "source": "CNBC",
       "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect",
@@ -309,51 +321,39 @@
       "url": "https://www.cnbc.com/2026/06/04/the-may-jobs-report-will-be-released-friday-heres-what-to-expect.html"
     },
     {
-      "published": "Thu, 04 Jun 2026 18:55:32",
-      "source": "CNBC",
-      "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
-      "url": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html"
-    },
-    {
-      "published": "Wed, 03 Jun 2026 14:28:44",
-      "source": "CNBC",
-      "title": "Private payrolls grew by 122,000 in May, stronger than expected, ADP reports",
-      "url": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html"
-    },
-    {
-      "published": "Tue, 09 Jun 2026 23:17:00",
+      "published": "Wed, 10 Jun 2026 16:32:00",
       "source": "MarketWatch",
-      "title": "This stock-market strategy has cheap exposure to AI and points to an advantage for closed-end funds",
-      "url": "https://www.marketwatch.com/story/this-investing-strategy-has-beaten-the-market-with-exposure-to-cheap-ai-stocks-5e743b12?mod=mw_rss_topstories"
+      "title": "Here are all the red flags in the SpaceX IPO",
+      "url": "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 22:17:00",
+      "published": "Wed, 10 Jun 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
-      "url": "https://www.marketwatch.com/story/super-micro-stock-plunges-as-7-billion-equity-raise-overshadows-booming-backlog-c5df2fc8?mod=mw_rss_topstories"
+      "title": "\u2018This would be a one-time event\u2019: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
+      "url": "https://www.marketwatch.com/story/this-would-be-a-one-time-event-how-can-i-take-extra-money-from-my-401-k-without-triggering-higher-medicare-premiums-fef1586d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 22:00:00",
+      "published": "Wed, 10 Jun 2026 15:34:00",
       "source": "MarketWatch",
-      "title": "Apple\u2019s AI could usher in a historic upgrade cycle that investors are overlooking",
-      "url": "https://www.marketwatch.com/story/apples-ai-could-usher-in-a-historic-upgrade-cycle-that-investors-are-overlooking-2b47fbb3?mod=mw_rss_topstories"
+      "title": "My 20-year-old son wanted his first credit card. I told him to skip the most obvious advice and do these 4 things instead.",
+      "url": "https://www.marketwatch.com/story/my-20-year-old-son-wanted-his-first-credit-card-i-told-him-to-skip-most-of-the-advice-online-and-do-this-instead-16331ceb?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 21:58:00",
+      "published": "Wed, 10 Jun 2026 15:09:00",
       "source": "MarketWatch",
-      "title": "Micron and other memory makers are driving a \u2018supercycle\u2019 for this corner of the chip sector",
-      "url": "https://www.marketwatch.com/story/micron-and-other-memory-makers-are-driving-a-supercycle-for-this-corner-of-the-chip-sector-398c40c5?mod=mw_rss_topstories"
+      "title": "SpaceX is launching a historic IPO \u2014 but its biggest risk has nothing to do with rockets",
+      "url": "https://www.marketwatch.com/story/spacex-is-launching-a-historic-ipo-but-its-biggest-risk-has-nothing-to-do-with-rockets-0c030f9f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 09 Jun 2026 21:55:00",
+      "published": "Wed, 10 Jun 2026 15:07:00",
       "source": "MarketWatch",
-      "title": "AST SpaceMobile\u2019s stock experiences rocky trading as SpaceX plans to launch its satellites into orbit",
-      "url": "https://www.marketwatch.com/story/ast-spacemobiles-stock-experiences-rocky-trading-as-spacex-plans-to-launch-its-satellites-into-orbit-331b3c3b?mod=mw_rss_topstories"
+      "title": "Social Security could face an automatic 22% cut in 2032. These 4 moves will protect your retirement.",
+      "url": "https://www.marketwatch.com/story/social-security-could-face-an-automatic-22-cut-in-2032-these-4-moves-will-protect-your-retirement-a00f9463?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 09 2026",
+      "asof_label": "Jun 10 2026",
       "change": 0.0,
       "rate": 6.2
     },
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 09 2026",
-      "change": 0.0,
+      "asof_label": "Jun 10 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
