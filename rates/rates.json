@@ -135,7 +135,7 @@
       "rate": 17.479
     }
   },
-  "generated_at": "2026-06-10T19:21:43+00:00",
+  "generated_at": "2026-06-10T21:34:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/04/the-may-jobs-report-will-be-released-friday-heres-what-to-expect.html"
     },
     {
-      "published": "Wed, 10 Jun 2026 19:12:00",
+      "published": "Wed, 10 Jun 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "The coming IPO wave \u2014 and SpaceX\u2019s, in particular \u2014 is a secret weapon for the U.S. dollar",
-      "url": "https://www.marketwatch.com/story/the-spacex-ipo-could-lead-to-8-of-americas-current-account-deficit-being-refinanced-in-single-day-a013a428?mod=mw_rss_topstories"
+      "title": "Why Nike saw its stock downgraded a day before the World Cup\u2019s kickoff",
+      "url": "https://www.marketwatch.com/story/nike-has-just-had-its-stock-downgraded-one-day-before-the-world-cup-starts-0ac8cd74?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 10 Jun 2026 19:08:00",
+      "published": "Wed, 10 Jun 2026 20:49:00",
       "source": "MarketWatch",
-      "title": "These in-demand jobs pay over $100,000 \u2014 and offer raises that keep ahead of inflation",
-      "url": "https://www.marketwatch.com/story/these-in-demand-jobs-pay-over-100-000-and-offer-raises-that-keep-ahead-of-inflation-29c2ad1a?mod=mw_rss_topstories"
+      "title": "Oracle\u2019s stock slides after earnings, as the steep price of AI spooks investors",
+      "url": "https://www.marketwatch.com/story/oracles-stock-slides-after-earnings-as-the-steep-price-of-ai-spooks-investors-0653b309?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 10 Jun 2026 19:03:00",
+      "published": "Wed, 10 Jun 2026 20:29:00",
       "source": "MarketWatch",
-      "title": "Gold is in a bear market for the first time since 2022. Here\u2019s how it got here.",
-      "url": "https://www.marketwatch.com/story/gold-enters-a-bear-market-for-the-first-time-since-2022-how-the-safe-haven-metal-got-here-445a78a3?mod=mw_rss_topstories"
+      "title": "Sports betting is taking a bite out of gamblers\u2019 grocery budgets, new research suggests",
+      "url": "https://www.marketwatch.com/story/sports-betting-is-taking-a-bite-out-of-gamblers-grocery-budgets-new-research-suggests-be741857?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 10 Jun 2026 18:27:00",
+      "published": "Wed, 10 Jun 2026 20:16:00",
       "source": "MarketWatch",
-      "title": "A will isn\u2019t enough: 3 ways to help your loved ones before you die",
-      "url": "https://www.marketwatch.com/story/a-will-isnt-enough-3-ways-to-help-your-loved-ones-before-you-die-be522804?mod=mw_rss_topstories"
+      "title": "Worried that big IPOs will torpedo the stock market? These factors suggest otherwise.",
+      "url": "https://www.marketwatch.com/story/worried-that-big-ipos-will-torpedo-the-stock-market-these-factors-may-suggest-otherwise-cfb3db50?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 10 Jun 2026 18:22:00",
+      "published": "Wed, 10 Jun 2026 20:10:00",
       "source": "MarketWatch",
-      "title": "Here are all the red flags in the SpaceX IPO",
-      "url": "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories"
+      "title": "\u2018It will not bring you happiness\u2019: I have advice for your single, childless 62-year-old multimillionaire reader",
+      "url": "https://www.marketwatch.com/story/it-will-not-bring-you-happiness-i-have-advice-for-your-single-childless-62-year-old-multimillionaire-reader-1cb6a09f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.26
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
-      "yield": 4.39
+      "yield": 4.4
     },
     {
       "tenor": "10Y",
-      "yield": 4.53
+      "yield": 4.55
     },
     {
       "tenor": "20Y",
-      "yield": 5.02
+      "yield": 5.04
     },
     {
       "tenor": "30Y",
-      "yield": 5.01
+      "yield": 5.03
     }
   ],
   "warnings": []
