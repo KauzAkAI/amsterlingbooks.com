@@ -135,7 +135,7 @@
       "rate": 17.3919
     }
   },
-  "generated_at": "2026-06-11T19:41:00+00:00",
+  "generated_at": "2026-06-11T21:51:22+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html"
     },
     {
-      "published": "Thu, 11 Jun 2026 19:28:00",
+      "published": "Thu, 11 Jun 2026 21:37:00",
       "source": "MarketWatch",
-      "title": "Global oil prices end near an 8-week low as Trump backs away from his threat of strikes on Iran",
-      "url": "https://www.marketwatch.com/story/trump-says-u-s-will-take-irans-oil-export-hub-kharg-island-heres-what-his-threat-really-means-25e95663?mod=mw_rss_topstories"
+      "title": "We asked AI to predict the 2026 World Cup winner. It picked something that has never happened.",
+      "url": "https://www.marketwatch.com/story/we-asked-ai-to-predict-the-2026-world-cup-winner-it-picked-something-that-has-never-happened-53231520?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 19:22:00",
+      "published": "Thu, 11 Jun 2026 21:08:00",
       "source": "MarketWatch",
-      "title": "Bitcoin\u2019s long-term return may actually be close to zero \u2014 and that could be just what it needs",
-      "url": "https://www.marketwatch.com/story/bitcoin-at-1-million-the-math-points-to-a-wildly-different-number-cb835b8a?mod=mw_rss_topstories"
+      "title": "Foster children are getting their own version of \u2018Trump accounts,\u2019 but major questions remain",
+      "url": "https://www.marketwatch.com/story/foster-children-are-getting-their-own-version-of-trump-accounts-but-major-questions-remain-a755290e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 19:22:00",
+      "published": "Thu, 11 Jun 2026 20:48:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock could follow the same path as Tesla\u2019s \u2014 not always trading on fundamentals",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-could-follow-the-same-path-as-tesla-not-always-trading-on-fundamentals-41e1ffa2?mod=mw_rss_topstories"
+      "title": "Missed the rally in optical stocks? Coherent and Lumentum just got more attractive, according to J.P. Morgan.",
+      "url": "https://www.marketwatch.com/story/missed-the-rally-in-optical-stocks-coherent-and-lumentum-just-got-more-attractive-according-to-j-p-morgan-ccee9f93?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 18:52:00",
+      "published": "Thu, 11 Jun 2026 20:38:00",
       "source": "MarketWatch",
-      "title": "Here are all the red flags in the SpaceX IPO",
-      "url": "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories"
+      "title": "Micron\u2019s stock rebounds after \u2018healthy\u2019 reset, and analysts see blue skies ahead",
+      "url": "https://www.marketwatch.com/story/microns-stock-rebounds-after-healthy-reset-and-analysts-see-blue-skies-ahead-624a53ef?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 18:30:00",
+      "published": "Thu, 11 Jun 2026 20:37:00",
       "source": "MarketWatch",
-      "title": "There\u2019s a ticking time bomb under the Paramount-Warner Bros. deal. Here\u2019s what could set it off.",
-      "url": "https://www.marketwatch.com/story/theres-a-ticking-time-bomb-under-the-paramount-warner-bros-deal-heres-what-could-set-it-off-e7ca9da4?mod=mw_rss_topstories"
+      "title": "Upcoming SpaceX IPO spawns leveraged ETFs for bullish and bearish bets on its stock",
+      "url": "https://www.marketwatch.com/story/upcoming-spacex-ipo-spawns-leveraged-etfs-for-bullish-and-bearish-bets-on-its-stock-b0d7cceb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.79
+      "yield": 3.78
     },
     {
       "tenor": "6M",
-      "yield": 3.82
+      "yield": 3.81
     },
     {
       "tenor": "1Y",
-      "yield": 3.9
+      "yield": 3.85
     },
     {
       "tenor": "2Y",
-      "yield": 4.13
+      "yield": 4.05
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.18
     },
     {
       "tenor": "7Y",
-      "yield": 4.4
+      "yield": 4.31
     },
     {
       "tenor": "10Y",
-      "yield": 4.55
+      "yield": 4.45
     },
     {
       "tenor": "20Y",
-      "yield": 5.04
+      "yield": 4.96
     },
     {
       "tenor": "30Y",
-      "yield": 5.03
+      "yield": 4.95
     }
   ],
   "warnings": []
