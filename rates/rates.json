@@ -135,7 +135,7 @@
       "rate": 17.3919
     }
   },
-  "generated_at": "2026-06-11T16:58:45+00:00",
+  "generated_at": "2026-06-11T19:41:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-06-03",
-        "rate": 6.61
-      },
-      {
-        "date": "2026-06-03",
         "rate": 6.57
       },
       {
@@ -223,6 +219,10 @@
       {
         "date": "2026-06-10",
         "rate": 6.67
+      },
+      {
+        "date": "2026-06-11",
+        "rate": 6.6
       },
       {
         "date": "2026-06-11",
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:38:00",
+      "published": "Thu, 11 Jun 2026 19:28:00",
       "source": "MarketWatch",
-      "title": "A will isn\u2019t enough: 3 ways to help your loved ones before you die",
-      "url": "https://www.marketwatch.com/story/a-will-isnt-enough-3-ways-to-help-your-loved-ones-before-you-die-be522804?mod=mw_rss_topstories"
+      "title": "Global oil prices end near an 8-week low as Trump backs away from his threat of strikes on Iran",
+      "url": "https://www.marketwatch.com/story/trump-says-u-s-will-take-irans-oil-export-hub-kharg-island-heres-what-his-threat-really-means-25e95663?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:31:00",
+      "published": "Thu, 11 Jun 2026 19:22:00",
       "source": "MarketWatch",
-      "title": "Brace for SpaceX\u2019s stock to show \u2018extreme\u2019 volatility, a bullish analyst warns",
-      "url": "https://www.marketwatch.com/story/brace-for-spacexs-stock-to-show-extreme-volatility-a-bullish-analyst-warns-589ea226?mod=mw_rss_topstories"
+      "title": "Bitcoin\u2019s long-term return may actually be close to zero \u2014 and that could be just what it needs",
+      "url": "https://www.marketwatch.com/story/bitcoin-at-1-million-the-math-points-to-a-wildly-different-number-cb835b8a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:14:00",
+      "published": "Thu, 11 Jun 2026 19:22:00",
       "source": "MarketWatch",
-      "title": "Americans are trading Tuscany for Tacoma, thanks to soaring airfares",
-      "url": "https://www.marketwatch.com/story/rip-euro-summer-americans-are-trading-tuscany-for-tacoma-thanks-to-soaring-airfares-44751904?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s stock could follow the same path as Tesla\u2019s \u2014 not always trading on fundamentals",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-could-follow-the-same-path-as-tesla-not-always-trading-on-fundamentals-41e1ffa2?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:08:00",
+      "published": "Thu, 11 Jun 2026 18:52:00",
       "source": "MarketWatch",
-      "title": "Oracle\u2019s stock is seeing its worst run in a quarter-century as this key AI debate rages on",
-      "url": "https://www.marketwatch.com/story/oracles-stock-is-seeing-its-worst-run-in-a-quarter-century-as-this-key-ai-debate-rages-on-49b3e9ed?mod=mw_rss_topstories"
+      "title": "Here are all the red flags in the SpaceX IPO",
+      "url": "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:04:00",
+      "published": "Thu, 11 Jun 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "\u2018I feel like he may be taking advantage of us\u2019: Our adviser pushes annuities after we already said no. Do we fire him?",
-      "url": "https://www.marketwatch.com/story/our-financial-adviser-keeps-pushing-annuities-even-after-we-said-no-should-we-fire-him-19188c98?mod=mw_rss_topstories"
+      "title": "There\u2019s a ticking time bomb under the Paramount-Warner Bros. deal. Here\u2019s what could set it off.",
+      "url": "https://www.marketwatch.com/story/theres-a-ticking-time-bomb-under-the-paramount-warner-bros-deal-heres-what-could-set-it-off-e7ca9da4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 10 2026",
-      "change": 0.0,
-      "rate": 6.2
+      "asof_label": "Jun 11 2026",
+      "change": -0.05,
+      "rate": 6.15
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 10 2026",
-      "change": -0.01,
+      "asof_label": "Jun 11 2026",
+      "change": -0.07,
       "rate": 6.52
     }
   },
