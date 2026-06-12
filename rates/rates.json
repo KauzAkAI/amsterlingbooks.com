@@ -135,7 +135,7 @@
       "rate": 17.2243
     }
   },
-  "generated_at": "2026-06-12T18:25:01+00:00",
+  "generated_at": "2026-06-12T20:36:45+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Fri, 12 Jun 2026 18:15:00",
+      "published": "Fri, 12 Jun 2026 20:35:00",
       "source": "MarketWatch",
-      "title": "This hidden investing flaw is costing you money. Talking to political opponents fixes it.",
-      "url": "https://www.marketwatch.com/story/this-hidden-investing-flaw-is-costing-you-money-talking-to-political-opponents-fixes-it-fc1f7be3?mod=mw_rss_topstories"
+      "title": "How to decide whether a major splurge \u2014 like spending thousands on Knicks or World Cup tickets \u2014 is worth it",
+      "url": "https://www.marketwatch.com/story/how-to-decide-whether-a-major-splurge-like-spending-thousands-on-knicks-or-world-cup-tickets-is-worth-it-8fb46c18?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 16:55:00",
+      "published": "Fri, 12 Jun 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "U.S. oil prices drop to $84 a barrel after Pakistan says a U.S.-Iran peace deal has been reached",
-      "url": "https://www.marketwatch.com/story/oil-prices-extend-declines-on-possible-u-s-iran-peace-deal-to-reopen-strait-of-hormuz-6d2822bd?mod=mw_rss_topstories"
+      "title": "\u2018I feel like he may be taking advantage of us\u2019: Our adviser pushes annuities after we already said no. Do we fire him?",
+      "url": "https://www.marketwatch.com/story/our-financial-adviser-keeps-pushing-annuities-even-after-we-said-no-should-we-fire-him-19188c98?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 16:30:00",
+      "published": "Fri, 12 Jun 2026 20:06:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 55 and earn $100,000. Should I take a $2,900 monthly pension \u2014 or $2,200 with 3% annual hikes?",
-      "url": "https://www.marketwatch.com/story/im-55-and-earn-100-000-should-i-take-a-2-900-monthly-pension-or-2-200-with-3-annual-hikes-c02dc525?mod=mw_rss_topstories"
+      "title": "Is it too late to buy SpaceX\u2019s stock? Here\u2019s how Tesla\u2019s did after one day \u2014 and five years.",
+      "url": "https://www.marketwatch.com/story/is-it-too-late-to-buy-spacexs-stock-heres-how-teslas-did-after-one-day-and-five-years-9c7564d3?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 16:28:00",
+      "published": "Fri, 12 Jun 2026 19:56:00",
       "source": "MarketWatch",
-      "title": "Here are all the red flags in the SpaceX IPO",
-      "url": "https://www.marketwatch.com/story/here-are-all-the-red-flags-in-the-spacex-ipo-7c55b31e?mod=mw_rss_topstories"
+      "title": "\u2018It seems too good to be true\u2019: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. Is that true?",
+      "url": "https://www.marketwatch.com/story/it-seems-too-good-to-be-true-at-a-steak-dinner-retirement-seminar-the-guy-said-annuities-can-outperform-the-market-is-that-true-33e11b0a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 16:04:00",
+      "published": "Fri, 12 Jun 2026 19:51:00",
       "source": "MarketWatch",
-      "title": "AMD is seen as a CPU stock \u2014 but it\u2019s gaining ground here, too",
-      "url": "https://www.marketwatch.com/story/amd-is-seen-as-a-cpu-stock-but-its-gaining-ground-here-too-69a55e0f?mod=mw_rss_topstories"
+      "title": "Adobe\u2019s CFO is departing for Marvell. And it\u2019s one more reason for investors to choose chips over software.",
+      "url": "https://www.marketwatch.com/story/adobes-cfo-is-departing-for-marvell-and-its-one-more-reason-for-investors-to-choose-chips-over-software-336b9e16?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.81
+      "yield": 3.82
     },
     {
       "tenor": "1Y",
-      "yield": 3.85
+      "yield": 3.86
     },
     {
       "tenor": "2Y",
-      "yield": 4.05
+      "yield": 4.09
     },
     {
       "tenor": "5Y",
-      "yield": 4.18
+      "yield": 4.21
     },
     {
       "tenor": "7Y",
-      "yield": 4.31
+      "yield": 4.34
     },
     {
       "tenor": "10Y",
-      "yield": 4.45
+      "yield": 4.48
     },
     {
       "tenor": "20Y",
-      "yield": 4.96
+      "yield": 4.98
     },
     {
       "tenor": "30Y",
-      "yield": 4.95
+      "yield": 4.97
     }
   ],
   "warnings": []
