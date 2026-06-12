@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3979
+      "rate": 1.3988
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7774
+      "rate": 6.7623
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86678
+      "rate": 0.86453
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74829
+      "rate": 0.74613
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.76
+      "rate": 95.12
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.54
+      "rate": 160.2
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1529.53
+      "rate": 1520.21
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3919
+      "rate": 17.2243
     }
   },
-  "generated_at": "2026-06-11T23:19:14+00:00",
+  "generated_at": "2026-06-12T16:25:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Fri, 12 Jun 2026 07:01:15",
+      "source": "CNBC",
+      "title": "UK economy shrank 0.1% in April as Iran conflict weighed on growth",
+      "url": "https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html"
+    },
+    {
+      "published": "Fri, 12 Jun 2026 01:21:00",
+      "source": "CNBC",
+      "title": "A Chinese start-up's unfolding dilemma exposes cracks in Beijing's tech funding machine",
+      "url": "https://www.cnbc.com/2026/06/12/a-chinese-start-ups-dilemma-exposes-cracks-in-beijings-tech-funding.html"
+    },
+    {
       "published": "Thu, 11 Jun 2026 16:25:00",
       "source": "CNBC",
       "title": "Wholesale prices rose 1.1% in May, more than expected, on surge in energy",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Thu, 11 Jun 2026 07:20:29",
-      "source": "CNBC",
-      "title": "Energy prices take center stage as the ECB prepares to decide on rates",
-      "url": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html"
-    },
-    {
-      "published": "Tue, 09 Jun 2026 19:49:59",
-      "source": "CNBC",
-      "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html"
-    },
-    {
-      "published": "Thu, 11 Jun 2026 22:00:00",
+      "published": "Fri, 12 Jun 2026 16:04:00",
       "source": "MarketWatch",
-      "title": "Adobe is losing another top executive, and investors don\u2019t like it",
-      "url": "https://www.marketwatch.com/story/adobe-is-losing-another-top-executive-and-investors-dont-like-it-587603e9?mod=mw_rss_topstories"
+      "title": "AMD is seen as a CPU stock \u2014 but it\u2019s gaining ground here, too",
+      "url": "https://www.marketwatch.com/story/amd-is-seen-as-a-cpu-stock-but-its-gaining-ground-here-too-69a55e0f?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 21:59:00",
+      "published": "Fri, 12 Jun 2026 15:18:00",
       "source": "MarketWatch",
-      "title": "The SpaceX IPO is drawing historic demand from foreign investors. But don\u2019t expect a dollar-buying frenzy.",
-      "url": "https://www.marketwatch.com/story/the-spacex-ipo-is-drawing-historic-demand-from-foreign-investors-but-dont-expect-a-dollar-buying-frenzy-ce66b056?mod=mw_rss_topstories"
+      "title": "My company fired one manager and is doing an \u2018organizational reshuffling.\u2019 Am I in trouble?",
+      "url": "https://www.marketwatch.com/story/my-company-fired-one-manager-and-is-doing-an-organizational-reshuffling-am-i-in-trouble-6909eb40?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 21:37:00",
+      "published": "Fri, 12 Jun 2026 14:30:00",
       "source": "MarketWatch",
-      "title": "We asked AI to predict the 2026 World Cup winner. It picked a team that\u2019s never won.",
-      "url": "https://www.marketwatch.com/story/we-asked-ai-to-predict-the-2026-world-cup-winner-it-picked-something-that-has-never-happened-53231520?mod=mw_rss_topstories"
+      "title": "\u2018This would be a one-time event\u2019: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
+      "url": "https://www.marketwatch.com/story/this-would-be-a-one-time-event-how-can-i-take-extra-money-from-my-401-k-without-triggering-higher-medicare-premiums-fef1586d?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 21:08:00",
+      "published": "Fri, 12 Jun 2026 14:30:00",
       "source": "MarketWatch",
-      "title": "Foster children are getting their own version of \u2018Trump accounts,\u2019 but major questions remain",
-      "url": "https://www.marketwatch.com/story/foster-children-are-getting-their-own-version-of-trump-accounts-but-major-questions-remain-a755290e?mod=mw_rss_topstories"
+      "title": "\u2018It seems too good to be true\u2019: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. Is that true?",
+      "url": "https://www.marketwatch.com/story/it-seems-too-good-to-be-true-at-a-steak-dinner-retirement-seminar-the-guy-said-annuities-can-outperform-the-market-is-that-true-33e11b0a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 11 Jun 2026 20:48:00",
+      "published": "Fri, 12 Jun 2026 13:59:00",
       "source": "MarketWatch",
-      "title": "Missed the rally in optical stocks? Coherent and Lumentum just got more attractive, according to J.P. Morgan.",
-      "url": "https://www.marketwatch.com/story/missed-the-rally-in-optical-stocks-coherent-and-lumentum-just-got-more-attractive-according-to-j-p-morgan-ccee9f93?mod=mw_rss_topstories"
+      "title": "\u2018I feel like he may be taking advantage of us\u2019: Our adviser pushes annuities after we already said no. Do we fire him?",
+      "url": "https://www.marketwatch.com/story/our-financial-adviser-keeps-pushing-annuities-even-after-we-said-no-should-we-fire-him-19188c98?mod=mw_rss_topstories"
     }
   ],
   "rates": {
