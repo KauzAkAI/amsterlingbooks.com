@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3988
+      "rate": 1.3981
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7623
+      "rate": 6.757
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86453
+      "rate": 0.86155
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74613
+      "rate": 0.74509
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.12
+      "rate": 94.72
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.2
+      "rate": 160.19
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1520.21
+      "rate": 1514.3
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2243
+      "rate": 17.2113
     }
   },
-  "generated_at": "2026-06-12T23:56:37+00:00",
+  "generated_at": "2026-06-15T17:58:52+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.48
       },
       {
-        "date": "2026-06-05",
-        "rate": 6.66
-      },
-      {
         "date": "2026-06-08",
         "rate": 6.68
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-12",
         "rate": 6.58
+      },
+      {
+        "date": "2026-06-15",
+        "rate": 6.56
       }
     ]
   },
@@ -321,48 +321,48 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Fri, 12 Jun 2026 22:59:00",
+      "published": "Mon, 15 Jun 2026 17:38:00",
       "source": "MarketWatch",
-      "title": "This hidden investing flaw is costing you money. Talking to political opponents fixes it.",
-      "url": "https://www.marketwatch.com/story/this-hidden-investing-flaw-is-costing-you-money-talking-to-political-opponents-fixes-it-fc1f7be3?mod=mw_rss_topstories"
+      "title": "Social Security gave me conflicting answers about my cheating ex-husband\u2019s record. What should I do?",
+      "url": "https://www.marketwatch.com/story/social-security-gave-me-conflicting-answers-about-my-cheating-former-husbands-record-what-should-i-do-ee7f1e56?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 22:58:00",
+      "published": "Mon, 15 Jun 2026 17:37:00",
       "source": "MarketWatch",
-      "title": "There\u2019s a 68% chance the stock market ends the year higher. Why the headlines shouldn\u2019t disrupt your portfolio.",
-      "url": "https://www.marketwatch.com/story/theres-a-68-chance-the-stock-market-ends-the-year-higher-why-the-headlines-shouldnt-disrupt-your-portfolio-3d78cfae?mod=mw_rss_topstories"
+      "title": "My elderly mother and I own a home together. Will Medicaid force its sale?",
+      "url": "https://www.marketwatch.com/story/my-elderly-mother-and-i-own-a-home-together-will-medicaid-force-its-sale-fdfbad4a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 22:50:00",
+      "published": "Mon, 15 Jun 2026 17:22:00",
       "source": "MarketWatch",
-      "title": "\u2018This is not a flash in the pan\u2019: Why value stocks are beating growth by such a wide margin",
-      "url": "https://www.marketwatch.com/story/this-is-not-a-flash-in-the-pan-why-value-stocks-are-beating-growth-by-such-a-wide-margin-b2bddccc?mod=mw_rss_topstories"
+      "title": "Social Security\u2019s woes are well known, but Medicare is also facing a fiscal crisis \u2014 in just 7 years",
+      "url": "https://www.marketwatch.com/story/social-securitys-woes-are-well-known-but-medicare-is-also-facing-a-fiscal-crisis-in-just-7-years-a5915c6d?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 21:57:00",
+      "published": "Mon, 15 Jun 2026 16:33:00",
       "source": "MarketWatch",
-      "title": "How Elon Musk nailed the SpaceX IPO: \u2018I\u2019m not sure that this could have gone much better\u2019",
-      "url": "https://www.marketwatch.com/story/how-elon-musk-nailed-the-spacex-ipo-im-not-sure-that-this-could-have-gone-much-better-8149d479?mod=mw_rss_topstories"
+      "title": "The chip-stock rally is back in full force \u2014 thanks to two big geopolitical developments",
+      "url": "https://www.marketwatch.com/story/the-chip-stock-rally-is-back-in-full-force-thanks-to-two-big-geopolitical-developments-4e3ec21d?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 12 Jun 2026 21:44:00",
+      "published": "Mon, 15 Jun 2026 16:25:00",
       "source": "MarketWatch",
-      "title": "FIFA World Cup prize money: What each USMNT player stands to earn",
-      "url": "https://www.marketwatch.com/story/fifa-world-cup-prize-money-what-each-usmnt-player-stands-to-earn-332f8a96?mod=mw_rss_topstories"
+      "title": "Fiserv CEO flees after presiding over 71% stock drop in his short tenure",
+      "url": "https://www.marketwatch.com/story/fiserv-ceo-flees-after-presiding-over-71-stock-drop-in-his-short-tenure-b92b9270?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 12 2026",
-      "change": -0.01,
-      "rate": 6.14
+      "asof_label": "Jun 15 2026",
+      "change": -0.02,
+      "rate": 6.12
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 12 2026",
+      "asof_label": "Jun 15 2026",
       "change": -0.02,
       "rate": 6.52
     }
