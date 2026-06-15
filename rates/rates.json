@@ -135,7 +135,7 @@
       "rate": 17.2113
     }
   },
-  "generated_at": "2026-06-15T17:58:52+00:00",
+  "generated_at": "2026-06-15T21:16:25+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Mon, 15 Jun 2026 17:38:00",
+      "published": "Mon, 15 Jun 2026 21:12:00",
       "source": "MarketWatch",
-      "title": "Social Security gave me conflicting answers about my cheating ex-husband\u2019s record. What should I do?",
-      "url": "https://www.marketwatch.com/story/social-security-gave-me-conflicting-answers-about-my-cheating-former-husbands-record-what-should-i-do-ee7f1e56?mod=mw_rss_topstories"
+      "title": "The biggest risk to your retirement isn\u2019t a market crash \u2014 it\u2019s a crisis you probably haven\u2019t planned for",
+      "url": "https://www.marketwatch.com/story/the-biggest-risk-to-your-retirement-isnt-a-market-crash-its-a-crisis-you-probably-havent-planned-for-eff75a99?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 17:37:00",
+      "published": "Mon, 15 Jun 2026 20:44:00",
       "source": "MarketWatch",
-      "title": "My elderly mother and I own a home together. Will Medicaid force its sale?",
-      "url": "https://www.marketwatch.com/story/my-elderly-mother-and-i-own-a-home-together-will-medicaid-force-its-sale-fdfbad4a?mod=mw_rss_topstories"
+      "title": "Even Nvidia is joining the AI borrowing spree, with a historic $20 billion bond deal",
+      "url": "https://www.marketwatch.com/story/even-nvidia-is-joining-the-ai-borrowing-spree-with-a-historic-20-billion-bond-deal-a054cff4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 17:22:00",
+      "published": "Mon, 15 Jun 2026 20:43:00",
       "source": "MarketWatch",
-      "title": "Social Security\u2019s woes are well known, but Medicare is also facing a fiscal crisis \u2014 in just 7 years",
-      "url": "https://www.marketwatch.com/story/social-securitys-woes-are-well-known-but-medicare-is-also-facing-a-fiscal-crisis-in-just-7-years-a5915c6d?mod=mw_rss_topstories"
+      "title": "AMD flirts with a $900 billion valuation after beefing up its memory technology",
+      "url": "https://www.marketwatch.com/story/amd-flirts-with-a-900-billion-valuation-after-beefing-up-its-memory-technology-2a366bdc?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 16:33:00",
+      "published": "Mon, 15 Jun 2026 20:39:00",
+      "source": "MarketWatch",
+      "title": "Micron bulls are getting even more optimistic about memory trends as earnings draw closer",
+      "url": "https://www.marketwatch.com/story/micron-bulls-are-getting-even-more-optimistic-about-memory-trends-as-earnings-draw-closer-834fe6bd?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 15 Jun 2026 20:31:00",
       "source": "MarketWatch",
       "title": "The chip-stock rally is back in full force \u2014 thanks to two big geopolitical developments",
       "url": "https://www.marketwatch.com/story/the-chip-stock-rally-is-back-in-full-force-thanks-to-two-big-geopolitical-developments-4e3ec21d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 15 Jun 2026 16:25:00",
-      "source": "MarketWatch",
-      "title": "Fiserv CEO flees after presiding over 71% stock drop in his short tenure",
-      "url": "https://www.marketwatch.com/story/fiserv-ceo-flees-after-presiding-over-71-stock-drop-in-his-short-tenure-b92b9270?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,35 +398,35 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.78
+      "yield": 3.79
     },
     {
       "tenor": "6M",
-      "yield": 3.82
+      "yield": 3.81
     },
     {
       "tenor": "1Y",
-      "yield": 3.86
+      "yield": 3.84
     },
     {
       "tenor": "2Y",
-      "yield": 4.09
+      "yield": 4.07
     },
     {
       "tenor": "5Y",
-      "yield": 4.21
+      "yield": 4.18
     },
     {
       "tenor": "7Y",
-      "yield": 4.34
+      "yield": 4.32
     },
     {
       "tenor": "10Y",
-      "yield": 4.48
+      "yield": 4.47
     },
     {
       "tenor": "20Y",
-      "yield": 4.98
+      "yield": 4.97
     },
     {
       "tenor": "30Y",
