@@ -135,7 +135,7 @@
       "rate": 17.2027
     }
   },
-  "generated_at": "2026-06-16T18:08:07+00:00",
+  "generated_at": "2026-06-16T21:20:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.48
       },
       {
-        "date": "2026-06-08",
-        "rate": 6.68
-      },
-      {
         "date": "2026-06-09",
         "rate": 6.68
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-15",
         "rate": 6.56
+      },
+      {
+        "date": "2026-06-16",
+        "rate": 6.54
       }
     ]
   },
@@ -321,48 +321,48 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Tue, 16 Jun 2026 17:30:00",
+      "published": "Tue, 16 Jun 2026 21:17:00",
       "source": "MarketWatch",
-      "title": "Chicken tenders are taking over the world, and KFC is rushing to keep up",
-      "url": "https://www.marketwatch.com/story/chicken-tenders-are-taking-over-the-world-and-kfc-is-rushing-to-keep-up-3b637c99?mod=mw_rss_topstories"
+      "title": "The one-page pledge that forces your financial adviser to put you first",
+      "url": "https://www.marketwatch.com/story/the-one-page-pledge-that-forces-your-financial-adviser-to-put-you-first-6e88ba07?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 16:50:00",
+      "published": "Tue, 16 Jun 2026 21:15:00",
       "source": "MarketWatch",
-      "title": "Global oil prices break below $80 for the first time since the Iran war began. Ships still aren\u2019t passing through Hormuz.",
-      "url": "https://www.marketwatch.com/story/global-oil-prices-break-below-80-for-the-first-time-since-the-iran-war-began-ships-still-arent-passing-through-hormuz-83aa3e1e?mod=mw_rss_topstories"
+      "title": "A woman bought coasters at my garage sale for $2 \u2014 and emailed me that she\u2019s reselling them for $29. Was I ripped off?",
+      "url": "https://www.marketwatch.com/story/a-woman-bought-coasters-at-my-garage-sale-for-2-and-is-now-reselling-them-for-29-have-i-been-bamboozled-76532d73?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 16:40:00",
+      "published": "Tue, 16 Jun 2026 21:12:00",
       "source": "MarketWatch",
-      "title": "America\u2019s fertility rate has never been lower. Blame smartphones \u2014 and these 4 financial realities.",
-      "url": "https://www.marketwatch.com/story/americas-fertility-rate-has-never-been-lower-blame-smartphones-and-these-4-financial-realities-d58aa598?mod=mw_rss_topstories"
+      "title": "This little-known AI stock has beaten Micron and Arm this year, and now it\u2019s extending its lead",
+      "url": "https://www.marketwatch.com/story/this-little-known-ai-stock-has-beaten-micron-and-arm-this-year-and-now-its-extending-its-lead-7ed7b273?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 16:28:00",
+      "published": "Tue, 16 Jun 2026 21:07:00",
       "source": "MarketWatch",
-      "title": "I\u2019m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
-      "url": "https://www.marketwatch.com/story/im-spending-170-000-to-upgrade-my-home-for-my-aging-parents-can-i-get-tax-breaks-3adf0236?mod=mw_rss_topstories"
+      "title": "Salesforce\u2019s stock seals longest losing streak on record as newest AI acquisition sparks anxiety",
+      "url": "https://www.marketwatch.com/story/salesforces-stock-seals-longest-losing-streak-on-record-as-newest-ai-acquisition-sparks-anxiety-a2baec7a?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 16:10:00",
+      "published": "Tue, 16 Jun 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "These life-insurance policies are booming. Here\u2019s who should \u2014 and shouldn\u2019t \u2014 buy one.",
-      "url": "https://www.marketwatch.com/story/these-life-insurance-policies-are-booming-heres-who-should-and-shouldnt-buy-one-a1065882?mod=mw_rss_topstories"
+      "title": "My child was given a summer cabin. Should I pay for the $10,000-a-year maintenance and taxes?",
+      "url": "https://www.marketwatch.com/story/my-child-was-given-a-summer-cabin-should-i-pay-for-the-10-000-a-year-maintenance-and-taxes-5dc5cace?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 15 2026",
-      "change": -0.02,
-      "rate": 6.12
+      "asof_label": "Jun 16 2026",
+      "change": -0.01,
+      "rate": 6.11
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 15 2026",
+      "asof_label": "Jun 16 2026",
       "change": -0.02,
       "rate": 6.52
     }
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.69
+      "yield": 3.67
     },
     {
       "tenor": "3M",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.07
+      "yield": 4.05
     },
     {
       "tenor": "5Y",
-      "yield": 4.18
+      "yield": 4.16
     },
     {
       "tenor": "7Y",
-      "yield": 4.32
+      "yield": 4.28
     },
     {
       "tenor": "10Y",
-      "yield": 4.47
+      "yield": 4.43
     },
     {
       "tenor": "20Y",
-      "yield": 4.97
+      "yield": 4.92
     },
     {
       "tenor": "30Y",
-      "yield": 4.97
+      "yield": 4.93
     }
   ],
   "warnings": []
