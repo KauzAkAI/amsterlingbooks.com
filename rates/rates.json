@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3981
+      "rate": 1.4014
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.757
+      "rate": 6.7564
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86155
+      "rate": 0.86252
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74509
+      "rate": 0.74583
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.72
+      "rate": 94.56
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.19
+      "rate": 160.38
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1514.3
+      "rate": 1508.85
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2113
+      "rate": 17.2027
     }
   },
-  "generated_at": "2026-06-15T23:13:04+00:00",
+  "generated_at": "2026-06-16T18:08:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
     },
     {
-      "published": "Mon, 15 Jun 2026 23:07:00",
+      "published": "Tue, 16 Jun 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Need a credit-score boost? Call your credit-card company and ask for this \u2014 but proceed with caution.",
-      "url": "https://www.marketwatch.com/story/need-a-credit-score-boost-call-your-credit-card-company-and-ask-for-this-but-proceed-with-caution-c1d028c5?mod=mw_rss_topstories"
+      "title": "Chicken tenders are taking over the world, and KFC is rushing to keep up",
+      "url": "https://www.marketwatch.com/story/chicken-tenders-are-taking-over-the-world-and-kfc-is-rushing-to-keep-up-3b637c99?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 23:03:00",
+      "published": "Tue, 16 Jun 2026 16:50:00",
       "source": "MarketWatch",
-      "title": "Roku\u2019s sale to Fox for $22 billion raises a big question",
-      "url": "https://www.marketwatch.com/story/rokus-sale-to-fox-for-22-billion-raises-a-big-question-aecb5346?mod=mw_rss_topstories"
+      "title": "Global oil prices break below $80 for the first time since the Iran war began. Ships still aren\u2019t passing through Hormuz.",
+      "url": "https://www.marketwatch.com/story/global-oil-prices-break-below-80-for-the-first-time-since-the-iran-war-began-ships-still-arent-passing-through-hormuz-83aa3e1e?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 22:31:00",
+      "published": "Tue, 16 Jun 2026 16:40:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s when gas prices will come down if the U.S. deal to end the Iran war pans out",
-      "url": "https://www.marketwatch.com/story/heres-when-gas-prices-will-go-down-now-that-theres-a-deal-to-end-the-iran-war-6a482f4d?mod=mw_rss_topstories"
+      "title": "America\u2019s fertility rate has never been lower. Blame smartphones \u2014 and these 4 financial realities.",
+      "url": "https://www.marketwatch.com/story/americas-fertility-rate-has-never-been-lower-blame-smartphones-and-these-4-financial-realities-d58aa598?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 22:24:00",
+      "published": "Tue, 16 Jun 2026 16:28:00",
       "source": "MarketWatch",
-      "title": "Options traders are bracing for a very busy week, with June \u2018triple witching\u2019 and launch of SpaceX contracts on deck",
-      "url": "https://www.marketwatch.com/story/options-traders-are-bracing-for-a-very-busy-week-with-june-triple-witching-and-launch-of-spacex-contracts-on-deck-b38fbf62?mod=mw_rss_topstories"
+      "title": "I\u2019m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
+      "url": "https://www.marketwatch.com/story/im-spending-170-000-to-upgrade-my-home-for-my-aging-parents-can-i-get-tax-breaks-3adf0236?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 15 Jun 2026 22:22:00",
+      "published": "Tue, 16 Jun 2026 16:10:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 55 and earn $100,000. Should I take a $2,900 monthly pension \u2014 or $2,200 with 3% annual hikes?",
-      "url": "https://www.marketwatch.com/story/im-55-and-earn-100-000-should-i-take-a-2-900-monthly-pension-or-2-200-with-3-annual-hikes-c02dc525?mod=mw_rss_topstories"
+      "title": "These life-insurance policies are booming. Here\u2019s who should \u2014 and shouldn\u2019t \u2014 buy one.",
+      "url": "https://www.marketwatch.com/story/these-life-insurance-policies-are-booming-heres-who-should-and-shouldnt-buy-one-a1065882?mod=mw_rss_topstories"
     }
   ],
   "rates": {
