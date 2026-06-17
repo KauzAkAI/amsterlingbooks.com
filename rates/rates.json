@@ -135,7 +135,7 @@
       "rate": 17.2105
     }
   },
-  "generated_at": "2026-06-17T19:13:58+00:00",
+  "generated_at": "2026-06-17T21:24:53+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-06-17",
-        "rate": 6.55
+        "rate": 6.62
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 17 Jun 2026 20:42:42",
+      "source": "CNBC",
+      "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
+      "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
+    },
+    {
       "published": "Wed, 17 Jun 2026 06:41:39",
       "source": "CNBC",
       "title": "UK inflation holds steady at 2.8% in May",
@@ -315,37 +321,31 @@
       "url": "https://www.cnbc.com/2026/06/12/a-chinese-start-ups-dilemma-exposes-cracks-in-beijings-tech-funding.html"
     },
     {
-      "published": "Thu, 11 Jun 2026 16:25:00",
-      "source": "CNBC",
-      "title": "Wholesale prices rose 1.1% in May, more than expected, on surge in energy",
-      "url": "https://www.cnbc.com/2026/06/11/producer-price-index-may-2026-.html"
-    },
-    {
-      "published": "Wed, 17 Jun 2026 19:09:00",
+      "published": "Wed, 17 Jun 2026 21:01:00",
       "source": "MarketWatch",
-      "title": "Warsh launches his push to change how the Fed operates",
-      "url": "https://www.marketwatch.com/story/warsh-launches-his-push-to-change-how-the-fed-operates-3ddd9b90?mod=mw_rss_topstories"
+      "title": "Want to renounce your U.S. citizenship? Here\u2019s what it could cost you.",
+      "url": "https://www.marketwatch.com/story/renouncing-your-u-s-citizenship-costs-just-450-but-theres-a-world-of-hidden-costs-too-1315238f?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 18:26:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m 20, and I\u2019ll be watching Kevin Warsh and the Fed today. Here\u2019s why you should, too.",
-      "url": "https://www.marketwatch.com/story/im-20-and-ill-be-watching-kevin-warsh-and-the-fed-this-week-heres-why-you-should-too-73c3e34d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 17 Jun 2026 18:06:00",
-      "source": "MarketWatch",
-      "title": "Three powerful forces are draining family wealth \u2014 and your estate plan is completely unprepared",
-      "url": "https://www.marketwatch.com/story/the-great-wealth-transfer-is-real-but-the-irs-or-a-nursing-home-might-get-your-money-first-d0c46676?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 17 Jun 2026 17:54:00",
+      "published": "Wed, 17 Jun 2026 20:43:00",
       "source": "MarketWatch",
       "title": "Inside the push to weaken Washington\u2019s toughest financial watchdog",
       "url": "https://www.marketwatch.com/story/fewer-dollars-and-fuzzier-standards-inside-the-push-to-weaken-washingtons-toughest-financial-watchdog-2601a0ee?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 17:06:00",
+      "published": "Wed, 17 Jun 2026 20:40:00",
+      "source": "MarketWatch",
+      "title": "Three powerful forces are draining family wealth \u2014 and your estate plan is completely unprepared",
+      "url": "https://www.marketwatch.com/story/the-great-wealth-transfer-is-real-but-the-irs-or-a-nursing-home-might-get-your-money-first-d0c46676?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 17 Jun 2026 20:28:00",
+      "source": "MarketWatch",
+      "title": "How Pizza Hut fell from stuffed-crust glory to corporate castoff",
+      "url": "https://www.marketwatch.com/story/how-pizza-hut-fell-from-stuffed-crust-glory-to-corporate-castoff-094b4ede?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 17 Jun 2026 20:25:00",
       "source": "MarketWatch",
       "title": "Snap breaks from the pack with heavy $2,195 smart glasses. Wall Street is panning the move.",
       "url": "https://www.marketwatch.com/story/snap-breaks-from-the-pack-with-heavy-2-195-smart-glasses-wall-street-is-panning-the-move-99e77ae6?mod=mw_rss_topstories"
@@ -354,8 +354,8 @@
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Jun 17 2026",
-      "change": -0.01,
-      "rate": 6.1
+      "change": 0.05,
+      "rate": 6.16
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Jun 17 2026",
-      "change": 0.01,
+      "change": 0.08,
       "rate": 6.52
     }
   },
@@ -394,39 +394,39 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.67
+      "yield": 3.68
     },
     {
       "tenor": "3M",
-      "yield": 3.79
+      "yield": 3.83
     },
     {
       "tenor": "6M",
-      "yield": 3.81
+      "yield": 3.91
     },
     {
       "tenor": "1Y",
-      "yield": 3.84
+      "yield": 3.98
     },
     {
       "tenor": "2Y",
-      "yield": 4.05
+      "yield": 4.2
     },
     {
       "tenor": "5Y",
-      "yield": 4.16
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
-      "yield": 4.28
+      "yield": 4.37
     },
     {
       "tenor": "10Y",
-      "yield": 4.43
+      "yield": 4.49
     },
     {
       "tenor": "20Y",
-      "yield": 4.92
+      "yield": 4.95
     },
     {
       "tenor": "30Y",
