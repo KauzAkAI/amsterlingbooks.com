@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4014
+      "rate": 1.4012
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7564
+      "rate": 6.7595
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86252
+      "rate": 0.86274
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74583
+      "rate": 0.74595
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.56
+      "rate": 94.53
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.38
+      "rate": 160.31
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1508.85
+      "rate": 1517.08
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2027
+      "rate": 17.2105
     }
   },
-  "generated_at": "2026-06-16T23:00:32+00:00",
+  "generated_at": "2026-06-17T16:40:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.48
       },
       {
-        "date": "2026-06-09",
-        "rate": 6.68
-      },
-      {
         "date": "2026-06-10",
         "rate": 6.67
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-16",
         "rate": 6.54
+      },
+      {
+        "date": "2026-06-17",
+        "rate": 6.55
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Wed, 17 Jun 2026 06:41:39",
+      "source": "CNBC",
+      "title": "UK inflation holds steady at 2.8% in May",
+      "url": "https://www.cnbc.com/2026/06/17/inflation-uk-cpi-interest-rates-bank-of-england.html"
+    },
+    {
+      "published": "Wed, 17 Jun 2026 07:23:05",
+      "source": "CNBC",
+      "title": "Three Iranian tankers exit U.S. blockade for first time in months as shipowners eye Hormuz in 'wary disbelief'",
+      "url": "https://www.cnbc.com/2026/06/17/iranian-tankers-oil-shipment-us-iran-deal-strait-of-hormuz-.html"
+    },
+    {
       "published": "Fri, 12 Jun 2026 07:01:15",
       "source": "CNBC",
       "title": "UK economy shrank 0.1% in April as Iran conflict weighed on growth",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/11/producer-price-index-may-2026-.html"
     },
     {
-      "published": "Thu, 11 Jun 2026 13:57:33",
-      "source": "CNBC",
-      "title": "ECB hikes interest rates for first time since 2023 as Iran war ramps up energy costs",
-      "url": "https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html"
-    },
-    {
-      "published": "Wed, 10 Jun 2026 14:30:31",
-      "source": "CNBC",
-      "title": "Consumer prices rose 4.2% annually in May, highest in three years",
-      "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html"
-    },
-    {
-      "published": "Tue, 16 Jun 2026 22:49:00",
+      "published": "Wed, 17 Jun 2026 16:36:00",
       "source": "MarketWatch",
-      "title": "Intel takes a major step toward turning around a business that\u2019s bleeding cash",
-      "url": "https://www.marketwatch.com/story/intel-takes-a-major-step-toward-turning-around-a-business-thats-bleeding-cash-ab68cc94?mod=mw_rss_topstories"
+      "title": "Historic NBA Finals ratings and Fox\u2019s $22 billion Roku deal show live sports are key to winning the streaming wars",
+      "url": "https://www.marketwatch.com/story/record-world-cup-nba-finals-ratings-show-live-sports-are-tvs-most-valuable-asset-82c2a970?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 22:00:00",
+      "published": "Wed, 17 Jun 2026 16:29:00",
       "source": "MarketWatch",
-      "title": "I\u2019m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
-      "url": "https://www.marketwatch.com/story/im-spending-170-000-to-upgrade-my-home-for-my-aging-parents-can-i-get-tax-breaks-3adf0236?mod=mw_rss_topstories"
+      "title": "Retail investors have been buying more SpaceX shares than all of the \u2018Magnificent Seven\u2019 combined",
+      "url": "https://www.marketwatch.com/story/retail-investors-have-been-buying-more-spacex-shares-than-all-of-the-magnificent-seven-combined-877f6667?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 21:53:00",
+      "published": "Wed, 17 Jun 2026 15:45:00",
       "source": "MarketWatch",
-      "title": "Chicken tenders are taking over the world, and KFC is rushing to keep up",
-      "url": "https://www.marketwatch.com/story/chicken-tenders-are-taking-over-the-world-and-kfc-is-rushing-to-keep-up-3b637c99?mod=mw_rss_topstories"
+      "title": "The $124 trillion Great Wealth Transfer is real \u2014 but the IRS or a nursing home might get your family\u2019s money first",
+      "url": "https://www.marketwatch.com/story/the-great-wealth-transfer-is-real-but-the-irs-or-a-nursing-home-might-get-your-money-first-d0c46676?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 21:47:00",
+      "published": "Wed, 17 Jun 2026 15:37:00",
       "source": "MarketWatch",
-      "title": "Wall Street can\u2019t stop talking about \u2018MANGOS\u2019 stocks as the \u2018Magnificent Seven\u2019 becomes pass\u00e9",
-      "url": "https://www.marketwatch.com/story/wall-street-cant-stop-talking-about-mangos-stocks-as-the-magnificent-seven-becomes-passe-61b5a453?mod=mw_rss_topstories"
+      "title": "We read the Social Security and Medicare trustees reports. If you\u2019re not worried, you should be.",
+      "url": "https://www.marketwatch.com/story/we-read-the-social-security-and-medicare-trustees-reports-if-youre-not-worried-you-should-be-ee1293e2?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 16 Jun 2026 21:45:00",
+      "published": "Wed, 17 Jun 2026 15:08:00",
       "source": "MarketWatch",
-      "title": "\u2018We own our home outright\u2019: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
-      "url": "https://www.marketwatch.com/story/we-own-our-home-outright-i-am-67-and-earn-100-000-do-i-take-my-30-000-social-security-now-or-wait-bbe1e123?mod=mw_rss_topstories"
+      "title": "Americans\u2019 401(k) balances hit record levels last year. See how you compare.",
+      "url": "https://www.marketwatch.com/story/americans-401-k-balances-hit-record-levels-last-year-see-how-you-compare-facd32c4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 16 2026",
+      "asof_label": "Jun 17 2026",
       "change": -0.01,
-      "rate": 6.11
+      "rate": 6.1
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 16 2026",
-      "change": -0.02,
+      "asof_label": "Jun 17 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
