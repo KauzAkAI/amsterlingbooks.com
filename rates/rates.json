@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4012
+      "rate": 1.4125
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7595
+      "rate": 6.7716
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86274
+      "rate": 0.87252
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74595
+      "rate": 0.75594
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.53
+      "rate": 94.34
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.31
+      "rate": 160.93
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1517.08
+      "rate": 1538.89
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2105
+      "rate": 17.3914
     }
   },
-  "generated_at": "2026-06-17T23:01:29+00:00",
+  "generated_at": "2026-06-18T16:39:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,24 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-05-27",
-        "rate": 6.65
-      },
-      {
-        "date": "2026-05-28",
-        "rate": 6.53
-      },
-      {
         "date": "2026-06-03",
         "rate": 6.57
       },
       {
         "date": "2026-06-04",
         "rate": 6.48
-      },
-      {
-        "date": "2026-06-10",
-        "rate": 6.67
       },
       {
         "date": "2026-06-10",
@@ -227,6 +215,18 @@
       {
         "date": "2026-06-17",
         "rate": 6.62
+      },
+      {
+        "date": "2026-06-17",
+        "rate": 6.6
+      },
+      {
+        "date": "2026-06-18",
+        "rate": 6.58
+      },
+      {
+        "date": "2026-06-18",
+        "rate": 6.47
       }
     ]
   },
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Wed, 17 Jun 2026 21:31:32",
+      "published": "Thu, 18 Jun 2026 11:49:16",
+      "source": "CNBC",
+      "title": "Bank of England holds interest rates at 3.75% amid Iran war peace prospects",
+      "url": "https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html"
+    },
+    {
+      "published": "Wed, 17 Jun 2026 23:51:33",
       "source": "CNBC",
       "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
       "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html"
     },
     {
-      "published": "Fri, 12 Jun 2026 01:21:00",
-      "source": "CNBC",
-      "title": "A Chinese start-up's unfolding dilemma exposes cracks in Beijing's tech funding machine",
-      "url": "https://www.cnbc.com/2026/06/12/a-chinese-start-ups-dilemma-exposes-cracks-in-beijings-tech-funding.html"
+      "published": "Thu, 18 Jun 2026 16:19:00",
+      "source": "MarketWatch",
+      "title": "These stocks are in trouble now that Kevin Warsh removed the market\u2019s guardrails",
+      "url": "https://www.marketwatch.com/story/these-stocks-are-in-trouble-now-that-kevin-warsh-removed-the-markets-guardrails-f7f1e51c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 22:48:00",
+      "published": "Thu, 18 Jun 2026 16:05:00",
       "source": "MarketWatch",
-      "title": "Warren Buffett\u2019s mentor said his wealth came down to luck. Is your life savings riding on a coin flip?",
-      "url": "https://www.marketwatch.com/story/warren-buffetts-mentor-said-his-wealth-came-down-to-luck-is-your-life-savings-riding-on-a-coin-flip-2498c60c?mod=mw_rss_topstories"
+      "title": "Fed Chair Kevin Warsh wants to get inflation under control. That could be bad news for home buyers seeking lower mortgage rates.",
+      "url": "https://www.marketwatch.com/story/fed-chair-kevin-warsh-wants-to-get-inflation-under-control-that-could-be-bad-news-for-home-buyers-seeking-lower-mortgage-rates-99fb4aad?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 22:44:00",
+      "published": "Thu, 18 Jun 2026 15:38:00",
       "source": "MarketWatch",
-      "title": "Kevin Warsh launches his push to change how the Fed operates",
-      "url": "https://www.marketwatch.com/story/warsh-launches-his-push-to-change-how-the-fed-operates-3ddd9b90?mod=mw_rss_topstories"
+      "title": "Gen Z\u2019s \u2018chicken before the egg\u2019 credit problem: How to build your score when lenders keep saying no",
+      "url": "https://www.marketwatch.com/story/gen-z-needs-to-build-credit-to-start-adulting-but-half-say-they-cant-get-it-heres-how-to-start-ef3e100c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 22:01:00",
+      "published": "Thu, 18 Jun 2026 15:30:00",
       "source": "MarketWatch",
-      "title": "It\u2019s \u2018unavoidable\u2019: Apple says it will be forced to raise prices due to the AI boom",
-      "url": "https://www.marketwatch.com/story/its-unavoidable-apple-says-it-will-be-forced-to-raise-prices-due-to-the-ai-boom-e3d1e4c4?mod=mw_rss_topstories"
+      "title": "My child was given a summer cabin. Should I pay for the $10,000-a-year maintenance and taxes?",
+      "url": "https://www.marketwatch.com/story/my-child-was-given-a-summer-cabin-should-i-pay-for-the-10-000-a-year-maintenance-and-taxes-5dc5cace?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 17 Jun 2026 21:54:00",
+      "published": "Thu, 18 Jun 2026 15:06:00",
       "source": "MarketWatch",
-      "title": "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up",
-      "url": "https://www.marketwatch.com/story/stock-market-pessimists-have-one-less-reason-to-worry-as-shares-of-banks-and-retailers-perk-up-12d749b8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 17 Jun 2026 21:38:00",
-      "source": "MarketWatch",
-      "title": "The Fed just threw investors a curveball. Here\u2019s how stocks, bonds, gold and the dollar reacted.",
-      "url": "https://www.marketwatch.com/story/the-fed-threw-investors-a-curve-ball-on-wednesday-heres-how-stocks-bonds-gold-and-the-dollar-reacted-d0e1e3c0?mod=mw_rss_topstories"
+      "title": "Trump\u2019s Iran agreement is a massive buy signal for stocks",
+      "url": "https://www.marketwatch.com/story/trumps-iran-agreement-changes-the-game-for-investors-these-are-the-two-sectors-to-buy-right-now-0705bc62?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 17 2026",
-      "change": 0.05,
-      "rate": 6.16
+      "asof_label": "Jun 18 2026",
+      "change": -0.01,
+      "rate": 6.15
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 17 2026",
-      "change": 0.08,
+      "asof_label": "Jun 18 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
