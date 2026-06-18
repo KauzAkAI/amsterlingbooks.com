@@ -135,7 +135,7 @@
       "rate": 17.3914
     }
   },
-  "generated_at": "2026-06-18T19:11:56+00:00",
+  "generated_at": "2026-06-18T21:30:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -297,7 +297,7 @@
       "url": "https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html"
     },
     {
-      "published": "Wed, 17 Jun 2026 23:51:33",
+      "published": "Thu, 18 Jun 2026 19:17:55",
       "source": "CNBC",
       "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
       "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html"
     },
     {
-      "published": "Thu, 18 Jun 2026 19:02:00",
+      "published": "Thu, 18 Jun 2026 21:14:00",
       "source": "MarketWatch",
-      "title": "This AI company wants to replace MRIs with a 60-second dip in the spa. Can that really work?",
-      "url": "https://www.marketwatch.com/story/this-ai-company-wants-to-replace-mris-with-a-60-second-dip-in-the-spa-can-that-really-work-3bce6681?mod=mw_rss_topstories"
+      "title": "Micron, other memory stocks are having their best year ever. Why do they still look so cheap?",
+      "url": "https://www.marketwatch.com/story/memory-stocks-are-having-their-best-year-ever-why-do-they-still-look-so-cheap-a506466d?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 18:55:00",
+      "published": "Thu, 18 Jun 2026 21:14:00",
       "source": "MarketWatch",
-      "title": "Employers to college students: Skip the perfect GPA and go get a summer job",
-      "url": "https://www.marketwatch.com/story/employers-to-college-students-skip-the-perfect-gpa-and-go-get-a-summer-job-e9ca5530?mod=mw_rss_topstories"
+      "title": "Dollar touches highest level in more than a year. Why this latest rally might be overdone.",
+      "url": "https://www.marketwatch.com/story/dollar-touches-highest-level-in-more-than-a-year-why-this-latest-rally-might-be-overdone-28194ce1?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 18:40:00",
+      "published": "Thu, 18 Jun 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "How America cheated Black GIs after World War II, contributing to the racial wealth gap",
-      "url": "https://www.marketwatch.com/story/how-america-cheated-black-gis-after-world-war-ii-contributing-to-the-racial-wealth-gap-edb6b304?mod=mw_rss_topstories"
+      "title": "My two sons will inherit a $30,000 annuity from their grandmother. What should I do with the money?",
+      "url": "https://www.marketwatch.com/story/my-two-sons-will-inherit-a-30-000-annuity-from-their-grandmother-what-should-i-do-with-the-money-8882f396?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 18:21:00",
+      "published": "Thu, 18 Jun 2026 20:05:00",
       "source": "MarketWatch",
-      "title": "Trump\u2019s Iran agreement is a massive buy signal for stocks",
-      "url": "https://www.marketwatch.com/story/trumps-iran-agreement-changes-the-game-for-investors-these-are-the-two-sectors-to-buy-right-now-0705bc62?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019ll probably be working until I die\u2019: I\u2019m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?",
+      "url": "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 18:18:00",
+      "published": "Thu, 18 Jun 2026 19:38:00",
       "source": "MarketWatch",
-      "title": "These stocks are in trouble now that Kevin Warsh removed the market\u2019s guardrails",
-      "url": "https://www.marketwatch.com/story/these-stocks-are-in-trouble-now-that-kevin-warsh-removed-the-markets-guardrails-f7f1e51c?mod=mw_rss_topstories"
+      "title": "The Iran oil shock taught traders these key lessons about demand and China",
+      "url": "https://www.marketwatch.com/story/the-iran-oil-shock-taught-traders-these-key-lessons-about-demand-and-china-b03ad6a3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.68
+      "yield": 3.69
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.91
+      "yield": 3.92
     },
     {
       "tenor": "1Y",
-      "yield": 3.98
+      "yield": 4.0
     },
     {
       "tenor": "2Y",
-      "yield": 4.2
+      "yield": 4.19
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.23
     },
     {
       "tenor": "7Y",
-      "yield": 4.37
+      "yield": 4.34
     },
     {
       "tenor": "10Y",
-      "yield": 4.49
+      "yield": 4.46
     },
     {
       "tenor": "20Y",
-      "yield": 4.95
+      "yield": 4.91
     },
     {
       "tenor": "30Y",
-      "yield": 4.93
+      "yield": 4.9
     }
   ],
   "warnings": []
