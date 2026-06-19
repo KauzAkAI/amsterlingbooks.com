@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4125
+      "rate": 1.4152
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7716
+      "rate": 6.7693
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87252
+      "rate": 0.87207
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75594
+      "rate": 0.75567
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.34
+      "rate": 94.33
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.93
+      "rate": 161.23
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1538.89
+      "rate": 1532.31
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3914
+      "rate": 17.3364
     }
   },
-  "generated_at": "2026-06-18T23:22:50+00:00",
+  "generated_at": "2026-06-19T16:10:52+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Fri, 19 Jun 2026 15:01:59",
+      "source": "CNBC",
+      "title": "Struggling to find a job? Try looking in Nevada",
+      "url": "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html"
+    },
+    {
+      "published": "Fri, 19 Jun 2026 08:08:34",
+      "source": "CNBC",
+      "title": "Hormuz relief may not ease the economic toll that's already 'baked in,' analysts warn",
+      "url": "https://www.cnbc.com/2026/06/19/hormuz-relief-may-not-ease-the-economic-toll-thats-already-baked-in-analysts-warn.html"
+    },
+    {
+      "published": "Fri, 19 Jun 2026 02:00:46",
+      "source": "CNBC",
+      "title": "Trump claims Iran deal is 'unconditional surrender,' says his power has 'no limits': Axios",
+      "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
+    },
+    {
       "published": "Thu, 18 Jun 2026 11:49:16",
       "source": "CNBC",
       "title": "Bank of England holds interest rates at 3.75% amid Iran war peace prospects",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
     },
     {
-      "published": "Wed, 17 Jun 2026 06:41:39",
-      "source": "CNBC",
-      "title": "UK inflation holds steady at 2.8% in May",
-      "url": "https://www.cnbc.com/2026/06/17/inflation-uk-cpi-interest-rates-bank-of-england.html"
-    },
-    {
-      "published": "Wed, 17 Jun 2026 07:23:05",
-      "source": "CNBC",
-      "title": "Three Iranian tankers exit U.S. blockade for first time in months as shipowners eye Hormuz in 'wary disbelief'",
-      "url": "https://www.cnbc.com/2026/06/17/iranian-tankers-oil-shipment-us-iran-deal-strait-of-hormuz-.html"
-    },
-    {
-      "published": "Fri, 12 Jun 2026 07:01:15",
-      "source": "CNBC",
-      "title": "UK economy shrank 0.1% in April as Iran conflict weighed on growth",
-      "url": "https://www.cnbc.com/2026/06/12/uk-gdp-april-iran-war-growth.html"
-    },
-    {
-      "published": "Thu, 18 Jun 2026 23:11:00",
+      "published": "Fri, 19 Jun 2026 16:05:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 55 and retiring in 6 years. Should I be switching to Roth 401(k) contributions now?",
-      "url": "https://www.marketwatch.com/story/im-55-and-retiring-in-6-years-should-i-be-switching-to-roth-401-k-now-71d6c468?mod=mw_rss_topstories"
+      "title": "Oil prices under new wave of pressure amid lingering questions over a Strait of Hormuz reopening",
+      "url": "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 23:09:00",
+      "published": "Fri, 19 Jun 2026 15:49:00",
       "source": "MarketWatch",
-      "title": "Trump\u2019s Iran agreement is a massive buy signal for stocks",
-      "url": "https://www.marketwatch.com/story/trumps-iran-agreement-changes-the-game-for-investors-these-are-the-two-sectors-to-buy-right-now-0705bc62?mod=mw_rss_topstories"
+      "title": "\u2018We are habitually frugal\u2019: My wife and I have money. How do we help our children without ruining their independence?",
+      "url": "https://www.marketwatch.com/story/we-are-habitually-frugal-my-wife-and-i-have-money-how-do-we-help-our-children-without-ruining-their-independence-a1e30cec?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 22:03:00",
+      "published": "Fri, 19 Jun 2026 14:10:00",
       "source": "MarketWatch",
-      "title": "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by \u2018FOMO\u2019 mentality",
-      "url": "https://www.marketwatch.com/story/spacex-is-vastly-more-expensive-than-any-stock-in-the-s-p-500-fueled-by-fomo-mentality-eb61cd69?mod=mw_rss_topstories"
+      "title": "\u2018We own our home outright\u2019: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
+      "url": "https://www.marketwatch.com/story/we-own-our-home-outright-i-am-67-and-earn-100-000-do-i-take-my-30-000-social-security-now-or-wait-bbe1e123?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 22:00:00",
+      "published": "Fri, 19 Jun 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "Intel\u2019s stock jumps 11% \u2014 even as analysts say new Apple chip deal might start small",
-      "url": "https://www.marketwatch.com/story/intel-shares-rally-as-trump-says-company-will-build-chips-for-apple-in-the-u-s-c72d8c88?mod=mw_rss_topstories"
+      "title": "The loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it",
+      "url": "https://www.marketwatch.com/story/the-loneliness-crisis-has-gotten-so-bad-that-lawmakers-are-ready-to-spend-millions-of-dollars-to-fight-it-f7e7c7b7?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 18 Jun 2026 21:58:00",
+      "published": "Fri, 19 Jun 2026 13:56:00",
       "source": "MarketWatch",
-      "title": "Two big reasons Accenture\u2019s stock is sliding in the wake of earnings",
-      "url": "https://www.marketwatch.com/story/two-big-reasons-accentures-stock-is-sliding-in-the-wake-of-earnings-9353b184?mod=mw_rss_topstories"
+      "title": "Chip stocks are setting records, but this hidden chart pattern says momentum favors the bears",
+      "url": "https://www.marketwatch.com/story/chip-stocks-are-setting-records-but-this-hidden-chart-pattern-says-momentum-favors-the-bears-5ba98c10?mod=mw_rss_topstories"
     }
   ],
   "rates": {
