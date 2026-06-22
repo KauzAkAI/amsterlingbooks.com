@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4152
+      "rate": 1.4161
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7693
+      "rate": 6.7748
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87207
+      "rate": 0.87291
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75567
+      "rate": 0.75478
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.33
+      "rate": 94.68
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.23
+      "rate": 161.78
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1532.31
+      "rate": 1537.08
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3364
+      "rate": 17.3311
     }
   },
-  "generated_at": "2026-06-19T23:43:50+00:00",
+  "generated_at": "2026-06-22T17:45:03+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-06-11",
-        "rate": 6.6
-      },
-      {
-        "date": "2026-06-11",
         "rate": 6.52
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-18",
         "rate": 6.47
+      },
+      {
+        "date": "2026-06-22",
+        "rate": 6.66
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
     },
     {
-      "published": "Fri, 19 Jun 2026 19:00:00",
+      "published": "Mon, 22 Jun 2026 17:24:00",
       "source": "MarketWatch",
-      "title": "My two sons will inherit a $30,000 annuity from their grandmother. What should I do with the money?",
-      "url": "https://www.marketwatch.com/story/my-two-sons-will-inherit-a-30-000-annuity-from-their-grandmother-what-should-i-do-with-the-money-8882f396?mod=mw_rss_topstories"
+      "title": "The loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it",
+      "url": "https://www.marketwatch.com/story/the-loneliness-crisis-has-gotten-so-bad-that-lawmakers-are-ready-to-spend-millions-of-dollars-to-fight-it-f7e7c7b7?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 19 Jun 2026 18:52:00",
+      "published": "Mon, 22 Jun 2026 17:16:00",
       "source": "MarketWatch",
-      "title": "Employers to college students: Never mind that 4.0 GPA. Go out and get a summer job.",
-      "url": "https://www.marketwatch.com/story/employers-to-college-students-skip-the-perfect-gpa-and-go-get-a-summer-job-e9ca5530?mod=mw_rss_topstories"
+      "title": "China\u2019s weird new economic spark: toy elves and robocops",
+      "url": "https://www.marketwatch.com/story/chinas-new-economic-drivers-a-sad-toy-elf-and-a-robot-police-force-8759daf9?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 19 Jun 2026 18:30:00",
+      "published": "Mon, 22 Jun 2026 17:12:00",
       "source": "MarketWatch",
-      "title": "\u2018We are habitually frugal\u2019: My wife and I have money. How do we help our children without ruining their independence?",
-      "url": "https://www.marketwatch.com/story/we-are-habitually-frugal-my-wife-and-i-have-money-how-do-we-help-our-children-without-ruining-their-independence-a1e30cec?mod=mw_rss_topstories"
+      "title": "Alphabet sees $269 billion market-cap wipeout as investors fear it\u2019s losing the war for AI talent",
+      "url": "https://www.marketwatch.com/story/alphabet-sees-269-billion-market-cap-wipeout-as-investors-fear-its-losing-the-war-for-ai-talent-497aa378?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 19 Jun 2026 18:00:00",
+      "published": "Mon, 22 Jun 2026 16:47:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019ll probably be working until I die\u2019: I\u2019m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?",
-      "url": "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories"
+      "title": "Caterpillar\u2019s stock hits a milestone as roaring industrials rally sweeps up Wall Street",
+      "url": "https://www.marketwatch.com/story/caterpillars-stock-hits-a-milestone-as-roaring-industrials-rally-sweeps-up-wall-street-391057f7?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 19 Jun 2026 17:25:00",
+      "published": "Mon, 22 Jun 2026 16:24:00",
       "source": "MarketWatch",
-      "title": "Warsh\u2019s new task forces give the Fed wiggle room to put off changing rates until December",
-      "url": "https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories"
+      "title": "Super Micro\u2019s stock is seeing its best run in a year thanks to Nvidia partnership",
+      "url": "https://www.marketwatch.com/story/super-micros-stock-is-seeing-its-best-run-in-a-year-thanks-to-nvidia-partnership-f619e58e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 18 2026",
-      "change": -0.01,
-      "rate": 6.15
+      "asof_label": "Jun 22 2026",
+      "change": 0.05,
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 18 2026",
-      "change": -0.04,
+      "asof_label": "Jun 22 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
