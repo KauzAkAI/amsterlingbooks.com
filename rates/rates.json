@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4161
+      "rate": 1.4187
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7748
+      "rate": 6.7857
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87291
+      "rate": 0.87781
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75478
+      "rate": 0.75667
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.68
+      "rate": 94.74
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.78
+      "rate": 161.53
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1537.08
+      "rate": 1536.15
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3311
+      "rate": 17.486
     }
   },
-  "generated_at": "2026-06-22T23:50:04+00:00",
+  "generated_at": "2026-06-23T15:56:58+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.52
       },
       {
-        "date": "2026-06-12",
-        "rate": 6.58
-      },
-      {
         "date": "2026-06-15",
         "rate": 6.56
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-22",
         "rate": 6.66
+      },
+      {
+        "date": "2026-06-23",
+        "rate": 6.65
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 23 Jun 2026 14:49:04",
+      "source": "CNBC",
+      "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
+      "url": "https://www.cnbc.com/2026/06/23/factory-job-cuts-reported-around-financial-crisis-and-covid-levels-for-june-sp-says.html"
+    },
+    {
+      "published": "Tue, 23 Jun 2026 14:56:38",
+      "source": "CNBC",
+      "title": "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
+      "url": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html"
+    },
+    {
       "published": "Fri, 19 Jun 2026 17:56:52",
       "source": "CNBC",
       "title": "Struggling to find a job? Try looking in Nevada",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
     },
     {
-      "published": "Thu, 18 Jun 2026 11:49:16",
-      "source": "CNBC",
-      "title": "Bank of England holds interest rates at 3.75% amid Iran war peace prospects",
-      "url": "https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html"
-    },
-    {
-      "published": "Thu, 18 Jun 2026 19:17:55",
-      "source": "CNBC",
-      "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
-      "url": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html"
-    },
-    {
-      "published": "Mon, 22 Jun 2026 22:47:00",
+      "published": "Tue, 23 Jun 2026 15:54:00",
       "source": "MarketWatch",
-      "title": "Trump may say he\u2019s banning Wall Street from buying homes. Does the bipartisan housing bill actually do that?",
-      "url": "https://www.marketwatch.com/story/trump-may-say-hes-banning-wall-street-from-buying-homes-does-the-bipartisan-housing-bill-actually-do-that-14c8ee5f?mod=mw_rss_topstories"
+      "title": "I\u2019m 70. A relative offered me a $25,000 home loan secured by a lien that must be repaid within a year. Is that fair?",
+      "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 22 Jun 2026 22:21:00",
+      "published": "Tue, 23 Jun 2026 15:54:00",
       "source": "MarketWatch",
-      "title": "Big Tech has split into two artificial-intelligence camps \u2014 but the smart money isn\u2019t chasing the next OpenAI",
-      "url": "https://www.marketwatch.com/story/big-tech-is-splitting-into-two-artificial-intelligence-camps-here-is-the-better-bet-e75c9876?mod=mw_rss_topstories"
+      "title": "Social Security urgently needs another \u2018Greenspan Commission\u2019 to save it",
+      "url": "https://www.marketwatch.com/story/social-security-urgently-needs-another-greenspan-commission-to-save-it-d52fcdee?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 22 Jun 2026 22:18:00",
+      "published": "Tue, 23 Jun 2026 15:46:00",
       "source": "MarketWatch",
-      "title": "A 40% market crash is lurking in the IPO pipeline. SpaceX and OpenAI could trigger it.",
-      "url": "https://www.marketwatch.com/story/a-40-market-crash-is-lurking-in-the-ipo-pipeline-spacex-and-openai-could-trigger-it-64ae4026?mod=mw_rss_topstories"
+      "title": "\u2018Money can make you happy\u2019: My wife and I have no heirs, but we\u2019re making the world a better place by giving it away",
+      "url": "https://www.marketwatch.com/story/money-can-make-you-happy-my-wife-and-i-have-no-heirs-but-were-making-the-world-a-better-place-by-giving-it-away-f61fad98?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 22 Jun 2026 22:14:00",
+      "published": "Tue, 23 Jun 2026 15:21:00",
       "source": "MarketWatch",
-      "title": "China\u2019s weird new economic spark: toy elves and robocops",
-      "url": "https://www.marketwatch.com/story/chinas-new-economic-drivers-a-sad-toy-elf-and-a-robot-police-force-8759daf9?mod=mw_rss_topstories"
+      "title": "These stocks are falling the most on Tuesday as the tech sector comes under pressure",
+      "url": "https://www.marketwatch.com/story/these-stocks-are-falling-the-most-on-tuesday-as-the-tech-sector-comes-under-pressure-33558ade?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 22 Jun 2026 22:05:00",
+      "published": "Tue, 23 Jun 2026 15:03:00",
       "source": "MarketWatch",
-      "title": "Wall Street loves growth stocks \u2014 but these 10 \u2018losers\u2019 are primed to win",
-      "url": "https://www.marketwatch.com/story/wall-street-loves-growth-stocks-but-these-10-losers-are-primed-to-win-0202e491?mod=mw_rss_topstories"
+      "title": "At school, it\u2019s cheating. At work, it\u2019s essential. New grads are caught in a double standard around AI.",
+      "url": "https://www.marketwatch.com/story/teachers-ban-it-employers-demand-it-new-grads-face-a-frustrating-ai-double-standard-09c70f19?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 22 2026",
-      "change": 0.08,
+      "asof_label": "Jun 23 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
