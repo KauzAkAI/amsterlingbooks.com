@@ -135,7 +135,7 @@
       "rate": 17.486
     }
   },
-  "generated_at": "2026-06-23T18:07:18+00:00",
+  "generated_at": "2026-06-23T20:22:11+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
     },
     {
-      "published": "Tue, 23 Jun 2026 17:53:00",
+      "published": "Tue, 23 Jun 2026 19:57:00",
       "source": "MarketWatch",
-      "title": "Americans\u2019 401(k) balances hit record levels last year. See how you compare.",
-      "url": "https://www.marketwatch.com/story/americans-401-k-balances-hit-record-levels-last-year-see-how-you-compare-facd32c4?mod=mw_rss_topstories"
+      "title": "SpaceX stock\u2019s wild price swings since its IPO show how risky leveraged ETFs can be",
+      "url": "https://www.marketwatch.com/story/spacex-stocks-wild-price-swings-since-its-ipo-show-how-risky-leveraged-etfs-can-be-17edf612?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 23 Jun 2026 17:49:00",
+      "published": "Tue, 23 Jun 2026 19:38:00",
       "source": "MarketWatch",
-      "title": "How to work in retirement without seeing your Social Security checks slashed",
-      "url": "https://www.marketwatch.com/story/how-to-work-in-retirement-without-seeing-your-social-security-checks-slashed-05d6c830?mod=mw_rss_topstories"
+      "title": "Researchers cracked the code on predicting market bubbles. Here\u2019s what it\u2019s saying about today\u2019s stock prices.",
+      "url": "https://www.marketwatch.com/story/researchers-cracked-the-code-on-predicting-market-bubbles-heres-what-its-saying-about-todays-stock-prices-2e172eec?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 23 Jun 2026 17:45:00",
+      "published": "Tue, 23 Jun 2026 19:35:00",
       "source": "MarketWatch",
-      "title": "Your index fund is hiding a looming tech-stock risk \u2014 here is how to protect your portfolio",
-      "url": "https://www.marketwatch.com/story/your-index-fund-is-hiding-a-looming-tech-stock-risk-here-is-how-to-protect-your-portfolio-f4dd1c20?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 23 Jun 2026 17:30:00",
-      "source": "MarketWatch",
-      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
-      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 23 Jun 2026 17:04:00",
-      "source": "MarketWatch",
-      "title": "Trump admits selling IBM\u2019s stock was a mistake. Now he\u2019s cheering its quantum future.",
+      "title": "Trump regrets once selling IBM\u2019s stock. Now he\u2019s cheering its quantum future and dealing its shares.",
       "url": "https://www.marketwatch.com/story/trump-admits-selling-ibms-stock-was-a-mistake-now-hes-cheering-its-quantum-future-095592d6?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 23 Jun 2026 19:29:00",
+      "source": "MarketWatch",
+      "title": "Stock investors expect the Fed to save them. But no \u2018Warsh put\u2019 is coming.",
+      "url": "https://www.marketwatch.com/story/stock-investors-expect-the-fed-to-save-them-but-no-warsh-put-is-coming-and-the-greenspan-put-was-a-myth-ed92e3d9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 23 Jun 2026 19:00:00",
+      "source": "MarketWatch",
+      "title": "Everyday investors fueled the SpaceX trading frenzy. Now they face a bear market.",
+      "url": "https://www.marketwatch.com/story/everyday-investors-fueled-the-spacex-trading-frenzy-now-they-face-a-bear-market-c45e8a76?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.66
+      "yield": 3.65
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.98
+      "yield": 3.96
     },
     {
       "tenor": "1Y",
-      "yield": 4.04
+      "yield": 4.01
     },
     {
       "tenor": "2Y",
-      "yield": 4.24
+      "yield": 4.16
     },
     {
       "tenor": "5Y",
-      "yield": 4.29
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
-      "yield": 4.39
+      "yield": 4.38
     },
     {
       "tenor": "10Y",
-      "yield": 4.51
+      "yield": 4.5
     },
     {
       "tenor": "20Y",
-      "yield": 4.97
+      "yield": 4.96
     },
     {
       "tenor": "30Y",
-      "yield": 4.95
+      "yield": 4.94
     }
   ],
   "warnings": []
