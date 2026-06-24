@@ -135,7 +135,7 @@
       "rate": 17.6197
     }
   },
-  "generated_at": "2026-06-24T19:16:20+00:00",
+  "generated_at": "2026-06-24T21:01:45+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
     },
     {
-      "published": "Wed, 24 Jun 2026 19:15:00",
+      "published": "Wed, 24 Jun 2026 20:51:00",
       "source": "MarketWatch",
-      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
-      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
+      "title": "Everyone on Wall Street now believes in buying the dip. That is exactly why you should worry.",
+      "url": "https://www.marketwatch.com/story/everyone-on-wall-street-now-believes-in-buying-the-dip-that-is-exactly-why-you-should-worry-44582465?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 18:55:00",
+      "published": "Wed, 24 Jun 2026 20:50:00",
       "source": "MarketWatch",
-      "title": "Gas prices aren\u2019t falling fast enough for Trump. Here\u2019s when drivers can expect more relief.",
-      "url": "https://www.marketwatch.com/story/gas-prices-arent-falling-fast-enough-for-trump-heres-when-drivers-can-expect-more-relief-57db7038?mod=mw_rss_topstories"
+      "title": "Could the U.S. join Germany in raising its retirement age?",
+      "url": "https://www.marketwatch.com/story/could-the-u-s-join-germany-in-raising-its-retirement-age-3282e0bd?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 18:45:00",
+      "published": "Wed, 24 Jun 2026 20:49:00",
       "source": "MarketWatch",
-      "title": "\u2018It feels like a medical miracle\u2019: How did a single QR code coupon cut my $618 Walgreens prescription to $15?",
-      "url": "https://www.marketwatch.com/story/it-feels-like-a-medical-miracle-how-did-a-single-qr-code-coupon-cut-my-618-walgreens-prescription-to-15-524a1151?mod=mw_rss_topstories"
+      "title": "Retail investors think tech stocks are overvalued. They\u2019re buying anyway \u2014 here\u2019s why.",
+      "url": "https://www.marketwatch.com/story/retail-investors-think-tech-stocks-are-overvalued-theyre-buying-anyway-heres-why-22e10c4b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 18:28:00",
+      "published": "Wed, 24 Jun 2026 20:29:00",
       "source": "MarketWatch",
-      "title": "This solar stock is surging on the heels of a new Tesla deal",
-      "url": "https://www.marketwatch.com/story/this-solar-stock-is-surging-on-the-heels-of-a-new-tesla-deal-efd2747d?mod=mw_rss_topstories"
+      "title": "Meet the World Cup fans shelling out thousands for once-in-a-lifetime trips \u2014 and some don\u2019t even have tickets to games",
+      "url": "https://www.marketwatch.com/story/meet-the-world-cup-fans-shelling-out-thousands-for-once-in-a-lifetime-trips-and-some-dont-even-have-tickets-to-games-a4b22b47?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 18:21:00",
+      "published": "Wed, 24 Jun 2026 20:27:00",
       "source": "MarketWatch",
-      "title": "Americans are as worried as ever about layoffs and losing their jobs. Why so much angst?",
-      "url": "https://www.marketwatch.com/story/americans-are-as-worried-as-ever-about-layoffs-and-losing-their-jobs-why-so-much-angst-6503fb63?mod=mw_rss_topstories"
+      "title": "These hidden PCE triggers could force a Fed rate hike \u2014 and shock the market",
+      "url": "https://www.marketwatch.com/story/inflation-is-about-more-than-oil-these-two-hidden-triggers-could-force-a-fed-rate-hike-d9fa393e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.65
+      "yield": 3.66
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 3.96
+      "yield": 3.95
     },
     {
       "tenor": "1Y",
-      "yield": 4.01
+      "yield": 3.99
     },
     {
       "tenor": "2Y",
-      "yield": 4.16
+      "yield": 4.11
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.17
     },
     {
       "tenor": "7Y",
-      "yield": 4.38
+      "yield": 4.28
     },
     {
       "tenor": "10Y",
-      "yield": 4.5
+      "yield": 4.41
     },
     {
       "tenor": "20Y",
-      "yield": 4.96
+      "yield": 4.87
     },
     {
       "tenor": "30Y",
-      "yield": 4.94
+      "yield": 4.86
     }
   ],
   "warnings": []
