@@ -135,7 +135,7 @@
       "rate": 17.6197
     }
   },
-  "generated_at": "2026-06-24T22:37:24+00:00",
+  "generated_at": "2026-06-24T23:49:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
     },
     {
+      "published": "Wed, 24 Jun 2026 23:01:00",
+      "source": "MarketWatch",
+      "title": "A relative offered me a $25,000 home loan secured by a lien that must be repaid within a year. Is that fair?",
+      "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 24 Jun 2026 22:57:00",
+      "source": "MarketWatch",
+      "title": "Gas prices aren\u2019t falling fast enough for Trump. Here\u2019s when drivers can expect more relief.",
+      "url": "https://www.marketwatch.com/story/gas-prices-arent-falling-fast-enough-for-trump-heres-when-drivers-can-expect-more-relief-57db7038?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 24 Jun 2026 22:30:00",
       "source": "MarketWatch",
       "title": "\u2018I\u2019m scared of making a huge financial mistake\u2019: I gave my brother half of my $1.5 million home. Can he force me to sell?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Cerebras\u2019s stock sinks below IPO price in a major blow to early investors",
       "url": "https://www.marketwatch.com/story/cerebrass-stock-sinks-below-ipo-price-in-a-major-blow-to-early-investors-8a55f2ff?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 24 Jun 2026 21:28:00",
-      "source": "MarketWatch",
-      "title": "Did the Trump White House just give Warsh the green light to hike interest rates? This analyst thinks so.",
-      "url": "https://www.marketwatch.com/story/did-the-trump-white-house-just-give-warsh-the-green-light-to-hike-interest-rates-this-analyst-thinks-so-f03b29fd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 24 Jun 2026 21:25:00",
-      "source": "MarketWatch",
-      "title": "Gas prices aren\u2019t falling fast enough for Trump. Here\u2019s when drivers can expect more relief.",
-      "url": "https://www.marketwatch.com/story/gas-prices-arent-falling-fast-enough-for-trump-heres-when-drivers-can-expect-more-relief-57db7038?mod=mw_rss_topstories"
     }
   ],
   "rates": {
