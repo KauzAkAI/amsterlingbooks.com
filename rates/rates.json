@@ -135,7 +135,7 @@
       "rate": 17.6197
     }
   },
-  "generated_at": "2026-06-24T17:31:57+00:00",
+  "generated_at": "2026-06-24T19:16:20+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-06-24",
-        "rate": 6.58
+        "rate": 6.55
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
     },
     {
-      "published": "Wed, 24 Jun 2026 17:14:00",
+      "published": "Wed, 24 Jun 2026 19:15:00",
       "source": "MarketWatch",
-      "title": "Everyone on Wall Street now believes in buying the dip. That is exactly why you should worry.",
-      "url": "https://www.marketwatch.com/story/everyone-on-wall-street-now-believes-in-buying-the-dip-that-is-exactly-why-you-should-worry-44582465?mod=mw_rss_topstories"
+      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
+      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 17:11:00",
+      "published": "Wed, 24 Jun 2026 18:55:00",
       "source": "MarketWatch",
-      "title": "Social Security says I was overpaid for 7 years. I believe it\u2019s mistaken. Can they cut my benefits?",
-      "url": "https://www.marketwatch.com/story/social-security-says-i-was-overpaid-for-7-years-i-believe-its-mistaken-can-they-cut-my-benefits-f2d4a524?mod=mw_rss_topstories"
+      "title": "Gas prices aren\u2019t falling fast enough for Trump. Here\u2019s when drivers can expect more relief.",
+      "url": "https://www.marketwatch.com/story/gas-prices-arent-falling-fast-enough-for-trump-heres-when-drivers-can-expect-more-relief-57db7038?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 17:03:00",
+      "published": "Wed, 24 Jun 2026 18:45:00",
       "source": "MarketWatch",
-      "title": "Your index fund is hiding a looming tech-stock risk \u2014 here is how to protect your portfolio",
-      "url": "https://www.marketwatch.com/story/your-index-fund-is-hiding-a-looming-tech-stock-risk-here-is-how-to-protect-your-portfolio-f4dd1c20?mod=mw_rss_topstories"
+      "title": "\u2018It feels like a medical miracle\u2019: How did a single QR code coupon cut my $618 Walgreens prescription to $15?",
+      "url": "https://www.marketwatch.com/story/it-feels-like-a-medical-miracle-how-did-a-single-qr-code-coupon-cut-my-618-walgreens-prescription-to-15-524a1151?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 17:00:00",
+      "published": "Wed, 24 Jun 2026 18:28:00",
       "source": "MarketWatch",
-      "title": "The tech stocks now leading this bull market are far more volatile than the old guard",
-      "url": "https://www.marketwatch.com/story/the-tech-stocks-now-leading-this-bull-market-are-far-more-volatile-than-the-old-guard-fc802fc5?mod=mw_rss_topstories"
+      "title": "This solar stock is surging on the heels of a new Tesla deal",
+      "url": "https://www.marketwatch.com/story/this-solar-stock-is-surging-on-the-heels-of-a-new-tesla-deal-efd2747d?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 16:59:00",
+      "published": "Wed, 24 Jun 2026 18:21:00",
       "source": "MarketWatch",
-      "title": "Researchers cracked the code on predicting market bubbles. Here\u2019s what it\u2019s saying about today\u2019s stock prices.",
-      "url": "https://www.marketwatch.com/story/researchers-cracked-the-code-on-predicting-market-bubbles-heres-what-its-saying-about-todays-stock-prices-2e172eec?mod=mw_rss_topstories"
+      "title": "Americans are as worried as ever about layoffs and losing their jobs. Why so much angst?",
+      "url": "https://www.marketwatch.com/story/americans-are-as-worried-as-ever-about-layoffs-and-losing-their-jobs-why-so-much-angst-6503fb63?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Jun 24 2026",
-      "change": -0.03,
-      "rate": 6.16
+      "change": -0.04,
+      "rate": 6.15
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Jun 24 2026",
-      "change": -0.07,
+      "change": -0.1,
       "rate": 6.52
     }
   },
