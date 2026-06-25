@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4233
+      "rate": 1.424
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8109
+      "rate": 6.7982
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.88183
+      "rate": 0.88168
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75983
+      "rate": 0.75986
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.67
+      "rate": 94.39
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.68
+      "rate": 161.85
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1546.43
+      "rate": 1542.92
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.6197
+      "rate": 17.6389
     }
   },
-  "generated_at": "2026-06-24T23:49:13+00:00",
+  "generated_at": "2026-06-25T15:43:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Thu, 25 Jun 2026 13:30:56",
+      "source": "CNBC",
+      "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows",
+      "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html"
+    },
+    {
+      "published": "Thu, 25 Jun 2026 14:41:19",
+      "source": "CNBC",
+      "title": "Trump pledges rapid U.S. response for Venezuela after historic earthquakes kill hundreds",
+      "url": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html"
+    },
+    {
+      "published": "Thu, 25 Jun 2026 14:03:16",
+      "source": "CNBC",
+      "title": "Iran warns ships it's 'unacceptable and dangerous' to transit the Strait of Hormuz without their approval",
+      "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
+    },
+    {
       "published": "Tue, 23 Jun 2026 16:40:57",
       "source": "CNBC",
       "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html"
     },
     {
-      "published": "Fri, 19 Jun 2026 17:56:52",
-      "source": "CNBC",
-      "title": "Struggling to find a job? Try looking in Nevada",
-      "url": "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html"
+      "published": "Thu, 25 Jun 2026 15:31:00",
+      "source": "MarketWatch",
+      "title": "Bayer\u2019s stock jumps after Supreme Court sides with Roundup weedkiller manufacturer",
+      "url": "https://www.marketwatch.com/story/bayers-stock-jumps-after-supreme-court-sides-with-roundup-weedkiller-manufacturer-a747f253?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 19 Jun 2026 08:08:34",
-      "source": "CNBC",
-      "title": "Hormuz relief may not ease the economic toll that's already 'baked in,' analysts warn",
-      "url": "https://www.cnbc.com/2026/06/19/hormuz-relief-may-not-ease-the-economic-toll-thats-already-baked-in-analysts-warn.html"
-    },
-    {
-      "published": "Fri, 19 Jun 2026 02:00:46",
-      "source": "CNBC",
-      "title": "Trump claims Iran deal is 'unconditional surrender,' says his power has 'no limits': Axios",
-      "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html"
-    },
-    {
-      "published": "Wed, 24 Jun 2026 23:01:00",
+      "published": "Thu, 25 Jun 2026 15:30:00",
       "source": "MarketWatch",
       "title": "A relative offered me a $25,000 home loan secured by a lien that must be repaid within a year. Is that fair?",
       "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 22:57:00",
+      "published": "Thu, 25 Jun 2026 15:15:00",
       "source": "MarketWatch",
-      "title": "Gas prices aren\u2019t falling fast enough for Trump. Here\u2019s when drivers can expect more relief.",
-      "url": "https://www.marketwatch.com/story/gas-prices-arent-falling-fast-enough-for-trump-heres-when-drivers-can-expect-more-relief-57db7038?mod=mw_rss_topstories"
+      "title": "\u2018Take the money while you can\u2019: I\u2019m a CPA and tell my clients to take their Social Security early. Am I wrong?",
+      "url": "https://www.marketwatch.com/story/take-the-money-while-you-can-im-a-cpa-and-tell-my-clients-to-take-their-social-security-early-am-i-wrong-a50e55e8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 22:30:00",
+      "published": "Thu, 25 Jun 2026 15:10:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m scared of making a huge financial mistake\u2019: I gave my brother half of my $1.5 million home. Can he force me to sell?",
-      "url": "https://www.marketwatch.com/story/im-scared-of-making-a-huge-financial-mistake-i-gave-my-brother-half-of-my-1-5-million-home-can-he-force-me-to-sell-1b112b73?mod=mw_rss_topstories"
+      "title": "My houseguest left heat marks all over my table. I didn\u2019t notice them until she was gone. Do I ask her to pay to remove them?",
+      "url": "https://www.marketwatch.com/story/i-gave-my-homeexchange-guest-a-5-star-review-then-i-found-heat-marks-all-over-my-dining-table-do-i-call-her-out-855d3836?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 24 Jun 2026 22:06:00",
+      "published": "Thu, 25 Jun 2026 15:07:00",
       "source": "MarketWatch",
-      "title": "Qualcomm\u2019s stock is soaring as these big numbers excite Wall Street",
-      "url": "https://www.marketwatch.com/story/qualcomms-stock-is-soaring-as-these-big-numbers-excite-wall-street-316d41f4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 24 Jun 2026 22:06:00",
-      "source": "MarketWatch",
-      "title": "Cerebras\u2019s stock sinks below IPO price in a major blow to early investors",
-      "url": "https://www.marketwatch.com/story/cerebrass-stock-sinks-below-ipo-price-in-a-major-blow-to-early-investors-8a55f2ff?mod=mw_rss_topstories"
+      "title": "First-quarter GDP gets big boost, but it\u2019s not really great news",
+      "url": "https://www.marketwatch.com/story/first-quarter-gdp-gets-big-boost-but-its-not-really-great-news-488bf948?mod=mw_rss_topstories"
     }
   ],
   "rates": {
