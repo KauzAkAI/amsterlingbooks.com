@@ -135,7 +135,7 @@
       "rate": 17.6389
     }
   },
-  "generated_at": "2026-06-25T15:43:39+00:00",
+  "generated_at": "2026-06-25T17:56:58+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.57
       },
       {
-        "date": "2026-06-04",
-        "rate": 6.48
-      },
-      {
         "date": "2026-06-10",
         "rate": 6.6
       },
       {
         "date": "2026-06-11",
         "rate": 6.52
-      },
-      {
-        "date": "2026-06-16",
-        "rate": 6.54
       },
       {
         "date": "2026-06-17",
@@ -227,6 +219,14 @@
       {
         "date": "2026-06-24",
         "rate": 6.55
+      },
+      {
+        "date": "2026-06-25",
+        "rate": 6.53
+      },
+      {
+        "date": "2026-06-25",
+        "rate": 6.49
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html"
     },
     {
-      "published": "Thu, 25 Jun 2026 15:31:00",
+      "published": "Thu, 25 Jun 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Bayer\u2019s stock jumps after Supreme Court sides with Roundup weedkiller manufacturer",
-      "url": "https://www.marketwatch.com/story/bayers-stock-jumps-after-supreme-court-sides-with-roundup-weedkiller-manufacturer-a747f253?mod=mw_rss_topstories"
+      "title": "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
+      "url": "https://www.marketwatch.com/story/iran-tightens-its-grip-on-strait-of-hormuz-sending-oil-higher-f3bc53a1?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 15:30:00",
+      "published": "Thu, 25 Jun 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "A relative offered me a $25,000 home loan secured by a lien that must be repaid within a year. Is that fair?",
-      "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
+      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
+      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 15:15:00",
+      "published": "Thu, 25 Jun 2026 16:59:00",
       "source": "MarketWatch",
-      "title": "\u2018Take the money while you can\u2019: I\u2019m a CPA and tell my clients to take their Social Security early. Am I wrong?",
-      "url": "https://www.marketwatch.com/story/take-the-money-while-you-can-im-a-cpa-and-tell-my-clients-to-take-their-social-security-early-am-i-wrong-a50e55e8?mod=mw_rss_topstories"
+      "title": "Amateur investors are changing how the stock market works. That\u2019s creating opportunities for those who know where to look.",
+      "url": "https://www.marketwatch.com/story/amateur-investors-are-changing-how-the-stock-market-works-thats-creating-opportunities-for-those-who-know-where-to-look-34d78484?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 15:10:00",
+      "published": "Thu, 25 Jun 2026 16:40:00",
       "source": "MarketWatch",
-      "title": "My houseguest left heat marks all over my table. I didn\u2019t notice them until she was gone. Do I ask her to pay to remove them?",
-      "url": "https://www.marketwatch.com/story/i-gave-my-homeexchange-guest-a-5-star-review-then-i-found-heat-marks-all-over-my-dining-table-do-i-call-her-out-855d3836?mod=mw_rss_topstories"
+      "title": "Tesla and Waymo duel in the robotaxi race \u2014 but the company spending the most builds no cars at all",
+      "url": "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 15:07:00",
+      "published": "Thu, 25 Jun 2026 16:38:00",
       "source": "MarketWatch",
-      "title": "First-quarter GDP gets big boost, but it\u2019s not really great news",
-      "url": "https://www.marketwatch.com/story/first-quarter-gdp-gets-big-boost-but-its-not-really-great-news-488bf948?mod=mw_rss_topstories"
+      "title": "Why getting dumped from the Dow is the ultimate buy signal for this \u2014 or any \u2014 stock",
+      "url": "https://www.marketwatch.com/story/why-getting-dumped-from-the-dow-is-the-ultimate-buy-signal-for-this-stock-1d5a9342?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 24 2026",
-      "change": -0.04,
-      "rate": 6.15
+      "asof_label": "Jun 25 2026",
+      "change": -0.03,
+      "rate": 6.12
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 24 2026",
-      "change": -0.1,
+      "asof_label": "Jun 25 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
