@@ -135,7 +135,7 @@
       "rate": 17.6389
     }
   },
-  "generated_at": "2026-06-25T17:56:58+00:00",
+  "generated_at": "2026-06-25T20:17:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html"
     },
     {
-      "published": "Thu, 25 Jun 2026 17:30:00",
+      "published": "Thu, 25 Jun 2026 20:14:00",
+      "source": "MarketWatch",
+      "title": "Why Palantir\u2019s stock is having its worst month in years \u2014 even in the midst of an AI boom",
+      "url": "https://www.marketwatch.com/story/why-palantirs-stock-is-having-its-worst-month-in-years-even-in-the-midst-of-an-ai-boom-aad92671?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 25 Jun 2026 20:03:00",
       "source": "MarketWatch",
       "title": "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
       "url": "https://www.marketwatch.com/story/iran-tightens-its-grip-on-strait-of-hormuz-sending-oil-higher-f3bc53a1?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 17:00:00",
+      "published": "Thu, 25 Jun 2026 19:53:00",
       "source": "MarketWatch",
-      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
-      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
+      "title": "Japanese stocks are on fire. Here\u2019s what\u2019s driving the hot streak.",
+      "url": "https://www.marketwatch.com/story/japanese-stocks-are-on-fire-heres-whats-driving-the-hot-streak-526a6914?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 16:59:00",
+      "published": "Thu, 25 Jun 2026 19:28:00",
       "source": "MarketWatch",
-      "title": "Amateur investors are changing how the stock market works. That\u2019s creating opportunities for those who know where to look.",
-      "url": "https://www.marketwatch.com/story/amateur-investors-are-changing-how-the-stock-market-works-thats-creating-opportunities-for-those-who-know-where-to-look-34d78484?mod=mw_rss_topstories"
+      "title": "SpaceX FOMO is officially over. Space stocks across the board are getting punished.",
+      "url": "https://www.marketwatch.com/story/spacex-fomo-is-officially-over-space-stocks-across-the-board-are-getting-punished-77234fe8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 16:40:00",
+      "published": "Thu, 25 Jun 2026 19:10:00",
       "source": "MarketWatch",
-      "title": "Tesla and Waymo duel in the robotaxi race \u2014 but the company spending the most builds no cars at all",
-      "url": "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 25 Jun 2026 16:38:00",
-      "source": "MarketWatch",
-      "title": "Why getting dumped from the Dow is the ultimate buy signal for this \u2014 or any \u2014 stock",
-      "url": "https://www.marketwatch.com/story/why-getting-dumped-from-the-dow-is-the-ultimate-buy-signal-for-this-stock-1d5a9342?mod=mw_rss_topstories"
+      "title": "Apple\u2019s price hikes suggest inflation won\u2019t slow quickly, even as gas gets cheaper",
+      "url": "https://www.marketwatch.com/story/apples-price-hikes-suggest-inflation-wont-slow-quickly-even-as-gas-gets-cheaper-d2c7f4e2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.66
+      "yield": 3.7
     },
     {
       "tenor": "3M",
-      "yield": 3.85
+      "yield": 3.84
     },
     {
       "tenor": "6M",
@@ -406,23 +406,23 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.99
+      "yield": 3.96
     },
     {
       "tenor": "2Y",
-      "yield": 4.11
+      "yield": 4.09
     },
     {
       "tenor": "5Y",
-      "yield": 4.17
+      "yield": 4.15
     },
     {
       "tenor": "7Y",
-      "yield": 4.28
+      "yield": 4.26
     },
     {
       "tenor": "10Y",
-      "yield": 4.41
+      "yield": 4.4
     },
     {
       "tenor": "20Y",
