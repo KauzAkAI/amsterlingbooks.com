@@ -135,7 +135,7 @@
       "rate": 17.5156
     }
   },
-  "generated_at": "2026-06-26T19:13:15+00:00",
+  "generated_at": "2026-06-26T20:58:36+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
     },
     {
-      "published": "Fri, 26 Jun 2026 18:52:00",
+      "published": "Fri, 26 Jun 2026 20:42:00",
       "source": "MarketWatch",
-      "title": "A relative offered me a $25,000 loan, but wants a lien on my house. Are they taking advantage of me?",
-      "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s new bonds are flashing a warning sign, as investors pump the brakes on AI frenzy",
+      "url": "https://www.marketwatch.com/story/spacexs-new-bonds-are-flashing-a-warning-sign-as-investors-pump-the-brakes-on-ai-frenzy-752ad44b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 18:39:00",
+      "published": "Fri, 26 Jun 2026 20:39:00",
+      "source": "MarketWatch",
+      "title": "Iran\u2019s ship attack tests the shipping-insurance market just as war-risk premiums had plunged",
+      "url": "https://www.marketwatch.com/story/irans-ship-attack-tests-the-shipping-insurance-market-just-as-war-risk-premiums-had-plunged-8c4ef14d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 26 Jun 2026 20:38:00",
+      "source": "MarketWatch",
+      "title": "Bond yields are falling as inflation pops. The Fed\u2019s tough talk under Warsh is helping.",
+      "url": "https://www.marketwatch.com/story/bond-yields-are-falling-as-inflation-pops-the-feds-tough-talk-under-warsh-is-helping-7d538b3b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 26 Jun 2026 20:27:00",
+      "source": "MarketWatch",
+      "title": "Fed\u2019s Kashkari projects one interest-rate hike this year. Here\u2019s what changed his mind.",
+      "url": "https://www.marketwatch.com/story/feds-kashkari-projects-one-interest-rate-hike-this-year-heres-what-changed-his-mind-3a6b428c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 26 Jun 2026 20:25:00",
       "source": "MarketWatch",
       "title": "Healthcare stocks have become a haven for investors ditching tech",
       "url": "https://www.marketwatch.com/story/healthcare-stocks-have-become-a-haven-for-investors-ditching-tech-81c544d0?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 18:23:00",
-      "source": "MarketWatch",
-      "title": "Germany is considering raising its retirement age to 70. Could the U.S. follow?",
-      "url": "https://www.marketwatch.com/story/could-the-u-s-join-germany-in-raising-its-retirement-age-3282e0bd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 18:23:00",
-      "source": "MarketWatch",
-      "title": "Annuities are coming to more 401(k) plans. Should workers embrace them?",
-      "url": "https://www.marketwatch.com/story/annuities-are-coming-to-more-401-k-plans-should-workers-embrace-them-78f014e9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 18:10:00",
-      "source": "MarketWatch",
-      "title": "Oil prices may have fallen \u2018too far, too fast\u2019 as Trump confirms Iran violated the cease-fire deal",
-      "url": "https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,31 +398,31 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.84
+      "yield": 3.83
     },
     {
       "tenor": "6M",
-      "yield": 3.95
+      "yield": 3.94
     },
     {
       "tenor": "1Y",
-      "yield": 3.96
+      "yield": 3.94
     },
     {
       "tenor": "2Y",
-      "yield": 4.09
+      "yield": 4.07
     },
     {
       "tenor": "5Y",
-      "yield": 4.15
+      "yield": 4.12
     },
     {
       "tenor": "7Y",
-      "yield": 4.26
+      "yield": 4.23
     },
     {
       "tenor": "10Y",
-      "yield": 4.4
+      "yield": 4.38
     },
     {
       "tenor": "20Y",
@@ -430,7 +430,7 @@
     },
     {
       "tenor": "30Y",
-      "yield": 4.86
+      "yield": 4.87
     }
   ],
   "warnings": []
