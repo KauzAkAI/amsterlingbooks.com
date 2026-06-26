@@ -135,7 +135,7 @@
       "rate": 17.5156
     }
   },
-  "generated_at": "2026-06-26T22:21:09+00:00",
+  "generated_at": "2026-06-26T23:41:54+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
     },
     {
+      "published": "Fri, 26 Jun 2026 22:35:00",
+      "source": "MarketWatch",
+      "title": "Tesla and Waymo duel in the robotaxi race \u2014 but the company spending the most builds no cars at all",
+      "url": "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 26 Jun 2026 22:34:00",
+      "source": "MarketWatch",
+      "title": "SpaceX stock is a terrible buy \u2014 what that actually means for the bull market",
+      "url": "https://www.marketwatch.com/story/spacex-is-a-bad-buy-why-openai-and-anthropic-will-be-too-2448ea73?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 26 Jun 2026 22:09:00",
       "source": "MarketWatch",
       "title": "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Tech stocks just had one of their worst weeks in a year. Here\u2019s how AI momentum went off the rails.",
       "url": "https://www.marketwatch.com/story/tech-stocks-just-had-one-of-their-worst-weeks-in-a-year-heres-how-ai-momentum-went-off-the-rails-d4596bae?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 21:06:00",
-      "source": "MarketWatch",
-      "title": "Iran\u2019s ship attack tests the shipping-insurance market just as war-risk premiums had plunged",
-      "url": "https://www.marketwatch.com/story/irans-ship-attack-tests-the-shipping-insurance-market-just-as-war-risk-premiums-had-plunged-8c4ef14d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 20:42:00",
-      "source": "MarketWatch",
-      "title": "SpaceX\u2019s new bonds are flashing a warning sign, as investors pump the brakes on AI frenzy",
-      "url": "https://www.marketwatch.com/story/spacexs-new-bonds-are-flashing-a-warning-sign-as-investors-pump-the-brakes-on-ai-frenzy-752ad44b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
