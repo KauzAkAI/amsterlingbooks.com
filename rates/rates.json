@@ -90,7 +90,7 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.424
+      "rate": 1.4182
     },
     "CNY": {
       "change_pct": 0,
@@ -102,40 +102,40 @@
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.88168
+      "rate": 0.87712
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75986
+      "rate": 0.75654
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.39
+      "rate": 94.4
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.85
+      "rate": 161.65
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1542.92
+      "rate": 1536.47
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.6389
+      "rate": 17.5156
     }
   },
-  "generated_at": "2026-06-25T23:25:49+00:00",
+  "generated_at": "2026-06-26T15:28:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Fri, 26 Jun 2026 09:36:24",
+      "source": "CNBC",
+      "title": "Shipping rebounds in Strait of Hormuz one week after U.S.-Iran deal \u2013 but fragile confidence threatens recovery",
+      "url": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-shipping-oil-us-iran.html"
+    },
+    {
+      "published": "Fri, 26 Jun 2026 02:07:59",
+      "source": "CNBC",
+      "title": "UN agency pauses Hormuz ship evacuation plan after first vessel attack under peace deal",
+      "url": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-vessel-attack-evacuation-pauses-iran-united-states-peace-deal-negotiation-.html"
+    },
+    {
       "published": "Thu, 25 Jun 2026 13:30:56",
       "source": "CNBC",
       "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed\u2019s preferred gauge shows",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
     },
     {
-      "published": "Tue, 23 Jun 2026 16:40:57",
-      "source": "CNBC",
-      "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
-      "url": "https://www.cnbc.com/2026/06/23/factory-job-cuts-reported-around-financial-crisis-and-covid-levels-for-june-sp-says.html"
-    },
-    {
-      "published": "Tue, 23 Jun 2026 14:56:38",
-      "source": "CNBC",
-      "title": "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
-      "url": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html"
-    },
-    {
-      "published": "Thu, 25 Jun 2026 23:12:00",
+      "published": "Fri, 26 Jun 2026 14:31:00",
       "source": "MarketWatch",
-      "title": "SpaceX stock is a terrible buy \u2014 what that actually means for the bull market",
-      "url": "https://www.marketwatch.com/story/spacex-is-a-bad-buy-why-openai-and-anthropic-will-be-too-2448ea73?mod=mw_rss_topstories"
+      "title": "This imminent SpaceX development could make the stock even more volatile",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-could-get-another-dose-of-volatility-8763bb0a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 22:29:00",
+      "published": "Fri, 26 Jun 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "A world rejecting OPEC controls could usher in oil below $50 a barrel",
-      "url": "https://www.marketwatch.com/story/a-world-rejecting-opec-controls-could-usher-in-oil-below-50-a-barrel-3d7eda1b?mod=mw_rss_topstories"
+      "title": "I want to leave everything to my sons, but I\u2019m terrified they\u2019ll give it to my ex-husband. How do I prevent this?",
+      "url": "https://www.marketwatch.com/story/i-want-to-leave-everything-to-my-sons-but-im-terrified-theyll-give-it-to-my-ex-husband-how-do-i-prevent-this-8cfc752c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 21:48:00",
+      "published": "Fri, 26 Jun 2026 13:31:00",
       "source": "MarketWatch",
-      "title": "\u2018I have full guardianship\u2019: My son has special needs. If I buy him a condo, will that hurt his benefits?",
-      "url": "https://www.marketwatch.com/story/i-have-full-guardianship-my-son-has-special-needs-if-i-buy-him-a-condo-will-that-hurt-his-benefits-6f26e904?mod=mw_rss_topstories"
+      "title": "Exuberance over earnings is becoming a problem for the stock market, according to this Wall Street veteran",
+      "url": "https://www.marketwatch.com/story/why-this-earnings-exuberance-may-be-a-problem-for-the-stock-market-according-to-this-wall-street-veteran-20431488?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 21:33:00",
+      "published": "Fri, 26 Jun 2026 13:30:00",
       "source": "MarketWatch",
-      "title": "The S&P 500 is at a critical crossroads. A break lower could signal more losses ahead.",
-      "url": "https://www.marketwatch.com/story/the-s-p-500-is-at-a-critical-crossroads-a-break-lower-could-signal-more-losses-ahead-f425063c?mod=mw_rss_topstories"
+      "title": "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this ethical?",
+      "url": "https://www.marketwatch.com/story/i-had-my-gallbladder-removed-after-i-got-home-the-hospital-asked-me-for-a-donation-is-this-ethical-ad12a8e1?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 25 Jun 2026 20:54:00",
+      "published": "Fri, 26 Jun 2026 13:29:00",
       "source": "MarketWatch",
-      "title": "After losing my son, would it be a mistake to sell my recently purchased house and move to my hometown?",
-      "url": "https://www.marketwatch.com/story/my-son-passed-away-am-i-crazy-to-move-to-my-former-home-and-sell-a-house-i-bought-in-september-f1f5f41a?mod=mw_rss_topstories"
+      "title": "El Ni\u00f1o\u2019s coming back \u2014 and it could cost the global economy trillions",
+      "url": "https://www.marketwatch.com/story/oil-may-no-longer-pose-the-same-threat-to-the-global-economy-but-another-risk-may-be-around-the-corner-says-citigroup-629d2854?mod=mw_rss_topstories"
     }
   ],
   "rates": {
