@@ -135,7 +135,7 @@
       "rate": 17.5156
     }
   },
-  "generated_at": "2026-06-26T17:18:27+00:00",
+  "generated_at": "2026-06-26T19:13:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-06-03",
-        "rate": 6.57
-      },
-      {
         "date": "2026-06-10",
         "rate": 6.6
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-06-24",
         "rate": 6.55
+      },
+      {
+        "date": "2026-06-24",
+        "rate": 6.59
       },
       {
         "date": "2026-06-25",
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
     },
     {
-      "published": "Fri, 26 Jun 2026 17:15:00",
+      "published": "Fri, 26 Jun 2026 18:52:00",
       "source": "MarketWatch",
-      "title": "Social Security says I was overpaid for 7 years. I believe it\u2019s mistaken. Can they cut my benefits?",
-      "url": "https://www.marketwatch.com/story/social-security-says-i-was-overpaid-for-7-years-i-believe-its-mistaken-can-they-cut-my-benefits-f2d4a524?mod=mw_rss_topstories"
+      "title": "A relative offered me a $25,000 loan, but wants a lien on my house. Are they taking advantage of me?",
+      "url": "https://www.marketwatch.com/story/im-70-a-relative-offered-me-a-25-000-home-loan-secured-by-a-lien-that-must-be-repaid-within-a-year-should-i-agree-27d44725?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 17:09:00",
+      "published": "Fri, 26 Jun 2026 18:39:00",
       "source": "MarketWatch",
-      "title": "There\u2019s a \u2018Trump account\u2019 hack that can unlock decades of wealth-building for your kid",
-      "url": "https://www.marketwatch.com/story/theres-a-trump-account-hack-that-can-unlock-decades-of-wealth-building-for-your-kid-b84188b6?mod=mw_rss_topstories"
+      "title": "Healthcare stocks have become a haven for investors ditching tech",
+      "url": "https://www.marketwatch.com/story/healthcare-stocks-have-become-a-haven-for-investors-ditching-tech-81c544d0?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 16:47:00",
+      "published": "Fri, 26 Jun 2026 18:23:00",
       "source": "MarketWatch",
-      "title": "How Micron aims to break through the risk cycle that has spooked investors for decades",
-      "url": "https://www.marketwatch.com/story/how-micron-aims-to-break-through-the-risk-cycle-that-has-spooked-investors-for-decades-f307e7df?mod=mw_rss_topstories"
+      "title": "Germany is considering raising its retirement age to 70. Could the U.S. follow?",
+      "url": "https://www.marketwatch.com/story/could-the-u-s-join-germany-in-raising-its-retirement-age-3282e0bd?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 16:45:00",
+      "published": "Fri, 26 Jun 2026 18:23:00",
       "source": "MarketWatch",
-      "title": "Discounted bond funds, especially at scandal-hit Wamco, may offer an investment opportunity",
-      "url": "https://www.marketwatch.com/story/discounted-bond-funds-especially-at-scandal-hit-wamco-may-offer-an-investment-opportunity-2afa77e8?mod=mw_rss_topstories"
+      "title": "Annuities are coming to more 401(k) plans. Should workers embrace them?",
+      "url": "https://www.marketwatch.com/story/annuities-are-coming-to-more-401-k-plans-should-workers-embrace-them-78f014e9?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 16:35:00",
+      "published": "Fri, 26 Jun 2026 18:10:00",
       "source": "MarketWatch",
-      "title": "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
-      "url": "https://www.marketwatch.com/story/iran-tightens-its-grip-on-strait-of-hormuz-sending-oil-higher-f3bc53a1?mod=mw_rss_topstories"
+      "title": "Oil prices may have fallen \u2018too far, too fast\u2019 as Trump confirms Iran violated the cease-fire deal",
+      "url": "https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
