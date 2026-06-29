@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4182
+      "rate": 1.4204
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7982
+      "rate": 6.794
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87712
+      "rate": 0.87673
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75654
+      "rate": 0.75587
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.4
+      "rate": 94.55
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.65
+      "rate": 161.86
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1536.47
+      "rate": 1543.75
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5156
+      "rate": 17.4754
     }
   },
-  "generated_at": "2026-06-26T23:41:54+00:00",
+  "generated_at": "2026-06-29T16:40:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-06-18",
-        "rate": 6.58
-      },
-      {
-        "date": "2026-06-18",
         "rate": 6.47
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-26",
         "rate": 6.53
+      },
+      {
+        "date": "2026-06-29",
+        "rate": 6.52
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 29 Jun 2026 04:46:25",
+      "source": "CNBC",
+      "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
+      "url": "https://www.cnbc.com/2026/06/29/china-japan-export-controls-watch-list-defense-entities.html"
+    },
+    {
       "published": "Fri, 26 Jun 2026 09:36:24",
       "source": "CNBC",
       "title": "Shipping rebounds in Strait of Hormuz one week after U.S.-Iran deal \u2013 but fragile confidence threatens recovery",
@@ -315,45 +321,39 @@
       "url": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html"
     },
     {
-      "published": "Thu, 25 Jun 2026 14:03:16",
-      "source": "CNBC",
-      "title": "Iran warns ships it's 'unacceptable and dangerous' to transit the Strait of Hormuz without their approval",
-      "url": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html"
+      "published": "Mon, 29 Jun 2026 16:05:00",
+      "source": "MarketWatch",
+      "title": "Fed\u2019s Lisa Cook can stay on at central bank while challenging Trump\u2019s attempt to fire her, Supreme Court rules",
+      "url": "https://www.marketwatch.com/story/supreme-court-allows-lisa-cook-to-stay-on-at-fed-for-now-whats-next-as-trump-tries-to-fire-her-06bfb9ee?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 22:35:00",
+      "published": "Mon, 29 Jun 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "Tesla and Waymo duel in the robotaxi race \u2014 but the company spending the most builds no cars at all",
-      "url": "https://www.marketwatch.com/story/tesla-and-waymo-are-chasing-the-robotaxi-dream-but-the-company-spending-the-most-to-win-builds-no-cars-at-all-0d8682b9?mod=mw_rss_topstories"
+      "title": "I\u2019m a CPA and tell my clients to claim Social Security early. Am I giving them bad advice?",
+      "url": "https://www.marketwatch.com/story/take-the-money-while-you-can-im-a-cpa-and-tell-my-clients-to-take-their-social-security-early-am-i-wrong-a50e55e8?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 22:34:00",
+      "published": "Mon, 29 Jun 2026 15:34:00",
       "source": "MarketWatch",
-      "title": "SpaceX stock is a terrible buy \u2014 what that actually means for the bull market",
-      "url": "https://www.marketwatch.com/story/spacex-is-a-bad-buy-why-openai-and-anthropic-will-be-too-2448ea73?mod=mw_rss_topstories"
+      "title": "Wall Street is bracing for a wave of Fed rate hikes that may never come. These sectors stand to gain.",
+      "url": "https://www.marketwatch.com/story/wall-street-is-bracing-for-a-wave-of-fed-rate-hikes-that-may-never-come-these-sectors-stand-to-gain-63229922?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 22:09:00",
+      "published": "Mon, 29 Jun 2026 15:07:00",
       "source": "MarketWatch",
-      "title": "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
-      "url": "https://www.marketwatch.com/story/servicenow-salesforce-and-other-software-stocks-surge-as-the-openai-threat-weakens-bb1eacfb?mod=mw_rss_topstories"
+      "title": "There\u2019s a \u2018Trump account\u2019 hack that can unlock decades of wealth-building for your kid",
+      "url": "https://www.marketwatch.com/story/theres-a-trump-account-hack-that-can-unlock-decades-of-wealth-building-for-your-kid-b84188b6?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 26 Jun 2026 21:50:00",
+      "published": "Mon, 29 Jun 2026 15:07:00",
       "source": "MarketWatch",
-      "title": "U.S. confirms retaliatory strike on Iran, pulling oil prices up in after-hours trading",
-      "url": "https://www.marketwatch.com/story/oil-heads-for-another-losing-week-but-analyst-warns-sluggish-strait-of-hormuz-traffic-could-send-it-soaring-again-80ab9ba8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 26 Jun 2026 21:16:00",
-      "source": "MarketWatch",
-      "title": "Tech stocks just had one of their worst weeks in a year. Here\u2019s how AI momentum went off the rails.",
-      "url": "https://www.marketwatch.com/story/tech-stocks-just-had-one-of-their-worst-weeks-in-a-year-heres-how-ai-momentum-went-off-the-rails-d4596bae?mod=mw_rss_topstories"
+      "title": "Strategy can now sell bitcoin to buy back stock \u2014 the opposite of what it\u2019s been doing",
+      "url": "https://www.marketwatch.com/story/strategy-can-now-sell-bitcoin-to-buy-back-stock-the-opposite-of-what-its-been-doing-db506fdb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 26 2026",
+      "asof_label": "Jun 29 2026",
       "change": 0.0,
       "rate": 6.12
     },
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 26 2026",
-      "change": 0.0,
+      "asof_label": "Jun 29 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
