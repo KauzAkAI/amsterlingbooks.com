@@ -135,7 +135,7 @@
       "rate": 17.4754
     }
   },
-  "generated_at": "2026-06-29T18:34:04+00:00",
+  "generated_at": "2026-06-29T20:30:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html"
     },
     {
-      "published": "Mon, 29 Jun 2026 18:10:00",
+      "published": "Mon, 29 Jun 2026 20:25:00",
       "source": "MarketWatch",
-      "title": "Charter may be making \u2018frenemies\u2019 with SpaceX, and its stock is soaring",
-      "url": "https://www.marketwatch.com/story/charter-may-be-making-frenemies-with-spacex-and-its-stock-is-soaring-e300eb21?mod=mw_rss_topstories"
+      "title": "Do this before the heat wave hits \u2014 and slash your cooling costs by $100 this summer",
+      "url": "https://www.marketwatch.com/story/do-this-before-the-heat-wave-hits-and-slash-your-cooling-costs-by-100-this-summer-c5f861a2?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 18:00:00",
+      "published": "Mon, 29 Jun 2026 20:13:00",
       "source": "MarketWatch",
-      "title": "\u2018I claimed Social Security at 62\u2019: At 76, I\u2019m working at Walmart. Why do I still owe payroll taxes?",
-      "url": "https://www.marketwatch.com/story/i-claimed-social-security-at-62-at-76-im-working-at-walmart-why-do-i-still-owe-payroll-taxes-8e22a97c?mod=mw_rss_topstories"
+      "title": "Strategy can now sell bitcoin to buy back stock \u2014 the opposite of what it\u2019s been doing",
+      "url": "https://www.marketwatch.com/story/strategy-can-now-sell-bitcoin-to-buy-back-stock-the-opposite-of-what-its-been-doing-db506fdb?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 17:31:00",
+      "published": "Mon, 29 Jun 2026 20:09:00",
       "source": "MarketWatch",
       "title": "Is the Comcast-NBCUniversal spinoff a precursor for M&A? Wall Street may already be betting on it.",
       "url": "https://www.marketwatch.com/story/comcast-to-spin-off-nbcuniversal-after-15-years-of-ownership-dad0597a?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 17:30:00",
+      "published": "Mon, 29 Jun 2026 20:08:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t think I\u2019ll make it to 80\u2019: I\u2019m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
-      "url": "https://www.marketwatch.com/story/i-dont-think-ill-make-it-to-80-im-70-and-single-do-i-take-out-a-reverse-mortgage-or-a-home-equity-agreement-3b623ee8?mod=mw_rss_topstories"
+      "title": "This rare, widening gap between Big Tech and semiconductor stocks is flashing a warning for the broader market",
+      "url": "https://www.marketwatch.com/story/semiconductor-stocks-are-surging-while-the-magnificent-seven-is-struggling-this-divergence-of-fortunes-could-be-bad-news-for-the-market-9e8fd416?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 17:22:00",
+      "published": "Mon, 29 Jun 2026 19:52:00",
       "source": "MarketWatch",
-      "title": "Is Wall Street misreading the Fed? The hidden upside catalyst for tech and real-estate stocks.",
-      "url": "https://www.marketwatch.com/story/wall-street-is-bracing-for-a-wave-of-fed-rate-hikes-that-may-never-come-these-sectors-stand-to-gain-63229922?mod=mw_rss_topstories"
+      "title": "There\u2019s a 67% chance stocks will suffer a bear market when this rare signal flashes \u2014 like it\u2019s doing now",
+      "url": "https://www.marketwatch.com/story/theres-a-67-chance-stocks-will-suffer-a-bear-market-when-this-rare-signal-flashes-like-its-doing-now-c8916710?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,31 +394,31 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.7
+      "yield": 3.71
     },
     {
       "tenor": "3M",
-      "yield": 3.83
+      "yield": 3.87
     },
     {
       "tenor": "6M",
-      "yield": 3.94
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 3.94
+      "yield": 3.97
     },
     {
       "tenor": "2Y",
-      "yield": 4.07
+      "yield": 4.1
     },
     {
       "tenor": "5Y",
-      "yield": 4.12
+      "yield": 4.14
     },
     {
       "tenor": "7Y",
-      "yield": 4.23
+      "yield": 4.24
     },
     {
       "tenor": "10Y",
@@ -426,14 +426,12 @@
     },
     {
       "tenor": "20Y",
-      "yield": 4.87
+      "yield": 4.86
     },
     {
       "tenor": "30Y",
-      "yield": 4.87
+      "yield": 4.86
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
