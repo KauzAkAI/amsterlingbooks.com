@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4204
+      "rate": 1.4236
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.794
+      "rate": 6.7855
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87673
+      "rate": 0.87765
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75587
+      "rate": 0.75635
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.55
+      "rate": 94.66
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.86
+      "rate": 162.44
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1543.75
+      "rate": 1550.89
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4754
+      "rate": 17.468
     }
   },
-  "generated_at": "2026-06-29T23:08:40+00:00",
+  "generated_at": "2026-06-30T15:37:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 30 Jun 2026 11:08:24",
+      "source": "CNBC",
+      "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
+      "url": "https://www.cnbc.com/2026/06/30/surprising-survey-of-american-job-satisfaction-.html"
+    },
+    {
       "published": "Mon, 29 Jun 2026 04:46:25",
       "source": "CNBC",
       "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html"
     },
     {
-      "published": "Thu, 25 Jun 2026 14:41:19",
-      "source": "CNBC",
-      "title": "Trump pledges rapid U.S. response for Venezuela after historic earthquakes kill hundreds",
-      "url": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html"
+      "published": "Tue, 30 Jun 2026 15:27:00",
+      "source": "MarketWatch",
+      "title": "Alphabet\u2019s stock slump is a \u2018tactical buying opportunity,\u2019 according to one analyst",
+      "url": "https://www.marketwatch.com/story/alphabets-stock-slump-is-a-tactical-buying-opportunity-according-to-one-analyst-bdbe97fa?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 22:23:00",
+      "published": "Tue, 30 Jun 2026 15:11:00",
       "source": "MarketWatch",
-      "title": "Trump\u2019s weekend Iran strikes keep sparking Monday stock rallies. Here\u2019s what the data shows us.",
-      "url": "https://www.marketwatch.com/story/trumps-weekend-iran-strikes-keep-sparking-monday-stock-rallies-heres-what-the-data-shows-us-f22da0ea?mod=mw_rss_topstories"
+      "title": "Insurers shifted roof-replacement costs onto homeowners thanks to a new federal rule \u2014 just in time for hail and hurricane season",
+      "url": "https://www.marketwatch.com/story/insurers-shifted-roof-replacement-costs-onto-homeowners-thanks-to-a-new-federal-rule-just-in-time-for-hail-and-hurricane-season-e86068df?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 22:00:00",
+      "published": "Tue, 30 Jun 2026 15:09:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t think I\u2019ll make it to 80\u2019: I\u2019m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
-      "url": "https://www.marketwatch.com/story/i-dont-think-ill-make-it-to-80-im-70-and-single-do-i-take-out-a-reverse-mortgage-or-a-home-equity-agreement-3b623ee8?mod=mw_rss_topstories"
+      "title": "What\u2019s a \u2018soft\u2019 off day? How to take one without getting in trouble at work.",
+      "url": "https://www.marketwatch.com/story/whats-a-soft-off-day-how-to-take-one-without-getting-in-trouble-at-work-10706631?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 21:33:00",
+      "published": "Tue, 30 Jun 2026 15:07:00",
       "source": "MarketWatch",
-      "title": "\u2018I claimed Social Security at 62\u2019: At 76, I\u2019m working at Walmart. Why do I still owe payroll taxes?",
-      "url": "https://www.marketwatch.com/story/i-claimed-social-security-at-62-at-76-im-working-at-walmart-why-do-i-still-owe-payroll-taxes-8e22a97c?mod=mw_rss_topstories"
+      "title": "Your Fourth of July hamburger meat was likely imported \u2014 and you\u2019re right to have a beef with that",
+      "url": "https://www.marketwatch.com/story/your-fourth-of-july-hamburger-meat-was-likely-imported-and-youre-right-to-have-a-beef-with-that-c25d7c31?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 29 Jun 2026 21:30:00",
+      "published": "Tue, 30 Jun 2026 14:47:00",
       "source": "MarketWatch",
-      "title": "Rocket Lab to take on SpaceX\u2019s Starlink with $8 billion acquisition",
-      "url": "https://www.marketwatch.com/story/rocket-lab-to-take-on-spacexs-starlink-with-8-billion-acquisition-bf7ef649?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 29 Jun 2026 21:24:00",
-      "source": "MarketWatch",
-      "title": "Tesla\u2019s stock rips higher after a long-awaited update to self-driving technology",
-      "url": "https://www.marketwatch.com/story/teslas-stock-rips-higher-after-a-long-awaited-update-to-self-driving-technology-10565662?mod=mw_rss_topstories"
+      "title": "Retiring abroad sounds amazing. What could possibly go wrong?",
+      "url": "https://www.marketwatch.com/story/retiring-abroad-sounds-amazing-what-could-possibly-go-wrong-2e3c8af5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
