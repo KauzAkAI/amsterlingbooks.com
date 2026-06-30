@@ -135,7 +135,7 @@
       "rate": 17.468
     }
   },
-  "generated_at": "2026-06-30T15:37:08+00:00",
+  "generated_at": "2026-06-30T17:29:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.47
       },
       {
-        "date": "2026-06-22",
-        "rate": 6.66
-      },
-      {
         "date": "2026-06-23",
         "rate": 6.65
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-06-29",
         "rate": 6.52
+      },
+      {
+        "date": "2026-06-30",
+        "rate": 6.54
       }
     ]
   },
@@ -321,39 +321,39 @@
       "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html"
     },
     {
-      "published": "Tue, 30 Jun 2026 15:27:00",
+      "published": "Tue, 30 Jun 2026 17:07:00",
       "source": "MarketWatch",
-      "title": "Alphabet\u2019s stock slump is a \u2018tactical buying opportunity,\u2019 according to one analyst",
-      "url": "https://www.marketwatch.com/story/alphabets-stock-slump-is-a-tactical-buying-opportunity-according-to-one-analyst-bdbe97fa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 30 Jun 2026 15:11:00",
-      "source": "MarketWatch",
-      "title": "Insurers shifted roof-replacement costs onto homeowners thanks to a new federal rule \u2014 just in time for hail and hurricane season",
-      "url": "https://www.marketwatch.com/story/insurers-shifted-roof-replacement-costs-onto-homeowners-thanks-to-a-new-federal-rule-just-in-time-for-hail-and-hurricane-season-e86068df?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 30 Jun 2026 15:09:00",
-      "source": "MarketWatch",
-      "title": "What\u2019s a \u2018soft\u2019 off day? How to take one without getting in trouble at work.",
-      "url": "https://www.marketwatch.com/story/whats-a-soft-off-day-how-to-take-one-without-getting-in-trouble-at-work-10706631?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 30 Jun 2026 15:07:00",
-      "source": "MarketWatch",
-      "title": "Your Fourth of July hamburger meat was likely imported \u2014 and you\u2019re right to have a beef with that",
+      "title": "Record beef imports are flooding the U.S. \u2014 so why is your Fourth of July BBQ so expensive?",
       "url": "https://www.marketwatch.com/story/your-fourth-of-july-hamburger-meat-was-likely-imported-and-youre-right-to-have-a-beef-with-that-c25d7c31?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 30 Jun 2026 14:47:00",
+      "published": "Tue, 30 Jun 2026 17:03:00",
       "source": "MarketWatch",
-      "title": "Retiring abroad sounds amazing. What could possibly go wrong?",
-      "url": "https://www.marketwatch.com/story/retiring-abroad-sounds-amazing-what-could-possibly-go-wrong-2e3c8af5?mod=mw_rss_topstories"
+      "title": "Gold is on the verge of a \u2018death cross\u2019 that could surprisingly foreshadow gains",
+      "url": "https://www.marketwatch.com/story/gold-is-on-the-verge-of-a-death-cross-that-could-surprisingly-foreshadow-gains-2605e99d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 30 Jun 2026 17:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I don\u2019t think I\u2019ll make it to 80\u2019: I\u2019m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
+      "url": "https://www.marketwatch.com/story/i-dont-think-ill-make-it-to-80-im-70-and-single-do-i-take-out-a-reverse-mortgage-or-a-home-equity-agreement-3b623ee8?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 30 Jun 2026 17:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018We are more likely to be living in poverty\u2019: Social Security is a lifeline for women, so why are we ignored?",
+      "url": "https://www.marketwatch.com/story/we-are-more-likely-to-be-living-in-poverty-social-security-is-a-lifeline-for-women-so-why-are-we-ignored-5d4d4eb7?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 30 Jun 2026 16:16:00",
+      "source": "MarketWatch",
+      "title": "Sandisk\u2019s stock could follow record-breaking quarter with another big jump, analysts say",
+      "url": "https://www.marketwatch.com/story/sandisks-stock-could-follow-record-breaking-quarter-with-another-big-jump-analysts-say-433bbbef?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jun 29 2026",
+      "asof_label": "Jun 30 2026",
       "change": 0.0,
       "rate": 6.12
     },
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jun 29 2026",
-      "change": -0.01,
+      "asof_label": "Jun 30 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
