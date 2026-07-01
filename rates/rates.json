@@ -135,7 +135,7 @@
       "rate": 17.5341
     }
   },
-  "generated_at": "2026-07-01T19:47:22+00:00",
+  "generated_at": "2026-07-01T21:13:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 01 Jul 2026 20:27:09",
+      "source": "CNBC",
+      "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
+      "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
+    },
+    {
       "published": "Wed, 01 Jul 2026 13:41:09",
       "source": "CNBC",
       "title": "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/06/29/china-japan-export-controls-watch-list-defense-entities.html"
     },
     {
-      "published": "Fri, 26 Jun 2026 09:36:24",
-      "source": "CNBC",
-      "title": "Shipping rebounds in Strait of Hormuz one week after U.S.-Iran deal \u2013 but fragile confidence threatens recovery",
-      "url": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-shipping-oil-us-iran.html"
+      "published": "Wed, 01 Jul 2026 21:08:00",
+      "source": "MarketWatch",
+      "title": "This unheralded sector may be the one sure thing for bulls in July",
+      "url": "https://www.marketwatch.com/story/this-unheralded-sector-may-be-the-one-sure-thing-for-bulls-in-july-e620a01b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 01 Jul 2026 20:49:00",
+      "source": "MarketWatch",
+      "title": "Is Meta \u2018giving up\u2019 on cutting-edge AI? Wall Street is divided over potential cloud pivot.",
+      "url": "https://www.marketwatch.com/story/is-meta-giving-up-on-cutting-edge-ai-wall-street-is-divided-over-potential-cloud-pivot-7c5ffc5d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 01 Jul 2026 19:52:00",
+      "source": "MarketWatch",
+      "title": "\u2018I don\u2019t think I\u2019ll make it to 80\u2019: I\u2019m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
+      "url": "https://www.marketwatch.com/story/i-dont-think-ill-make-it-to-80-im-70-and-single-do-i-take-out-a-reverse-mortgage-or-a-home-equity-agreement-3b623ee8?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 01 Jul 2026 19:52:00",
+      "source": "MarketWatch",
+      "title": "\u2018We were stunned\u2019: My daughter, 39, said her mother-in-law gives her more money than we do. Do I call her out?",
+      "url": "https://www.marketwatch.com/story/we-were-stunned-my-daughter-39-said-her-mother-in-law-gives-her-more-money-than-we-do-do-i-call-her-out-b63d087c?mod=mw_rss_topstories"
     },
     {
       "published": "Wed, 01 Jul 2026 19:34:00",
       "source": "MarketWatch",
       "title": "Older workers are fighting ageism by starting their own businesses \u2014 and they\u2019re outperforming younger entrepreneurs",
       "url": "https://www.marketwatch.com/story/older-workers-are-fighting-ageism-by-starting-their-own-businesses-and-theyre-outperforming-younger-entrepreneurs-5fc701fc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 01 Jul 2026 19:02:00",
-      "source": "MarketWatch",
-      "title": "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
-      "url": "https://www.marketwatch.com/story/coreweave-nebius-shares-tumble-as-meta-stands-to-become-a-fresh-threat-in-the-cloud-a47c3616?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 01 Jul 2026 18:43:00",
-      "source": "MarketWatch",
-      "title": "Is the U.S. jobs market getting better? June employment report to give us a heat check.",
-      "url": "https://www.marketwatch.com/story/is-the-u-s-jobs-market-getting-better-june-employment-report-to-give-us-a-heat-check-529a3d2e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 01 Jul 2026 18:39:00",
-      "source": "MarketWatch",
-      "title": "Protein-packed Cheerios and cat food: How General Mills plans to combat a tough spending backdrop",
-      "url": "https://www.marketwatch.com/story/protein-packed-cheerios-and-cat-food-how-general-mills-plans-to-combat-a-tough-spending-backdrop-90734fed?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 01 Jul 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "Social Security\u2019s reality check \u2014 with a side of wishful thinking",
-      "url": "https://www.marketwatch.com/story/social-securitys-reality-checkwith-a-side-of-wishful-thinking-91d5491f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.7
+      "yield": 3.67
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.85
     },
     {
       "tenor": "6M",
-      "yield": 4.01
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 3.98
+      "yield": 4.0
     },
     {
       "tenor": "2Y",
-      "yield": 4.14
+      "yield": 4.17
     },
     {
       "tenor": "5Y",
-      "yield": 4.19
+      "yield": 4.24
     },
     {
       "tenor": "7Y",
-      "yield": 4.3
+      "yield": 4.35
     },
     {
       "tenor": "10Y",
-      "yield": 4.44
+      "yield": 4.48
     },
     {
       "tenor": "20Y",
-      "yield": 4.93
+      "yield": 4.97
     },
     {
       "tenor": "30Y",
-      "yield": 4.91
+      "yield": 4.97
     }
   ],
   "warnings": []
