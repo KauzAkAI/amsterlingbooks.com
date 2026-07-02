@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4224
+      "rate": 1.4214
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7945
+      "rate": 6.789
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.8785
+      "rate": 0.87727
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75528
+      "rate": 0.75151
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.25
+      "rate": 95.39
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.71
+      "rate": 161.58
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1558.09
+      "rate": 1548.85
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5341
+      "rate": 17.5586
     }
   },
-  "generated_at": "2026-07-01T23:58:22+00:00",
+  "generated_at": "2026-07-02T15:23:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,19 @@
   },
   "news": [
     {
-      "published": "Wed, 01 Jul 2026 20:27:09",
+      "published": "Thu, 02 Jul 2026 13:26:28",
+      "source": "CNBC",
+      "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
+      "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html"
+    },
+    {
+      "published": "Thu, 02 Jul 2026 12:52:09",
+      "source": "CNBC",
+      "title": "Europe wants to rebalance trade with Beijing, but can't quit Chinese air conditioners",
+      "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
+    },
+    {
+      "published": "Thu, 02 Jul 2026 10:18:05",
       "source": "CNBC",
       "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/01/burnham-north-sea-oil-energy-security.html"
     },
     {
-      "published": "Tue, 30 Jun 2026 11:08:24",
-      "source": "CNBC",
-      "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
-      "url": "https://www.cnbc.com/2026/06/30/surprising-survey-of-american-job-satisfaction-.html"
-    },
-    {
-      "published": "Mon, 29 Jun 2026 04:46:25",
-      "source": "CNBC",
-      "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
-      "url": "https://www.cnbc.com/2026/06/29/china-japan-export-controls-watch-list-defense-entities.html"
-    },
-    {
-      "published": "Wed, 01 Jul 2026 23:48:00",
+      "published": "Thu, 02 Jul 2026 15:15:00",
       "source": "MarketWatch",
-      "title": "Opening a \u2018Trump account\u2019 for your children? Here is the risk you need to reckon with first.",
-      "url": "https://www.marketwatch.com/story/opening-a-trump-account-for-your-children-here-is-the-risk-you-need-to-recognize-first-fe206bc0?mod=mw_rss_topstories"
+      "title": "Palantir\u2019s stock bounces back as analyst cheers company\u2019s unique AI advantage",
+      "url": "https://www.marketwatch.com/story/palantirs-stock-bounces-back-as-analyst-cheers-companys-unique-ai-advantage-2f28698d?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 01 Jul 2026 23:11:00",
+      "published": "Thu, 02 Jul 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "Nvidia is betting on a trillion-dollar robotics boom. Here is the hidden way to trade it.",
-      "url": "https://www.marketwatch.com/story/nvidia-is-betting-on-a-trillion-dollar-robotics-boom-here-is-the-hidden-way-to-trade-it-c5b10c4e?mod=mw_rss_topstories"
+      "title": "My doctor friend objected to his hospital\u2019s fundraising tactics. Did management go too far?",
+      "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 01 Jul 2026 23:01:00",
+      "published": "Thu, 02 Jul 2026 14:53:00",
       "source": "MarketWatch",
-      "title": "\u2018We were stunned\u2019: My daughter, 39, said her mother-in-law gives her more money than we do. Do I call her out?",
-      "url": "https://www.marketwatch.com/story/we-were-stunned-my-daughter-39-said-her-mother-in-law-gives-her-more-money-than-we-do-do-i-call-her-out-b63d087c?mod=mw_rss_topstories"
+      "title": "How you as an investor can get ahead of the next AI investment wave",
+      "url": "https://www.marketwatch.com/story/how-you-as-an-investor-can-get-ahead-of-the-next-ai-investment-wave-ffc6512a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 01 Jul 2026 22:05:00",
+      "published": "Thu, 02 Jul 2026 14:50:00",
       "source": "MarketWatch",
-      "title": "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
-      "url": "https://www.marketwatch.com/story/coreweave-nebius-shares-tumble-as-meta-stands-to-become-a-fresh-threat-in-the-cloud-a47c3616?mod=mw_rss_topstories"
+      "title": "Where can I invest my kid\u2019s \u2018Trump account\u2019 money? The Treasury Department just answered that question.",
+      "url": "https://www.marketwatch.com/story/where-can-i-invest-my-kids-trump-account-money-the-treasury-department-just-answered-that-question-4f656574?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 01 Jul 2026 21:58:00",
+      "published": "Thu, 02 Jul 2026 14:47:00",
       "source": "MarketWatch",
-      "title": "This is the best time \u2018in a generation\u2019 to buy space and defense stocks, analysts say",
-      "url": "https://www.marketwatch.com/story/this-is-the-best-time-in-a-generation-to-buy-space-and-defense-stocks-analysts-say-df4a85a4?mod=mw_rss_topstories"
+      "title": "Why a founder at age 50 is twice as likely to find success as one at age 30",
+      "url": "https://www.marketwatch.com/story/older-workers-are-fighting-ageism-by-starting-their-own-businesses-and-theyre-outperforming-younger-entrepreneurs-5fc701fc?mod=mw_rss_topstories"
     }
   ],
   "rates": {
