@@ -135,7 +135,7 @@
       "rate": 17.5586
     }
   },
-  "generated_at": "2026-07-02T15:23:50+00:00",
+  "generated_at": "2026-07-02T17:11:33+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,24 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-06-10",
-        "rate": 6.6
-      },
-      {
-        "date": "2026-06-11",
-        "rate": 6.52
-      },
-      {
         "date": "2026-06-17",
         "rate": 6.6
       },
       {
         "date": "2026-06-18",
         "rate": 6.47
-      },
-      {
-        "date": "2026-06-24",
-        "rate": 6.55
       },
       {
         "date": "2026-06-24",
@@ -227,6 +215,18 @@
       {
         "date": "2026-07-01",
         "rate": 6.65
+      },
+      {
+        "date": "2026-07-01",
+        "rate": 6.57
+      },
+      {
+        "date": "2026-07-02",
+        "rate": 6.6
+      },
+      {
+        "date": "2026-07-02",
+        "rate": 6.43
       }
     ]
   },
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Thu, 02 Jul 2026 13:26:28",
+      "published": "Thu, 02 Jul 2026 17:04:04",
+      "source": "CNBC",
+      "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
+      "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
+    },
+    {
+      "published": "Thu, 02 Jul 2026 16:50:27",
       "source": "CNBC",
       "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
       "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html"
@@ -315,10 +321,10 @@
       "url": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html"
     },
     {
-      "published": "Wed, 01 Jul 2026 06:28:00",
-      "source": "CNBC",
-      "title": "North Sea oil and renewables: The UK\u2019s next PM faces a defining energy policy decision",
-      "url": "https://www.cnbc.com/2026/07/01/burnham-north-sea-oil-energy-security.html"
+      "published": "Thu, 02 Jul 2026 15:52:00",
+      "source": "MarketWatch",
+      "title": "If you lost money on Trump crypto ventures, don\u2019t whine",
+      "url": "https://www.marketwatch.com/story/if-you-lost-money-on-trump-crypto-ventures-dont-whine-1839a774?mod=mw_rss_topstories"
     },
     {
       "published": "Thu, 02 Jul 2026 15:15:00",
@@ -343,27 +349,21 @@
       "source": "MarketWatch",
       "title": "Where can I invest my kid\u2019s \u2018Trump account\u2019 money? The Treasury Department just answered that question.",
       "url": "https://www.marketwatch.com/story/where-can-i-invest-my-kids-trump-account-money-the-treasury-department-just-answered-that-question-4f656574?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 14:47:00",
-      "source": "MarketWatch",
-      "title": "Why a founder at age 50 is twice as likely to find success as one at age 30",
-      "url": "https://www.marketwatch.com/story/older-workers-are-fighting-ageism-by-starting-their-own-businesses-and-theyre-outperforming-younger-entrepreneurs-5fc701fc?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 01 2026",
-      "change": 0.07,
-      "rate": 6.19
+      "asof_label": "Jul 02 2026",
+      "change": -0.02,
+      "rate": 6.17
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 01 2026",
-      "change": 0.11,
+      "asof_label": "Jul 02 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
