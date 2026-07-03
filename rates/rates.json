@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4214
+      "rate": 1.4202
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.789
+      "rate": 6.7814
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87727
+      "rate": 0.87352
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75151
+      "rate": 0.74878
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.39
+      "rate": 95.21
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.58
+      "rate": 161.15
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1548.85
+      "rate": 1531.23
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5586
+      "rate": 17.4472
     }
   },
-  "generated_at": "2026-07-02T23:51:25+00:00",
+  "generated_at": "2026-07-03T15:16:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 03 Jul 2026 10:34:32",
+      "source": "CNBC",
+      "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
+      "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
+    },
+    {
       "published": "Thu, 02 Jul 2026 18:09:31",
       "source": "CNBC",
       "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Wed, 01 Jul 2026 13:41:09",
-      "source": "CNBC",
-      "title": "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
-      "url": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 23:00:00",
+      "published": "Fri, 03 Jul 2026 14:17:00",
       "source": "MarketWatch",
-      "title": "My doctor friend objected to his hospital\u2019s fundraising tactics. Did management go too far?",
-      "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories"
+      "title": "A looming AI disappointment and rising yields. Why one research firm is hitting the brakes on U.S. stocks.",
+      "url": "https://www.marketwatch.com/story/a-looming-ai-disappointment-and-rising-yields-why-one-research-firm-is-hitting-the-brakes-on-u-s-stocks-4bfaa67b?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 02 Jul 2026 22:45:00",
+      "published": "Fri, 03 Jul 2026 14:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018We were stunned\u2019: My daughter, 39, said her mother-in-law gives her more money than we do. Do I call her out?",
+      "url": "https://www.marketwatch.com/story/we-were-stunned-my-daughter-39-said-her-mother-in-law-gives-her-more-money-than-we-do-do-i-call-her-out-b63d087c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 03 Jul 2026 13:52:00",
+      "source": "MarketWatch",
+      "title": "U.S. stocks have delivered 8.7% a year since independence was declared in 1776",
+      "url": "https://www.marketwatch.com/story/u-s-stocks-have-delivered-8-7-a-year-since-independence-was-declared-in-1776-7513ae04?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 03 Jul 2026 13:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018She wants him gone\u2019: My friend took in a homeless man as a caretaker. After 10 years, how can she evict him?",
+      "url": "https://www.marketwatch.com/story/she-wants-him-gone-my-friend-took-in-a-homeless-man-as-a-caretaker-after-10-years-how-can-she-evict-him-01672de2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 03 Jul 2026 12:15:00",
       "source": "MarketWatch",
       "title": "\u2018I claimed Social Security at 62\u2019: At 76, I\u2019m working at Walmart. Why do I still owe payroll taxes?",
       "url": "https://www.marketwatch.com/story/i-claimed-social-security-at-62-at-76-im-working-at-walmart-why-do-i-still-owe-payroll-taxes-8e22a97c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 22:41:00",
-      "source": "MarketWatch",
-      "title": "When does my kid get the free \u2018Trump account\u2019 money?",
-      "url": "https://www.marketwatch.com/story/when-does-my-kid-get-the-free-trump-account-money-37c3f503?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 22:38:00",
-      "source": "MarketWatch",
-      "title": "Dow scores fresh record despite tepid jobs report. Why the rest of 2026 is about workers.",
-      "url": "https://www.marketwatch.com/story/dow-scores-fresh-record-despite-tepid-jobs-report-why-the-rest-of-2026-is-about-workers-6247fbed?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 22:30:00",
-      "source": "MarketWatch",
-      "title": "Trump blasts \u2018hostile\u2019 Fed and says Warsh \u2018has to do what he has to do\u2019 on interest rates",
-      "url": "https://www.marketwatch.com/story/trump-blasts-hostile-fed-and-says-warsh-has-to-do-what-he-has-to-do-on-interest-rates-60b5d16b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
