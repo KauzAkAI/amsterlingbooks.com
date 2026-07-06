@@ -135,7 +135,7 @@
       "rate": 17.4845
     }
   },
-  "generated_at": "2026-07-06T22:00:02+00:00",
+  "generated_at": "2026-07-06T23:19:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
+      "published": "Mon, 06 Jul 2026 22:39:00",
+      "source": "MarketWatch",
+      "title": "The Nasdaq-100 has been far more volatile than the S&P 500. Now add SpaceX to the mix.",
+      "url": "https://www.marketwatch.com/story/the-nasdaq-100-has-been-far-more-volatile-than-the-s-p-500-now-add-spacex-to-the-mix-cd397c36?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 06 Jul 2026 22:17:00",
+      "source": "MarketWatch",
+      "title": "U.S.-Belgium match could draw record TV audience amid the Trump World Cup controversy",
+      "url": "https://www.marketwatch.com/story/u-s-belgium-match-could-draw-record-tv-audience-amid-the-trump-world-cup-controversy-52783b8f?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 06 Jul 2026 21:36:00",
       "source": "MarketWatch",
       "title": "Your data built the AI boom \u2014 but Big Tech is pocketing 100% of the equity",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Stocks rally when Congress goes on summer break. Here\u2019s why.",
       "url": "https://www.marketwatch.com/story/stocks-rally-when-congress-goes-on-summer-break-here-is-the-hidden-reason-e70a6be3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 06 Jul 2026 21:16:00",
-      "source": "MarketWatch",
-      "title": "You want a portfolio that matches your morals. Your retirement plan might disagree.",
-      "url": "https://www.marketwatch.com/story/you-want-a-portfolio-that-matches-your-morals-but-that-could-sink-your-retirement-plans-0b6fb5bf?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 06 Jul 2026 21:11:00",
-      "source": "MarketWatch",
-      "title": "If the stock market\u2019s double bubble bursts, it could usher in the next crash",
-      "url": "https://www.marketwatch.com/story/if-the-stock-markets-double-bubble-bursts-it-could-usher-in-the-next-crash-de54c1b2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
