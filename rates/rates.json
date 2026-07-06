@@ -135,7 +135,7 @@
       "rate": 17.4845
     }
   },
-  "generated_at": "2026-07-06T18:27:22+00:00",
+  "generated_at": "2026-07-06T20:29:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Mon, 06 Jul 2026 18:23:00",
+      "published": "Mon, 06 Jul 2026 20:25:00",
       "source": "MarketWatch",
-      "title": "Who should handle your estate plan: Your lawyer or your financial adviser?",
-      "url": "https://www.marketwatch.com/story/who-should-handle-your-estate-plan-your-lawyer-or-your-financial-adviser-134189d7?mod=mw_rss_topstories"
+      "title": "TeraWulf\u2019s stock gains after a $19 billion deal with Anthropic",
+      "url": "https://www.marketwatch.com/story/terawulfs-stock-surges-after-a-19-billion-deal-with-anthropic-6899d3bc?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 06 Jul 2026 18:15:00",
+      "published": "Mon, 06 Jul 2026 20:21:00",
       "source": "MarketWatch",
-      "title": "\u2018The money would have been life-changing\u2019: My father told my grandmother to slash my inheritance. Is that fair?",
-      "url": "https://www.marketwatch.com/story/the-money-would-have-been-life-changing-my-father-told-my-grandmother-to-slash-my-inheritance-is-that-fair-3808b6d1?mod=mw_rss_topstories"
+      "title": "Strategy is losing a lot of money on bitcoin. Here\u2019s why it\u2019s selling anyway.",
+      "url": "https://www.marketwatch.com/story/strategy-is-losing-a-lot-of-money-on-bitcoin-heres-why-its-selling-anyway-02822bc5?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 06 Jul 2026 17:59:00",
+      "published": "Mon, 06 Jul 2026 20:14:00",
       "source": "MarketWatch",
-      "title": "Your 5 biggest questions about \u2018Trump accounts,\u2019 answered",
-      "url": "https://www.marketwatch.com/story/your-5-biggest-questions-about-trump-accounts-answered-421d9f6f?mod=mw_rss_topstories"
+      "title": "Dell\u2019s stock gets another Trump bump \u2014\u00a0but this time it\u2019s fading",
+      "url": "https://www.marketwatch.com/story/dells-stock-gets-another-trump-bump-but-this-time-its-fading-be5dd9cb?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 06 Jul 2026 17:49:00",
+      "published": "Mon, 06 Jul 2026 19:21:00",
       "source": "MarketWatch",
-      "title": "Nine microcap stocks of companies expected to grow sales by triple digits through 2028",
-      "url": "https://www.marketwatch.com/story/nine-microcap-stocks-of-companies-expected-to-grow-sales-by-triple-digits-through-2028-df96ab85?mod=mw_rss_topstories"
+      "title": "How parents can take advantage of the \u2018best summer-camp tax break in years\u2019",
+      "url": "https://www.marketwatch.com/story/how-parents-can-take-advantage-of-the-best-summer-camp-tax-break-in-years-cb7c2a1a?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 06 Jul 2026 17:45:00",
+      "published": "Mon, 06 Jul 2026 18:57:00",
       "source": "MarketWatch",
-      "title": "Your data built the AI boom \u2014 but Big Tech is pocketing 100% of the equity",
-      "url": "https://www.marketwatch.com/story/your-share-of-the-ai-wealth-is-a-right-not-a-handout-here-is-how-we-claw-back-our-money-7454b0e0?mod=mw_rss_topstories"
+      "title": "Silver has plunged 50% from its January peak to $60. Why it could hit $130 next year.",
+      "url": "https://www.marketwatch.com/story/silver-has-plunged-50-from-its-january-peak-to-60-why-it-could-hit-130-next-year-4fe57e45?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.7
+      "yield": 3.69
     },
     {
       "tenor": "3M",
-      "yield": 3.82
+      "yield": 3.87
     },
     {
       "tenor": "6M",
@@ -406,23 +406,23 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.96
+      "yield": 3.95
     },
     {
       "tenor": "2Y",
-      "yield": 4.14
+      "yield": 4.13
     },
     {
       "tenor": "5Y",
-      "yield": 4.23
+      "yield": 4.21
     },
     {
       "tenor": "7Y",
-      "yield": 4.35
+      "yield": 4.33
     },
     {
       "tenor": "10Y",
-      "yield": 4.49
+      "yield": 4.48
     },
     {
       "tenor": "20Y",
@@ -430,7 +430,7 @@
     },
     {
       "tenor": "30Y",
-      "yield": 4.98
+      "yield": 4.99
     }
   ],
   "warnings": []
