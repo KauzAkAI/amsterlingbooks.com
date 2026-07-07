@@ -135,7 +135,7 @@
       "rate": 17.4238
     }
   },
-  "generated_at": "2026-07-07T19:28:40+00:00",
+  "generated_at": "2026-07-07T21:08:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Tue, 07 Jul 2026 19:05:00",
+      "published": "Tue, 07 Jul 2026 21:04:00",
       "source": "MarketWatch",
-      "title": "Elon Musk\u2019s Terafab could give a major boost to this corner of the chip sector",
-      "url": "https://www.marketwatch.com/story/elon-musks-terafab-could-give-a-major-boost-to-this-corner-of-the-chip-sector-27ad6099?mod=mw_rss_topstories"
+      "title": "Oil prices rise as the U.S. cancels Iran\u2019s license to sell oil",
+      "url": "https://www.marketwatch.com/story/oil-prices-rise-as-the-u-s-cancels-irans-license-to-sell-oil-030635fc?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 18:52:00",
+      "published": "Tue, 07 Jul 2026 20:36:00",
       "source": "MarketWatch",
-      "title": "Wednesday\u2019s Fed minutes will be revealing \u2014 but not in the way investors hope",
-      "url": "https://www.marketwatch.com/story/wednesdays-fed-minutes-will-be-revealing-but-not-in-the-way-investors-hope-864e223d?mod=mw_rss_topstories"
+      "title": "Apple is closing in on Nvidia as it looks to reclaim title of largest U.S. company",
+      "url": "https://www.marketwatch.com/story/apple-is-closing-in-on-nvidia-as-it-looks-to-reclaim-title-of-largest-u-s-company-04f41546?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 18:14:00",
-      "source": "MarketWatch",
-      "title": "It can take as little as 5 minutes online to get prescribed a GLP-1 for weight loss. Why that\u2019s risky.",
-      "url": "https://www.marketwatch.com/story/it-can-take-as-little-as-5-minutes-online-to-get-prescribed-a-glp-1-for-weight-loss-why-thats-risky-bd62b9db?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 07 Jul 2026 18:00:00",
+      "published": "Tue, 07 Jul 2026 20:30:00",
       "source": "MarketWatch",
       "title": "I found a simple way to save money on frozen pizza. What\u2019s your best money-saving trick?",
       "url": "https://www.marketwatch.com/story/i-make-my-own-pizza-whats-the-best-way-youve-found-to-save-money-25412399?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 17:53:00",
+      "published": "Tue, 07 Jul 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "Bond traders are watching this tracker to figure out the real odds of Fed rate hikes",
-      "url": "https://www.marketwatch.com/story/bond-traders-are-watching-this-tracker-to-figure-out-the-real-odds-of-fed-rate-hikes-42fa2742?mod=mw_rss_topstories"
+      "title": "\u2018Our family is broken beyond repair\u2019: My brother took over my parents\u2019 finances. What can I do?",
+      "url": "https://www.marketwatch.com/story/our-family-is-broken-beyond-repair-my-brother-took-over-my-parents-finances-what-can-i-do-95239fb9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 07 Jul 2026 19:28:00",
+      "source": "MarketWatch",
+      "title": "Adobe\u2019s stock is temptingly cheap. Should investors bite?",
+      "url": "https://www.marketwatch.com/story/adobes-stock-is-temptingly-cheap-should-investors-bite-196258b5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.86
     },
     {
       "tenor": "6M",
-      "yield": 3.98
+      "yield": 3.99
     },
     {
       "tenor": "1Y",
-      "yield": 3.95
+      "yield": 4.06
     },
     {
       "tenor": "2Y",
-      "yield": 4.13
+      "yield": 4.19
     },
     {
       "tenor": "5Y",
-      "yield": 4.21
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
-      "yield": 4.33
+      "yield": 4.4
     },
     {
       "tenor": "10Y",
-      "yield": 4.48
+      "yield": 4.55
     },
     {
       "tenor": "20Y",
-      "yield": 4.99
+      "yield": 5.05
     },
     {
       "tenor": "30Y",
-      "yield": 4.99
+      "yield": 5.05
     }
   ],
   "warnings": []
