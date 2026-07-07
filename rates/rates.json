@@ -135,7 +135,7 @@
       "rate": 17.4238
     }
   },
-  "generated_at": "2026-07-07T15:46:19+00:00",
+  "generated_at": "2026-07-07T17:48:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.49
       },
       {
-        "date": "2026-06-26",
-        "rate": 6.53
-      },
-      {
         "date": "2026-06-29",
         "rate": 6.52
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-06",
         "rate": 6.59
+      },
+      {
+        "date": "2026-07-07",
+        "rate": 6.63
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Tue, 07 Jul 2026 15:06:00",
+      "published": "Tue, 07 Jul 2026 17:28:00",
       "source": "MarketWatch",
-      "title": "NATO announces billions in defense deals. What investors should watch for now.",
-      "url": "https://www.marketwatch.com/story/nato-announces-billions-in-defense-deals-what-investors-should-watch-for-now-d7f3c4be?mod=mw_rss_topstories"
+      "title": "Tesla\u2019s stock could rise 20% thanks to the potential for a SpaceX merger, analyst says",
+      "url": "https://www.marketwatch.com/story/teslas-stock-could-rise-20-thanks-to-the-potential-for-a-spacex-merger-analyst-says-0d64693e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 15:00:00",
+      "published": "Tue, 07 Jul 2026 16:54:00",
       "source": "MarketWatch",
-      "title": "\u2018Our family is broken beyond repair\u2019: My brother took over my parents\u2019 finances. What can I do?",
-      "url": "https://www.marketwatch.com/story/our-family-is-broken-beyond-repair-my-brother-took-over-my-parents-finances-what-can-i-do-95239fb9?mod=mw_rss_topstories"
+      "title": "Plot twist: Gen Z is buying houses after all",
+      "url": "https://www.marketwatch.com/story/plot-twist-gen-z-is-buying-houses-after-all-ab247e1f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 14:30:00",
+      "published": "Tue, 07 Jul 2026 16:24:00",
       "source": "MarketWatch",
-      "title": "I found a simple way to save money on frozen pizza. What\u2019s your best money-saving trick?",
-      "url": "https://www.marketwatch.com/story/i-make-my-own-pizza-whats-the-best-way-youve-found-to-save-money-25412399?mod=mw_rss_topstories"
+      "title": "12 stocks favored to soar in the sector that has missed the 2026 market rally",
+      "url": "https://www.marketwatch.com/story/12-stocks-favored-to-soar-in-the-sector-that-has-missed-the-2026-market-rally-f9d59578?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 14:29:00",
+      "published": "Tue, 07 Jul 2026 16:22:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock falls as investors wonder if the memory market is near the top",
-      "url": "https://www.marketwatch.com/story/microns-stock-falls-as-investors-wonder-if-the-memory-market-is-near-the-top-ab2d2feb?mod=mw_rss_topstories"
+      "title": "Trump floats idea of Australia\u2019s retirement system again. But what about Social Security?",
+      "url": "https://www.marketwatch.com/story/trump-floats-idea-of-australias-retirement-system-again-but-what-about-social-security-de63b8c6?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 14:27:00",
+      "published": "Tue, 07 Jul 2026 15:50:00",
       "source": "MarketWatch",
-      "title": "How parents can take advantage of the \u2018best summer-camp tax break in years\u2019",
-      "url": "https://www.marketwatch.com/story/how-parents-can-take-advantage-of-the-best-summer-camp-tax-break-in-years-cb7c2a1a?mod=mw_rss_topstories"
+      "title": "Rivian\u2019s stock sale triggers worst rout for the shares in nearly two years",
+      "url": "https://www.marketwatch.com/story/rivians-stock-sale-triggers-worst-rout-for-the-shares-in-nearly-two-years-6791789e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 06 2026",
-      "change": -0.01,
-      "rate": 6.16
+      "asof_label": "Jul 07 2026",
+      "change": 0.01,
+      "rate": 6.17
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 06 2026",
-      "change": -0.01,
+      "asof_label": "Jul 07 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
