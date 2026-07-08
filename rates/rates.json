@@ -135,7 +135,7 @@
       "rate": 17.5754
     }
   },
-  "generated_at": "2026-07-08T18:41:18+00:00",
+  "generated_at": "2026-07-08T20:11:20+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.49
       },
       {
-        "date": "2026-06-29",
-        "rate": 6.52
-      },
-      {
         "date": "2026-06-30",
         "rate": 6.6
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-07",
         "rate": 6.63
+      },
+      {
+        "date": "2026-07-08",
+        "rate": 6.68
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Wed, 08 Jul 2026 18:22:00",
+      "published": "Wed, 08 Jul 2026 19:43:00",
       "source": "MarketWatch",
-      "title": "A \u2018few\u2019 Fed officials said there was a case for a rate hike in June, minutes from Warsh\u2019s first meeting show",
-      "url": "https://www.marketwatch.com/story/a-few-fed-officials-said-there-was-a-case-for-a-rate-hike-in-june-minutes-from-warshs-first-meeting-show-bc302ead?mod=mw_rss_topstories"
+      "title": "Oil ends at its highest price in over two weeks as flare-up in U.S.-Iran hostilities suggests end to cease-fire",
+      "url": "https://www.marketwatch.com/story/oil-prices-jump-by-the-most-in-two-months-after-trump-suggests-u-s-iran-cease-fire-is-over-9fa7caee?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 18:14:00",
+      "published": "Wed, 08 Jul 2026 19:36:00",
       "source": "MarketWatch",
-      "title": "Oil surges as Strait of Hormuz is back into \u2018full conflict conditions\u2019",
-      "url": "https://www.marketwatch.com/story/oil-surges-as-strait-of-hormuz-is-back-into-full-conflict-conditions-6ef59562?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock trades at a juicy discount, according to BofA",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-trades-at-a-juicy-discount-according-to-bofa-93f46d19?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 17:56:00",
+      "published": "Wed, 08 Jul 2026 19:28:00",
       "source": "MarketWatch",
-      "title": "The case for having Big Oil in your 401(k) or IRA",
-      "url": "https://www.marketwatch.com/story/the-case-for-having-big-oil-in-your-401-k-or-ira-05c2eef5?mod=mw_rss_topstories"
+      "title": "Higher gas prices aren\u2019t the only way rising tensions with Iran will hit home",
+      "url": "https://www.marketwatch.com/story/higher-gas-prices-arent-the-only-way-rising-tensions-with-iran-will-hit-home-0a995066?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 17:34:00",
+      "published": "Wed, 08 Jul 2026 19:13:00",
       "source": "MarketWatch",
-      "title": "Plot twist: Gen Z is buying houses after all. Here\u2019s how they\u2019re doing it.",
-      "url": "https://www.marketwatch.com/story/plot-twist-gen-z-is-buying-houses-after-all-ab247e1f?mod=mw_rss_topstories"
+      "title": "More than two-thirds of tech stocks are at least 20% off recent highs. What\u2019s happening to the AI trade?",
+      "url": "https://www.marketwatch.com/story/more-than-two-thirds-of-tech-stocks-are-at-least-20-off-recent-highs-whats-happening-to-the-ai-trade-4ba6aa28?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 17:18:00",
+      "published": "Wed, 08 Jul 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "Why a founder at age 50 is twice as likely to find success as one at age 30",
-      "url": "https://www.marketwatch.com/story/older-workers-are-fighting-ageism-by-starting-their-own-businesses-and-theyre-outperforming-younger-entrepreneurs-5fc701fc?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019ve plenty of time on my hands\u2019: Advisers bombard me with offers of free steak dinners. Is it wrong to go for the food?",
+      "url": "https://www.marketwatch.com/story/ive-plenty-of-time-on-my-hands-advisers-bombard-me-with-offers-for-free-steak-is-it-wrong-to-go-for-the-food-1b139f98?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 07 2026",
-      "change": 0.01,
-      "rate": 6.17
+      "asof_label": "Jul 08 2026",
+      "change": 0.05,
+      "rate": 6.22
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 07 2026",
-      "change": 0.04,
+      "asof_label": "Jul 08 2026",
+      "change": 0.05,
       "rate": 6.52
     }
   },
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.69
+      "yield": 3.67
     },
     {
       "tenor": "3M",
-      "yield": 3.86
+      "yield": 3.87
     },
     {
       "tenor": "6M",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.19
+      "yield": 4.21
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.31
     },
     {
       "tenor": "7Y",
-      "yield": 4.4
+      "yield": 4.43
     },
     {
       "tenor": "10Y",
-      "yield": 4.55
+      "yield": 4.56
     },
     {
       "tenor": "20Y",
-      "yield": 5.05
+      "yield": 5.07
     },
     {
       "tenor": "30Y",
-      "yield": 5.05
+      "yield": 5.06
     }
   ],
   "warnings": []
