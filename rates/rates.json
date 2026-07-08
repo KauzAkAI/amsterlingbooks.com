@@ -135,7 +135,7 @@
       "rate": 17.5754
     }
   },
-  "generated_at": "2026-07-08T21:33:00+00:00",
+  "generated_at": "2026-07-08T22:40:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
+      "published": "Wed, 08 Jul 2026 21:40:00",
+      "source": "MarketWatch",
+      "title": "Did you mess up on your taxes? The IRS just made it easier to avoid paying a penalty.",
+      "url": "https://www.marketwatch.com/story/did-you-mess-up-on-your-taxes-the-irs-just-made-it-easier-to-avoid-paying-a-penalty-20d60ae6?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 08 Jul 2026 21:16:00",
       "source": "MarketWatch",
       "title": "Oil prices extend gains after hours as U.S. forces conduct additional strikes on Iran",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The Strait of Hormuz is back under \u2018full-conflict conditions\u2019 \u2014 and energy markets are scrambling",
       "url": "https://www.marketwatch.com/story/oil-surges-as-strait-of-hormuz-is-back-into-full-conflict-conditions-6ef59562?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 08 Jul 2026 20:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019d hate to end up with an unexpected tax bill\u2019: I\u2019m 73 and still work full time. Can I avoid paying taxes on my Social Security benefits?",
-      "url": "https://www.marketwatch.com/story/im-73-and-still-work-full-time-can-i-avoid-paying-taxes-on-my-social-security-benefits-06ecc7c2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
