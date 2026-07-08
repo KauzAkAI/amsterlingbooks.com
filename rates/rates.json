@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4218
+      "rate": 1.4184
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7935
+      "rate": 6.8002
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87466
+      "rate": 0.87689
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74706
+      "rate": 0.74917
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.97
+      "rate": 95.56
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.89
+      "rate": 162.49
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1514.45
+      "rate": 1509.08
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4238
+      "rate": 17.5754
     }
   },
-  "generated_at": "2026-07-07T23:33:15+00:00",
+  "generated_at": "2026-07-08T15:28:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
     },
     {
-      "published": "Tue, 07 Jul 2026 23:00:00",
+      "published": "Wed, 08 Jul 2026 15:02:00",
+      "source": "MarketWatch",
+      "title": "Why the stock market\u2019s biggest laggards might be your best defense against a summer selloff",
+      "url": "https://www.marketwatch.com/story/why-the-stock-markets-biggest-laggards-might-be-your-best-defense-against-a-summer-selloff-be079d8e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 08 Jul 2026 14:54:00",
+      "source": "MarketWatch",
+      "title": "Insurance giant says it\u2019s turning to AI to replace as many as 1,800 jobs",
+      "url": "https://www.marketwatch.com/story/insurance-giant-says-its-turning-to-ai-to-replace-as-many-as-1-800-jobs-13e60de2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 08 Jul 2026 14:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019ll happily wait\u2019: Does delaying Social Security make sense for high earners like me?",
+      "url": "https://www.marketwatch.com/story/ill-happily-wait-does-delaying-social-security-make-sense-for-high-earners-like-me-17dca69b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 08 Jul 2026 14:00:00",
       "source": "MarketWatch",
       "title": "\u2018Our family is broken beyond repair\u2019: My brother took over my parents\u2019 finances. What can I do?",
       "url": "https://www.marketwatch.com/story/our-family-is-broken-beyond-repair-my-brother-took-over-my-parents-finances-what-can-i-do-95239fb9?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 07 Jul 2026 22:43:00",
+      "published": "Wed, 08 Jul 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock falls as investors wonder if the memory market is near the top",
-      "url": "https://www.marketwatch.com/story/microns-stock-falls-as-investors-wonder-if-the-memory-market-is-near-the-top-ab2d2feb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 07 Jul 2026 22:35:00",
-      "source": "MarketWatch",
-      "title": "Adobe\u2019s stock is temptingly cheap. Should investors bite?",
-      "url": "https://www.marketwatch.com/story/adobes-stock-is-temptingly-cheap-should-investors-bite-196258b5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 07 Jul 2026 22:35:00",
-      "source": "MarketWatch",
-      "title": "AI-related debt sells off sharply as Amazon looks to borrow another $25 billion",
-      "url": "https://www.marketwatch.com/story/ai-related-debt-sells-off-sharply-as-amazon-borrows-another-25-billion-46928353?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 07 Jul 2026 22:34:00",
-      "source": "MarketWatch",
-      "title": "Tesla\u2019s stock could rise 20% thanks to the potential for a SpaceX merger, analyst says",
-      "url": "https://www.marketwatch.com/story/teslas-stock-could-rise-20-thanks-to-the-potential-for-a-spacex-merger-analyst-says-0d64693e?mod=mw_rss_topstories"
+      "title": "I started retirement with $3 million. Now I\u2019m 89 and down to $2 million. What if I get sick?",
+      "url": "https://www.marketwatch.com/story/i-started-retirement-with-3-million-now-im-89-and-down-to-2-million-what-if-i-get-sick-7401056a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
