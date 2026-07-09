@@ -135,7 +135,7 @@
       "rate": 17.5505
     }
   },
-  "generated_at": "2026-07-09T16:05:49+00:00",
+  "generated_at": "2026-07-09T18:07:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.6
       },
       {
-        "date": "2026-06-18",
-        "rate": 6.47
-      },
-      {
         "date": "2026-06-24",
         "rate": 6.59
       },
       {
         "date": "2026-06-25",
         "rate": 6.49
-      },
-      {
-        "date": "2026-06-30",
-        "rate": 6.6
       },
       {
         "date": "2026-07-01",
@@ -227,6 +219,14 @@
       {
         "date": "2026-07-08",
         "rate": 6.68
+      },
+      {
+        "date": "2026-07-09",
+        "rate": 6.65
+      },
+      {
+        "date": "2026-07-09",
+        "rate": 6.49
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
-      "published": "Thu, 09 Jul 2026 16:04:00",
+      "published": "Thu, 09 Jul 2026 18:00:00",
       "source": "MarketWatch",
-      "title": "This is why paper checks refuse to die",
-      "url": "https://www.marketwatch.com/story/this-is-why-paper-checks-refuse-to-die-12e06864?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019ve no idea how they got her number\u2019: My student-loan servicer called a friend after I missed a payment. Is that legal?",
+      "url": "https://www.marketwatch.com/story/ive-no-idea-how-they-got-her-number-my-student-loan-servicer-called-a-friend-after-i-missed-a-payment-is-that-legal-28ef698e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 15:46:00",
+      "published": "Thu, 09 Jul 2026 17:52:00",
       "source": "MarketWatch",
-      "title": "Only 5% of U.S. adults can ace this 8-question financial-literacy test. Can you?",
-      "url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories"
+      "title": "Risky leveraged ETFs are booming in 2026. Some worry they could be making the stock market more volatile.",
+      "url": "https://www.marketwatch.com/story/risky-leveraged-etfs-are-booming-in-2026-some-worry-they-could-be-making-the-stock-market-more-volatile-cef1427b?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 15:44:00",
+      "published": "Thu, 09 Jul 2026 16:31:00",
       "source": "MarketWatch",
-      "title": "The dot-com crash was a $5 trillion blip. Why the next financial crisis could hit 4 times harder.",
-      "url": "https://www.marketwatch.com/story/the-dot-com-crash-was-a-5-trillion-blip-why-the-next-financial-crisis-could-hit-4-times-harder-29f4aa57?mod=mw_rss_topstories"
+      "title": "Home prices hit new all-time high, deepening affordability woes",
+      "url": "https://www.marketwatch.com/story/home-prices-hit-a-new-all-time-high-this-summer-2808d1a3?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 15:00:00",
+      "published": "Thu, 09 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019ve plenty of time on my hands\u2019: Advisers bombard me with offers of free steak dinners. Is it wrong to go for the food?",
-      "url": "https://www.marketwatch.com/story/ive-plenty-of-time-on-my-hands-advisers-bombard-me-with-offers-for-free-steak-is-it-wrong-to-go-for-the-food-1b139f98?mod=mw_rss_topstories"
+      "title": "Mortgage rates jump as tensions with Iran spook bond investors",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-as-tensions-with-iran-spook-bond-investors-fbd8aa8e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 14:58:00",
+      "published": "Thu, 09 Jul 2026 16:13:00",
       "source": "MarketWatch",
-      "title": "PepsiCo cut snack prices again, but not enough to get American consumers to buy more",
-      "url": "https://www.marketwatch.com/story/pepsico-cuts-prices-on-snacks-its-not-enough-to-drive-growth-in-north-america-5bc0c111?mod=mw_rss_topstories"
+      "title": "Micron\u2019s stock surges on multibillion-dollar U.S. manufacturing push",
+      "url": "https://www.marketwatch.com/story/microns-stock-surges-on-multibillion-dollar-u-s-manufacturing-push-b1e63834?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 08 2026",
-      "change": 0.05,
-      "rate": 6.22
+      "asof_label": "Jul 09 2026",
+      "change": -0.02,
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 08 2026",
-      "change": 0.05,
+      "asof_label": "Jul 09 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
