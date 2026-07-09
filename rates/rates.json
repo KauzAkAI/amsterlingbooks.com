@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4184
+      "rate": 1.4169
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.8002
+      "rate": 6.796
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87689
+      "rate": 0.87451
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74917
+      "rate": 0.74651
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.56
+      "rate": 95.39
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.49
+      "rate": 162.41
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1509.08
+      "rate": 1512.45
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5754
+      "rate": 17.5505
     }
   },
-  "generated_at": "2026-07-08T23:48:00+00:00",
+  "generated_at": "2026-07-09T16:05:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,13 +291,19 @@
   },
   "news": [
     {
+      "published": "Thu, 09 Jul 2026 02:31:37",
+      "source": "CNBC",
+      "title": "China consumer price growth weakens in June while producer inflation rises to near 4-year high",
+      "url": "https://www.cnbc.com/2026/07/09/china-cpi-ppi-june-inflation-iran-war-.html"
+    },
+    {
       "published": "Fri, 03 Jul 2026 10:34:32",
       "source": "CNBC",
       "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
-      "published": "Thu, 02 Jul 2026 18:09:31",
+      "published": "Thu, 09 Jul 2026 14:23:29",
       "source": "CNBC",
       "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
       "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
-      "published": "Thu, 02 Jul 2026 10:18:05",
-      "source": "CNBC",
-      "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
-      "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html"
+      "published": "Thu, 09 Jul 2026 16:04:00",
+      "source": "MarketWatch",
+      "title": "This is why paper checks refuse to die",
+      "url": "https://www.marketwatch.com/story/this-is-why-paper-checks-refuse-to-die-12e06864?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 23:10:00",
+      "published": "Thu, 09 Jul 2026 15:46:00",
       "source": "MarketWatch",
-      "title": "Levi\u2019s is finding new ways to win customers \u2014 by looking toward tops and \u2018denim luxury\u2019",
-      "url": "https://www.marketwatch.com/story/levis-is-finding-new-ways-to-win-customers-by-looking-toward-tops-and-denim-luxury-b6e0890a?mod=mw_rss_topstories"
+      "title": "Only 5% of U.S. adults can ace this 8-question financial-literacy test. Can you?",
+      "url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 22:48:00",
+      "published": "Thu, 09 Jul 2026 15:44:00",
       "source": "MarketWatch",
-      "title": "I started retirement with $3 million. Now I\u2019m 89 and down to $2 million. What if I get sick?",
-      "url": "https://www.marketwatch.com/story/i-started-retirement-with-3-million-now-im-89-and-down-to-2-million-what-if-i-get-sick-7401056a?mod=mw_rss_topstories"
+      "title": "The dot-com crash was a $5 trillion blip. Why the next financial crisis could hit 4 times harder.",
+      "url": "https://www.marketwatch.com/story/the-dot-com-crash-was-a-5-trillion-blip-why-the-next-financial-crisis-could-hit-4-times-harder-29f4aa57?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 21:40:00",
+      "published": "Thu, 09 Jul 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "Did you mess up on your taxes? The IRS just made it easier to avoid paying a penalty.",
-      "url": "https://www.marketwatch.com/story/did-you-mess-up-on-your-taxes-the-irs-just-made-it-easier-to-avoid-paying-a-penalty-20d60ae6?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019ve plenty of time on my hands\u2019: Advisers bombard me with offers of free steak dinners. Is it wrong to go for the food?",
+      "url": "https://www.marketwatch.com/story/ive-plenty-of-time-on-my-hands-advisers-bombard-me-with-offers-for-free-steak-is-it-wrong-to-go-for-the-food-1b139f98?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 08 Jul 2026 21:16:00",
+      "published": "Thu, 09 Jul 2026 14:58:00",
       "source": "MarketWatch",
-      "title": "Oil prices extend gains after hours as U.S. forces conduct additional strikes on Iran",
-      "url": "https://www.marketwatch.com/story/oil-prices-jump-by-the-most-in-two-months-after-trump-suggests-u-s-iran-cease-fire-is-over-9fa7caee?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 08 Jul 2026 21:01:00",
-      "source": "MarketWatch",
-      "title": "Investors haven\u2019t been this bullish on the dollar in a decade. How the buck can keep climbing.",
-      "url": "https://www.marketwatch.com/story/traders-havent-been-this-bullish-on-the-dollar-in-a-decade-how-the-buck-can-keep-climbing-2e2bb287?mod=mw_rss_topstories"
+      "title": "PepsiCo cut snack prices again, but not enough to get American consumers to buy more",
+      "url": "https://www.marketwatch.com/story/pepsico-cuts-prices-on-snacks-its-not-enough-to-drive-growth-in-north-america-5bc0c111?mod=mw_rss_topstories"
     }
   ],
   "rates": {
