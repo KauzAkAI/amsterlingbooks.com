@@ -135,7 +135,7 @@
       "rate": 17.5505
     }
   },
-  "generated_at": "2026-07-09T18:07:17+00:00",
+  "generated_at": "2026-07-09T20:03:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
-      "published": "Thu, 09 Jul 2026 18:00:00",
+      "published": "Thu, 09 Jul 2026 19:52:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019ve no idea how they got her number\u2019: My student-loan servicer called a friend after I missed a payment. Is that legal?",
-      "url": "https://www.marketwatch.com/story/ive-no-idea-how-they-got-her-number-my-student-loan-servicer-called-a-friend-after-i-missed-a-payment-is-that-legal-28ef698e?mod=mw_rss_topstories"
+      "title": "New \u2018Ex-Elon\u2019 ETFs let you avoid SpaceX and Tesla \u2014 but are they just a gimmick?",
+      "url": "https://www.marketwatch.com/story/new-ex-elon-etfs-let-you-avoid-spacex-and-tesla-but-are-they-just-a-gimmick-e872d762?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 17:52:00",
+      "published": "Thu, 09 Jul 2026 19:49:00",
       "source": "MarketWatch",
-      "title": "Risky leveraged ETFs are booming in 2026. Some worry they could be making the stock market more volatile.",
-      "url": "https://www.marketwatch.com/story/risky-leveraged-etfs-are-booming-in-2026-some-worry-they-could-be-making-the-stock-market-more-volatile-cef1427b?mod=mw_rss_topstories"
+      "title": "Only 5% of U.S. adults can ace this 8-question financial-literacy test. Can you?",
+      "url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 16:31:00",
+      "published": "Thu, 09 Jul 2026 19:43:00",
       "source": "MarketWatch",
-      "title": "Home prices hit new all-time high, deepening affordability woes",
-      "url": "https://www.marketwatch.com/story/home-prices-hit-a-new-all-time-high-this-summer-2808d1a3?mod=mw_rss_topstories"
+      "title": "\u2018I get $1,460 in Social Security\u2019: My millionaire ex-husband, 74, refuses to pay alimony. What can I do?",
+      "url": "https://www.marketwatch.com/story/i-get-1-460-in-social-security-my-millionaire-ex-husband-74-refuses-to-pay-alimony-what-can-i-do-c5e60824?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 16:30:00",
+      "published": "Thu, 09 Jul 2026 19:29:00",
       "source": "MarketWatch",
-      "title": "Mortgage rates jump as tensions with Iran spook bond investors",
-      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-as-tensions-with-iran-spook-bond-investors-fbd8aa8e?mod=mw_rss_topstories"
+      "title": "What affordability crisis? Rich home buyers are powering the housing market.",
+      "url": "https://www.marketwatch.com/story/what-affordability-crisis-rich-home-buyers-are-powering-the-housing-market-71f85230?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 09 Jul 2026 16:13:00",
+      "published": "Thu, 09 Jul 2026 19:11:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock surges on multibillion-dollar U.S. manufacturing push",
-      "url": "https://www.marketwatch.com/story/microns-stock-surges-on-multibillion-dollar-u-s-manufacturing-push-b1e63834?mod=mw_rss_topstories"
+      "title": "Gen Z-ers share how they\u2019re achieving financial freedom \u2014 and the old ideas they\u2019re leaving behind",
+      "url": "https://www.marketwatch.com/story/gen-z-ers-share-how-theyre-achieving-financial-freedom-and-the-old-ideas-theyre-leaving-behind-c36c5980?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.67
+      "yield": 3.72
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.83
     },
     {
       "tenor": "6M",
-      "yield": 3.99
+      "yield": 3.96
     },
     {
       "tenor": "1Y",
-      "yield": 4.06
+      "yield": 4.02
     },
     {
       "tenor": "2Y",
-      "yield": 4.21
+      "yield": 4.16
     },
     {
       "tenor": "5Y",
-      "yield": 4.31
+      "yield": 4.27
     },
     {
       "tenor": "7Y",
-      "yield": 4.43
+      "yield": 4.4
     },
     {
       "tenor": "10Y",
-      "yield": 4.56
+      "yield": 4.54
     },
     {
       "tenor": "20Y",
-      "yield": 5.07
+      "yield": 5.06
     },
     {
       "tenor": "30Y",
-      "yield": 5.06
+      "yield": 5.05
     }
   ],
   "warnings": []
