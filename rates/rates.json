@@ -135,7 +135,7 @@
       "rate": 17.5276
     }
   },
-  "generated_at": "2026-07-10T15:36:09+00:00",
+  "generated_at": "2026-07-10T17:26:18+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-07-01",
-        "rate": 6.65
-      },
-      {
-        "date": "2026-07-01",
         "rate": 6.57
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-09",
         "rate": 6.49
+      },
+      {
+        "date": "2026-07-10",
+        "rate": 6.64
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
+      "published": "Fri, 10 Jul 2026 16:47:00",
+      "source": "MarketWatch",
+      "title": "What the big housing bill means for buyers as home prices hit new record high",
+      "url": "https://www.marketwatch.com/story/what-the-big-housing-bill-means-for-buyers-as-home-prices-hit-new-record-high-5f893edf?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 16:18:00",
+      "source": "MarketWatch",
+      "title": "Delta faces jet-fuel jitters even as it sees strong travel demand",
+      "url": "https://www.marketwatch.com/story/delta-reports-record-revenue-and-a-profit-beat-even-as-fuel-costs-surge-b1e33336?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 16:09:00",
+      "source": "MarketWatch",
+      "title": "SK Hynix\u2019s stock pops in its Nasdaq debut",
+      "url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 15:42:00",
+      "source": "MarketWatch",
+      "title": "My doctor friend objected to his hospital\u2019s fundraising tactics. Did management go too far?",
+      "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 10 Jul 2026 15:34:00",
       "source": "MarketWatch",
       "title": "All entry-level jobs require 3-5 years of experience. How am I supposed to get that if no one will hire me?",
       "url": "https://www.marketwatch.com/story/all-entry-level-jobs-require-3-5-years-of-experience-how-am-i-supposed-to-get-that-if-no-one-will-hire-me-e1bc4b0a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 15:15:00",
-      "source": "MarketWatch",
-      "title": "The space race is on as China takes a big step toward rivaling SpaceX",
-      "url": "https://www.marketwatch.com/story/the-space-race-is-on-as-china-takes-a-big-step-toward-rivaling-spacex-851e935f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 15:08:00",
-      "source": "MarketWatch",
-      "title": "Half of small-business owners hope to sell their companies and retire in the next decade. What happens to their workers?",
-      "url": "https://www.marketwatch.com/story/half-of-small-business-owners-hope-to-sell-their-companies-and-retire-in-the-next-decade-what-happens-to-their-workers-a03ae979?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 14:59:00",
-      "source": "MarketWatch",
-      "title": "Only 5% of U.S. adults can ace this 8-question financial-literacy test. Can you?",
-      "url": "https://www.marketwatch.com/story/only-5-of-u-s-adults-can-ace-this-8-question-financial-literacy-test-can-you-93a57cc6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 14:35:00",
-      "source": "MarketWatch",
-      "title": "\u2018She wants him gone\u2019: My friend took in a homeless man as a caretaker. After 10 years, how can she evict him?",
-      "url": "https://www.marketwatch.com/story/she-wants-him-gone-my-friend-took-in-a-homeless-man-as-a-caretaker-after-10-years-how-can-she-evict-him-01672de2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 09 2026",
-      "change": -0.02,
-      "rate": 6.2
+      "asof_label": "Jul 10 2026",
+      "change": -0.01,
+      "rate": 6.19
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 09 2026",
-      "change": -0.03,
+      "asof_label": "Jul 10 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
