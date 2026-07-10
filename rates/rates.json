@@ -135,7 +135,7 @@
       "rate": 17.5276
     }
   },
-  "generated_at": "2026-07-10T17:26:18+00:00",
+  "generated_at": "2026-07-10T19:05:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-06-17",
-        "rate": 6.6
-      },
-      {
         "date": "2026-06-24",
         "rate": 6.59
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-07-08",
         "rate": 6.68
+      },
+      {
+        "date": "2026-07-08",
+        "rate": 6.58
       },
       {
         "date": "2026-07-09",
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
-      "published": "Fri, 10 Jul 2026 16:47:00",
+      "published": "Fri, 10 Jul 2026 19:02:00",
       "source": "MarketWatch",
-      "title": "What the big housing bill means for buyers as home prices hit new record high",
-      "url": "https://www.marketwatch.com/story/what-the-big-housing-bill-means-for-buyers-as-home-prices-hit-new-record-high-5f893edf?mod=mw_rss_topstories"
+      "title": "Prepare for the Fed to undo rate cuts that stabilized the economy, expert cautions",
+      "url": "https://www.marketwatch.com/story/prepare-for-the-fed-to-undo-rate-cuts-that-stabilized-the-economy-expert-cautions-bc36ea76?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 16:18:00",
+      "published": "Fri, 10 Jul 2026 18:49:00",
       "source": "MarketWatch",
-      "title": "Delta faces jet-fuel jitters even as it sees strong travel demand",
-      "url": "https://www.marketwatch.com/story/delta-reports-record-revenue-and-a-profit-beat-even-as-fuel-costs-surge-b1e33336?mod=mw_rss_topstories"
+      "title": "\u2018Trump accounts\u2019 are great \u2014 if you\u2019re already rich",
+      "url": "https://www.marketwatch.com/story/trump-accounts-are-great-if-youre-already-rich-0bfe5227?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 16:09:00",
+      "published": "Fri, 10 Jul 2026 18:31:00",
       "source": "MarketWatch",
-      "title": "SK Hynix\u2019s stock pops in its Nasdaq debut",
+      "title": "SK Hynix\u2019s stock scores double-digit pop in Nasdaq debut",
       "url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 15:42:00",
+      "published": "Fri, 10 Jul 2026 18:28:00",
       "source": "MarketWatch",
-      "title": "My doctor friend objected to his hospital\u2019s fundraising tactics. Did management go too far?",
-      "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories"
+      "title": "\u2018An American tragedy\u2019 in the making: The majority of small-business owners will retire in the next decade. What happens to their workers?",
+      "url": "https://www.marketwatch.com/story/half-of-small-business-owners-hope-to-sell-their-companies-and-retire-in-the-next-decade-what-happens-to-their-workers-a03ae979?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 15:34:00",
+      "published": "Fri, 10 Jul 2026 18:12:00",
       "source": "MarketWatch",
-      "title": "All entry-level jobs require 3-5 years of experience. How am I supposed to get that if no one will hire me?",
-      "url": "https://www.marketwatch.com/story/all-entry-level-jobs-require-3-5-years-of-experience-how-am-i-supposed-to-get-that-if-no-one-will-hire-me-e1bc4b0a?mod=mw_rss_topstories"
+      "title": "Should you lock in a 4% CD rate now? Here\u2019s how to decide on the next move for your cash.",
+      "url": "https://www.marketwatch.com/story/should-you-lock-in-a-4-cd-rate-now-heres-how-to-decide-on-the-next-move-for-your-cash-41a7ef4c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
