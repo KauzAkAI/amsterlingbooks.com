@@ -135,7 +135,7 @@
       "rate": 17.5276
     }
   },
-  "generated_at": "2026-07-10T19:05:50+00:00",
+  "generated_at": "2026-07-10T20:42:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
     },
     {
+      "published": "Fri, 10 Jul 2026 19:54:00",
+      "source": "MarketWatch",
+      "title": "Meta\u2019s stock roars back to life as it heads for its best week in years",
+      "url": "https://www.marketwatch.com/story/metas-stock-roars-back-to-life-as-it-heads-for-its-best-week-in-years-0ff0fa7d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 19:40:00",
+      "source": "MarketWatch",
+      "title": "Summer travel season is here: Make this vital purchase before your next vacation",
+      "url": "https://www.marketwatch.com/story/8-things-i-learned-about-travel-expenses-after-a-family-tragedy-1bbb024f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 19:30:00",
+      "source": "MarketWatch",
+      "title": "Where to put cash right now: Should you lock in at 4% \u2014 or wait for the next Fed rate decision?",
+      "url": "https://www.marketwatch.com/story/should-you-lock-in-a-4-cd-rate-now-heres-how-to-decide-on-the-next-move-for-your-cash-41a7ef4c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 10 Jul 2026 19:04:00",
+      "source": "MarketWatch",
+      "title": "A hedge-fund trade blamed for a massive market blowup in 2024 has made a big comeback, Goldman Sachs says",
+      "url": "https://www.marketwatch.com/story/a-hedge-fund-trade-blamed-for-a-massive-market-blowup-in-2024-has-made-a-big-comeback-goldman-sachs-says-f2308a78?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 10 Jul 2026 19:02:00",
       "source": "MarketWatch",
       "title": "Prepare for the Fed to undo rate cuts that stabilized the economy, expert cautions",
       "url": "https://www.marketwatch.com/story/prepare-for-the-fed-to-undo-rate-cuts-that-stabilized-the-economy-expert-cautions-bc36ea76?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 18:49:00",
-      "source": "MarketWatch",
-      "title": "\u2018Trump accounts\u2019 are great \u2014 if you\u2019re already rich",
-      "url": "https://www.marketwatch.com/story/trump-accounts-are-great-if-youre-already-rich-0bfe5227?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 18:31:00",
-      "source": "MarketWatch",
-      "title": "SK Hynix\u2019s stock scores double-digit pop in Nasdaq debut",
-      "url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 18:28:00",
-      "source": "MarketWatch",
-      "title": "\u2018An American tragedy\u2019 in the making: The majority of small-business owners will retire in the next decade. What happens to their workers?",
-      "url": "https://www.marketwatch.com/story/half-of-small-business-owners-hope-to-sell-their-companies-and-retire-in-the-next-decade-what-happens-to-their-workers-a03ae979?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 18:12:00",
-      "source": "MarketWatch",
-      "title": "Should you lock in a 4% CD rate now? Here\u2019s how to decide on the next move for your cash.",
-      "url": "https://www.marketwatch.com/story/should-you-lock-in-a-4-cd-rate-now-heres-how-to-decide-on-the-next-move-for-your-cash-41a7ef4c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.72
+      "yield": 3.71
     },
     {
       "tenor": "3M",
-      "yield": 3.83
+      "yield": 3.85
     },
     {
       "tenor": "6M",
-      "yield": 3.96
+      "yield": 3.99
     },
     {
       "tenor": "1Y",
-      "yield": 4.02
+      "yield": 4.06
     },
     {
       "tenor": "2Y",
-      "yield": 4.16
+      "yield": 4.21
     },
     {
       "tenor": "5Y",
-      "yield": 4.27
+      "yield": 4.3
     },
     {
       "tenor": "7Y",
-      "yield": 4.4
+      "yield": 4.42
     },
     {
       "tenor": "10Y",
-      "yield": 4.54
+      "yield": 4.56
     },
     {
       "tenor": "20Y",
-      "yield": 5.06
+      "yield": 5.08
     },
     {
       "tenor": "30Y",
-      "yield": 5.05
+      "yield": 5.06
     }
   ],
   "warnings": []
