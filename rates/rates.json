@@ -135,7 +135,7 @@
       "rate": 17.4908
     }
   },
-  "generated_at": "2026-07-13T19:06:43+00:00",
+  "generated_at": "2026-07-13T20:34:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-07-13",
-        "rate": 6.72
+        "rate": 6.75
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
     },
     {
-      "published": "Mon, 13 Jul 2026 19:00:00",
+      "published": "Mon, 13 Jul 2026 20:32:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
-      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+      "title": "Billionaires are loading up on these superior stocks. Why it pays to follow their money.",
+      "url": "https://www.marketwatch.com/story/billionaires-are-loading-up-on-these-superior-stocks-why-it-pays-to-follow-their-money-9120c242?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 18:36:00",
+      "published": "Mon, 13 Jul 2026 20:26:00",
       "source": "MarketWatch",
-      "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
-      "url": "https://www.marketwatch.com/story/meta-and-amazon-are-leading-a-trillion-dollar-big-tech-spending-spree-17a8156d?mod=mw_rss_topstories"
+      "title": "Micron and other chip stocks feel the pain of imported volatility \u2014 blame SK Hynix",
+      "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-feel-the-pain-of-imported-volatility-blame-sk-hynix-f705a0fd?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 18:30:00",
+      "published": "Mon, 13 Jul 2026 19:57:00",
       "source": "MarketWatch",
-      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
-      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s stock threatens to fall below the IPO price. Do investors face a \u2018crisis\u2019 if it does?",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-threatens-to-fall-below-the-ipo-price-do-investors-face-a-crisis-if-it-does-2f330b09?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 18:19:00",
+      "published": "Mon, 13 Jul 2026 19:43:00",
       "source": "MarketWatch",
-      "title": "Global oil prices top $82 a barrel, heading for biggest jump in 3 months after Trump reimposes Strait of Hormuz blockade",
+      "title": "Global oil prices top $83 a barrel, logging biggest jump in 6 years after Trump reimposes Strait of Hormuz blockade",
       "url": "https://www.marketwatch.com/story/oil-prices-surge-as-much-as-5-after-iran-declares-strait-of-hormuz-is-closed-6905599b?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 18:13:00",
+      "published": "Mon, 13 Jul 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "Inflation is primed to fall for the first time in 6 years. Will high prices drop too?",
-      "url": "https://www.marketwatch.com/story/inflation-is-primed-to-fall-for-the-first-time-in-6-years-will-high-prices-drop-too-285ecf10?mod=mw_rss_topstories"
+      "title": "AI-related debt jumped 99% over the past year. It\u2019s a \u2018shock to the system\u2019 for investors.",
+      "url": "https://www.marketwatch.com/story/ai-related-debt-jumped-99-over-the-past-year-its-a-shock-to-the-system-for-investors-b47ce4ea?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Jul 13 2026",
-      "change": 0.01,
-      "rate": 6.2
+      "change": 0.02,
+      "rate": 6.21
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Jul 13 2026",
-      "change": 0.08,
+      "change": 0.11,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.71
+      "yield": 3.73
     },
     {
       "tenor": "3M",
-      "yield": 3.85
+      "yield": 3.89
     },
     {
       "tenor": "6M",
-      "yield": 3.99
+      "yield": 4.03
     },
     {
       "tenor": "1Y",
-      "yield": 4.06
+      "yield": 4.12
     },
     {
       "tenor": "2Y",
-      "yield": 4.21
+      "yield": 4.26
     },
     {
       "tenor": "5Y",
-      "yield": 4.3
+      "yield": 4.37
     },
     {
       "tenor": "7Y",
-      "yield": 4.42
+      "yield": 4.48
     },
     {
       "tenor": "10Y",
-      "yield": 4.56
+      "yield": 4.62
     },
     {
       "tenor": "20Y",
-      "yield": 5.08
+      "yield": 5.11
     },
     {
       "tenor": "30Y",
-      "yield": 5.06
+      "yield": 5.1
     }
   ],
   "warnings": []
