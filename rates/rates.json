@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4153
+      "rate": 1.4135
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7745
+      "rate": 6.7776
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87489
+      "rate": 0.87535
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74501
+      "rate": 0.74694
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.34
+      "rate": 95.62
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 161.87
+      "rate": 162.14
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1504.92
+      "rate": 1494.09
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5276
+      "rate": 17.4908
     }
   },
-  "generated_at": "2026-07-10T23:42:39+00:00",
+  "generated_at": "2026-07-13T15:46:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Mon, 13 Jul 2026 10:56:52",
+      "source": "CNBC",
+      "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
+      "url": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html"
+    },
+    {
+      "published": "Mon, 13 Jul 2026 15:20:06",
+      "source": "CNBC",
+      "title": "'Funflation' hits home: Why staying in isn't the cost-saver it used to be",
+      "url": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html"
+    },
+    {
       "published": "Thu, 09 Jul 2026 02:31:37",
       "source": "CNBC",
       "title": "China consumer price growth weakens in June while producer inflation rises to near 4-year high",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
     },
     {
-      "published": "Thu, 02 Jul 2026 16:50:27",
-      "source": "CNBC",
-      "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
-      "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html"
-    },
-    {
-      "published": "Thu, 02 Jul 2026 12:52:09",
-      "source": "CNBC",
-      "title": "Europe wants to rebalance trade with Beijing, but can't quit Chinese air conditioners",
-      "url": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html"
-    },
-    {
-      "published": "Fri, 10 Jul 2026 23:06:00",
+      "published": "Mon, 13 Jul 2026 15:26:00",
       "source": "MarketWatch",
-      "title": "Apple sues OpenAI for alleged theft of confidential info \u2014 and says that\u2019s just \u2018the tip of the iceberg\u2019",
-      "url": "https://www.marketwatch.com/story/apple-sues-openai-for-institutional-misconduct-and-alleges-thats-just-the-tip-of-the-iceberg-6e803c4d?mod=mw_rss_topstories"
+      "title": "Micron and other chip stocks feel the pain of imported volatility \u2014 blame SK Hynix",
+      "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-feel-the-pain-of-imported-volatility-blame-sk-hynix-f705a0fd?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 22:24:00",
+      "published": "Mon, 13 Jul 2026 15:25:00",
       "source": "MarketWatch",
-      "title": "Meta\u2019s stock roars back to life as it notches its best week in years",
-      "url": "https://www.marketwatch.com/story/metas-stock-roars-back-to-life-as-it-heads-for-its-best-week-in-years-0ff0fa7d?mod=mw_rss_topstories"
+      "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday",
+      "url": "https://www.marketwatch.com/story/as-five-big-u-s-banks-report-earnings-on-the-same-day-citigroup-is-the-one-to-watch-683c3707?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 22:18:00",
+      "published": "Mon, 13 Jul 2026 15:18:00",
       "source": "MarketWatch",
-      "title": "SK Hynix\u2019s stock sees double-digit pop in Nasdaq debut",
-      "url": "https://www.marketwatch.com/story/sk-hynixs-stock-looks-primed-for-a-pop-in-its-nasdaq-debut-38054370?mod=mw_rss_topstories"
+      "title": "Global oil prices top $80 a barrel after Trump reimposes Strait of Hormuz blockade and charges 20% fee for cargo shipped through",
+      "url": "https://www.marketwatch.com/story/oil-prices-surge-as-much-as-5-after-iran-declares-strait-of-hormuz-is-closed-6905599b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 21:30:00",
+      "published": "Mon, 13 Jul 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019d hate to end up with an unexpected tax bill\u2019: I\u2019m 73 and still work full time. Can I avoid paying taxes on my Social Security benefits?",
-      "url": "https://www.marketwatch.com/story/im-73-and-still-work-full-time-can-i-avoid-paying-taxes-on-my-social-security-benefits-06ecc7c2?mod=mw_rss_topstories"
+      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
+      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 10 Jul 2026 21:12:00",
+      "published": "Mon, 13 Jul 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "\u2018I get $1,460 in Social Security\u2019: My millionaire ex-husband, 74, refuses to pay alimony. What can I do?",
-      "url": "https://www.marketwatch.com/story/i-get-1-460-in-social-security-my-millionaire-ex-husband-74-refuses-to-pay-alimony-what-can-i-do-c5e60824?mod=mw_rss_topstories"
+      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
     }
   ],
   "rates": {
