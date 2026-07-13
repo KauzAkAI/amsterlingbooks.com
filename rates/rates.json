@@ -135,7 +135,7 @@
       "rate": 17.4908
     }
   },
-  "generated_at": "2026-07-13T17:46:25+00:00",
+  "generated_at": "2026-07-13T19:06:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-07-02",
-        "rate": 6.6
-      },
-      {
-        "date": "2026-07-02",
         "rate": 6.43
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-10",
         "rate": 6.64
+      },
+      {
+        "date": "2026-07-13",
+        "rate": 6.72
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
     },
     {
-      "published": "Mon, 13 Jul 2026 17:10:00",
+      "published": "Mon, 13 Jul 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "A hot inflation reading this week could mean a rate hike soon, Fed\u2019s Waller says",
-      "url": "https://www.marketwatch.com/story/a-hot-inflation-reading-this-week-could-mean-a-rate-hike-soon-feds-waller-says-15acf7a2?mod=mw_rss_topstories"
+      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
+      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 16:40:00",
+      "published": "Mon, 13 Jul 2026 18:36:00",
       "source": "MarketWatch",
-      "title": "Billionaires are loading up on these superior stocks. Why it pays to follow their money.",
-      "url": "https://www.marketwatch.com/story/billionaires-are-loading-up-on-these-superior-stocks-why-it-pays-to-follow-their-money-9120c242?mod=mw_rss_topstories"
+      "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
+      "url": "https://www.marketwatch.com/story/meta-and-amazon-are-leading-a-trillion-dollar-big-tech-spending-spree-17a8156d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 15:26:00",
+      "published": "Mon, 13 Jul 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Micron and other chip stocks feel the pain of imported volatility \u2014 blame SK Hynix",
-      "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-feel-the-pain-of-imported-volatility-blame-sk-hynix-f705a0fd?mod=mw_rss_topstories"
+      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 15:25:00",
+      "published": "Mon, 13 Jul 2026 18:19:00",
       "source": "MarketWatch",
-      "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
-      "url": "https://www.marketwatch.com/story/as-five-big-u-s-banks-report-earnings-on-the-same-day-citigroup-is-the-one-to-watch-683c3707?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 13 Jul 2026 15:18:00",
-      "source": "MarketWatch",
-      "title": "Global oil prices top $80 a barrel after Trump reimposes Strait of Hormuz blockade and charges 20% fee for cargo shipped through",
+      "title": "Global oil prices top $82 a barrel, heading for biggest jump in 3 months after Trump reimposes Strait of Hormuz blockade",
       "url": "https://www.marketwatch.com/story/oil-prices-surge-as-much-as-5-after-iran-declares-strait-of-hormuz-is-closed-6905599b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 13 Jul 2026 18:13:00",
+      "source": "MarketWatch",
+      "title": "Inflation is primed to fall for the first time in 6 years. Will high prices drop too?",
+      "url": "https://www.marketwatch.com/story/inflation-is-primed-to-fall-for-the-first-time-in-6-years-will-high-prices-drop-too-285ecf10?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 10 2026",
-      "change": -0.01,
-      "rate": 6.19
+      "asof_label": "Jul 13 2026",
+      "change": 0.01,
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 10 2026",
-      "change": -0.01,
+      "asof_label": "Jul 13 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
