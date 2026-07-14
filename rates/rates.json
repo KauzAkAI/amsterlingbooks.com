@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4135
+      "rate": 1.4112
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7776
+      "rate": 6.7801
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87535
+      "rate": 0.87681
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74694
+      "rate": 0.74717
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.62
+      "rate": 96.2
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.14
+      "rate": 162.22
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1494.09
+      "rate": 1495.49
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4908
+      "rate": 17.5
     }
   },
-  "generated_at": "2026-07-13T23:32:05+00:00",
+  "generated_at": "2026-07-14T14:59:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 14 Jul 2026 14:02:01",
+      "source": "CNBC",
+      "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
+      "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
+    },
+    {
       "published": "Mon, 13 Jul 2026 10:56:52",
       "source": "CNBC",
       "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
-      "published": "Thu, 09 Jul 2026 14:23:29",
-      "source": "CNBC",
-      "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
-      "url": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html"
+      "published": "Tue, 14 Jul 2026 14:10:00",
+      "source": "MarketWatch",
+      "title": "IBM\u2019s stock is having its worst day ever after the surprise release of an earnings miss",
+      "url": "https://www.marketwatch.com/story/ibms-stock-dives-toward-worst-day-in-nearly-40-years-after-the-surprise-release-of-an-earnings-miss-8519741e?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 23:30:00",
+      "published": "Tue, 14 Jul 2026 14:03:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
-      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+      "title": "Jamie Dimon says \u2018booming\u2019 markets and a \u2018fine\u2019 consumer fueled JPMorgan\u2019s blowout profits",
+      "url": "https://www.marketwatch.com/story/jpmorgan-beats-profit-expectations-by-the-most-in-five-years-as-equity-markets-revenue-surges-9a0d8805?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 23:03:00",
+      "published": "Tue, 14 Jul 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 67 with a $140,000 pension. Should I wait until 70 to claim Social Security so my wife gets more?",
-      "url": "https://www.marketwatch.com/story/im-67-with-a-140-000-pension-should-i-wait-until-70-to-claim-social-security-so-my-wife-gets-more-63759d48?mod=mw_rss_topstories"
+      "title": "Social Security says it\u2019s handling disability claims better. But it may just be pushing more people  away.",
+      "url": "https://www.marketwatch.com/story/social-security-says-its-handling-disability-claims-better-but-it-may-just-be-pushing-more-people-away-413a6b61?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 22:50:00",
+      "published": "Tue, 14 Jul 2026 13:52:00",
       "source": "MarketWatch",
-      "title": "The U.S. is maxing out its strategic oil reserves as Trump vows to control the Strait of Hormuz",
-      "url": "https://www.marketwatch.com/story/the-u-s-is-maxing-out-its-strategic-oil-reserves-as-trump-vows-to-control-the-strait-of-hormuz-b71f88a9?mod=mw_rss_topstories"
+      "title": "Bank of America\u2019s stock reverses premarket decline in wake of blockbuster earnings report",
+      "url": "https://www.marketwatch.com/story/bank-of-america-stock-falls-despite-earnings-beat-3d4db2b4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 13 Jul 2026 22:19:00",
+      "published": "Tue, 14 Jul 2026 13:45:00",
       "source": "MarketWatch",
-      "title": "Why a borrowing binge by investors is a warning sign for the stock market",
-      "url": "https://www.marketwatch.com/story/why-a-borrowing-binge-by-investors-is-a-warning-sign-for-the-stock-market-996ee446?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 13 Jul 2026 22:08:00",
-      "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock threatens to fall below the IPO price. Do investors face a \u2018crisis\u2019 if it does?",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-threatens-to-fall-below-the-ipo-price-do-investors-face-a-crisis-if-it-does-2f330b09?mod=mw_rss_topstories"
+      "title": "Why SpaceX and Tesla are \u2018value\u2019 stocks, according to this fund manager",
+      "url": "https://www.marketwatch.com/story/why-spacex-and-tesla-are-value-stocks-according-to-this-fund-manager-5f59ff86?mod=mw_rss_topstories"
     }
   ],
   "rates": {
