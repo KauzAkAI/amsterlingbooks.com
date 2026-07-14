@@ -135,7 +135,7 @@
       "rate": 17.5
     }
   },
-  "generated_at": "2026-07-14T22:16:42+00:00",
+  "generated_at": "2026-07-14T23:15:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
+      "published": "Tue, 14 Jul 2026 22:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
+      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 14 Jul 2026 22:11:00",
       "source": "MarketWatch",
       "title": "Your monthly Netflix bill is up 29% in just over a year. Critics say Washington needs to fix it.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Taco Bell reportedly being investigated by health officials, as cyclosporiasis outbreak spreads",
       "url": "https://www.marketwatch.com/story/officials-are-reportedly-looking-into-taco-bell-as-source-of-parasite-outbreak-remains-elusive-3ead0a1f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 14 Jul 2026 21:03:00",
-      "source": "MarketWatch",
-      "title": "Wall Street has set a sky-high bar for companies to clear this earnings season. They just might pull it off.",
-      "url": "https://www.marketwatch.com/story/wall-street-has-set-a-sky-high-bar-for-companies-to-clear-this-earnings-season-they-just-might-pull-it-off-45731862?mod=mw_rss_topstories"
     }
   ],
   "rates": {
