@@ -135,7 +135,7 @@
       "rate": 17.5
     }
   },
-  "generated_at": "2026-07-14T18:48:56+00:00",
+  "generated_at": "2026-07-14T20:04:02+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
-      "published": "Tue, 14 Jul 2026 18:37:00",
+      "published": "Tue, 14 Jul 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "IBM\u2019s stock is having its worst day ever after the surprise release of an earnings miss",
-      "url": "https://www.marketwatch.com/story/ibms-stock-dives-toward-worst-day-in-nearly-40-years-after-the-surprise-release-of-an-earnings-miss-8519741e?mod=mw_rss_topstories"
+      "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
+      "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 18:33:00",
+      "published": "Tue, 14 Jul 2026 19:49:00",
       "source": "MarketWatch",
-      "title": "Homes are getting more affordable. So how come you still can\u2019t afford to buy one?",
-      "url": "https://www.marketwatch.com/story/homes-are-getting-more-affordable-so-how-come-you-still-cant-afford-to-buy-one-f2d69d02?mod=mw_rss_topstories"
+      "title": "My husband and I are retired. Our financial adviser, who is in his 30s, called us \u2018you guyses.\u2019 Is that unprofessional?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 18:23:00",
+      "published": "Tue, 14 Jul 2026 19:49:00",
       "source": "MarketWatch",
-      "title": "These are the obstacles still keeping women from retirement security",
-      "url": "https://www.marketwatch.com/story/these-are-the-obstacles-still-keeping-women-from-retirement-security-eea48a95?mod=mw_rss_topstories"
+      "title": "The next boost to Apple\u2019s stock could come from an iPhone price hike",
+      "url": "https://www.marketwatch.com/story/the-next-boost-to-apples-stock-could-come-from-an-iphone-price-hike-126150cf?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 18:12:00",
+      "published": "Tue, 14 Jul 2026 19:44:00",
       "source": "MarketWatch",
-      "title": "This overlooked index is a better investment than the S&P 500",
-      "url": "https://www.marketwatch.com/story/this-overlooked-index-is-a-better-investment-than-the-s-p-500-74c7e698?mod=mw_rss_topstories"
+      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 17:55:00",
+      "published": "Tue, 14 Jul 2026 19:36:00",
       "source": "MarketWatch",
-      "title": "Paychecks are rising faster than prices for a change \u2014 but when will consumers feel the relief?",
-      "url": "https://www.marketwatch.com/story/your-paycheck-is-rising-faster-than-prices-for-a-change-but-when-will-you-feel-the-relief-cbbcb8bd?mod=mw_rss_topstories"
+      "title": "IBM workers pay a $400 million price for investing in company stock",
+      "url": "https://www.marketwatch.com/story/ibm-workers-pay-a-400-million-price-for-investing-in-company-stock-fb02f5fa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.89
+      "yield": 3.84
     },
     {
       "tenor": "6M",
-      "yield": 4.03
+      "yield": 3.95
     },
     {
       "tenor": "1Y",
-      "yield": 4.12
+      "yield": 4.02
     },
     {
       "tenor": "2Y",
-      "yield": 4.26
+      "yield": 4.18
     },
     {
       "tenor": "5Y",
-      "yield": 4.37
+      "yield": 4.31
     },
     {
       "tenor": "7Y",
-      "yield": 4.48
+      "yield": 4.44
     },
     {
       "tenor": "10Y",
-      "yield": 4.62
+      "yield": 4.58
     },
     {
       "tenor": "20Y",
-      "yield": 5.11
+      "yield": 5.09
     },
     {
       "tenor": "30Y",
-      "yield": 5.1
+      "yield": 5.08
     }
   ],
   "warnings": []
