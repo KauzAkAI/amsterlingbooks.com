@@ -135,7 +135,7 @@
       "rate": 17.5
     }
   },
-  "generated_at": "2026-07-14T16:24:00+00:00",
+  "generated_at": "2026-07-14T17:41:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
-      "published": "Tue, 14 Jul 2026 16:00:00",
+      "published": "Tue, 14 Jul 2026 17:31:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 67 with a $140,000 pension. Should I wait until 70 to claim Social Security so my wife gets more?",
-      "url": "https://www.marketwatch.com/story/im-67-with-a-140-000-pension-should-i-wait-until-70-to-claim-social-security-so-my-wife-gets-more-63759d48?mod=mw_rss_topstories"
+      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
+      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 15:30:00",
+      "published": "Tue, 14 Jul 2026 17:28:00",
       "source": "MarketWatch",
-      "title": "My husband and I are retired. Our financial adviser, who is in his 30s, called us \u2018you guyses.\u2019 Is that unprofessional?",
-      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories"
+      "title": "Officials are reportedly looking into Taco Bell, as source of parasite outbreak remains elusive",
+      "url": "https://www.marketwatch.com/story/officials-are-reportedly-looking-into-taco-bell-as-source-of-parasite-outbreak-remains-elusive-3ead0a1f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 15:21:00",
+      "published": "Tue, 14 Jul 2026 17:17:00",
       "source": "MarketWatch",
-      "title": "Lindsey Graham died from a rare heart condition. Here\u2019s how to know if you\u2019re at risk.",
-      "url": "https://www.marketwatch.com/story/lindsey-graham-died-from-a-rare-heart-condition-heres-how-to-know-if-youre-at-risk-8ca5a618?mod=mw_rss_topstories"
+      "title": "Your paycheck is rising faster than prices for a change \u2014 but when will you feel the relief?",
+      "url": "https://www.marketwatch.com/story/your-paycheck-is-rising-faster-than-prices-for-a-change-but-when-will-you-feel-the-relief-cbbcb8bd?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 15:20:00",
+      "published": "Tue, 14 Jul 2026 17:12:00",
       "source": "MarketWatch",
-      "title": "Jamie Dimon says \u2018booming\u2019 markets and a \u2018fine\u2019 consumer fueled JPMorgan\u2019s blowout profits",
-      "url": "https://www.marketwatch.com/story/jpmorgan-beats-profit-expectations-by-the-most-in-five-years-as-equity-markets-revenue-surges-9a0d8805?mod=mw_rss_topstories"
+      "title": "Sky-high returns and earnings expectations could mean the end is near for this stock-market bull run",
+      "url": "https://www.marketwatch.com/story/sky-high-returns-and-earnings-expectations-could-mean-the-end-is-near-for-this-stock-market-bull-run-429b4085?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 15:20:00",
+      "published": "Tue, 14 Jul 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "Your Social Security check could go up by $74 a month next year",
-      "url": "https://www.marketwatch.com/story/your-social-security-check-could-go-up-by-74-a-month-next-year-58877142?mod=mw_rss_topstories"
+      "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
+      "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.1
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
