@@ -135,7 +135,7 @@
       "rate": 17.5
     }
   },
-  "generated_at": "2026-07-14T14:59:40+00:00",
+  "generated_at": "2026-07-14T16:24:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.43
       },
       {
-        "date": "2026-07-06",
-        "rate": 6.59
-      },
-      {
         "date": "2026-07-07",
         "rate": 6.63
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-13",
         "rate": 6.75
+      },
+      {
+        "date": "2026-07-14",
+        "rate": 6.7
       }
     ]
   },
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Tue, 14 Jul 2026 14:02:01",
+      "published": "Tue, 14 Jul 2026 15:45:07",
       "source": "CNBC",
       "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
       "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
     },
     {
-      "published": "Tue, 14 Jul 2026 14:10:00",
+      "published": "Tue, 14 Jul 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "IBM\u2019s stock is having its worst day ever after the surprise release of an earnings miss",
-      "url": "https://www.marketwatch.com/story/ibms-stock-dives-toward-worst-day-in-nearly-40-years-after-the-surprise-release-of-an-earnings-miss-8519741e?mod=mw_rss_topstories"
+      "title": "I\u2019m 67 with a $140,000 pension. Should I wait until 70 to claim Social Security so my wife gets more?",
+      "url": "https://www.marketwatch.com/story/im-67-with-a-140-000-pension-should-i-wait-until-70-to-claim-social-security-so-my-wife-gets-more-63759d48?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 14:03:00",
+      "published": "Tue, 14 Jul 2026 15:30:00",
+      "source": "MarketWatch",
+      "title": "My husband and I are retired. Our financial adviser, who is in his 30s, called us \u2018you guyses.\u2019 Is that unprofessional?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 14 Jul 2026 15:21:00",
+      "source": "MarketWatch",
+      "title": "Lindsey Graham died from a rare heart condition. Here\u2019s how to know if you\u2019re at risk.",
+      "url": "https://www.marketwatch.com/story/lindsey-graham-died-from-a-rare-heart-condition-heres-how-to-know-if-youre-at-risk-8ca5a618?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 14 Jul 2026 15:20:00",
       "source": "MarketWatch",
       "title": "Jamie Dimon says \u2018booming\u2019 markets and a \u2018fine\u2019 consumer fueled JPMorgan\u2019s blowout profits",
       "url": "https://www.marketwatch.com/story/jpmorgan-beats-profit-expectations-by-the-most-in-five-years-as-equity-markets-revenue-surges-9a0d8805?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 14:00:00",
+      "published": "Tue, 14 Jul 2026 15:20:00",
       "source": "MarketWatch",
-      "title": "Social Security says it\u2019s handling disability claims better. But it may just be pushing more people  away.",
-      "url": "https://www.marketwatch.com/story/social-security-says-its-handling-disability-claims-better-but-it-may-just-be-pushing-more-people-away-413a6b61?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 14 Jul 2026 13:52:00",
-      "source": "MarketWatch",
-      "title": "Bank of America\u2019s stock reverses premarket decline in wake of blockbuster earnings report",
-      "url": "https://www.marketwatch.com/story/bank-of-america-stock-falls-despite-earnings-beat-3d4db2b4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 14 Jul 2026 13:45:00",
-      "source": "MarketWatch",
-      "title": "Why SpaceX and Tesla are \u2018value\u2019 stocks, according to this fund manager",
-      "url": "https://www.marketwatch.com/story/why-spacex-and-tesla-are-value-stocks-according-to-this-fund-manager-5f59ff86?mod=mw_rss_topstories"
+      "title": "Your Social Security check could go up by $74 a month next year",
+      "url": "https://www.marketwatch.com/story/your-social-security-check-could-go-up-by-74-a-month-next-year-58877142?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 13 2026",
-      "change": 0.02,
-      "rate": 6.21
+      "asof_label": "Jul 14 2026",
+      "change": -0.01,
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 13 2026",
-      "change": 0.11,
+      "asof_label": "Jul 14 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
@@ -433,5 +433,7 @@
       "yield": 5.1
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
