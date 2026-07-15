@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4112
+      "rate": 1.4074
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7801
+      "rate": 6.7743
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87681
+      "rate": 0.87673
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74717
+      "rate": 0.74604
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.2
+      "rate": 96.26
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.22
+      "rate": 162.39
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1495.49
+      "rate": 1492.17
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5
+      "rate": 17.4303
     }
   },
-  "generated_at": "2026-07-14T23:15:49+00:00",
+  "generated_at": "2026-07-15T14:58:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Wed, 15 Jul 2026 14:22:48",
+      "source": "CNBC",
+      "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
+      "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
+    },
+    {
+      "published": "Wed, 15 Jul 2026 11:33:19",
+      "source": "CNBC",
+      "title": "Renewed Hormuz hostilities drive ECB rates rethink amid \u2018extremely volatile\u2019 outlook",
+      "url": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html"
+    },
+    {
+      "published": "Wed, 15 Jul 2026 05:14:11",
+      "source": "CNBC",
+      "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
+      "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
+    },
+    {
       "published": "Tue, 14 Jul 2026 21:05:13",
       "source": "CNBC",
       "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html"
     },
     {
-      "published": "Mon, 13 Jul 2026 15:20:06",
-      "source": "CNBC",
-      "title": "'Funflation' hits home: Why staying in isn't the cost-saver it used to be",
-      "url": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html"
-    },
-    {
-      "published": "Thu, 09 Jul 2026 02:31:37",
-      "source": "CNBC",
-      "title": "China consumer price growth weakens in June while producer inflation rises to near 4-year high",
-      "url": "https://www.cnbc.com/2026/07/09/china-cpi-ppi-june-inflation-iran-war-.html"
-    },
-    {
-      "published": "Fri, 03 Jul 2026 10:34:32",
-      "source": "CNBC",
-      "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
-      "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html"
-    },
-    {
-      "published": "Tue, 14 Jul 2026 22:15:00",
+      "published": "Wed, 15 Jul 2026 14:49:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
-      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+      "title": "You are missing the bond deal of the decade \u2014 and it is guaranteed to beat inflation",
+      "url": "https://www.marketwatch.com/story/you-are-missing-the-bond-deal-of-the-decade-and-it-is-guaranteed-to-beat-inflation-0f1d6cf8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 22:11:00",
+      "published": "Wed, 15 Jul 2026 14:44:00",
       "source": "MarketWatch",
-      "title": "Your monthly Netflix bill is up 29% in just over a year. Critics say Washington needs to fix it.",
-      "url": "https://www.marketwatch.com/story/your-monthly-netflix-bill-is-up-29-in-just-over-a-year-critics-say-washington-needs-to-fix-it-bcab6e5b?mod=mw_rss_topstories"
+      "title": "Buying a house is getting easier by one measure. Here\u2019s why it doesn\u2019t feel like it.",
+      "url": "https://www.marketwatch.com/story/homes-are-getting-more-affordable-so-how-come-you-still-cant-afford-to-buy-one-f2d69d02?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 21:38:00",
+      "published": "Wed, 15 Jul 2026 14:35:00",
       "source": "MarketWatch",
-      "title": "Three powerful forces are draining family wealth \u2014 and your estate plan is completely unprepared",
-      "url": "https://www.marketwatch.com/story/the-great-wealth-transfer-is-real-but-the-irs-or-a-nursing-home-might-get-your-money-first-d0c46676?mod=mw_rss_topstories"
+      "title": "PayPal\u2019s battered stock is getting a record boost from a report of buyout interest",
+      "url": "https://www.marketwatch.com/story/a-53-billion-lifeline-stripe-and-advent-reportedly-team-up-to-bid-for-battered-paypal-3bc6fcc2?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 21:10:00",
+      "published": "Wed, 15 Jul 2026 14:29:00",
       "source": "MarketWatch",
-      "title": "What IBM\u2019s profit warning means: Hardware is \u2018eating everyone\u2019s lunch\u2019",
-      "url": "https://www.marketwatch.com/story/what-ibms-profit-warning-means-hardware-is-eating-everyones-lunch-c6878824?mod=mw_rss_topstories"
+      "title": "Paychecks are rising faster than prices for a change \u2014 but when will consumers feel the relief?",
+      "url": "https://www.marketwatch.com/story/your-paycheck-is-rising-faster-than-prices-for-a-change-but-when-will-you-feel-the-relief-cbbcb8bd?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 14 Jul 2026 21:09:00",
+      "published": "Wed, 15 Jul 2026 14:25:00",
       "source": "MarketWatch",
-      "title": "Taco Bell reportedly being investigated by health officials, as cyclosporiasis outbreak spreads",
-      "url": "https://www.marketwatch.com/story/officials-are-reportedly-looking-into-taco-bell-as-source-of-parasite-outbreak-remains-elusive-3ead0a1f?mod=mw_rss_topstories"
+      "title": "These are the toughest places in America to sell a home right now",
+      "url": "https://www.marketwatch.com/story/these-are-the-toughest-places-in-america-to-sell-a-home-right-now-724bff2a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
