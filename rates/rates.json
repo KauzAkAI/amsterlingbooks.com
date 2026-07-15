@@ -135,7 +135,7 @@
       "rate": 17.4303
     }
   },
-  "generated_at": "2026-07-15T19:25:10+00:00",
+  "generated_at": "2026-07-15T20:35:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 19:11:00",
+      "published": "Wed, 15 Jul 2026 20:30:00",
       "source": "MarketWatch",
-      "title": "This isn\u2019t a plan to save Social Security. It\u2019s a plan to have a plan.",
-      "url": "https://www.marketwatch.com/story/this-isnt-a-plan-to-save-social-security-its-a-plan-to-have-a-plan-d55860af?mod=mw_rss_topstories"
+      "title": "Why the huge premium on SK Hynix\u2019s U.S.-listed shares may prove short-lived",
+      "url": "https://www.marketwatch.com/story/why-the-huge-premium-on-sk-hynixs-u-s-listing-may-prove-short-lived-582045f2?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 19:01:00",
+      "published": "Wed, 15 Jul 2026 20:26:00",
       "source": "MarketWatch",
-      "title": "\u2018They cut off online access\u2019: My mother\u2019s bank balance plummeted after her death. What\u2019s going on?",
-      "url": "https://www.marketwatch.com/story/they-cut-off-online-access-my-mothers-bank-balance-plummeted-after-her-death-whats-going-on-8e8f3aa2?mod=mw_rss_topstories"
+      "title": "What the launch of SK Hynix leveraged ETFs tells us about the hottest trade on Wall Street",
+      "url": "https://www.marketwatch.com/story/what-the-launch-of-sk-hynix-leveraged-etfs-tells-us-about-the-hottest-trade-on-wall-street-2110c484?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 18:51:00",
+      "published": "Wed, 15 Jul 2026 20:03:00",
       "source": "MarketWatch",
       "title": "AI is killing the cover letter \u2014 but here\u2019s when it still pays to send one",
       "url": "https://www.marketwatch.com/story/ai-is-killing-the-cover-letter-heres-when-it-pays-off-to-send-one-and-when-to-skip-it-e8800ef0?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 18:34:00",
+      "published": "Wed, 15 Jul 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "IBM employees losing $400 million on the company\u2019s stock should be a wake-up call",
-      "url": "https://www.marketwatch.com/story/ibm-workers-pay-a-400-million-price-for-investing-in-company-stock-fb02f5fa?mod=mw_rss_topstories"
+      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 18:07:00",
+      "published": "Wed, 15 Jul 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "A big dividend cut and a $2 billion charge: Conagra\u2019s results signal more pain ahead for food industry",
-      "url": "https://www.marketwatch.com/story/a-big-dividend-cut-and-a-2-billion-charge-conagras-results-signal-more-pain-ahead-for-food-industry-8613bd71?mod=mw_rss_topstories"
+      "title": "I\u2019m 67 with a $140,000 pension. Should I wait until 70 to claim Social Security so my wife gets more?",
+      "url": "https://www.marketwatch.com/story/im-67-with-a-140-000-pension-should-i-wait-until-70-to-claim-social-security-so-my-wife-gets-more-63759d48?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,35 +398,35 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.84
+      "yield": 3.83
     },
     {
       "tenor": "6M",
-      "yield": 3.95
+      "yield": 3.93
     },
     {
       "tenor": "1Y",
-      "yield": 4.02
+      "yield": 3.97
     },
     {
       "tenor": "2Y",
-      "yield": 4.18
+      "yield": 4.13
     },
     {
       "tenor": "5Y",
-      "yield": 4.31
+      "yield": 4.26
     },
     {
       "tenor": "7Y",
-      "yield": 4.44
+      "yield": 4.39
     },
     {
       "tenor": "10Y",
-      "yield": 4.58
+      "yield": 4.55
     },
     {
       "tenor": "20Y",
-      "yield": 5.09
+      "yield": 5.07
     },
     {
       "tenor": "30Y",
