@@ -135,7 +135,7 @@
       "rate": 17.4303
     }
   },
-  "generated_at": "2026-07-15T20:35:39+00:00",
+  "generated_at": "2026-07-15T21:37:36+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 15 Jul 2026 21:11:48",
+      "source": "CNBC",
+      "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
+      "url": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html"
+    },
+    {
       "published": "Wed, 15 Jul 2026 14:22:48",
       "source": "CNBC",
       "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
     },
     {
-      "published": "Mon, 13 Jul 2026 10:56:52",
-      "source": "CNBC",
-      "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
-      "url": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html"
+      "published": "Wed, 15 Jul 2026 21:27:00",
+      "source": "MarketWatch",
+      "title": "What makes this cyclospora outbreak different \u2014 and why it might not end until August",
+      "url": "https://www.marketwatch.com/story/what-makes-this-cyclospora-outbreak-different-and-why-it-might-not-end-until-august-e54cd0b1?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 20:30:00",
+      "published": "Wed, 15 Jul 2026 21:22:00",
       "source": "MarketWatch",
-      "title": "Why the huge premium on SK Hynix\u2019s U.S.-listed shares may prove short-lived",
-      "url": "https://www.marketwatch.com/story/why-the-huge-premium-on-sk-hynixs-u-s-listing-may-prove-short-lived-582045f2?mod=mw_rss_topstories"
+      "title": "Who qualifies for the bigger IRS tax break on gas \u2014 and how to get the most of it",
+      "url": "https://www.marketwatch.com/story/who-qualifies-for-the-bigger-irs-tax-break-on-gas-and-how-to-get-the-most-of-it-e9740261?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 20:26:00",
+      "published": "Wed, 15 Jul 2026 21:20:00",
       "source": "MarketWatch",
-      "title": "What the launch of SK Hynix leveraged ETFs tells us about the hottest trade on Wall Street",
-      "url": "https://www.marketwatch.com/story/what-the-launch-of-sk-hynix-leveraged-etfs-tells-us-about-the-hottest-trade-on-wall-street-2110c484?mod=mw_rss_topstories"
+      "title": "Running out of money is not the saddest retirement mistake you can make. This is.",
+      "url": "https://www.marketwatch.com/story/running-out-of-money-is-not-the-saddest-retirement-mistake-you-can-make-this-is-09040acf?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 20:03:00",
+      "published": "Wed, 15 Jul 2026 21:19:00",
       "source": "MarketWatch",
-      "title": "AI is killing the cover letter \u2014 but here\u2019s when it still pays to send one",
-      "url": "https://www.marketwatch.com/story/ai-is-killing-the-cover-letter-heres-when-it-pays-off-to-send-one-and-when-to-skip-it-e8800ef0?mod=mw_rss_topstories"
+      "title": "AI is so big, it\u2019s now impossible for investors to avoid",
+      "url": "https://www.marketwatch.com/story/ai-is-so-big-its-now-impossible-for-investors-to-avoid-9271e03f?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 20:00:00",
+      "published": "Wed, 15 Jul 2026 21:08:00",
       "source": "MarketWatch",
-      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
-      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 15 Jul 2026 19:30:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m 67 with a $140,000 pension. Should I wait until 70 to claim Social Security so my wife gets more?",
-      "url": "https://www.marketwatch.com/story/im-67-with-a-140-000-pension-should-i-wait-until-70-to-claim-social-security-so-my-wife-gets-more-63759d48?mod=mw_rss_topstories"
+      "title": "CoreWeave\u2019s stock suffers another long losing streak. Here\u2019s what\u2019s driving the selling.",
+      "url": "https://www.marketwatch.com/story/coreweaves-stock-suffers-another-long-losing-streak-heres-whats-driving-the-selling-f36833a6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
