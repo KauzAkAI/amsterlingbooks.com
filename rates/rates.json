@@ -135,7 +135,7 @@
       "rate": 17.4303
     }
   },
-  "generated_at": "2026-07-15T14:58:12+00:00",
+  "generated_at": "2026-07-15T16:40:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.43
       },
       {
-        "date": "2026-07-07",
-        "rate": 6.63
-      },
-      {
         "date": "2026-07-08",
         "rate": 6.68
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-14",
         "rate": 6.7
+      },
+      {
+        "date": "2026-07-15",
+        "rate": 6.64
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 14:49:00",
+      "published": "Wed, 15 Jul 2026 16:16:00",
       "source": "MarketWatch",
-      "title": "You are missing the bond deal of the decade \u2014 and it is guaranteed to beat inflation",
-      "url": "https://www.marketwatch.com/story/you-are-missing-the-bond-deal-of-the-decade-and-it-is-guaranteed-to-beat-inflation-0f1d6cf8?mod=mw_rss_topstories"
+      "title": "It\u2019s a buyer\u2019s market for bonds",
+      "url": "https://www.marketwatch.com/story/its-a-buyers-market-for-bonds-aeba3adc?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 14:44:00",
+      "published": "Wed, 15 Jul 2026 16:14:00",
       "source": "MarketWatch",
-      "title": "Buying a house is getting easier by one measure. Here\u2019s why it doesn\u2019t feel like it.",
-      "url": "https://www.marketwatch.com/story/homes-are-getting-more-affordable-so-how-come-you-still-cant-afford-to-buy-one-f2d69d02?mod=mw_rss_topstories"
+      "title": "America\u2019s oil refiners could more than triple profits as Iran war sparks massive boom",
+      "url": "https://www.marketwatch.com/story/americas-oil-refiners-could-more-than-triple-profits-as-iran-war-sparks-massive-boom-c3ad5d33?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 14:35:00",
+      "published": "Wed, 15 Jul 2026 15:57:00",
       "source": "MarketWatch",
-      "title": "PayPal\u2019s battered stock is getting a record boost from a report of buyout interest",
-      "url": "https://www.marketwatch.com/story/a-53-billion-lifeline-stripe-and-advent-reportedly-team-up-to-bid-for-battered-paypal-3bc6fcc2?mod=mw_rss_topstories"
+      "title": "More people are reaching their 60s than ever before \u2014 and it\u2019s an incredible investing opportunity",
+      "url": "https://www.marketwatch.com/story/more-people-are-reaching-their-60s-than-ever-before-and-its-an-incredible-investing-opportunity-367cc8b8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 14:29:00",
+      "published": "Wed, 15 Jul 2026 15:34:00",
       "source": "MarketWatch",
-      "title": "Paychecks are rising faster than prices for a change \u2014 but when will consumers feel the relief?",
-      "url": "https://www.marketwatch.com/story/your-paycheck-is-rising-faster-than-prices-for-a-change-but-when-will-you-feel-the-relief-cbbcb8bd?mod=mw_rss_topstories"
+      "title": "This overlooked index is a better investment than the S&P 500",
+      "url": "https://www.marketwatch.com/story/this-overlooked-index-is-a-better-investment-than-the-s-p-500-74c7e698?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 14:25:00",
+      "published": "Wed, 15 Jul 2026 15:32:00",
       "source": "MarketWatch",
-      "title": "These are the toughest places in America to sell a home right now",
-      "url": "https://www.marketwatch.com/story/these-are-the-toughest-places-in-america-to-sell-a-home-right-now-724bff2a?mod=mw_rss_topstories"
+      "title": "Copper is shadowing the AI hyperscaler stocks \u2014 but wait for a dip before buying",
+      "url": "https://www.marketwatch.com/story/copper-is-shadowing-the-hyperscaler-stocks-but-wait-for-a-dip-before-buying-8fe7adcc?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 14 2026",
-      "change": -0.01,
-      "rate": 6.2
+      "asof_label": "Jul 15 2026",
+      "change": -0.02,
+      "rate": 6.18
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 14 2026",
-      "change": -0.05,
+      "asof_label": "Jul 15 2026",
+      "change": -0.06,
       "rate": 6.52
     }
   },
