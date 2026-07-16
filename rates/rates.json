@@ -135,7 +135,7 @@
       "rate": 17.4264
     }
   },
-  "generated_at": "2026-07-16T21:35:56+00:00",
+  "generated_at": "2026-07-16T22:37:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
     },
     {
+      "published": "Thu, 16 Jul 2026 22:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
+      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 16 Jul 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "He backed Tesla and SpaceX before anyone else \u2014 here is the \u2018impossible\u2019 bet Tim Draper is making now",
+      "url": "https://www.marketwatch.com/story/he-backed-tesla-and-spacex-before-anyone-else-here-is-the-impossible-bet-he-is-making-now-025e00ef?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 16 Jul 2026 21:32:00",
       "source": "MarketWatch",
       "title": "Alphabet\u2019s stock falls as Gemini delays suggest Google is struggling to keep up in the AI race",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
       "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 16 Jul 2026 21:02:00",
-      "source": "MarketWatch",
-      "title": "Semiconductor stocks are on the verge of a bear market. Is the thrill in the chips trade gone?",
-      "url": "https://www.marketwatch.com/story/semiconductor-stocks-are-on-the-verge-of-a-bear-market-is-the-thrill-in-the-chips-trade-gone-592eded7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 16 Jul 2026 21:01:00",
-      "source": "MarketWatch",
-      "title": "10 U.S. metro areas where builders are slashing prices on new homes",
-      "url": "https://www.marketwatch.com/story/10-u-s-metro-areas-where-builders-are-slashing-prices-on-new-homes-1eb19355?mod=mw_rss_topstories"
     }
   ],
   "rates": {
