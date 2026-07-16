@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4074
+      "rate": 1.4025
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7743
+      "rate": 6.7669
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87673
+      "rate": 0.87207
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74604
+      "rate": 0.74015
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.26
+      "rate": 96.35
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.39
+      "rate": 162.2
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1492.17
+      "rate": 1479.45
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4303
+      "rate": 17.4264
     }
   },
-  "generated_at": "2026-07-15T23:42:40+00:00",
+  "generated_at": "2026-07-16T15:08:20+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 23:34:00",
+      "published": "Thu, 16 Jul 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "The trucking market is tighter than it\u2019s been in years \u2014 but investors are upbeat on J.B. Hunt",
-      "url": "https://www.marketwatch.com/story/the-trucking-market-is-tighter-than-its-been-in-years-but-investors-are-upbeat-on-j-b-hunt-af0f1587?mod=mw_rss_topstories"
+      "title": "\u2018Respect is important\u2019: If my financial adviser said, \u2018Hey,\u2019 my wife and I would walk out. Where do you draw the line?",
+      "url": "https://www.marketwatch.com/story/respect-is-important-if-my-financial-adviser-said-hey-my-wife-and-i-would-walk-out-where-do-you-draw-the-line-5fbf5879?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 23:00:00",
+      "published": "Thu, 16 Jul 2026 14:16:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t want to sound callous\u2019: Why base your Social Security claim on life expectancy? We could die at any time.",
-      "url": "https://www.marketwatch.com/story/i-dont-want-to-sound-callous-nobody-knows-when-theyll-die-dont-base-when-you-claim-social-security-on-that-53370fad?mod=mw_rss_topstories"
+      "title": "Oil is facing a supply crunch \u2014 and the war in Iran isn\u2019t the only problem",
+      "url": "https://www.marketwatch.com/story/oil-is-facing-a-supply-crunch-and-the-war-in-iran-isnt-the-only-problem-60ce7e74?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 22:40:00",
+      "published": "Thu, 16 Jul 2026 14:06:00",
       "source": "MarketWatch",
-      "title": "Your Netflix bill is up 29% in just over a year. It\u2019s time for Washington to step in.",
-      "url": "https://www.marketwatch.com/story/your-monthly-netflix-bill-is-up-29-in-just-over-a-year-critics-say-washington-needs-to-fix-it-bcab6e5b?mod=mw_rss_topstories"
+      "title": "Retail sales get a boost from car buyers and Amazon Prime Day. The economy hasn\u2019t lost its mojo.",
+      "url": "https://www.marketwatch.com/story/retail-sales-get-boost-from-car-buyers-and-amazon-prime-day-economy-hasnt-lost-its-mojo-70fe8733?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 22:35:00",
+      "published": "Thu, 16 Jul 2026 14:01:00",
       "source": "MarketWatch",
-      "title": "My husband and I are retired. Our financial adviser, who is in his 30s, called us \u2018you guyses.\u2019 Is that unprofessional?",
-      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-retired-our-financial-adviser-who-is-in-his-30s-called-us-you-guyses-is-that-unprofessional-ccddaa9f?mod=mw_rss_topstories"
+      "title": "AI is killing the cover letter \u2014 but here\u2019s when it still pays to send one",
+      "url": "https://www.marketwatch.com/story/ai-is-killing-the-cover-letter-heres-when-it-pays-off-to-send-one-and-when-to-skip-it-e8800ef0?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 15 Jul 2026 22:21:00",
+      "published": "Thu, 16 Jul 2026 13:54:00",
       "source": "MarketWatch",
-      "title": "You are missing the bond deal of the decade \u2014 and it is guaranteed to beat inflation",
-      "url": "https://www.marketwatch.com/story/you-are-missing-the-bond-deal-of-the-decade-and-it-is-guaranteed-to-beat-inflation-0f1d6cf8?mod=mw_rss_topstories"
+      "title": "GE boosts profit outlook, but stock falls as booming order growth cools",
+      "url": "https://www.marketwatch.com/story/ge-boosts-profit-outlook-but-stock-falls-as-booming-order-growth-cools-f5184533?mod=mw_rss_topstories"
     }
   ],
   "rates": {
