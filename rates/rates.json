@@ -135,7 +135,7 @@
       "rate": 17.4264
     }
   },
-  "generated_at": "2026-07-16T19:22:50+00:00",
+  "generated_at": "2026-07-16T20:26:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,9 +321,15 @@
       "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
     },
     {
-      "published": "Thu, 16 Jul 2026 19:10:00",
+      "published": "Thu, 16 Jul 2026 20:19:00",
       "source": "MarketWatch",
-      "title": "These cities are blanketed with wildfire smoke. Here\u2019s what to know about bad air quality.",
+      "title": "Micron has turned into \u2018the most important stock in the market.\u2019 So is it time to worry?",
+      "url": "https://www.marketwatch.com/story/micron-has-turned-into-the-most-important-stock-in-the-market-so-is-it-time-to-worry-71e335bf?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 16 Jul 2026 19:30:00",
+      "source": "MarketWatch",
+      "title": "Wildfire smoke \u2018a growing cardiovascular threat\u2019 as Chicago, Detroit, NYC among world\u2019s most polluted cities today",
       "url": "https://www.marketwatch.com/story/these-cities-are-blanketed-with-wildfire-smoke-heres-what-to-know-about-bad-air-quality-cd3a8fa7?mod=mw_rss_topstories"
     },
     {
@@ -337,12 +343,6 @@
       "source": "MarketWatch",
       "title": "Trump\u2019s media company wants traders to pay to get president\u2019s market-moving social-media posts first",
       "url": "https://www.marketwatch.com/story/trumps-media-company-wants-traders-to-pay-to-get-presidents-market-moving-social-media-posts-first-c4425210?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 16 Jul 2026 18:01:00",
-      "source": "MarketWatch",
-      "title": "Micron has turned into \u2018the most important stock in the market.\u2019 So is it time to worry?",
-      "url": "https://www.marketwatch.com/story/micron-has-turned-into-the-most-important-stock-in-the-market-so-is-it-time-to-worry-71e335bf?mod=mw_rss_topstories"
     },
     {
       "published": "Thu, 16 Jul 2026 18:00:00",
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.73
+      "yield": 3.76
     },
     {
       "tenor": "3M",
-      "yield": 3.83
+      "yield": 3.84
     },
     {
       "tenor": "6M",
-      "yield": 3.93
+      "yield": 3.94
     },
     {
       "tenor": "1Y",
-      "yield": 3.97
+      "yield": 3.99
     },
     {
       "tenor": "2Y",
-      "yield": 4.13
+      "yield": 4.16
     },
     {
       "tenor": "5Y",
-      "yield": 4.26
+      "yield": 4.28
     },
     {
       "tenor": "7Y",
-      "yield": 4.39
+      "yield": 4.41
     },
     {
       "tenor": "10Y",
-      "yield": 4.55
+      "yield": 4.57
     },
     {
       "tenor": "20Y",
-      "yield": 5.07
+      "yield": 5.09
     },
     {
       "tenor": "30Y",
-      "yield": 5.08
+      "yield": 5.09
     }
   ],
   "warnings": []
