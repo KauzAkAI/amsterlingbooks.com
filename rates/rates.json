@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T21:34:49+00:00",
+  "generated_at": "2026-07-17T22:29:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Fri, 17 Jul 2026 21:55:00",
+      "source": "MarketWatch",
+      "title": "The average stock is having a moment as semiconductors struggle. It\u2019s a sign of a healthy market.",
+      "url": "https://www.marketwatch.com/story/the-average-stock-is-having-a-moment-as-semiconductors-struggle-its-a-sign-of-a-healthy-market-0dc01e9a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "19 (mostly) tech stocks that have fallen at least 25% in July",
+      "url": "https://www.marketwatch.com/story/18-tech-stocks-that-have-fallen-at-least-30-during-july-4c373d5e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 17 Jul 2026 21:23:00",
       "source": "MarketWatch",
       "title": "How your winning stock-index fund can turn on a dime",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Chip stocks have entered a bear market. A BofA analyst says not to panic.",
       "url": "https://www.marketwatch.com/story/chip-stocks-enter-bear-market-territory-a-bofa-analyst-says-not-to-panic-4d34df17?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 20:15:00",
-      "source": "MarketWatch",
-      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
-      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 19:45:00",
-      "source": "MarketWatch",
-      "title": "\u2018I am at a loss\u2019: My brother is dying. We are not close. What responsibility do I have to help him?",
-      "url": "https://www.marketwatch.com/story/i-am-at-a-loss-my-brother-is-dying-we-are-not-close-what-responsibility-do-i-have-to-help-him-08af705a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
