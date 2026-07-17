@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T22:29:39+00:00",
+  "generated_at": "2026-07-17T23:30:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Fri, 17 Jul 2026 23:05:00",
+      "source": "MarketWatch",
+      "title": "The World Cup\u2013winning side will make $50 million \u2014 and the IRS gets a cut",
+      "url": "https://www.marketwatch.com/story/the-world-cupwinning-side-will-make-50-million-and-the-irs-gets-a-cut-10f0780b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 22:55:00",
+      "source": "MarketWatch",
+      "title": "SpaceX postponed a crucial launch \u2014 and its stock went on to close below IPO price for second day",
+      "url": "https://www.marketwatch.com/story/spacex-postponed-a-crucial-launch-now-its-stock-is-set-to-slide-even-further-below-the-ipo-price-143adfe0?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 22:31:00",
+      "source": "MarketWatch",
+      "title": "Meet Kimi K3, the newest Chinese AI model haunting Silicon Valley",
+      "url": "https://www.marketwatch.com/story/meet-kimi-k3-the-newest-chinese-ai-model-haunting-silicon-valley-755ed738?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 17 Jul 2026 21:55:00",
       "source": "MarketWatch",
       "title": "The average stock is having a moment as semiconductors struggle. It\u2019s a sign of a healthy market.",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "19 (mostly) tech stocks that have fallen at least 25% in July",
       "url": "https://www.marketwatch.com/story/18-tech-stocks-that-have-fallen-at-least-30-during-july-4c373d5e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 21:23:00",
-      "source": "MarketWatch",
-      "title": "How your winning stock-index fund can turn on a dime",
-      "url": "https://www.marketwatch.com/story/how-your-winning-stock-index-fund-can-turn-on-a-dime-e2e4b44e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 21:08:00",
-      "source": "MarketWatch",
-      "title": "Look on the bright side: Energy companies are booming",
-      "url": "https://www.marketwatch.com/story/look-on-the-bright-side-energy-companies-are-booming-546164fb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 20:49:00",
-      "source": "MarketWatch",
-      "title": "Chip stocks have entered a bear market. A BofA analyst says not to panic.",
-      "url": "https://www.marketwatch.com/story/chip-stocks-enter-bear-market-territory-a-bofa-analyst-says-not-to-panic-4d34df17?mod=mw_rss_topstories"
     }
   ],
   "rates": {
