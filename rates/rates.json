@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4025
+      "rate": 1.4023
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7669
+      "rate": 6.7775
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87207
+      "rate": 0.87451
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74015
+      "rate": 0.74419
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.35
+      "rate": 96.28
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.2
+      "rate": 162.35
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1479.45
+      "rate": 1485.32
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4264
+      "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-16T23:38:09+00:00",
+  "generated_at": "2026-07-17T14:49:03+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 17 Jul 2026 14:13:49",
+      "source": "CNBC",
+      "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
+      "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
+    },
+    {
       "published": "Wed, 15 Jul 2026 21:53:10",
       "source": "CNBC",
       "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Tue, 14 Jul 2026 21:05:13",
-      "source": "CNBC",
-      "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
-      "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html"
+      "published": "Fri, 17 Jul 2026 14:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
+      "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 16 Jul 2026 23:36:00",
+      "published": "Fri, 17 Jul 2026 14:40:00",
       "source": "MarketWatch",
-      "title": "As SpaceX\u2019s stock notches first close below IPO price, the company is gearing up for a crucial launch",
-      "url": "https://www.marketwatch.com/story/spacexs-starship-is-set-for-takeoff-and-its-floundering-stock-could-use-the-lift-ec5629d5?mod=mw_rss_topstories"
+      "title": "18 tech stocks that have fallen at least 30% during July",
+      "url": "https://www.marketwatch.com/story/18-tech-stocks-that-have-fallen-at-least-30-during-july-4c373d5e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 16 Jul 2026 23:17:00",
+      "published": "Fri, 17 Jul 2026 14:30:00",
       "source": "MarketWatch",
-      "title": "Americans say they need $1.2 million to retire. Most are too deep in debt to get there.",
-      "url": "https://www.marketwatch.com/story/americans-say-they-need-1-2-million-to-retire-most-are-too-deep-in-debt-to-get-there-689c683b?mod=mw_rss_topstories"
+      "title": "AI may force these workers to retire earlier than planned",
+      "url": "https://www.marketwatch.com/story/ai-may-force-these-workers-to-retire-earlier-than-planned-b590f0a8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 16 Jul 2026 23:12:00",
+      "published": "Fri, 17 Jul 2026 14:29:00",
       "source": "MarketWatch",
-      "title": "GE boosts profit outlook, but stock falls as booming order growth cools",
-      "url": "https://www.marketwatch.com/story/ge-boosts-profit-outlook-but-stock-falls-as-booming-order-growth-cools-f5184533?mod=mw_rss_topstories"
+      "title": "Mortgage rates jump to the highest level of 2026",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-to-the-highest-level-of-2026-7a35f79e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 16 Jul 2026 22:45:00",
+      "published": "Fri, 17 Jul 2026 14:23:00",
       "source": "MarketWatch",
-      "title": "Netflix is getting stingier about its viewing data, and Wall Street isn\u2019t happy",
-      "url": "https://www.marketwatch.com/story/netflix-is-getting-stingier-about-its-viewing-data-and-wall-street-isnt-happy-15033db1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 16 Jul 2026 22:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018It\u2019s heartbreaking\u2019: My brother claimed Social Security at 70. He died from cancer after one payment. Why wait to claim?",
-      "url": "https://www.marketwatch.com/story/its-heartbreaking-my-brother-claimed-social-security-at-70-he-died-from-cancer-after-one-payment-why-wait-to-claim-491669b6?mod=mw_rss_topstories"
+      "title": "10 U.S. metro areas where builders are slashing prices on new homes",
+      "url": "https://www.marketwatch.com/story/10-u-s-metro-areas-where-builders-are-slashing-prices-on-new-homes-1eb19355?mod=mw_rss_topstories"
     }
   ],
   "rates": {
