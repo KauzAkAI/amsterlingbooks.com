@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T19:47:29+00:00",
+  "generated_at": "2026-07-17T20:39:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Fri, 17 Jul 2026 20:15:00",
+      "source": "MarketWatch",
+      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
+      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 20:01:00",
+      "source": "MarketWatch",
+      "title": "Chip stocks enter bear-market territory. A BofA analyst says not to panic.",
+      "url": "https://www.marketwatch.com/story/chip-stocks-enter-bear-market-territory-a-bofa-analyst-says-not-to-panic-4d34df17?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 17 Jul 2026 19:45:00",
       "source": "MarketWatch",
       "title": "\u2018I am at a loss\u2019: My brother is dying. We are not close. What responsibility do I have to help him?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Why Trump\u2019s speech on U.S. elections may have been bad for markets",
       "url": "https://www.marketwatch.com/story/why-trumps-speech-on-u-s-elections-could-be-bad-for-markets-e617dc64?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
-      "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 18:27:00",
-      "source": "MarketWatch",
-      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
-      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
     }
   ],
   "rates": {
