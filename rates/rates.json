@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T18:37:46+00:00",
+  "generated_at": "2026-07-17T19:47:29+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Fri, 17 Jul 2026 19:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018I am at a loss\u2019: My brother is dying. We are not close. What responsibility do I have to help him?",
+      "url": "https://www.marketwatch.com/story/i-am-at-a-loss-my-brother-is-dying-we-are-not-close-what-responsibility-do-i-have-to-help-him-08af705a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 19:41:00",
+      "source": "MarketWatch",
+      "title": "Taylor Farms to recall iceberg lettuce that may be the cause of the cyclospora outbreak",
+      "url": "https://www.marketwatch.com/story/taylor-farms-to-recall-produce-that-may-be-the-cause-of-the-cyclospora-outbreak-report-e2c4cc0b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 19:38:00",
+      "source": "MarketWatch",
+      "title": "Why Trump\u2019s speech on U.S. elections may have been bad for markets",
+      "url": "https://www.marketwatch.com/story/why-trumps-speech-on-u-s-elections-could-be-bad-for-markets-e617dc64?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 17 Jul 2026 18:30:00",
       "source": "MarketWatch",
       "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
       "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 18:19:00",
-      "source": "MarketWatch",
-      "title": "How to find the best mortgage rate \u2014 it could save you $3,300 a year",
-      "url": "https://www.marketwatch.com/story/how-to-find-the-best-mortgage-rate-it-could-save-you-3-300-a-year-e973e520?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 17:27:00",
-      "source": "MarketWatch",
-      "title": "A bad health diagnosis will upend your financial plan, but you can set it right again",
-      "url": "https://www.marketwatch.com/story/what-its-like-to-get-end-of-life-financial-advice-from-a-cfp-whos-also-a-death-doula-903a270a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 17:19:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s the net worth you need to start getting ahead in your 20s, 30s, 40s and beyond in the U.S.",
-      "url": "https://www.marketwatch.com/story/heres-the-net-worth-you-need-to-start-getting-ahead-in-your-20s-30s-40s-and-beyond-in-the-u-s-520c8d72?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.76
+      "yield": 3.73
     },
     {
       "tenor": "3M",
-      "yield": 3.84
+      "yield": 3.85
     },
     {
       "tenor": "6M",
-      "yield": 3.94
+      "yield": 3.96
     },
     {
       "tenor": "1Y",
-      "yield": 3.99
+      "yield": 4.01
     },
     {
       "tenor": "2Y",
-      "yield": 4.16
+      "yield": 4.18
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 4.41
+      "yield": 4.4
     },
     {
       "tenor": "10Y",
-      "yield": 4.57
+      "yield": 4.55
     },
     {
       "tenor": "20Y",
-      "yield": 5.09
+      "yield": 5.07
     },
     {
       "tenor": "30Y",
-      "yield": 5.09
+      "yield": 5.06
     }
   ],
   "warnings": []
