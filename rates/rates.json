@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T16:07:25+00:00",
+  "generated_at": "2026-07-17T17:30:24+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-07-09",
-        "rate": 6.65
-      },
-      {
-        "date": "2026-07-09",
         "rate": 6.49
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-16",
         "rate": 6.55
+      },
+      {
+        "date": "2026-07-17",
+        "rate": 6.63
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Fri, 17 Jul 2026 15:56:00",
+      "published": "Fri, 17 Jul 2026 17:27:00",
       "source": "MarketWatch",
-      "title": "My dad wants to buy me a big suburban home \u2014 but I don\u2019t want to live there. Am I ungrateful if I turn him down?",
-      "url": "https://www.marketwatch.com/story/my-dad-wants-to-buy-me-a-big-suburban-home-but-i-dont-want-to-live-there-am-i-ungrateful-for-turning-down-his-offer-ab4e9827?mod=mw_rss_topstories"
+      "title": "A bad health diagnosis will upend your financial plan, but you can set it right again",
+      "url": "https://www.marketwatch.com/story/what-its-like-to-get-end-of-life-financial-advice-from-a-cfp-whos-also-a-death-doula-903a270a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 15:55:00",
+      "published": "Fri, 17 Jul 2026 17:19:00",
       "source": "MarketWatch",
-      "title": "Iran war hasn\u2019t hurt the U.S. economy too badly \u2014 but the danger isn\u2019t over yet",
-      "url": "https://www.marketwatch.com/story/iran-war-hasnt-hurt-the-u-s-economy-too-badly-but-the-danger-isnt-over-yet-82f7d46a?mod=mw_rss_topstories"
+      "title": "Here\u2019s the net worth you need to start getting ahead in your 20s, 30s, 40s and beyond in the U.S.",
+      "url": "https://www.marketwatch.com/story/heres-the-net-worth-you-need-to-start-getting-ahead-in-your-20s-30s-40s-and-beyond-in-the-u-s-520c8d72?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 15:47:00",
+      "published": "Fri, 17 Jul 2026 17:13:00",
       "source": "MarketWatch",
-      "title": "Taylor Farms to recall produce that may be the cause of the cyclospora outbreak: report",
-      "url": "https://www.marketwatch.com/story/taylor-farms-to-recall-produce-that-may-be-the-cause-of-the-cyclospora-outbreak-report-e2c4cc0b?mod=mw_rss_topstories"
+      "title": "Are you silently freaking out about retirement? It may not be as bad as you think.",
+      "url": "https://www.marketwatch.com/story/silently-freaking-out-about-retirement-why-it-may-not-be-as-bad-as-you-think-3175d0e1?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 15:16:00",
+      "published": "Fri, 17 Jul 2026 16:45:00",
       "source": "MarketWatch",
-      "title": "\u2018I am at a loss\u2019: My brother is dying. We are not close. What responsibility do I have to help him?",
-      "url": "https://www.marketwatch.com/story/i-am-at-a-loss-my-brother-is-dying-we-are-not-close-what-responsibility-do-i-have-to-help-him-08af705a?mod=mw_rss_topstories"
+      "title": "Bond yields are sending a new signal about Fed rate hikes",
+      "url": "https://www.marketwatch.com/story/bond-yields-are-sending-a-new-signal-about-fed-rate-hikes-856e81f7?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 15:06:00",
+      "published": "Fri, 17 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "Why Trump\u2019s speech on U.S. elections could be bad for markets",
-      "url": "https://www.marketwatch.com/story/why-trumps-speech-on-u-s-elections-could-be-bad-for-markets-e617dc64?mod=mw_rss_topstories"
+      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
+      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 16 2026",
-      "change": 0.01,
-      "rate": 6.19
+      "asof_label": "Jul 17 2026",
+      "change": -0.03,
+      "rate": 6.16
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 16 2026",
-      "change": 0.04,
+      "asof_label": "Jul 17 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
