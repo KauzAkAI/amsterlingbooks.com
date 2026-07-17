@@ -135,7 +135,7 @@
       "rate": 17.4837
     }
   },
-  "generated_at": "2026-07-17T17:30:24+00:00",
+  "generated_at": "2026-07-17T18:37:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-06-24",
-        "rate": 6.59
-      },
-      {
         "date": "2026-07-01",
         "rate": 6.57
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-07-15",
         "rate": 6.64
+      },
+      {
+        "date": "2026-07-15",
+        "rate": 6.65
       },
       {
         "date": "2026-07-16",
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Fri, 17 Jul 2026 18:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018They are relentless\u2019: A scammer is trying to change the email on my empty Robinhood account. What do they have to gain?",
+      "url": "https://www.marketwatch.com/story/they-are-relentless-a-scammer-is-trying-to-change-the-email-on-my-empty-robinhood-account-what-do-they-have-to-gain-26103dac?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 18:27:00",
+      "source": "MarketWatch",
+      "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+      "url": "https://www.marketwatch.com/story/my-wifes-2011-ford-fiesta-was-totaled-should-we-accept-a-2-000-insurance-settlement-or-give-up-the-car-for-2-700-f2cf2a86?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 17 Jul 2026 18:19:00",
+      "source": "MarketWatch",
+      "title": "How to find the best mortgage rate \u2014 it could save you $3,300 a year",
+      "url": "https://www.marketwatch.com/story/how-to-find-the-best-mortgage-rate-it-could-save-you-3-300-a-year-e973e520?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 17 Jul 2026 17:27:00",
       "source": "MarketWatch",
       "title": "A bad health diagnosis will upend your financial plan, but you can set it right again",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "Here\u2019s the net worth you need to start getting ahead in your 20s, 30s, 40s and beyond in the U.S.",
       "url": "https://www.marketwatch.com/story/heres-the-net-worth-you-need-to-start-getting-ahead-in-your-20s-30s-40s-and-beyond-in-the-u-s-520c8d72?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 17:13:00",
-      "source": "MarketWatch",
-      "title": "Are you silently freaking out about retirement? It may not be as bad as you think.",
-      "url": "https://www.marketwatch.com/story/silently-freaking-out-about-retirement-why-it-may-not-be-as-bad-as-you-think-3175d0e1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 16:45:00",
-      "source": "MarketWatch",
-      "title": "Bond yields are sending a new signal about Fed rate hikes",
-      "url": "https://www.marketwatch.com/story/bond-yields-are-sending-a-new-signal-about-fed-rate-hikes-856e81f7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 17 Jul 2026 16:30:00",
-      "source": "MarketWatch",
-      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
-      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
