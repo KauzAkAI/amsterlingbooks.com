@@ -135,7 +135,7 @@
       "rate": 17.4899
     }
   },
-  "generated_at": "2026-07-20T18:47:31+00:00",
+  "generated_at": "2026-07-20T20:14:33+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-07-20",
-        "rate": 6.67
+        "rate": 6.71
       }
     ]
   },
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Mon, 20 Jul 2026 18:49:00",
+      "source": "MarketWatch",
+      "title": "It\u2019s getting easier for terminally ill people to end their own lives. What to know as laws change.",
+      "url": "https://www.marketwatch.com/story/its-getting-easier-for-terminally-ill-people-to-end-their-own-lives-what-to-know-as-laws-change-4fa04c54?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 20 Jul 2026 18:45:00",
+      "source": "MarketWatch",
+      "title": "I will claim Social Security early. Why do so few people talk about the elephant in the room?",
+      "url": "https://www.marketwatch.com/story/i-will-claim-social-security-early-why-do-so-few-people-talk-about-the-elephant-in-the-room-64820675?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 20 Jul 2026 18:41:00",
       "source": "MarketWatch",
       "title": "Detecting cyclospora is \u2018notoriously difficult.\u2019 Here\u2019s what the FDA\u2019s apology to Taylor Farms means.",
@@ -337,25 +349,13 @@
       "source": "MarketWatch",
       "title": "Tesla investors share their most burning questions ahead of earnings",
       "url": "https://www.marketwatch.com/story/tesla-investors-share-their-most-burning-questions-ahead-of-earnings-7065c7c5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 17:24:00",
-      "source": "MarketWatch",
-      "title": "AMD\u2019s stock climbs, and a new Microsoft deal is only part of the reason",
-      "url": "https://www.marketwatch.com/story/amds-stock-climbs-and-a-new-microsoft-deal-is-only-part-of-the-reason-de78df49?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 17:15:00",
-      "source": "MarketWatch",
-      "title": "Is your index fund an accidental bet on AI? These two massive ETFs show why it might be.",
-      "url": "https://www.marketwatch.com/story/south-korean-stocks-werent-a-big-deal-in-your-emerging-markets-fund-artificial-intelligence-changed-that-21308089?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Jul 20 2026",
-      "change": 0.01,
-      "rate": 6.17
+      "change": 0.02,
+      "rate": 6.18
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Jul 20 2026",
-      "change": 0.04,
+      "change": 0.08,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.73
+      "yield": 3.72
     },
     {
       "tenor": "3M",
-      "yield": 3.85
+      "yield": 3.86
     },
     {
       "tenor": "6M",
-      "yield": 3.96
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 4.01
+      "yield": 4.03
     },
     {
       "tenor": "2Y",
-      "yield": 4.18
+      "yield": 4.21
     },
     {
       "tenor": "5Y",
-      "yield": 4.28
+      "yield": 4.33
     },
     {
       "tenor": "7Y",
-      "yield": 4.4
+      "yield": 4.45
     },
     {
       "tenor": "10Y",
-      "yield": 4.55
+      "yield": 4.6
     },
     {
       "tenor": "20Y",
-      "yield": 5.07
+      "yield": 5.12
     },
     {
       "tenor": "30Y",
-      "yield": 5.06
+      "yield": 5.11
     }
   ],
   "warnings": []
