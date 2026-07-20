@@ -135,7 +135,7 @@
       "rate": 17.4899
     }
   },
-  "generated_at": "2026-07-20T22:38:34+00:00",
+  "generated_at": "2026-07-20T23:41:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Mon, 20 Jul 2026 23:15:00",
+      "source": "MarketWatch",
+      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
+      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 20 Jul 2026 22:55:00",
+      "source": "MarketWatch",
+      "title": "Why are gasoline prices rising faster than oil prices? Blame it on the \u2018crack.\u2019",
+      "url": "https://www.marketwatch.com/story/why-are-gasoline-prices-rising-faster-than-oil-prices-blame-it-on-the-crack-22b454e7?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 20 Jul 2026 22:30:00",
       "source": "MarketWatch",
       "title": "I will claim Social Security early. Why do so few people talk about the elephant in the room?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
       "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 21:53:00",
-      "source": "MarketWatch",
-      "title": "U.S. hits Canada with stiff new tariffs, escalating trade tensions",
-      "url": "https://www.marketwatch.com/story/u-s-hits-canada-with-stiff-new-tariffs-escalating-trade-tensions-4a97065f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 21:44:00",
-      "source": "MarketWatch",
-      "title": "Americans are skipping lettuce and salads as investigation into cyclospora outbreak continues",
-      "url": "https://www.marketwatch.com/story/americans-are-skipping-lettuce-and-salads-as-investigation-into-cyclospora-outbreak-continues-562499b6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
