@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4023
+      "rate": 1.4031
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7775
+      "rate": 6.7669
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87451
+      "rate": 0.8752
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74419
+      "rate": 0.74294
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.28
+      "rate": 96.45
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.35
+      "rate": 162.38
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1485.32
+      "rate": 1481.18
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4837
+      "rate": 17.4899
     }
   },
-  "generated_at": "2026-07-17T23:30:01+00:00",
+  "generated_at": "2026-07-20T15:16:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Fri, 17 Jul 2026 23:05:00",
+      "published": "Mon, 20 Jul 2026 15:05:00",
       "source": "MarketWatch",
-      "title": "The World Cup\u2013winning side will make $50 million \u2014 and the IRS gets a cut",
-      "url": "https://www.marketwatch.com/story/the-world-cupwinning-side-will-make-50-million-and-the-irs-gets-a-cut-10f0780b?mod=mw_rss_topstories"
+      "title": "Detecting cyclospora is \u2018notoriously difficult.\u2019 Here\u2019s what the FDA\u2019s apology to Taylor Farms means.",
+      "url": "https://www.marketwatch.com/story/detecting-cyclospora-is-notoriously-difficult-heres-what-the-fdas-apology-to-taylor-farms-means-cafd3a2a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 22:55:00",
+      "published": "Mon, 20 Jul 2026 14:46:00",
       "source": "MarketWatch",
-      "title": "SpaceX postponed a crucial launch \u2014 and its stock went on to close below IPO price for second day",
-      "url": "https://www.marketwatch.com/story/spacex-postponed-a-crucial-launch-now-its-stock-is-set-to-slide-even-further-below-the-ipo-price-143adfe0?mod=mw_rss_topstories"
+      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
+      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 22:31:00",
+      "published": "Mon, 20 Jul 2026 14:37:00",
       "source": "MarketWatch",
-      "title": "Meet Kimi K3, the newest Chinese AI model haunting Silicon Valley",
-      "url": "https://www.marketwatch.com/story/meet-kimi-k3-the-newest-chinese-ai-model-haunting-silicon-valley-755ed738?mod=mw_rss_topstories"
+      "title": "South Korean stocks weren\u2019t a big deal in your emerging-markets fund. Artificial intelligence changed that.",
+      "url": "https://www.marketwatch.com/story/south-korean-stocks-werent-a-big-deal-in-your-emerging-markets-fund-artificial-intelligence-changed-that-21308089?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 21:55:00",
+      "published": "Mon, 20 Jul 2026 14:21:00",
       "source": "MarketWatch",
-      "title": "The average stock is having a moment as semiconductors struggle. It\u2019s a sign of a healthy market.",
-      "url": "https://www.marketwatch.com/story/the-average-stock-is-having-a-moment-as-semiconductors-struggle-its-a-sign-of-a-healthy-market-0dc01e9a?mod=mw_rss_topstories"
+      "title": "SpaceX gave investors intense FOMO. Now the decade\u2019s hottest IPO represents a brutal reality check.",
+      "url": "https://www.marketwatch.com/story/spacex-gave-investors-intense-fomo-now-the-decades-hottest-ipo-represents-a-brutal-reality-check-54f878cb?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 17 Jul 2026 21:45:00",
+      "published": "Mon, 20 Jul 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "19 (mostly) tech stocks that have fallen at least 25% in July",
-      "url": "https://www.marketwatch.com/story/18-tech-stocks-that-have-fallen-at-least-30-during-july-4c373d5e?mod=mw_rss_topstories"
+      "title": "Can the \u2018Magnificent Seven\u2019 save a stock market that might be doomed without them?",
+      "url": "https://www.marketwatch.com/story/can-the-magnificent-seven-save-a-stock-market-that-might-be-doomed-without-them-f88988f3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
