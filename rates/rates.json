@@ -135,7 +135,7 @@
       "rate": 17.4899
     }
   },
-  "generated_at": "2026-07-20T15:16:39+00:00",
+  "generated_at": "2026-07-20T16:48:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.49
       },
       {
-        "date": "2026-07-10",
-        "rate": 6.64
-      },
-      {
         "date": "2026-07-13",
         "rate": 6.75
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-17",
         "rate": 6.63
+      },
+      {
+        "date": "2026-07-20",
+        "rate": 6.67
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Mon, 20 Jul 2026 15:05:00",
+      "published": "Mon, 20 Jul 2026 16:47:00",
+      "source": "MarketWatch",
+      "title": "SpaceX flirts with a further decline down the market-cap ranks",
+      "url": "https://www.marketwatch.com/story/spacex-flirts-with-a-further-decline-down-the-market-cap-ranks-e539799e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 20 Jul 2026 16:39:00",
+      "source": "MarketWatch",
+      "title": "Ranch dressing and stuffed raccoons: Spain isn\u2019t the World Cup\u2019s only winner",
+      "url": "https://www.marketwatch.com/story/ranch-dressing-and-stuffed-raccoons-some-of-the-world-cups-biggest-winners-as-spain-and-argentina-face-off-in-the-final-1cf72d0c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 20 Jul 2026 16:28:00",
+      "source": "MarketWatch",
+      "title": "\u2018I never want to manage people again.\u2019 I\u2019m 33. Should I leave my corporate leadership role to become an assistant?",
+      "url": "https://www.marketwatch.com/story/i-never-want-to-manage-people-again-im-33-should-i-leave-my-corporate-leadership-role-to-become-an-assistant-7df24213?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 20 Jul 2026 16:17:00",
       "source": "MarketWatch",
       "title": "Detecting cyclospora is \u2018notoriously difficult.\u2019 Here\u2019s what the FDA\u2019s apology to Taylor Farms means.",
       "url": "https://www.marketwatch.com/story/detecting-cyclospora-is-notoriously-difficult-heres-what-the-fdas-apology-to-taylor-farms-means-cafd3a2a?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 20 Jul 2026 14:46:00",
+      "published": "Mon, 20 Jul 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
-      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 14:37:00",
-      "source": "MarketWatch",
-      "title": "South Korean stocks weren\u2019t a big deal in your emerging-markets fund. Artificial intelligence changed that.",
-      "url": "https://www.marketwatch.com/story/south-korean-stocks-werent-a-big-deal-in-your-emerging-markets-fund-artificial-intelligence-changed-that-21308089?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 14:21:00",
-      "source": "MarketWatch",
-      "title": "SpaceX gave investors intense FOMO. Now the decade\u2019s hottest IPO represents a brutal reality check.",
-      "url": "https://www.marketwatch.com/story/spacex-gave-investors-intense-fomo-now-the-decades-hottest-ipo-represents-a-brutal-reality-check-54f878cb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 20 Jul 2026 14:15:00",
-      "source": "MarketWatch",
-      "title": "Can the \u2018Magnificent Seven\u2019 save a stock market that might be doomed without them?",
-      "url": "https://www.marketwatch.com/story/can-the-magnificent-seven-save-a-stock-market-that-might-be-doomed-without-them-f88988f3?mod=mw_rss_topstories"
+      "title": "Iren\u2019s stock surges as the neocloud lands $2.8 billion worth of new deals",
+      "url": "https://www.marketwatch.com/story/irens-stock-surges-as-the-neocloud-lands-2-8-billion-worth-of-new-deals-831302c3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 17 2026",
-      "change": -0.03,
-      "rate": 6.16
+      "asof_label": "Jul 20 2026",
+      "change": 0.01,
+      "rate": 6.17
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 17 2026",
-      "change": -0.05,
+      "asof_label": "Jul 20 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
