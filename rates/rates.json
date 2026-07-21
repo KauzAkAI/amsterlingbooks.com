@@ -135,7 +135,7 @@
       "rate": 17.3943
     }
   },
-  "generated_at": "2026-07-21T16:43:30+00:00",
+  "generated_at": "2026-07-21T18:02:37+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.49
       },
       {
-        "date": "2026-07-13",
-        "rate": 6.75
-      },
-      {
         "date": "2026-07-14",
         "rate": 6.7
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-20",
         "rate": 6.71
+      },
+      {
+        "date": "2026-07-21",
+        "rate": 6.75
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Tue, 21 Jul 2026 16:25:00",
+      "published": "Tue, 21 Jul 2026 17:51:00",
       "source": "MarketWatch",
-      "title": "Microsoft has 3 secret weapons that could drive its stock 50% higher, analyst says",
-      "url": "https://www.marketwatch.com/story/microsoft-has-3-secret-weapons-that-could-drive-its-stock-50-higher-analyst-says-f1afb554?mod=mw_rss_topstories"
+      "title": "Your healthcare could now cost $185,500 in retirement \u2014 and that doesn\u2019t include long-term care",
+      "url": "https://www.marketwatch.com/story/your-healthcare-could-now-cost-185-500-in-retirement-and-that-doesnt-include-long-term-care-5f4f6da8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 16:10:00",
+      "published": "Tue, 21 Jul 2026 17:19:00",
       "source": "MarketWatch",
-      "title": "These signs suggest investors should give the software sector a second chance",
-      "url": "https://www.marketwatch.com/story/here-are-some-signs-that-say-investors-should-give-the-software-sector-a-second-chance-f4143255?mod=mw_rss_topstories"
+      "title": "Oil prices may fall, but gasoline prices won\u2019t. Look at the trap we\u2019re in.",
+      "url": "https://www.marketwatch.com/story/oil-prices-may-fall-but-gasoline-prices-wont-look-at-the-trap-were-in-7f4c3738?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 15:12:00",
+      "published": "Tue, 21 Jul 2026 17:10:00",
       "source": "MarketWatch",
-      "title": "Pro stock pickers cannot beat simple math \u2014 war in the Middle East is proving it",
-      "url": "https://www.marketwatch.com/story/if-timing-the-stock-market-were-easy-the-iran-war-would-have-proven-it-its-done-the-opposite-ac090ad3?mod=mw_rss_topstories"
+      "title": "It\u2019s \u2018incredibly disrespectful\u2019 to do a virtual job interview by phone \u2014 but Gen Z is doing it anyway",
+      "url": "https://www.marketwatch.com/story/its-incredibly-disrespectful-to-do-a-virtual-job-interview-by-phone-but-gen-z-is-doing-it-anyway-0d8486d7?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 15:02:00",
+      "published": "Tue, 21 Jul 2026 16:56:00",
       "source": "MarketWatch",
-      "title": "Novo Nordisk\u2019s lawsuit against Eli Lilly over ads highlights intense competition in GLP-1 market",
-      "url": "https://www.marketwatch.com/story/novo-nordisk-sues-eli-lilly-over-ads-comparing-glp-1-medications-6b223080?mod=mw_rss_topstories"
+      "title": "Here\u2019s how to time your retirement to keep your healthcare costs down",
+      "url": "https://www.marketwatch.com/story/heres-how-to-time-your-retirement-to-keep-your-healthcare-costs-down-b1a4d427?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 15:01:00",
+      "published": "Tue, 21 Jul 2026 16:54:00",
       "source": "MarketWatch",
-      "title": "Think this stock market is in a bubble? These earnings numbers say otherwise.",
-      "url": "https://www.marketwatch.com/story/welcome-to-the-roaring-20s-heres-how-this-earnings-season-will-keep-the-bull-market-strong-4a70be72?mod=mw_rss_topstories"
+      "title": "An oil lifeline is under threat, and markets have yet to price in the growing crisis",
+      "url": "https://www.marketwatch.com/story/an-oil-lifeline-is-under-threat-and-markets-have-yet-to-price-in-the-growing-crisis-801d53b1?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 20 2026",
+      "asof_label": "Jul 21 2026",
       "change": 0.02,
-      "rate": 6.18
+      "rate": 6.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 20 2026",
-      "change": 0.08,
+      "asof_label": "Jul 21 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
