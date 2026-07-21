@@ -135,7 +135,7 @@
       "rate": 17.3943
     }
   },
-  "generated_at": "2026-07-21T19:47:22+00:00",
+  "generated_at": "2026-07-21T20:54:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Tue, 21 Jul 2026 19:45:00",
+      "published": "Tue, 21 Jul 2026 20:30:00",
+      "source": "MarketWatch",
+      "title": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
+      "url": "https://www.marketwatch.com/story/i-will-claim-social-security-early-why-do-so-few-people-talk-about-the-elephant-in-the-room-64820675?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 21 Jul 2026 20:27:00",
+      "source": "MarketWatch",
+      "title": "Why energy stocks still look so cheap, even after their big rally this month",
+      "url": "https://www.marketwatch.com/story/why-energy-stocks-still-look-so-cheap-even-after-their-big-rally-this-month-7f1a298b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 21 Jul 2026 20:12:00",
       "source": "MarketWatch",
       "title": "Why Micron and other chip stocks are bouncing back so strongly",
       "url": "https://www.marketwatch.com/story/why-micron-and-other-chip-stocks-are-bouncing-back-so-strongly-3f6d3cee?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 19:42:00",
+      "published": "Tue, 21 Jul 2026 20:09:00",
       "source": "MarketWatch",
-      "title": "Oil prices may fall, but gasoline prices won\u2019t. Look at the trap we\u2019re in.",
-      "url": "https://www.marketwatch.com/story/oil-prices-may-fall-but-gasoline-prices-wont-look-at-the-trap-were-in-7f4c3738?mod=mw_rss_topstories"
+      "title": "Forget Nvidia. These 5 S&P 500 stocks are quietly going all in on AI.",
+      "url": "https://www.marketwatch.com/story/forget-nvidia-these-5-s-p-500-stocks-are-quietly-going-all-in-on-ai-68642f84?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 19:42:00",
+      "published": "Tue, 21 Jul 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "Think this stock market is in a bubble? These earnings numbers say otherwise.",
-      "url": "https://www.marketwatch.com/story/welcome-to-the-roaring-20s-heres-how-this-earnings-season-will-keep-the-bull-market-strong-4a70be72?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 21 Jul 2026 19:15:00",
-      "source": "MarketWatch",
-      "title": "Do I use $300,000 of my $1.2 million retirement savings so my daughter can attend her dream college?",
-      "url": "https://www.marketwatch.com/story/do-i-use-300-000-of-my-1-2-million-retirement-savings-so-my-daughter-can-attend-her-dream-college-50842e7a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 21 Jul 2026 19:05:00",
-      "source": "MarketWatch",
-      "title": "An oil lifeline is under threat, and markets have yet to price in the growing crisis",
-      "url": "https://www.marketwatch.com/story/an-oil-lifeline-is-under-threat-and-markets-have-yet-to-price-in-the-growing-crisis-801d53b1?mod=mw_rss_topstories"
+      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
+      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.72
+      "yield": 3.75
     },
     {
       "tenor": "3M",
-      "yield": 3.86
+      "yield": 3.87
     },
     {
       "tenor": "6M",
-      "yield": 4.0
+      "yield": 4.02
     },
     {
       "tenor": "1Y",
-      "yield": 4.03
+      "yield": 4.08
     },
     {
       "tenor": "2Y",
-      "yield": 4.21
+      "yield": 4.26
     },
     {
       "tenor": "5Y",
-      "yield": 4.33
+      "yield": 4.37
     },
     {
       "tenor": "7Y",
-      "yield": 4.45
+      "yield": 4.5
     },
     {
       "tenor": "10Y",
-      "yield": 4.6
+      "yield": 4.63
     },
     {
       "tenor": "20Y",
-      "yield": 5.12
+      "yield": 5.14
     },
     {
       "tenor": "30Y",
-      "yield": 5.11
+      "yield": 5.13
     }
   ],
   "warnings": []
