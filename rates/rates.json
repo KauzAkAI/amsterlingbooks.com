@@ -135,7 +135,7 @@
       "rate": 17.3943
     }
   },
-  "generated_at": "2026-07-21T20:54:59+00:00",
+  "generated_at": "2026-07-21T22:07:45+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
+      "published": "Tue, 21 Jul 2026 20:59:00",
+      "source": "MarketWatch",
+      "title": "SpaceX\u2019s stock snaps brutal losing streak ahead of key Starship rocket launch",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-looks-to-snap-brutal-losing-streak-as-it-heads-for-one-of-its-best-days-yet-74220273?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 21 Jul 2026 20:30:00",
       "source": "MarketWatch",
       "title": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Forget Nvidia. These 5 S&P 500 stocks are quietly going all in on AI.",
       "url": "https://www.marketwatch.com/story/forget-nvidia-these-5-s-p-500-stocks-are-quietly-going-all-in-on-ai-68642f84?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 21 Jul 2026 20:00:00",
-      "source": "MarketWatch",
-      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
-      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
