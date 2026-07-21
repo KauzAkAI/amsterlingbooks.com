@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4031
+      "rate": 1.4073
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7669
+      "rate": 6.7661
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.8752
+      "rate": 0.87581
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74294
+      "rate": 0.74623
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.45
+      "rate": 96.23
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.38
+      "rate": 162.74
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1481.18
+      "rate": 1478.4
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4899
+      "rate": 17.3943
     }
   },
-  "generated_at": "2026-07-20T23:41:09+00:00",
+  "generated_at": "2026-07-21T15:09:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
     },
     {
-      "published": "Mon, 20 Jul 2026 23:15:00",
+      "published": "Tue, 21 Jul 2026 15:02:00",
       "source": "MarketWatch",
-      "title": "I racked up $35,000 in credit-card debt. Should I file for bankruptcy?",
-      "url": "https://www.marketwatch.com/story/i-have-racked-up-35-000-in-credit-card-debt-should-i-file-for-bankruptcy-4c92d9e5?mod=mw_rss_topstories"
+      "title": "Novo Nordisk\u2019s lawsuit against Eli Lilly over ads highlights intense competition in GLP-1 market",
+      "url": "https://www.marketwatch.com/story/novo-nordisk-sues-eli-lilly-over-ads-comparing-glp-1-medications-6b223080?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 20 Jul 2026 22:55:00",
+      "published": "Tue, 21 Jul 2026 15:01:00",
       "source": "MarketWatch",
-      "title": "Why are gasoline prices rising faster than oil prices? Blame it on the \u2018crack.\u2019",
-      "url": "https://www.marketwatch.com/story/why-are-gasoline-prices-rising-faster-than-oil-prices-blame-it-on-the-crack-22b454e7?mod=mw_rss_topstories"
+      "title": "Think this stock market is in a bubble? These earnings numbers say otherwise.",
+      "url": "https://www.marketwatch.com/story/welcome-to-the-roaring-20s-heres-how-this-earnings-season-will-keep-the-bull-market-strong-4a70be72?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 20 Jul 2026 22:30:00",
+      "published": "Tue, 21 Jul 2026 14:53:00",
       "source": "MarketWatch",
-      "title": "I will claim Social Security early. Why do so few people talk about the elephant in the room?",
-      "url": "https://www.marketwatch.com/story/i-will-claim-social-security-early-why-do-so-few-people-talk-about-the-elephant-in-the-room-64820675?mod=mw_rss_topstories"
+      "title": "Why Paramount could win if it loses the Warner Bros. Discovery deal",
+      "url": "https://www.marketwatch.com/story/why-paramount-could-win-if-it-loses-the-warner-bros-discovery-deal-5f174963?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 20 Jul 2026 22:21:00",
+      "published": "Tue, 21 Jul 2026 14:32:00",
       "source": "MarketWatch",
-      "title": "Why cheap Chinese AI models could actually be a boon for Nvidia, Micron and other chip stocks",
-      "url": "https://www.marketwatch.com/story/why-cheap-chinese-ai-models-could-actually-be-a-boon-for-nvidia-micron-and-other-chip-stocks-8dd4baba?mod=mw_rss_topstories"
+      "title": "Tesla earnings are on deck, and investors will be looking to settle this major debate",
+      "url": "https://www.marketwatch.com/story/tesla-earnings-are-on-deck-and-investors-will-be-looking-to-settle-this-major-debate-f5a11d0e?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 20 Jul 2026 22:00:00",
+      "published": "Tue, 21 Jul 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
-      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
+      "title": "\u2018I have a $2,000 deductible\u2019: I reported a cracked windshield on my Hertz rental car. Can they charge me?",
+      "url": "https://www.marketwatch.com/story/i-have-a-2-000-deductible-i-reported-a-cracked-windshield-on-my-hertz-rental-car-can-they-charge-me-1e07d28a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
