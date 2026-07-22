@@ -135,7 +135,7 @@
       "rate": 17.4235
     }
   },
-  "generated_at": "2026-07-22T19:39:18+00:00",
+  "generated_at": "2026-07-22T20:46:22+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
-      "published": "Wed, 22 Jul 2026 19:36:00",
+      "published": "Wed, 22 Jul 2026 20:42:00",
       "source": "MarketWatch",
-      "title": "More than 70% of recent home buyers were counting on mortgage rates to drop. Now they\u2019re stuck.",
-      "url": "https://www.marketwatch.com/story/more-than-70-of-recent-home-buyers-were-counting-on-mortgage-rates-to-drop-now-theyre-stuck-1d0dab60?mod=mw_rss_topstories"
+      "title": "IBM just cut its outlook. Why its stock is bouncing higher anyway.",
+      "url": "https://www.marketwatch.com/story/ibm-just-cut-its-outlook-why-its-stock-is-bouncing-anyway-9d36e22a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 19:30:00",
+      "published": "Wed, 22 Jul 2026 20:19:00",
       "source": "MarketWatch",
-      "title": "The bull market faces higher likelihood of a Fed rate hike as Iran crisis intensifies",
-      "url": "https://www.marketwatch.com/story/the-bull-market-faces-higher-likelihood-of-a-fed-rate-hike-as-iran-crisis-intensifies-58f268e8?mod=mw_rss_topstories"
+      "title": "ServiceNow\u2019s stock rises as earnings show momentum in cybersecurity",
+      "url": "https://www.marketwatch.com/story/servicenows-stock-gains-as-earnings-show-momentum-in-cybersecurity-86e7a038?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 19:15:00",
+      "published": "Wed, 22 Jul 2026 20:13:00",
       "source": "MarketWatch",
-      "title": "The super rich use 401(k)s and IRAs to sidestep taxes on millions of dollars. This proposed law would cut them off.",
-      "url": "https://www.marketwatch.com/story/the-super-rich-use-401-k-s-and-iras-to-sidestep-taxes-on-millions-of-dollars-this-proposed-law-would-cut-them-off-04b37e9a?mod=mw_rss_topstories"
+      "title": "The Treasury market touches a worrying milestone not seen since 2007",
+      "url": "https://www.marketwatch.com/story/the-treasury-market-is-on-the-verge-of-a-worrying-milestone-not-seen-since-2007-81158082?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 19:03:00",
+      "published": "Wed, 22 Jul 2026 20:10:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s how to use salary-transparency laws to get paid more",
-      "url": "https://www.marketwatch.com/story/heres-how-to-use-salary-transparency-laws-to-get-paid-more-a941c75f?mod=mw_rss_topstories"
+      "title": "Global oil prices settle at 6-week high after topping $95 a barrel, as hopes dim for de-escalation of Iran war",
+      "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 18:57:00",
+      "published": "Wed, 22 Jul 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "The chip sector\u2019s recent calm is masking a turbulent outlook in the options market",
-      "url": "https://www.marketwatch.com/story/the-chip-sectors-recent-calm-is-masking-a-turbulent-outlook-in-the-options-market-2ffc098a?mod=mw_rss_topstories"
+      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
+      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.75
+      "yield": 3.76
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.89
     },
     {
       "tenor": "6M",
-      "yield": 4.02
+      "yield": 4.05
     },
     {
       "tenor": "1Y",
-      "yield": 4.08
+      "yield": 4.11
     },
     {
       "tenor": "2Y",
-      "yield": 4.26
+      "yield": 4.31
     },
     {
       "tenor": "5Y",
-      "yield": 4.37
+      "yield": 4.41
     },
     {
       "tenor": "7Y",
-      "yield": 4.5
+      "yield": 4.53
     },
     {
       "tenor": "10Y",
-      "yield": 4.63
+      "yield": 4.67
     },
     {
       "tenor": "20Y",
-      "yield": 5.14
+      "yield": 5.17
     },
     {
       "tenor": "30Y",
-      "yield": 5.13
+      "yield": 5.15
     }
   ],
   "warnings": []
