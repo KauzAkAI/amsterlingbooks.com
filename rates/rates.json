@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4073
+      "rate": 1.4087
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7661
+      "rate": 6.773
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87581
+      "rate": 0.87658
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74623
+      "rate": 0.74807
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.23
+      "rate": 96.57
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.74
+      "rate": 163.07
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1478.4
+      "rate": 1480.35
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.3943
+      "rate": 17.4235
     }
   },
-  "generated_at": "2026-07-22T15:09:04+00:00",
+  "generated_at": "2026-07-22T16:47:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.49
       },
       {
-        "date": "2026-07-14",
-        "rate": 6.7
-      },
-      {
         "date": "2026-07-15",
         "rate": 6.64
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-21",
         "rate": 6.75
+      },
+      {
+        "date": "2026-07-22",
+        "rate": 6.77
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 22 Jul 2026 15:49:56",
+      "source": "CNBC",
+      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
+      "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
+    },
+    {
       "published": "Wed, 22 Jul 2026 06:28:08",
       "source": "CNBC",
       "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 11:33:19",
-      "source": "CNBC",
-      "title": "Renewed Hormuz hostilities drive ECB rates rethink amid \u2018extremely volatile\u2019 outlook",
-      "url": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html"
+      "published": "Wed, 22 Jul 2026 16:33:00",
+      "source": "MarketWatch",
+      "title": "Can you beat the market? Maybe with this strategy.",
+      "url": "https://www.marketwatch.com/story/this-could-be-the-right-time-to-buy-a-momentum-fund-05e7a1fa?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 15:04:00",
+      "published": "Wed, 22 Jul 2026 16:31:00",
       "source": "MarketWatch",
-      "title": "AMD is investing $5 billion into Anthropic as it seeks to cut into Nvidia\u2019s dominance",
-      "url": "https://www.marketwatch.com/story/amd-is-investing-5-billion-into-anthropic-as-it-seeks-to-cut-into-nvidias-dominance-b882654d?mod=mw_rss_topstories"
+      "title": "This is the ideal retirement strategy if you want to keep your healthcare costs down",
+      "url": "https://www.marketwatch.com/story/heres-how-to-time-your-retirement-to-keep-your-healthcare-costs-down-b1a4d427?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 14:31:00",
+      "published": "Wed, 22 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
-      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
+      "title": "Do I use $300,000 of my $1.2 million retirement savings so my daughter can attend her dream college?",
+      "url": "https://www.marketwatch.com/story/do-i-use-300-000-of-my-1-2-million-retirement-savings-so-my-daughter-can-attend-her-dream-college-50842e7a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 14:07:00",
+      "published": "Wed, 22 Jul 2026 16:28:00",
       "source": "MarketWatch",
-      "title": "Global oil prices rise above $95 a barrel for the first time in 6 weeks as hopes dim for de-escalation of Iran war",
+      "title": "Global oil prices hold gains after topping $95 a barrel for the first time in 6 weeks as hopes dim for de-escalation of Iran war",
       "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 22 Jul 2026 14:05:00",
+      "published": "Wed, 22 Jul 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "This \u2018incredibly disrespectful\u2019 interview habit could be costing Gen Z jobs",
-      "url": "https://www.marketwatch.com/story/its-incredibly-disrespectful-to-do-a-virtual-job-interview-by-phone-but-gen-z-is-doing-it-anyway-0d8486d7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 14:03:00",
-      "source": "MarketWatch",
-      "title": "Is Microsoft\u2019s stock set for a breakout? This analyst says a major inflection is in the cards.",
-      "url": "https://www.marketwatch.com/story/is-microsofts-stock-set-for-a-breakout-this-analyst-says-a-major-inflection-is-in-the-cards-53c312e4?mod=mw_rss_topstories"
+      "title": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
+      "url": "https://www.marketwatch.com/story/i-have-children-from-my-first-marriage-should-my-second-husband-inherit-my-house-if-i-die-d9bd8687?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 21 2026",
-      "change": 0.02,
-      "rate": 6.2
+      "asof_label": "Jul 22 2026",
+      "change": 0.03,
+      "rate": 6.23
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 21 2026",
-      "change": 0.04,
+      "asof_label": "Jul 22 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
