@@ -135,7 +135,7 @@
       "rate": 17.4235
     }
   },
-  "generated_at": "2026-07-22T20:46:22+00:00",
+  "generated_at": "2026-07-22T21:54:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,10 +321,16 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
-      "published": "Wed, 22 Jul 2026 20:42:00",
+      "published": "Wed, 22 Jul 2026 21:39:00",
       "source": "MarketWatch",
-      "title": "IBM just cut its outlook. Why its stock is bouncing higher anyway.",
+      "title": "IBM just cut its outlook, but not by as much as investors feared",
       "url": "https://www.marketwatch.com/story/ibm-just-cut-its-outlook-why-its-stock-is-bouncing-anyway-9d36e22a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 22 Jul 2026 21:01:00",
+      "source": "MarketWatch",
+      "title": "Yes, the AI stock selloff looks terrifying. But it might actually save the bull market.",
+      "url": "https://www.marketwatch.com/story/yes-the-ai-stock-selloff-looks-terrifying-but-it-might-actually-save-the-bull-market-3bef59be?mod=mw_rss_topstories"
     },
     {
       "published": "Wed, 22 Jul 2026 20:19:00",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Global oil prices settle at 6-week high after topping $95 a barrel, as hopes dim for de-escalation of Iran war",
       "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 20:00:00",
-      "source": "MarketWatch",
-      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
-      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
