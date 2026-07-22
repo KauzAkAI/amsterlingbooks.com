@@ -135,7 +135,7 @@
       "rate": 17.4235
     }
   },
-  "generated_at": "2026-07-22T21:54:40+00:00",
+  "generated_at": "2026-07-22T22:56:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
+      "published": "Wed, 22 Jul 2026 22:46:00",
+      "source": "MarketWatch",
+      "title": "I want to transfer $17,000 in credit-card debt. Why did Wells Fargo offer me only a $4,000 credit limit?",
+      "url": "https://www.marketwatch.com/story/i-wanted-to-transfer-17-000-in-credit-card-debt-why-did-wells-fargo-offer-me-only-a-4-000-credit-limit-7ad0a3f0?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 22 Jul 2026 22:30:00",
+      "source": "MarketWatch",
+      "title": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
+      "url": "https://www.marketwatch.com/story/i-have-children-from-my-first-marriage-should-my-second-husband-inherit-my-house-if-i-die-d9bd8687?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 22 Jul 2026 21:39:00",
       "source": "MarketWatch",
       "title": "IBM just cut its outlook, but not by as much as investors feared",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "ServiceNow\u2019s stock rises as earnings show momentum in cybersecurity",
       "url": "https://www.marketwatch.com/story/servicenows-stock-gains-as-earnings-show-momentum-in-cybersecurity-86e7a038?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 20:13:00",
-      "source": "MarketWatch",
-      "title": "The Treasury market touches a worrying milestone not seen since 2007",
-      "url": "https://www.marketwatch.com/story/the-treasury-market-is-on-the-verge-of-a-worrying-milestone-not-seen-since-2007-81158082?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 20:10:00",
-      "source": "MarketWatch",
-      "title": "Global oil prices settle at 6-week high after topping $95 a barrel, as hopes dim for de-escalation of Iran war",
-      "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
     }
   ],
   "rates": {
