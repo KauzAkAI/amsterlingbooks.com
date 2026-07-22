@@ -135,7 +135,7 @@
       "rate": 17.4235
     }
   },
-  "generated_at": "2026-07-22T16:47:59+00:00",
+  "generated_at": "2026-07-22T17:59:02+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Wed, 22 Jul 2026 15:49:56",
+      "published": "Wed, 22 Jul 2026 16:57:55",
       "source": "CNBC",
       "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
       "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
+      "published": "Wed, 22 Jul 2026 17:46:00",
+      "source": "MarketWatch",
+      "title": "Intel earnings will pit red-hot AI demand against a sluggish PC market",
+      "url": "https://www.marketwatch.com/story/intel-earnings-will-pit-red-hot-ai-demand-against-a-sluggish-pc-market-6b9984fe?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 22 Jul 2026 17:06:00",
+      "source": "MarketWatch",
+      "title": "This the best way to ask strangers on the internet for financial advice",
+      "url": "https://www.marketwatch.com/story/how-to-ask-strangers-on-the-internet-for-financial-advice-ba5b3fb7?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 22 Jul 2026 16:58:00",
+      "source": "MarketWatch",
+      "title": "AMD plans to invest to up $5 billion into Anthropic as it seeks to cut into Nvidia\u2019s dominance",
+      "url": "https://www.marketwatch.com/story/amd-is-investing-5-billion-into-anthropic-as-it-seeks-to-cut-into-nvidias-dominance-b882654d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 22 Jul 2026 16:33:00",
       "source": "MarketWatch",
       "title": "Can you beat the market? Maybe with this strategy.",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "This is the ideal retirement strategy if you want to keep your healthcare costs down",
       "url": "https://www.marketwatch.com/story/heres-how-to-time-your-retirement-to-keep-your-healthcare-costs-down-b1a4d427?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 16:30:00",
-      "source": "MarketWatch",
-      "title": "Do I use $300,000 of my $1.2 million retirement savings so my daughter can attend her dream college?",
-      "url": "https://www.marketwatch.com/story/do-i-use-300-000-of-my-1-2-million-retirement-savings-so-my-daughter-can-attend-her-dream-college-50842e7a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 16:28:00",
-      "source": "MarketWatch",
-      "title": "Global oil prices hold gains after topping $95 a barrel for the first time in 6 weeks as hopes dim for de-escalation of Iran war",
-      "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 22 Jul 2026 16:00:00",
-      "source": "MarketWatch",
-      "title": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
-      "url": "https://www.marketwatch.com/story/i-have-children-from-my-first-marriage-should-my-second-husband-inherit-my-house-if-i-die-d9bd8687?mod=mw_rss_topstories"
     }
   ],
   "rates": {
