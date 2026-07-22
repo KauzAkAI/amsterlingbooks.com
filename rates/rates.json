@@ -135,7 +135,7 @@
       "rate": 17.3943
     }
   },
-  "generated_at": "2026-07-21T23:11:15+00:00",
+  "generated_at": "2026-07-22T15:09:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 22 Jul 2026 06:28:08",
+      "source": "CNBC",
+      "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
+      "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html"
+    },
+    {
       "published": "Fri, 17 Jul 2026 14:13:49",
       "source": "CNBC",
       "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 05:14:11",
-      "source": "CNBC",
-      "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
-      "url": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html"
+      "published": "Wed, 22 Jul 2026 15:04:00",
+      "source": "MarketWatch",
+      "title": "AMD is investing $5 billion into Anthropic as it seeks to cut into Nvidia\u2019s dominance",
+      "url": "https://www.marketwatch.com/story/amd-is-investing-5-billion-into-anthropic-as-it-seeks-to-cut-into-nvidias-dominance-b882654d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 22:11:00",
+      "published": "Wed, 22 Jul 2026 14:31:00",
       "source": "MarketWatch",
-      "title": "Super Micro\u2019s stock soars as its margins unexpectedly double",
-      "url": "https://www.marketwatch.com/story/super-micros-stock-soars-as-its-margins-unexpectedly-double-8aa83784?mod=mw_rss_topstories"
+      "title": "We have $8 million in traditional IRAs. Should we tap them to buy a house \u2014 and take the tax hit?",
+      "url": "https://www.marketwatch.com/story/we-have-8-million-in-traditional-iras-should-we-tap-them-to-buy-a-house-and-take-the-tax-hit-c2478daa?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 20:59:00",
+      "published": "Wed, 22 Jul 2026 14:07:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock snaps brutal losing streak ahead of key Starship rocket launch",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-looks-to-snap-brutal-losing-streak-as-it-heads-for-one-of-its-best-days-yet-74220273?mod=mw_rss_topstories"
+      "title": "Global oil prices rise above $95 a barrel for the first time in 6 weeks as hopes dim for de-escalation of Iran war",
+      "url": "https://www.marketwatch.com/story/oil-prices-climb-to-six-week-high-as-hopes-of-de-escalation-in-iran-diminish-b5fb0942?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 20:30:00",
+      "published": "Wed, 22 Jul 2026 14:05:00",
       "source": "MarketWatch",
-      "title": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
-      "url": "https://www.marketwatch.com/story/i-will-claim-social-security-early-why-do-so-few-people-talk-about-the-elephant-in-the-room-64820675?mod=mw_rss_topstories"
+      "title": "This \u2018incredibly disrespectful\u2019 interview habit could be costing Gen Z jobs",
+      "url": "https://www.marketwatch.com/story/its-incredibly-disrespectful-to-do-a-virtual-job-interview-by-phone-but-gen-z-is-doing-it-anyway-0d8486d7?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 21 Jul 2026 20:27:00",
+      "published": "Wed, 22 Jul 2026 14:03:00",
       "source": "MarketWatch",
-      "title": "Why energy stocks still look so cheap, even after their big rally this month",
-      "url": "https://www.marketwatch.com/story/why-energy-stocks-still-look-so-cheap-even-after-their-big-rally-this-month-7f1a298b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 21 Jul 2026 20:12:00",
-      "source": "MarketWatch",
-      "title": "Why Micron and other chip stocks are bouncing back so strongly",
-      "url": "https://www.marketwatch.com/story/why-micron-and-other-chip-stocks-are-bouncing-back-so-strongly-3f6d3cee?mod=mw_rss_topstories"
+      "title": "Is Microsoft\u2019s stock set for a breakout? This analyst says a major inflection is in the cards.",
+      "url": "https://www.marketwatch.com/story/is-microsofts-stock-set-for-a-breakout-this-analyst-says-a-major-inflection-is-in-the-cards-53c312e4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
