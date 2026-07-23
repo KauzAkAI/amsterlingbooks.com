@@ -135,7 +135,7 @@
       "rate": 17.4601
     }
   },
-  "generated_at": "2026-07-23T15:16:54+00:00",
+  "generated_at": "2026-07-23T16:51:31+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.57
       },
       {
-        "date": "2026-07-02",
-        "rate": 6.43
-      },
-      {
         "date": "2026-07-08",
         "rate": 6.58
       },
       {
         "date": "2026-07-09",
         "rate": 6.49
-      },
-      {
-        "date": "2026-07-15",
-        "rate": 6.64
       },
       {
         "date": "2026-07-15",
@@ -227,6 +219,14 @@
       {
         "date": "2026-07-22",
         "rate": 6.77
+      },
+      {
+        "date": "2026-07-23",
+        "rate": 6.85
+      },
+      {
+        "date": "2026-07-23",
+        "rate": 6.58
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
-      "published": "Thu, 23 Jul 2026 14:28:00",
+      "published": "Thu, 23 Jul 2026 16:37:00",
       "source": "MarketWatch",
-      "title": "Alphabet\u2019s massive profit growth is just an illusion, as SpaceX and Anthropic help mask a historic cash drain",
-      "url": "https://www.marketwatch.com/story/alphabets-massive-profit-growth-is-just-an-illusion-as-spacex-and-anthropic-help-mask-a-historic-cash-drain-ffff172d?mod=mw_rss_topstories"
+      "title": "Are you looking for financial advice? This is the best way to ask for it.",
+      "url": "https://www.marketwatch.com/story/how-to-ask-strangers-on-the-internet-for-financial-advice-ba5b3fb7?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 14:21:00",
+      "published": "Thu, 23 Jul 2026 16:31:00",
       "source": "MarketWatch",
-      "title": "I am a 63-year-old semiretired physician. If you have saved $2 million for retirement, should Social Security be optional?",
-      "url": "https://www.marketwatch.com/story/i-am-a-63-year-old-semiretired-physician-if-you-have-saved-2-million-for-retirement-should-social-security-be-optional-0de70d53?mod=mw_rss_topstories"
+      "title": "Lockheed Martin\u2019s stock has best day in 25 years as push to build more missiles faster pays off",
+      "url": "https://www.marketwatch.com/story/lockheed-martins-stock-leaps-as-push-to-build-more-missiles-faster-pays-off-9d7e2091?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 14:15:00",
+      "published": "Thu, 23 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "For young investors, $100,000 was once the gateway to wealth. Today, it\u2019s double that.",
-      "url": "https://www.marketwatch.com/story/having-100-000-invested-was-once-the-gateway-to-building-real-wealth-for-young-people-today-its-double-that-dc96fcc7?mod=mw_rss_topstories"
+      "title": "\u2018I have a $2,000 deductible\u2019: I reported a cracked windshield on my Hertz rental car. Can they charge me?",
+      "url": "https://www.marketwatch.com/story/i-have-a-2-000-deductible-i-reported-a-cracked-windshield-on-my-hertz-rental-car-can-they-charge-me-1e07d28a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 14:09:00",
+      "published": "Thu, 23 Jul 2026 16:29:00",
       "source": "MarketWatch",
-      "title": "Global oil prices top $100 after Houthis claim strikes on Saudi Arabian tankers",
-      "url": "https://www.marketwatch.com/story/oil-nears-100-a-barrel-after-houthis-claim-strikes-on-saudi-arabian-tankers-4d9949c2?mod=mw_rss_topstories"
+      "title": "The August stock-market slump is a myth \u2014 so why does Wall Street keep repeating it?",
+      "url": "https://www.marketwatch.com/story/the-august-stock-market-slump-is-a-myth-so-why-does-wall-street-keep-repeating-it-bc47db44?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 13:52:00",
+      "published": "Thu, 23 Jul 2026 16:27:00",
       "source": "MarketWatch",
-      "title": "AI stocks are echoing a 1990s market split. JPMorgan warns the next few weeks are critical.",
-      "url": "https://www.marketwatch.com/story/ai-stocks-are-echoing-a-1990s-market-split-jpmorgan-warns-the-next-few-weeks-are-critical-408ed725?mod=mw_rss_topstories"
+      "title": "As defense spending surges, these stocks could make you the most money",
+      "url": "https://www.marketwatch.com/story/as-defense-spending-surges-these-stocks-could-make-you-the-most-money-f78b3131?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 22 2026",
-      "change": 0.03,
-      "rate": 6.23
+      "asof_label": "Jul 23 2026",
+      "change": 0.06,
+      "rate": 6.29
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 22 2026",
-      "change": 0.02,
+      "asof_label": "Jul 23 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
