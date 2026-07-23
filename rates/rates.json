@@ -135,7 +135,7 @@
       "rate": 17.4601
     }
   },
-  "generated_at": "2026-07-23T16:51:31+00:00",
+  "generated_at": "2026-07-23T18:10:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-07-01",
-        "rate": 6.57
-      },
-      {
         "date": "2026-07-08",
         "rate": 6.58
       },
@@ -219,6 +215,10 @@
       {
         "date": "2026-07-22",
         "rate": 6.77
+      },
+      {
+        "date": "2026-07-22",
+        "rate": 6.69
       },
       {
         "date": "2026-07-23",
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"
     },
     {
-      "published": "Thu, 23 Jul 2026 16:37:00",
+      "published": "Thu, 23 Jul 2026 18:00:00",
       "source": "MarketWatch",
-      "title": "Are you looking for financial advice? This is the best way to ask for it.",
-      "url": "https://www.marketwatch.com/story/how-to-ask-strangers-on-the-internet-for-financial-advice-ba5b3fb7?mod=mw_rss_topstories"
+      "title": "I want to transfer $17,000 in credit-card debt. Why did Wells Fargo offer me only a $4,000 credit limit?",
+      "url": "https://www.marketwatch.com/story/i-wanted-to-transfer-17-000-in-credit-card-debt-why-did-wells-fargo-offer-me-only-a-4-000-credit-limit-7ad0a3f0?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 16:31:00",
+      "published": "Thu, 23 Jul 2026 17:57:00",
       "source": "MarketWatch",
-      "title": "Lockheed Martin\u2019s stock has best day in 25 years as push to build more missiles faster pays off",
-      "url": "https://www.marketwatch.com/story/lockheed-martins-stock-leaps-as-push-to-build-more-missiles-faster-pays-off-9d7e2091?mod=mw_rss_topstories"
+      "title": "AT&T won\u2019t need to worry about SpaceX for \u2018years,\u2019 analyst says",
+      "url": "https://www.marketwatch.com/story/at-t-wont-need-to-worry-about-spacex-for-years-analyst-says-1d84e1a5?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 16:30:00",
+      "published": "Thu, 23 Jul 2026 17:49:00",
       "source": "MarketWatch",
-      "title": "\u2018I have a $2,000 deductible\u2019: I reported a cracked windshield on my Hertz rental car. Can they charge me?",
-      "url": "https://www.marketwatch.com/story/i-have-a-2-000-deductible-i-reported-a-cracked-windshield-on-my-hertz-rental-car-can-they-charge-me-1e07d28a?mod=mw_rss_topstories"
+      "title": "Still waiting for the free $1,000 to hit your child\u2019s \u2018Trump account\u2019? Here\u2019s what to know.",
+      "url": "https://www.marketwatch.com/story/still-waiting-for-the-free-1-000-to-hit-your-trump-account-heres-what-to-know-acc5c789?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 16:29:00",
+      "published": "Thu, 23 Jul 2026 17:15:00",
       "source": "MarketWatch",
-      "title": "The August stock-market slump is a myth \u2014 so why does Wall Street keep repeating it?",
-      "url": "https://www.marketwatch.com/story/the-august-stock-market-slump-is-a-myth-so-why-does-wall-street-keep-repeating-it-bc47db44?mod=mw_rss_topstories"
+      "title": "I am a 63-year-old semiretired physician. If I have saved $2 million for retirement, should Social Security be optional?",
+      "url": "https://www.marketwatch.com/story/i-am-a-63-year-old-semiretired-physician-if-you-have-saved-2-million-for-retirement-should-social-security-be-optional-0de70d53?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 23 Jul 2026 16:27:00",
+      "published": "Thu, 23 Jul 2026 17:08:00",
       "source": "MarketWatch",
-      "title": "As defense spending surges, these stocks could make you the most money",
-      "url": "https://www.marketwatch.com/story/as-defense-spending-surges-these-stocks-could-make-you-the-most-money-f78b3131?mod=mw_rss_topstories"
+      "title": "Most FDA advisers say the BPC-157 peptide should be made available in the U.S. Here\u2019s what happens next.",
+      "url": "https://www.marketwatch.com/story/peptides-could-soon-become-widely-available-in-the-u-s-heres-what-happens-next-ead02287?mod=mw_rss_topstories"
     }
   ],
   "rates": {
