@@ -135,7 +135,7 @@
       "rate": 17.4803
     }
   },
-  "generated_at": "2026-07-24T19:52:29+00:00",
+  "generated_at": "2026-07-24T21:02:24+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html"
     },
     {
+      "published": "Fri, 24 Jul 2026 20:26:00",
+      "source": "MarketWatch",
+      "title": "FDA advisers say six popular peptides can be compounded. Here are the issues they considered.",
+      "url": "https://www.marketwatch.com/story/fda-advisers-vote-against-sleep-peptide-as-they-debate-safety-and-health-claims-2bc85739?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 24 Jul 2026 20:11:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m 38, lost my job, and have to move back in with my parents. What did I do wrong?",
+      "url": "https://www.marketwatch.com/story/i-lost-my-job-my-emergency-fund-is-running-out-and-now-i-have-to-move-back-in-with-my-parents-what-did-i-do-wrong-cf1c0f9f?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 24 Jul 2026 19:31:00",
       "source": "MarketWatch",
       "title": "The world is facing its largest oil shock ever. Here is why prices are not higher.",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Before you ask AI to invest your life savings, you need to understand its hidden biases",
       "url": "https://www.marketwatch.com/story/can-ai-replace-your-financial-adviser-why-bots-still-cant-match-human-judgment-ddb5903a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 24 Jul 2026 19:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m still confused\u2019: I sold $80,000 in shares on June 30, so why didn\u2019t I receive my dividend?",
-      "url": "https://www.marketwatch.com/story/im-still-confused-i-sold-80-000-in-shares-on-june-30-so-why-didnt-i-receive-my-dividend-d066016c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 24 Jul 2026 18:58:00",
-      "source": "MarketWatch",
-      "title": "The stock market is completely unprepared for a 6% yield on the 30-year Treasury",
-      "url": "https://www.marketwatch.com/story/the-30-year-treasury-yield-is-closing-in-on-5-2-a-surge-to-6-could-slam-stocks-fa9631fb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.82
+      "yield": 3.8
     },
     {
       "tenor": "3M",
-      "yield": 3.95
+      "yield": 3.96
     },
     {
       "tenor": "6M",
-      "yield": 4.09
+      "yield": 4.08
     },
     {
       "tenor": "1Y",
-      "yield": 4.15
+      "yield": 4.14
     },
     {
       "tenor": "2Y",
-      "yield": 4.37
+      "yield": 4.33
     },
     {
       "tenor": "5Y",
-      "yield": 4.46
+      "yield": 4.43
     },
     {
       "tenor": "7Y",
-      "yield": 4.58
+      "yield": 4.55
     },
     {
       "tenor": "10Y",
-      "yield": 4.71
+      "yield": 4.69
     },
     {
       "tenor": "20Y",
-      "yield": 5.2
+      "yield": 5.18
     },
     {
       "tenor": "30Y",
-      "yield": 5.17
+      "yield": 5.16
     }
   ],
   "warnings": []
