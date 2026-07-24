@@ -135,7 +135,7 @@
       "rate": 17.4803
     }
   },
-  "generated_at": "2026-07-24T22:15:34+00:00",
+  "generated_at": "2026-07-24T23:28:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html"
     },
     {
+      "published": "Fri, 24 Jul 2026 22:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s nothing personal\u2019: Should I tell my 96-year-old stepmother that I don\u2019t want her inheritance?",
+      "url": "https://www.marketwatch.com/story/it-would-feel-like-a-burden-my-stepmother-96-owns-the-house-i-grew-up-in-is-it-wrong-to-tell-her-i-dont-want-to-inherit-it-9d5810c2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 24 Jul 2026 22:00:00",
       "source": "MarketWatch",
       "title": "\u2018We are not romantically involved\u2019: I\u2019m marrying my platonic best friend of 20 years. Should I leave him my home?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The stock market is completely unprepared for a 6% yield on the 30-year Treasury",
       "url": "https://www.marketwatch.com/story/the-30-year-treasury-yield-is-closing-in-on-5-2-a-surge-to-6-could-slam-stocks-fa9631fb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 24 Jul 2026 21:30:00",
-      "source": "MarketWatch",
-      "title": "I am a 63-year-old semiretired physician. If I saved $2 million for retirement, should my Social Security become optional?",
-      "url": "https://www.marketwatch.com/story/i-am-a-63-year-old-semiretired-physician-if-you-have-saved-2-million-for-retirement-should-social-security-be-optional-0de70d53?mod=mw_rss_topstories"
     }
   ],
   "rates": {
