@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4075
+      "rate": 1.4086
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7703
+      "rate": 6.7722
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87781
+      "rate": 0.87897
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74893
+      "rate": 0.75053
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.59
+      "rate": 96.56
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 163.47
+      "rate": 163.82
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1472.72
+      "rate": 1461.0
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4601
+      "rate": 17.4803
     }
   },
-  "generated_at": "2026-07-24T15:01:14+00:00",
+  "generated_at": "2026-07-24T16:53:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html"
     },
     {
-      "published": "Fri, 24 Jul 2026 14:43:00",
+      "published": "Fri, 24 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "U.S. economy had begun to speed up \u2014 until Iran peace talks failed and oil prices surged again",
-      "url": "https://www.marketwatch.com/story/u-s-economy-began-to-speed-up-until-iran-peace-talks-failed-and-oil-prices-surged-again-3fce66b2?mod=mw_rss_topstories"
+      "title": "I want to transfer $17,000 in credit-card debt. Why did Wells Fargo offer me only a $4,000 credit limit?",
+      "url": "https://www.marketwatch.com/story/i-wanted-to-transfer-17-000-in-credit-card-debt-why-did-wells-fargo-offer-me-only-a-4-000-credit-limit-7ad0a3f0?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 14:31:00",
+      "published": "Fri, 24 Jul 2026 16:22:00",
       "source": "MarketWatch",
-      "title": "I am a 63-year-old semiretired physician. If I saved $2 million for retirement, should my Social Security become optional?",
-      "url": "https://www.marketwatch.com/story/i-am-a-63-year-old-semiretired-physician-if-you-have-saved-2-million-for-retirement-should-social-security-be-optional-0de70d53?mod=mw_rss_topstories"
+      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
+      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 14:25:00",
+      "published": "Fri, 24 Jul 2026 16:21:00",
       "source": "MarketWatch",
-      "title": "I lost my job, my emergency fund is running out and now I have to move back in with my parents. What did I do wrong?",
-      "url": "https://www.marketwatch.com/story/i-lost-my-job-my-emergency-fund-is-running-out-and-now-i-have-to-move-back-in-with-my-parents-what-did-i-do-wrong-cf1c0f9f?mod=mw_rss_topstories"
+      "title": "Still waiting for the free $1,000 to hit your child\u2019s \u2018Trump account\u2019? Here\u2019s what to know.",
+      "url": "https://www.marketwatch.com/story/still-waiting-for-the-free-1-000-to-hit-your-trump-account-heres-what-to-know-acc5c789?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 14:15:00",
+      "published": "Fri, 24 Jul 2026 16:20:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m still confused\u2019: I sold $80,000 in shares on June 30, so why didn\u2019t I receive my dividend?",
-      "url": "https://www.marketwatch.com/story/im-still-confused-i-sold-80-000-in-shares-on-june-30-so-why-didnt-i-receive-my-dividend-d066016c?mod=mw_rss_topstories"
+      "title": "Are 7% mortgage rates next? The Treasury market is flashing a warning sign for home buyers.",
+      "url": "https://www.marketwatch.com/story/the-treasury-market-is-flashing-a-warning-sign-for-home-buyers-are-7-mortgage-rates-next-58b5b3b1?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 14:10:00",
+      "published": "Fri, 24 Jul 2026 16:10:00",
       "source": "MarketWatch",
-      "title": "Intel earnings show just how dramatically the company has come back from being \u2018near-dead\u2019",
-      "url": "https://www.marketwatch.com/story/intel-earnings-show-just-how-dramatically-the-company-has-come-back-from-being-near-dead-37f81c38?mod=mw_rss_topstories"
+      "title": "Why there are still more Trump tariffs expected \u2014 even after this past week\u2019s rollouts",
+      "url": "https://www.marketwatch.com/story/why-there-are-still-more-trump-tariffs-expected-even-after-this-past-weeks-rollouts-86b623f6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.17
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
