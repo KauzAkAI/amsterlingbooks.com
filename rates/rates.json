@@ -135,7 +135,7 @@
       "rate": 17.4569
     }
   },
-  "generated_at": "2026-07-27T15:48:22+00:00",
+  "generated_at": "2026-07-27T17:27:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.55
       },
       {
-        "date": "2026-07-17",
-        "rate": 6.63
-      },
-      {
         "date": "2026-07-20",
         "rate": 6.71
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-24",
         "rate": 6.81
+      },
+      {
+        "date": "2026-07-27",
+        "rate": 6.8
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Mon, 27 Jul 2026 15:42:00",
+      "published": "Mon, 27 Jul 2026 17:09:00",
       "source": "MarketWatch",
-      "title": "Your retirement math may have a surprising flaw",
-      "url": "https://www.marketwatch.com/story/your-retirement-math-may-have-a-surprising-flaw-2d8f58d8?mod=mw_rss_topstories"
+      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
+      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 27 Jul 2026 15:28:00",
+      "published": "Mon, 27 Jul 2026 16:48:00",
       "source": "MarketWatch",
-      "title": "Should you get paid to care for a family member?",
-      "url": "https://www.marketwatch.com/story/should-you-get-paid-to-care-for-a-family-member-70958828?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 15:22:00",
-      "source": "MarketWatch",
-      "title": "The AI boom shows no sign of slowing \u2014 and the U.S. economy is reaping the benefits",
-      "url": "https://www.marketwatch.com/story/the-ai-boom-shows-no-sign-of-slowing-and-the-u-s-economy-is-reaping-the-benefits-1728c4e5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 15:09:00",
-      "source": "MarketWatch",
-      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
-      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 15:08:00",
-      "source": "MarketWatch",
-      "title": "This small-cap stock strategy shines by riding the beat-and-raise trend",
+      "title": "This small-cap fund is built to win the earnings-report games companies play",
       "url": "https://www.marketwatch.com/story/this-small-cap-stock-strategy-shines-by-riding-the-beat-and-raise-trend-24bee883?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 16:36:00",
+      "source": "MarketWatch",
+      "title": "SpaceX\u2019s stock falls to a new low despite a near-flawless Starship flight",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-falls-to-a-new-low-despite-a-near-flawless-starship-flight-034a99ab?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 16:33:00",
+      "source": "MarketWatch",
+      "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
+      "url": "https://www.marketwatch.com/story/i-feel-lucky-im-71-and-inherited-20-000-what-should-i-do-with-this-money-1ab90925?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 16:31:00",
+      "source": "MarketWatch",
+      "title": "He brought AI to Wall Street in 1994 \u2014 but won\u2019t trust ChatGPT with his money",
+      "url": "https://www.marketwatch.com/story/he-brought-ai-to-wall-street-in-1994-but-wont-trust-chatgpt-with-his-money-b8abc031?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 24 2026",
-      "change": 0.05,
-      "rate": 6.34
+      "asof_label": "Jul 27 2026",
+      "change": -0.01,
+      "rate": 6.33
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 24 2026",
-      "change": -0.04,
+      "asof_label": "Jul 27 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
