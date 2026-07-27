@@ -135,7 +135,7 @@
       "rate": 17.4569
     }
   },
-  "generated_at": "2026-07-27T18:58:39+00:00",
+  "generated_at": "2026-07-27T20:40:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
+      "published": "Mon, 27 Jul 2026 20:33:00",
+      "source": "MarketWatch",
+      "title": "Micron and other chip stocks fall as China steals the spotlight",
+      "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-fall-as-china-steals-the-spotlight-cff9d73c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 20:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m still confused\u2019: I sold $80,000 in shares on June 30, so why didn\u2019t I receive my dividend?",
+      "url": "https://www.marketwatch.com/story/im-still-confused-i-sold-80-000-in-shares-on-june-30-so-why-didnt-i-receive-my-dividend-d066016c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 20:12:00",
+      "source": "MarketWatch",
+      "title": "Apple reclaims title of world\u2019s largest company after historic stretch of outperformance",
+      "url": "https://www.marketwatch.com/story/apple-reclaims-title-of-worlds-largest-company-after-historic-stretch-of-outperformance-92920ab6?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 19:06:00",
+      "source": "MarketWatch",
+      "title": "\u2018I know what he wants to do,\u2019 Trump says of Fed\u2019s Warsh, as president presses for rate cuts",
+      "url": "https://www.marketwatch.com/story/i-know-what-he-wants-to-do-trump-says-of-feds-warsh-as-president-presses-for-rate-cuts-edaa115e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 27 Jul 2026 18:30:00",
       "source": "MarketWatch",
       "title": "\u2018We are not romantically involved\u2019: I\u2019m marrying my platonic best friend of 20 years. Should I leave him my home?",
       "url": "https://www.marketwatch.com/story/we-are-not-romantically-involved-im-marrying-my-platonic-best-friend-of-20-years-should-i-leave-him-my-home-3faa0a77?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 18:00:00",
-      "source": "MarketWatch",
-      "title": "I am a 63-year-old semiretired physician. If I saved $2 million for retirement, should my Social Security become optional?",
-      "url": "https://www.marketwatch.com/story/i-am-a-63-year-old-semiretired-physician-if-you-have-saved-2-million-for-retirement-should-social-security-be-optional-0de70d53?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 17:56:00",
-      "source": "MarketWatch",
-      "title": "Should you get paid to care for a family member?",
-      "url": "https://www.marketwatch.com/story/should-you-get-paid-to-care-for-a-family-member-70958828?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 17:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018It\u2019s a high price to pay\u2019: My adviser says I don\u2019t need a withdrawal plan for my $2.3 million portfolio. Is he right?",
-      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 17:25:00",
-      "source": "MarketWatch",
-      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
-      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,7 +402,7 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.08
+      "yield": 4.1
     },
     {
       "tenor": "1Y",
@@ -410,28 +410,30 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.33
+      "yield": 4.31
     },
     {
       "tenor": "5Y",
-      "yield": 4.43
+      "yield": 4.4
     },
     {
       "tenor": "7Y",
-      "yield": 4.55
+      "yield": 4.52
     },
     {
       "tenor": "10Y",
-      "yield": 4.69
+      "yield": 4.65
     },
     {
       "tenor": "20Y",
-      "yield": 5.18
+      "yield": 5.15
     },
     {
       "tenor": "30Y",
-      "yield": 5.16
+      "yield": 5.12
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
