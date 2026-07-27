@@ -135,7 +135,7 @@
       "rate": 17.4569
     }
   },
-  "generated_at": "2026-07-27T21:48:57+00:00",
+  "generated_at": "2026-07-27T22:50:55+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
+      "published": "Mon, 27 Jul 2026 22:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
+      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 27 Jul 2026 22:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s a high price to pay\u2019: My adviser says I don\u2019t need a withdrawal plan for my $2.3 million portfolio. Is he right?",
+      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 27 Jul 2026 21:46:00",
       "source": "MarketWatch",
       "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Stop snacking. Restricting eating for only 8 or 9 hours a day may keep your mind sharp.",
       "url": "https://www.marketwatch.com/story/stop-snacking-restricting-eating-for-only-8-or-9-hours-a-day-may-keep-your-mind-sharp-1dc7e495?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 21:35:00",
-      "source": "MarketWatch",
-      "title": "More cracks emerge in AI-related bonds as Meta, Microsoft earnings loom",
-      "url": "https://www.marketwatch.com/story/more-cracks-emerge-in-ai-related-bonds-as-meta-microsoft-earnings-loom-04275db2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 27 Jul 2026 21:03:00",
-      "source": "MarketWatch",
-      "title": "Big Tech is forcing consumers to pay for its AI boom. Voters are pushing back.",
-      "url": "https://www.marketwatch.com/story/is-your-ai-data-center-stock-vulnerable-to-voter-backlash-use-this-5-part-test-to-find-out-36f039fa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
