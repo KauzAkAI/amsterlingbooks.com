@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4086
+      "rate": 1.4105
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7722
+      "rate": 6.7661
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87897
+      "rate": 0.87804
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75053
+      "rate": 0.75094
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.56
+      "rate": 95.92
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 163.82
+      "rate": 163.64
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1461.0
+      "rate": 1470.11
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4803
+      "rate": 17.4569
     }
   },
-  "generated_at": "2026-07-24T23:28:49+00:00",
+  "generated_at": "2026-07-27T15:48:22+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 27 Jul 2026 14:22:15",
+      "source": "CNBC",
+      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
+      "url": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html"
+    },
+    {
       "published": "Fri, 24 Jul 2026 12:09:09",
       "source": "CNBC",
       "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Wed, 15 Jul 2026 21:53:10",
-      "source": "CNBC",
-      "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
-      "url": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html"
+      "published": "Mon, 27 Jul 2026 15:42:00",
+      "source": "MarketWatch",
+      "title": "Your retirement math may have a surprising flaw",
+      "url": "https://www.marketwatch.com/story/your-retirement-math-may-have-a-surprising-flaw-2d8f58d8?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 22:30:00",
+      "published": "Mon, 27 Jul 2026 15:28:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s nothing personal\u2019: Should I tell my 96-year-old stepmother that I don\u2019t want her inheritance?",
-      "url": "https://www.marketwatch.com/story/it-would-feel-like-a-burden-my-stepmother-96-owns-the-house-i-grew-up-in-is-it-wrong-to-tell-her-i-dont-want-to-inherit-it-9d5810c2?mod=mw_rss_topstories"
+      "title": "Should you get paid to care for a family member?",
+      "url": "https://www.marketwatch.com/story/should-you-get-paid-to-care-for-a-family-member-70958828?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 22:00:00",
+      "published": "Mon, 27 Jul 2026 15:22:00",
       "source": "MarketWatch",
-      "title": "\u2018We are not romantically involved\u2019: I\u2019m marrying my platonic best friend of 20 years. Should I leave him my home?",
-      "url": "https://www.marketwatch.com/story/we-are-not-romantically-involved-im-marrying-my-platonic-best-friend-of-20-years-should-i-leave-him-my-home-3faa0a77?mod=mw_rss_topstories"
+      "title": "The AI boom shows no sign of slowing \u2014 and the U.S. economy is reaping the benefits",
+      "url": "https://www.marketwatch.com/story/the-ai-boom-shows-no-sign-of-slowing-and-the-u-s-economy-is-reaping-the-benefits-1728c4e5?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 21:48:00",
+      "published": "Mon, 27 Jul 2026 15:09:00",
       "source": "MarketWatch",
-      "title": "Would you take $65,000 today, or flip a coin for a chance to win $1.3 million?",
-      "url": "https://www.marketwatch.com/story/would-you-take-65-000-today-or-flip-a-coin-for-a-chance-to-win-1-3-million-d134961a?mod=mw_rss_topstories"
+      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
+      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 24 Jul 2026 21:45:00",
+      "published": "Mon, 27 Jul 2026 15:08:00",
       "source": "MarketWatch",
-      "title": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
-      "url": "https://www.marketwatch.com/story/i-will-claim-social-security-early-why-do-so-few-people-talk-about-the-elephant-in-the-room-64820675?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 24 Jul 2026 21:38:00",
-      "source": "MarketWatch",
-      "title": "The stock market is completely unprepared for a 6% yield on the 30-year Treasury",
-      "url": "https://www.marketwatch.com/story/the-30-year-treasury-yield-is-closing-in-on-5-2-a-surge-to-6-could-slam-stocks-fa9631fb?mod=mw_rss_topstories"
+      "title": "This small-cap stock strategy shines by riding the beat-and-raise trend",
+      "url": "https://www.marketwatch.com/story/this-small-cap-stock-strategy-shines-by-riding-the-beat-and-raise-trend-24bee883?mod=mw_rss_topstories"
     }
   ],
   "rates": {
