@@ -135,7 +135,7 @@
       "rate": 17.4742
     }
   },
-  "generated_at": "2026-07-28T18:40:40+00:00",
+  "generated_at": "2026-07-28T20:07:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Tue, 28 Jul 2026 18:26:00",
+      "published": "Tue, 28 Jul 2026 19:56:00",
+      "source": "MarketWatch",
+      "title": "It\u2019s getting easier for terminally ill people to end their own lives. What to know as laws change.",
+      "url": "https://www.marketwatch.com/story/its-getting-easier-for-terminally-ill-people-to-end-their-own-lives-what-to-know-as-laws-change-4fa04c54?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 19:46:00",
+      "source": "MarketWatch",
+      "title": "Why Palantir\u2019s stock is missing out on a big software rally",
+      "url": "https://www.marketwatch.com/story/why-palantirs-stock-is-missing-out-on-a-big-software-rally-08acc5bf?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 19:31:00",
+      "source": "MarketWatch",
+      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
+      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 19:20:00",
       "source": "MarketWatch",
       "title": "The U.S. will import Mexican cattle again. Here\u2019s what that means for high beef prices.",
       "url": "https://www.marketwatch.com/story/the-u-s-will-import-mexican-cattle-again-heres-what-that-means-for-high-beef-prices-2c1e275e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 28 Jul 2026 18:15:00",
+      "published": "Tue, 28 Jul 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "My financial adviser is against a withdrawal plan for my $2.3 million portfolio. Is he making a mistake?",
-      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 18:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
-      "url": "https://www.marketwatch.com/story/i-feel-lucky-im-71-and-inherited-20-000-what-should-i-do-with-this-money-1ab90925?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 17:45:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m in my peak earning years\u2019: I\u2019m working beyond 70. Will that help increase my Social Security?",
-      "url": "https://www.marketwatch.com/story/im-in-my-peak-earning-years-im-working-beyond-70-will-that-help-increase-my-social-security-b0fd84da?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 17:30:00",
-      "source": "MarketWatch",
-      "title": "Alphabet and Tesla took a hit from soaring AI spending. Will Microsoft, Meta and Amazon be next?",
-      "url": "https://www.marketwatch.com/story/alphabet-and-tesla-took-a-hit-from-soaring-ai-spending-will-microsoft-meta-and-amazon-be-next-80ecb30b?mod=mw_rss_topstories"
+      "title": "\u2018She is on Medicaid\u2019: My sick friend pleaded with me to be her executor. Can I decline after she dies?",
+      "url": "https://www.marketwatch.com/story/she-is-on-medicaid-my-sick-friend-pleaded-with-me-to-be-her-executor-can-i-decline-after-she-dies-135129d3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.8
+      "yield": 3.76
     },
     {
       "tenor": "3M",
-      "yield": 3.96
+      "yield": 3.9
     },
     {
       "tenor": "6M",
-      "yield": 4.1
+      "yield": 4.07
     },
     {
       "tenor": "1Y",
-      "yield": 4.14
+      "yield": 4.09
     },
     {
       "tenor": "2Y",
-      "yield": 4.31
+      "yield": 4.26
     },
     {
       "tenor": "5Y",
-      "yield": 4.4
+      "yield": 4.35
     },
     {
       "tenor": "7Y",
-      "yield": 4.52
+      "yield": 4.47
     },
     {
       "tenor": "10Y",
-      "yield": 4.65
+      "yield": 4.61
     },
     {
       "tenor": "20Y",
-      "yield": 5.15
+      "yield": 5.11
     },
     {
       "tenor": "30Y",
-      "yield": 5.12
+      "yield": 5.09
     }
   ],
   "warnings": []
