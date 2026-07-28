@@ -135,7 +135,7 @@
       "rate": 17.4742
     }
   },
-  "generated_at": "2026-07-28T15:26:39+00:00",
+  "generated_at": "2026-07-28T17:03:03+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Tue, 28 Jul 2026 15:17:00",
+      "published": "Tue, 28 Jul 2026 16:54:00",
       "source": "MarketWatch",
-      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
-      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
+      "title": "Roth IRA conversions as early as your 20s and 30s? It\u2019s not a crazy idea.",
+      "url": "https://www.marketwatch.com/story/roth-conversions-as-early-as-your-20s-and-30s-its-not-a-crazy-idea-1f028e24?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 28 Jul 2026 15:17:00",
+      "published": "Tue, 28 Jul 2026 16:52:00",
       "source": "MarketWatch",
-      "title": "Oil prices decline further after Trump claims \u2018deep talks\u2019 with Iran are under way",
-      "url": "https://www.marketwatch.com/story/oil-prices-decline-further-after-trump-claims-deep-talks-are-underway-with-iran-167a5393?mod=mw_rss_topstories"
+      "title": "Alphabet and Tesla took a hit from soaring AI spending. Will Microsoft, Meta and Amazon be next?",
+      "url": "https://www.marketwatch.com/story/alphabet-and-tesla-took-a-hit-from-soaring-ai-spending-will-microsoft-meta-and-amazon-be-next-80ecb30b?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 28 Jul 2026 14:59:00",
+      "published": "Tue, 28 Jul 2026 16:41:00",
       "source": "MarketWatch",
-      "title": "Tech fund manager says the market is misreading Alphabet\u2019s second-quarter earnings",
-      "url": "https://www.marketwatch.com/story/tech-fund-manager-says-the-market-is-misreading-second-quarter-earnings-9823461b?mod=mw_rss_topstories"
+      "title": "Forget oil. A surging El Ni\u00f1o could kill Fed rate cuts \u2014 and these stocks stand to win.",
+      "url": "https://www.marketwatch.com/story/forget-oil-a-surging-el-nino-could-kill-fed-rate-cuts-and-these-stocks-stand-to-win-41f8e67f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 28 Jul 2026 14:47:00",
-      "source": "MarketWatch",
-      "title": "PayPal delivers an earnings beat \u2014 and suggests it\u2019s not against a merger deal",
-      "url": "https://www.marketwatch.com/story/paypal-delivers-an-earnings-beat-as-investors-await-updates-on-possible-merger-105930b7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 14:30:00",
+      "published": "Tue, 28 Jul 2026 16:39:00",
       "source": "MarketWatch",
       "title": "The Fed isn\u2019t your biggest worry. The central-bank decision that actually impacts your 401(k) lands in Tokyo.",
       "url": "https://www.marketwatch.com/story/the-fed-isnt-your-biggest-worry-the-central-bank-decision-that-actually-impacts-your-401-k-lands-in-tokyo-fc9d22c8?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 16:30:00",
+      "source": "MarketWatch",
+      "title": "Software stocks are rising, and these 6 are expected to withstand the AI threat",
+      "url": "https://www.marketwatch.com/story/software-stocks-are-rising-and-these-6-are-expected-to-withstand-the-ai-threat-1ce47e99?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,5 +433,7 @@
       "yield": 5.12
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
+  ]
 }
