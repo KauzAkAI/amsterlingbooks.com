@@ -135,7 +135,7 @@
       "rate": 17.4742
     }
   },
-  "generated_at": "2026-07-28T17:03:03+00:00",
+  "generated_at": "2026-07-28T18:40:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.55
       },
       {
-        "date": "2026-07-20",
-        "rate": 6.71
-      },
-      {
         "date": "2026-07-21",
         "rate": 6.75
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-27",
         "rate": 6.8
+      },
+      {
+        "date": "2026-07-28",
+        "rate": 6.76
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Tue, 28 Jul 2026 16:54:00",
+      "published": "Tue, 28 Jul 2026 18:26:00",
       "source": "MarketWatch",
-      "title": "Roth IRA conversions as early as your 20s and 30s? It\u2019s not a crazy idea.",
-      "url": "https://www.marketwatch.com/story/roth-conversions-as-early-as-your-20s-and-30s-its-not-a-crazy-idea-1f028e24?mod=mw_rss_topstories"
+      "title": "The U.S. will import Mexican cattle again. Here\u2019s what that means for high beef prices.",
+      "url": "https://www.marketwatch.com/story/the-u-s-will-import-mexican-cattle-again-heres-what-that-means-for-high-beef-prices-2c1e275e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 28 Jul 2026 16:52:00",
+      "published": "Tue, 28 Jul 2026 18:15:00",
+      "source": "MarketWatch",
+      "title": "My financial adviser is against a withdrawal plan for my $2.3 million portfolio. Is he making a mistake?",
+      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 18:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
+      "url": "https://www.marketwatch.com/story/i-feel-lucky-im-71-and-inherited-20-000-what-should-i-do-with-this-money-1ab90925?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 17:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m in my peak earning years\u2019: I\u2019m working beyond 70. Will that help increase my Social Security?",
+      "url": "https://www.marketwatch.com/story/im-in-my-peak-earning-years-im-working-beyond-70-will-that-help-increase-my-social-security-b0fd84da?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 28 Jul 2026 17:30:00",
       "source": "MarketWatch",
       "title": "Alphabet and Tesla took a hit from soaring AI spending. Will Microsoft, Meta and Amazon be next?",
       "url": "https://www.marketwatch.com/story/alphabet-and-tesla-took-a-hit-from-soaring-ai-spending-will-microsoft-meta-and-amazon-be-next-80ecb30b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 16:41:00",
-      "source": "MarketWatch",
-      "title": "Forget oil. A surging El Ni\u00f1o could kill Fed rate cuts \u2014 and these stocks stand to win.",
-      "url": "https://www.marketwatch.com/story/forget-oil-a-surging-el-nino-could-kill-fed-rate-cuts-and-these-stocks-stand-to-win-41f8e67f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 16:39:00",
-      "source": "MarketWatch",
-      "title": "The Fed isn\u2019t your biggest worry. The central-bank decision that actually impacts your 401(k) lands in Tokyo.",
-      "url": "https://www.marketwatch.com/story/the-fed-isnt-your-biggest-worry-the-central-bank-decision-that-actually-impacts-your-401-k-lands-in-tokyo-fc9d22c8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 28 Jul 2026 16:30:00",
-      "source": "MarketWatch",
-      "title": "Software stocks are rising, and these 6 are expected to withstand the AI threat",
-      "url": "https://www.marketwatch.com/story/software-stocks-are-rising-and-these-6-are-expected-to-withstand-the-ai-threat-1ce47e99?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 27 2026",
-      "change": -0.01,
-      "rate": 6.33
+      "asof_label": "Jul 28 2026",
+      "change": -0.02,
+      "rate": 6.31
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 27 2026",
-      "change": -0.01,
+      "asof_label": "Jul 28 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
@@ -433,7 +433,5 @@
       "yield": 5.12
     }
   ],
-  "warnings": [
-    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
-  ]
+  "warnings": []
 }
