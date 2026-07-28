@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4105
+      "rate": 1.4108
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7661
+      "rate": 6.7713
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87804
+      "rate": 0.87974
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75094
+      "rate": 0.75262
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.92
+      "rate": 95.86
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 163.64
+      "rate": 163.91
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1470.11
+      "rate": 1459.45
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4569
+      "rate": 17.4742
     }
   },
-  "generated_at": "2026-07-27T23:58:27+00:00",
+  "generated_at": "2026-07-28T15:26:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Mon, 27 Jul 2026 22:30:00",
+      "published": "Tue, 28 Jul 2026 15:17:00",
       "source": "MarketWatch",
-      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
-      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
+      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
+      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 27 Jul 2026 22:00:00",
+      "published": "Tue, 28 Jul 2026 15:17:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s a high price to pay\u2019: My adviser says I don\u2019t need a withdrawal plan for my $2.3 million portfolio. Is he right?",
-      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
+      "title": "Oil prices decline further after Trump claims \u2018deep talks\u2019 with Iran are under way",
+      "url": "https://www.marketwatch.com/story/oil-prices-decline-further-after-trump-claims-deep-talks-are-underway-with-iran-167a5393?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 27 Jul 2026 21:46:00",
+      "published": "Tue, 28 Jul 2026 14:59:00",
       "source": "MarketWatch",
-      "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
-      "url": "https://www.marketwatch.com/story/i-feel-lucky-im-71-and-inherited-20-000-what-should-i-do-with-this-money-1ab90925?mod=mw_rss_topstories"
+      "title": "Tech fund manager says the market is misreading Alphabet\u2019s second-quarter earnings",
+      "url": "https://www.marketwatch.com/story/tech-fund-manager-says-the-market-is-misreading-second-quarter-earnings-9823461b?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 27 Jul 2026 21:46:00",
+      "published": "Tue, 28 Jul 2026 14:47:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s potential new deal with OpenAI would revive a spooky tech-bubble habit, analyst warns",
-      "url": "https://www.marketwatch.com/story/nvidias-potential-new-deal-with-openai-would-revive-a-spooky-tech-bubble-habit-analyst-warns-ae34ed64?mod=mw_rss_topstories"
+      "title": "PayPal delivers an earnings beat \u2014 and suggests it\u2019s not against a merger deal",
+      "url": "https://www.marketwatch.com/story/paypal-delivers-an-earnings-beat-as-investors-await-updates-on-possible-merger-105930b7?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 27 Jul 2026 21:37:00",
+      "published": "Tue, 28 Jul 2026 14:30:00",
       "source": "MarketWatch",
-      "title": "Stop snacking. Restricting eating for only 8 or 9 hours a day may keep your mind sharp.",
-      "url": "https://www.marketwatch.com/story/stop-snacking-restricting-eating-for-only-8-or-9-hours-a-day-may-keep-your-mind-sharp-1dc7e495?mod=mw_rss_topstories"
+      "title": "The Fed isn\u2019t your biggest worry. The central-bank decision that actually impacts your 401(k) lands in Tokyo.",
+      "url": "https://www.marketwatch.com/story/the-fed-isnt-your-biggest-worry-the-central-bank-decision-that-actually-impacts-your-401-k-lands-in-tokyo-fc9d22c8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
