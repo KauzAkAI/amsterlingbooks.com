@@ -135,7 +135,7 @@
       "rate": 17.4755
     }
   },
-  "generated_at": "2026-07-29T15:12:22+00:00",
+  "generated_at": "2026-07-29T16:40:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.55
       },
       {
-        "date": "2026-07-21",
-        "rate": 6.75
-      },
-      {
         "date": "2026-07-22",
         "rate": 6.77
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-28",
         "rate": 6.76
+      },
+      {
+        "date": "2026-07-29",
+        "rate": 6.78
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Wed, 29 Jul 2026 15:07:00",
+      "published": "Wed, 29 Jul 2026 16:36:00",
       "source": "MarketWatch",
-      "title": "I got an unexpected $1,000 medical bill. Here\u2019s why I\u2019m not paying it yet.",
-      "url": "https://www.marketwatch.com/story/i-got-an-unexpected-1-000-medical-bill-heres-why-im-not-paying-it-yet-67265caf?mod=mw_rss_topstories"
+      "title": "Global oil prices top $88 a barrel after Trump vows retaliation for surprise Iranian attack on U.S. troops",
+      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-u-s-and-saudi-arabia-attack-iran-backed-militias-in-iraq-f0f409ea?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 15:00:00",
+      "published": "Wed, 29 Jul 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "\u2018We already have wills\u2019: We\u2019re in our 60s with $1.5 million. Should we set up a trust to prevent conflict among our heirs?",
-      "url": "https://www.marketwatch.com/story/we-already-have-wills-were-in-our-60s-with-1-5-million-how-do-we-prevent-family-drama-among-our-heirs-bf7b0eb1?mod=mw_rss_topstories"
+      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
+      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 14:31:00",
+      "published": "Wed, 29 Jul 2026 16:03:00",
       "source": "MarketWatch",
-      "title": "Medicare is about to change a drug program that held down the cost of premiums. Here\u2019s what to know.",
-      "url": "https://www.marketwatch.com/story/medicare-is-about-to-change-a-program-that-held-down-the-cost-of-premiums-heres-what-to-know-42c0612e?mod=mw_rss_topstories"
+      "title": "A key cryptocurrency bill could flop because of Trump\u2019s crypto ventures and banks\u2019 objections",
+      "url": "https://www.marketwatch.com/story/a-key-cryptocurrency-bill-could-flop-because-of-trumps-crypto-ventures-and-banks-objections-76b7445b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 14:27:00",
+      "published": "Wed, 29 Jul 2026 15:45:00",
       "source": "MarketWatch",
-      "title": "My girlfriend is 62. Can she claim her late husband\u2019s full Social Security benefit \u2014 or does she have to wait?",
-      "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories"
+      "title": "Las Vegas home prices post largest drop in the nation",
+      "url": "https://www.marketwatch.com/story/las-vegas-home-prices-post-largest-drop-in-the-nation-d39d6ecd?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 14:20:00",
+      "published": "Wed, 29 Jul 2026 15:31:00",
       "source": "MarketWatch",
-      "title": "This country is buying up the most homes in America right now, even as international sales dry up",
-      "url": "https://www.marketwatch.com/story/this-country-is-buying-up-the-most-homes-in-america-right-now-even-as-international-sales-dry-up-c8b2afbb?mod=mw_rss_topstories"
+      "title": "\u2018She is on Medicaid\u2019: My sick friend pleaded with me to be her executor. Can I decline after she dies?",
+      "url": "https://www.marketwatch.com/story/she-is-on-medicaid-my-sick-friend-pleaded-with-me-to-be-her-executor-can-i-decline-after-she-dies-135129d3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 28 2026",
-      "change": -0.02,
-      "rate": 6.31
+      "asof_label": "Jul 29 2026",
+      "change": 0.01,
+      "rate": 6.32
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 28 2026",
-      "change": -0.04,
+      "asof_label": "Jul 29 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
@@ -433,5 +433,7 @@
       "yield": 5.09
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
