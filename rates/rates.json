@@ -135,7 +135,7 @@
       "rate": 17.4755
     }
   },
-  "generated_at": "2026-07-29T22:37:00+00:00",
+  "generated_at": "2026-07-29T23:41:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 29 Jul 2026 23:36:34",
+      "source": "CNBC",
+      "title": "What a divided Fed means for investors",
+      "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
+    },
+    {
       "published": "Mon, 27 Jul 2026 14:22:15",
       "source": "CNBC",
       "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
@@ -315,10 +321,16 @@
       "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html"
     },
     {
-      "published": "Fri, 17 Jul 2026 14:13:49",
-      "source": "CNBC",
-      "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
-      "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
+      "published": "Wed, 29 Jul 2026 23:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m in my peak earning years\u2019: I\u2019m working beyond 70. Will that help increase my Social Security?",
+      "url": "https://www.marketwatch.com/story/im-in-my-peak-earning-years-im-working-beyond-70-will-that-help-increase-my-social-security-b0fd84da?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 29 Jul 2026 22:44:00",
+      "source": "MarketWatch",
+      "title": "Why the USO oil ETF is a better buy than crude futures as the Iran war rages",
+      "url": "https://www.marketwatch.com/story/why-the-uso-oil-etf-is-a-better-buy-than-crude-futures-as-the-iran-war-rages-85d1ebe0?mod=mw_rss_topstories"
     },
     {
       "published": "Wed, 29 Jul 2026 22:30:00",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "My girlfriend is 62. Can she claim her late husband\u2019s full Social Security benefit \u2014 or does she have to wait?",
       "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 29 Jul 2026 21:56:00",
-      "source": "MarketWatch",
-      "title": "Stocks and bonds see wild \u2018Fed Day\u2019 swings as Wall Street\u2019s \u2018crash cushion\u2019 evaporates",
-      "url": "https://www.marketwatch.com/story/stocks-and-bonds-see-wild-fed-day-swings-as-wall-streets-crash-cushion-evaporates-ffcbdbbc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 29 Jul 2026 21:43:00",
-      "source": "MarketWatch",
-      "title": "Bond market is calling Warsh\u2019s bluff on inflation fight as yields surge",
-      "url": "https://www.marketwatch.com/story/bond-market-is-calling-warshs-bluff-on-inflation-fight-as-yields-surge-4700f9b5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
