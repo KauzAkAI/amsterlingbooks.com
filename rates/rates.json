@@ -135,7 +135,7 @@
       "rate": 17.4755
     }
   },
-  "generated_at": "2026-07-29T16:40:10+00:00",
+  "generated_at": "2026-07-29T17:57:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html"
     },
     {
-      "published": "Wed, 29 Jul 2026 16:36:00",
+      "published": "Wed, 29 Jul 2026 17:40:00",
       "source": "MarketWatch",
-      "title": "Global oil prices top $88 a barrel after Trump vows retaliation for surprise Iranian attack on U.S. troops",
-      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-u-s-and-saudi-arabia-attack-iran-backed-militias-in-iraq-f0f409ea?mod=mw_rss_topstories"
+      "title": "Individual investors are dumping stocks at the fastest pace since the COVID crash",
+      "url": "https://www.marketwatch.com/story/individual-investors-are-dumping-stocks-at-the-fastest-pace-since-the-covid-crash-42b46756?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 16:30:00",
+      "published": "Wed, 29 Jul 2026 17:18:00",
       "source": "MarketWatch",
-      "title": "\u2018Time will tell whether that was a good bet\u2019: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
-      "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories"
+      "title": "I\u2019ve seen families destroyed by this common estate-planning mistake. Here\u2019s how to protect yours.",
+      "url": "https://www.marketwatch.com/story/ive-seen-families-destroyed-by-this-common-estate-planning-mistake-heres-how-to-protect-yours-4f997564?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 16:03:00",
+      "published": "Wed, 29 Jul 2026 17:18:00",
       "source": "MarketWatch",
-      "title": "A key cryptocurrency bill could flop because of Trump\u2019s crypto ventures and banks\u2019 objections",
-      "url": "https://www.marketwatch.com/story/a-key-cryptocurrency-bill-could-flop-because-of-trumps-crypto-ventures-and-banks-objections-76b7445b?mod=mw_rss_topstories"
+      "title": "Why SoFi\u2019s stock is dropping, even after its earnings beat expectations",
+      "url": "https://www.marketwatch.com/story/why-sofis-stock-is-dropping-even-after-its-earnings-beat-expectations-ecc442eb?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 15:45:00",
+      "published": "Wed, 29 Jul 2026 17:12:00",
       "source": "MarketWatch",
-      "title": "Las Vegas home prices post largest drop in the nation",
-      "url": "https://www.marketwatch.com/story/las-vegas-home-prices-post-largest-drop-in-the-nation-d39d6ecd?mod=mw_rss_topstories"
+      "title": "The dollar\u2019s rally matters \u2014 but it still won\u2019t help Fed\u2019s Warsh win the inflation fight",
+      "url": "https://www.marketwatch.com/story/the-dollars-rally-matters-but-it-still-wont-help-feds-warsh-win-the-inflation-fight-ce278d40?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 15:31:00",
+      "published": "Wed, 29 Jul 2026 17:01:00",
       "source": "MarketWatch",
-      "title": "\u2018She is on Medicaid\u2019: My sick friend pleaded with me to be her executor. Can I decline after she dies?",
-      "url": "https://www.marketwatch.com/story/she-is-on-medicaid-my-sick-friend-pleaded-with-me-to-be-her-executor-can-i-decline-after-she-dies-135129d3?mod=mw_rss_topstories"
+      "title": "My girlfriend is 62. Can she claim her late husband\u2019s full Social Security benefit \u2014 or does she have to wait?",
+      "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.09
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
