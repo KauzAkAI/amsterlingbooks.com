@@ -135,7 +135,7 @@
       "rate": 17.4001
     }
   },
-  "generated_at": "2026-07-30T15:17:17+00:00",
+  "generated_at": "2026-07-30T16:55:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.58
       },
       {
-        "date": "2026-07-09",
-        "rate": 6.49
-      },
-      {
         "date": "2026-07-15",
         "rate": 6.65
       },
       {
         "date": "2026-07-16",
         "rate": 6.55
-      },
-      {
-        "date": "2026-07-22",
-        "rate": 6.77
       },
       {
         "date": "2026-07-22",
@@ -227,6 +219,14 @@
       {
         "date": "2026-07-29",
         "rate": 6.78
+      },
+      {
+        "date": "2026-07-30",
+        "rate": 6.77
+      },
+      {
+        "date": "2026-07-30",
+        "rate": 6.66
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
     },
     {
-      "published": "Thu, 30 Jul 2026 14:40:00",
+      "published": "Thu, 30 Jul 2026 16:45:00",
       "source": "MarketWatch",
-      "title": "Americans are spending plenty \u2014 but they\u2019re saving much less",
-      "url": "https://www.marketwatch.com/story/americans-are-spending-plenty-but-theyre-saving-much-less-ffb995d2?mod=mw_rss_topstories"
+      "title": "A break below this critical stock-market threshold used to signal panic for investors. Not anymore.",
+      "url": "https://www.marketwatch.com/story/why-you-shouldnt-worry-about-the-stock-markets-break-below-its-50-day-moving-average-4dfab87a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 14:16:00",
+      "published": "Thu, 30 Jul 2026 16:20:00",
       "source": "MarketWatch",
-      "title": "People from this country are buying up the most homes in America right now, even as international sales dry up",
-      "url": "https://www.marketwatch.com/story/this-country-is-buying-up-the-most-homes-in-america-right-now-even-as-international-sales-dry-up-c8b2afbb?mod=mw_rss_topstories"
+      "title": "Mortgage rates jump to their highest level in a year and show few signs of falling",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-jump-to-their-highest-level-in-a-year-and-show-few-signs-of-falling-4d485df0?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 14:15:00",
+      "published": "Thu, 30 Jul 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "\u2018Don\u2019t get suckered like I did\u2019: I paid $185 to the wrong passport website. Can I get my money back?",
-      "url": "https://www.marketwatch.com/story/dont-get-suckered-like-i-did-i-paid-185-to-the-wrong-passport-website-can-i-get-my-money-back-3a781412?mod=mw_rss_topstories"
+      "title": "My friend and her husband own real estate. How can her children from a previous marriage get their fair share?",
+      "url": "https://www.marketwatch.com/story/my-friend-and-her-husband-own-extensive-real-estate-how-can-her-children-from-a-previous-marriage-get-their-fair-share-3eb17c20?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 14:10:00",
+      "published": "Thu, 30 Jul 2026 16:06:00",
       "source": "MarketWatch",
-      "title": "Looking for a second home? Sellers in these vacation areas could be ready to make a deal.",
-      "url": "https://www.marketwatch.com/story/looking-for-a-second-home-sellers-in-these-markets-could-be-ready-to-make-a-deal-b8d85b34?mod=mw_rss_topstories"
+      "title": "Caregivers deplete their savings and many have stopped trying to save. Should they get paid?",
+      "url": "https://www.marketwatch.com/story/should-you-get-paid-to-care-for-a-family-member-70958828?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 14:09:00",
+      "published": "Thu, 30 Jul 2026 16:03:00",
       "source": "MarketWatch",
-      "title": "Meta\u2019s stock is falling hard. Here\u2019s why the company is in Wall Street\u2019s doghouse.",
-      "url": "https://www.marketwatch.com/story/metas-stock-is-falling-hard-heres-why-the-company-is-in-wall-streets-doghouse-afae2f55?mod=mw_rss_topstories"
+      "title": "Medicare is about to change a drug program that held down the cost of premiums. Here\u2019s what to know.",
+      "url": "https://www.marketwatch.com/story/medicare-is-about-to-change-a-program-that-held-down-the-cost-of-premiums-heres-what-to-know-42c0612e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 29 2026",
-      "change": 0.01,
-      "rate": 6.32
+      "asof_label": "Jul 30 2026",
+      "change": -0.01,
+      "rate": 6.31
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 29 2026",
-      "change": 0.02,
+      "asof_label": "Jul 30 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
