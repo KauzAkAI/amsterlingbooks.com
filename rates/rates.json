@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4105
+      "rate": 1.4046
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7663
+      "rate": 6.7551
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87873
+      "rate": 0.87138
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7525
+      "rate": 0.74691
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.65
+      "rate": 95.69
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 163.68
+      "rate": 162.94
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1452.35
+      "rate": 1433.7
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4755
+      "rate": 17.4001
     }
   },
-  "generated_at": "2026-07-29T23:41:38+00:00",
+  "generated_at": "2026-07-30T15:17:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 30 Jul 2026 15:04:43",
+      "source": "CNBC",
+      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+      "url": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html"
+    },
+    {
       "published": "Wed, 29 Jul 2026 23:36:34",
       "source": "CNBC",
       "title": "What a divided Fed means for investors",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
     },
     {
-      "published": "Wed, 22 Jul 2026 06:28:08",
-      "source": "CNBC",
-      "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
-      "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html"
+      "published": "Thu, 30 Jul 2026 14:40:00",
+      "source": "MarketWatch",
+      "title": "Americans are spending plenty \u2014 but they\u2019re saving much less",
+      "url": "https://www.marketwatch.com/story/americans-are-spending-plenty-but-theyre-saving-much-less-ffb995d2?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 23:00:00",
+      "published": "Thu, 30 Jul 2026 14:16:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m in my peak earning years\u2019: I\u2019m working beyond 70. Will that help increase my Social Security?",
-      "url": "https://www.marketwatch.com/story/im-in-my-peak-earning-years-im-working-beyond-70-will-that-help-increase-my-social-security-b0fd84da?mod=mw_rss_topstories"
+      "title": "People from this country are buying up the most homes in America right now, even as international sales dry up",
+      "url": "https://www.marketwatch.com/story/this-country-is-buying-up-the-most-homes-in-america-right-now-even-as-international-sales-dry-up-c8b2afbb?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 22:44:00",
+      "published": "Thu, 30 Jul 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "Why the USO oil ETF is a better buy than crude futures as the Iran war rages",
-      "url": "https://www.marketwatch.com/story/why-the-uso-oil-etf-is-a-better-buy-than-crude-futures-as-the-iran-war-rages-85d1ebe0?mod=mw_rss_topstories"
+      "title": "\u2018Don\u2019t get suckered like I did\u2019: I paid $185 to the wrong passport website. Can I get my money back?",
+      "url": "https://www.marketwatch.com/story/dont-get-suckered-like-i-did-i-paid-185-to-the-wrong-passport-website-can-i-get-my-money-back-3a781412?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 22:30:00",
+      "published": "Thu, 30 Jul 2026 14:10:00",
       "source": "MarketWatch",
-      "title": "\u2018We already have wills\u2019: We\u2019re in our 60s with $1.5 million. Should we set up a trust to prevent conflict among our heirs?",
-      "url": "https://www.marketwatch.com/story/we-already-have-wills-were-in-our-60s-with-1-5-million-how-do-we-prevent-family-drama-among-our-heirs-bf7b0eb1?mod=mw_rss_topstories"
+      "title": "Looking for a second home? Sellers in these vacation areas could be ready to make a deal.",
+      "url": "https://www.marketwatch.com/story/looking-for-a-second-home-sellers-in-these-markets-could-be-ready-to-make-a-deal-b8d85b34?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 29 Jul 2026 22:22:00",
+      "published": "Thu, 30 Jul 2026 14:09:00",
       "source": "MarketWatch",
-      "title": "Chipotle lifts its sales forecast even as a lettuce-linked outbreak slows foot traffic",
-      "url": "https://www.marketwatch.com/story/chipotle-lifts-its-sales-forecast-even-as-a-lettuce-linked-outbreak-slows-foot-traffic-2249eeab?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 29 Jul 2026 22:01:00",
-      "source": "MarketWatch",
-      "title": "My girlfriend is 62. Can she claim her late husband\u2019s full Social Security benefit \u2014 or does she have to wait?",
-      "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories"
+      "title": "Meta\u2019s stock is falling hard. Here\u2019s why the company is in Wall Street\u2019s doghouse.",
+      "url": "https://www.marketwatch.com/story/metas-stock-is-falling-hard-heres-why-the-company-is-in-wall-streets-doghouse-afae2f55?mod=mw_rss_topstories"
     }
   ],
   "rates": {
