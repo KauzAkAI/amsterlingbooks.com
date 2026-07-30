@@ -135,7 +135,7 @@
       "rate": 17.4001
     }
   },
-  "generated_at": "2026-07-30T18:22:17+00:00",
+  "generated_at": "2026-07-30T20:01:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
     },
     {
+      "published": "Thu, 30 Jul 2026 19:02:00",
+      "source": "MarketWatch",
+      "title": "Warsh\u2019s Wall Street cred takes a hit as investors doubt the Fed chair\u2019s inflation-fighting resolve",
+      "url": "https://www.marketwatch.com/story/warshs-wall-street-cred-takes-a-hit-as-investors-doubt-the-fed-chairs-inflation-fighting-resolve-82be4f77?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 30 Jul 2026 18:49:00",
+      "source": "MarketWatch",
+      "title": "The warning signal insiders are sending",
+      "url": "https://www.marketwatch.com/story/the-warning-signal-insiders-are-sending-f0538ddf?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 30 Jul 2026 18:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018Don\u2019t get suckered like I did\u2019: I paid $185 to the wrong passport website. Can I get my money back?",
+      "url": "https://www.marketwatch.com/story/dont-get-suckered-like-i-did-i-paid-185-to-the-wrong-passport-website-can-i-get-my-money-back-3a781412?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 30 Jul 2026 17:36:00",
       "source": "MarketWatch",
       "title": "Micron, Sandisk and other chip stocks get major boosts in the wake of Microsoft\u2019s earnings",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "Social Security\u2019s biggest problem isn\u2019t a design flaw. It\u2019s a missing trust fund.",
       "url": "https://www.marketwatch.com/story/social-securitys-biggest-problem-isnt-a-design-flaw-its-a-missing-trust-fund-75cd1351?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 30 Jul 2026 17:16:00",
-      "source": "MarketWatch",
-      "title": "The cyclospora outbreak is the biggest ever. Why this \u2018unusual\u2019 outbreak is so hard to manage.",
-      "url": "https://www.marketwatch.com/story/the-cyclospora-outbreak-is-the-biggest-ever-why-the-unusual-outbreak-is-so-hard-to-manage-4d1b4841?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 30 Jul 2026 17:07:00",
-      "source": "MarketWatch",
-      "title": "My financial adviser says I don\u2019t need a tax-efficient withdrawal plan for my $2.3 million portfolio. Is that madness?",
-      "url": "https://www.marketwatch.com/story/its-a-high-price-to-pay-my-adviser-says-i-dont-need-a-withdrawal-plan-for-my-2-3-million-portfolio-is-he-right-06cb1eb2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 30 Jul 2026 17:05:00",
-      "source": "MarketWatch",
-      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
-      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,15 +394,15 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.73
+      "yield": 3.79
     },
     {
       "tenor": "3M",
-      "yield": 3.83
+      "yield": 3.82
     },
     {
       "tenor": "6M",
-      "yield": 3.97
+      "yield": 3.98
     },
     {
       "tenor": "1Y",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.22
+      "yield": 4.23
     },
     {
       "tenor": "5Y",
-      "yield": 4.37
+      "yield": 4.38
     },
     {
       "tenor": "7Y",
-      "yield": 4.51
+      "yield": 4.52
     },
     {
       "tenor": "10Y",
-      "yield": 4.67
+      "yield": 4.68
     },
     {
       "tenor": "20Y",
-      "yield": 5.21
+      "yield": 5.22
     },
     {
       "tenor": "30Y",
-      "yield": 5.2
+      "yield": 5.21
     }
   ],
   "warnings": []
