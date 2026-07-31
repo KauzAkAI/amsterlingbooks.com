@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4046
+      "rate": 1.4041
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7551
+      "rate": 6.7513
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87138
+      "rate": 0.8707
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74691
+      "rate": 0.74508
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.69
+      "rate": 95.39
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 162.94
+      "rate": 160.24
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1433.7
+      "rate": 1443.61
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4001
+      "rate": 17.3715
     }
   },
-  "generated_at": "2026-07-30T23:39:41+00:00",
+  "generated_at": "2026-07-31T15:24:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 31 Jul 2026 03:49:55",
+      "source": "CNBC",
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
+    },
+    {
       "published": "Thu, 30 Jul 2026 15:04:43",
       "source": "CNBC",
       "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html"
     },
     {
-      "published": "Wed, 22 Jul 2026 16:57:55",
-      "source": "CNBC",
-      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
-      "url": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html"
+      "published": "Fri, 31 Jul 2026 15:21:00",
+      "source": "MarketWatch",
+      "title": "Corporate insiders are sending warning signals about the stock market",
+      "url": "https://www.marketwatch.com/story/the-warning-signal-insiders-are-sending-f0538ddf?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 23:01:00",
+      "published": "Fri, 31 Jul 2026 15:16:00",
       "source": "MarketWatch",
-      "title": "Empty seats? Concert giant Live Nation says ticket sales are actually at record levels.",
-      "url": "https://www.marketwatch.com/story/empty-seats-concert-giant-live-nation-says-ticket-sales-are-actually-at-record-levels-461252db?mod=mw_rss_topstories"
+      "title": "HSAs can be a great retirement tool \u2013 if you\u2019re healthy or wealthy",
+      "url": "https://www.marketwatch.com/story/hsas-can-be-a-great-retirement-tool-if-youre-healthy-or-wealthy-5a3e2991?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 22:24:00",
+      "published": "Fri, 31 Jul 2026 14:55:00",
       "source": "MarketWatch",
-      "title": "Jersey Mike\u2019s spent almost \u2018zero dollars\u2019 on digital marketing. That\u2019s now changing.",
-      "url": "https://www.marketwatch.com/story/jersey-mikes-spent-almost-zero-dollars-on-digital-marketing-thats-now-changing-9738485d?mod=mw_rss_topstories"
+      "title": "I\u2019m 75 and afraid to let my retirement fund dip below $1 million. Am I being too conservative?",
+      "url": "https://www.marketwatch.com/story/im-75-and-afraid-to-let-my-retirement-fund-dip-below-1-million-am-i-being-too-aggressive-6b780ef9?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 22:09:00",
+      "published": "Fri, 31 Jul 2026 14:52:00",
       "source": "MarketWatch",
-      "title": "Implosion of Situational Awareness hedge fund has Wall Street betting the bottom is in for the AI trade",
-      "url": "https://www.marketwatch.com/story/implosion-of-situational-awareness-has-wall-street-betting-the-bottom-is-in-for-the-ai-trade-05d9f346?mod=mw_rss_topstories"
+      "title": "6 crucial money lessons Gen Z isn\u2019t getting from their parents",
+      "url": "https://www.marketwatch.com/story/congrats-gen-z-youre-turning-30-here-are-the-most-important-money-moves-to-make-next-9e30bb0a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 30 Jul 2026 21:45:00",
+      "published": "Fri, 31 Jul 2026 14:51:00",
       "source": "MarketWatch",
-      "title": "Get ready to buy the dip in tech stocks. Why the recent selling won\u2019t break the bull market.",
-      "url": "https://www.marketwatch.com/story/get-ready-to-buy-the-dip-in-tech-stocks-why-the-recent-selling-wont-break-the-bull-market-900699f5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 30 Jul 2026 21:45:00",
-      "source": "MarketWatch",
-      "title": "Can credit cards survive AI shopping? Why Mastercard\u2019s CEO says they\u2019ll \u2018prevail\u2019 in this new era.",
-      "url": "https://www.marketwatch.com/story/can-credit-cards-survive-ai-shopping-why-mastercards-ceo-says-theyll-prevail-in-this-new-era-8f8a660c?mod=mw_rss_topstories"
+      "title": "A spot is opening up in the S&P 500, and these stocks are top candidates to fill the void",
+      "url": "https://www.marketwatch.com/story/a-spot-is-opening-up-in-the-s-p-500-and-these-stocks-are-top-candidates-to-fill-the-void-5e72dd5d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
