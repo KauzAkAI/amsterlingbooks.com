@@ -135,7 +135,7 @@
       "rate": 17.3715
     }
   },
-  "generated_at": "2026-07-31T15:24:07+00:00",
+  "generated_at": "2026-07-31T17:05:26+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-07-08",
-        "rate": 6.58
-      },
-      {
         "date": "2026-07-15",
         "rate": 6.65
       },
@@ -195,10 +191,6 @@
       {
         "date": "2026-07-22",
         "rate": 6.69
-      },
-      {
-        "date": "2026-07-23",
-        "rate": 6.85
       },
       {
         "date": "2026-07-23",
@@ -221,12 +213,20 @@
         "rate": 6.78
       },
       {
+        "date": "2026-07-29",
+        "rate": 6.76
+      },
+      {
         "date": "2026-07-30",
         "rate": 6.77
       },
       {
         "date": "2026-07-30",
         "rate": 6.66
+      },
+      {
+        "date": "2026-07-31",
+        "rate": 6.83
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 31 Jul 2026 16:51:30",
+      "source": "CNBC",
+      "title": "As Warsh\u2019s Fed faces pressure to act on inflation, these indicators show it\u2019s at its lowest in years",
+      "url": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
+    },
+    {
       "published": "Fri, 31 Jul 2026 03:49:55",
       "source": "CNBC",
       "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html"
     },
     {
-      "published": "Fri, 24 Jul 2026 12:09:09",
-      "source": "CNBC",
-      "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
-      "url": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html"
+      "published": "Fri, 31 Jul 2026 17:03:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s how Big Oil cashed in on the historic supply crunch",
+      "url": "https://www.marketwatch.com/story/exxonmobil-chevrons-combined-profits-quadrupled-in-three-months-as-the-iran-war-raged-a6e8da62?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 31 Jul 2026 15:21:00",
+      "published": "Fri, 31 Jul 2026 17:01:00",
       "source": "MarketWatch",
-      "title": "Corporate insiders are sending warning signals about the stock market",
-      "url": "https://www.marketwatch.com/story/the-warning-signal-insiders-are-sending-f0538ddf?mod=mw_rss_topstories"
+      "title": "I\u2019ve seen families destroyed by this common estate-planning mistake. Here\u2019s how to protect yours.",
+      "url": "https://www.marketwatch.com/story/ive-seen-families-destroyed-by-this-common-estate-planning-mistake-heres-how-to-protect-yours-4f997564?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 31 Jul 2026 15:16:00",
+      "published": "Fri, 31 Jul 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "HSAs can be a great retirement tool \u2013 if you\u2019re healthy or wealthy",
-      "url": "https://www.marketwatch.com/story/hsas-can-be-a-great-retirement-tool-if-youre-healthy-or-wealthy-5a3e2991?mod=mw_rss_topstories"
+      "title": "\u2018I feel lucky\u2019: I\u2019m 71 and inherited $20,000. What should I do with this money?",
+      "url": "https://www.marketwatch.com/story/i-feel-lucky-im-71-and-inherited-20-000-what-should-i-do-with-this-money-1ab90925?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 31 Jul 2026 14:55:00",
+      "published": "Fri, 31 Jul 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 75 and afraid to let my retirement fund dip below $1 million. Am I being too conservative?",
-      "url": "https://www.marketwatch.com/story/im-75-and-afraid-to-let-my-retirement-fund-dip-below-1-million-am-i-being-too-aggressive-6b780ef9?mod=mw_rss_topstories"
+      "title": "My ex-husband\u2019s sister died \u2014 so why is Fidelity asking me for her death certificate?",
+      "url": "https://www.marketwatch.com/story/its-like-buying-a-lottery-ticket-fidelity-asked-for-my-former-sister-in-laws-death-certificate-does-this-mean-im-due-a-windfall-2ebdcd69?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 31 Jul 2026 14:52:00",
+      "published": "Fri, 31 Jul 2026 16:38:00",
       "source": "MarketWatch",
-      "title": "6 crucial money lessons Gen Z isn\u2019t getting from their parents",
-      "url": "https://www.marketwatch.com/story/congrats-gen-z-youre-turning-30-here-are-the-most-important-money-moves-to-make-next-9e30bb0a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 31 Jul 2026 14:51:00",
-      "source": "MarketWatch",
-      "title": "A spot is opening up in the S&P 500, and these stocks are top candidates to fill the void",
-      "url": "https://www.marketwatch.com/story/a-spot-is-opening-up-in-the-s-p-500-and-these-stocks-are-top-candidates-to-fill-the-void-5e72dd5d?mod=mw_rss_topstories"
+      "title": "S&P 500 heads for the first July decline since 2014. Here are the stocks that led the selloff.",
+      "url": "https://www.marketwatch.com/story/s-p-500-heads-for-the-first-july-decline-since-2014-here-are-the-stocks-that-led-the-selloff-5677f63b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 30 2026",
-      "change": -0.01,
-      "rate": 6.31
+      "asof_label": "Jul 31 2026",
+      "change": 0.01,
+      "rate": 6.32
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 30 2026",
-      "change": -0.01,
+      "asof_label": "Jul 31 2026",
+      "change": 0.06,
       "rate": 6.52
     }
   },
