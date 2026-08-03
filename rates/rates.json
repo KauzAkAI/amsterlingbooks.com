@@ -135,7 +135,7 @@
       "rate": 17.3207
     }
   },
-  "generated_at": "2026-08-03T19:10:04+00:00",
+  "generated_at": "2026-08-03T20:39:27+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
-      "published": "Mon, 03 Aug 2026 19:00:00",
+      "published": "Mon, 03 Aug 2026 20:32:00",
       "source": "MarketWatch",
-      "title": "\u2018My head hit the driver\u2019s window\u2019: A teenager T-boned our car. Will Medicare pay my hospital bills?",
-      "url": "https://www.marketwatch.com/story/my-head-hit-the-drivers-window-a-teenager-t-boned-our-car-will-medicare-pay-my-hospital-bills-0552d90d?mod=mw_rss_topstories"
+      "title": "Traders in the world\u2019s most important financial market are bracing for a wild stretch ahead",
+      "url": "https://www.marketwatch.com/story/traders-in-the-worlds-most-important-financial-market-are-bracing-for-a-wild-stretch-ahead-4a1507dc?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 03 Aug 2026 18:30:00",
+      "published": "Mon, 03 Aug 2026 20:17:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m easing into retirement\u2019: I\u2019m getting an $80,000 pension payout. Where can I invest it safely?",
-      "url": "https://www.marketwatch.com/story/im-easing-into-retirement-im-getting-an-80-000-pension-payout-where-can-i-invest-it-safely-6653d810?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 18:15:00",
-      "source": "MarketWatch",
-      "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
-      "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 18:15:00",
-      "source": "MarketWatch",
-      "title": "Boeing clears key hurdle and stock rallies, leading the Dow",
+      "title": "Boeing clears key hurdle and stock rallies to lead the Dow",
       "url": "https://www.marketwatch.com/story/boeing-clears-key-hurdle-and-stock-rallies-leading-the-dow-ffd2dcbd?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 03 Aug 2026 18:12:00",
+      "published": "Mon, 03 Aug 2026 20:07:00",
       "source": "MarketWatch",
-      "title": "Many boomers are desperate to move but can\u2019t afford to",
-      "url": "https://www.marketwatch.com/story/many-boomers-are-desperate-to-move-but-cant-afford-to-6c9907ea?mod=mw_rss_topstories"
+      "title": "Palantir\u2019s stock gains as AI drives turbocharged growth",
+      "url": "https://www.marketwatch.com/story/palantirs-stock-gains-as-ai-drives-turbocharged-growth-e006b70a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 03 Aug 2026 19:40:00",
+      "source": "MarketWatch",
+      "title": "Microsoft\u2019s stock is on a run not seen in 26 years \u2014 erasing its year-to-date losses",
+      "url": "https://www.marketwatch.com/story/microsofts-stock-is-on-a-run-not-seen-in-26-years-erasing-its-year-to-date-losses-d9827b6c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 03 Aug 2026 19:30:00",
+      "source": "MarketWatch",
+      "title": "Cyclospora outbreak is linked to two deaths in Michigan as case counts continue to rise",
+      "url": "https://www.marketwatch.com/story/cyclospora-outbreak-is-linked-to-two-deaths-in-michigan-as-case-counts-continue-to-rise-77b49a5a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.78
+      "yield": 3.79
     },
     {
       "tenor": "3M",
-      "yield": 3.83
+      "yield": 3.91
     },
     {
       "tenor": "6M",
-      "yield": 3.98
+      "yield": 4.02
     },
     {
       "tenor": "1Y",
-      "yield": 4.08
+      "yield": 4.07
     },
     {
       "tenor": "2Y",
-      "yield": 4.28
+      "yield": 4.25
     },
     {
       "tenor": "5Y",
-      "yield": 4.45
+      "yield": 4.4
     },
     {
       "tenor": "7Y",
-      "yield": 4.59
+      "yield": 4.54
     },
     {
       "tenor": "10Y",
-      "yield": 4.75
+      "yield": 4.7
     },
     {
       "tenor": "20Y",
-      "yield": 5.28
+      "yield": 5.23
     },
     {
       "tenor": "30Y",
-      "yield": 5.27
+      "yield": 5.23
     }
   ],
   "warnings": []
