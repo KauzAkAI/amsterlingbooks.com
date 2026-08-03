@@ -135,7 +135,7 @@
       "rate": 17.3207
     }
   },
-  "generated_at": "2026-08-03T15:48:09+00:00",
+  "generated_at": "2026-08-03T17:46:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.58
       },
       {
-        "date": "2026-07-24",
-        "rate": 6.81
-      },
-      {
         "date": "2026-07-27",
         "rate": 6.8
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-07-31",
         "rate": 6.83
+      },
+      {
+        "date": "2026-08-03",
+        "rate": 6.82
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 03 Aug 2026 16:54:19",
+      "source": "CNBC",
+      "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
+      "url": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html"
+    },
+    {
       "published": "Fri, 31 Jul 2026 16:51:30",
       "source": "CNBC",
       "title": "As Warsh\u2019s Fed faces pressure to act on inflation, these indicators show it\u2019s at its lowest in years",
@@ -315,46 +321,40 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
-      "published": "Mon, 27 Jul 2026 14:22:15",
-      "source": "CNBC",
-      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
-      "url": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html"
+      "published": "Mon, 03 Aug 2026 17:44:00",
+      "source": "MarketWatch",
+      "title": "If I buy a house for $1 million in cash at 70, will I run out of money by 90?",
+      "url": "https://www.marketwatch.com/story/if-i-buy-a-house-for-1-million-in-cash-at-70-will-i-run-out-of-money-by-90-54afb313?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 03 Aug 2026 17:05:00",
+      "source": "MarketWatch",
+      "title": "SpaceX\u2019s stock is down nearly 50% from its high. Why it\u2019s still not a bargain.",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-is-down-nearly-50-from-its-high-why-its-still-not-a-bargain-65b528ad?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 03 Aug 2026 16:31:00",
+      "source": "MarketWatch",
+      "title": "AMD has two big engines roaring as it heads into earnings",
+      "url": "https://www.marketwatch.com/story/amd-has-two-big-engines-roaring-as-it-heads-into-earnings-28b20033?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 03 Aug 2026 16:00:00",
+      "source": "MarketWatch",
+      "title": "My ex-husband\u2019s sister died \u2014 so why is Fidelity asking me for her death certificate?",
+      "url": "https://www.marketwatch.com/story/its-like-buying-a-lottery-ticket-fidelity-asked-for-my-former-sister-in-laws-death-certificate-does-this-mean-im-due-a-windfall-2ebdcd69?mod=mw_rss_topstories"
     },
     {
       "published": "Mon, 03 Aug 2026 15:20:00",
       "source": "MarketWatch",
       "title": "Why the U.S. decided to help Japan by boosting the flailing yen",
       "url": "https://www.marketwatch.com/story/joint-u-s-japanese-intervention-boosts-the-yen-but-will-it-be-enough-069451f5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 15:17:00",
-      "source": "MarketWatch",
-      "title": "Disappointed by your skimpy pay raise? Blame your healthcare benefits.",
-      "url": "https://www.marketwatch.com/story/disappointed-by-your-skimpy-pay-raise-blame-your-healthcare-benefits-8025491b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 15:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018My head hit the driver\u2019s window\u2019: A teenager T-boned our car. Will Medicare pay my hospital bills?",
-      "url": "https://www.marketwatch.com/story/my-head-hit-the-drivers-window-a-teenager-t-boned-our-car-will-medicare-pay-my-hospital-bills-0552d90d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 15:03:00",
-      "source": "MarketWatch",
-      "title": "Why tech stocks are likely to take a back seat for the rest of 2026, according to JPMorgan strategists",
-      "url": "https://www.marketwatch.com/story/why-tech-stocks-are-likely-to-take-a-back-seat-for-the-rest-of-2026-according-to-jpmorgan-strategists-93e1c61f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 03 Aug 2026 14:52:00",
-      "source": "MarketWatch",
-      "title": "They spent tens of thousands of dollars on home remodels \u2014 only to regret it. \u2018It\u2019s just been so much.\u2019",
-      "url": "https://www.marketwatch.com/story/they-spent-tens-of-thousands-of-dollars-on-home-remodels-only-to-regret-it-8cfa23e6?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Jul 31 2026",
-      "change": 0.01,
+      "asof_label": "Aug 03 2026",
+      "change": 0.0,
       "rate": 6.32
     },
     "ten_year_treasury": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Jul 31 2026",
-      "change": 0.06,
+      "asof_label": "Aug 03 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
