@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-08-04T21:57:00+00:00",
+  "generated_at": "2026-08-04T23:12:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
+      "published": "Tue, 04 Aug 2026 22:40:00",
+      "source": "MarketWatch",
+      "title": "Stocks return to record highs. Investors who sat tight during the recent momentum crash are being rewarded.",
+      "url": "https://www.marketwatch.com/story/stocks-return-to-record-highs-investors-who-sat-tight-during-the-recent-momentum-crash-are-being-rewarded-8c960105?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 04 Aug 2026 22:22:00",
+      "source": "MarketWatch",
+      "title": "Upstart\u2019s AI upgrades pay off, as a pickup in loan growth helps send the stock higher",
+      "url": "https://www.marketwatch.com/story/upstarts-ai-upgrades-pay-off-as-a-pickup-in-loan-growth-helps-send-the-stock-higher-32e7ec9d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 04 Aug 2026 21:54:00",
       "source": "MarketWatch",
       "title": "Chipotle pulls jalapenos from some locations after salmonella investigation. Here\u2019s what to know.",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "My ex-husband\u2019s sister died \u2014 so why is Fidelity asking me for her death certificate?",
       "url": "https://www.marketwatch.com/story/its-like-buying-a-lottery-ticket-fidelity-asked-for-my-former-sister-in-laws-death-certificate-does-this-mean-im-due-a-windfall-2ebdcd69?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 04 Aug 2026 21:13:00",
-      "source": "MarketWatch",
-      "title": "McDonald\u2019s says its value meals have become too complicated",
-      "url": "https://www.marketwatch.com/story/mcdonalds-admits-its-value-meals-have-become-too-confusing-dc076468?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 04 Aug 2026 21:00:00",
-      "source": "MarketWatch",
-      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
-      "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
     }
   ],
   "rates": {
