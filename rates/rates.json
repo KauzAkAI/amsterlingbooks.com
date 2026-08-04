@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-08-04T15:29:15+00:00",
+  "generated_at": "2026-08-04T17:14:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.58
       },
       {
-        "date": "2026-07-27",
-        "rate": 6.8
-      },
-      {
         "date": "2026-07-28",
         "rate": 6.76
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-03",
         "rate": 6.82
+      },
+      {
+        "date": "2026-08-04",
+        "rate": 6.77
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
-      "published": "Tue, 04 Aug 2026 15:03:00",
+      "published": "Tue, 04 Aug 2026 17:09:00",
       "source": "MarketWatch",
-      "title": "Job openings fell to a 3-month low. Is the labor market losing momentum?",
-      "url": "https://www.marketwatch.com/story/job-openings-fell-to-a-3-month-low-is-the-labor-market-losing-momentum-05fcbc49?mod=mw_rss_topstories"
+      "title": "The richest 20% are buying most of the new cars sold in the U.S.",
+      "url": "https://www.marketwatch.com/story/the-richest-20-are-buying-most-of-the-new-cars-sold-in-the-u-s-6e470ad4?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 14:36:00",
+      "published": "Tue, 04 Aug 2026 16:56:00",
       "source": "MarketWatch",
-      "title": "Caterpillar\u2019s stock gives the Dow a 200-point boost as data-center demand drives record revenue",
-      "url": "https://www.marketwatch.com/story/caterpillar-is-killing-it-and-data-center-demand-is-driving-record-revenue-161b84d1?mod=mw_rss_topstories"
+      "title": "It\u2019s getting easier for terminally ill people to end their own lives. What to know as laws change.",
+      "url": "https://www.marketwatch.com/story/its-getting-easier-for-terminally-ill-people-to-end-their-own-lives-what-to-know-as-laws-change-4fa04c54?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 14:30:00",
+      "published": "Tue, 04 Aug 2026 16:34:00",
       "source": "MarketWatch",
-      "title": "If Social Security\u2019s funding crisis is the elephant in the room, this is the mouse everyone has overlooked. You have been warned.",
-      "url": "https://www.marketwatch.com/story/if-social-securitys-funding-crisis-is-the-elephant-in-the-room-this-is-the-mouse-everyone-has-overlooked-you-have-been-warned-b95c450d?mod=mw_rss_topstories"
+      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
+      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 14:15:00",
+      "published": "Tue, 04 Aug 2026 16:25:00",
       "source": "MarketWatch",
-      "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
-      "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories"
+      "title": "Bessent defends Warsh, saying markets are going through \u2018detox\u2019 from too much Fed guidance",
+      "url": "https://www.marketwatch.com/story/bessent-defends-warsh-saying-markets-are-going-through-detox-from-too-much-fed-guidance-39dfc765?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 14:15:00",
+      "published": "Tue, 04 Aug 2026 15:33:00",
       "source": "MarketWatch",
-      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
-      "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
+      "title": "Stocks could soar in August. Here are six potential drivers.",
+      "url": "https://www.marketwatch.com/story/stocks-could-soar-in-august-here-are-six-potential-drivers-89d91780?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 03 2026",
-      "change": 0.0,
-      "rate": 6.32
+      "asof_label": "Aug 04 2026",
+      "change": -0.02,
+      "rate": 6.3
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 03 2026",
-      "change": -0.01,
+      "asof_label": "Aug 04 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
