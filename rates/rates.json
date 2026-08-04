@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-08-04T18:59:20+00:00",
+  "generated_at": "2026-08-04T20:38:53+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
-      "published": "Tue, 04 Aug 2026 18:36:00",
+      "published": "Tue, 04 Aug 2026 20:26:00",
       "source": "MarketWatch",
-      "title": "These charts suggest the S&P 500 is looking like a bargain. Take them with a grain of salt.",
-      "url": "https://www.marketwatch.com/story/these-charts-suggest-the-s-p-500-is-looking-like-a-bargain-take-them-with-a-grain-of-salt-f109548f?mod=mw_rss_topstories"
+      "title": "So what\u2019s the plan to bring down inflation? The new Fed chair and his White House allies say you shouldn\u2019t ask.",
+      "url": "https://www.marketwatch.com/story/bessent-defends-warsh-saying-markets-are-going-through-detox-from-too-much-fed-guidance-39dfc765?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 18:15:00",
+      "published": "Tue, 04 Aug 2026 20:20:00",
       "source": "MarketWatch",
-      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
-      "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
+      "title": "I got two email invitations from friends. Is this a phishing scam \u2014 or am I suddenly popular?",
+      "url": "https://www.marketwatch.com/story/i-got-two-email-invitations-from-friends-is-this-a-phishing-scam-or-am-i-suddenly-popular-d9680aa8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 17:09:00",
+      "published": "Tue, 04 Aug 2026 20:17:00",
       "source": "MarketWatch",
-      "title": "The richest 20% are buying most of the new cars sold in the U.S.",
-      "url": "https://www.marketwatch.com/story/the-richest-20-are-buying-most-of-the-new-cars-sold-in-the-u-s-6e470ad4?mod=mw_rss_topstories"
+      "title": "Novo Nordisk stock is sliding again \u2014 and the Wegovy pill\u2019s surprise miss is partly to blame",
+      "url": "https://www.marketwatch.com/story/the-wegovy-pills-surprise-miss-is-one-reason-novo-nordisks-stock-is-down-ec0fe43d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 16:56:00",
+      "published": "Tue, 04 Aug 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "It\u2019s getting easier for terminally ill people to end their own lives. What to know as laws change.",
-      "url": "https://www.marketwatch.com/story/its-getting-easier-for-terminally-ill-people-to-end-their-own-lives-what-to-know-as-laws-change-4fa04c54?mod=mw_rss_topstories"
+      "title": "\u2018My head hit the driver\u2019s window\u2019: A teenager T-boned our car. Will Medicare pay my hospital bills?",
+      "url": "https://www.marketwatch.com/story/my-head-hit-the-drivers-window-a-teenager-t-boned-our-car-will-medicare-pay-my-hospital-bills-0552d90d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 04 Aug 2026 16:34:00",
+      "published": "Tue, 04 Aug 2026 19:46:00",
       "source": "MarketWatch",
-      "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
-      "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
+      "title": "Oil prices dive on hopes that a deal to reopen the Strait of Hormuz will be made soon",
+      "url": "https://www.marketwatch.com/story/oil-prices-rise-after-vessel-reports-being-hit-in-strait-of-hormuz-db6ce867?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.79
+      "yield": 3.78
     },
     {
       "tenor": "3M",
-      "yield": 3.91
+      "yield": 3.89
     },
     {
       "tenor": "6M",
-      "yield": 4.02
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 4.07
+      "yield": 4.04
     },
     {
       "tenor": "2Y",
-      "yield": 4.25
+      "yield": 4.2
     },
     {
       "tenor": "5Y",
-      "yield": 4.4
+      "yield": 4.33
     },
     {
       "tenor": "7Y",
-      "yield": 4.54
+      "yield": 4.47
     },
     {
       "tenor": "10Y",
-      "yield": 4.7
+      "yield": 4.63
     },
     {
       "tenor": "20Y",
-      "yield": 5.23
+      "yield": 5.18
     },
     {
       "tenor": "30Y",
-      "yield": 5.23
+      "yield": 5.18
     }
   ],
   "warnings": []
