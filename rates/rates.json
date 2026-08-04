@@ -135,7 +135,7 @@
       "rate": 17.2881
     }
   },
-  "generated_at": "2026-08-04T17:14:39+00:00",
+  "generated_at": "2026-08-04T18:59:20+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-08-04",
-        "rate": 6.77
+        "rate": 6.75
       }
     ]
   },
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html"
     },
     {
+      "published": "Tue, 04 Aug 2026 18:36:00",
+      "source": "MarketWatch",
+      "title": "These charts suggest the S&P 500 is looking like a bargain. Take them with a grain of salt.",
+      "url": "https://www.marketwatch.com/story/these-charts-suggest-the-s-p-500-is-looking-like-a-bargain-take-them-with-a-grain-of-salt-f109548f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 04 Aug 2026 18:15:00",
+      "source": "MarketWatch",
+      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
+      "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 04 Aug 2026 17:09:00",
       "source": "MarketWatch",
       "title": "The richest 20% are buying most of the new cars sold in the U.S.",
@@ -337,25 +349,13 @@
       "source": "MarketWatch",
       "title": "College kids are moving into retirement communities for reasons beyond \u2018cheap rent\u2019",
       "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 04 Aug 2026 16:25:00",
-      "source": "MarketWatch",
-      "title": "Bessent defends Warsh, saying markets are going through \u2018detox\u2019 from too much Fed guidance",
-      "url": "https://www.marketwatch.com/story/bessent-defends-warsh-saying-markets-are-going-through-detox-from-too-much-fed-guidance-39dfc765?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 04 Aug 2026 15:33:00",
-      "source": "MarketWatch",
-      "title": "Stocks could soar in August. Here are six potential drivers.",
-      "url": "https://www.marketwatch.com/story/stocks-could-soar-in-august-here-are-six-potential-drivers-89d91780?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Aug 04 2026",
-      "change": -0.02,
-      "rate": 6.3
+      "change": -0.03,
+      "rate": 6.29
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Aug 04 2026",
-      "change": -0.05,
+      "change": -0.07,
       "rate": 6.52
     }
   },
