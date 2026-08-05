@@ -135,7 +135,7 @@
       "rate": 17.212
     }
   },
-  "generated_at": "2026-08-05T18:42:53+00:00",
+  "generated_at": "2026-08-05T20:17:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
     },
     {
-      "published": "Wed, 05 Aug 2026 18:31:00",
+      "published": "Wed, 05 Aug 2026 20:09:00",
       "source": "MarketWatch",
-      "title": "SolarEdge\u2019s stock is shedding a quarter of its value as sales woes trump AI progress",
-      "url": "https://www.marketwatch.com/story/solaredges-stock-is-shedding-a-quarter-of-its-value-as-sales-woes-trump-ai-progress-8ce8159d?mod=mw_rss_topstories"
+      "title": "Figma\u2019s push into AI agents drives an earnings beat",
+      "url": "https://www.marketwatch.com/story/figmas-push-into-ai-agents-drives-an-earnings-beat-1f6e200a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 18:30:00",
+      "published": "Wed, 05 Aug 2026 19:56:00",
       "source": "MarketWatch",
-      "title": "Retail investors are buying the dip on SpaceX\u2019s stock before more shares flood the market",
-      "url": "https://www.marketwatch.com/story/retail-investors-are-buying-the-dip-on-spacexs-stock-before-more-shares-flood-the-market-9f83e00f?mod=mw_rss_topstories"
+      "title": "How parents can keep saving for retirement during the expensive childcare years",
+      "url": "https://www.marketwatch.com/story/how-parents-can-keep-saving-for-retirement-during-the-expensive-childcare-years-e06b3abe?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 17:50:00",
+      "published": "Wed, 05 Aug 2026 19:52:00",
       "source": "MarketWatch",
-      "title": "Alphabet\u2019s stock drops as Google loses another key AI executive",
-      "url": "https://www.marketwatch.com/story/alphabets-stock-drops-as-google-loses-another-key-ai-executive-38de45a2?mod=mw_rss_topstories"
+      "title": "Changing how Medicare pays for hospice care could save the U.S. $7.6 billion a year \u2014 but at what cost to patients?",
+      "url": "https://www.marketwatch.com/story/changing-how-medicare-pays-for-hospice-care-could-save-7-6-billion-a-year-but-at-what-cost-to-patients-270eb608?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 16:52:00",
+      "published": "Wed, 05 Aug 2026 19:46:00",
       "source": "MarketWatch",
-      "title": "How Ozempic maker Novo Nordisk blew its lead in GLP-1 weight-loss drugs. Can Europe compete in the high-stakes global economy?",
-      "url": "https://www.marketwatch.com/story/how-ozempic-maker-novo-nordisk-blew-its-lead-in-glp-1-weight-loss-drugs-can-europe-compete-in-the-high-stakes-global-economy-0a2bcfd0?mod=mw_rss_topstories"
+      "title": "Taxes are on the ballot this fall, as Republicans and Democrats grow further apart on whether to cut or raise them",
+      "url": "https://www.marketwatch.com/story/taxes-are-on-the-ballot-this-fall-as-republicans-and-democrats-grow-further-apart-on-whether-to-raise-them-c7990380?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 16:02:00",
+      "published": "Wed, 05 Aug 2026 19:10:00",
       "source": "MarketWatch",
-      "title": "5 things investors should know about the stock market\u2019s latest rapid-fire comeback",
-      "url": "https://www.marketwatch.com/story/5-things-investors-should-know-about-the-stock-markets-latest-rapid-fire-comeback-55f23d87?mod=mw_rss_topstories"
+      "title": "Senate vote on the Protect College Sports Act could come this week: What it means for transfers and salary caps",
+      "url": "https://www.marketwatch.com/story/senate-vote-on-the-protect-college-sports-act-could-come-this-week-what-it-means-for-transfers-and-salary-caps-58088560?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.78
+      "yield": 3.77
     },
     {
       "tenor": "3M",
@@ -402,15 +402,15 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.0
+      "yield": 3.98
     },
     {
       "tenor": "1Y",
-      "yield": 4.04
+      "yield": 4.03
     },
     {
       "tenor": "2Y",
-      "yield": 4.2
+      "yield": 4.18
     },
     {
       "tenor": "5Y",
@@ -430,7 +430,7 @@
     },
     {
       "tenor": "30Y",
-      "yield": 5.18
+      "yield": 5.17
     }
   ],
   "warnings": []
