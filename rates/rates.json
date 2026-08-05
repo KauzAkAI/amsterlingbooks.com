@@ -135,7 +135,7 @@
       "rate": 17.212
     }
   },
-  "generated_at": "2026-08-05T21:38:42+00:00",
+  "generated_at": "2026-08-05T22:43:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
     },
     {
+      "published": "Wed, 05 Aug 2026 22:25:00",
+      "source": "MarketWatch",
+      "title": "Sandisk\u2019s stock falls as the company\u2019s forecast doesn\u2019t live up to high expectations",
+      "url": "https://www.marketwatch.com/story/sandisks-stock-falls-as-the-companys-forecast-doesnt-live-up-to-high-expectations-8fd13d9b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 05 Aug 2026 22:19:00",
+      "source": "MarketWatch",
+      "title": "Block slashed 40% of its workforce for AI \u2014 and its earnings suggest that\u2019s paying off",
+      "url": "https://www.marketwatch.com/story/block-slashed-40-of-its-workforce-for-ai-and-earnings-suggest-thats-paying-off-852b7c54?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 05 Aug 2026 22:12:00",
+      "source": "MarketWatch",
+      "title": "Figma\u2019s stock falls as the company\u2019s AI push requires steep investments",
+      "url": "https://www.marketwatch.com/story/figmas-push-into-ai-agents-drives-an-earnings-beat-1f6e200a?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 05 Aug 2026 21:28:00",
       "source": "MarketWatch",
       "title": "Why AT&T, Verizon and T-Mobile shares are down after SpaceX\u2019s earnings",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "SpaceX\u2019s stock falls as Wall Street gets spooked by the extent of AI spending",
       "url": "https://www.marketwatch.com/story/spacexs-stock-falls-as-wall-street-gets-spooked-by-the-extent-of-ai-spending-9ce9ddb8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 05 Aug 2026 21:22:00",
-      "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock is basking in the glow of a high-profile endorsement",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-basking-in-the-glow-of-a-high-profile-endorsement-b7c48e7b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 05 Aug 2026 21:22:00",
-      "source": "MarketWatch",
-      "title": "Missouri voters just rejected a bid to ditch income tax, while other tax votes loom in Florida and California this fall",
-      "url": "https://www.marketwatch.com/story/taxes-are-on-the-ballot-this-fall-as-republicans-and-democrats-grow-further-apart-on-whether-to-raise-them-c7990380?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 05 Aug 2026 21:20:00",
-      "source": "MarketWatch",
-      "title": "Alphabet\u2019s stock drops as Google loses another key AI executive",
-      "url": "https://www.marketwatch.com/story/alphabets-stock-drops-as-google-loses-another-key-ai-executive-38de45a2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
