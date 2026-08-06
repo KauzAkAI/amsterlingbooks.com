@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4047
+      "rate": 1.3998
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.75
+      "rate": 6.7491
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.8655
+      "rate": 0.8664
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74191
+      "rate": 0.74255
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.12
+      "rate": 95.23
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.59
+      "rate": 157.83
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1423.72
+      "rate": 1423.57
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.212
+      "rate": 17.2515
     }
   },
-  "generated_at": "2026-08-05T23:41:50+00:00",
+  "generated_at": "2026-08-06T15:20:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
     },
     {
-      "published": "Wed, 05 Aug 2026 22:25:00",
+      "published": "Thu, 06 Aug 2026 14:55:00",
       "source": "MarketWatch",
-      "title": "Sandisk\u2019s stock falls as the company\u2019s forecast doesn\u2019t live up to high expectations",
-      "url": "https://www.marketwatch.com/story/sandisks-stock-falls-as-the-companys-forecast-doesnt-live-up-to-high-expectations-8fd13d9b?mod=mw_rss_topstories"
+      "title": "SpaceX insiders get their first chance to cash out \u2014 but the stock\u2019s slide will limit their opportunity",
+      "url": "https://www.marketwatch.com/story/spacex-insiders-get-their-first-chance-to-cash-out-but-the-stocks-slide-will-limit-their-opportunity-5c94b0f5?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 22:19:00",
+      "published": "Thu, 06 Aug 2026 14:54:00",
       "source": "MarketWatch",
-      "title": "Block slashed 40% of its workforce for AI \u2014 and its earnings suggest that\u2019s paying off",
-      "url": "https://www.marketwatch.com/story/block-slashed-40-of-its-workforce-for-ai-and-earnings-suggest-thats-paying-off-852b7c54?mod=mw_rss_topstories"
+      "title": "As a woman of color who travels alone, is it a waste of money to visit places with zero diversity?",
+      "url": "https://www.marketwatch.com/story/as-a-woman-of-color-who-travels-alone-is-it-a-waste-of-money-to-visit-places-with-zero-diversity-6de89785?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 22:12:00",
+      "published": "Thu, 06 Aug 2026 14:07:00",
       "source": "MarketWatch",
-      "title": "Figma\u2019s stock falls as the company\u2019s AI push requires steep investments",
-      "url": "https://www.marketwatch.com/story/figmas-push-into-ai-agents-drives-an-earnings-beat-1f6e200a?mod=mw_rss_topstories"
+      "title": "Missouri voters just rejected a bid to ditch income tax, while other tax votes loom in Florida and California this fall",
+      "url": "https://www.marketwatch.com/story/taxes-are-on-the-ballot-this-fall-as-republicans-and-democrats-grow-further-apart-on-whether-to-raise-them-c7990380?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 21:28:00",
+      "published": "Thu, 06 Aug 2026 14:03:00",
       "source": "MarketWatch",
-      "title": "Why AT&T, Verizon and T-Mobile shares are down after SpaceX\u2019s earnings",
-      "url": "https://www.marketwatch.com/story/why-at-t-verizon-and-t-mobile-shares-are-down-after-spacexs-earnings-033a07ce?mod=mw_rss_topstories"
+      "title": "Layoffs fall to the lowest level since the U.S. put men on the moon. Here\u2019s what that says about the economy.",
+      "url": "https://www.marketwatch.com/story/layoffs-fall-to-the-lowest-level-since-the-u-s-put-men-on-the-moon-heres-what-that-says-about-the-economy-71f7bd23?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 05 Aug 2026 21:26:00",
+      "published": "Thu, 06 Aug 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock falls as Wall Street gets spooked by the extent of AI spending",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-falls-as-wall-street-gets-spooked-by-the-extent-of-ai-spending-9ce9ddb8?mod=mw_rss_topstories"
+      "title": "\u2018I don\u2019t wish to be cold-hearted\u2019: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
+      "url": "https://www.marketwatch.com/story/i-dont-wish-to-be-cold-hearted-my-elderly-relative-can-no-longer-care-for-himself-am-i-wrong-to-leave-his-care-to-the-state-8d546b32?mod=mw_rss_topstories"
     }
   ],
   "rates": {
