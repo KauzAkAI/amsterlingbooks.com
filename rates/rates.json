@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3998
+      "rate": 1.401
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7491
+      "rate": 6.7476
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.8664
+      "rate": 0.86693
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74255
+      "rate": 0.74352
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.23
+      "rate": 95.21
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.83
+      "rate": 158.34
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1423.57
+      "rate": 1415.95
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2515
+      "rate": 17.1551
     }
   },
-  "generated_at": "2026-08-07T14:15:33+00:00",
+  "generated_at": "2026-08-07T15:13:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html"
     },
     {
+      "published": "Fri, 07 Aug 2026 15:09:00",
+      "source": "MarketWatch",
+      "title": "Tax-free weekends start in Texas, Florida and several other states today. Here\u2019s what to know.",
+      "url": "https://www.marketwatch.com/story/these-16-states-are-offering-tax-holidays-as-back-to-school-costs-soar-to-over-800-per-student-0ec92464?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 14:31:00",
+      "source": "MarketWatch",
+      "title": "Michigan says it\u2019s OK to start eating salads again as cyclospora outbreak wanes",
+      "url": "https://www.marketwatch.com/story/michigan-says-its-ok-to-start-eating-salads-again-as-cyclospora-outbreak-wanes-b6e9a2c2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 14:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m easing into retirement\u2019: I\u2019m getting an $80,000 pension payout. Where can I invest it safely?",
+      "url": "https://www.marketwatch.com/story/im-easing-into-retirement-im-getting-an-80-000-pension-payout-where-can-i-invest-it-safely-6653d810?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 14:15:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m an unemployed software developer who is skeptical of AI. Can I still find a job in tech?",
+      "url": "https://www.marketwatch.com/story/im-an-unemployed-software-developer-who-is-skeptical-of-ai-can-i-still-find-a-job-in-tech-4413875e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 07 Aug 2026 14:00:00",
       "source": "MarketWatch",
       "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
       "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 13:45:00",
-      "source": "MarketWatch",
-      "title": "Social Security is celebrating its 91st birthday. Here\u2019s why it\u2019s not  going away anytime soon.",
-      "url": "https://www.marketwatch.com/story/how-to-wish-social-security-a-happy-91st-birthday-865d71a8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 13:30:00",
-      "source": "MarketWatch",
-      "title": "How S&P 500 options action may help explain the rising volatility in memory stocks",
-      "url": "https://www.marketwatch.com/story/how-s-p-500-options-action-may-help-explain-volatility-in-memory-stocks-58d95beb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 11:00:00",
-      "source": "MarketWatch",
-      "title": "Kevin O\u2019Leary, aka \u2018Mr. Wonderful,\u2019 on crypto, winning in AI and 3 things all business owners must know",
-      "url": "https://www.marketwatch.com/story/kevin-oleary-aka-mr-wonderful-on-crypto-winning-in-ai-and-3-things-all-business-owners-must-know-5339ff6c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 11:00:00",
-      "source": "MarketWatch",
-      "title": "Optical stocks have a China problem that most investors are missing",
-      "url": "https://www.marketwatch.com/story/optical-stocks-have-a-china-problem-that-most-investors-are-missing-45523981?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.22
     }
   ],
-  "warnings": [
-    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
-  ]
+  "warnings": []
 }
