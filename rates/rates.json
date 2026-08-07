@@ -135,7 +135,7 @@
       "rate": 17.2515
     }
   },
-  "generated_at": "2026-08-07T00:32:36+00:00",
+  "generated_at": "2026-08-07T14:15:33+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Thu, 06 Aug 2026 20:15:22",
+      "published": "Fri, 07 Aug 2026 13:40:19",
+      "source": "CNBC",
+      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
+      "url": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 11:23:07",
       "source": "CNBC",
       "title": "The July jobs numbers are due out Friday. Here's what to expect",
       "url": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html"
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html"
     },
     {
-      "published": "Fri, 31 Jul 2026 16:51:30",
-      "source": "CNBC",
-      "title": "As Warsh\u2019s Fed faces pressure to act on inflation, these indicators show it\u2019s at its lowest in years",
-      "url": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
+      "published": "Fri, 07 Aug 2026 14:00:00",
+      "source": "MarketWatch",
+      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
+      "url": "https://www.marketwatch.com/story/if-i-marry-my-girlfriend-67-will-she-lose-her-supplemental-security-income-and-divorced-spouse-benefits-9340bab9?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 07 Aug 2026 00:00:00",
+      "published": "Fri, 07 Aug 2026 13:45:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m easing into retirement\u2019: I\u2019m getting an $80,000 pension payout. Where can I invest it safely?",
-      "url": "https://www.marketwatch.com/story/im-easing-into-retirement-im-getting-an-80-000-pension-payout-where-can-i-invest-it-safely-6653d810?mod=mw_rss_topstories"
+      "title": "Social Security is celebrating its 91st birthday. Here\u2019s why it\u2019s not  going away anytime soon.",
+      "url": "https://www.marketwatch.com/story/how-to-wish-social-security-a-happy-91st-birthday-865d71a8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 06 Aug 2026 23:31:00",
+      "published": "Fri, 07 Aug 2026 13:30:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t wish to be cold-hearted\u2019: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
-      "url": "https://www.marketwatch.com/story/i-dont-wish-to-be-cold-hearted-my-elderly-relative-can-no-longer-care-for-himself-am-i-wrong-to-leave-his-care-to-the-state-8d546b32?mod=mw_rss_topstories"
+      "title": "How S&P 500 options action may help explain the rising volatility in memory stocks",
+      "url": "https://www.marketwatch.com/story/how-s-p-500-options-action-may-help-explain-volatility-in-memory-stocks-58d95beb?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 06 Aug 2026 23:14:00",
+      "published": "Fri, 07 Aug 2026 11:00:00",
       "source": "MarketWatch",
-      "title": "As Alphabet burns through cash on AI, it\u2019s turning back to the bond market",
-      "url": "https://www.marketwatch.com/story/as-alphabet-burns-through-cash-on-ai-its-turning-back-to-the-bond-market-04e85f31?mod=mw_rss_topstories"
+      "title": "Kevin O\u2019Leary, aka \u2018Mr. Wonderful,\u2019 on crypto, winning in AI and 3 things all business owners must know",
+      "url": "https://www.marketwatch.com/story/kevin-oleary-aka-mr-wonderful-on-crypto-winning-in-ai-and-3-things-all-business-owners-must-know-5339ff6c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 06 Aug 2026 22:59:00",
+      "published": "Fri, 07 Aug 2026 11:00:00",
       "source": "MarketWatch",
-      "title": "Trade Desk shares tumble on earnings miss and weak outlook",
-      "url": "https://www.marketwatch.com/story/trade-desk-shares-tumble-on-earnings-miss-and-weak-outlook-9f4640e9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 06 Aug 2026 22:58:00",
-      "source": "MarketWatch",
-      "title": "Sweetgreen recalls jalapenos, details how cyclospora outbreak will weigh on sales",
-      "url": "https://www.marketwatch.com/story/sweetgreen-recalls-jalapenos-details-how-cyclospora-outbreak-will-weigh-on-sales-c52435bf?mod=mw_rss_topstories"
+      "title": "Optical stocks have a China problem that most investors are missing",
+      "url": "https://www.marketwatch.com/story/optical-stocks-have-a-china-problem-that-most-investors-are-missing-45523981?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,5 +433,7 @@
       "yield": 5.22
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
+  ]
 }
