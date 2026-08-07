@@ -135,7 +135,7 @@
       "rate": 17.1551
     }
   },
-  "generated_at": "2026-08-07T18:04:42+00:00",
+  "generated_at": "2026-08-07T19:12:30+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-07-30",
-        "rate": 6.77
-      },
-      {
-        "date": "2026-07-30",
         "rate": 6.66
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-06",
         "rate": 6.69
+      },
+      {
+        "date": "2026-08-07",
+        "rate": 6.74
       }
     ]
   },
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Fri, 07 Aug 2026 16:34:09",
+      "published": "Fri, 07 Aug 2026 18:09:18",
       "source": "CNBC",
       "title": "Here are three key takeaways from the disappointing July jobs report",
       "url": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html"
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Fri, 07 Aug 2026 18:13:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s when Elon Musk\u2019s Starlink internet is worth the steep monthly price \u2014 and $350 startup cost",
+      "url": "https://www.marketwatch.com/story/heres-when-elon-musks-starlink-internet-is-worth-the-steep-monthly-price-and-350-startup-cost-53735d59?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 07 Aug 2026 18:00:00",
       "source": "MarketWatch",
       "title": "I\u2019m an unemployed software developer who is skeptical of AI. Can I still find a job in tech?",
@@ -343,27 +349,21 @@
       "source": "MarketWatch",
       "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
       "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 16:16:00",
-      "source": "MarketWatch",
-      "title": "\u2018I don\u2019t wish to be cold-hearted\u2019: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
-      "url": "https://www.marketwatch.com/story/i-dont-wish-to-be-cold-hearted-my-elderly-relative-can-no-longer-care-for-himself-am-i-wrong-to-leave-his-care-to-the-state-8d546b32?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 06 2026",
-      "change": 0.01,
-      "rate": 6.3
+      "asof_label": "Aug 07 2026",
+      "change": -0.05,
+      "rate": 6.25
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 06 2026",
-      "change": 0.02,
+      "asof_label": "Aug 07 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
@@ -433,7 +433,5 @@
       "yield": 5.22
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
