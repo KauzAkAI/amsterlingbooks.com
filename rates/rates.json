@@ -135,7 +135,7 @@
       "rate": 17.1551
     }
   },
-  "generated_at": "2026-08-07T16:11:25+00:00",
+  "generated_at": "2026-08-07T17:10:37+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 07 Aug 2026 16:34:09",
+      "source": "CNBC",
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "url": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html"
+    },
+    {
       "published": "Fri, 07 Aug 2026 15:52:25",
       "source": "CNBC",
       "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
@@ -315,10 +321,22 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
-      "published": "Tue, 04 Aug 2026 14:42:39",
-      "source": "CNBC",
-      "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
-      "url": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html"
+      "published": "Fri, 07 Aug 2026 16:54:00",
+      "source": "MarketWatch",
+      "title": "SpaceX\u2019s stock is having one of its best days ever \u2014 with the first lockup expiration now behind it",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-is-having-one-of-its-best-days-ever-with-the-first-lockup-expiration-now-behind-it-cd55946c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 16:30:00",
+      "source": "MarketWatch",
+      "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
+      "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 07 Aug 2026 16:16:00",
+      "source": "MarketWatch",
+      "title": "\u2018I don\u2019t wish to be cold-hearted\u2019: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
+      "url": "https://www.marketwatch.com/story/i-dont-wish-to-be-cold-hearted-my-elderly-relative-can-no-longer-care-for-himself-am-i-wrong-to-leave-his-care-to-the-state-8d546b32?mod=mw_rss_topstories"
     },
     {
       "published": "Fri, 07 Aug 2026 16:00:00",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "This mom spent $2,000 on her kindergartner as viral \u2018back-to-school hauls\u2019 on TikTok and YouTube spin out of control",
       "url": "https://www.marketwatch.com/story/this-mom-spent-2-000-on-her-kindergartner-as-viral-back-to-school-hauls-on-tiktok-and-youtube-spin-out-of-control-0be2949d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 15:36:00",
-      "source": "MarketWatch",
-      "title": "Doximity\u2019s stock skyrockets 50% on medical AI excitement. Can the rally last?",
-      "url": "https://www.marketwatch.com/story/doximitys-stock-skyrockets-50-on-medical-ai-excitement-can-the-rally-last-1a5cedce?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 15:18:00",
-      "source": "MarketWatch",
-      "title": "Are target-date funds hurting Americans as they live longer?",
-      "url": "https://www.marketwatch.com/story/are-target-date-funds-hurting-americans-as-they-live-longer-929f4f92?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 07 Aug 2026 15:09:00",
-      "source": "MarketWatch",
-      "title": "Tax-free weekends start in Texas, Florida and several other states today. Here\u2019s what to know.",
-      "url": "https://www.marketwatch.com/story/these-16-states-are-offering-tax-holidays-as-back-to-school-costs-soar-to-over-800-per-student-0ec92464?mod=mw_rss_topstories"
     }
   ],
   "rates": {
