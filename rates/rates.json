@@ -135,7 +135,7 @@
       "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-10T14:22:01+00:00",
+  "generated_at": "2026-08-10T15:31:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
-      "published": "Mon, 10 Aug 2026 14:14:00",
+      "published": "Mon, 10 Aug 2026 15:20:00",
       "source": "MarketWatch",
-      "title": "Barrick\u2019s stock slides after dispute settlement sets the scene for IPO of mining company\u2019s gold assets",
-      "url": "https://www.marketwatch.com/story/barricks-stock-slides-after-dispute-settlement-sets-the-scene-for-ipo-of-mining-companys-gold-assets-a88f3d27?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s stock moves above its IPO price for the first time in almost a month",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-moves-above-its-ipo-price-for-the-first-time-in-almost-a-month-fc3f91b7?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 10 Aug 2026 14:00:00",
+      "published": "Mon, 10 Aug 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "This is the ZIP Code with the hottest housing market in the country right now",
-      "url": "https://www.marketwatch.com/story/this-is-the-hottest-zip-code-where-homes-are-selling-fast-2c642716?mod=mw_rss_topstories"
+      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here\u2019s what\u2019s going on.",
+      "url": "https://www.marketwatch.com/story/the-size-of-the-american-workforce-has-fallen-by-over-1-million-people-in-the-past-year-heres-whats-going-on-b8141aa3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 10 Aug 2026 13:30:00",
+      "published": "Mon, 10 Aug 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "The U.S. economy is shedding jobs. Here\u2019s why that\u2019s good news for stocks.",
-      "url": "https://www.marketwatch.com/story/the-u-s-economy-is-shedding-jobs-why-thats-good-news-for-stocks-a7f4773c?mod=mw_rss_topstories"
+      "title": "\u2018I want her to choose the best strategy\u2019: My wife\u2019s Social Security is just $900. Should she claim spousal benefit at 62?",
+      "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 10 Aug 2026 12:53:00",
+      "published": "Mon, 10 Aug 2026 14:51:00",
       "source": "MarketWatch",
-      "title": "Berkshire Hathaway finally started spending its nearly $400 billion in cash \u2014 on one stock it knows very well",
-      "url": "https://www.marketwatch.com/story/berkshire-hathaway-finally-started-spending-its-nearly-400-billion-in-cash-on-one-stock-it-knows-very-well-f9d56389?mod=mw_rss_topstories"
+      "title": "Here\u2019s when Elon Musk\u2019s Starlink internet is worth the steep monthly price \u2014 and $350 startup cost",
+      "url": "https://www.marketwatch.com/story/heres-when-elon-musks-starlink-internet-is-worth-the-steep-monthly-price-and-350-startup-cost-53735d59?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 10 Aug 2026 12:48:00",
+      "published": "Mon, 10 Aug 2026 14:45:00",
       "source": "MarketWatch",
-      "title": "Apple\u2019s stock could underperform, especially without an \u2018all-glass\u2019 iPhone, this analyst warns",
-      "url": "https://www.marketwatch.com/story/apples-stock-could-underperform-especially-without-an-all-glass-iphone-this-analyst-warns-fc9a750c?mod=mw_rss_topstories"
+      "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
+      "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,5 +433,7 @@
       "yield": 5.19
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
+  ]
 }
