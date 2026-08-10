@@ -135,7 +135,7 @@
       "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-10T16:27:27+00:00",
+  "generated_at": "2026-08-10T17:29:21+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.66
       },
       {
-        "date": "2026-07-31",
-        "rate": 6.83
-      },
-      {
         "date": "2026-08-03",
         "rate": 6.82
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-07",
         "rate": 6.74
+      },
+      {
+        "date": "2026-08-10",
+        "rate": 6.76
       }
     ]
   },
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Mon, 10 Aug 2026 17:22:00",
+      "source": "MarketWatch",
+      "title": "Archer strikes deal with Boeing in latest bid to transform aviation through AI",
+      "url": "https://www.marketwatch.com/story/archer-strikes-deal-with-boeing-in-latest-bid-to-transform-aviation-through-ai-dac15322?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 10 Aug 2026 16:48:00",
+      "source": "MarketWatch",
+      "title": "Protect College Sports Act to be voted on next month: What it means for transfers and team spending",
+      "url": "https://www.marketwatch.com/story/senate-vote-on-the-protect-college-sports-act-could-come-this-week-what-it-means-for-transfers-and-salary-caps-58088560?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 10 Aug 2026 16:01:00",
       "source": "MarketWatch",
       "title": "\u2018This has been an emotionally difficult time\u2019: My brother has cancer and my father is 94. How do I shoulder this responsibility?",
@@ -337,33 +349,21 @@
       "source": "MarketWatch",
       "title": "SpaceX\u2019s stock moves above its IPO price for the first time in almost a month",
       "url": "https://www.marketwatch.com/story/spacexs-stock-moves-above-its-ipo-price-for-the-first-time-in-almost-a-month-fc3f91b7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 15:00:00",
-      "source": "MarketWatch",
-      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here\u2019s what\u2019s going on.",
-      "url": "https://www.marketwatch.com/story/the-size-of-the-american-workforce-has-fallen-by-over-1-million-people-in-the-past-year-heres-whats-going-on-b8141aa3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 15:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I want her to choose the best strategy\u2019: My wife\u2019s Social Security is just $900. Should she claim spousal benefit at 62?",
-      "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 07 2026",
-      "change": -0.05,
-      "rate": 6.25
+      "asof_label": "Aug 10 2026",
+      "change": 0.02,
+      "rate": 6.27
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 07 2026",
-      "change": -0.03,
+      "asof_label": "Aug 10 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
