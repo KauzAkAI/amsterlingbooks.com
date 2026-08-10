@@ -135,7 +135,7 @@
       "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-10T20:21:23+00:00",
+  "generated_at": "2026-08-10T21:10:44+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Mon, 10 Aug 2026 20:35:00",
+      "source": "MarketWatch",
+      "title": "Workers are worried, but there\u2019s no sign AI is muscling people out of their jobs on a massive scale",
+      "url": "https://www.marketwatch.com/story/workers-are-worried-but-theres-no-sign-ai-is-muscling-people-out-of-their-jobs-on-a-massive-scale-8eb92638?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 10 Aug 2026 20:17:00",
       "source": "MarketWatch",
       "title": "EBay may dodge a GameStop takeover \u2014 but there\u2019s a new twist in the Ryan Cohen saga",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "This Nvidia change could spell good news for Micron",
       "url": "https://www.marketwatch.com/story/this-nvidia-change-could-spell-good-news-for-micron-80449e59?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 19:31:00",
-      "source": "MarketWatch",
-      "title": "Fed Chair Kevin Warsh promises 2% inflation, but skyrocketing U.S. debt makes that a pipe dream",
-      "url": "https://www.marketwatch.com/story/fed-chair-kevin-warsh-promises-2-inflation-but-skyrocketing-u-s-debt-makes-that-a-pipe-dream-ba448651?mod=mw_rss_topstories"
     }
   ],
   "rates": {
