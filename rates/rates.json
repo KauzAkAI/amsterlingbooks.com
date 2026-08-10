@@ -135,7 +135,7 @@
       "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-10T15:31:06+00:00",
+  "generated_at": "2026-08-10T16:27:27+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Mon, 10 Aug 2026 16:01:00",
+      "source": "MarketWatch",
+      "title": "\u2018This has been an emotionally difficult time\u2019: My brother has cancer and my father is 94. How do I shoulder this responsibility?",
+      "url": "https://www.marketwatch.com/story/this-has-been-an-emotionally-difficult-time-my-brother-has-cancer-and-my-father-is-94-how-do-i-shoulder-this-responsibility-9da09dc4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 10 Aug 2026 15:35:00",
+      "source": "MarketWatch",
+      "title": "17 S&P 500 companies with growing revenue and profit margins \u2014 and some of their stocks are cheap",
+      "url": "https://www.marketwatch.com/story/17-s-p-500-companies-with-growing-revenue-and-profit-margins-and-some-of-their-stocks-are-cheap-e7c7fa14?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 10 Aug 2026 15:20:00",
       "source": "MarketWatch",
       "title": "SpaceX\u2019s stock moves above its IPO price for the first time in almost a month",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018I want her to choose the best strategy\u2019: My wife\u2019s Social Security is just $900. Should she claim spousal benefit at 62?",
       "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 14:51:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s when Elon Musk\u2019s Starlink internet is worth the steep monthly price \u2014 and $350 startup cost",
-      "url": "https://www.marketwatch.com/story/heres-when-elon-musks-starlink-internet-is-worth-the-steep-monthly-price-and-350-startup-cost-53735d59?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 14:45:00",
-      "source": "MarketWatch",
-      "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
-      "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.19
     }
   ],
-  "warnings": [
-    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
-  ]
+  "warnings": []
 }
