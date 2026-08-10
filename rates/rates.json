@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.401
+      "rate": 1.394
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7476
+      "rate": 6.7444
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86693
+      "rate": 0.86543
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74352
+      "rate": 0.7405
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.21
+      "rate": 95.3
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.34
+      "rate": 158.64
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1415.95
+      "rate": 1416.62
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.1551
+      "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-07T23:03:11+00:00",
+  "generated_at": "2026-08-10T14:22:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
-      "published": "Fri, 07 Aug 2026 22:05:00",
+      "published": "Mon, 10 Aug 2026 14:14:00",
       "source": "MarketWatch",
-      "title": "Trump is trying to fire Lisa Cook again. He still wants to stack the Fed with his allies.",
-      "url": "https://www.marketwatch.com/story/trump-is-trying-to-fire-lisa-cook-again-he-still-wants-to-stack-the-fed-with-allies-e6f40aa5?mod=mw_rss_topstories"
+      "title": "Barrick\u2019s stock slides after dispute settlement sets the scene for IPO of mining company\u2019s gold assets",
+      "url": "https://www.marketwatch.com/story/barricks-stock-slides-after-dispute-settlement-sets-the-scene-for-ipo-of-mining-companys-gold-assets-a88f3d27?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 07 Aug 2026 21:58:00",
+      "published": "Mon, 10 Aug 2026 14:00:00",
       "source": "MarketWatch",
-      "title": "The smart way to invest in gold right now as the dollar slips",
-      "url": "https://www.marketwatch.com/story/the-smart-way-to-invest-in-gold-right-now-as-the-dollar-slips-22fdf3b2?mod=mw_rss_topstories"
+      "title": "This is the ZIP Code with the hottest housing market in the country right now",
+      "url": "https://www.marketwatch.com/story/this-is-the-hottest-zip-code-where-homes-are-selling-fast-2c642716?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 07 Aug 2026 20:54:00",
+      "published": "Mon, 10 Aug 2026 13:30:00",
       "source": "MarketWatch",
-      "title": "Palantir\u2019s stock stages best week since 2024 \u2014 showing it\u2019s no longer an AI loser",
-      "url": "https://www.marketwatch.com/story/palantirs-stock-stages-best-week-since-2024-showing-its-no-longer-an-ai-loser-2fc6c32b?mod=mw_rss_topstories"
+      "title": "The U.S. economy is shedding jobs. Here\u2019s why that\u2019s good news for stocks.",
+      "url": "https://www.marketwatch.com/story/the-u-s-economy-is-shedding-jobs-why-thats-good-news-for-stocks-a7f4773c?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 07 Aug 2026 20:41:00",
+      "published": "Mon, 10 Aug 2026 12:53:00",
       "source": "MarketWatch",
-      "title": "Two reasons why Nvidia\u2019s stock saw its biggest weekly surge in more than a year",
-      "url": "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8?mod=mw_rss_topstories"
+      "title": "Berkshire Hathaway finally started spending its nearly $400 billion in cash \u2014 on one stock it knows very well",
+      "url": "https://www.marketwatch.com/story/berkshire-hathaway-finally-started-spending-its-nearly-400-billion-in-cash-on-one-stock-it-knows-very-well-f9d56389?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 07 Aug 2026 20:38:00",
+      "published": "Mon, 10 Aug 2026 12:48:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock just had one of its best days ever \u2014 with the first lockup expiration now behind it",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-is-having-one-of-its-best-days-ever-with-the-first-lockup-expiration-now-behind-it-cd55946c?mod=mw_rss_topstories"
+      "title": "Apple\u2019s stock could underperform, especially without an \u2018all-glass\u2019 iPhone, this analyst warns",
+      "url": "https://www.marketwatch.com/story/apples-stock-could-underperform-especially-without-an-all-glass-iphone-this-analyst-warns-fc9a750c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
