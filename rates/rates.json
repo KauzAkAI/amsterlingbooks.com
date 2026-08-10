@@ -135,7 +135,7 @@
       "rate": 17.1512
     }
   },
-  "generated_at": "2026-08-10T19:35:58+00:00",
+  "generated_at": "2026-08-10T20:21:23+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Mon, 10 Aug 2026 20:17:00",
+      "source": "MarketWatch",
+      "title": "EBay may dodge a GameStop takeover \u2014 but there\u2019s a new twist in the Ryan Cohen saga",
+      "url": "https://www.marketwatch.com/story/ebay-may-dodge-a-gamestop-takeover-but-theres-a-new-twist-in-the-ryan-cohen-saga-d779b753?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 10 Aug 2026 20:00:00",
+      "source": "MarketWatch",
+      "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
+      "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 10 Aug 2026 20:00:00",
+      "source": "MarketWatch",
+      "title": "Good news for stock-market bulls: Corporate earnings growth is no longer being driven just by tech",
+      "url": "https://www.marketwatch.com/story/good-news-for-stock-market-bulls-corporate-earnings-growth-is-no-longer-being-driven-just-by-tech-ddac973b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 10 Aug 2026 19:42:00",
+      "source": "MarketWatch",
+      "title": "This Nvidia change could spell good news for Micron",
+      "url": "https://www.marketwatch.com/story/this-nvidia-change-could-spell-good-news-for-micron-80449e59?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 10 Aug 2026 19:31:00",
       "source": "MarketWatch",
       "title": "Fed Chair Kevin Warsh promises 2% inflation, but skyrocketing U.S. debt makes that a pipe dream",
       "url": "https://www.marketwatch.com/story/fed-chair-kevin-warsh-promises-2-inflation-but-skyrocketing-u-s-debt-makes-that-a-pipe-dream-ba448651?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 19:18:00",
-      "source": "MarketWatch",
-      "title": "Microsoft\u2019s stock is charging back. Here\u2019s the case for it to rally another 30%.",
-      "url": "https://www.marketwatch.com/story/microsofts-stock-is-charging-back-heres-the-case-for-it-to-rally-another-30-1fe261cd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 19:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I want her to choose the best strategy\u2019: My wife\u2019s Social Security is just $900. Should she claim spousal benefit at 62?",
-      "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 18:31:00",
-      "source": "MarketWatch",
-      "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
-      "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 10 Aug 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "Is $1 million enough for a household to retire? The answer keeps changing.",
-      "url": "https://www.marketwatch.com/story/is-1-million-enough-for-a-household-to-retire-the-answer-keeps-changing-aee84a83?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.89
     },
     {
       "tenor": "6M",
-      "yield": 3.96
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 4.01
+      "yield": 4.04
     },
     {
       "tenor": "2Y",
-      "yield": 4.19
+      "yield": 4.25
     },
     {
       "tenor": "5Y",
-      "yield": 4.35
+      "yield": 4.41
     },
     {
       "tenor": "7Y",
-      "yield": 4.49
+      "yield": 4.56
     },
     {
       "tenor": "10Y",
-      "yield": 4.65
+      "yield": 4.72
     },
     {
       "tenor": "20Y",
-      "yield": 5.2
+      "yield": 5.25
     },
     {
       "tenor": "30Y",
-      "yield": 5.19
+      "yield": 5.25
     }
   ],
   "warnings": []
