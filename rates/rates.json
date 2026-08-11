@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.394
+      "rate": 1.3938
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7444
+      "rate": 6.7453
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86543
+      "rate": 0.86655
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7405
+      "rate": 0.74075
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.3
+      "rate": 95.44
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.64
+      "rate": 159.2
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1416.62
+      "rate": 1412.17
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.1512
+      "rate": 17.1223
     }
   },
-  "generated_at": "2026-08-11T14:21:57+00:00",
+  "generated_at": "2026-08-11T15:28:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html"
     },
     {
+      "published": "Tue, 11 Aug 2026 15:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I don\u2019t wish to be cold-hearted\u2019: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
+      "url": "https://www.marketwatch.com/story/i-dont-wish-to-be-cold-hearted-my-elderly-relative-can-no-longer-care-for-himself-am-i-wrong-to-leave-his-care-to-the-state-8d546b32?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 11 Aug 2026 14:53:00",
+      "source": "MarketWatch",
+      "title": "AI is killing worker confidence, but there\u2019s no sign it\u2019s muscling people out of their jobs on a massive scale",
+      "url": "https://www.marketwatch.com/story/workers-are-worried-but-theres-no-sign-ai-is-muscling-people-out-of-their-jobs-on-a-massive-scale-8eb92638?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 11 Aug 2026 14:49:00",
+      "source": "MarketWatch",
+      "title": "Is inflation really slowing? Fed rate hike hinges on July price report.",
+      "url": "https://www.marketwatch.com/story/is-inflation-really-slowing-fed-rate-hike-hinges-on-july-price-report-9d3c3a73?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 11 Aug 2026 14:21:00",
+      "source": "MarketWatch",
+      "title": "Wall Street thinks inflation is under control. Here\u2019s why investors shouldn\u2019t buy it.",
+      "url": "https://www.marketwatch.com/story/fed-chair-kevin-warsh-promises-2-inflation-but-skyrocketing-u-s-debt-makes-that-a-pipe-dream-ba448651?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 11 Aug 2026 14:00:00",
       "source": "MarketWatch",
       "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
       "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 11 Aug 2026 14:00:00",
-      "source": "MarketWatch",
-      "title": "My wife can claim $900 at 62. Should she take it now \u2014 or wait for her spousal benefit?",
-      "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 11 Aug 2026 13:58:00",
-      "source": "MarketWatch",
-      "title": "Airbnb has added thousands of new hotel listings. Will that damage the brand\u2019s identity?",
-      "url": "https://www.marketwatch.com/story/airbnb-has-added-thousands-of-new-hotel-listings-will-that-ruin-its-charm-0af2d3b0?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 11 Aug 2026 13:52:00",
-      "source": "MarketWatch",
-      "title": "I just moved. These 7 tips saved me nearly $1,000.",
-      "url": "https://www.marketwatch.com/story/i-just-moved-these-7-tips-saved-me-around-1-000-ea3b0ae5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 11 Aug 2026 13:39:00",
-      "source": "MarketWatch",
-      "title": "This fund manager tunes out AI hype to flag the infrastructure stocks to buy now. Think roads, water and telecom towers.",
-      "url": "https://www.marketwatch.com/story/roads-water-and-telecom-towers-can-beat-the-ai-hype-this-fund-manager-flags-the-infrastructure-stocks-to-buy-now-54c62a77?mod=mw_rss_topstories"
     }
   ],
   "rates": {
