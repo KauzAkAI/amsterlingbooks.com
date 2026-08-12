@@ -135,7 +135,7 @@
       "rate": 17.0614
     }
   },
-  "generated_at": "2026-08-12T19:46:10+00:00",
+  "generated_at": "2026-08-12T20:26:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -297,7 +297,7 @@
       "url": "https://www.cnbc.com/2026/08/12/us-budget-deficit-surged-in-july-to-highest-level-since-march-2021.html"
     },
     {
-      "published": "Wed, 12 Aug 2026 17:57:44",
+      "published": "Wed, 12 Aug 2026 19:50:29",
       "source": "CNBC",
       "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
@@ -394,39 +394,39 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.79
+      "yield": 3.78
     },
     {
       "tenor": "3M",
-      "yield": 3.89
+      "yield": 3.87
     },
     {
       "tenor": "6M",
-      "yield": 3.99
+      "yield": 3.97
     },
     {
       "tenor": "1Y",
-      "yield": 4.03
+      "yield": 4.0
     },
     {
       "tenor": "2Y",
-      "yield": 4.22
+      "yield": 4.2
     },
     {
       "tenor": "5Y",
-      "yield": 4.39
+      "yield": 4.38
     },
     {
       "tenor": "7Y",
-      "yield": 4.54
+      "yield": 4.52
     },
     {
       "tenor": "10Y",
-      "yield": 4.7
+      "yield": 4.68
     },
     {
       "tenor": "20Y",
-      "yield": 5.25
+      "yield": 5.24
     },
     {
       "tenor": "30Y",
