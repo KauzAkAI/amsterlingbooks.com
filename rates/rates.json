@@ -135,7 +135,7 @@
       "rate": 17.1223
     }
   },
-  "generated_at": "2026-08-11T23:09:49+00:00",
+  "generated_at": "2026-08-12T14:22:33+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,19 @@
   },
   "news": [
     {
-      "published": "Tue, 11 Aug 2026 18:34:41",
+      "published": "Wed, 12 Aug 2026 13:29:29",
+      "source": "CNBC",
+      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+      "url": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html"
+    },
+    {
+      "published": "Wed, 12 Aug 2026 14:21:10",
+      "source": "CNBC",
+      "title": "AI\u2019s costly build-out complicates the Fed\u2019s inflation fight",
+      "url": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html"
+    },
+    {
+      "published": "Wed, 12 Aug 2026 14:04:06",
       "source": "CNBC",
       "title": "An inflation report Wednesday should be a big deal for the Fed. Here's what to expect",
       "url": "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html"
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html"
     },
     {
-      "published": "Fri, 07 Aug 2026 11:23:07",
-      "source": "CNBC",
-      "title": "The July jobs numbers are due out Friday. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html"
-    },
-    {
-      "published": "Wed, 05 Aug 2026 15:08:46",
-      "source": "CNBC",
-      "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
-      "url": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html"
-    },
-    {
-      "published": "Tue, 11 Aug 2026 22:30:00",
+      "published": "Wed, 12 Aug 2026 14:20:00",
       "source": "MarketWatch",
-      "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
-      "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
+      "title": "Lumentum\u2019s stock surges, giving a further boost to the optical-networking trade",
+      "url": "https://www.marketwatch.com/story/lumentums-stock-surges-giving-a-further-boost-to-the-optical-networking-trade-0ee46339?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 11 Aug 2026 22:22:00",
+      "published": "Wed, 12 Aug 2026 13:55:00",
       "source": "MarketWatch",
-      "title": "Lumentum sees sales more than double as AI demand swells",
-      "url": "https://www.marketwatch.com/story/lumentum-sees-sales-more-than-double-as-ai-demand-swells-6ebe6ef1?mod=mw_rss_topstories"
+      "title": "Citadel Securities called the stock-market reset. Now it sees a leverage buildup on the horizon.",
+      "url": "https://www.marketwatch.com/story/citadel-securities-called-the-stock-market-reset-now-it-says-leverage-may-build-up-again-988eec86?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 11 Aug 2026 22:00:00",
+      "published": "Wed, 12 Aug 2026 13:34:00",
       "source": "MarketWatch",
-      "title": "Is $1 million enough for a household to retire? The answer keeps changing.",
-      "url": "https://www.marketwatch.com/story/is-1-million-enough-for-a-household-to-retire-the-answer-keeps-changing-aee84a83?mod=mw_rss_topstories"
+      "title": "CoreWeave\u2019s stock is rocketing after earnings lead to praise from bulls and bears alike",
+      "url": "https://www.marketwatch.com/story/coreweaves-stock-is-rocketing-after-earnings-lead-to-praise-from-bulls-and-bears-alike-46c831e7?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 11 Aug 2026 21:49:00",
+      "published": "Wed, 12 Aug 2026 13:33:00",
       "source": "MarketWatch",
-      "title": "Super Micro\u2019s earnings report brings more good news, and the stock is climbing",
-      "url": "https://www.marketwatch.com/story/super-micros-earnings-report-brings-more-good-news-and-the-stock-is-climbing-30e5ca89?mod=mw_rss_topstories"
+      "title": "Nebius adds to the excitement around neocloud stocks with upbeat earnings of its own",
+      "url": "https://www.marketwatch.com/story/nebius-adds-to-the-excitement-around-neocloud-stocks-with-upbeat-earnings-of-its-own-cd2aa36e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 11 Aug 2026 21:17:00",
+      "published": "Wed, 12 Aug 2026 13:07:00",
       "source": "MarketWatch",
-      "title": "CoreWeave\u2019s stock soars as earnings show major AI momentum",
-      "url": "https://www.marketwatch.com/story/coreweaves-stock-soars-as-earnings-show-major-ai-momentum-d3a5bede?mod=mw_rss_topstories"
+      "title": "Eli Lilly is suing pharmacies and peptide vendors over sale of its next big weight-loss drug: retatrutide",
+      "url": "https://www.marketwatch.com/story/eli-lilly-is-suing-pharmacies-and-peptide-vendors-over-sales-of-the-next-big-weight-loss-drug-retatrutide-22434cce?mod=mw_rss_topstories"
     }
   ],
   "rates": {
