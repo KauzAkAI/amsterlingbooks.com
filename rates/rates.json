@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3938
+      "rate": 1.3926
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7453
+      "rate": 6.7432
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86655
+      "rate": 0.86618
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74075
+      "rate": 0.73935
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.44
+      "rate": 95.34
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.2
+      "rate": 159.09
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1412.17
+      "rate": 1417.13
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.1223
+      "rate": 17.0614
     }
   },
-  "generated_at": "2026-08-12T14:22:33+00:00",
+  "generated_at": "2026-08-12T15:28:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,13 +291,13 @@
   },
   "news": [
     {
-      "published": "Wed, 12 Aug 2026 13:29:29",
+      "published": "Wed, 12 Aug 2026 14:27:35",
       "source": "CNBC",
       "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
       "url": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html"
     },
     {
-      "published": "Wed, 12 Aug 2026 14:21:10",
+      "published": "Wed, 12 Aug 2026 15:23:12",
       "source": "CNBC",
       "title": "AI\u2019s costly build-out complicates the Fed\u2019s inflation fight",
       "url": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html"
     },
     {
-      "published": "Wed, 12 Aug 2026 14:20:00",
+      "published": "Wed, 12 Aug 2026 15:05:00",
       "source": "MarketWatch",
-      "title": "Lumentum\u2019s stock surges, giving a further boost to the optical-networking trade",
-      "url": "https://www.marketwatch.com/story/lumentums-stock-surges-giving-a-further-boost-to-the-optical-networking-trade-0ee46339?mod=mw_rss_topstories"
+      "title": "An active fund holding a whopping 800 stocks is beating major indexes. Here\u2019s how.",
+      "url": "https://www.marketwatch.com/story/an-active-fund-holding-a-whopping-800-stocks-is-beating-major-indexes-heres-how-6bf73062?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 13:55:00",
+      "published": "Wed, 12 Aug 2026 15:00:00",
       "source": "MarketWatch",
-      "title": "Citadel Securities called the stock-market reset. Now it sees a leverage buildup on the horizon.",
-      "url": "https://www.marketwatch.com/story/citadel-securities-called-the-stock-market-reset-now-it-says-leverage-may-build-up-again-988eec86?mod=mw_rss_topstories"
+      "title": "I found a $100 bill in the communal washer at my Airbnb. What should I do?",
+      "url": "https://www.marketwatch.com/story/im-dreaming-of-cocktails-at-chateau-marmont-i-found-100-in-my-airbnbs-communal-washer-what-should-i-do-9694ecca?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 13:34:00",
+      "published": "Wed, 12 Aug 2026 14:54:00",
       "source": "MarketWatch",
-      "title": "CoreWeave\u2019s stock is rocketing after earnings lead to praise from bulls and bears alike",
-      "url": "https://www.marketwatch.com/story/coreweaves-stock-is-rocketing-after-earnings-lead-to-praise-from-bulls-and-bears-alike-46c831e7?mod=mw_rss_topstories"
+      "title": "Social Security recipients will get more money next year. Here\u2019s how much benefits may rise.",
+      "url": "https://www.marketwatch.com/story/social-security-recipients-will-get-more-money-next-year-heres-how-much-benefits-may-rise-dfa50c98?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 13:33:00",
+      "published": "Wed, 12 Aug 2026 14:45:00",
       "source": "MarketWatch",
-      "title": "Nebius adds to the excitement around neocloud stocks with upbeat earnings of its own",
-      "url": "https://www.marketwatch.com/story/nebius-adds-to-the-excitement-around-neocloud-stocks-with-upbeat-earnings-of-its-own-cd2aa36e?mod=mw_rss_topstories"
+      "title": "Can I claim 50% of my husband\u2019s Social Security now \u2014 and switch to my higher benefit at 70?",
+      "url": "https://www.marketwatch.com/story/can-i-claim-50-of-my-husbands-social-security-now-and-switch-to-my-higher-benefit-at-70-5518700b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 13:07:00",
+      "published": "Wed, 12 Aug 2026 14:35:00",
       "source": "MarketWatch",
-      "title": "Eli Lilly is suing pharmacies and peptide vendors over sale of its next big weight-loss drug: retatrutide",
-      "url": "https://www.marketwatch.com/story/eli-lilly-is-suing-pharmacies-and-peptide-vendors-over-sales-of-the-next-big-weight-loss-drug-retatrutide-22434cce?mod=mw_rss_topstories"
+      "title": "I just moved. These 7 tips saved me nearly $1,000.",
+      "url": "https://www.marketwatch.com/story/i-just-moved-these-7-tips-saved-me-around-1-000-ea3b0ae5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
