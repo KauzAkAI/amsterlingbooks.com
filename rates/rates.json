@@ -135,7 +135,7 @@
       "rate": 17.0534
     }
   },
-  "generated_at": "2026-08-13T16:30:19+00:00",
+  "generated_at": "2026-08-13T17:35:23+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-08-05",
-        "rate": 6.75
-      },
-      {
-        "date": "2026-08-05",
         "rate": 6.81
       },
       {
@@ -223,6 +219,10 @@
       {
         "date": "2026-08-12",
         "rate": 6.74
+      },
+      {
+        "date": "2026-08-13",
+        "rate": 6.69
       },
       {
         "date": "2026-08-13",
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Thu, 13 Aug 2026 17:06:00",
+      "source": "MarketWatch",
+      "title": "Why September is the worst month of the year for the stock market",
+      "url": "https://www.marketwatch.com/story/why-september-is-the-worst-month-of-the-year-for-the-stock-market-59285c78?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 13 Aug 2026 16:58:00",
+      "source": "MarketWatch",
+      "title": "Sandisk\u2019s stock is flying higher. Here are the new targets that are exciting Wall Street.",
+      "url": "https://www.marketwatch.com/story/sandisks-stock-is-flying-higher-here-are-the-new-targets-that-are-exciting-wall-street-4eaab99d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 13 Aug 2026 15:48:00",
       "source": "MarketWatch",
       "title": "These nontech stocks can ride the AI build-out for years",
@@ -337,32 +349,20 @@
       "source": "MarketWatch",
       "title": "Your prescription drugs shouldn\u2019t cost more than your mortgage. Inside the broken math that got us here.",
       "url": "https://www.marketwatch.com/story/your-prescription-drugs-shouldnt-cost-more-than-your-mortgage-inside-the-broken-math-that-got-us-here-b5a2c4aa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 13 Aug 2026 14:57:00",
-      "source": "MarketWatch",
-      "title": "The 10 housing markets where the most sellers have listed their homes for less than what they paid",
-      "url": "https://www.marketwatch.com/story/the-10-housing-markets-where-the-most-sellers-have-listed-their-homes-for-less-than-what-they-paid-acd4c8da?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 13 Aug 2026 14:49:00",
-      "source": "MarketWatch",
-      "title": "These workers have charisma, confidence \u2014 and no fear of AI taking their jobs. They\u2019re the personality hires.",
-      "url": "https://www.marketwatch.com/story/these-workers-have-charisma-confidence-and-no-fear-of-ai-taking-their-jobs-theyre-the-personality-hires-3235c187?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 12 2026",
+      "asof_label": "Aug 13 2026",
       "change": -0.01,
-      "rate": 6.27
+      "rate": 6.26
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 12 2026",
+      "asof_label": "Aug 13 2026",
       "change": -0.05,
       "rate": 6.52
     }
