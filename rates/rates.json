@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3926
+      "rate": 1.3949
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7432
+      "rate": 6.743
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86618
+      "rate": 0.867
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73935
+      "rate": 0.7412
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.34
+      "rate": 95.44
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.09
+      "rate": 159.33
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1417.13
+      "rate": 1420.29
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0614
+      "rate": 17.0534
     }
   },
-  "generated_at": "2026-08-12T23:03:40+00:00",
+  "generated_at": "2026-08-13T14:24:34+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Thu, 13 Aug 2026 13:18:36",
+      "source": "CNBC",
+      "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
+      "url": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html"
+    },
+    {
+      "published": "Thu, 13 Aug 2026 12:42:10",
+      "source": "CNBC",
+      "title": "The Iran war risks bringing the G7's fastest-growing economy to a halt",
+      "url": "https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html"
+    },
+    {
       "published": "Wed, 12 Aug 2026 18:56:15",
       "source": "CNBC",
       "title": "U.S. budget deficit surged in July to highest level since March 2021",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
-      "published": "Wed, 12 Aug 2026 14:27:35",
-      "source": "CNBC",
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "url": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html"
-    },
-    {
-      "published": "Wed, 12 Aug 2026 15:23:12",
-      "source": "CNBC",
-      "title": "AI\u2019s costly build-out complicates the Fed\u2019s inflation fight",
-      "url": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html"
-    },
-    {
-      "published": "Wed, 12 Aug 2026 22:35:00",
+      "published": "Thu, 13 Aug 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "China\u2019s next economic ambition: workshop for the Muslim world",
-      "url": "https://www.marketwatch.com/story/now-china-wants-to-become-the-shop-floor-for-the-muslim-world-9ffd785a?mod=mw_rss_topstories"
+      "title": "\u2018My husband and I are at odds\u2019: Should we tap our home equity or sell stocks to build a $100,000 emergency fund?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-at-odds-should-we-tap-our-home-equity-or-sell-stocks-to-build-a-100-000-emergency-fund-097d36a4?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 22:34:00",
+      "published": "Thu, 13 Aug 2026 14:08:00",
       "source": "MarketWatch",
-      "title": "Nebius adds to the excitement around neocloud stocks with upbeat earnings of its own",
-      "url": "https://www.marketwatch.com/story/nebius-adds-to-the-excitement-around-neocloud-stocks-with-upbeat-earnings-of-its-own-cd2aa36e?mod=mw_rss_topstories"
+      "title": "Dell\u2019s stock has beaten Micron and AMD this year \u2014 and now it\u2019s adding to its gains",
+      "url": "https://www.marketwatch.com/story/dells-stock-has-beaten-micron-and-amd-this-year-and-now-its-adding-to-its-gains-11c00117?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 22:31:00",
+      "published": "Thu, 13 Aug 2026 14:01:00",
       "source": "MarketWatch",
-      "title": "Lumentum\u2019s stock surges, giving a further boost to the optical-networking trade",
-      "url": "https://www.marketwatch.com/story/lumentums-stock-surges-giving-a-further-boost-to-the-optical-networking-trade-0ee46339?mod=mw_rss_topstories"
+      "title": "\u2018I unexpectedly came into some money\u2019: Is putting $20,000 into CDs a smart move?",
+      "url": "https://www.marketwatch.com/story/i-unexpectedly-came-into-some-money-is-putting-20-000-into-cds-a-smart-move-6c410458?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 22:00:00",
+      "published": "Thu, 13 Aug 2026 14:00:00",
       "source": "MarketWatch",
       "title": "Can I claim 50% of my husband\u2019s Social Security now \u2014 and switch to my higher benefit at 70?",
       "url": "https://www.marketwatch.com/story/can-i-claim-50-of-my-husbands-social-security-now-and-switch-to-my-higher-benefit-at-70-5518700b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 12 Aug 2026 22:00:00",
+      "published": "Thu, 13 Aug 2026 13:36:00",
       "source": "MarketWatch",
-      "title": "Super Micro gives a big sales forecast, but analysts wonder how long the momentum can last",
-      "url": "https://www.marketwatch.com/story/super-micro-stock-is-rallying-after-results-heres-what-wall-street-is-saying-631e9253?mod=mw_rss_topstories"
+      "title": "Salesforce\u2019s stock gets a boost as J.P. Morgan says AI fears are overblown",
+      "url": "https://www.marketwatch.com/story/salesforces-stock-gets-a-boost-as-j-p-morgan-says-ai-fears-are-overblown-feebb221?mod=mw_rss_topstories"
     }
   ],
   "rates": {
