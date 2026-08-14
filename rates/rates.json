@@ -135,7 +135,7 @@
       "rate": 16.9959
     }
   },
-  "generated_at": "2026-08-14T15:11:44+00:00",
+  "generated_at": "2026-08-14T16:07:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Fri, 14 Aug 2026 15:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s a double-edged sword\u2019: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
+      "url": "https://www.marketwatch.com/story/its-a-double-edged-sword-my-husband-got-a-42-000-bonus-will-it-wipe-out-our-affordable-care-act-subsidy-32db285e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 14 Aug 2026 15:07:00",
       "source": "MarketWatch",
       "title": "Your prescription drugs shouldn\u2019t cost more than your mortgage. Inside the broken math that got us here.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Congress changed the rules around charitable giving. You\u2019ll now save more money if you donate earlier in the year.",
       "url": "https://www.marketwatch.com/story/congress-changed-the-rules-around-charitable-giving-do-it-earlier-in-the-year-to-save-money-392e5de3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 14:13:00",
-      "source": "MarketWatch",
-      "title": "\u2018I didn\u2019t know what else to do\u2019: Patients take their health-insurance battles to Facebook and LinkedIn",
-      "url": "https://www.marketwatch.com/story/i-didnt-know-what-else-to-do-patients-take-their-health-insurance-battles-to-facebook-and-linkedin-500bda58?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,5 +433,7 @@
       "yield": 5.21
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
