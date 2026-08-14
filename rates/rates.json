@@ -135,7 +135,7 @@
       "rate": 16.9959
     }
   },
-  "generated_at": "2026-08-14T16:07:46+00:00",
+  "generated_at": "2026-08-14T17:11:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-08-06",
-        "rate": 6.77
-      },
-      {
-        "date": "2026-08-06",
         "rate": 6.69
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-13",
         "rate": 6.67
+      },
+      {
+        "date": "2026-08-14",
+        "rate": 6.69
       }
     ]
   },
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Fri, 14 Aug 2026 17:04:00",
+      "source": "MarketWatch",
+      "title": "Drone stocks are soaring thanks to Trump\u2019s new tariffs",
+      "url": "https://www.marketwatch.com/story/drone-stocks-are-soaring-thanks-to-trumps-new-tariffs-895c6658?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 14 Aug 2026 16:21:00",
+      "source": "MarketWatch",
+      "title": "Still trying to time the stock market? This chart shows why it\u2019s tougher than you think.",
+      "url": "https://www.marketwatch.com/story/still-trying-to-time-the-stock-market-this-chart-shows-why-its-tougher-than-you-think-79a726c4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 14 Aug 2026 16:10:00",
+      "source": "MarketWatch",
+      "title": "I have $10 million and pay two advisers for financial help, but still have questions",
+      "url": "https://www.marketwatch.com/story/i-have-10-million-and-pay-two-advisers-for-financial-help-but-still-have-questions-7c29b83f?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 14 Aug 2026 15:45:00",
       "source": "MarketWatch",
       "title": "\u2018It\u2019s a double-edged sword\u2019: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
@@ -331,39 +349,21 @@
       "source": "MarketWatch",
       "title": "Your prescription drugs shouldn\u2019t cost more than your mortgage. Inside the broken math that got us here.",
       "url": "https://www.marketwatch.com/story/your-prescription-drugs-shouldnt-cost-more-than-your-mortgage-inside-the-broken-math-that-got-us-here-b5a2c4aa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 15:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018My wife and I are both retired\u2019: Should we dip into our $2.3 million investments to pay off our 2.9% $300,000 mortgage?",
-      "url": "https://www.marketwatch.com/story/my-wife-and-i-are-both-retired-do-we-dip-into-our-2-3-million-fund-to-pay-off-our-300-000-mortgage-at-2-9-2d23d1df?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 14:30:00",
-      "source": "MarketWatch",
-      "title": "Should I tap my home equity or sell stocks to build a $100,000 emergency fund?",
-      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-at-odds-should-we-tap-our-home-equity-or-sell-stocks-to-build-a-100-000-emergency-fund-097d36a4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 14:14:00",
-      "source": "MarketWatch",
-      "title": "Congress changed the rules around charitable giving. You\u2019ll now save more money if you donate earlier in the year.",
-      "url": "https://www.marketwatch.com/story/congress-changed-the-rules-around-charitable-giving-do-it-earlier-in-the-year-to-save-money-392e5de3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 13 2026",
-      "change": -0.01,
-      "rate": 6.26
+      "asof_label": "Aug 14 2026",
+      "change": 0.01,
+      "rate": 6.27
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 13 2026",
-      "change": -0.05,
+      "asof_label": "Aug 14 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
@@ -434,6 +434,6 @@
     }
   ],
   "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
   ]
 }
