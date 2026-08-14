@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3949
+      "rate": 1.3875
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.743
+      "rate": 6.7413
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.867
+      "rate": 0.86453
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7412
+      "rate": 0.73874
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.44
+      "rate": 95.43
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.33
+      "rate": 159.01
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1420.29
+      "rate": 1411.27
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0534
+      "rate": 16.9959
     }
   },
-  "generated_at": "2026-08-14T14:17:45+00:00",
+  "generated_at": "2026-08-14T15:11:44+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Fri, 14 Aug 2026 15:07:00",
+      "source": "MarketWatch",
+      "title": "Your prescription drugs shouldn\u2019t cost more than your mortgage. Inside the broken math that got us here.",
+      "url": "https://www.marketwatch.com/story/your-prescription-drugs-shouldnt-cost-more-than-your-mortgage-inside-the-broken-math-that-got-us-here-b5a2c4aa?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 14 Aug 2026 15:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018My wife and I are both retired\u2019: Should we dip into our $2.3 million investments to pay off our 2.9% $300,000 mortgage?",
+      "url": "https://www.marketwatch.com/story/my-wife-and-i-are-both-retired-do-we-dip-into-our-2-3-million-fund-to-pay-off-our-300-000-mortgage-at-2-9-2d23d1df?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 14 Aug 2026 14:30:00",
+      "source": "MarketWatch",
+      "title": "Should I tap my home equity or sell stocks to build a $100,000 emergency fund?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-at-odds-should-we-tap-our-home-equity-or-sell-stocks-to-build-a-100-000-emergency-fund-097d36a4?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 14 Aug 2026 14:14:00",
       "source": "MarketWatch",
       "title": "Congress changed the rules around charitable giving. You\u2019ll now save more money if you donate earlier in the year.",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018I didn\u2019t know what else to do\u2019: Patients take their health-insurance battles to Facebook and LinkedIn",
       "url": "https://www.marketwatch.com/story/i-didnt-know-what-else-to-do-patients-take-their-health-insurance-battles-to-facebook-and-linkedin-500bda58?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 14:01:00",
-      "source": "MarketWatch",
-      "title": "My friend\u2019s mother died. Can she stop Medicaid from taking the family home?",
-      "url": "https://www.marketwatch.com/story/shes-desperate-my-friends-mother-died-can-she-stop-medicaid-from-taking-the-family-home-394fb6e9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 13:48:00",
-      "source": "MarketWatch",
-      "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
-      "url": "https://www.marketwatch.com/story/i-have-a-9-to-5-job-and-started-dating-a-bartender-can-i-have-a-future-with-someone-who-works-nights-500d4320?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 14 Aug 2026 13:31:00",
-      "source": "MarketWatch",
-      "title": "Bond yields are at multiyear highs, yet stocks have hit fresh records. Here\u2019s how long the defiance can last.",
-      "url": "https://www.marketwatch.com/story/rates-are-at-multiyear-highs-yet-stocks-hit-fresh-records-heres-how-long-the-defiance-may-last-b29a5d14?mod=mw_rss_topstories"
     }
   ],
   "rates": {
