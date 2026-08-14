@@ -135,7 +135,7 @@
       "rate": 16.9959
     }
   },
-  "generated_at": "2026-08-14T19:13:58+00:00",
+  "generated_at": "2026-08-14T19:59:05+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-07-22",
-        "rate": 6.69
-      },
-      {
         "date": "2026-07-29",
         "rate": 6.76
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-08-12",
         "rate": 6.74
+      },
+      {
+        "date": "2026-08-12",
+        "rate": 6.77
       },
       {
         "date": "2026-08-13",
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.86
     },
     {
       "tenor": "6M",
-      "yield": 3.94
+      "yield": 3.95
     },
     {
       "tenor": "1Y",
-      "yield": 3.97
+      "yield": 3.98
     },
     {
       "tenor": "2Y",
-      "yield": 4.15
+      "yield": 4.17
     },
     {
       "tenor": "5Y",
-      "yield": 4.32
+      "yield": 4.36
     },
     {
       "tenor": "7Y",
-      "yield": 4.47
+      "yield": 4.51
     },
     {
       "tenor": "10Y",
-      "yield": 4.63
+      "yield": 4.68
     },
     {
       "tenor": "20Y",
-      "yield": 5.2
+      "yield": 5.25
     },
     {
       "tenor": "30Y",
-      "yield": 5.21
+      "yield": 5.25
     }
   ],
   "warnings": []
