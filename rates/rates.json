@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T18:21:45+00:00",
+  "generated_at": "2026-08-17T19:07:35+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 19:04:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
+      "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 19:03:00",
+      "source": "MarketWatch",
+      "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
+      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 18:58:00",
+      "source": "MarketWatch",
+      "title": "SpaceX\u2019s stock is rising, and that\u2019s a good sign for Nvidia and Google",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-is-rising-and-thats-a-good-sign-for-nvidia-and-google-913ce9de?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 18:52:00",
+      "source": "MarketWatch",
+      "title": "Getting diagnosed with dementia isn\u2019t the end. It\u2019s a time to take financial action.",
+      "url": "https://www.marketwatch.com/story/getting-diagnosed-with-dementia-isnt-the-end-its-a-time-to-take-financial-action-f52769b6?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 17:57:00",
       "source": "MarketWatch",
       "title": "Here\u2019s how Amazon\u2019s stock could nearly double by the end of next year, according to Morgan Stanley",
       "url": "https://www.marketwatch.com/story/heres-how-amazons-stock-could-nearly-double-by-the-end-of-next-year-according-to-morgan-stanley-91b97520?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 17:45:00",
-      "source": "MarketWatch",
-      "title": "The Mediterranean diet is the best one out there. Here\u2019s why Americans struggle with it.",
-      "url": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 16:31:00",
-      "source": "MarketWatch",
-      "title": "Investor dubbed the \u2018AI stock god\u2019 had 56% of his hedge fund invested in these two stocks before the July blow-up",
-      "url": "https://www.marketwatch.com/story/investor-dubbed-ai-stock-god-had-56-of-his-funds-in-these-two-stocks-before-it-blew-up-07472f46?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 16:17:00",
-      "source": "MarketWatch",
-      "title": "Owning a home is overrated. Renting is now often a much better money move.",
-      "url": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 16:00:00",
-      "source": "MarketWatch",
-      "title": "Apple\u2019s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says",
-      "url": "https://www.marketwatch.com/story/apples-stock-could-rise-30-if-it-strikes-an-nvidia-deal-for-ai-this-analyst-says-f5f5c861?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,5 +433,7 @@
       "yield": 5.25
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
+  ]
 }
