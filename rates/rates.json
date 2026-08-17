@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T17:48:42+00:00",
+  "generated_at": "2026-08-17T18:21:45+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 17:57:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s how Amazon\u2019s stock could nearly double by the end of next year, according to Morgan Stanley",
+      "url": "https://www.marketwatch.com/story/heres-how-amazons-stock-could-nearly-double-by-the-end-of-next-year-according-to-morgan-stanley-91b97520?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 17:45:00",
       "source": "MarketWatch",
       "title": "The Mediterranean diet is the best one out there. Here\u2019s why Americans struggle with it.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Apple\u2019s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says",
       "url": "https://www.marketwatch.com/story/apples-stock-could-rise-30-if-it-strikes-an-nvidia-deal-for-ai-this-analyst-says-f5f5c861?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 15:29:00",
-      "source": "MarketWatch",
-      "title": "I have $10 million and pay two advisers for financial help, but still have questions",
-      "url": "https://www.marketwatch.com/story/i-have-10-million-and-pay-two-advisers-for-financial-help-but-still-have-questions-7c29b83f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
