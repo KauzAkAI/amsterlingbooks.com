@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T19:41:59+00:00",
+  "generated_at": "2026-08-17T20:03:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 19:48:00",
+      "source": "MarketWatch",
+      "title": "Why it pays to stay invested: No amount of bad news could stop the stock market\u2019s strongest run in more than 25 years",
+      "url": "https://www.marketwatch.com/story/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-54ba3f8a?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 19:04:00",
       "source": "MarketWatch",
       "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Getting diagnosed with dementia isn\u2019t the end. It\u2019s a time to take financial action.",
       "url": "https://www.marketwatch.com/story/getting-diagnosed-with-dementia-isnt-the-end-its-a-time-to-take-financial-action-f52769b6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 17:57:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s how Amazon\u2019s stock could nearly double by the end of next year, according to Morgan Stanley",
-      "url": "https://www.marketwatch.com/story/heres-how-amazons-stock-could-nearly-double-by-the-end-of-next-year-according-to-morgan-stanley-91b97520?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,7 +398,7 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.86
+      "yield": 3.87
     },
     {
       "tenor": "6M",
@@ -406,31 +406,31 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.98
+      "yield": 4.0
     },
     {
       "tenor": "2Y",
-      "yield": 4.17
+      "yield": 4.19
     },
     {
       "tenor": "5Y",
-      "yield": 4.36
+      "yield": 4.38
     },
     {
       "tenor": "7Y",
-      "yield": 4.51
+      "yield": 4.54
     },
     {
       "tenor": "10Y",
-      "yield": 4.68
+      "yield": 4.72
     },
     {
       "tenor": "20Y",
-      "yield": 5.25
+      "yield": 5.3
     },
     {
       "tenor": "30Y",
-      "yield": 5.25
+      "yield": 5.31
     }
   ],
   "warnings": []
