@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T16:09:44+00:00",
+  "generated_at": "2026-08-17T16:47:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 16:31:00",
+      "source": "MarketWatch",
+      "title": "Investor dubbed the \u2018AI stock god\u2019 had 56% of his hedge fund invested in these two stocks before the July blow-up",
+      "url": "https://www.marketwatch.com/story/investor-dubbed-ai-stock-god-had-56-of-his-funds-in-these-two-stocks-before-it-blew-up-07472f46?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 16:17:00",
+      "source": "MarketWatch",
+      "title": "Owning a home is overrated. Renting is now often a much better money move.",
+      "url": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 16:00:00",
       "source": "MarketWatch",
       "title": "Apple\u2019s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Micron, Sandisk and other chip stocks climb as investors get more confident about AI spending",
       "url": "https://www.marketwatch.com/story/micron-sandisk-and-other-chip-stocks-climb-as-investors-are-more-confident-about-ai-spending-128374fa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 15:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
-      "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 15:14:00",
-      "source": "MarketWatch",
-      "title": "Social Security recipients will get more money next year. Here\u2019s how much the COLA may boost benefits.",
-      "url": "https://www.marketwatch.com/story/social-security-recipients-will-get-more-money-next-year-heres-how-much-benefits-may-rise-dfa50c98?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.25
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
