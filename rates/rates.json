@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T21:59:20+00:00",
+  "generated_at": "2026-08-17T22:35:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 22:33:00",
+      "source": "MarketWatch",
+      "title": "Why this popular Treasury bond ETF is trading at its lowest since 2004",
+      "url": "https://www.marketwatch.com/story/why-this-popular-treasury-bond-etf-is-trading-at-its-lowest-since-2004-27de9a77?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 21:30:00",
       "source": "MarketWatch",
       "title": "\u2018It\u2019s a double-edged sword\u2019: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "I\u2019m 63, a retired CPA with a $1.2 million 401(k). Do I need to bother with a Roth conversion?",
       "url": "https://www.marketwatch.com/story/im-63-and-a-retired-cpa-i-have-a-1-2-million-401-k-do-i-need-a-roth-conversion-0a227302?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 20:43:00",
-      "source": "MarketWatch",
-      "title": "Micron, Sandisk and other chip stocks climb as investors get more confident about AI spending",
-      "url": "https://www.marketwatch.com/story/micron-sandisk-and-other-chip-stocks-climb-as-investors-are-more-confident-about-ai-spending-128374fa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
