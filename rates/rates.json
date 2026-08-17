@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3875
+      "rate": 1.3859
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7413
+      "rate": 6.7394
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86453
+      "rate": 0.86259
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73874
+      "rate": 0.73751
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.43
+      "rate": 95.61
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.01
+      "rate": 159.23
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1411.27
+      "rate": 1411.91
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9959
+      "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T13:44:18+00:00",
+  "generated_at": "2026-08-17T14:13:21+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 13:45:00",
+      "source": "MarketWatch",
+      "title": "My friend\u2019s mother died. Can she stop Medicaid from taking the family home?",
+      "url": "https://www.marketwatch.com/story/shes-desperate-my-friends-mother-died-can-she-stop-medicaid-from-taking-the-family-home-394fb6e9?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 13:35:00",
       "source": "MarketWatch",
       "title": "The stock market is driving the economy in one major way",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The Mediterranean diet is the best one out there. Here\u2019s why Americans struggle with it.",
       "url": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 12:16:00",
-      "source": "MarketWatch",
-      "title": "\u2018It\u2019s a double-edged sword\u2019: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
-      "url": "https://www.marketwatch.com/story/its-a-double-edged-sword-my-husband-got-a-42-000-bonus-will-it-wipe-out-our-affordable-care-act-subsidy-32db285e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
