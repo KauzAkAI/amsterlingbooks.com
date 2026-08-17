@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T15:44:10+00:00",
+  "generated_at": "2026-08-17T16:09:44+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.69
       },
       {
-        "date": "2026-08-07",
-        "rate": 6.74
-      },
-      {
         "date": "2026-08-10",
         "rate": 6.8
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-14",
         "rate": 6.71
+      },
+      {
+        "date": "2026-08-17",
+        "rate": 6.73
       }
     ]
   },
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 16:00:00",
+      "source": "MarketWatch",
+      "title": "Apple\u2019s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says",
+      "url": "https://www.marketwatch.com/story/apples-stock-could-rise-30-if-it-strikes-an-nvidia-deal-for-ai-this-analyst-says-f5f5c861?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 15:29:00",
       "source": "MarketWatch",
       "title": "I have $10 million and pay two advisers for financial help, but still have questions",
@@ -343,26 +349,20 @@
       "source": "MarketWatch",
       "title": "Social Security recipients will get more money next year. Here\u2019s how much the COLA may boost benefits.",
       "url": "https://www.marketwatch.com/story/social-security-recipients-will-get-more-money-next-year-heres-how-much-benefits-may-rise-dfa50c98?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 14:59:00",
-      "source": "MarketWatch",
-      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here\u2019s what\u2019s going on.",
-      "url": "https://www.marketwatch.com/story/the-size-of-the-american-workforce-has-fallen-by-over-1-million-people-in-the-past-year-heres-whats-going-on-b8141aa3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 14 2026",
-      "change": 0.03,
-      "rate": 6.29
+      "asof_label": "Aug 17 2026",
+      "change": 0.01,
+      "rate": 6.3
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 14 2026",
+      "asof_label": "Aug 17 2026",
       "change": 0.02,
       "rate": 6.52
     }
@@ -433,5 +433,7 @@
       "yield": 5.25
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
