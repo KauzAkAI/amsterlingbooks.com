@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T21:03:58+00:00",
+  "generated_at": "2026-08-17T21:37:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 21:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s a double-edged sword\u2019: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
+      "url": "https://www.marketwatch.com/story/its-a-double-edged-sword-my-husband-got-a-42-000-bonus-will-it-wipe-out-our-affordable-care-act-subsidy-32db285e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 21:22:00",
+      "source": "MarketWatch",
+      "title": "There\u2019s a 49% chance the Dow will finish this year up double digits. Here\u2019s why.",
+      "url": "https://www.marketwatch.com/story/theres-a-49-chance-the-dow-will-finish-this-year-up-double-digits-heres-why-6871e569?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 17 Aug 2026 21:15:00",
+      "source": "MarketWatch",
+      "title": "The number of \u2018negative-beta\u2019 stocks in the S&P 500 just hit a new record high. What that means for investors.",
+      "url": "https://www.marketwatch.com/story/the-number-of-negative-beta-stocks-in-the-s-p-500-just-hit-a-new-record-high-what-that-means-for-investors-992ca307?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 21:00:00",
       "source": "MarketWatch",
       "title": "I\u2019m 63, a retired CPA with a $1.2 million 401(k). Do I need to bother with a Roth conversion?",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "Micron, Sandisk and other chip stocks climb as investors get more confident about AI spending",
       "url": "https://www.marketwatch.com/story/micron-sandisk-and-other-chip-stocks-climb-as-investors-are-more-confident-about-ai-spending-128374fa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 20:28:00",
-      "source": "MarketWatch",
-      "title": "A new set of Trump tariffs for Canada could take effect Wednesday. Here\u2019s what\u2019s at stake.",
-      "url": "https://www.marketwatch.com/story/a-new-set-of-trump-tariffs-for-canada-could-take-effect-wednesday-heres-whats-at-stake-8aa0eeb8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 20:18:00",
-      "source": "MarketWatch",
-      "title": "SpaceX\u2019s stock is rising, and that\u2019s a good sign for Nvidia and Google",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-is-rising-and-thats-a-good-sign-for-nvidia-and-google-913ce9de?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 19:48:00",
-      "source": "MarketWatch",
-      "title": "Why it pays to stay invested: No amount of bad news could stop the stock market\u2019s strongest run in more than 25 years",
-      "url": "https://www.marketwatch.com/story/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-54ba3f8a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.31
     }
   ],
-  "warnings": [
-    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
-  ]
+  "warnings": []
 }
