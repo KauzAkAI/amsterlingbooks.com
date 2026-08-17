@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T19:07:35+00:00",
+  "generated_at": "2026-08-17T19:41:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -433,7 +433,5 @@
       "yield": 5.25
     }
   ],
-  "warnings": [
-    "Forex failed: ReadTimeout: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=20)"
-  ]
+  "warnings": []
 }
