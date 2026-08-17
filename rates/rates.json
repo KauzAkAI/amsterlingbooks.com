@@ -135,7 +135,7 @@
       "rate": 17.0091
     }
   },
-  "generated_at": "2026-08-17T17:13:26+00:00",
+  "generated_at": "2026-08-17T17:48:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html"
     },
     {
+      "published": "Mon, 17 Aug 2026 17:45:00",
+      "source": "MarketWatch",
+      "title": "The Mediterranean diet is the best one out there. Here\u2019s why Americans struggle with it.",
+      "url": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 17 Aug 2026 16:31:00",
       "source": "MarketWatch",
       "title": "Investor dubbed the \u2018AI stock god\u2019 had 56% of his hedge fund invested in these two stocks before the July blow-up",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "I have $10 million and pay two advisers for financial help, but still have questions",
       "url": "https://www.marketwatch.com/story/i-have-10-million-and-pay-two-advisers-for-financial-help-but-still-have-questions-7c29b83f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 17 Aug 2026 15:22:00",
-      "source": "MarketWatch",
-      "title": "Micron, Sandisk and other chip stocks climb as investors get more confident about AI spending",
-      "url": "https://www.marketwatch.com/story/micron-sandisk-and-other-chip-stocks-climb-as-investors-are-more-confident-about-ai-spending-128374fa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
