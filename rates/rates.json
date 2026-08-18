@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T19:45:35+00:00",
+  "generated_at": "2026-08-18T20:02:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 19:54:00",
+      "source": "MarketWatch",
+      "title": "My co-workers complain about minor things and\u00a0make every meeting miserable. How should I deal with them?",
+      "url": "https://www.marketwatch.com/story/how-do-i-deal-with-co-workers-who-constantly-complain-about-the-dumbest-problems-44060bc7?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 18 Aug 2026 19:52:00",
+      "source": "MarketWatch",
+      "title": "America\u2019s growing debt pile will be the big focus Wednesday as global bond rout deepens",
+      "url": "https://www.marketwatch.com/story/americas-growing-debt-pile-will-be-the-big-focus-wednesday-as-global-bond-rout-deepens-a6955c80?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 19:17:00",
       "source": "MarketWatch",
       "title": "Mortgage rates could move even higher \u2014 dealing a fresh blow to home buyers",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "The national debt is about to hit $40 trillion. Here\u2019s how it can hurt Americans.",
       "url": "https://www.marketwatch.com/story/the-national-debt-is-about-to-hit-40-trillion-heres-how-it-can-hurt-americans-b4f252b9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 18:31:00",
-      "source": "MarketWatch",
-      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us out of their lives after a political argument. Should we change our $3 million will?",
-      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018Too many people go bankrupt\u2019: Should Medicare provide catastrophic coverage?",
-      "url": "https://www.marketwatch.com/story/too-many-people-go-bankrupt-should-medicare-provide-catastrophic-coverage-f7c653da?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.79
+      "yield": 3.78
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.86
     },
     {
       "tenor": "6M",
-      "yield": 3.95
+      "yield": 3.94
     },
     {
       "tenor": "1Y",
-      "yield": 4.0
+      "yield": 3.99
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.38
+      "yield": 4.37
     },
     {
       "tenor": "7Y",
-      "yield": 4.54
+      "yield": 4.53
     },
     {
       "tenor": "10Y",
-      "yield": 4.72
+      "yield": 4.71
     },
     {
       "tenor": "20Y",
-      "yield": 5.3
+      "yield": 5.28
     },
     {
       "tenor": "30Y",
-      "yield": 5.31
+      "yield": 5.28
     }
   ],
   "warnings": []
