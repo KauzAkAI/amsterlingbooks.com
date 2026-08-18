@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T21:55:36+00:00",
+  "generated_at": "2026-08-18T22:31:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 21:59:00",
+      "source": "MarketWatch",
+      "title": "Meta is facing its \u2018Big Tobacco\u2019 moment \u2014 and investors can profit",
+      "url": "https://www.marketwatch.com/story/meta-is-facing-its-big-tobacco-moment-and-investors-can-profit-e0f27b2d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 21:08:00",
       "source": "MarketWatch",
       "title": "AI chip stocks were riding high. Here\u2019s why Micron and others are now pulling back.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
       "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 20:07:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s a \u2018ridiculously cheap\u2019 way to protect yourself against a stock-market selloff",
-      "url": "https://www.marketwatch.com/story/heres-a-ridiculously-cheap-way-to-protect-yourself-against-a-stock-market-selloff-67d3b312?mod=mw_rss_topstories"
     }
   ],
   "rates": {
