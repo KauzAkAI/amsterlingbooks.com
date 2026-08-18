@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T18:44:42+00:00",
+  "generated_at": "2026-08-18T19:17:33+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 18:44:00",
+      "source": "MarketWatch",
+      "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
+      "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 18:33:00",
       "source": "MarketWatch",
       "title": "The national debt is about to hit $40 trillion. Here\u2019s how it can hurt Americans.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The Fed minutes are coming \u2014and they\u2019re more crucial now as Warsh limits his communication",
       "url": "https://www.marketwatch.com/story/the-fed-minutes-are-coming-and-theyre-more-crucial-now-as-warsh-limits-his-communication-fd780695?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 17:26:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s the case for Nvidia\u2019s stock to climb 55%, according to BofA",
-      "url": "https://www.marketwatch.com/story/heres-the-case-for-nvidias-stock-to-climb-55-from-here-according-to-bofa-f5483409?mod=mw_rss_topstories"
     }
   ],
   "rates": {
