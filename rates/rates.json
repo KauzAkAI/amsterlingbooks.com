@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T19:17:33+00:00",
+  "generated_at": "2026-08-18T19:45:35+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 19:17:00",
+      "source": "MarketWatch",
+      "title": "Mortgage rates could move even higher \u2014 dealing a fresh blow to home buyers",
+      "url": "https://www.marketwatch.com/story/mortgage-rates-could-move-even-higher-dealing-a-fresh-blow-to-home-buyers-ad8d0f3d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 18:44:00",
       "source": "MarketWatch",
       "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018Too many people go bankrupt\u2019: Should Medicare provide catastrophic coverage?",
       "url": "https://www.marketwatch.com/story/too-many-people-go-bankrupt-should-medicare-provide-catastrophic-coverage-f7c653da?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 18:19:00",
-      "source": "MarketWatch",
-      "title": "The Fed minutes are coming \u2014and they\u2019re more crucial now as Warsh limits his communication",
-      "url": "https://www.marketwatch.com/story/the-fed-minutes-are-coming-and-theyre-more-crucial-now-as-warsh-limits-his-communication-fd780695?mod=mw_rss_topstories"
     }
   ],
   "rates": {
