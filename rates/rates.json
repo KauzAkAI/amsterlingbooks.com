@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T22:31:39+00:00",
+  "generated_at": "2026-08-18T22:56:27+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 22:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018This is very stressful\u2019: My son\u2019s roof was damaged in a storm, but his insurance won\u2019t pay. Can he fight this?",
+      "url": "https://www.marketwatch.com/story/this-is-very-stressful-my-sons-insurance-company-wont-pay-for-his-damaged-roof-how-can-he-fight-this-22f3a821?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 18 Aug 2026 22:31:00",
+      "source": "MarketWatch",
+      "title": "\u2018Too many people go bankrupt\u2019: Should Medicare provide catastrophic coverage?",
+      "url": "https://www.marketwatch.com/story/too-many-people-go-bankrupt-should-medicare-provide-catastrophic-coverage-f7c653da?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 21:59:00",
       "source": "MarketWatch",
       "title": "Meta is facing its \u2018Big Tobacco\u2019 moment \u2014 and investors can profit",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Hidden Valley Ranch dressing may be a victim of this summer\u2019s salad scare",
       "url": "https://www.marketwatch.com/story/hidden-valley-ranch-dressing-may-be-a-victim-of-this-summers-salad-scare-f8537cd5?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 20:44:00",
-      "source": "MarketWatch",
-      "title": "After an Alzheimer\u2019s diagnosis it\u2019s not to late to get your finances in order",
-      "url": "https://www.marketwatch.com/story/getting-diagnosed-with-dementia-isnt-the-end-its-a-time-to-take-financial-action-f52769b6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 20:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
-      "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories"
     }
   ],
   "rates": {
