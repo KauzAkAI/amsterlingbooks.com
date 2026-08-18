@@ -135,7 +135,7 @@
       "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T20:02:59+00:00",
+  "generated_at": "2026-08-18T20:36:36+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 20:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018I\u2019m running out of time\u2019: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
+      "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 18 Aug 2026 20:07:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s a \u2018ridiculously cheap\u2019 way to protect yourself against a stock-market selloff",
+      "url": "https://www.marketwatch.com/story/heres-a-ridiculously-cheap-way-to-protect-yourself-against-a-stock-market-selloff-67d3b312?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 19:54:00",
       "source": "MarketWatch",
       "title": "My co-workers complain about minor things and\u00a0make every meeting miserable. How should I deal with them?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Mortgage rates could move even higher \u2014 dealing a fresh blow to home buyers",
       "url": "https://www.marketwatch.com/story/mortgage-rates-could-move-even-higher-dealing-a-fresh-blow-to-home-buyers-ad8d0f3d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 18:44:00",
-      "source": "MarketWatch",
-      "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
-      "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 18:33:00",
-      "source": "MarketWatch",
-      "title": "The national debt is about to hit $40 trillion. Here\u2019s how it can hurt Americans.",
-      "url": "https://www.marketwatch.com/story/the-national-debt-is-about-to-hit-40-trillion-heres-how-it-can-hurt-americans-b4f252b9?mod=mw_rss_topstories"
     }
   ],
   "rates": {
