@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3859
+      "rate": 1.3874
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7394
+      "rate": 6.7423
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86259
+      "rate": 0.86386
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73751
+      "rate": 0.73933
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.61
+      "rate": 95.69
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.23
+      "rate": 159.7
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1411.91
+      "rate": 1410.07
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0091
+      "rate": 17.0535
     }
   },
-  "generated_at": "2026-08-18T14:20:56+00:00",
+  "generated_at": "2026-08-18T15:01:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Tue, 18 Aug 2026 14:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018This is very stressful\u2019: My son\u2019s roof was damaged in a storm, but his insurance won\u2019t pay. How can he fight this?",
+      "url": "https://www.marketwatch.com/story/this-is-very-stressful-my-sons-insurance-company-wont-pay-for-his-damaged-roof-how-can-he-fight-this-22f3a821?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 18 Aug 2026 14:18:00",
+      "source": "MarketWatch",
+      "title": "U.S. investors have been buying stocks all month and are now sitting on profits. Here\u2019s what might make them sell.",
+      "url": "https://www.marketwatch.com/story/u-s-investors-have-been-buying-stocks-all-month-and-are-sitting-on-profits-heres-what-might-make-them-sell-0371e78a?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 18 Aug 2026 14:16:00",
       "source": "MarketWatch",
       "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us out of their lives after a political argument. Should we change our $3 million will?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "I used a human travel agent instead of AI \u2014 and cut $2,000 off the price of my European vacation",
       "url": "https://www.marketwatch.com/story/i-used-a-human-travel-agent-instead-of-ai-and-cut-2-000-off-the-price-of-my-european-vacation-e8b344cb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 13:54:00",
-      "source": "MarketWatch",
-      "title": "Why it\u2019s better to buy stocks at record highs than wait for the next crash",
-      "url": "https://www.marketwatch.com/story/why-its-better-to-buy-stocks-at-record-highs-than-wait-for-the-next-crash-2bf5610e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 18 Aug 2026 13:49:00",
-      "source": "MarketWatch",
-      "title": "Jimmy Kimmel infuriated Trump. Now Disney is suing the FCC over what it calls a \u2018retaliatory campaign.\u2019",
-      "url": "https://www.marketwatch.com/story/disney-sues-fcc-over-broadcast-license-threat-9fb4745d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
