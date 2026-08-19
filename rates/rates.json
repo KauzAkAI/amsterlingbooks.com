@@ -135,7 +135,7 @@
       "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T16:50:59+00:00",
+  "generated_at": "2026-08-19T17:21:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Wed, 19 Aug 2026 17:00:00",
+      "source": "MarketWatch",
+      "title": "My male co-workers with kids expect me to pick up their slack because I don\u2019t have children. Do I push back?",
+      "url": "https://www.marketwatch.com/story/my-male-co-workers-with-kids-expect-me-to-pick-up-their-slack-because-i-dont-have-children-do-i-push-back-700f3a2a?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 19 Aug 2026 16:40:00",
       "source": "MarketWatch",
       "title": "9 stocks to ride the industrial sector\u2019s blazing rally",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
       "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 15:17:00",
-      "source": "MarketWatch",
-      "title": "I want to be a snowbird, but I\u2019m not sure my $2 million nest egg can sustain two homes",
-      "url": "https://www.marketwatch.com/story/i-want-to-be-a-snowbird-but-im-not-sure-my-2-million-nest-egg-can-sustain-two-homes-ce903e6b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -433,7 +433,5 @@
       "yield": 5.28
     }
   ],
-  "warnings": [
-    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "warnings": []
 }
