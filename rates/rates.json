@@ -135,7 +135,7 @@
       "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T19:34:43+00:00",
+  "generated_at": "2026-08-19T19:56:48+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Wed, 19 Aug 2026 19:38:00",
+      "source": "MarketWatch",
+      "title": "Moderna\u2019s cancer-vaccine breakthrough drives broad biopharma stock rally",
+      "url": "https://www.marketwatch.com/story/modernas-cancer-vaccine-breakthrough-drives-broad-biopharma-stock-rally-ff2816aa?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 19:34:00",
+      "source": "MarketWatch",
+      "title": "Trump calls for passage of a key cryptocurrency bill as it falters in the Senate: \u2018We need Congress to take the next step\u2019",
+      "url": "https://www.marketwatch.com/story/trump-calls-for-passage-of-a-key-cryptocurrency-bill-as-it-falters-in-the-senate-we-need-congress-to-take-the-next-step-ce9aa046?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 19 Aug 2026 19:31:00",
       "source": "MarketWatch",
       "title": "We\u2019re in our 50s and have $1.5 million in traditional 401(k)s. Is it too early to start Roth conversions?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "My wife can claim $900 at 62. Should she take it now \u2014 or wait for her spousal benefit?",
       "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 18:35:00",
-      "source": "MarketWatch",
-      "title": "Gen Z used to embrace AI. Now most young adults fear it will steal their jobs.",
-      "url": "https://www.marketwatch.com/story/gen-z-used-to-embrace-ai-now-most-young-adults-fear-it-will-steal-their-jobs-b02bdcfb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 18:27:00",
-      "source": "MarketWatch",
-      "title": "Fed minutes reveal growing support for rate hikes",
-      "url": "https://www.marketwatch.com/story/fed-minutes-reveal-growing-support-for-rate-hikes-84fc9afa?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.78
+      "yield": 3.77
     },
     {
       "tenor": "3M",
@@ -406,7 +406,7 @@
     },
     {
       "tenor": "1Y",
-      "yield": 3.99
+      "yield": 4.0
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.37
+      "yield": 4.35
     },
     {
       "tenor": "7Y",
-      "yield": 4.53
+      "yield": 4.48
     },
     {
       "tenor": "10Y",
-      "yield": 4.71
+      "yield": 4.65
     },
     {
       "tenor": "20Y",
-      "yield": 5.28
+      "yield": 5.17
     },
     {
       "tenor": "30Y",
-      "yield": 5.28
+      "yield": 5.19
     }
   ],
   "warnings": []
