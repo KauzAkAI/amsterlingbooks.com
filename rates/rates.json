@@ -135,7 +135,7 @@
       "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T16:13:01+00:00",
+  "generated_at": "2026-08-19T16:50:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -319,6 +319,36 @@
       "source": "CNBC",
       "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 16:40:00",
+      "source": "MarketWatch",
+      "title": "9 stocks to ride the industrial sector\u2019s blazing rally",
+      "url": "https://www.marketwatch.com/story/9-stocks-to-ride-the-industrial-sectors-blazing-rally-8f23092f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 16:16:00",
+      "source": "MarketWatch",
+      "title": "We\u2019re in our 50s and have $1.5 million in traditional 401(k)s. Is it too early to start Roth conversions?",
+      "url": "https://www.marketwatch.com/story/were-in-our-50s-and-have-1-5-million-in-traditional-401-k-s-is-it-too-early-to-start-roth-conversions-2d0f9287?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 15:55:00",
+      "source": "MarketWatch",
+      "title": "Stocks, bonds and gold rally after Treasury indicates it will buy more government bonds to stop yields from surging",
+      "url": "https://www.marketwatch.com/story/pressure-on-bonds-abates-as-treasury-announces-buybacks-what-may-come-next-af7d7c76?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 15:30:00",
+      "source": "MarketWatch",
+      "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
+      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 15:17:00",
+      "source": "MarketWatch",
+      "title": "I want to be a snowbird, but I\u2019m not sure my $2 million nest egg can sustain two homes",
+      "url": "https://www.marketwatch.com/story/i-want-to-be-a-snowbird-but-im-not-sure-my-2-million-nest-egg-can-sustain-two-homes-ce903e6b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -403,5 +433,7 @@
       "yield": 5.28
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Forex failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  ]
 }
