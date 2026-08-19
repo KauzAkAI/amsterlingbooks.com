@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3874
+      "rate": 1.3872
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7423
+      "rate": 6.7382
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86386
+      "rate": 0.8617
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73933
+      "rate": 0.73768
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.69
+      "rate": 95.76
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.7
+      "rate": 159.09
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1410.07
+      "rate": 1391.48
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0535
+      "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T14:24:30+00:00",
+  "generated_at": "2026-08-19T15:02:55+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
     },
     {
+      "published": "Wed, 19 Aug 2026 15:00:00",
+      "source": "MarketWatch",
+      "title": "Stocks, bonds and gold rally after Treasury indicates it will buy more government bonds to stop yields from surging",
+      "url": "https://www.marketwatch.com/story/pressure-on-bonds-abates-as-treasury-announces-buybacks-what-may-come-next-af7d7c76?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 14:40:00",
+      "source": "MarketWatch",
+      "title": "Berkshire Hathaway bet big on the U.S. housing market. You probably shouldn\u2019t follow suit.",
+      "url": "https://www.marketwatch.com/story/berkshire-hathaway-bet-big-on-the-u-s-housing-market-you-probably-shouldnt-follow-suit-55c3e1c3?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 14:31:00",
+      "source": "MarketWatch",
+      "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
+      "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 14:29:00",
+      "source": "MarketWatch",
+      "title": "Can you get a piece of State Farm\u2019s $5 billion cash-back dividend? Here\u2019s how to check.",
+      "url": "https://www.marketwatch.com/story/can-you-get-a-piece-of-state-farms-5-billion-cash-back-dividend-heres-how-to-check-027d1c21?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 19 Aug 2026 14:23:00",
       "source": "MarketWatch",
       "title": "Mortgage rates could move even higher \u2014 dealing a fresh blow to home buyers",
       "url": "https://www.marketwatch.com/story/mortgage-rates-could-move-even-higher-dealing-a-fresh-blow-to-home-buyers-ad8d0f3d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 14:16:00",
-      "source": "MarketWatch",
-      "title": "Moderna\u2019s experimental vaccine prevents cancer recurrence, in \u2018historic\u2019 win for personalized medicine. Its stock is soaring.",
-      "url": "https://www.marketwatch.com/story/modernas-stock-doubles-on-promising-cancer-vaccine-results-896b1f2c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 14:15:00",
-      "source": "MarketWatch",
-      "title": "America\u2019s growing debt pile will be the big focus Wednesday as global bond rout deepens",
-      "url": "https://www.marketwatch.com/story/americas-growing-debt-pile-will-be-the-big-focus-wednesday-as-global-bond-rout-deepens-a6955c80?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 14:15:00",
-      "source": "MarketWatch",
-      "title": "Meta is facing its \u2018Big Tobacco\u2019 moment \u2014 and investors can profit",
-      "url": "https://www.marketwatch.com/story/meta-is-facing-its-big-tobacco-moment-and-investors-can-profit-e0f27b2d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 13:58:00",
-      "source": "MarketWatch",
-      "title": "Pressure on bonds abates as Treasury announces buybacks. What may come next.",
-      "url": "https://www.marketwatch.com/story/pressure-on-bonds-abates-as-treasury-announces-buybacks-what-may-come-next-af7d7c76?mod=mw_rss_topstories"
     }
   ],
   "rates": {
