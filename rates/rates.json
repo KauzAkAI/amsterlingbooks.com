@@ -135,7 +135,7 @@
       "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T20:37:31+00:00",
+  "generated_at": "2026-08-19T21:03:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Wed, 19 Aug 2026 21:01:13",
+      "source": "CNBC",
+      "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
+      "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
+    },
+    {
+      "published": "Wed, 19 Aug 2026 20:32:48",
+      "source": "CNBC",
+      "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less",
+      "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
+    },
+    {
       "published": "Tue, 18 Aug 2026 11:51:15",
       "source": "CNBC",
       "title": "Russia says its economy is strong. It just fired a top economist who warned otherwise",
@@ -309,16 +321,10 @@
       "url": "https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html"
     },
     {
-      "published": "Wed, 12 Aug 2026 18:56:15",
-      "source": "CNBC",
-      "title": "U.S. budget deficit surged in July to highest level since March 2021",
-      "url": "https://www.cnbc.com/2026/08/12/us-budget-deficit-surged-in-july-to-highest-level-since-march-2021.html"
-    },
-    {
-      "published": "Wed, 12 Aug 2026 19:50:29",
-      "source": "CNBC",
-      "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
-      "url": "https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html"
+      "published": "Wed, 19 Aug 2026 21:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018I brought my Super Bowl ring to the open houses\u2019: Seahawks player shares story of getting his real-estate license",
+      "url": "https://www.marketwatch.com/story/i-brought-my-super-bowl-ring-to-the-open-houses-seahawks-player-shares-story-of-getting-his-real-estate-license-4372785a?mod=mw_rss_topstories"
     },
     {
       "published": "Wed, 19 Aug 2026 20:36:00",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Moderna\u2019s experimental vaccine prevents cancer recurrence, in \u2018historic\u2019 win for personalized medicine. Its stock soared.",
       "url": "https://www.marketwatch.com/story/modernas-stock-doubles-on-promising-cancer-vaccine-results-896b1f2c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 20:10:00",
-      "source": "MarketWatch",
-      "title": "Hidden Valley Ranch dressing may be a victim of this summer\u2019s salad scare",
-      "url": "https://www.marketwatch.com/story/hidden-valley-ranch-dressing-may-be-a-victim-of-this-summers-salad-scare-f8537cd5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
