@@ -135,7 +135,7 @@
       "rate": 17.0365
     }
   },
-  "generated_at": "2026-08-19T21:59:59+00:00",
+  "generated_at": "2026-08-19T22:35:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Wed, 19 Aug 2026 21:01:13",
+      "published": "Wed, 19 Aug 2026 22:34:33",
       "source": "CNBC",
       "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
       "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html"
     },
     {
+      "published": "Wed, 19 Aug 2026 22:02:00",
+      "source": "MarketWatch",
+      "title": "The chip-stock rally hits a speed bump \u2014 but these analysts see reason to be hopeful",
+      "url": "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 19 Aug 2026 21:50:00",
       "source": "MarketWatch",
       "title": "ServiceNow\u2019s stock leads a software rally. Here\u2019s what\u2019s energizing investors.",
@@ -329,7 +335,7 @@
     {
       "published": "Wed, 19 Aug 2026 21:44:00",
       "source": "MarketWatch",
-      "title": "Test driving that drone or just renting? Why the Chinese government needs to know.",
+      "title": "China wants its consumers to spend more. Its young people would rather rent.",
       "url": "https://www.marketwatch.com/story/test-driving-that-drone-or-just-renting-why-the-chinese-government-needs-to-know-07ca4d1b?mod=mw_rss_topstories"
     },
     {
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Why the Treasury market\u2019s newfound calm could break down in September",
       "url": "https://www.marketwatch.com/story/treasury-market-reprieve-could-be-fleeting-with-deluge-of-corporate-bond-issuance-due-in-september-33cfaacd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 21:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I brought my Super Bowl ring to the open houses\u2019: Seahawks player shares story of getting his real-estate license",
-      "url": "https://www.marketwatch.com/story/i-brought-my-super-bowl-ring-to-the-open-houses-seahawks-player-shares-story-of-getting-his-real-estate-license-4372785a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
