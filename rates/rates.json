@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T16:22:14+00:00",
+  "generated_at": "2026-08-20T17:00:40+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 20 Aug 2026 16:23:57",
+      "source": "CNBC",
+      "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
+      "url": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html"
+    },
+    {
       "published": "Thu, 20 Aug 2026 15:35:33",
       "source": "CNBC",
       "title": "Bessent says Treasury buyback operation could be more than $4 billion",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html"
     },
     {
-      "published": "Thu, 13 Aug 2026 13:18:36",
-      "source": "CNBC",
-      "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
-      "url": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html"
+      "published": "Thu, 20 Aug 2026 16:48:00",
+      "source": "MarketWatch",
+      "title": "Walmart\u2019s stock slides as investors worry that pressure on consumers is getting worse",
+      "url": "https://www.marketwatch.com/story/walmart-shares-slide-as-u-s-sales-hit-by-falling-drug-prices-1e308c61?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 20 Aug 2026 15:40:00",
+      "published": "Thu, 20 Aug 2026 16:48:00",
       "source": "MarketWatch",
-      "title": "U.S. bond yields are already surging again a day after Bessent\u2019s debt-buyback plan",
-      "url": "https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories"
+      "title": "Apple has gotten too predictable. Can its next CEO bring back the element of surprise?",
+      "url": "https://www.marketwatch.com/story/apple-has-gotten-too-predictable-can-its-next-ceo-bring-back-the-element-of-surprise-5bd674a0?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 20 Aug 2026 15:30:00",
+      "published": "Thu, 20 Aug 2026 16:35:00",
       "source": "MarketWatch",
-      "title": "I hold my mother-in-law\u2019s power of attorney. I\u2019m also her executor and trustee. Do I have too much power over her affairs?",
-      "url": "https://www.marketwatch.com/story/im-my-mother-in-laws-power-of-attorney-executor-and-trustee-do-i-hold-all-the-power-a11968a2?mod=mw_rss_topstories"
+      "title": "\u2018Ghost offices\u2019 and long wait times: Social Security workers demand $3 billion and 20,000 hires",
+      "url": "https://www.marketwatch.com/story/ghost-offices-and-long-wait-times-social-security-workers-demand-3-billion-and-20-000-hires-ac975af0?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 20 Aug 2026 15:25:00",
+      "published": "Thu, 20 Aug 2026 16:23:00",
       "source": "MarketWatch",
-      "title": "Bessent suggests Treasury could intervene again in bond market: \u2018We have a big tool kit\u2019",
+      "title": "The rise in interest rates hit a \u2018raw nerve\u2019 at the White House. Bessent\u2019s plan has analysts on edge.",
       "url": "https://www.marketwatch.com/story/bessent-suggests-treasury-could-intervene-again-in-bond-market-we-have-a-big-tool-kit-358829e1?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 20 Aug 2026 15:22:00",
+      "published": "Thu, 20 Aug 2026 16:22:00",
       "source": "MarketWatch",
-      "title": "The energy market\u2019s rising \u2018crack spread\u2019 is threatening to break the American consumer",
-      "url": "https://www.marketwatch.com/story/the-energy-markets-rising-crack-spread-is-threatening-to-break-the-american-consumer-90b421dc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 14:53:00",
-      "source": "MarketWatch",
-      "title": "More SpaceX stock is about to hit the market. Here\u2019s what to know.",
-      "url": "https://www.marketwatch.com/story/more-spacex-stock-is-about-to-hit-the-market-heres-what-to-know-789923d4?mod=mw_rss_topstories"
+      "title": "The biggest loser from the Treasury\u2019s latest buyback plan: The U.S. dollar. Here\u2019s why.",
+      "url": "https://www.marketwatch.com/story/the-biggest-loser-from-the-treasurys-latest-buyback-plan-the-u-s-dollar-heres-why-5e996225?mod=mw_rss_topstories"
     }
   ],
   "rates": {
