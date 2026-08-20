@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T15:08:16+00:00",
+  "generated_at": "2026-08-20T15:49:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 20 Aug 2026 15:35:33",
+      "source": "CNBC",
+      "title": "Bessent says Treasury buyback operation could be more than $4 billion",
+      "url": "https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html"
+    },
+    {
       "published": "Wed, 19 Aug 2026 22:34:33",
       "source": "CNBC",
       "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html"
     },
     {
-      "published": "Thu, 13 Aug 2026 12:42:10",
-      "source": "CNBC",
-      "title": "The Iran war risks bringing the G7's fastest-growing economy to a halt",
-      "url": "https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html"
+      "published": "Thu, 20 Aug 2026 15:40:00",
+      "source": "MarketWatch",
+      "title": "U.S. bond yields are already surging again a day after Bessent\u2019s debt-buyback plan",
+      "url": "https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 20 Aug 2026 15:30:00",
+      "source": "MarketWatch",
+      "title": "I hold my mother-in-law\u2019s power of attorney. I\u2019m also her executor and trustee. Do I have too much power over her affairs?",
+      "url": "https://www.marketwatch.com/story/im-my-mother-in-laws-power-of-attorney-executor-and-trustee-do-i-hold-all-the-power-a11968a2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 20 Aug 2026 15:25:00",
+      "source": "MarketWatch",
+      "title": "Bessent suggests Treasury could intervene again in bond market: \u2018We have a big tool kit\u2019",
+      "url": "https://www.marketwatch.com/story/bessent-suggests-treasury-could-intervene-again-in-bond-market-we-have-a-big-tool-kit-358829e1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 20 Aug 2026 15:22:00",
+      "source": "MarketWatch",
+      "title": "The energy market\u2019s rising \u2018crack spread\u2019 is threatening to break the American consumer",
+      "url": "https://www.marketwatch.com/story/the-energy-markets-rising-crack-spread-is-threatening-to-break-the-american-consumer-90b421dc?mod=mw_rss_topstories"
     },
     {
       "published": "Thu, 20 Aug 2026 14:53:00",
       "source": "MarketWatch",
       "title": "More SpaceX stock is about to hit the market. Here\u2019s what to know.",
       "url": "https://www.marketwatch.com/story/more-spacex-stock-is-about-to-hit-the-market-heres-what-to-know-789923d4?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 14:30:00",
-      "source": "MarketWatch",
-      "title": "Our 4-year-old son has $100,000 in his 529 account. Is a bull market a bad time to buy him stocks instead?",
-      "url": "https://www.marketwatch.com/story/our-4-year-old-son-has-100-000-in-his-529-account-should-we-buy-him-stocks-instead-3ca745b2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 14:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
-      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 14:14:00",
-      "source": "MarketWatch",
-      "title": "Conditions are ripe for a market \u2018accident,\u2019 but surging bond yields alone won\u2019t cause it, concedes pessimistic strategist",
-      "url": "https://www.marketwatch.com/story/conditions-are-ripe-for-a-market-accident-but-surging-bond-yields-alone-wont-cause-it-concedes-pessimistic-strategist-222cfc57?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 14:09:00",
-      "source": "MarketWatch",
-      "title": "Crypto comeback? Bitcoin, ethereum are headed for their best day in months as investors flock to hard assets",
-      "url": "https://www.marketwatch.com/story/crypto-comeback-bitcoin-ethereum-are-headed-for-their-best-day-in-months-as-investors-flock-to-hard-assets-1573b803?mod=mw_rss_topstories"
     }
   ],
   "rates": {
