@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T19:37:30+00:00",
+  "generated_at": "2026-08-20T20:02:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html"
     },
     {
+      "published": "Thu, 20 Aug 2026 19:40:00",
+      "source": "MarketWatch",
+      "title": "Anxious bond market sends troubling message to investors: There\u2019s no easy fix for U.S. debt",
+      "url": "https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 20 Aug 2026 19:14:00",
       "source": "MarketWatch",
       "title": "Sports betting to build wealth is becoming the new American dream",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Neocloud stocks like CoreWeave are having a moment \u2014 and time\u2019s running out to cash in",
       "url": "https://www.marketwatch.com/story/neocloud-stocks-like-coreweave-are-having-a-moment-and-times-running-out-to-cash-in-8aca34c8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 18:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
-      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.77
+      "yield": 3.8
     },
     {
       "tenor": "3M",
-      "yield": 3.86
+      "yield": 3.87
     },
     {
       "tenor": "6M",
@@ -406,7 +406,7 @@
     },
     {
       "tenor": "1Y",
-      "yield": 4.0
+      "yield": 3.99
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.35
+      "yield": 4.39
     },
     {
       "tenor": "7Y",
-      "yield": 4.48
+      "yield": 4.53
     },
     {
       "tenor": "10Y",
-      "yield": 4.65
+      "yield": 4.69
     },
     {
       "tenor": "20Y",
-      "yield": 5.17
+      "yield": 5.2
     },
     {
       "tenor": "30Y",
-      "yield": 5.19
+      "yield": 5.23
     }
   ],
   "warnings": []
