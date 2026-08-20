@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T15:49:14+00:00",
+  "generated_at": "2026-08-20T16:22:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.76
       },
       {
-        "date": "2026-07-30",
-        "rate": 6.66
-      },
-      {
         "date": "2026-08-05",
         "rate": 6.81
       },
       {
         "date": "2026-08-06",
         "rate": 6.69
-      },
-      {
-        "date": "2026-08-12",
-        "rate": 6.74
       },
       {
         "date": "2026-08-12",
@@ -227,6 +219,14 @@
       {
         "date": "2026-08-19",
         "rate": 6.72
+      },
+      {
+        "date": "2026-08-20",
+        "rate": 6.76
+      },
+      {
+        "date": "2026-08-20",
+        "rate": 6.65
       }
     ]
   },
@@ -353,17 +353,17 @@
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 19 2026",
-      "change": -0.04,
-      "rate": 6.27
+      "asof_label": "Aug 20 2026",
+      "change": 0.03,
+      "rate": 6.3
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 19 2026",
-      "change": -0.03,
+      "asof_label": "Aug 20 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
