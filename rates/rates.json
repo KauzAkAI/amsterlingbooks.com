@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T22:47:57+00:00",
+  "generated_at": "2026-08-20T23:13:11+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
+      "published": "Thu, 20 Aug 2026 23:00:00",
+      "source": "MarketWatch",
+      "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
+      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 20 Aug 2026 22:45:00",
       "source": "MarketWatch",
       "title": "I hold my mother-in-law\u2019s power of attorney. I\u2019m also her executor and trustee. Do I have too much power over her affairs?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Anxious bond market sends troubling message to investors: There\u2019s no easy fix for U.S. debt",
       "url": "https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 19:14:00",
-      "source": "MarketWatch",
-      "title": "Sports betting to build wealth is becoming the new American dream",
-      "url": "https://www.marketwatch.com/story/sports-betting-to-build-wealth-is-becoming-the-new-american-dream-1e29b728?mod=mw_rss_topstories"
     }
   ],
   "rates": {
