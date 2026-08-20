@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T17:39:51+00:00",
+  "generated_at": "2026-08-20T18:04:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html"
     },
     {
+      "published": "Thu, 20 Aug 2026 17:44:00",
+      "source": "MarketWatch",
+      "title": "U.S. bond yields are already surging again a day after Bessent\u2019s debt-buyback plan",
+      "url": "https://www.marketwatch.com/story/treasury-rout-restarts-one-day-after-bessents-beefed-up-buyback-plan-972766a1?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 20 Aug 2026 17:30:00",
       "source": "MarketWatch",
       "title": "Our 4-year-old son has $100,000 in his 529 account. Is a bull market a bad time to buy him stocks instead?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Apple has gotten too predictable. Can its next CEO bring back the element of surprise?",
       "url": "https://www.marketwatch.com/story/apple-has-gotten-too-predictable-can-its-next-ceo-bring-back-the-element-of-surprise-5bd674a0?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 16:35:00",
-      "source": "MarketWatch",
-      "title": "Social Security union says it needs $3 billion and another 20,000 workers to fix long wait times and \u2018ghost offices\u2019",
-      "url": "https://www.marketwatch.com/story/ghost-offices-and-long-wait-times-social-security-workers-demand-3-billion-and-20-000-hires-ac975af0?mod=mw_rss_topstories"
     }
   ],
   "rates": {
