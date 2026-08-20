@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-20T22:12:31+00:00",
+  "generated_at": "2026-08-20T22:47:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
+      "published": "Thu, 20 Aug 2026 22:45:00",
+      "source": "MarketWatch",
+      "title": "I hold my mother-in-law\u2019s power of attorney. I\u2019m also her executor and trustee. Do I have too much power over her affairs?",
+      "url": "https://www.marketwatch.com/story/im-my-mother-in-laws-power-of-attorney-executor-and-trustee-do-i-hold-all-the-power-a11968a2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 20 Aug 2026 22:00:00",
       "source": "MarketWatch",
       "title": "Our 4-year-old son has $100,000 in his 529 account. Is a bull market a bad time to buy him stocks instead?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Sports betting to build wealth is becoming the new American dream",
       "url": "https://www.marketwatch.com/story/sports-betting-to-build-wealth-is-becoming-the-new-american-dream-1e29b728?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 19:06:00",
-      "source": "MarketWatch",
-      "title": "The bond market is going to burst the stock-market bubble",
-      "url": "https://www.marketwatch.com/story/the-bond-market-is-going-to-burst-the-stock-market-bubble-1c6f0971?mod=mw_rss_topstories"
     }
   ],
   "rates": {
