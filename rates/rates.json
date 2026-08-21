@@ -135,7 +135,7 @@
       "rate": 16.9906
     }
   },
-  "generated_at": "2026-08-21T13:50:41+00:00",
+  "generated_at": "2026-08-21T14:28:44+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
+      "published": "Fri, 21 Aug 2026 14:03:00",
+      "source": "MarketWatch",
+      "title": "Social Security union says it needs $3 billion and another 20,000 workers to fix long wait times and \u2018ghost offices\u2019",
+      "url": "https://www.marketwatch.com/story/ghost-offices-and-long-wait-times-social-security-workers-demand-3-billion-and-20-000-hires-ac975af0?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 14:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
+      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 21 Aug 2026 13:33:00",
       "source": "MarketWatch",
       "title": "Nvidia earnings could rescue a stalled-out stock market \u2014 if the AI chip maker breaks this trend",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "\u2018It\u2019s truly a tragedy\u2019: My daughter hasn\u2019t spoken to me for 4 years, but it has nothing to do with politics",
       "url": "https://www.marketwatch.com/story/its-truly-a-tragedy-my-daughter-hasnt-spoken-to-me-for-4-years-but-it-has-nothing-to-do-with-politics-86c4bcf6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 13:07:00",
-      "source": "MarketWatch",
-      "title": "I need to get out of my job. Can I leave for a competitor if I\u2019ve signed a non-compete?",
-      "url": "https://www.marketwatch.com/story/i-need-to-get-out-of-my-job-can-i-leave-for-a-competitor-if-ive-signed-a-non-compete-33d3164b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 13:01:00",
-      "source": "MarketWatch",
-      "title": "Bitcoin on track for best week in more than two years. Can this mean the next crypto bull market has arrived?",
-      "url": "https://www.marketwatch.com/story/bitcoin-on-track-for-best-week-in-more-than-two-years-has-the-next-crypto-bull-market-arrived-0181180c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
