@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T17:36:39+00:00",
+  "generated_at": "2026-08-21T18:02:34+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 21 Aug 2026 17:51:10",
+      "source": "CNBC",
+      "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
+      "url": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html"
+    },
+    {
       "published": "Fri, 21 Aug 2026 12:43:04",
       "source": "CNBC",
       "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
@@ -313,12 +319,6 @@
       "source": "CNBC",
       "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
       "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 21:29:38",
-      "source": "CNBC",
-      "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less",
-      "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
       "published": "Fri, 21 Aug 2026 17:09:00",
