@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T16:15:46+00:00",
+  "generated_at": "2026-08-21T16:56:24+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-08-13",
-        "rate": 6.69
-      },
-      {
-        "date": "2026-08-13",
         "rate": 6.67
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-20",
         "rate": 6.65
+      },
+      {
+        "date": "2026-08-21",
+        "rate": 6.77
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
-      "published": "Fri, 21 Aug 2026 15:30:00",
+      "published": "Fri, 21 Aug 2026 16:38:00",
       "source": "MarketWatch",
-      "title": "\u2018This is very stressful\u2019: My son\u2019s roof was damaged in a storm, but his insurance won\u2019t pay. Can he fight this?",
-      "url": "https://www.marketwatch.com/story/this-is-very-stressful-my-sons-insurance-company-wont-pay-for-his-damaged-roof-how-can-he-fight-this-22f3a821?mod=mw_rss_topstories"
+      "title": "The U.S. and Canada are scrambling to avoid new tariffs and seal a trade deal. Here\u2019s what could be in it.",
+      "url": "https://www.marketwatch.com/story/the-u-s-and-canada-are-scrambling-to-avoid-new-tariffs-and-seal-a-trade-deal-heres-what-could-be-in-it-f01dd61c?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 15:00:00",
+      "published": "Fri, 21 Aug 2026 16:31:00",
       "source": "MarketWatch",
-      "title": "Our 4-year-old son has $100,000 in his 529 account. Is a bull market a bad time to buy him stocks instead?",
-      "url": "https://www.marketwatch.com/story/our-4-year-old-son-has-100-000-in-his-529-account-should-we-buy-him-stocks-instead-3ca745b2?mod=mw_rss_topstories"
+      "title": "\u2018The estrangement isn\u2019t about politics\u2019: My daughter hasn\u2019t spoken to me for 4 years. Do I leave her a monthly annuity?",
+      "url": "https://www.marketwatch.com/story/its-truly-a-tragedy-my-daughter-hasnt-spoken-to-me-for-4-years-but-it-has-nothing-to-do-with-politics-86c4bcf6?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 14:03:00",
+      "published": "Fri, 21 Aug 2026 16:27:00",
       "source": "MarketWatch",
-      "title": "Social Security union says it needs $3 billion and another 20,000 workers to fix long wait times and \u2018ghost offices\u2019",
-      "url": "https://www.marketwatch.com/story/ghost-offices-and-long-wait-times-social-security-workers-demand-3-billion-and-20-000-hires-ac975af0?mod=mw_rss_topstories"
+      "title": "6 AI hardware stocks to own for the remainder of the year, according to an analyst",
+      "url": "https://www.marketwatch.com/story/6-ai-hardware-stocks-to-own-for-the-remainder-of-the-year-according-to-an-analyst-ec0bad4e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 14:00:00",
+      "published": "Fri, 21 Aug 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
-      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
+      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us out of their lives after a political argument. Should we change our $3 million will?",
+      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 13:33:00",
+      "published": "Fri, 21 Aug 2026 16:14:00",
       "source": "MarketWatch",
-      "title": "Nvidia earnings could rescue a stalled-out stock market \u2014 if the AI chip maker breaks this trend",
-      "url": "https://www.marketwatch.com/story/nvidia-earnings-could-rescue-a-stalling-stock-market-if-the-ai-chip-maker-breaks-this-trend-9b6504bc?mod=mw_rss_topstories"
+      "title": "States are coming after prediction markets \u2014 and setting up a costly legal battle over who gets to regulate them",
+      "url": "https://www.marketwatch.com/story/states-are-coming-after-prediction-markets-and-setting-up-a-costly-legal-battle-over-who-gets-to-regulate-them-f9ab9a37?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 20 2026",
-      "change": 0.03,
-      "rate": 6.3
+      "asof_label": "Aug 21 2026",
+      "change": 0.31,
+      "rate": 6.61
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 20 2026",
-      "change": 0.04,
+      "asof_label": "Aug 21 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
