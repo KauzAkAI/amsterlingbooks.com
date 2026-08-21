@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T15:05:47+00:00",
+  "generated_at": "2026-08-21T15:46:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html"
     },
     {
+      "published": "Fri, 21 Aug 2026 15:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018This is very stressful\u2019: My son\u2019s roof was damaged in a storm, but his insurance won\u2019t pay. Can he fight this?",
+      "url": "https://www.marketwatch.com/story/this-is-very-stressful-my-sons-insurance-company-wont-pay-for-his-damaged-roof-how-can-he-fight-this-22f3a821?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 21 Aug 2026 15:00:00",
       "source": "MarketWatch",
       "title": "Our 4-year-old son has $100,000 in his 529 account. Is a bull market a bad time to buy him stocks instead?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Nvidia earnings could rescue a stalled-out stock market \u2014 if the AI chip maker breaks this trend",
       "url": "https://www.marketwatch.com/story/nvidia-earnings-could-rescue-a-stalling-stock-market-if-the-ai-chip-maker-breaks-this-trend-9b6504bc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 13:30:00",
-      "source": "MarketWatch",
-      "title": "I hold my mother-in-law\u2019s power of attorney. I\u2019m also her executor and trustee. Do I have too much power over her affairs?",
-      "url": "https://www.marketwatch.com/story/im-my-mother-in-laws-power-of-attorney-executor-and-trustee-do-i-hold-all-the-power-a11968a2?mod=mw_rss_topstories"
     }
   ],
   "rates": {
