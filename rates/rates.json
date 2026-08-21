@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T18:02:34+00:00",
+  "generated_at": "2026-08-21T18:52:21+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-07-29",
-        "rate": 6.76
-      },
-      {
         "date": "2026-08-05",
         "rate": 6.81
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-08-19",
         "rate": 6.72
+      },
+      {
+        "date": "2026-08-19",
+        "rate": 6.77
       },
       {
         "date": "2026-08-20",
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
     },
     {
+      "published": "Fri, 21 Aug 2026 18:29:00",
+      "source": "MarketWatch",
+      "title": "Trump, Vance and Bessent try to calm the bond market with \u2018alternative facts\u2019",
+      "url": "https://www.marketwatch.com/story/trump-vance-and-bessent-try-to-calm-the-bond-market-with-alternative-facts-8e424378?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 18:15:00",
+      "source": "MarketWatch",
+      "title": "The Treasury, the Fed and the threat to your money",
+      "url": "https://www.marketwatch.com/story/the-treasury-the-fed-and-the-threat-to-your-money-774442ad?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 18:00:00",
+      "source": "MarketWatch",
+      "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
+      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 21 Aug 2026 17:09:00",
       "source": "MarketWatch",
       "title": "5 things to know about the Chinese e-commerce juggernaut Shein ahead of its IPO",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "Tesla\u2019s stock jumps as the company gets ready for a robotaxi push",
       "url": "https://www.marketwatch.com/story/tesla-stocks-jumps-as-the-company-gets-ready-for-a-robotaxi-push-c680f87f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 16:38:00",
-      "source": "MarketWatch",
-      "title": "The U.S. and Canada are scrambling to avoid new tariffs and seal a trade deal. Here\u2019s what could be in it.",
-      "url": "https://www.marketwatch.com/story/the-u-s-and-canada-are-scrambling-to-avoid-new-tariffs-and-seal-a-trade-deal-heres-what-could-be-in-it-f01dd61c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 16:31:00",
-      "source": "MarketWatch",
-      "title": "\u2018The estrangement isn\u2019t about politics\u2019: My daughter hasn\u2019t spoken to me for 4 years. Do I leave her a monthly annuity?",
-      "url": "https://www.marketwatch.com/story/its-truly-a-tragedy-my-daughter-hasnt-spoken-to-me-for-4-years-but-it-has-nothing-to-do-with-politics-86c4bcf6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 16:27:00",
-      "source": "MarketWatch",
-      "title": "6 AI hardware stocks to own for the remainder of the year, according to an analyst",
-      "url": "https://www.marketwatch.com/story/6-ai-hardware-stocks-to-own-for-the-remainder-of-the-year-according-to-an-analyst-ec0bad4e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
