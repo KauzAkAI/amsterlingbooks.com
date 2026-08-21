@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T19:48:57+00:00",
+  "generated_at": "2026-08-21T20:13:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
     },
     {
+      "published": "Fri, 21 Aug 2026 20:11:00",
+      "source": "MarketWatch",
+      "title": "I plan to leave money to grandkids \u2014 but they must pass financial-literacy classes to get it. Is that fair?",
+      "url": "https://www.marketwatch.com/story/im-leaving-my-grandkids-money-but-they-must-pass-financial-literacy-classes-to-get-it-is-that-fair-8a630648?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 20:11:00",
+      "source": "MarketWatch",
+      "title": "Retirees: This investment gives you a guaranteed 5% safe withdrawal rate",
+      "url": "https://www.marketwatch.com/story/retirees-this-investment-gives-you-a-guaranteed-5-safe-withdrawal-rate-facdfd76?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 20:11:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s how Bessent\u2019s newly activist Treasury Department is undercutting the Fed\u2019s Warsh",
+      "url": "https://www.marketwatch.com/story/heres-how-bessents-newly-activist-treasury-department-is-undercutting-the-feds-warsh-480455c2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 21 Aug 2026 20:01:00",
+      "source": "MarketWatch",
+      "title": "Sports betting to build wealth is becoming the new American dream",
+      "url": "https://www.marketwatch.com/story/sports-betting-to-build-wealth-is-becoming-the-new-american-dream-1e29b728?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 21 Aug 2026 19:11:00",
       "source": "MarketWatch",
       "title": "Former JPMorgan exec takes on Social Security advisory role",
       "url": "https://www.marketwatch.com/story/former-jpmorgan-exec-takes-on-social-security-advisory-role-d0cf6e4f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 19:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018The estrangement isn\u2019t about politics\u2019: My daughter hasn\u2019t spoken to me for 4 years. Do I leave her a monthly annuity?",
-      "url": "https://www.marketwatch.com/story/its-truly-a-tragedy-my-daughter-hasnt-spoken-to-me-for-4-years-but-it-has-nothing-to-do-with-politics-86c4bcf6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 18:29:00",
-      "source": "MarketWatch",
-      "title": "Trump, Vance and Bessent try to calm the bond market with \u2018alternative facts\u2019",
-      "url": "https://www.marketwatch.com/story/trump-vance-and-bessent-try-to-calm-the-bond-market-with-alternative-facts-8e424378?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 18:15:00",
-      "source": "MarketWatch",
-      "title": "The Treasury, the Fed and the threat to your money",
-      "url": "https://www.marketwatch.com/story/the-treasury-the-fed-and-the-threat-to-your-money-774442ad?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 18:00:00",
-      "source": "MarketWatch",
-      "title": "My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?",
-      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.88
     },
     {
       "tenor": "6M",
-      "yield": 3.94
+      "yield": 3.95
     },
     {
       "tenor": "1Y",
-      "yield": 3.99
+      "yield": 4.03
     },
     {
       "tenor": "2Y",
-      "yield": 4.19
+      "yield": 4.24
     },
     {
       "tenor": "5Y",
-      "yield": 4.39
+      "yield": 4.43
     },
     {
       "tenor": "7Y",
-      "yield": 4.53
+      "yield": 4.57
     },
     {
       "tenor": "10Y",
-      "yield": 4.69
+      "yield": 4.74
     },
     {
       "tenor": "20Y",
-      "yield": 5.2
+      "yield": 5.25
     },
     {
       "tenor": "30Y",
-      "yield": 5.23
+      "yield": 5.27
     }
   ],
   "warnings": []
