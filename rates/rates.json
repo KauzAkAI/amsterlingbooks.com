@@ -135,7 +135,7 @@
       "rate": 16.898
     }
   },
-  "generated_at": "2026-08-21T22:59:50+00:00",
+  "generated_at": "2026-08-24T13:56:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Mon, 24 Aug 2026 13:17:35",
+      "source": "CNBC",
+      "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
+      "url": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html"
+    },
+    {
+      "published": "Mon, 24 Aug 2026 13:35:08",
+      "source": "CNBC",
+      "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for all-out trade war",
+      "url": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html"
+    },
+    {
+      "published": "Mon, 24 Aug 2026 05:24:43",
+      "source": "CNBC",
+      "title": "Singapore inflation hits highest in nearly two years, but undershoots expectations",
+      "url": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html"
+    },
+    {
       "published": "Fri, 21 Aug 2026 17:51:10",
       "source": "CNBC",
       "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html"
     },
     {
-      "published": "Fri, 21 Aug 2026 13:11:41",
-      "source": "CNBC",
-      "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
-      "url": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html"
-    },
-    {
-      "published": "Thu, 20 Aug 2026 15:35:33",
-      "source": "CNBC",
-      "title": "Bessent says Treasury buyback operation could be more than $4 billion",
-      "url": "https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html"
-    },
-    {
-      "published": "Wed, 19 Aug 2026 22:34:33",
-      "source": "CNBC",
-      "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
-      "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html"
-    },
-    {
-      "published": "Fri, 21 Aug 2026 21:20:00",
+      "published": "Mon, 24 Aug 2026 13:50:00",
       "source": "MarketWatch",
-      "title": "You can now Venmo your kid\u2019s college tuition. But should you?",
-      "url": "https://www.marketwatch.com/story/should-you-venmo-your-tuition-heres-what-to-know-as-colleges-add-new-payment-options-1a70ae96?mod=mw_rss_topstories"
+      "title": "Trump, Vance and Bessent try to calm the bond market with \u2018alternative facts\u2019",
+      "url": "https://www.marketwatch.com/story/trump-vance-and-bessent-try-to-calm-the-bond-market-with-alternative-facts-8e424378?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 21:17:00",
+      "published": "Mon, 24 Aug 2026 13:39:00",
       "source": "MarketWatch",
-      "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
-      "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories"
+      "title": "This has been one of the most affordable U.S. cities to buy a home for more than 134 years",
+      "url": "https://www.marketwatch.com/story/this-has-been-one-of-the-most-affordable-u-s-cities-to-buy-a-home-for-the-past-134-years-0c52895a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 20:34:00",
+      "published": "Mon, 24 Aug 2026 13:35:00",
       "source": "MarketWatch",
-      "title": "Tesla\u2019s stock jumps as the company gets cleared for a Las Vegas robotaxi launch",
-      "url": "https://www.marketwatch.com/story/tesla-stocks-jumps-as-the-company-gets-ready-for-a-robotaxi-push-c680f87f?mod=mw_rss_topstories"
+      "title": "I\u2019m turning 70. Here\u2019s how I\u2019m making this decade the richest of my retirement.",
+      "url": "https://www.marketwatch.com/story/im-turning-70-heres-how-im-making-this-decade-the-richest-of-my-retirement-ae351f90?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 20:11:00",
+      "published": "Mon, 24 Aug 2026 13:31:00",
       "source": "MarketWatch",
-      "title": "I plan to leave money to grandkids \u2014 but they must pass financial-literacy classes to get it. Is that fair?",
-      "url": "https://www.marketwatch.com/story/im-leaving-my-grandkids-money-but-they-must-pass-financial-literacy-classes-to-get-it-is-that-fair-8a630648?mod=mw_rss_topstories"
+      "title": "Here are two trades to make ahead of a critical week for markets as Nvidia results and Jackson Hole loom",
+      "url": "https://www.marketwatch.com/story/here-are-two-trades-to-make-ahead-of-a-critical-week-for-markets-as-nvidia-results-and-jackson-hole-loom-8ac3653c?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 21 Aug 2026 20:11:00",
+      "published": "Mon, 24 Aug 2026 13:15:00",
       "source": "MarketWatch",
-      "title": "Retirees: This investment gives you a guaranteed 5% safe withdrawal rate",
-      "url": "https://www.marketwatch.com/story/retirees-this-investment-gives-you-a-guaranteed-5-safe-withdrawal-rate-facdfd76?mod=mw_rss_topstories"
+      "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
+      "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
