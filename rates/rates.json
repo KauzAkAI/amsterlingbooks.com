@@ -135,7 +135,7 @@
       "rate": 16.9282
     }
   },
-  "generated_at": "2026-08-24T16:07:19+00:00",
+  "generated_at": "2026-08-24T16:54:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.67
       },
       {
-        "date": "2026-08-14",
-        "rate": 6.71
-      },
-      {
         "date": "2026-08-17",
         "rate": 6.73
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-21",
         "rate": 6.77
+      },
+      {
+        "date": "2026-08-24",
+        "rate": 6.78
       }
     ]
   },
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html"
     },
     {
+      "published": "Mon, 24 Aug 2026 16:28:00",
+      "source": "MarketWatch",
+      "title": "Make these 7 money moves before taking out a private student loan",
+      "url": "https://www.marketwatch.com/story/make-these-7-money-moves-before-taking-out-a-private-student-loan-09cf3e08?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 24 Aug 2026 16:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?",
+      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 24 Aug 2026 16:15:00",
+      "source": "MarketWatch",
+      "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
+      "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 24 Aug 2026 16:03:00",
       "source": "MarketWatch",
       "title": "Global oil prices above $90 a barrel ahead of Bessent\u2019s \u2018economic D-Day\u2019 announcement on Iran",
@@ -331,38 +349,20 @@
       "source": "MarketWatch",
       "title": "U.S. automakers and home builders are among the big losers as Trump launches a trade war against Canada",
       "url": "https://www.marketwatch.com/story/u-s-automakers-and-home-builders-are-among-the-big-losers-as-trump-launches-a-trade-war-against-canada-063c1d4c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 24 Aug 2026 15:29:00",
-      "source": "MarketWatch",
-      "title": "Think Medicare Advantage provides better care for chronic conditions? A new study suggests otherwise.",
-      "url": "https://www.marketwatch.com/story/think-medicare-advantage-provides-better-care-for-chronic-conditions-a-new-study-suggests-otherwise-276c7ffd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 24 Aug 2026 15:16:00",
-      "source": "MarketWatch",
-      "title": "\u2018She looked into COBRA\u2019: My friend was laid off and lost her health insurance. How can she find affordable coverage?",
-      "url": "https://www.marketwatch.com/story/shes-desperate-my-friend-was-laid-off-and-lost-her-health-insurance-how-can-she-find-affordable-coverage-3b17b553?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 24 Aug 2026 15:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
-      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 21 2026",
-      "change": 0.31,
-      "rate": 6.61
+      "asof_label": "Aug 24 2026",
+      "change": 0.01,
+      "rate": 6.62
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 21 2026",
+      "asof_label": "Aug 24 2026",
       "change": 0.01,
       "rate": 6.52
     }
