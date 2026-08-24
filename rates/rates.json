@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.374
+      "rate": 1.3849
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7206
+      "rate": 6.7227
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85477
+      "rate": 0.85734
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73228
+      "rate": 0.73345
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.7
+      "rate": 95.76
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.7
+      "rate": 159.12
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1384.23
+      "rate": 1384.26
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.898
+      "rate": 16.9282
     }
   },
-  "generated_at": "2026-08-24T13:56:01+00:00",
+  "generated_at": "2026-08-24T14:50:07+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html"
     },
     {
+      "published": "Mon, 24 Aug 2026 14:15:00",
+      "source": "MarketWatch",
+      "title": "\u2018My main goal is to help people\u2019: I\u2019m single, 74, with $10 million burning a hole in my pocket. What should I do?",
+      "url": "https://www.marketwatch.com/story/my-main-goal-is-to-help-people-im-single-74-with-10-million-burning-a-hole-in-my-pocket-what-should-i-do-0e6112e1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 24 Aug 2026 13:58:00",
+      "source": "MarketWatch",
+      "title": "Oil trades lower even as Bessent promises \u2018economic D-Day\u2019 announcement on Iran",
+      "url": "https://www.marketwatch.com/story/oil-trades-lower-even-as-bessent-promises-economic-d-day-announcement-on-iran-a90d862e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Mon, 24 Aug 2026 13:50:00",
       "source": "MarketWatch",
       "title": "Trump, Vance and Bessent try to calm the bond market with \u2018alternative facts\u2019",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "I\u2019m turning 70. Here\u2019s how I\u2019m making this decade the richest of my retirement.",
       "url": "https://www.marketwatch.com/story/im-turning-70-heres-how-im-making-this-decade-the-richest-of-my-retirement-ae351f90?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 24 Aug 2026 13:31:00",
-      "source": "MarketWatch",
-      "title": "Here are two trades to make ahead of a critical week for markets as Nvidia results and Jackson Hole loom",
-      "url": "https://www.marketwatch.com/story/here-are-two-trades-to-make-ahead-of-a-critical-week-for-markets-as-nvidia-results-and-jackson-hole-loom-8ac3653c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 24 Aug 2026 13:15:00",
-      "source": "MarketWatch",
-      "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
-      "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
