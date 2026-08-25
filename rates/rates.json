@@ -135,7 +135,7 @@
       "rate": 16.9467
     }
   },
-  "generated_at": "2026-08-25T16:19:57+00:00",
+  "generated_at": "2026-08-25T17:03:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 25 Aug 2026 16:27:34",
+      "source": "CNBC",
+      "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
+      "url": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html"
+    },
+    {
       "published": "Tue, 25 Aug 2026 16:00:40",
       "source": "CNBC",
       "title": "China needs U.S. dollars but is building a hedge against Washington\u2019s sanctions",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html"
     },
     {
-      "published": "Fri, 21 Aug 2026 17:51:10",
-      "source": "CNBC",
-      "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
-      "url": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html"
+      "published": "Tue, 25 Aug 2026 16:59:00",
+      "source": "MarketWatch",
+      "title": "Dick\u2019s Sporting Goods\u2019 epic drop hits other footwear giants, as shoppers sour on retro sneakers",
+      "url": "https://www.marketwatch.com/story/dicks-sporting-goods-stock-is-having-its-worst-day-ever-as-sneakers-arent-selling-without-deeper-discounts-5a868358?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 16:32:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s the ultimate regifting\u2019: My mom gave me a house. Should I transfer it back to her to reduce capital gains?",
+      "url": "https://www.marketwatch.com/story/its-the-ultimate-regifting-my-mom-gave-me-a-house-should-i-transfer-it-back-to-her-to-reduce-capital-gains-e357f49c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 16:31:00",
+      "source": "MarketWatch",
+      "title": "Are older Americans spoiling the economy for everyone else?",
+      "url": "https://www.marketwatch.com/story/are-older-americans-spoiling-the-economy-for-everyone-else-064b5820?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 16:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?",
+      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
     },
     {
       "published": "Tue, 25 Aug 2026 16:09:00",
       "source": "MarketWatch",
       "title": "5 cheap U.S. cities to retire in \u2014 if you can deal with this one thing",
       "url": "https://www.marketwatch.com/story/5-cheap-u-s-cities-to-retire-in-if-you-can-deal-with-this-one-thing-fbda5d1a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 16:04:00",
-      "source": "MarketWatch",
-      "title": "These growth stocks are still cheap, despite the S&P 500 being near a record high price-to-sales valuation",
-      "url": "https://www.marketwatch.com/story/these-growth-stocks-are-still-cheap-despite-the-s-p-500-being-near-a-record-high-price-to-sales-valuation-03602260?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 16:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018She looked into COBRA\u2019: My friend was laid off and lost her health insurance. How can she find affordable coverage?",
-      "url": "https://www.marketwatch.com/story/shes-desperate-my-friend-was-laid-off-and-lost-her-health-insurance-how-can-she-find-affordable-coverage-3b17b553?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 15:30:00",
-      "source": "MarketWatch",
-      "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
-      "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 15:22:00",
-      "source": "MarketWatch",
-      "title": "Home prices in Chicago have risen more than in any other U.S. city over the past year",
-      "url": "https://www.marketwatch.com/story/home-prices-in-chicago-have-risen-the-most-in-the-u-s-over-the-past-year-3ee317a8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
