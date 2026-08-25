@@ -135,7 +135,7 @@
       "rate": 16.9467
     }
   },
-  "generated_at": "2026-08-25T17:03:16+00:00",
+  "generated_at": "2026-08-25T17:42:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Tue, 25 Aug 2026 16:27:34",
+      "published": "Tue, 25 Aug 2026 17:15:50",
       "source": "CNBC",
       "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
       "url": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html"
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html"
     },
     {
+      "published": "Tue, 25 Aug 2026 17:32:00",
+      "source": "MarketWatch",
+      "title": "This driverless-truck company could be a \u2018long-term winner\u2019 in a market Tesla plans to enter soon",
+      "url": "https://www.marketwatch.com/story/this-driverless-truck-company-could-be-a-long-term-winner-in-a-market-tesla-plans-to-enter-soon-193bc8fe?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 17:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018There is considerable tension\u2019: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
+      "url": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 25 Aug 2026 16:59:00",
       "source": "MarketWatch",
       "title": "Dick\u2019s Sporting Goods\u2019 epic drop hits other footwear giants, as shoppers sour on retro sneakers",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Are older Americans spoiling the economy for everyone else?",
       "url": "https://www.marketwatch.com/story/are-older-americans-spoiling-the-economy-for-everyone-else-064b5820?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 16:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?",
-      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 16:09:00",
-      "source": "MarketWatch",
-      "title": "5 cheap U.S. cities to retire in \u2014 if you can deal with this one thing",
-      "url": "https://www.marketwatch.com/story/5-cheap-u-s-cities-to-retire-in-if-you-can-deal-with-this-one-thing-fbda5d1a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
