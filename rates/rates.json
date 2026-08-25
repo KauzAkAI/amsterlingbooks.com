@@ -135,7 +135,7 @@
       "rate": 16.9467
     }
   },
-  "generated_at": "2026-08-25T15:40:41+00:00",
+  "generated_at": "2026-08-25T16:19:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Tue, 25 Aug 2026 12:42:15",
+      "published": "Tue, 25 Aug 2026 16:00:40",
       "source": "CNBC",
       "title": "China needs U.S. dollars but is building a hedge against Washington\u2019s sanctions",
       "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html"
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html"
     },
     {
+      "published": "Tue, 25 Aug 2026 16:09:00",
+      "source": "MarketWatch",
+      "title": "5 cheap U.S. cities to retire in \u2014 if you can deal with this one thing",
+      "url": "https://www.marketwatch.com/story/5-cheap-u-s-cities-to-retire-in-if-you-can-deal-with-this-one-thing-fbda5d1a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 16:04:00",
+      "source": "MarketWatch",
+      "title": "These growth stocks are still cheap, despite the S&P 500 being near a record high price-to-sales valuation",
+      "url": "https://www.marketwatch.com/story/these-growth-stocks-are-still-cheap-despite-the-s-p-500-being-near-a-record-high-price-to-sales-valuation-03602260?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 16:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018She looked into COBRA\u2019: My friend was laid off and lost her health insurance. How can she find affordable coverage?",
+      "url": "https://www.marketwatch.com/story/shes-desperate-my-friend-was-laid-off-and-lost-her-health-insurance-how-can-she-find-affordable-coverage-3b17b553?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 25 Aug 2026 15:30:00",
       "source": "MarketWatch",
       "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
@@ -329,26 +347,8 @@
     {
       "published": "Tue, 25 Aug 2026 15:22:00",
       "source": "MarketWatch",
-      "title": "Home prices in Chicago have risen the most in the U.S. over the past year",
+      "title": "Home prices in Chicago have risen more than in any other U.S. city over the past year",
       "url": "https://www.marketwatch.com/story/home-prices-in-chicago-have-risen-the-most-in-the-u-s-over-the-past-year-3ee317a8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 15:10:00",
-      "source": "MarketWatch",
-      "title": "Why Meta\u2019s stock could see a 50% rally, thanks to an overlooked AI wild card",
-      "url": "https://www.marketwatch.com/story/why-metas-stock-could-see-a-50-rally-thanks-to-an-overlooked-ai-wild-card-28cea54b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 15:05:00",
-      "source": "MarketWatch",
-      "title": "Am I too old for Roth conversions? I\u2019m 84 and my wife is 77. We have $8 million saved.",
-      "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 15:04:00",
-      "source": "MarketWatch",
-      "title": "What Nvidia says on Wednesday to address concerns about its competitiveness could be key for the stock",
-      "url": "https://www.marketwatch.com/story/what-nvidia-says-on-wednesday-to-address-concerns-about-its-competitiveness-could-be-key-for-the-stock-1f9ef8fd?mod=mw_rss_topstories"
     }
   ],
   "rates": {
