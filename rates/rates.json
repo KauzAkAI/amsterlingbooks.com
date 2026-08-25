@@ -135,7 +135,7 @@
       "rate": 16.9467
     }
   },
-  "generated_at": "2026-08-25T19:06:03+00:00",
+  "generated_at": "2026-08-25T19:44:26+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,24 @@
       "url": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html"
     },
     {
+      "published": "Tue, 25 Aug 2026 19:35:00",
+      "source": "MarketWatch",
+      "title": "Has AI gotten any better at stock picking?",
+      "url": "https://www.marketwatch.com/story/has-ai-gotten-any-better-at-stock-picking-a7cfb998?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 19:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018It\u2019s the ultimate regifting\u2019: My mom gave me a house. Should I transfer it back to her to reduce capital gains?",
+      "url": "https://www.marketwatch.com/story/its-the-ultimate-regifting-my-mom-gave-me-a-house-should-i-transfer-it-back-to-her-to-reduce-capital-gains-e357f49c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 25 Aug 2026 19:24:00",
+      "source": "MarketWatch",
+      "title": "U.S.-Canada trade war threatens to worsen inflation for both economies. Neither can afford it.",
+      "url": "https://www.marketwatch.com/story/u-s-canada-trade-war-threatens-to-worsen-inflation-for-both-economies-neither-can-afford-it-bd797506?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 25 Aug 2026 18:58:00",
       "source": "MarketWatch",
       "title": "This chart shows exactly why investors should worry about rising yields \u2014 even if they don\u2019t own any bonds",
@@ -331,24 +349,6 @@
       "source": "MarketWatch",
       "title": "SpaceX to build Musk\u2019s vision for a spaceport that until now \u2018only existed in science fiction\u2019",
       "url": "https://www.marketwatch.com/story/spacex-to-build-musks-vision-for-a-spaceport-that-until-now-only-existed-in-science-fiction-f8482712?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 18:29:00",
-      "source": "MarketWatch",
-      "title": "Why AMD can beat rivals Intel and Nvidia in the market for data-center CPUs",
-      "url": "https://www.marketwatch.com/story/why-amd-can-beat-rivals-intel-and-nvidia-in-the-market-for-data-center-cpus-e49a53f1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 17:50:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s where it takes new homeowners almost 40 to 50 years to break even on buying a house",
-      "url": "https://www.marketwatch.com/story/heres-where-it-takes-new-homeowners-almost-40-to-50-years-to-break-even-on-buying-a-house-c503cb50?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 17:32:00",
-      "source": "MarketWatch",
-      "title": "This driverless-truck company could be a \u2018long-term winner\u2019 in a market Tesla plans to enter soon",
-      "url": "https://www.marketwatch.com/story/this-driverless-truck-company-could-be-a-long-term-winner-in-a-market-tesla-plans-to-enter-soon-193bc8fe?mod=mw_rss_topstories"
     }
   ],
   "rates": {
