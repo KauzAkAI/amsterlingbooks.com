@@ -135,7 +135,7 @@
       "rate": 16.9467
     }
   },
-  "generated_at": "2026-08-25T19:44:26+00:00",
+  "generated_at": "2026-08-25T20:10:53+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html"
     },
     {
+      "published": "Tue, 25 Aug 2026 20:07:00",
+      "source": "MarketWatch",
+      "title": "Options traders are betting on the quietest Nvidia earnings reaction in years. It could be an opportunity for AI bulls.",
+      "url": "https://www.marketwatch.com/story/options-traders-are-betting-on-the-quietest-nvidia-earnings-reaction-in-years-it-could-be-an-opportunity-for-ai-bulls-91955793?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 25 Aug 2026 19:35:00",
       "source": "MarketWatch",
       "title": "Has AI gotten any better at stock picking?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "This chart shows exactly why investors should worry about rising yields \u2014 even if they don\u2019t own any bonds",
       "url": "https://www.marketwatch.com/story/this-chart-shows-exactly-why-investors-should-worry-about-rising-yields-even-if-they-dont-own-any-bonds-075b93c0?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 25 Aug 2026 18:55:00",
-      "source": "MarketWatch",
-      "title": "SpaceX to build Musk\u2019s vision for a spaceport that until now \u2018only existed in science fiction\u2019",
-      "url": "https://www.marketwatch.com/story/spacex-to-build-musks-vision-for-a-spaceport-that-until-now-only-existed-in-science-fiction-f8482712?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.87
+      "yield": 3.86
     },
     {
       "tenor": "6M",
-      "yield": 3.96
+      "yield": 3.95
     },
     {
       "tenor": "1Y",
-      "yield": 4.04
+      "yield": 4.01
     },
     {
       "tenor": "2Y",
-      "yield": 4.24
+      "yield": 4.17
     },
     {
       "tenor": "5Y",
-      "yield": 4.41
+      "yield": 4.35
     },
     {
       "tenor": "7Y",
-      "yield": 4.55
+      "yield": 4.48
     },
     {
       "tenor": "10Y",
-      "yield": 4.7
+      "yield": 4.64
     },
     {
       "tenor": "20Y",
-      "yield": 5.21
+      "yield": 5.16
     },
     {
       "tenor": "30Y",
-      "yield": 5.23
+      "yield": 5.17
     }
   ],
   "warnings": []
