@@ -135,7 +135,7 @@
       "rate": 16.9309
     }
   },
-  "generated_at": "2026-08-26T18:12:45+00:00",
+  "generated_at": "2026-08-26T20:09:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html"
     },
     {
-      "published": "Wed, 26 Aug 2026 18:10:00",
+      "published": "Wed, 26 Aug 2026 19:46:00",
       "source": "MarketWatch",
-      "title": "5 affordable cities to retire in the U.S. right now",
-      "url": "https://www.marketwatch.com/story/5-cheap-u-s-cities-to-retire-in-if-you-can-deal-with-this-one-thing-fbda5d1a?mod=mw_rss_topstories"
+      "title": "Does a 2% beneficiary inherit 100% if the 98% beneficiary dies in a car accident? Asking for a friend.",
+      "url": "https://www.marketwatch.com/story/does-a-2-beneficiary-inherit-100-if-the-98-beneficiary-dies-in-a-car-accident-asking-for-a-friend-67aacc06?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 17:44:00",
+      "published": "Wed, 26 Aug 2026 19:33:00",
       "source": "MarketWatch",
-      "title": "I need to get out of my job, but I\u2019ve signed a noncompete. Can I still leave for a competitor?",
-      "url": "https://www.marketwatch.com/story/i-need-to-get-out-of-my-job-can-i-leave-for-a-competitor-if-ive-signed-a-non-compete-33d3164b?mod=mw_rss_topstories"
+      "title": "I just had my first baby and don\u2019t want to go back to work. Is quitting for a year a bad idea?",
+      "url": "https://www.marketwatch.com/story/i-just-had-my-first-baby-and-dont-want-to-go-back-to-work-is-quitting-for-a-year-a-bad-idea-780122e6?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 17:37:00",
+      "published": "Wed, 26 Aug 2026 19:06:00",
       "source": "MarketWatch",
-      "title": "Two-thirds of parents are failing at this vital safety measure for their children",
-      "url": "https://www.marketwatch.com/story/two-thirds-of-parents-dont-have-this-vital-document-they-need-in-case-of-emergency-7c54efb3?mod=mw_rss_topstories"
+      "title": "Are older Americans spoiling the economy for everyone else?",
+      "url": "https://www.marketwatch.com/story/are-older-americans-spoiling-the-economy-for-everyone-else-064b5820?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 17:32:00",
+      "published": "Wed, 26 Aug 2026 18:45:00",
       "source": "MarketWatch",
-      "title": "The biggest risk to retirement plans may no longer be a stock market crash or inflation",
-      "url": "https://www.marketwatch.com/story/your-portfolio-can-recover-from-a-bear-market-but-can-it-survive-you-living-to-110-cc6d344c?mod=mw_rss_topstories"
+      "title": "\u2018My main goal is to help people\u2019: I\u2019m single, 74, with $10 million burning a hole in my pocket. What should I do?",
+      "url": "https://www.marketwatch.com/story/my-main-goal-is-to-help-people-im-single-74-with-10-million-burning-a-hole-in-my-pocket-what-should-i-do-0e6112e1?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 17:31:00",
+      "published": "Wed, 26 Aug 2026 18:26:00",
       "source": "MarketWatch",
-      "title": "The U.S. economy is better than it looks \u2014 but it might be due for a slowdown",
-      "url": "https://www.marketwatch.com/story/the-u-s-economy-is-better-than-it-looks-but-it-might-be-due-for-a-slowdown-5d9395d2?mod=mw_rss_topstories"
+      "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
+      "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.79
+      "yield": 3.8
     },
     {
       "tenor": "3M",
-      "yield": 3.86
+      "yield": 3.85
     },
     {
       "tenor": "6M",
-      "yield": 3.95
+      "yield": 3.94
     },
     {
       "tenor": "1Y",
-      "yield": 4.01
+      "yield": 4.02
     },
     {
       "tenor": "2Y",
-      "yield": 4.17
+      "yield": 4.19
     },
     {
       "tenor": "5Y",
-      "yield": 4.35
+      "yield": 4.37
     },
     {
       "tenor": "7Y",
-      "yield": 4.48
+      "yield": 4.51
     },
     {
       "tenor": "10Y",
-      "yield": 4.64
+      "yield": 4.66
     },
     {
       "tenor": "20Y",
-      "yield": 5.16
+      "yield": 5.17
     },
     {
       "tenor": "30Y",
-      "yield": 5.17
+      "yield": 5.18
     }
   ],
   "warnings": []
