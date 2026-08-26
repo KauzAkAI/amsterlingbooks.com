@@ -135,7 +135,7 @@
       "rate": 16.9309
     }
   },
-  "generated_at": "2026-08-26T14:55:05+00:00",
+  "generated_at": "2026-08-26T16:21:27+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html"
     },
     {
+      "published": "Wed, 26 Aug 2026 15:13:00",
+      "source": "MarketWatch",
+      "title": "Meta\u2019s stock rises after child-safety settlement \u2014 and looks poised to head even higher from here",
+      "url": "https://www.marketwatch.com/story/metas-stock-rises-as-the-company-settles-in-social-media-addiction-trial-78abdfbf?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 26 Aug 2026 14:51:00",
       "source": "MarketWatch",
       "title": "Bill Gates issues a stark warning about AI \u2014 and Americans increasingly share his concerns",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "Customers are fleeing TurboTax over price, and Intuit\u2019s stock is sliding",
       "url": "https://www.marketwatch.com/story/customers-are-fleeing-turbotax-over-price-and-intuits-stock-is-sliding-a37dcce0?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 26 Aug 2026 14:15:00",
-      "source": "MarketWatch",
-      "title": "Am I too old for Roth conversions? I\u2019m 84 and my wife is 77. We have $8 million saved.",
-      "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories"
     }
   ],
   "rates": {
