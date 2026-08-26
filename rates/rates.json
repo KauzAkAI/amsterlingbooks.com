@@ -90,25 +90,25 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.386
+      "rate": 1.3862
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7198
+      "rate": 6.7205
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85749
+      "rate": 0.85697
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73358
+      "rate": 0.73368
     },
     "INR": {
       "change_pct": 0,
@@ -120,22 +120,22 @@
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.24
+      "rate": 159.07
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1383.07
+      "rate": 1383.49
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9467
+      "rate": 16.9309
     }
   },
-  "generated_at": "2026-08-26T13:58:22+00:00",
+  "generated_at": "2026-08-26T14:55:05+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html"
     },
     {
-      "published": "Wed, 26 Aug 2026 13:55:00",
+      "published": "Wed, 26 Aug 2026 14:51:00",
       "source": "MarketWatch",
-      "title": "Meta\u2019s stock gives up gains as Wall Street digests settlement in social-media addiction trial",
-      "url": "https://www.marketwatch.com/story/metas-stock-rises-as-the-company-settles-in-social-media-addiction-trial-78abdfbf?mod=mw_rss_topstories"
+      "title": "Bill Gates issues a stark warning about AI \u2014 and Americans increasingly share his concerns",
+      "url": "https://www.marketwatch.com/story/bill-gates-issues-a-stark-warning-about-ai-and-americans-increasingly-share-his-concerns-e54b9e72?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 13:52:00",
+      "published": "Wed, 26 Aug 2026 14:42:00",
       "source": "MarketWatch",
-      "title": "Consumer spending sees the smallest increase in seven months. Is the economy getting weaker?",
-      "url": "https://www.marketwatch.com/story/consumer-spending-posts-smallest-increases-in-14-months-is-the-economy-getting-weaker-1580cec6?mod=mw_rss_topstories"
+      "title": "China is collecting on old debts but won\u2019t pay its own",
+      "url": "https://www.marketwatch.com/story/china-is-collecting-on-old-debts-but-wont-pay-its-own-b5fccb4c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 13:52:00",
+      "published": "Wed, 26 Aug 2026 14:30:00",
       "source": "MarketWatch",
-      "title": "U.S. inflation rises again and stays well above the Fed\u2019s target. A rate hike could be in play.",
-      "url": "https://www.marketwatch.com/story/u-s-inflation-rises-in-july-and-stays-well-above-feds-target-b4e6109c?mod=mw_rss_topstories"
+      "title": "\u2018It\u2019s the ultimate regifting\u2019: My mom gave me a house. Should I transfer it back to her to reduce capital gains?",
+      "url": "https://www.marketwatch.com/story/its-the-ultimate-regifting-my-mom-gave-me-a-house-should-i-transfer-it-back-to-her-to-reduce-capital-gains-e357f49c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 13:50:00",
+      "published": "Wed, 26 Aug 2026 14:29:00",
       "source": "MarketWatch",
-      "title": "You don\u2019t have to be rich to start investing. Here\u2019s a simple way to begin.",
-      "url": "https://www.marketwatch.com/story/you-dont-have-to-be-rich-to-start-investing-heres-a-simple-way-to-begin-f1b0e194?mod=mw_rss_topstories"
+      "title": "Customers are fleeing TurboTax over price, and Intuit\u2019s stock is sliding",
+      "url": "https://www.marketwatch.com/story/customers-are-fleeing-turbotax-over-price-and-intuits-stock-is-sliding-a37dcce0?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 26 Aug 2026 13:48:00",
+      "published": "Wed, 26 Aug 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "It now takes over 40 years for homeowners to break even after buying a house in these areas",
-      "url": "https://www.marketwatch.com/story/heres-where-it-takes-new-homeowners-almost-40-to-50-years-to-break-even-on-buying-a-house-c503cb50?mod=mw_rss_topstories"
+      "title": "Am I too old for Roth conversions? I\u2019m 84 and my wife is 77. We have $8 million saved.",
+      "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories"
     }
   ],
   "rates": {
