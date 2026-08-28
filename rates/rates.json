@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3869
+      "rate": 1.3854
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7203
+      "rate": 6.7209
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85874
+      "rate": 0.85889
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73628
+      "rate": 0.73624
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.54
+      "rate": 95.39
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.39
+      "rate": 159.68
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1380.38
+      "rate": 1374.55
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9732
+      "rate": 16.9481
     }
   },
-  "generated_at": "2026-08-28T06:49:36+00:00",
+  "generated_at": "2026-08-28T22:59:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-08-05",
-        "rate": 6.81
-      },
-      {
         "date": "2026-08-12",
         "rate": 6.77
       },
@@ -195,10 +191,6 @@
       {
         "date": "2026-08-19",
         "rate": 6.77
-      },
-      {
-        "date": "2026-08-20",
-        "rate": 6.76
       },
       {
         "date": "2026-08-20",
@@ -221,12 +213,20 @@
         "rate": 6.75
       },
       {
+        "date": "2026-08-26",
+        "rate": 6.78
+      },
+      {
         "date": "2026-08-27",
         "rate": 6.75
       },
       {
         "date": "2026-08-27",
         "rate": 6.66
+      },
+      {
+        "date": "2026-08-28",
+        "rate": 6.81
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 28 Aug 2026 16:11:51",
+      "source": "CNBC",
+      "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
+      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html"
+    },
+    {
       "published": "Thu, 27 Aug 2026 17:31:09",
       "source": "CNBC",
       "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html"
     },
     {
-      "published": "Mon, 24 Aug 2026 13:17:35",
-      "source": "CNBC",
-      "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
-      "url": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html"
+      "published": "Fri, 28 Aug 2026 22:15:00",
+      "source": "MarketWatch",
+      "title": "Does a 2% beneficiary inherit 100% if the 98% beneficiary dies in a car accident? Asking for a friend.",
+      "url": "https://www.marketwatch.com/story/does-a-2-beneficiary-inherit-100-if-the-98-beneficiary-dies-in-a-car-accident-asking-for-a-friend-67aacc06?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 28 Aug 2026 03:16:00",
+      "published": "Fri, 28 Aug 2026 21:34:00",
       "source": "MarketWatch",
-      "title": "Judge says Trump administration\u2019s blacklist of Anthropic was illegal",
-      "url": "https://www.marketwatch.com/story/judge-says-trump-administrations-blacklist-of-anthropic-was-illegal-5d3411e7?mod=mw_rss_topstories"
+      "title": "Microsoft\u2019s stock seals its longest winning streak of the year as AI software fears fade",
+      "url": "https://www.marketwatch.com/story/microsofts-stock-seals-its-longest-winning-streak-of-the-year-as-ai-software-fears-fade-e5669f5b?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 28 Aug 2026 00:20:00",
+      "published": "Fri, 28 Aug 2026 21:31:00",
       "source": "MarketWatch",
-      "title": "Marvell boosts its forecasts, but the stock slides as Wall Street wonders if there\u2019s more to the story",
-      "url": "https://www.marketwatch.com/story/marvell-is-boosting-its-forecasts-but-thats-not-enough-to-lift-its-stock-c769556a?mod=mw_rss_topstories"
+      "title": "\u2018We are committed Christians\u2019: Our son and daughter-in-law cut us off over politics. Should we change our $3 million will?",
+      "url": "https://www.marketwatch.com/story/we-are-hurt-our-son-and-daughter-in-law-cut-off-contact-with-us-over-politics-should-we-change-our-3-million-will-f763b761?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 28 Aug 2026 00:02:00",
+      "published": "Fri, 28 Aug 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s $100 billion spaceport plan has investors asking where all the money is coming from",
-      "url": "https://www.marketwatch.com/story/spacexs-100-billion-spaceport-plan-has-investors-asking-where-all-the-money-is-coming-from-7395bc51?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s revenue forecast is so huge that Wall Street wonders if SpaceX is the reason",
+      "url": "https://www.marketwatch.com/story/nvidias-revenue-forecast-is-so-huge-that-wall-street-wonders-if-spacex-is-the-reason-1ee7a8a9?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 27 Aug 2026 23:05:00",
+      "published": "Fri, 28 Aug 2026 20:45:00",
       "source": "MarketWatch",
-      "title": "Is Nvidia heading for $1 trillion in annual revenue? One analyst now thinks that\u2019s possible.",
-      "url": "https://www.marketwatch.com/story/nvidia-stock-is-climbing-after-another-set-of-blockbuster-results-heres-what-wall-street-is-saying-a2260a62?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 27 Aug 2026 23:00:00",
-      "source": "MarketWatch",
-      "title": "My mother, 91, has dementia. Every bank says I need her signature to unlock her $100,000 stock certificate. What can I do?",
-      "url": "https://www.marketwatch.com/story/my-mother-91-has-dementia-every-bank-says-i-need-her-signature-to-unlock-her-100-000-stock-certificate-what-can-i-do-4a2b702f?mod=mw_rss_topstories"
+      "title": "My contractor handed my $42,000 pool upgrade to a subcontractor I had already rejected. What can I do?",
+      "url": "https://www.marketwatch.com/story/my-contractor-handed-my-42-000-pool-upgrade-to-a-subcontractor-i-had-already-rejected-what-can-i-do-dce41b2b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 27 2026",
-      "change": 0.0,
-      "rate": 6.32
+      "asof_label": "Aug 28 2026",
+      "change": 0.03,
+      "rate": 6.35
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 27 2026",
-      "change": 0.0,
+      "asof_label": "Aug 28 2026",
+      "change": 0.06,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.81
-    },
-    {
-      "tenor": "3M",
       "yield": 3.84
     },
     {
+      "tenor": "3M",
+      "yield": 3.9
+    },
+    {
       "tenor": "6M",
-      "yield": 3.94
+      "yield": 4.02
     },
     {
       "tenor": "1Y",
-      "yield": 4.04
+      "yield": 4.15
     },
     {
       "tenor": "2Y",
-      "yield": 4.2
+      "yield": 4.34
     },
     {
       "tenor": "5Y",
-      "yield": 4.38
+      "yield": 4.48
     },
     {
       "tenor": "7Y",
-      "yield": 4.52
+      "yield": 4.59
     },
     {
       "tenor": "10Y",
-      "yield": 4.67
+      "yield": 4.73
     },
     {
       "tenor": "20Y",
-      "yield": 5.18
+      "yield": 5.21
     },
     {
       "tenor": "30Y",
-      "yield": 5.19
+      "yield": 5.22
     }
   ],
   "warnings": []
