@@ -135,7 +135,7 @@
       "rate": 17.0083
     }
   },
-  "generated_at": "2026-08-31T19:28:14+00:00",
+  "generated_at": "2026-08-31T23:19:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html"
     },
     {
-      "published": "Mon, 31 Aug 2026 19:11:00",
+      "published": "Mon, 31 Aug 2026 22:24:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s what\u2019s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
-      "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-september-2026-on-netflix-hulu-hbo-max-and-more-a702e7dd?mod=mw_rss_topstories"
+      "title": "Amazon\u2019s stock slips as the FTC alleges billions of dollars in hidden ad fees",
+      "url": "https://www.marketwatch.com/story/amazons-stock-slips-as-the-ftc-alleges-billions-of-dollars-in-hidden-ad-fees-4ae44ee4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 19:01:00",
+      "published": "Mon, 31 Aug 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "My mother, 91, has dementia. Every bank says I need her signature to unlock her $100,000 stock certificate. What can I do?",
-      "url": "https://www.marketwatch.com/story/my-mother-91-has-dementia-every-bank-says-i-need-her-signature-to-unlock-her-100-000-stock-certificate-what-can-i-do-4a2b702f?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m leaving money on the table\u2019: I\u2019m 64 and my husband is 70. Should I take spousal benefits or wait for my own?",
+      "url": "https://www.marketwatch.com/story/im-leaving-money-on-the-table-im-64-and-my-husband-is-70-should-i-take-spousal-benefits-or-wait-for-my-own-2490f5cd?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 18:55:00",
+      "published": "Mon, 31 Aug 2026 21:36:00",
       "source": "MarketWatch",
-      "title": "My friend is charging everyone $80 to attend her 30th birthday party. She says it\u2019s to cover the open bar. Is it rude to not go?",
-      "url": "https://www.marketwatch.com/story/my-friend-is-charging-everyone-80-to-attend-her-30th-birthday-party-she-says-its-to-cover-the-open-bar-is-it-rude-to-not-go-d60b3b5b?mod=mw_rss_topstories"
+      "title": "The S&P 500 usually falls in September. Why this year should be different.",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-usually-falls-in-september-why-this-year-should-be-different-77ebb626?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 18:41:00",
+      "published": "Mon, 31 Aug 2026 21:34:00",
       "source": "MarketWatch",
-      "title": "Tesla\u2019s stock is leading S&P 500 gainers as investors prepare for a Cybercab launch",
-      "url": "https://www.marketwatch.com/story/teslas-stock-is-leading-s-p-500-gainers-as-investors-prepare-for-a-cybercab-launch-f23a0d52?mod=mw_rss_topstories"
+      "title": "\u2018Neither of us attended college\u2019: At 62, how can we afford to put our granddaughter through college?",
+      "url": "https://www.marketwatch.com/story/her-life-was-very-challenging-before-we-got-custody-at-62-how-can-we-afford-to-put-our-granddaughter-through-college-b9d550bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 18:34:00",
+      "published": "Mon, 31 Aug 2026 21:33:00",
       "source": "MarketWatch",
-      "title": "Trump to meet with oil execs about cutting gas prices, as his Venezuelan SPR plan faces skepticism",
-      "url": "https://www.marketwatch.com/story/trump-to-meet-with-oil-execs-about-cutting-gas-prices-as-his-venezuelan-spr-plan-faces-skepticism-d8113b17?mod=mw_rss_topstories"
+      "title": "Vanguard\u2019s S&P 500 index fund changed how we invest \u2014 but there may be a smarter way to get into the market",
+      "url": "https://www.marketwatch.com/story/vanguards-s-p-500-index-fund-changed-how-we-invest-but-there-may-be-a-smarter-way-to-get-into-the-market-a54a612c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.84
+      "yield": 3.85
     },
     {
       "tenor": "3M",
-      "yield": 3.9
+      "yield": 3.91
     },
     {
       "tenor": "6M",
-      "yield": 4.02
+      "yield": 3.99
     },
     {
       "tenor": "1Y",
-      "yield": 4.15
+      "yield": 4.16
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.48
+      "yield": 4.49
     },
     {
       "tenor": "7Y",
-      "yield": 4.59
+      "yield": 4.62
     },
     {
       "tenor": "10Y",
-      "yield": 4.73
+      "yield": 4.75
     },
     {
       "tenor": "20Y",
-      "yield": 5.21
+      "yield": 5.24
     },
     {
       "tenor": "30Y",
-      "yield": 5.22
+      "yield": 5.25
     }
   ],
   "warnings": []
