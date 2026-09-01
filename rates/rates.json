@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3886
+      "rate": 1.3888
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7197
+      "rate": 6.7223
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86237
+      "rate": 0.86281
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7386
+      "rate": 0.73904
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.17
+      "rate": 94.95
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.73
+      "rate": 160.16
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1368.03
+      "rate": 1374.61
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0083
+      "rate": 17.0009
     }
   },
-  "generated_at": "2026-08-31T23:19:12+00:00",
+  "generated_at": "2026-09-01T17:16:54+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.65
       },
       {
-        "date": "2026-08-24",
-        "rate": 6.78
-      },
-      {
         "date": "2026-08-25",
         "rate": 6.74
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-08-31",
         "rate": 6.87
+      },
+      {
+        "date": "2026-09-01",
+        "rate": 6.89
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 01 Sep 2026 10:50:27",
+      "source": "CNBC",
+      "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
+      "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"
+    },
+    {
       "published": "Mon, 31 Aug 2026 11:23:42",
       "source": "CNBC",
       "title": "India\u2019s economy expands 7.8% in fiscal first quarter, beating estimates",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html"
     },
     {
-      "published": "Sat, 29 Aug 2026 20:22:12",
-      "source": "CNBC",
-      "title": "K, C or E? Why economists can\u2019t agree on the shape of today\u2019s economy",
-      "url": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html"
+      "published": "Tue, 01 Sep 2026 17:12:00",
+      "source": "MarketWatch",
+      "title": "Global oil prices surge above $94  a barrel after the U.S. strikes Iranian targets",
+      "url": "https://www.marketwatch.com/story/global-oil-prices-extend-move-over-90-after-report-of-two-tankers-struck-in-hormuz-0effd708?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 22:24:00",
+      "published": "Tue, 01 Sep 2026 14:52:00",
       "source": "MarketWatch",
-      "title": "Amazon\u2019s stock slips as the FTC alleges billions of dollars in hidden ad fees",
-      "url": "https://www.marketwatch.com/story/amazons-stock-slips-as-the-ftc-alleges-billions-of-dollars-in-hidden-ad-fees-4ae44ee4?mod=mw_rss_topstories"
+      "title": "There\u2019s a disconnect between AI valuations and revenue-growth forecasts, observes this investor",
+      "url": "https://www.marketwatch.com/story/theres-a-disconnect-between-ai-valuations-and-revenue-growth-forecasts-observes-this-investor-1350d9f7?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 22:00:00",
+      "published": "Tue, 01 Sep 2026 14:42:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m leaving money on the table\u2019: I\u2019m 64 and my husband is 70. Should I take spousal benefits or wait for my own?",
-      "url": "https://www.marketwatch.com/story/im-leaving-money-on-the-table-im-64-and-my-husband-is-70-should-i-take-spousal-benefits-or-wait-for-my-own-2490f5cd?mod=mw_rss_topstories"
+      "title": "Are rising bond rates really so bad? Maybe not, say these experts.",
+      "url": "https://www.marketwatch.com/story/are-rising-bond-rates-really-so-bad-maybe-not-say-these-exports-1af9e683?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 21:36:00",
+      "published": "Tue, 01 Sep 2026 14:15:00",
       "source": "MarketWatch",
-      "title": "The S&P 500 usually falls in September. Why this year should be different.",
-      "url": "https://www.marketwatch.com/story/the-s-p-500-usually-falls-in-september-why-this-year-should-be-different-77ebb626?mod=mw_rss_topstories"
+      "title": "Am I too old for Roth conversions? I\u2019m 84 and my wife is 77. We have $8 million saved.",
+      "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 31 Aug 2026 21:34:00",
+      "published": "Tue, 01 Sep 2026 14:10:00",
       "source": "MarketWatch",
-      "title": "\u2018Neither of us attended college\u2019: At 62, how can we afford to put our granddaughter through college?",
-      "url": "https://www.marketwatch.com/story/her-life-was-very-challenging-before-we-got-custody-at-62-how-can-we-afford-to-put-our-granddaughter-through-college-b9d550bb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 31 Aug 2026 21:33:00",
-      "source": "MarketWatch",
-      "title": "Vanguard\u2019s S&P 500 index fund changed how we invest \u2014 but there may be a smarter way to get into the market",
-      "url": "https://www.marketwatch.com/story/vanguards-s-p-500-index-fund-changed-how-we-invest-but-there-may-be-a-smarter-way-to-get-into-the-market-a54a612c?mod=mw_rss_topstories"
+      "title": "Get over your fear of haggling \u2014 and start saving real money",
+      "url": "https://www.marketwatch.com/story/get-over-your-fear-of-haggling-and-start-saving-real-money-5c215dc8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Aug 31 2026",
-      "change": 0.03,
-      "rate": 6.38
+      "asof_label": "Sep 01 2026",
+      "change": 0.01,
+      "rate": 6.39
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Aug 31 2026",
-      "change": 0.06,
+      "asof_label": "Sep 01 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
