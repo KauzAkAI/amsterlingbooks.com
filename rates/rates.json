@@ -135,7 +135,7 @@
       "rate": 17.0009
     }
   },
-  "generated_at": "2026-09-01T17:16:54+00:00",
+  "generated_at": "2026-09-01T19:59:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html"
     },
     {
-      "published": "Tue, 01 Sep 2026 17:12:00",
+      "published": "Tue, 01 Sep 2026 19:46:00",
       "source": "MarketWatch",
-      "title": "Global oil prices surge above $94  a barrel after the U.S. strikes Iranian targets",
+      "title": "Global oil prices surge above $94  a barrel and settle at a 6-week high after the U.S. strikes Iran in Hormuz, and Trump threatens more action if Tehran retalia",
       "url": "https://www.marketwatch.com/story/global-oil-prices-extend-move-over-90-after-report-of-two-tankers-struck-in-hormuz-0effd708?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 01 Sep 2026 14:52:00",
+      "published": "Tue, 01 Sep 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "There\u2019s a disconnect between AI valuations and revenue-growth forecasts, observes this investor",
-      "url": "https://www.marketwatch.com/story/theres-a-disconnect-between-ai-valuations-and-revenue-growth-forecasts-observes-this-investor-1350d9f7?mod=mw_rss_topstories"
+      "title": "\u2018I feel shoehorned\u2019: My father funded my $800,000 Roth IRA. Does that give him the right to say how I invest it?",
+      "url": "https://www.marketwatch.com/story/i-feel-shoehorned-my-father-funded-my-800-000-roth-ira-does-that-give-him-the-right-to-say-how-i-invest-it-7b1e3ab3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 01 Sep 2026 14:42:00",
+      "published": "Tue, 01 Sep 2026 18:54:00",
       "source": "MarketWatch",
-      "title": "Are rising bond rates really so bad? Maybe not, say these experts.",
-      "url": "https://www.marketwatch.com/story/are-rising-bond-rates-really-so-bad-maybe-not-say-these-exports-1af9e683?mod=mw_rss_topstories"
+      "title": "Broadcom earnings need to answer these questions for the stock to rally again",
+      "url": "https://www.marketwatch.com/story/broadcom-earnings-need-to-answer-these-questions-for-the-stock-to-rally-again-f4e8f4f0?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 01 Sep 2026 14:15:00",
+      "published": "Tue, 01 Sep 2026 18:36:00",
       "source": "MarketWatch",
-      "title": "Am I too old for Roth conversions? I\u2019m 84 and my wife is 77. We have $8 million saved.",
-      "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories"
+      "title": "This could be the 10-year Treasury\u2019s tipping point into the danger zone",
+      "url": "https://www.marketwatch.com/story/this-could-be-the-10-year-treasurys-tipping-point-into-the-danger-zone-891cd45d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 01 Sep 2026 14:10:00",
+      "published": "Tue, 01 Sep 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Get over your fear of haggling \u2014 and start saving real money",
-      "url": "https://www.marketwatch.com/story/get-over-your-fear-of-haggling-and-start-saving-real-money-5c215dc8?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m leaving money on the table\u2019: I\u2019m 64 and my husband is 70. Should I take spousal benefits or wait for my own?",
+      "url": "https://www.marketwatch.com/story/im-leaving-money-on-the-table-im-64-and-my-husband-is-70-should-i-take-spousal-benefits-or-wait-for-my-own-2490f5cd?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 3.91
+      "yield": 3.92
     },
     {
       "tenor": "6M",
-      "yield": 3.99
+      "yield": 4.0
     },
     {
       "tenor": "1Y",
-      "yield": 4.16
+      "yield": 4.18
     },
     {
       "tenor": "2Y",
-      "yield": 4.34
+      "yield": 4.39
     },
     {
       "tenor": "5Y",
-      "yield": 4.49
+      "yield": 4.55
     },
     {
       "tenor": "7Y",
-      "yield": 4.62
+      "yield": 4.66
     },
     {
       "tenor": "10Y",
-      "yield": 4.75
+      "yield": 4.79
     },
     {
       "tenor": "20Y",
-      "yield": 5.24
+      "yield": 5.27
     },
     {
       "tenor": "30Y",
-      "yield": 5.25
+      "yield": 5.27
     }
   ],
   "warnings": []
