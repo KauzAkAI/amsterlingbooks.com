@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3888
+      "rate": 1.3925
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7223
+      "rate": 6.7215
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86281
+      "rate": 0.86371
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73904
+      "rate": 0.74167
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.95
+      "rate": 94.97
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.16
+      "rate": 159.6
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1374.61
+      "rate": 1362.56
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0009
+      "rate": 17.0008
     }
   },
-  "generated_at": "2026-09-02T00:30:55+00:00",
+  "generated_at": "2026-09-02T17:06:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 02 Sep 2026 14:30:10",
+      "source": "CNBC",
+      "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
+      "url": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html"
+    },
+    {
       "published": "Tue, 01 Sep 2026 10:50:27",
       "source": "CNBC",
       "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html"
     },
     {
-      "published": "Sun, 30 Aug 2026 23:31:15",
-      "source": "CNBC",
-      "title": "Singapore tackles finances and culture to avert a demographic crisis",
-      "url": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html"
+      "published": "Wed, 02 Sep 2026 16:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018I feel tricked\u2019: My contractor handed my $42,000 pool upgrade to a subcontractor I had already rejected. What can I do?",
+      "url": "https://www.marketwatch.com/story/my-contractor-handed-my-42-000-pool-upgrade-to-a-subcontractor-i-had-already-rejected-what-can-i-do-dce41b2b?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 00:19:00",
+      "published": "Wed, 02 Sep 2026 16:20:00",
       "source": "MarketWatch",
-      "title": "Dell\u2019s AI servers drive a stellar earnings performance, and a raised outlook",
-      "url": "https://www.marketwatch.com/story/dells-ai-servers-drive-a-stellar-earnings-performance-and-a-raised-outlook-86476ace?mod=mw_rss_topstories"
+      "title": "Here\u2019s how much Americans rely on Social Security \u2014 at all income levels",
+      "url": "https://www.marketwatch.com/story/heres-how-much-americans-rely-on-social-security-at-all-income-levels-3a767119?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 00:18:00",
+      "published": "Wed, 02 Sep 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "Palo Alto Networks\u2019 stock falls despite strong AI cybersecurity demand",
-      "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-climbs-as-demand-for-ai-cybersecurity-powers-an-earnings-beat-4b39578c?mod=mw_rss_topstories"
+      "title": "We\u2019re in our 60s. My wife and I have $345,000 in annual pensions and $1 million in 403(b)s. Is it too late for Roth conversions?",
+      "url": "https://www.marketwatch.com/story/were-in-our-60s-my-wife-and-i-have-345-000-in-annual-pensions-and-1-million-in-403-b-s-is-it-too-late-for-roth-conversions-5df35d42?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 00:00:00",
+      "published": "Wed, 02 Sep 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m leaving money on the table\u2019: I\u2019m 64 and my husband is 70. Should I take spousal benefits or wait for my own?",
-      "url": "https://www.marketwatch.com/story/im-leaving-money-on-the-table-im-64-and-my-husband-is-70-should-i-take-spousal-benefits-or-wait-for-my-own-2490f5cd?mod=mw_rss_topstories"
+      "title": "\u2018I currently give him $1,000 a month\u2019: My grandson has severe mental illness. How do I protect him after I\u2019m gone?",
+      "url": "https://www.marketwatch.com/story/im-desperately-trying-to-plan-ahead-im-leaving-everything-to-my-grandson-who-has-severe-mental-illness-how-can-i-protect-him-d8df2646?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 01 Sep 2026 23:15:00",
+      "published": "Wed, 02 Sep 2026 16:04:00",
       "source": "MarketWatch",
-      "title": "\u2018It\u2019s not fair\u2019: My twin brother and I were left houses by our parents. Can I make him pay his share for taxes and upkeep?",
-      "url": "https://www.marketwatch.com/story/its-not-fair-my-twin-brother-and-i-were-left-houses-by-our-parents-can-i-make-him-pay-his-share-for-taxes-and-upkeep-43feb780?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 01 Sep 2026 21:56:00",
-      "source": "MarketWatch",
-      "title": "Dow drops below a key chart level, warning of more trouble ahead",
-      "url": "https://www.marketwatch.com/story/dow-drops-below-a-key-chart-level-warning-of-more-trouble-ahead-ec3eb664?mod=mw_rss_topstories"
+      "title": "Medicare Advantage patients who get diagnosed with Alzheimer\u2019s or other serious diseases are ditching their plans \u2014 and it can cost them",
+      "url": "https://www.marketwatch.com/story/medicare-advantage-patients-who-get-diagnosed-with-alzheimers-or-other-serious-diseases-are-ditching-their-plans-and-it-can-cost-them-b5c42717?mod=mw_rss_topstories"
     }
   ],
   "rates": {
