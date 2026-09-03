@@ -135,7 +135,7 @@
       "rate": 17.0119
     }
   },
-  "generated_at": "2026-09-03T16:59:56+00:00",
+  "generated_at": "2026-09-03T19:45:31+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-08-26",
-        "rate": 6.75
-      },
-      {
-        "date": "2026-08-26",
         "rate": 6.78
       },
       {
@@ -223,6 +219,10 @@
       {
         "date": "2026-09-02",
         "rate": 6.91
+      },
+      {
+        "date": "2026-09-03",
+        "rate": 6.88
       },
       {
         "date": "2026-09-03",
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 03 Sep 2026 19:38:09",
+      "source": "CNBC",
+      "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
+      "url": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html"
+    },
+    {
       "published": "Thu, 03 Sep 2026 14:06:52",
       "source": "CNBC",
       "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html"
     },
     {
-      "published": "Tue, 01 Sep 2026 10:50:27",
-      "source": "CNBC",
-      "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
-      "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"
+      "published": "Thu, 03 Sep 2026 19:09:00",
+      "source": "MarketWatch",
+      "title": "Wall Street is betting on Fed Chair Kevin Warsh to keep a manic bond market from unraveling",
+      "url": "https://www.marketwatch.com/story/wall-street-is-betting-on-fed-chair-kevin-warsh-to-keep-a-manic-bond-market-from-unraveling-03bbd093?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 16:57:00",
+      "published": "Thu, 03 Sep 2026 19:05:00",
       "source": "MarketWatch",
-      "title": "7% mortgage rates are already here some buyers, mortgage experts say",
-      "url": "https://www.marketwatch.com/story/7-mortgage-rates-are-already-here-some-buyers-mortgage-experts-say-c51a7e04?mod=mw_rss_topstories"
+      "title": "SpaceX is back in the $2 trillion club after nearly two months",
+      "url": "https://www.marketwatch.com/story/spacex-is-back-in-the-2-trillion-club-after-nearly-two-months-25632255?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 16:50:00",
+      "published": "Thu, 03 Sep 2026 19:01:00",
       "source": "MarketWatch",
-      "title": "Tesla\u2019s stock is rallying as investors prepare for a \u2018storm of Cybercabs\u2019",
-      "url": "https://www.marketwatch.com/story/teslas-stock-is-rallying-as-investors-prepare-for-a-storm-of-cybercabs-c738ac98?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m leaving money on the table\u2019: I\u2019m 64 and my husband is 70. Should I take spousal benefits or wait for my own?",
+      "url": "https://www.marketwatch.com/story/im-leaving-money-on-the-table-im-64-and-my-husband-is-70-should-i-take-spousal-benefits-or-wait-for-my-own-2490f5cd?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 16:44:00",
+      "published": "Thu, 03 Sep 2026 18:48:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 68. Should I spend half my 401(k) to buy a home with a mortgage?",
-      "url": "https://www.marketwatch.com/story/im-68-should-i-spend-half-my-401-k-to-buy-a-home-with-a-mortgage-285e5ada?mod=mw_rss_topstories"
+      "title": "Goldfish crackers are getting a makeover as new health trends reshape the snack aisle",
+      "url": "https://www.marketwatch.com/story/goldfish-crackers-are-getting-a-makeover-as-new-health-trends-reshape-the-snack-aisle-32e89644?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 16:30:00",
+      "published": "Thu, 03 Sep 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "\u2018Please don\u2019t let this happen to you\u2019: My best friend died without a will \u2014 her neglectful family gets everything",
-      "url": "https://www.marketwatch.com/story/please-dont-let-this-happen-to-you-my-best-friend-died-without-a-will-her-neglectful-family-gets-everything-a4e6753e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 03 Sep 2026 16:26:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s what Nvidia\u2019s $13 billion Hugging Face deal means for the world of AI",
-      "url": "https://www.marketwatch.com/story/heres-what-nvidias-13-billion-hugging-face-deal-means-for-the-world-of-ai-360e9fd1?mod=mw_rss_topstories"
+      "title": "\u2018Neither of us attended college\u2019: At 62, how can we afford to put our granddaughter through college?",
+      "url": "https://www.marketwatch.com/story/her-life-was-very-challenging-before-we-got-custody-at-62-how-can-we-afford-to-put-our-granddaughter-through-college-b9d550bb?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 02 2026",
-      "change": 0.11,
-      "rate": 6.5
+      "asof_label": "Sep 03 2026",
+      "change": -0.02,
+      "rate": 6.48
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 02 2026",
-      "change": 0.02,
+      "asof_label": "Sep 03 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
