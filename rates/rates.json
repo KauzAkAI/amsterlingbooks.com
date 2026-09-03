@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3925
+      "rate": 1.3792
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7215
+      "rate": 6.7191
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86371
+      "rate": 0.86096
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74167
+      "rate": 0.7409
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.97
+      "rate": 94.49
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.6
+      "rate": 156.01
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1362.56
+      "rate": 1357.29
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0008
+      "rate": 17.0119
     }
   },
-  "generated_at": "2026-09-03T00:10:23+00:00",
+  "generated_at": "2026-09-03T16:59:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,10 +185,6 @@
         "rate": 6.77
       },
       {
-        "date": "2026-08-13",
-        "rate": 6.67
-      },
-      {
         "date": "2026-08-19",
         "rate": 6.77
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-02",
         "rate": 6.91
+      },
+      {
+        "date": "2026-09-03",
+        "rate": 6.71
       }
     ]
   },
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Thu, 03 Sep 2026 14:06:52",
+      "source": "CNBC",
+      "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
+      "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html"
+    },
+    {
+      "published": "Thu, 03 Sep 2026 12:25:53",
+      "source": "CNBC",
+      "title": "'Danger zone of extreme weather': UN warns of supersized El Ni\u00f1o set to hit global economy and markets",
+      "url": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html"
+    },
+    {
+      "published": "Thu, 03 Sep 2026 01:11:41",
+      "source": "CNBC",
+      "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
+      "url": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html"
+    },
+    {
       "published": "Wed, 02 Sep 2026 14:30:10",
       "source": "CNBC",
       "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"
     },
     {
-      "published": "Mon, 31 Aug 2026 11:23:42",
-      "source": "CNBC",
-      "title": "India\u2019s economy expands 7.8% in fiscal first quarter, beating estimates",
-      "url": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html"
-    },
-    {
-      "published": "Mon, 31 Aug 2026 13:35:11",
-      "source": "CNBC",
-      "title": "Bank of England chief warns new AI models threaten global financial stability",
-      "url": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html"
-    },
-    {
-      "published": "Mon, 31 Aug 2026 03:15:01",
-      "source": "CNBC",
-      "title": "China's factory activity shrinks for second straight month, contracting less than expected",
-      "url": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html"
-    },
-    {
-      "published": "Wed, 02 Sep 2026 22:28:00",
+      "published": "Thu, 03 Sep 2026 16:57:00",
       "source": "MarketWatch",
-      "title": "Broadcom\u2019s stock falls despite upbeat earnings, extending a frustrating stretch for investors",
-      "url": "https://www.marketwatch.com/story/broadcoms-stock-falls-despite-upbeat-earnings-extending-a-frustrating-stretch-for-investors-81de3f53?mod=mw_rss_topstories"
+      "title": "7% mortgage rates are already here some buyers, mortgage experts say",
+      "url": "https://www.marketwatch.com/story/7-mortgage-rates-are-already-here-some-buyers-mortgage-experts-say-c51a7e04?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 21:45:00",
+      "published": "Thu, 03 Sep 2026 16:50:00",
       "source": "MarketWatch",
-      "title": "We\u2019re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
-      "url": "https://www.marketwatch.com/story/were-in-our-60s-my-wife-and-i-have-345-000-in-annual-pensions-and-1-million-in-403-b-s-is-it-too-late-for-roth-conversions-5df35d42?mod=mw_rss_topstories"
+      "title": "Tesla\u2019s stock is rallying as investors prepare for a \u2018storm of Cybercabs\u2019",
+      "url": "https://www.marketwatch.com/story/teslas-stock-is-rallying-as-investors-prepare-for-a-storm-of-cybercabs-c738ac98?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 21:38:00",
+      "published": "Thu, 03 Sep 2026 16:44:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock is climbing as investors get more confidence in an expanding base of AI customers",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-climbing-as-investors-get-more-confidence-in-an-expanding-base-of-ai-customers-a6e297f1?mod=mw_rss_topstories"
+      "title": "I\u2019m 68. Should I spend half my 401(k) to buy a home with a mortgage?",
+      "url": "https://www.marketwatch.com/story/im-68-should-i-spend-half-my-401-k-to-buy-a-home-with-a-mortgage-285e5ada?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 21:31:00",
+      "published": "Thu, 03 Sep 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "\u2018I currently give him $1,000 a month\u2019: My grandson has severe mental illness. How do I protect him after I\u2019m gone?",
-      "url": "https://www.marketwatch.com/story/im-desperately-trying-to-plan-ahead-im-leaving-everything-to-my-grandson-who-has-severe-mental-illness-how-can-i-protect-him-d8df2646?mod=mw_rss_topstories"
+      "title": "\u2018Please don\u2019t let this happen to you\u2019: My best friend died without a will \u2014 her neglectful family gets everything",
+      "url": "https://www.marketwatch.com/story/please-dont-let-this-happen-to-you-my-best-friend-died-without-a-will-her-neglectful-family-gets-everything-a4e6753e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 02 Sep 2026 21:12:00",
+      "published": "Thu, 03 Sep 2026 16:26:00",
       "source": "MarketWatch",
-      "title": "Palantir\u2019s stock is slumping. Why bond yields and Google may be to blame.",
-      "url": "https://www.marketwatch.com/story/why-palantirs-stock-is-suffering-its-worst-slump-since-february-7fb3b289?mod=mw_rss_topstories"
+      "title": "Here\u2019s what Nvidia\u2019s $13 billion Hugging Face deal means for the world of AI",
+      "url": "https://www.marketwatch.com/story/heres-what-nvidias-13-billion-hugging-face-deal-means-for-the-world-of-ai-360e9fd1?mod=mw_rss_topstories"
     }
   ],
   "rates": {
