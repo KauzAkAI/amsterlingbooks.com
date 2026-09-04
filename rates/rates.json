@@ -90,25 +90,25 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3792
+      "rate": 1.38
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7191
+      "rate": 6.7109
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86096
+      "rate": 0.86044
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7409
+      "rate": 0.7391
     },
     "INR": {
       "change_pct": 0,
@@ -120,22 +120,22 @@
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 156.01
+      "rate": 156.25
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1357.29
+      "rate": 1350.35
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0119
+      "rate": 16.8991
     }
   },
-  "generated_at": "2026-09-03T23:55:59+00:00",
+  "generated_at": "2026-09-04T16:48:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Fri, 04 Sep 2026 14:19:02",
+      "source": "CNBC",
+      "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+      "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+    },
+    {
+      "published": "Fri, 04 Sep 2026 14:15:04",
+      "source": "CNBC",
+      "title": "The big business of personal protection: How private security became a $50 billion industry",
+      "url": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html"
+    },
+    {
       "published": "Thu, 03 Sep 2026 19:38:09",
       "source": "CNBC",
       "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html"
     },
     {
-      "published": "Thu, 03 Sep 2026 01:11:41",
-      "source": "CNBC",
-      "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
-      "url": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html"
-    },
-    {
-      "published": "Wed, 02 Sep 2026 14:30:10",
-      "source": "CNBC",
-      "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
-      "url": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html"
-    },
-    {
-      "published": "Thu, 03 Sep 2026 23:45:00",
+      "published": "Fri, 04 Sep 2026 16:19:00",
       "source": "MarketWatch",
-      "title": "Tesla investors await updates on Cybercab robotaxi touted as the \u2018future of transport\u2019",
-      "url": "https://www.marketwatch.com/story/teslas-stock-is-rallying-as-investors-prepare-for-a-storm-of-cybercabs-c738ac98?mod=mw_rss_topstories"
+      "title": "Think of Nvidia\u2019s $13 billion deal for Hugging Face as a form of \u2018health insurance\u2019",
+      "url": "https://www.marketwatch.com/story/think-of-nvidias-13-billion-deal-for-hugging-face-as-a-form-of-health-insurance-04c37535?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 23:36:00",
+      "published": "Fri, 04 Sep 2026 15:57:00",
       "source": "MarketWatch",
-      "title": "My wife and I are in our 70s. Should we move to California and take on a bigger mortgage to be near our kids?",
-      "url": "https://www.marketwatch.com/story/my-wife-and-i-are-in-our-70s-should-we-move-to-california-and-take-on-a-bigger-mortgage-to-be-near-our-kids-1d619084?mod=mw_rss_topstories"
+      "title": "Here\u2019s how people are building their nest eggs using \u2018rent and invest\u2019 strategies",
+      "url": "https://www.marketwatch.com/story/heres-how-people-are-building-their-nest-eggs-using-rent-and-invest-strategies-253b069e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 22:49:00",
+      "published": "Fri, 04 Sep 2026 15:48:00",
       "source": "MarketWatch",
-      "title": "Lululemon bets on \u2018away from body\u2019 pants as customers sour on form-fitting leggings",
-      "url": "https://www.marketwatch.com/story/lululemons-sales-drop-raises-deeper-concerns-about-the-companys-turnaround-ddf9256a?mod=mw_rss_topstories"
+      "title": "Jobs and Iran add to Trump\u2019s midterm headaches. Why that\u2019s good for bonds and bad for energy stocks.",
+      "url": "https://www.marketwatch.com/story/jobs-and-iran-add-to-trumps-midterm-headaches-why-thats-good-for-bonds-and-bad-for-energy-stocks-551cb765?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 22:23:00",
+      "published": "Fri, 04 Sep 2026 15:39:00",
       "source": "MarketWatch",
-      "title": "Adobe just announced its next CEO. Here\u2019s why its stock is dropping.",
-      "url": "https://www.marketwatch.com/story/adobe-just-announced-its-next-ceo-heres-why-its-stock-is-dropping-bad9ed8a?mod=mw_rss_topstories"
+      "title": "S&P 500 changes are coming soon. These stocks could be named to the index today.",
+      "url": "https://www.marketwatch.com/story/s-p-500-changes-are-coming-soon-these-stocks-could-be-named-to-the-index-today-2d0d7c14?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 03 Sep 2026 21:54:00",
+      "published": "Fri, 04 Sep 2026 15:05:00",
       "source": "MarketWatch",
-      "title": "Goldfish crackers are getting a makeover as new health trends reshape the snack aisle",
-      "url": "https://www.marketwatch.com/story/goldfish-crackers-are-getting-a-makeover-as-new-health-trends-reshape-the-snack-aisle-32e89644?mod=mw_rss_topstories"
+      "title": "Rising interest rates pose a major threat to stock prices and other assets",
+      "url": "https://www.marketwatch.com/story/rising-interest-rates-pose-a-major-threat-to-stock-prices-and-other-assets-0f9f3208?mod=mw_rss_topstories"
     }
   ],
   "rates": {
