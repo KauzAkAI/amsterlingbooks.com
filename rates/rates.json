@@ -90,13 +90,13 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.38
+      "rate": 1.382
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7109
+      "rate": 6.711
     },
     "EUR": {
       "change_pct": 0,
@@ -108,7 +108,7 @@
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7391
+      "rate": 0.73906
     },
     "INR": {
       "change_pct": 0,
@@ -120,22 +120,22 @@
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 156.25
+      "rate": 154.75
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1350.35
+      "rate": 1347.93
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.8991
+      "rate": 16.9121
     }
   },
-  "generated_at": "2026-09-04T23:17:51+00:00",
+  "generated_at": "2026-09-07T18:12:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Mon, 07 Sep 2026 07:38:42",
+      "source": "CNBC",
+      "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
+      "url": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html"
+    },
+    {
+      "published": "Sat, 05 Sep 2026 19:12:53",
+      "source": "CNBC",
+      "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
+      "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html"
+    },
+    {
+      "published": "Sat, 05 Sep 2026 23:55:52",
+      "source": "CNBC",
+      "title": "From \u2018mystery vacations\u2019 to hostels, budget travelers get thrifty as prices rise",
+      "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html"
+    },
+    {
       "published": "Fri, 04 Sep 2026 18:27:39",
       "source": "CNBC",
       "title": "Women accounted for almost all of job gains in August. Here's why",
@@ -303,52 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
     },
     {
-      "published": "Fri, 04 Sep 2026 14:15:04",
-      "source": "CNBC",
-      "title": "The big business of personal protection: How private security became a $50 billion industry",
-      "url": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html"
-    },
-    {
-      "published": "Thu, 03 Sep 2026 19:38:09",
-      "source": "CNBC",
-      "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
-      "url": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html"
-    },
-    {
-      "published": "Thu, 03 Sep 2026 14:06:52",
-      "source": "CNBC",
-      "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
-      "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html"
-    },
-    {
-      "published": "Fri, 04 Sep 2026 21:46:00",
+      "published": "Mon, 07 Sep 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
-      "url": "https://www.marketwatch.com/story/s-p-500-changes-are-coming-soon-these-stocks-could-be-named-to-the-index-today-2d0d7c14?mod=mw_rss_topstories"
+      "title": "Why does almost nobody want to befriend older people like me \u2014 except scammers?",
+      "url": "https://www.marketwatch.com/story/why-does-almost-nobody-want-to-befriend-older-people-like-me-except-scammers-fda849d1?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 04 Sep 2026 20:18:00",
+      "published": "Mon, 07 Sep 2026 16:30:00",
       "source": "MarketWatch",
-      "title": "Tesla\u2019s stock falls as Cybercab launch lands with a thud",
-      "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-cybercab-launch-lands-with-a-thud-1108376b?mod=mw_rss_topstories"
+      "title": "We\u2019re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
+      "url": "https://www.marketwatch.com/story/were-in-our-60s-my-wife-and-i-have-345-000-in-annual-pensions-and-1-million-in-403-b-s-is-it-too-late-for-roth-conversions-5df35d42?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 04 Sep 2026 20:12:00",
+      "published": "Mon, 07 Sep 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "Micron is doubling down on AI memory chips. That could pay off big time for investors.",
-      "url": "https://www.marketwatch.com/story/micron-is-doubling-down-on-ai-memory-chips-that-could-pay-off-big-time-for-investors-da9e7f5e?mod=mw_rss_topstories"
+      "title": "My wife and I are in our 70s. Should we move to California and take on a bigger mortgage to be near our kids?",
+      "url": "https://www.marketwatch.com/story/my-wife-and-i-are-in-our-70s-should-we-move-to-california-and-take-on-a-bigger-mortgage-to-be-near-our-kids-1d619084?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 04 Sep 2026 20:03:00",
+      "published": "Mon, 07 Sep 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "Will a data center hurt your home\u2019s value? Research says no. Sellers disagree.",
-      "url": "https://www.marketwatch.com/story/will-a-data-center-hurt-your-homes-value-research-says-no-sellers-disagree-7017ace4?mod=mw_rss_topstories"
+      "title": "Chip stock investors beware \u2014 these charts could warn of further weakness ahead",
+      "url": "https://www.marketwatch.com/story/chip-stock-investors-beware-these-charts-could-warn-of-further-weakness-ahead-1bd890cc?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 04 Sep 2026 20:00:00",
+      "published": "Mon, 07 Sep 2026 15:15:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s what\u2019s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
-      "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-september-2026-on-netflix-hulu-hbo-max-and-more-a702e7dd?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m the executor\u2019: My two siblings and I inherited an IRA. Can we just cash it out?",
+      "url": "https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
