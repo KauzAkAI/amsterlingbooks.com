@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.382
+      "rate": 1.3805
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.711
+      "rate": 6.7105
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86044
+      "rate": 0.86103
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73906
+      "rate": 0.73825
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.49
+      "rate": 94.83
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 154.75
+      "rate": 154.3
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1347.93
+      "rate": 1341.67
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9121
+      "rate": 16.951
     }
   },
-  "generated_at": "2026-09-07T23:45:25+00:00",
+  "generated_at": "2026-09-08T17:12:09+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.66
       },
       {
-        "date": "2026-08-28",
-        "rate": 6.81
-      },
-      {
         "date": "2026-08-31",
         "rate": 6.87
       },
@@ -226,6 +222,10 @@
       },
       {
         "date": "2026-09-04",
+        "rate": 6.89
+      },
+      {
+        "date": "2026-09-08",
         "rate": 6.89
       }
     ]
@@ -291,7 +291,19 @@
   },
   "news": [
     {
-      "published": "Mon, 07 Sep 2026 07:38:42",
+      "published": "Tue, 08 Sep 2026 17:11:11",
+      "source": "CNBC",
+      "title": "Canada's retaliatory tariffs worth CA$27.6 billion take effect as trade rift with U.S. deepens",
+      "url": "https://www.cnbc.com/2026/09/08/canada-retaliatory-tariffs.html"
+    },
+    {
+      "published": "Tue, 08 Sep 2026 04:45:07",
+      "source": "CNBC",
+      "title": "China's imports in August miss estimates as calls for rebalancing trade grow",
+      "url": "https://www.cnbc.com/2026/09/08/china-exports-imports-august-trade-rebalance-demand-surplus-.html"
+    },
+    {
+      "published": "Tue, 08 Sep 2026 14:15:38",
       "source": "CNBC",
       "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
       "url": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html"
@@ -309,52 +321,40 @@
       "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html"
     },
     {
-      "published": "Fri, 04 Sep 2026 18:27:39",
-      "source": "CNBC",
-      "title": "Women accounted for almost all of job gains in August. Here's why",
-      "url": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html"
-    },
-    {
-      "published": "Fri, 04 Sep 2026 17:16:37",
-      "source": "CNBC",
-      "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-      "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
-    },
-    {
-      "published": "Mon, 07 Sep 2026 23:15:00",
+      "published": "Tue, 08 Sep 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "Oil prices climb after reports of Saudi Aramco refinery being hit by Houthi rebels",
-      "url": "https://www.marketwatch.com/story/oil-prices-hit-near-seven-week-highs-before-edging-lower-as-iran-plans-to-increase-control-of-hormuz-5070167c?mod=mw_rss_topstories"
+      "title": "\u2018Please don\u2019t let this happen to you\u2019: My best friend died without a will \u2014 her neglectful family gets everything",
+      "url": "https://www.marketwatch.com/story/please-dont-let-this-happen-to-you-my-best-friend-died-without-a-will-her-neglectful-family-gets-everything-a4e6753e?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 07 Sep 2026 22:00:00",
+      "published": "Tue, 08 Sep 2026 16:55:00",
       "source": "MarketWatch",
-      "title": "Why does almost nobody want to befriend older people like me \u2014 except scammers?",
-      "url": "https://www.marketwatch.com/story/why-does-almost-nobody-want-to-befriend-older-people-like-me-except-scammers-fda849d1?mod=mw_rss_topstories"
+      "title": "I did everything \u2018right\u2019 with my health insurance \u2014 and still got a surprise bill. Here\u2019s what I learned.",
+      "url": "https://www.marketwatch.com/story/i-did-everything-right-with-my-health-insurance-and-still-got-a-surprise-bill-heres-what-i-learned-51121f3f?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 07 Sep 2026 22:00:00",
+      "published": "Tue, 08 Sep 2026 16:39:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m the executor\u2019: My two siblings and I inherited an IRA. Can we just cash it out?",
-      "url": "https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s stock could jump 43% \u2014\u00a0if the company is able to accomplish this engineering feat",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-could-jump-43-if-the-company-is-able-to-accomplish-this-engineering-feat-e178ed39?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 07 Sep 2026 19:30:00",
+      "published": "Tue, 08 Sep 2026 16:04:00",
       "source": "MarketWatch",
-      "title": "\u2018Poverty doesn\u2019t have to be my reality\u2019: I thought I\u2019d have to rely on Social Security. Then I taught myself how to invest.",
-      "url": "https://www.marketwatch.com/story/i-didnt-know-what-i-didnt-know-i-thought-id-have-to-depend-on-social-security-then-i-taught-myself-how-to-invest-0129870b?mod=mw_rss_topstories"
+      "title": "These software stocks are in a prime spot to benefit from a rapidly shifting AI landscape",
+      "url": "https://www.marketwatch.com/story/these-software-stocks-are-in-a-prime-spot-to-benefit-from-a-rapidly-shifting-ai-landscape-bc90e45b?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 07 Sep 2026 16:30:00",
+      "published": "Tue, 08 Sep 2026 15:44:00",
       "source": "MarketWatch",
-      "title": "We\u2019re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
-      "url": "https://www.marketwatch.com/story/were-in-our-60s-my-wife-and-i-have-345-000-in-annual-pensions-and-1-million-in-403-b-s-is-it-too-late-for-roth-conversions-5df35d42?mod=mw_rss_topstories"
+      "title": "Bombardier\u2019s stock drops as the U.S.-Canada trade war intensifies. Here\u2019s what Trump may target next.",
+      "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 04 2026",
-      "change": 0.01,
+      "asof_label": "Sep 08 2026",
+      "change": 0.0,
       "rate": 6.49
     },
     "ten_year_treasury": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 04 2026",
-      "change": 0.01,
+      "asof_label": "Sep 08 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
