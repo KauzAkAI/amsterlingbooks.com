@@ -135,7 +135,7 @@
       "rate": 16.951
     }
   },
-  "generated_at": "2026-09-08T22:32:54+00:00",
+  "generated_at": "2026-09-09T00:34:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html"
     },
     {
+      "published": "Wed, 09 Sep 2026 00:17:00",
+      "source": "MarketWatch",
+      "title": "Bombardier\u2019s stock drops as the U.S.-Canada trade war intensifies. Here\u2019s what Trump is targeting next.",
+      "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 08 Sep 2026 22:50:00",
+      "source": "MarketWatch",
+      "title": "How to invest in a booming stock market that\u2019s way cheaper than the S&P 500",
+      "url": "https://www.marketwatch.com/story/how-to-invest-in-a-booming-stock-market-thats-way-cheaper-than-the-s-p-500-b2f5ef5d?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 08 Sep 2026 22:00:00",
       "source": "MarketWatch",
       "title": "\u2018I\u2019m the executor\u2019: My two siblings and I inherited an IRA. Can we just cash it out?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Oracle\u2019s stock gets a boost as the OpenAI ecosystem comes back into favor",
       "url": "https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 08 Sep 2026 21:32:00",
-      "source": "MarketWatch",
-      "title": "Qualcomm\u2019s stock climbs as Amazon chip deal offers investors much-needed good news",
-      "url": "https://www.marketwatch.com/story/qualcomms-stock-climbs-as-amazon-chip-deal-offers-investors-some-much-needed-good-news-5b6a95ca?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 08 Sep 2026 21:30:00",
-      "source": "MarketWatch",
-      "title": "Why does almost nobody want to befriend older people like me \u2014 except scammers?",
-      "url": "https://www.marketwatch.com/story/why-does-almost-nobody-want-to-befriend-older-people-like-me-except-scammers-fda849d1?mod=mw_rss_topstories"
     }
   ],
   "rates": {
