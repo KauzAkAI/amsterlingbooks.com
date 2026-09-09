@@ -135,7 +135,7 @@
       "rate": 16.9025
     }
   },
-  "generated_at": "2026-09-09T17:06:13+00:00",
+  "generated_at": "2026-09-09T19:45:16+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.66
       },
       {
-        "date": "2026-08-31",
-        "rate": 6.87
-      },
-      {
         "date": "2026-09-01",
         "rate": 6.89
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-08",
         "rate": 6.89
+      },
+      {
+        "date": "2026-09-09",
+        "rate": 6.97
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html"
     },
     {
+      "published": "Wed, 09 Sep 2026 19:40:00",
+      "source": "MarketWatch",
+      "title": "Canadian whisky on the rocks? Crown Royal is set to avoid Trump\u2019s new ban.",
+      "url": "https://www.marketwatch.com/story/canadian-whisky-on-the-rocks-crown-royal-is-set-to-avoid-trumps-new-ban-2953bea3?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 09 Sep 2026 19:27:00",
+      "source": "MarketWatch",
+      "title": "Treasury will buy more government bonds than previously announced. The market remains \u2018underwhelmed.\u2019",
+      "url": "https://www.marketwatch.com/story/treasury-to-buy-back-more-government-bonds-than-previously-announced-940363ee?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 09 Sep 2026 17:30:00",
+      "source": "MarketWatch",
+      "title": "The traditional paths to building wealth are becoming less accessible for young Americans. Here\u2019s what happened.",
+      "url": "https://www.marketwatch.com/story/the-traditional-paths-to-building-wealth-are-becoming-less-accessible-for-young-americans-80112c08?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 09 Sep 2026 17:30:00",
+      "source": "MarketWatch",
+      "title": "I have two sons. Should I allow one son to build a $400,000 house on my land?",
+      "url": "https://www.marketwatch.com/story/i-have-two-sons-should-i-allow-one-son-to-build-a-400-000-house-on-my-property-im-not-permitted-to-subdivide-the-land-5ec23b62?mod=mw_rss_topstories"
+    },
+    {
       "published": "Wed, 09 Sep 2026 16:38:00",
       "source": "MarketWatch",
       "title": "These are the 10 biggest retirement fears \u2014 and what you can do about them",
       "url": "https://www.marketwatch.com/story/these-are-the-10-biggest-retirement-fears-and-what-you-can-do-about-them-4dde8b9c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 16:19:00",
-      "source": "MarketWatch",
-      "title": "Oil at $100? Why you should always have energy stocks in your 401(k).",
-      "url": "https://www.marketwatch.com/story/oil-at-100-why-you-should-always-have-energy-stocks-in-your-401-k-b82798f1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 16:18:00",
-      "source": "MarketWatch",
-      "title": "Fed rate hike hinges on two key inflation reports in the next two days",
-      "url": "https://www.marketwatch.com/story/fed-rate-hike-hinges-on-two-key-inflation-reports-in-the-next-two-days-09d63bd9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 16:09:00",
-      "source": "MarketWatch",
-      "title": "Investors worried about rising bond yields are keeping a close eye on this corner of the market",
-      "url": "https://www.marketwatch.com/story/investors-worried-about-rising-bond-yields-are-keeping-a-close-eye-on-this-corner-of-the-market-aa4096c8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 16:00:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m a single 58-year-old veteran in California with $1.5 million and a VA pension. Can I retire?",
-      "url": "https://www.marketwatch.com/story/im-a-single-58-year-old-veteran-with-1-5-million-in-assets-and-a-va-pension-can-i-afford-to-retire-9fadfd41?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 08 2026",
-      "change": 0.0,
-      "rate": 6.49
+      "asof_label": "Sep 09 2026",
+      "change": 0.05,
+      "rate": 6.54
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 08 2026",
-      "change": 0.0,
+      "asof_label": "Sep 09 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
