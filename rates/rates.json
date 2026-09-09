@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3805
+      "rate": 1.3768
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7105
+      "rate": 6.7078
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86103
+      "rate": 0.85822
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73825
+      "rate": 0.7372
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.83
+      "rate": 95.11
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 154.3
+      "rate": 153.27
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1341.67
+      "rate": 1336.2
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.951
+      "rate": 16.9025
     }
   },
-  "generated_at": "2026-09-09T00:34:50+00:00",
+  "generated_at": "2026-09-09T17:06:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Tue, 08 Sep 2026 20:21:10",
+      "published": "Wed, 09 Sep 2026 16:17:46",
+      "source": "CNBC",
+      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
+      "url": "https://www.cnbc.com/2026/09/09/us-canada-trade-war-import-ban.html"
+    },
+    {
+      "published": "Wed, 09 Sep 2026 11:22:21",
       "source": "CNBC",
       "title": "Why the Fed's interest rate call could come down to a few hundredths of a percentage point",
       "url": "https://www.cnbc.com/2026/09/08/federal-reserves-rate-call-could-hang-on-a-tiny-fraction.html"
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html"
     },
     {
-      "published": "Sat, 05 Sep 2026 19:12:53",
-      "source": "CNBC",
-      "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
-      "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html"
+      "published": "Wed, 09 Sep 2026 16:38:00",
+      "source": "MarketWatch",
+      "title": "These are the 10 biggest retirement fears \u2014 and what you can do about them",
+      "url": "https://www.marketwatch.com/story/these-are-the-10-biggest-retirement-fears-and-what-you-can-do-about-them-4dde8b9c?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 09 Sep 2026 00:17:00",
+      "published": "Wed, 09 Sep 2026 16:19:00",
       "source": "MarketWatch",
-      "title": "Bombardier\u2019s stock drops as the U.S.-Canada trade war intensifies. Here\u2019s what Trump is targeting next.",
-      "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories"
+      "title": "Oil at $100? Why you should always have energy stocks in your 401(k).",
+      "url": "https://www.marketwatch.com/story/oil-at-100-why-you-should-always-have-energy-stocks-in-your-401-k-b82798f1?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 08 Sep 2026 22:50:00",
+      "published": "Wed, 09 Sep 2026 16:18:00",
       "source": "MarketWatch",
-      "title": "How to invest in a booming stock market that\u2019s way cheaper than the S&P 500",
-      "url": "https://www.marketwatch.com/story/how-to-invest-in-a-booming-stock-market-thats-way-cheaper-than-the-s-p-500-b2f5ef5d?mod=mw_rss_topstories"
+      "title": "Fed rate hike hinges on two key inflation reports in the next two days",
+      "url": "https://www.marketwatch.com/story/fed-rate-hike-hinges-on-two-key-inflation-reports-in-the-next-two-days-09d63bd9?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 08 Sep 2026 22:00:00",
+      "published": "Wed, 09 Sep 2026 16:09:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m the executor\u2019: My two siblings and I inherited an IRA. Can we just cash it out?",
-      "url": "https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories"
+      "title": "Investors worried about rising bond yields are keeping a close eye on this corner of the market",
+      "url": "https://www.marketwatch.com/story/investors-worried-about-rising-bond-yields-are-keeping-a-close-eye-on-this-corner-of-the-market-aa4096c8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 08 Sep 2026 21:51:00",
+      "published": "Wed, 09 Sep 2026 16:00:00",
       "source": "MarketWatch",
-      "title": "Memory chips have come to rule the AI boom. Why Micron\u2019s reign could be here to stay.",
-      "url": "https://www.marketwatch.com/story/memory-chips-have-come-to-rule-the-ai-boom-why-microns-reign-could-be-here-to-stay-607a4622?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 08 Sep 2026 21:38:00",
-      "source": "MarketWatch",
-      "title": "Oracle\u2019s stock gets a boost as the OpenAI ecosystem comes back into favor",
-      "url": "https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories"
+      "title": "I\u2019m a single 58-year-old veteran in California with $1.5 million and a VA pension. Can I retire?",
+      "url": "https://www.marketwatch.com/story/im-a-single-58-year-old-veteran-with-1-5-million-in-assets-and-a-va-pension-can-i-afford-to-retire-9fadfd41?mod=mw_rss_topstories"
     }
   ],
   "rates": {
