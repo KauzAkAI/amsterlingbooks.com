@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3768
+      "rate": 1.3816
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7078
+      "rate": 6.7063
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.85822
+      "rate": 0.86088
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7372
+      "rate": 0.73963
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.11
+      "rate": 95.44
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 153.27
+      "rate": 154.18
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1336.2
+      "rate": 1343.8
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9025
+      "rate": 16.9435
     }
   },
-  "generated_at": "2026-09-10T00:08:13+00:00",
+  "generated_at": "2026-09-10T16:57:18+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.77
       },
       {
-        "date": "2026-08-20",
-        "rate": 6.65
-      },
-      {
         "date": "2026-08-26",
         "rate": 6.78
       },
       {
         "date": "2026-08-27",
         "rate": 6.66
-      },
-      {
-        "date": "2026-09-01",
-        "rate": 6.89
       },
       {
         "date": "2026-09-02",
@@ -227,6 +219,14 @@
       {
         "date": "2026-09-09",
         "rate": 6.97
+      },
+      {
+        "date": "2026-09-10",
+        "rate": 7.07
+      },
+      {
+        "date": "2026-09-10",
+        "rate": 6.76
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Thu, 10 Sep 2026 16:55:17",
+      "source": "CNBC",
+      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+      "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html"
+    },
+    {
+      "published": "Thu, 10 Sep 2026 13:23:45",
+      "source": "CNBC",
+      "title": "Wholesale prices rose 0.4% in August, as expected",
+      "url": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html"
+    },
+    {
       "published": "Wed, 09 Sep 2026 16:17:46",
       "source": "CNBC",
       "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/08/canada-retaliatory-tariffs.html"
     },
     {
-      "published": "Tue, 08 Sep 2026 04:45:07",
-      "source": "CNBC",
-      "title": "China's imports in August miss estimates as calls for rebalancing trade grow",
-      "url": "https://www.cnbc.com/2026/09/08/china-exports-imports-august-trade-rebalance-demand-surplus-.html"
-    },
-    {
-      "published": "Tue, 08 Sep 2026 14:15:38",
-      "source": "CNBC",
-      "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
-      "url": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 22:51:00",
+      "published": "Thu, 10 Sep 2026 16:20:00",
       "source": "MarketWatch",
-      "title": "Diesel prices hit another record high. If you\u2019re shocked, wait until you see your grocery bill.",
-      "url": "https://www.marketwatch.com/story/diesel-prices-hit-another-record-high-if-youre-shocked-wait-until-you-see-your-grocery-bill-afee7076?mod=mw_rss_topstories"
+      "title": "Treasury yields surge toward the danger zone for stocks, as inflation pressures heat up",
+      "url": "https://www.marketwatch.com/story/treasury-yields-surge-toward-the-danger-zone-for-stocks-as-inflation-pressures-heat-up-fe0f9aa6?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 09 Sep 2026 22:30:00",
+      "published": "Thu, 10 Sep 2026 15:34:00",
       "source": "MarketWatch",
-      "title": "I\u2019m a single 58-year-old veteran in California with $1.5 million and a VA pension. Can I retire?",
-      "url": "https://www.marketwatch.com/story/im-a-single-58-year-old-veteran-with-1-5-million-in-assets-and-a-va-pension-can-i-afford-to-retire-9fadfd41?mod=mw_rss_topstories"
+      "title": "Renewable-energy mandates are actually bad for consumers. They\u2019re not great for solar stocks, either.",
+      "url": "https://www.marketwatch.com/story/renewable-energy-mandates-are-actually-bad-for-consumers-theyre-not-great-for-solar-stocks-either-bdfa13bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 09 Sep 2026 22:21:00",
+      "published": "Thu, 10 Sep 2026 15:25:00",
       "source": "MarketWatch",
-      "title": "Home-insurance premiums just hit a record high. Here\u2019s where they spiked the most.",
-      "url": "https://www.marketwatch.com/story/home-insurance-premiums-just-hit-a-record-high-heres-where-they-spiked-the-most-658ee4d9?mod=mw_rss_topstories"
+      "title": "Now\u2019s your chance to make money during the best bond market for yields in decades \u2014 if you get over Treasury jitters",
+      "url": "https://www.marketwatch.com/story/nows-your-chance-to-make-money-during-the-best-bond-market-for-yields-in-decades-if-you-get-over-treasury-jitters-4209f805?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 09 Sep 2026 22:02:00",
+      "published": "Thu, 10 Sep 2026 15:23:00",
       "source": "MarketWatch",
-      "title": "Hunter Biden\u2019s memecoin flops, falling 95% just hours after launch",
-      "url": "https://www.marketwatch.com/story/hunter-bidens-memecoin-flops-falling-95-just-hours-after-launch-3e9307d0?mod=mw_rss_topstories"
+      "title": "Meta is winning over Wall Street with its new Muse AI agent",
+      "url": "https://www.marketwatch.com/story/meta-is-winning-over-wall-street-with-its-new-muse-ai-agent-0700ca87?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 09 Sep 2026 22:00:00",
+      "published": "Thu, 10 Sep 2026 15:13:00",
       "source": "MarketWatch",
-      "title": "\u2018We fear financial exploitation\u2019: Who will manage our finances if my wife and I become incapacitated?",
-      "url": "https://www.marketwatch.com/story/we-fear-financial-exploitation-who-will-manage-our-finances-if-my-wife-and-i-become-incapacitated-32efc180?mod=mw_rss_topstories"
+      "title": "Derailing the AI train will be surprisingly difficult, according to Bank of America",
+      "url": "https://www.marketwatch.com/story/history-shows-the-bar-to-disrupt-ai-is-surprisingly-high-says-bank-of-america-ddf543d4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 09 2026",
-      "change": 0.05,
-      "rate": 6.54
+      "asof_label": "Sep 10 2026",
+      "change": 0.08,
+      "rate": 6.62
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 09 2026",
-      "change": 0.08,
+      "asof_label": "Sep 10 2026",
+      "change": 0.1,
       "rate": 6.52
     }
   },
