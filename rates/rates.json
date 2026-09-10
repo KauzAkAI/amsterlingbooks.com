@@ -135,7 +135,7 @@
       "rate": 16.9435
     }
   },
-  "generated_at": "2026-09-10T19:32:32+00:00",
+  "generated_at": "2026-09-10T21:51:11+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/08/federal-reserves-rate-call-could-hang-on-a-tiny-fraction.html"
     },
     {
-      "published": "Thu, 10 Sep 2026 19:21:00",
+      "published": "Thu, 10 Sep 2026 21:22:00",
       "source": "MarketWatch",
-      "title": "This simple mistake can give your money to the wrong person when you die. Here\u2019s how to protect your estate.",
-      "url": "https://www.marketwatch.com/story/this-simple-mistake-can-cost-your-loved-ones-their-share-of-your-estate-heres-how-to-protect-your-money-99374a95?mod=mw_rss_topstories"
+      "title": "Oracle\u2019s AI bet pays off as cloud momentum helps drive a rosier forecast",
+      "url": "https://www.marketwatch.com/story/oracles-ai-bet-pays-off-as-cloud-momentum-helps-drive-a-rosier-forecast-cc41a4aa?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 19:07:00",
+      "published": "Thu, 10 Sep 2026 20:53:00",
       "source": "MarketWatch",
-      "title": "Would you buy stock in a company whose own scientists think the product might kill you?",
-      "url": "https://www.marketwatch.com/story/would-you-buy-stock-in-a-company-whose-own-scientists-think-the-product-might-kill-you-f8bc04c3?mod=mw_rss_topstories"
+      "title": "Adobe\u2019s latest earnings leave Wall Street wanting more",
+      "url": "https://www.marketwatch.com/story/adobes-latest-earnings-leave-wall-street-wanting-more-137ea782?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 19:00:00",
+      "published": "Thu, 10 Sep 2026 20:40:00",
       "source": "MarketWatch",
-      "title": "\u2018Poverty doesn\u2019t have to be my reality\u2019: I thought I\u2019d have to rely on Social Security. Then I taught myself how to invest.",
-      "url": "https://www.marketwatch.com/story/i-didnt-know-what-i-didnt-know-i-thought-id-have-to-depend-on-social-security-then-i-taught-myself-how-to-invest-0129870b?mod=mw_rss_topstories"
+      "title": "Apple is walking a \u2018tightrope\u2019 when it comes to the prices of its new iPhones",
+      "url": "https://www.marketwatch.com/story/apples-stock-rises-after-iphone-reveal-the-company-is-walking-a-tightrope-on-pricing-say-analysts-813898ac?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 18:37:00",
+      "published": "Thu, 10 Sep 2026 20:39:00",
       "source": "MarketWatch",
-      "title": "Treasury yields surge after poor 30-year auction and new buyback operation fail to calm market",
-      "url": "https://www.marketwatch.com/story/treasury-yields-surge-toward-the-danger-zone-for-stocks-as-inflation-pressures-heat-up-fe0f9aa6?mod=mw_rss_topstories"
+      "title": "The traditional paths to building wealth are becoming less accessible for young Americans. Here\u2019s what happened.",
+      "url": "https://www.marketwatch.com/story/the-traditional-paths-to-building-wealth-are-becoming-less-accessible-for-young-americans-80112c08?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 18:18:00",
+      "published": "Thu, 10 Sep 2026 20:26:00",
       "source": "MarketWatch",
-      "title": "The 30-year mortgage rate just crossed 7% for the first time in over a year",
-      "url": "https://www.marketwatch.com/story/the-30-year-mortgage-rate-just-crossed-7-for-the-first-time-in-over-a-year-a3fba38f?mod=mw_rss_topstories"
+      "title": "Why $500 checks won\u2019t help Americans facing 15% increases in Obamacare premiums next year",
+      "url": "https://www.marketwatch.com/story/why-500-checks-wont-help-americans-facing-15-increases-in-obamacare-premiums-next-year-b8801cc4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.81
+      "yield": 3.91
     },
     {
       "tenor": "3M",
-      "yield": 3.95
+      "yield": 4.0
     },
     {
       "tenor": "6M",
-      "yield": 4.01
+      "yield": 4.07
     },
     {
       "tenor": "1Y",
-      "yield": 4.17
+      "yield": 4.28
     },
     {
       "tenor": "2Y",
-      "yield": 4.43
+      "yield": 4.56
     },
     {
       "tenor": "5Y",
-      "yield": 4.61
+      "yield": 4.75
     },
     {
       "tenor": "7Y",
-      "yield": 4.71
+      "yield": 4.84
     },
     {
       "tenor": "10Y",
-      "yield": 4.83
+      "yield": 4.95
     },
     {
       "tenor": "20Y",
-      "yield": 5.28
+      "yield": 5.39
     },
     {
       "tenor": "30Y",
-      "yield": 5.28
+      "yield": 5.37
     }
   ],
   "warnings": []
