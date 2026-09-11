@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3816
+      "rate": 1.3858
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7063
+      "rate": 6.7082
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86088
+      "rate": 0.86266
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.73963
+      "rate": 0.7403
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.44
+      "rate": 95.56
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 154.18
+      "rate": 154.04
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1343.8
+      "rate": 1342.79
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9435
+      "rate": 16.9771
     }
   },
-  "generated_at": "2026-09-10T23:39:38+00:00",
+  "generated_at": "2026-09-11T16:59:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-09-02",
-        "rate": 6.91
-      },
-      {
-        "date": "2026-09-02",
         "rate": 6.79
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-10",
         "rate": 6.76
+      },
+      {
+        "date": "2026-09-11",
+        "rate": 7.08
       }
     ]
   },
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Fri, 11 Sep 2026 16:53:23",
+      "source": "CNBC",
+      "title": "Consumer outlook plunges in September as inflation outlook worsens",
+      "url": "https://www.cnbc.com/2026/09/11/consumer-outlook-plunges-in-september-as-inflation-outlook-worsens.html"
+    },
+    {
+      "published": "Fri, 11 Sep 2026 15:36:45",
+      "source": "CNBC",
+      "title": "Record U.S. cyclosporiasis outbreak is over, CDC says",
+      "url": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html"
+    },
+    {
+      "published": "Fri, 11 Sep 2026 13:46:36",
+      "source": "CNBC",
+      "title": "Inflation persisted in August, potentially locking in a Fed interest rate hike",
+      "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
+    },
+    {
       "published": "Thu, 10 Sep 2026 19:18:05",
       "source": "CNBC",
       "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
@@ -303,67 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html"
     },
     {
-      "published": "Thu, 10 Sep 2026 13:23:45",
-      "source": "CNBC",
-      "title": "Wholesale prices rose 0.4% in August, as expected",
-      "url": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 16:17:46",
-      "source": "CNBC",
-      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
-      "url": "https://www.cnbc.com/2026/09/09/us-canada-trade-war-import-ban.html"
-    },
-    {
-      "published": "Wed, 09 Sep 2026 11:22:21",
-      "source": "CNBC",
-      "title": "Why the Fed's interest rate call could come down to a few hundredths of a percentage point",
-      "url": "https://www.cnbc.com/2026/09/08/federal-reserves-rate-call-could-hang-on-a-tiny-fraction.html"
-    },
-    {
-      "published": "Thu, 10 Sep 2026 22:54:00",
+      "published": "Fri, 11 Sep 2026 16:45:00",
       "source": "MarketWatch",
-      "title": "All the ways record-high diesel and rising gas prices are about to make your life more expensive \u2014 from commuting to grocery shopping",
-      "url": "https://www.marketwatch.com/story/all-the-ways-record-high-diesel-and-rising-gas-prices-are-about-to-make-your-life-more-expensive-from-commuting-to-grocery-shopping-2083fec3?mod=mw_rss_topstories"
+      "title": "This investment is safe from both Trump and the Democrats \u2014 and it pays 4.7%",
+      "url": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 22:25:00",
+      "published": "Fri, 11 Sep 2026 16:34:00",
       "source": "MarketWatch",
-      "title": "Want Apple\u2019s $1,999 foldable iPhone Duo? Here\u2019s what T-Mobile, AT&T and Verizon are doing to lower the cost.",
-      "url": "https://www.marketwatch.com/story/want-apples-1-999-foldable-iphone-duo-heres-what-t-mobile-at-t-and-verizon-are-doing-to-lower-the-cost-6b2d3065?mod=mw_rss_topstories"
+      "title": "I\u2019m locked into a 10-year annuity and now I\u2019m strapped for cash. What are my options?",
+      "url": "https://www.marketwatch.com/story/im-locked-into-a-10-year-annuity-and-now-im-strapped-for-cash-what-are-my-options-e6463c91?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 22:19:00",
+      "published": "Fri, 11 Sep 2026 16:32:00",
       "source": "MarketWatch",
-      "title": "SpaceX is inching closer to this lofty $100 billion milestone",
-      "url": "https://www.marketwatch.com/story/spacex-is-inching-closer-to-this-lofty-100-billion-milestone-11536cfc?mod=mw_rss_topstories"
+      "title": "Your Social Security check could go up another $71 next year. That\u2019s not necessarily good news.",
+      "url": "https://www.marketwatch.com/story/your-social-security-check-could-go-up-another-71-next-year-thats-not-necessarily-good-news-f952c08a?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 22:02:00",
+      "published": "Fri, 11 Sep 2026 16:17:00",
       "source": "MarketWatch",
-      "title": "Here are the stocks to favor in the fourth quarter \u2014 and those you should avoid",
-      "url": "https://www.marketwatch.com/story/here-are-the-stocks-to-favor-in-the-fourth-quarter-and-those-you-should-avoid-cf2dd10b?mod=mw_rss_topstories"
+      "title": "How rising bond yields can wreck some portfolios while pumping up others with cash",
+      "url": "https://www.marketwatch.com/story/how-rising-bond-yields-can-wreck-some-portfolios-while-pumping-up-others-with-cash-c415faf3?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 10 Sep 2026 21:55:00",
+      "published": "Fri, 11 Sep 2026 15:31:00",
       "source": "MarketWatch",
-      "title": "Oracle\u2019s AI bet pays off as cloud momentum helps drive a rosier forecast",
-      "url": "https://www.marketwatch.com/story/oracles-ai-bet-pays-off-as-cloud-momentum-helps-drive-a-rosier-forecast-cc41a4aa?mod=mw_rss_topstories"
+      "title": "Investors are all wrong about demography",
+      "url": "https://www.marketwatch.com/story/investors-are-all-wrong-about-demography-ebfb5f2f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 10 2026",
-      "change": 0.08,
-      "rate": 6.62
+      "asof_label": "Sep 11 2026",
+      "change": 0.01,
+      "rate": 6.63
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 10 2026",
-      "change": 0.1,
+      "asof_label": "Sep 11 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
