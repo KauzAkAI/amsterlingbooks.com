@@ -135,7 +135,7 @@
       "rate": 16.9771
     }
   },
-  "generated_at": "2026-09-11T21:55:35+00:00",
+  "generated_at": "2026-09-12T00:04:57+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html"
     },
     {
+      "published": "Fri, 11 Sep 2026 23:54:00",
+      "source": "MarketWatch",
+      "title": "The Fed could raise interest rates three times. Here\u2019s where the market could face the stiffest test.",
+      "url": "https://www.marketwatch.com/story/the-fed-could-raise-interest-rates-three-times-heres-where-the-market-could-face-the-stiffest-test-757872a1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 11 Sep 2026 22:06:00",
+      "source": "MarketWatch",
+      "title": "This investment is safe from both Trump and the Democrats \u2014 and it pays 4.7%",
+      "url": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 11 Sep 2026 21:16:00",
       "source": "MarketWatch",
       "title": "Marvell is sitting on an incredibly \u2018sticky\u2019 business that could help it unlock a $30 billion opportunity",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Tesla could transform the trucking business \u2014 and capitalize on high diesel prices",
       "url": "https://www.marketwatch.com/story/tesla-could-transform-the-trucking-business-and-capitalize-on-high-diesel-prices-e4c48d79?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 20:45:00",
-      "source": "MarketWatch",
-      "title": "Oracle shook off fears about AI spending, but its stock still loses ground",
-      "url": "https://www.marketwatch.com/story/oracle-shares-are-climbing-after-results-what-wall-street-analysts-are-saying-now-0d4517ae?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 20:44:00",
-      "source": "MarketWatch",
-      "title": "Salesforce\u2019s stock has been riding a wave of AI optimism. Here\u2019s what Wall Street wants to see next.",
-      "url": "https://www.marketwatch.com/story/salesforces-stock-has-been-riding-a-wave-of-ai-optimism-heres-what-wall-street-wants-to-see-next-72f20e95?mod=mw_rss_topstories"
     }
   ],
   "rates": {
