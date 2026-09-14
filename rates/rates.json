@@ -135,7 +135,7 @@
       "rate": 17.0721
     }
   },
-  "generated_at": "2026-09-14T18:30:19+00:00",
+  "generated_at": "2026-09-14T22:00:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 14 Sep 2026 19:47:42",
+      "source": "CNBC",
+      "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+      "url": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html"
+    },
+    {
       "published": "Sat, 12 Sep 2026 12:49:15",
       "source": "CNBC",
       "title": "Inflation is outpacing wage growth again, squeezing Americans\u2019 paychecks",
@@ -315,10 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
     },
     {
-      "published": "Thu, 10 Sep 2026 19:18:05",
-      "source": "CNBC",
-      "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html"
+      "published": "Mon, 14 Sep 2026 21:57:00",
+      "source": "MarketWatch",
+      "title": "The murky AI milestone that has some of the industry\u2019s leading voices increasingly on edge",
+      "url": "https://www.marketwatch.com/story/the-murky-ai-milestone-that-has-some-of-the-industrys-leading-voices-increasingly-on-edge-6ffeacc7?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 14 Sep 2026 21:31:00",
+      "source": "MarketWatch",
+      "title": "The oil market is sending an increasingly loud warning about gas prices at the pump",
+      "url": "https://www.marketwatch.com/story/the-oil-market-is-sending-an-increasingly-loud-warning-about-gas-prices-at-the-pump-18177588?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 14 Sep 2026 21:11:00",
+      "source": "MarketWatch",
+      "title": "CrowdStrike and Palo Alto Networks lead software stocks to a never-before-seen feat",
+      "url": "https://www.marketwatch.com/story/crowdstrike-and-palo-alto-networks-are-leading-software-stocks-toward-a-never-before-seen-feat-5b8989b2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 14 Sep 2026 21:11:00",
+      "source": "MarketWatch",
+      "title": "Chip stocks were a safe AI play. Now they\u2019ve turned into the market\u2019s pain trade.",
+      "url": "https://www.marketwatch.com/story/chip-stocks-were-a-safe-ai-play-now-theyve-turned-into-the-markets-pain-trade-6029df5e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 14 Sep 2026 21:00:00",
+      "source": "MarketWatch",
+      "title": "I want to pay for every customer at my late husband\u2019s favorite restaurant on his birthday. Am I crazy to do this?",
+      "url": "https://www.marketwatch.com/story/on-my-late-husbands-birthday-i-want-to-pay-for-every-customer-at-his-favorite-restaurant-is-this-a-good-idea-a2748ccc?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -364,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.93
+      "yield": 3.94
     },
     {
       "tenor": "3M",
-      "yield": 4.07
+      "yield": 4.11
     },
     {
       "tenor": "6M",
-      "yield": 4.12
+      "yield": 4.18
     },
     {
       "tenor": "1Y",
-      "yield": 4.35
+      "yield": 4.37
     },
     {
       "tenor": "2Y",
-      "yield": 4.63
+      "yield": 4.65
     },
     {
       "tenor": "5Y",
-      "yield": 4.78
+      "yield": 4.8
     },
     {
       "tenor": "7Y",
-      "yield": 4.87
+      "yield": 4.88
     },
     {
       "tenor": "10Y",
-      "yield": 4.96
+      "yield": 4.97
     },
     {
       "tenor": "20Y",
-      "yield": 5.38
+      "yield": 5.37
     },
     {
       "tenor": "30Y",
-      "yield": 5.35
+      "yield": 5.34
     }
   ],
   "warnings": []
