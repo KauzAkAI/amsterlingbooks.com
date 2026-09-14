@@ -90,25 +90,25 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3858
+      "rate": 1.3887
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7082
+      "rate": 6.7084
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86266
+      "rate": 0.86573
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7403
+      "rate": 0.74104
     },
     "INR": {
       "change_pct": 0,
@@ -120,22 +120,22 @@
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 154.04
+      "rate": 154.55
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1342.79
+      "rate": 1346.24
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 16.9771
+      "rate": 17.0721
     }
   },
-  "generated_at": "2026-09-12T00:04:57+00:00",
+  "generated_at": "2026-09-14T18:30:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-09-03",
-        "rate": 6.88
-      },
-      {
-        "date": "2026-09-03",
         "rate": 6.71
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-11",
         "rate": 7.12
+      },
+      {
+        "date": "2026-09-14",
+        "rate": 7.17
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Sat, 12 Sep 2026 12:49:15",
+      "source": "CNBC",
+      "title": "Inflation is outpacing wage growth again, squeezing Americans\u2019 paychecks",
+      "url": "https://www.cnbc.com/2026/09/12/inflation-is-outpacing-wage-growth-again-squeezing-americans-paychecks.html"
+    },
+    {
       "published": "Fri, 11 Sep 2026 16:53:23",
       "source": "CNBC",
       "title": "Consumer outlook plunges in September as inflation outlook worsens",
@@ -313,56 +319,20 @@
       "source": "CNBC",
       "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
       "url": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html"
-    },
-    {
-      "published": "Thu, 10 Sep 2026 16:55:17",
-      "source": "CNBC",
-      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
-      "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 23:54:00",
-      "source": "MarketWatch",
-      "title": "The Fed could raise interest rates three times. Here\u2019s where the market could face the stiffest test.",
-      "url": "https://www.marketwatch.com/story/the-fed-could-raise-interest-rates-three-times-heres-where-the-market-could-face-the-stiffest-test-757872a1?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 22:06:00",
-      "source": "MarketWatch",
-      "title": "This investment is safe from both Trump and the Democrats \u2014 and it pays 4.7%",
-      "url": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 21:16:00",
-      "source": "MarketWatch",
-      "title": "Marvell is sitting on an incredibly \u2018sticky\u2019 business that could help it unlock a $30 billion opportunity",
-      "url": "https://www.marketwatch.com/story/marvell-is-sitting-on-an-incredibly-sticky-business-that-could-help-it-unlock-a-30-billion-opportunity-caa6c83f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 21:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m the executor\u2019: My two siblings and I inherited an IRA. Can we just cash it out?",
-      "url": "https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 11 Sep 2026 20:49:00",
-      "source": "MarketWatch",
-      "title": "Tesla could transform the trucking business \u2014 and capitalize on high diesel prices",
-      "url": "https://www.marketwatch.com/story/tesla-could-transform-the-trucking-business-and-capitalize-on-high-diesel-prices-e4c48d79?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 11 2026",
-      "change": 0.03,
-      "rate": 6.65
+      "asof_label": "Sep 14 2026",
+      "change": 0.05,
+      "rate": 6.7
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 11 2026",
+      "asof_label": "Sep 14 2026",
       "change": 0.05,
       "rate": 6.52
     }
