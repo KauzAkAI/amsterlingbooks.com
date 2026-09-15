@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3887
+      "rate": 1.392
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7084
+      "rate": 6.7115
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.86573
+      "rate": 0.86663
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74104
+      "rate": 0.74166
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.56
+      "rate": 95.96
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 154.55
+      "rate": 155.0
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1346.24
+      "rate": 1359.15
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.0721
+      "rate": 17.1568
     }
   },
-  "generated_at": "2026-09-15T00:32:13+00:00",
+  "generated_at": "2026-09-15T17:37:32+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.71
       },
       {
-        "date": "2026-09-04",
-        "rate": 6.89
-      },
-      {
         "date": "2026-09-08",
         "rate": 6.89
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-14",
         "rate": 7.17
+      },
+      {
+        "date": "2026-09-15",
+        "rate": 7.22
       }
     ]
   },
@@ -319,20 +319,50 @@
       "source": "CNBC",
       "title": "Inflation persisted in August, potentially locking in a Fed interest rate hike",
       "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
+    },
+    {
+      "published": "Tue, 15 Sep 2026 17:18:00",
+      "source": "MarketWatch",
+      "title": "AI stocks are rebounding. One analyst says there\u2019s no spending slowdown in sight.",
+      "url": "https://www.marketwatch.com/story/ai-stocks-are-rebounding-one-analyst-says-theres-no-spending-slowdown-in-sight-8fd99c4b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 15 Sep 2026 17:09:00",
+      "source": "MarketWatch",
+      "title": "Why investors need to learn the difference between uncertainty and risk in today\u2019s market",
+      "url": "https://www.marketwatch.com/story/what-investors-need-to-do-and-mistakes-not-to-make-in-todays-uncertain-world-8eb74333?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 15 Sep 2026 17:08:00",
+      "source": "MarketWatch",
+      "title": "Is the two-decade era of low interest rates over? The Fed has to decide.",
+      "url": "https://www.marketwatch.com/story/is-the-two-decade-era-of-low-interest-rates-over-the-fed-has-to-decide-0520f458?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 15 Sep 2026 17:00:00",
+      "source": "MarketWatch",
+      "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
+      "url": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 15 Sep 2026 16:45:00",
+      "source": "MarketWatch",
+      "title": "Institutional investors are dangerously overinvested in stocks",
+      "url": "https://www.marketwatch.com/story/institutional-investors-are-dangerously-overinvested-in-stocks-ea889386?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 14 2026",
-      "change": 0.05,
-      "rate": 6.7
+      "asof_label": "Sep 15 2026",
+      "change": 0.12,
+      "rate": 6.82
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 14 2026",
+      "asof_label": "Sep 15 2026",
       "change": 0.05,
       "rate": 6.52
     }
