@@ -135,7 +135,7 @@
       "rate": 17.1568
     }
   },
-  "generated_at": "2026-09-15T17:37:32+00:00",
+  "generated_at": "2026-09-15T20:26:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html"
     },
     {
-      "published": "Tue, 15 Sep 2026 17:18:00",
+      "published": "Tue, 15 Sep 2026 20:20:00",
       "source": "MarketWatch",
-      "title": "AI stocks are rebounding. One analyst says there\u2019s no spending slowdown in sight.",
-      "url": "https://www.marketwatch.com/story/ai-stocks-are-rebounding-one-analyst-says-theres-no-spending-slowdown-in-sight-8fd99c4b?mod=mw_rss_topstories"
+      "title": "Dow clinches its worst September start since 2008 as history repeats itself",
+      "url": "https://www.marketwatch.com/story/dow-clinches-its-worst-september-start-since-2008-as-history-repeats-itself-57d11f3f?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 15 Sep 2026 17:09:00",
+      "published": "Tue, 15 Sep 2026 20:15:00",
       "source": "MarketWatch",
-      "title": "Why investors need to learn the difference between uncertainty and risk in today\u2019s market",
-      "url": "https://www.marketwatch.com/story/what-investors-need-to-do-and-mistakes-not-to-make-in-todays-uncertain-world-8eb74333?mod=mw_rss_topstories"
+      "title": "Top Senate Republican floats a diesel export ban as prices soar. It might not work.",
+      "url": "https://www.marketwatch.com/story/top-senate-republican-floats-a-diesel-export-ban-as-prices-soar-it-might-not-work-45966943?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 15 Sep 2026 17:08:00",
+      "published": "Tue, 15 Sep 2026 19:54:00",
       "source": "MarketWatch",
-      "title": "Is the two-decade era of low interest rates over? The Fed has to decide.",
-      "url": "https://www.marketwatch.com/story/is-the-two-decade-era-of-low-interest-rates-over-the-fed-has-to-decide-0520f458?mod=mw_rss_topstories"
+      "title": "Is the shingles vaccine the secret to living longer and delaying dementia? Here\u2019s what the science says.",
+      "url": "https://www.marketwatch.com/story/is-the-shingles-vaccine-the-secret-to-living-longer-and-delaying-dementia-heres-what-the-science-says-1c108c26?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 15 Sep 2026 17:00:00",
+      "published": "Tue, 15 Sep 2026 19:50:00",
       "source": "MarketWatch",
-      "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
-      "url": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories"
+      "title": "The Fed\u2019s expected interest-rate hike on Wednesday could be the start of something more troubling for investors",
+      "url": "https://www.marketwatch.com/story/a-fed-rate-hike-isnt-the-only-thing-investors-should-be-watching-for-on-wednesday-3157d12d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 15 Sep 2026 16:45:00",
+      "published": "Tue, 15 Sep 2026 19:23:00",
       "source": "MarketWatch",
-      "title": "Institutional investors are dangerously overinvested in stocks",
-      "url": "https://www.marketwatch.com/story/institutional-investors-are-dangerously-overinvested-in-stocks-ea889386?mod=mw_rss_topstories"
+      "title": "SpaceX\u2019s Starship is finally set for orbit. A lot is riding on its success.",
+      "url": "https://www.marketwatch.com/story/spacexs-starship-is-finally-set-for-orbit-a-lot-is-riding-on-its-success-764219b3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.94
+      "yield": 3.93
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.18
+      "yield": 4.17
     },
     {
       "tenor": "1Y",
-      "yield": 4.37
+      "yield": 4.39
     },
     {
       "tenor": "2Y",
-      "yield": 4.65
+      "yield": 4.67
     },
     {
       "tenor": "5Y",
-      "yield": 4.8
+      "yield": 4.83
     },
     {
       "tenor": "7Y",
-      "yield": 4.88
+      "yield": 4.91
     },
     {
       "tenor": "10Y",
-      "yield": 4.97
+      "yield": 5.0
     },
     {
       "tenor": "20Y",
-      "yield": 5.37
+      "yield": 5.4
     },
     {
       "tenor": "30Y",
-      "yield": 5.34
+      "yield": 5.36
     }
   ],
   "warnings": []
