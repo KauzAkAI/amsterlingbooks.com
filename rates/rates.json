@@ -135,7 +135,7 @@
       "rate": 17.1382
     }
   },
-  "generated_at": "2026-09-16T17:35:01+00:00",
+  "generated_at": "2026-09-16T20:25:25+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-09-16",
-        "rate": 7.19
+        "rate": 7.24
       }
     ]
   },
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Wed, 16 Sep 2026 17:29:19",
+      "published": "Wed, 16 Sep 2026 20:22:24",
       "source": "CNBC",
       "title": "'Science fiction': Transport companies \u2014 the backbone of economy \u2014 are sounding alarm on fuel prices",
       "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/09/16/de-dollarization-brics-china-russia-trump.html"
     },
     {
-      "published": "Wed, 16 Sep 2026 17:30:00",
-      "source": "MarketWatch",
-      "title": "The data-center backlash is so fierce that Republican candidates are willing to cross Trump",
-      "url": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 16 Sep 2026 17:00:00",
-      "source": "MarketWatch",
-      "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
-      "url": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 16 Sep 2026 16:24:00",
-      "source": "MarketWatch",
-      "title": "Classic budgeting rules don\u2019t work anymore \u2014 even if your household makes $100,000. Here\u2019s what does.",
-      "url": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 16 Sep 2026 16:00:00",
+      "published": "Wed, 16 Sep 2026 19:15:00",
       "source": "MarketWatch",
       "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
       "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 16 Sep 2026 16:00:00",
+      "published": "Wed, 16 Sep 2026 19:10:00",
       "source": "MarketWatch",
-      "title": "15 stocks that have grown dividends the most \u2014 and nearly all have beaten the S&P 500",
-      "url": "https://www.marketwatch.com/story/15-stocks-that-have-grown-dividends-the-most-and-nearly-all-have-beaten-the-s-p-500-6d8923fc?mod=mw_rss_topstories"
+      "title": "As Fed rolls out its first interest-rate hike in 3 years, officials are divided on what to do next",
+      "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 16 Sep 2026 19:00:00",
+      "source": "MarketWatch",
+      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
+      "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 16 Sep 2026 18:57:00",
+      "source": "MarketWatch",
+      "title": "Google is playing a different AI game than everyone else, and Wall Street may be missing the point",
+      "url": "https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 16 Sep 2026 18:38:00",
+      "source": "MarketWatch",
+      "title": "The smartest money moves to make now that interest rates are going higher",
+      "url": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Sep 16 2026",
-      "change": -0.01,
-      "rate": 6.81
+      "change": 0.02,
+      "rate": 6.84
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Sep 16 2026",
-      "change": -0.03,
+      "change": 0.02,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.93
+      "yield": 3.96
     },
     {
       "tenor": "3M",
-      "yield": 4.11
+      "yield": 4.14
     },
     {
       "tenor": "6M",
-      "yield": 4.17
+      "yield": 4.22
     },
     {
       "tenor": "1Y",
-      "yield": 4.39
+      "yield": 4.45
     },
     {
       "tenor": "2Y",
-      "yield": 4.67
+      "yield": 4.74
     },
     {
       "tenor": "5Y",
-      "yield": 4.83
+      "yield": 4.86
     },
     {
       "tenor": "7Y",
-      "yield": 4.91
+      "yield": 4.94
     },
     {
       "tenor": "10Y",
-      "yield": 5.0
+      "yield": 5.01
     },
     {
       "tenor": "20Y",
-      "yield": 5.4
+      "yield": 5.39
     },
     {
       "tenor": "30Y",
-      "yield": 5.36
+      "yield": 5.35
     }
   ],
   "warnings": []
