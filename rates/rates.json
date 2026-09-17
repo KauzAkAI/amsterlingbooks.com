@@ -135,7 +135,7 @@
       "rate": 17.1881
     }
   },
-  "generated_at": "2026-09-17T17:34:50+00:00",
+  "generated_at": "2026-09-17T20:33:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -319,36 +319,6 @@
       "source": "CNBC",
       "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
       "url": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 17:31:00",
-      "source": "MarketWatch",
-      "title": "AI was supposed to kill Google search. These numbers show the opposite, analyst says.",
-      "url": "https://www.marketwatch.com/story/ai-was-supposed-to-kill-google-search-these-numbers-show-the-opposite-analyst-says-a3be9495?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 17:16:00",
-      "source": "MarketWatch",
-      "title": "Why growth stocks\u2019 surprising strength may be warning of a market bubble",
-      "url": "https://www.marketwatch.com/story/why-growth-stocks-surprising-strength-may-be-warning-of-a-market-bubble-5288a7dc?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 15:49:00",
-      "source": "MarketWatch",
-      "title": "Book your Thanksgiving and Christmas travel now \u2014 or risk getting priced out of flying home for the holidays",
-      "url": "https://www.marketwatch.com/story/the-best-time-to-book-your-flight-home-for-the-holidays-yesterday-6f5928f2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 15:24:00",
-      "source": "MarketWatch",
-      "title": "Like Costco, Walmart will sell Medicare Advantage plans",
-      "url": "https://www.marketwatch.com/story/like-costco-walmart-to-sell-medicare-advantage-plans-b31977d2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 15:22:00",
-      "source": "MarketWatch",
-      "title": "Micron, Intel and other chip stocks are furthering their strong comebacks",
-      "url": "https://www.marketwatch.com/story/micron-intel-and-other-chip-stocks-are-furthering-their-strong-comebacks-14b1ecac?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +364,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.96
+      "yield": 3.97
     },
     {
       "tenor": "3M",
-      "yield": 4.14
+      "yield": 4.12
     },
     {
       "tenor": "6M",
-      "yield": 4.22
+      "yield": 4.2
     },
     {
       "tenor": "1Y",
-      "yield": 4.45
+      "yield": 4.4
     },
     {
       "tenor": "2Y",
-      "yield": 4.74
+      "yield": 4.67
     },
     {
       "tenor": "5Y",
-      "yield": 4.86
+      "yield": 4.78
     },
     {
       "tenor": "7Y",
-      "yield": 4.94
+      "yield": 4.86
     },
     {
       "tenor": "10Y",
-      "yield": 5.01
+      "yield": 4.94
     },
     {
       "tenor": "20Y",
-      "yield": 5.39
+      "yield": 5.32
     },
     {
       "tenor": "30Y",
-      "yield": 5.35
+      "yield": 5.29
     }
   ],
   "warnings": []
