@@ -135,7 +135,7 @@
       "rate": 17.1776
     }
   },
-  "generated_at": "2026-09-18T19:33:34+00:00",
+  "generated_at": "2026-09-18T21:50:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html"
     },
     {
-      "published": "Fri, 18 Sep 2026 19:30:00",
+      "published": "Fri, 18 Sep 2026 21:16:00",
       "source": "MarketWatch",
-      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-      "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 18 Sep 2026 19:11:00",
-      "source": "MarketWatch",
-      "title": "It\u2019s almost impossible to sell a condo these days: \u2018I feel trapped\u2019",
+      "title": "It\u2019s almost impossible to sell a condo unit these days: \u2018I feel trapped\u2019",
       "url": "https://www.marketwatch.com/story/its-almost-impossible-to-sell-a-condo-these-days-i-feel-trapped-1f96ce37?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 19:00:00",
+      "published": "Fri, 18 Sep 2026 21:14:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m burned out\u2019: I\u2019m constantly helping my cousin who is running out of money. Is it too much to expect his sister to help?",
-      "url": "https://www.marketwatch.com/story/im-burned-out-im-constantly-helping-my-cousin-who-is-running-out-of-money-is-it-too-much-to-expect-his-sister-to-help-540def9a?mod=mw_rss_topstories"
+      "title": "Amazon, Palantir and 12 more top tech stock picks from UBS analysts",
+      "url": "https://www.marketwatch.com/story/amazon-palantir-and-12-more-top-tech-stock-picks-from-ubs-analysts-435244bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 18:46:00",
+      "published": "Fri, 18 Sep 2026 20:48:00",
       "source": "MarketWatch",
-      "title": "\u2018My total balance should be $20 million\u2019: I invested $1.1 million in a crypto platform. Have I lost it all?",
-      "url": "https://www.marketwatch.com/story/my-total-balance-should-be-worth-20-million-i-invested-1-1-million-in-a-crypto-platform-have-i-lost-it-all-d22da562?mod=mw_rss_topstories"
+      "title": "Stocks are failing the \u2018breadth\u2019 test, but options traders still see reason to buy",
+      "url": "https://www.marketwatch.com/story/stocks-are-failing-the-breadth-test-but-options-traders-still-see-reason-to-buy-ef78ef14?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 18:30:00",
+      "published": "Fri, 18 Sep 2026 20:15:00",
       "source": "MarketWatch",
-      "title": "I\u2019m in my 50s. My mother died from Alzheimer\u2019s. Do I need long-term-care insurance?",
-      "url": "https://www.marketwatch.com/story/im-in-my-50s-my-mother-died-from-alzheimers-do-i-need-long-term-insurance-14d58069?mod=mw_rss_topstories"
+      "title": "Most of what you know about data centers is wrong",
+      "url": "https://www.marketwatch.com/story/most-of-what-you-know-about-data-centers-is-wrong-e6e8936c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 18 Sep 2026 20:01:00",
+      "source": "MarketWatch",
+      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
+      "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 4.12
+      "yield": 4.14
     },
     {
       "tenor": "6M",
-      "yield": 4.2
+      "yield": 4.24
     },
     {
       "tenor": "1Y",
-      "yield": 4.4
+      "yield": 4.44
     },
     {
       "tenor": "2Y",
-      "yield": 4.67
+      "yield": 4.76
     },
     {
       "tenor": "5Y",
-      "yield": 4.78
-    },
-    {
-      "tenor": "7Y",
       "yield": 4.86
     },
     {
+      "tenor": "7Y",
+      "yield": 4.93
+    },
+    {
       "tenor": "10Y",
-      "yield": 4.94
+      "yield": 5.01
     },
     {
       "tenor": "20Y",
-      "yield": 5.32
+      "yield": 5.38
     },
     {
       "tenor": "30Y",
-      "yield": 5.29
+      "yield": 5.34
     }
   ],
   "warnings": []
