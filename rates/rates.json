@@ -135,7 +135,7 @@
       "rate": 17.1776
     }
   },
-  "generated_at": "2026-09-18T17:01:28+00:00",
+  "generated_at": "2026-09-18T19:33:34+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-08-26",
-        "rate": 6.78
-      },
-      {
         "date": "2026-09-02",
         "rate": 6.79
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-09-16",
         "rate": 7.24
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 6.97
       },
       {
         "date": "2026-09-17",
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html"
     },
     {
-      "published": "Fri, 18 Sep 2026 16:50:00",
+      "published": "Fri, 18 Sep 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "What\u2019s really driving inflation and rising interest rates",
-      "url": "https://www.marketwatch.com/story/whats-really-driving-inflation-and-rising-interest-rates-59a9cd51?mod=mw_rss_topstories"
+      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
+      "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 16:39:00",
+      "published": "Fri, 18 Sep 2026 19:11:00",
       "source": "MarketWatch",
-      "title": "Why investors\u2019 best move in reaction to Fed\u2019s rate hike is doing nothing at all",
-      "url": "https://www.marketwatch.com/story/why-investors-best-move-in-reaction-to-feds-rate-hike-is-doing-nothing-at-all-6ff56b4c?mod=mw_rss_topstories"
+      "title": "It\u2019s almost impossible to sell a condo these days: \u2018I feel trapped\u2019",
+      "url": "https://www.marketwatch.com/story/its-almost-impossible-to-sell-a-condo-these-days-i-feel-trapped-1f96ce37?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 16:33:00",
+      "published": "Fri, 18 Sep 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "Two signs investors don\u2019t have to fear an AI slowdown",
-      "url": "https://www.marketwatch.com/story/two-signs-investors-dont-have-to-fear-an-ai-slowdown-5ec40948?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m burned out\u2019: I\u2019m constantly helping my cousin who is running out of money. Is it too much to expect his sister to help?",
+      "url": "https://www.marketwatch.com/story/im-burned-out-im-constantly-helping-my-cousin-who-is-running-out-of-money-is-it-too-much-to-expect-his-sister-to-help-540def9a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 16:23:00",
+      "published": "Fri, 18 Sep 2026 18:46:00",
       "source": "MarketWatch",
-      "title": "Netflix is too focused on podcasts and not enough on good shows, analysts say",
-      "url": "https://www.marketwatch.com/story/netflix-is-too-focused-on-podcasts-and-not-enough-on-good-shows-analysts-say-be758c93?mod=mw_rss_topstories"
+      "title": "\u2018My total balance should be $20 million\u2019: I invested $1.1 million in a crypto platform. Have I lost it all?",
+      "url": "https://www.marketwatch.com/story/my-total-balance-should-be-worth-20-million-i-invested-1-1-million-in-a-crypto-platform-have-i-lost-it-all-d22da562?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 18 Sep 2026 16:11:00",
+      "published": "Fri, 18 Sep 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "These fast-growing ETFs aim for yields as high as 17.5%. But here\u2019s the catch.",
-      "url": "https://www.marketwatch.com/story/these-fast-growing-etfs-aim-for-yields-as-high-as-17-5-but-heres-the-catch-6f0a3d43?mod=mw_rss_topstories"
+      "title": "I\u2019m in my 50s. My mother died from Alzheimer\u2019s. Do I need long-term-care insurance?",
+      "url": "https://www.marketwatch.com/story/im-in-my-50s-my-mother-died-from-alzheimers-do-i-need-long-term-insurance-14d58069?mod=mw_rss_topstories"
     }
   ],
   "rates": {
