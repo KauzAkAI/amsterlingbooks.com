@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3995
+      "rate": 1.401
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7075
+      "rate": 6.6976
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.871
+      "rate": 0.8726
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74758
+      "rate": 0.74939
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.94
+      "rate": 95.88
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 155.69
+      "rate": 157.89
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1382.55
+      "rate": 1388.1
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.1881
+      "rate": 17.1776
     }
   },
-  "generated_at": "2026-09-17T23:04:42+00:00",
+  "generated_at": "2026-09-18T17:01:28+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-09-10",
-        "rate": 7.07
-      },
-      {
-        "date": "2026-09-10",
         "rate": 6.76
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-17",
         "rate": 6.95
+      },
+      {
+        "date": "2026-09-18",
+        "rate": 7.2
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 18 Sep 2026 07:40:29",
+      "source": "CNBC",
+      "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
+      "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html"
+    },
+    {
       "published": "Thu, 17 Sep 2026 12:27:10",
       "source": "CNBC",
       "title": "Bank of England defies Fed\u2019s rate-hike lead, leaving rates unchanged",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html"
     },
     {
-      "published": "Wed, 16 Sep 2026 01:53:52",
-      "source": "CNBC",
-      "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
-      "url": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html"
+      "published": "Fri, 18 Sep 2026 16:50:00",
+      "source": "MarketWatch",
+      "title": "What\u2019s really driving inflation and rising interest rates",
+      "url": "https://www.marketwatch.com/story/whats-really-driving-inflation-and-rising-interest-rates-59a9cd51?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 17 Sep 2026 21:22:00",
+      "published": "Fri, 18 Sep 2026 16:39:00",
       "source": "MarketWatch",
-      "title": "The 10-year Treasury is having its worst run in over 100 years. Why investors are buying bonds anyway.",
-      "url": "https://www.marketwatch.com/story/the-bond-market-is-seeing-trouble-why-investors-are-buying-now-anyway-065a2f9f?mod=mw_rss_topstories"
+      "title": "Why investors\u2019 best move in reaction to Fed\u2019s rate hike is doing nothing at all",
+      "url": "https://www.marketwatch.com/story/why-investors-best-move-in-reaction-to-feds-rate-hike-is-doing-nothing-at-all-6ff56b4c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 17 Sep 2026 21:22:00",
+      "published": "Fri, 18 Sep 2026 16:33:00",
       "source": "MarketWatch",
-      "title": "Micron, Intel and other chip stocks are furthering their strong comebacks",
-      "url": "https://www.marketwatch.com/story/micron-intel-and-other-chip-stocks-are-furthering-their-strong-comebacks-14b1ecac?mod=mw_rss_topstories"
+      "title": "Two signs investors don\u2019t have to fear an AI slowdown",
+      "url": "https://www.marketwatch.com/story/two-signs-investors-dont-have-to-fear-an-ai-slowdown-5ec40948?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 17 Sep 2026 21:09:00",
+      "published": "Fri, 18 Sep 2026 16:23:00",
       "source": "MarketWatch",
-      "title": "Wall Street is betting Trump backs down on Iran \u2014 but what if the \u2018TACO\u2019 trade fails this time?",
-      "url": "https://www.marketwatch.com/story/wall-street-is-betting-trump-backs-down-on-iran-but-what-if-the-taco-trade-fails-this-time-53845c77?mod=mw_rss_topstories"
+      "title": "Netflix is too focused on podcasts and not enough on good shows, analysts say",
+      "url": "https://www.marketwatch.com/story/netflix-is-too-focused-on-podcasts-and-not-enough-on-good-shows-analysts-say-be758c93?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 17 Sep 2026 20:23:00",
+      "published": "Fri, 18 Sep 2026 16:11:00",
       "source": "MarketWatch",
-      "title": "Tesla\u2019s upcoming product frenzy could leave investors disappointed",
-      "url": "https://www.marketwatch.com/story/teslas-upcoming-product-frenzy-could-leave-investors-disappointed-18619fb3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 17 Sep 2026 20:19:00",
-      "source": "MarketWatch",
-      "title": "Pet insurance or savings account: What\u2019s the best way to plan for a big vet bill?",
-      "url": "https://www.marketwatch.com/story/pet-insurance-or-savings-account-whats-the-best-way-to-plan-for-a-big-vet-bill-f9f22f33?mod=mw_rss_topstories"
+      "title": "These fast-growing ETFs aim for yields as high as 17.5%. But here\u2019s the catch.",
+      "url": "https://www.marketwatch.com/story/these-fast-growing-etfs-aim-for-yields-as-high-as-17-5-but-heres-the-catch-6f0a3d43?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 17 2026",
-      "change": -0.03,
-      "rate": 6.81
+      "asof_label": "Sep 18 2026",
+      "change": 0.02,
+      "rate": 6.83
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 17 2026",
-      "change": -0.05,
+      "asof_label": "Sep 18 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
