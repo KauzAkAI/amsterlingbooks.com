@@ -135,7 +135,7 @@
       "rate": 17.1917
     }
   },
-  "generated_at": "2026-09-21T18:35:27+00:00",
+  "generated_at": "2026-09-21T22:13:27+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
     },
     {
-      "published": "Mon, 21 Sep 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
-      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 21 Sep 2026 18:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018She says it\u2019s just money\u2019: My friend pays for everything. I should be grateful, but I can\u2019t stand her anymore.",
-      "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 21 Sep 2026 17:45:00",
+      "published": "Mon, 21 Sep 2026 22:01:00",
       "source": "MarketWatch",
       "title": "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant",
       "url": "https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 17:16:00",
+      "published": "Mon, 21 Sep 2026 21:57:00",
       "source": "MarketWatch",
-      "title": "The future of retirement? Work until you die.",
-      "url": "https://www.marketwatch.com/story/the-future-of-retirement-work-until-you-die-6d0e5341?mod=mw_rss_topstories"
+      "title": "AT&T\u2019s stock looks like the smartest bet in the wireless sector, analyst says",
+      "url": "https://www.marketwatch.com/story/at-ts-stock-looks-like-the-smartest-bet-in-the-wireless-sector-analyst-says-6e773d63?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 17:12:00",
+      "published": "Mon, 21 Sep 2026 21:47:00",
       "source": "MarketWatch",
-      "title": "A happier retirement contains these 3 elements",
-      "url": "https://www.marketwatch.com/story/a-happier-retirement-contains-these-3-elements-9aa99c9a?mod=mw_rss_topstories"
+      "title": "Bitcoin hits an 8-month high \u2014 and sends a clear message about risk appetite right now",
+      "url": "https://www.marketwatch.com/story/bitcoin-hits-an-8-month-high-and-sends-a-clear-message-about-risk-appetite-right-now-edc7b9a5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 21 Sep 2026 21:30:00",
+      "source": "MarketWatch",
+      "title": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Mon, 21 Sep 2026 21:17:00",
+      "source": "MarketWatch",
+      "title": "As the S&P 500 nears a new record high, there are signs of weakness below the surface",
+      "url": "https://www.marketwatch.com/story/as-the-s-p-500-nears-a-new-record-high-there-are-cracks-below-the-surface-6df3e90d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.97
+      "yield": 3.96
     },
     {
       "tenor": "3M",
-      "yield": 4.14
+      "yield": 4.17
     },
     {
       "tenor": "6M",
-      "yield": 4.24
+      "yield": 4.27
     },
     {
       "tenor": "1Y",
-      "yield": 4.44
+      "yield": 4.45
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.86
+      "yield": 4.83
     },
     {
       "tenor": "7Y",
-      "yield": 4.93
+      "yield": 4.89
     },
     {
       "tenor": "10Y",
-      "yield": 5.01
+      "yield": 4.96
     },
     {
       "tenor": "20Y",
-      "yield": 5.38
+      "yield": 5.33
     },
     {
       "tenor": "30Y",
-      "yield": 5.34
+      "yield": 5.29
     }
   ],
   "warnings": []
