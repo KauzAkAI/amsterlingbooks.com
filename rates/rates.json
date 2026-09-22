@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4004
+      "rate": 1.4044
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6954
+      "rate": 6.7001
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87032
+      "rate": 0.87237
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74656
+      "rate": 0.74832
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.82
+      "rate": 95.59
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.27
+      "rate": 157.18
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1372.18
+      "rate": 1356.15
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.1917
+      "rate": 17.2491
     }
   },
-  "generated_at": "2026-09-22T00:53:58+00:00",
+  "generated_at": "2026-09-22T17:36:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.76
       },
       {
-        "date": "2026-09-14",
-        "rate": 7.17
-      },
-      {
         "date": "2026-09-15",
         "rate": 7.22
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-21",
         "rate": 7.19
+      },
+      {
+        "date": "2026-09-22",
+        "rate": 7.17
       }
     ]
   },
@@ -321,39 +321,39 @@
       "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
     },
     {
-      "published": "Mon, 21 Sep 2026 22:01:00",
+      "published": "Tue, 22 Sep 2026 17:09:00",
       "source": "MarketWatch",
-      "title": "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant",
-      "url": "https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories"
+      "title": "How to avoid the \u2018widow tax\u2019 and other financial headaches if your spouse dies",
+      "url": "https://www.marketwatch.com/story/how-to-avoid-the-widow-tax-and-other-financial-headaches-if-your-spouse-dies-e51f2af6?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 21:57:00",
+      "published": "Tue, 22 Sep 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "AT&T\u2019s stock looks like the smartest bet in the wireless sector, analyst says",
-      "url": "https://www.marketwatch.com/story/at-ts-stock-looks-like-the-smartest-bet-in-the-wireless-sector-analyst-says-6e773d63?mod=mw_rss_topstories"
+      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
+      "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 21:47:00",
+      "published": "Tue, 22 Sep 2026 16:40:00",
       "source": "MarketWatch",
-      "title": "Bitcoin hits an 8-month high \u2014 and sends a clear message about risk appetite right now",
-      "url": "https://www.marketwatch.com/story/bitcoin-hits-an-8-month-high-and-sends-a-clear-message-about-risk-appetite-right-now-edc7b9a5?mod=mw_rss_topstories"
+      "title": "Want to retire with more money? Leave the country for work early in your career.",
+      "url": "https://www.marketwatch.com/story/want-to-retire-with-more-money-leave-the-country-for-work-early-in-your-career-7e568d03?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 21:30:00",
+      "published": "Tue, 22 Sep 2026 16:24:00",
       "source": "MarketWatch",
-      "title": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
-      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories"
+      "title": "Could Meta\u2019s viral Muse app be the company\u2019s ChatGPT moment?",
+      "url": "https://www.marketwatch.com/story/could-metas-viral-muse-app-be-the-companys-chatgpt-moment-8e7075aa?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 21 Sep 2026 21:17:00",
+      "published": "Tue, 22 Sep 2026 16:15:00",
       "source": "MarketWatch",
-      "title": "As the S&P 500 nears a new record high, there are signs of weakness below the surface",
-      "url": "https://www.marketwatch.com/story/as-the-s-p-500-nears-a-new-record-high-there-are-cracks-below-the-surface-6df3e90d?mod=mw_rss_topstories"
+      "title": "\u2018It doesn\u2019t seem fair\u2019: I\u2019m retired and have plenty of money. Why can\u2019t I qualify for a retail credit card?",
+      "url": "https://www.marketwatch.com/story/it-doesnt-seem-fair-im-retired-and-have-plenty-of-money-why-cant-i-qualify-for-a-retail-credit-card-8a58eda3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 21 2026",
+      "asof_label": "Sep 22 2026",
       "change": 0.0,
       "rate": 6.83
     },
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 21 2026",
-      "change": -0.01,
+      "asof_label": "Sep 22 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
