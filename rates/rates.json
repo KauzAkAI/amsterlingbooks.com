@@ -135,7 +135,7 @@
       "rate": 17.2491
     }
   },
-  "generated_at": "2026-09-22T17:36:04+00:00",
+  "generated_at": "2026-09-22T20:28:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
     },
     {
-      "published": "Tue, 22 Sep 2026 17:09:00",
+      "published": "Tue, 22 Sep 2026 19:59:00",
       "source": "MarketWatch",
-      "title": "How to avoid the \u2018widow tax\u2019 and other financial headaches if your spouse dies",
-      "url": "https://www.marketwatch.com/story/how-to-avoid-the-widow-tax-and-other-financial-headaches-if-your-spouse-dies-e51f2af6?mod=mw_rss_topstories"
+      "title": "Jet fuel is following diesel\u2019s price jump as the Hormuz supply shock hits the skies",
+      "url": "https://www.marketwatch.com/story/jet-fuel-is-following-diesels-price-jump-as-the-hormuz-supply-shock-hits-the-skies-6fc21238?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 17:00:00",
+      "published": "Tue, 22 Sep 2026 19:48:00",
       "source": "MarketWatch",
-      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-      "url": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories"
+      "title": "Nearly half of adults under 30 live with their parents. The financial fallout could last for decades.",
+      "url": "https://www.marketwatch.com/story/nearly-half-of-adults-under-30-live-with-their-parents-the-financial-fallout-could-last-for-decades-5d9f059d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 16:40:00",
+      "published": "Tue, 22 Sep 2026 19:45:00",
       "source": "MarketWatch",
-      "title": "Want to retire with more money? Leave the country for work early in your career.",
-      "url": "https://www.marketwatch.com/story/want-to-retire-with-more-money-leave-the-country-for-work-early-in-your-career-7e568d03?mod=mw_rss_topstories"
+      "title": "\u2018She says it\u2019s just money\u2019: My friend pays for everything. I should be grateful, but I can\u2019t stand her anymore.",
+      "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 16:24:00",
+      "published": "Tue, 22 Sep 2026 19:30:00",
       "source": "MarketWatch",
-      "title": "Could Meta\u2019s viral Muse app be the company\u2019s ChatGPT moment?",
-      "url": "https://www.marketwatch.com/story/could-metas-viral-muse-app-be-the-companys-chatgpt-moment-8e7075aa?mod=mw_rss_topstories"
+      "title": "Trump endorses diesel export ban. A decision is coming \u2018fast, one way or the other.\u2019",
+      "url": "https://www.marketwatch.com/story/trump-endorses-diesel-export-ban-a-decision-is-coming-fast-one-way-or-the-other-a49055bc?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 16:15:00",
+      "published": "Tue, 22 Sep 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "\u2018It doesn\u2019t seem fair\u2019: I\u2019m retired and have plenty of money. Why can\u2019t I qualify for a retail credit card?",
-      "url": "https://www.marketwatch.com/story/it-doesnt-seem-fair-im-retired-and-have-plenty-of-money-why-cant-i-qualify-for-a-retail-credit-card-8a58eda3?mod=mw_rss_topstories"
+      "title": "\u2018She gave a neighbor $2,000\u2019: Social Security overpaid my mother, 82, by $20,000. What else is hiding in her finances?",
+      "url": "https://www.marketwatch.com/story/she-gave-a-neighbor-2-000-social-security-overpaid-my-mother-82-by-20-000-what-else-is-hiding-in-her-finances-1b54977f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.96
+      "yield": 3.97
     },
     {
       "tenor": "3M",
-      "yield": 4.17
+      "yield": 4.16
     },
     {
       "tenor": "6M",
-      "yield": 4.27
+      "yield": 4.26
     },
     {
       "tenor": "1Y",
-      "yield": 4.45
+      "yield": 4.43
     },
     {
       "tenor": "2Y",
-      "yield": 4.76
+      "yield": 4.71
     },
     {
       "tenor": "5Y",
