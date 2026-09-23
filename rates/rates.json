@@ -135,7 +135,7 @@
       "rate": 17.4392
     }
   },
-  "generated_at": "2026-09-23T17:48:01+00:00",
+  "generated_at": "2026-09-23T20:44:54+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 23 Sep 2026 20:25:53",
+      "source": "CNBC",
+      "title": "Here's what happens to the economy when Treasury yields soar like they are now",
+      "url": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html"
+    },
+    {
       "published": "Sun, 20 Sep 2026 05:00:01",
       "source": "CNBC",
       "title": "France\u2019s wine production nears a 70-year low, leaving winemakers with tough choices",
@@ -315,47 +321,41 @@
       "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html"
     },
     {
-      "published": "Wed, 16 Sep 2026 20:22:24",
-      "source": "CNBC",
-      "title": "'Science fiction': Transport companies \u2014 the backbone of economy \u2014 are sounding alarm on fuel prices",
-      "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
-    },
-    {
-      "published": "Wed, 23 Sep 2026 17:41:00",
+      "published": "Wed, 23 Sep 2026 20:40:00",
       "source": "MarketWatch",
-      "title": "Fuel prices keep rising \u2014 and so do Democrats\u2019 chances for winning both the House and Senate",
-      "url": "https://www.marketwatch.com/story/fuel-prices-keep-rising-and-so-do-democrats-chances-for-winning-both-the-house-and-senate-c4541380?mod=mw_rss_topstories"
+      "title": "I\u2019m in my 50s. My mother died from Alzheimer\u2019s. Do I need long-term-care insurance?",
+      "url": "https://www.marketwatch.com/story/im-in-my-50s-my-mother-died-from-alzheimers-do-i-need-long-term-insurance-14d58069?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 17:16:00",
+      "published": "Wed, 23 Sep 2026 20:24:00",
+      "source": "MarketWatch",
+      "title": "What\u2019s behind Royal Caribbean\u2019s \u2018highly surprising\u2019 push into Sandals vacation resorts",
+      "url": "https://www.marketwatch.com/story/whats-behind-royal-caribbeans-highly-surprising-push-into-sandals-vacation-resorts-4835acc9?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 23 Sep 2026 20:22:00",
+      "source": "MarketWatch",
+      "title": "Record-breaking diesel prices are poised to hit grocery prices, with fruits, vegetables and meat first on the list",
+      "url": "https://www.marketwatch.com/story/record-breaking-diesel-prices-look-set-to-push-grocery-bills-even-higher-and-thanksgiving-is-getting-closer-178d3959?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 23 Sep 2026 20:15:00",
       "source": "MarketWatch",
       "title": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
       "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 17:16:00",
+      "published": "Wed, 23 Sep 2026 19:48:00",
       "source": "MarketWatch",
-      "title": "Bond yields surge as Wall Street fears more potential Federal Reserve rate hikes",
+      "title": "Bond yields surge above 5% as Wall Street fears more Fed rate hikes",
       "url": "https://www.marketwatch.com/story/bond-yields-surge-as-wall-street-fears-more-potential-federal-reserve-rate-hikes-eabcd3da?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 23 Sep 2026 17:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018It doesn\u2019t seem fair\u2019: I\u2019m retired and have plenty of money. Why can\u2019t I qualify for a retail credit card?",
-      "url": "https://www.marketwatch.com/story/it-doesnt-seem-fair-im-retired-and-have-plenty-of-money-why-cant-i-qualify-for-a-retail-credit-card-8a58eda3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 23 Sep 2026 17:00:00",
-      "source": "MarketWatch",
-      "title": "Social Security overpaid my 82-year-old mother by $20,000. What else is hiding in her finances?",
-      "url": "https://www.marketwatch.com/story/she-gave-a-neighbor-2-000-social-security-overpaid-my-mother-82-by-20-000-what-else-is-hiding-in-her-finances-1b54977f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 22 2026",
-      "change": 0.0,
-      "rate": 6.83
+      "asof_label": "Sep 23 2026",
+      "change": 0.04,
+      "rate": 6.87
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.97
+      "yield": 3.99
     },
     {
       "tenor": "3M",
-      "yield": 4.16
+      "yield": 4.19
     },
     {
       "tenor": "6M",
-      "yield": 4.26
+      "yield": 4.31
     },
     {
       "tenor": "1Y",
-      "yield": 4.43
+      "yield": 4.49
     },
     {
       "tenor": "2Y",
-      "yield": 4.71
+      "yield": 4.85
     },
     {
       "tenor": "5Y",
-      "yield": 4.83
+      "yield": 4.99
     },
     {
       "tenor": "7Y",
-      "yield": 4.89
+      "yield": 5.05
     },
     {
       "tenor": "10Y",
-      "yield": 4.96
+      "yield": 5.11
     },
     {
       "tenor": "20Y",
-      "yield": 5.33
+      "yield": 5.45
     },
     {
       "tenor": "30Y",
-      "yield": 5.29
+      "yield": 5.4
     }
   ],
   "warnings": []
