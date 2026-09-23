@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4044
+      "rate": 1.4089
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7001
+      "rate": 6.7074
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87237
+      "rate": 0.87635
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74832
+      "rate": 0.75322
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.59
+      "rate": 95.74
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.18
+      "rate": 157.92
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1356.15
+      "rate": 1365.35
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.2491
+      "rate": 17.4392
     }
   },
-  "generated_at": "2026-09-22T23:13:30+00:00",
+  "generated_at": "2026-09-23T17:48:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.76
       },
       {
-        "date": "2026-09-15",
-        "rate": 7.22
-      },
-      {
         "date": "2026-09-16",
         "rate": 7.24
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-22",
         "rate": 7.17
+      },
+      {
+        "date": "2026-09-23",
+        "rate": 7.26
       }
     ]
   },
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html"
     },
     {
-      "published": "Tue, 22 Sep 2026 21:44:00",
+      "published": "Wed, 23 Sep 2026 17:41:00",
       "source": "MarketWatch",
-      "title": "The Nasdaq\u2019s rapid rise to a record is sending a message to investors: Don\u2019t wait for a pullback to buy",
-      "url": "https://www.marketwatch.com/story/the-nasdaqs-rapid-rise-to-a-record-is-sending-a-message-to-investors-dont-wait-for-a-pullback-to-buy-5f533ed8?mod=mw_rss_topstories"
+      "title": "Fuel prices keep rising \u2014 and so do Democrats\u2019 chances for winning both the House and Senate",
+      "url": "https://www.marketwatch.com/story/fuel-prices-keep-rising-and-so-do-democrats-chances-for-winning-both-the-house-and-senate-c4541380?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 21:30:00",
+      "published": "Wed, 23 Sep 2026 17:16:00",
       "source": "MarketWatch",
-      "title": "Sandisk\u2019s stock is rising: Why one analyst says AI could help it reach new heights",
-      "url": "https://www.marketwatch.com/story/sandisks-stock-is-rising-why-one-analyst-says-ai-could-help-it-reach-new-heights-5541ded8?mod=mw_rss_topstories"
+      "title": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
+      "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 21:27:00",
+      "published": "Wed, 23 Sep 2026 17:16:00",
       "source": "MarketWatch",
-      "title": "Want to bet on risky, high-beta stocks? Why you should wait for mid-October.",
-      "url": "https://www.marketwatch.com/story/want-to-bet-on-risky-high-beta-stocks-why-you-should-wait-for-this-week-in-october-d9094820?mod=mw_rss_topstories"
+      "title": "Bond yields surge as Wall Street fears more potential Federal Reserve rate hikes",
+      "url": "https://www.marketwatch.com/story/bond-yields-surge-as-wall-street-fears-more-potential-federal-reserve-rate-hikes-eabcd3da?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 21:26:00",
+      "published": "Wed, 23 Sep 2026 17:15:00",
       "source": "MarketWatch",
-      "title": "Could Meta\u2019s viral Muse app be the company\u2019s ChatGPT moment?",
-      "url": "https://www.marketwatch.com/story/could-metas-viral-muse-app-be-the-companys-chatgpt-moment-8e7075aa?mod=mw_rss_topstories"
+      "title": "\u2018It doesn\u2019t seem fair\u2019: I\u2019m retired and have plenty of money. Why can\u2019t I qualify for a retail credit card?",
+      "url": "https://www.marketwatch.com/story/it-doesnt-seem-fair-im-retired-and-have-plenty-of-money-why-cant-i-qualify-for-a-retail-credit-card-8a58eda3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 22 Sep 2026 20:54:00",
+      "published": "Wed, 23 Sep 2026 17:00:00",
       "source": "MarketWatch",
-      "title": "Why Apple could soon join Nvidia in the exclusive $5 trillion club",
-      "url": "https://www.marketwatch.com/story/why-apple-could-soon-join-nvidia-in-the-exclusive-5-trillion-club-4e7724e7?mod=mw_rss_topstories"
+      "title": "Social Security overpaid my 82-year-old mother by $20,000. What else is hiding in her finances?",
+      "url": "https://www.marketwatch.com/story/she-gave-a-neighbor-2-000-social-security-overpaid-my-mother-82-by-20-000-what-else-is-hiding-in-her-finances-1b54977f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 22 2026",
-      "change": -0.02,
+      "asof_label": "Sep 23 2026",
+      "change": 0.09,
       "rate": 6.52
     }
   },
