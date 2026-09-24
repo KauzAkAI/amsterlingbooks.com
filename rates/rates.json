@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4089
+      "rate": 1.4117
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7074
+      "rate": 6.7126
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87635
+      "rate": 0.87974
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75322
+      "rate": 0.75645
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.74
+      "rate": 95.96
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.92
+      "rate": 158.85
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1365.35
+      "rate": 1368.6
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.4392
+      "rate": 17.5841
     }
   },
-  "generated_at": "2026-09-23T23:14:08+00:00",
+  "generated_at": "2026-09-24T23:50:22+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,24 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-09-02",
-        "rate": 6.79
-      },
-      {
-        "date": "2026-09-03",
-        "rate": 6.71
-      },
-      {
         "date": "2026-09-09",
         "rate": 6.85
       },
       {
         "date": "2026-09-10",
         "rate": 6.76
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 7.24
       },
       {
         "date": "2026-09-16",
@@ -227,6 +215,18 @@
       {
         "date": "2026-09-23",
         "rate": 7.26
+      },
+      {
+        "date": "2026-09-24",
+        "rate": 7.45
+      },
+      {
+        "date": "2026-09-24",
+        "rate": 7.12
+      },
+      {
+        "date": "2026-09-24",
+        "rate": 7.03
       }
     ]
   },
@@ -291,79 +291,79 @@
   },
   "news": [
     {
-      "published": "Wed, 23 Sep 2026 21:11:28",
+      "published": "Thu, 24 Sep 2026 21:40:19",
       "source": "CNBC",
-      "title": "Here's what happens to the economy when Treasury yields soar like they are now",
-      "url": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html"
+      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+      "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html"
     },
     {
-      "published": "Sun, 20 Sep 2026 05:00:01",
+      "published": "Thu, 24 Sep 2026 08:13:01",
       "source": "CNBC",
-      "title": "France\u2019s wine production nears a 70-year low, leaving winemakers with tough choices",
-      "url": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html"
+      "title": "Global debt tops $365 trillion as economists sound alarm over 'vicious cycle'",
+      "url": "https://www.cnbc.com/2026/09/24/global-debt-bond-yields-inflation.html"
     },
     {
-      "published": "Sat, 19 Sep 2026 12:50:49",
+      "published": "Thu, 24 Sep 2026 11:34:56",
       "source": "CNBC",
-      "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
-      "url": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html"
+      "title": "Switzerland is keeping rates at 0% \u2014 for now",
+      "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
     },
     {
-      "published": "Mon, 21 Sep 2026 01:02:25",
+      "published": "Thu, 24 Sep 2026 06:21:00",
       "source": "CNBC",
-      "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
-      "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html"
+      "title": "France's fresh budget battle threatens to topple another government",
+      "url": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html"
     },
     {
-      "published": "Thu, 17 Sep 2026 12:27:10",
+      "published": "Thu, 24 Sep 2026 04:02:26",
       "source": "CNBC",
-      "title": "Bank of England defies Fed\u2019s rate-hike lead, leaving rates unchanged",
-      "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html"
+      "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
+      "url": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html"
     },
     {
-      "published": "Wed, 23 Sep 2026 22:15:00",
+      "published": "Thu, 24 Sep 2026 23:35:00",
       "source": "MarketWatch",
-      "title": "Social Security overpaid my 82-year-old mother by $20,000. What else is hiding in her finances?",
-      "url": "https://www.marketwatch.com/story/she-gave-a-neighbor-2-000-social-security-overpaid-my-mother-82-by-20-000-what-else-is-hiding-in-her-finances-1b54977f?mod=mw_rss_topstories"
+      "title": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
+      "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 22:00:00",
+      "published": "Thu, 24 Sep 2026 23:28:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t begrudge them their money\u2019: My husband and I have friends who spend, spend, spend. How do we keep up?",
-      "url": "https://www.marketwatch.com/story/i-dont-begrudge-them-their-money-my-husband-and-i-have-friends-who-spend-spend-spend-how-do-we-keep-up-e10164dc?mod=mw_rss_topstories"
+      "title": "3 things Micron investors need to watch as the stakes get higher",
+      "url": "https://www.marketwatch.com/story/3-things-micron-investors-need-to-watch-as-the-stakes-get-higher-e53fde7e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 21:59:00",
+      "published": "Thu, 24 Sep 2026 23:26:00",
       "source": "MarketWatch",
-      "title": "This test screens for 50 cancers \u2014 but whether Medicare and other health insurers will cover it hinges on FDA approval",
-      "url": "https://www.marketwatch.com/story/fda-advisers-are-reviewing-a-multicancer-detection-test-medicare-coverage-could-follow-77cb8817?mod=mw_rss_topstories"
+      "title": "The S&P 500\u2019s newest tech stock is now its best performer",
+      "url": "https://www.marketwatch.com/story/the-s-p-500s-newest-tech-stock-is-now-its-best-performer-5bfeb6e2?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 21:51:00",
+      "published": "Thu, 24 Sep 2026 23:23:00",
       "source": "MarketWatch",
-      "title": "Micron\u2019s stock has become a \u2018battleground\u2019 as the AI narrative shifts",
-      "url": "https://www.marketwatch.com/story/microns-stock-has-become-a-battleground-as-the-ai-narrative-shifts-d61a3408?mod=mw_rss_topstories"
+      "title": "Costco\u2019s results beat expectations. Here\u2019s why investors are still cautious.",
+      "url": "https://www.marketwatch.com/story/costco-earnings-beat-expectations-thanks-to-tariff-refunds-e7270cfa?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 23 Sep 2026 21:44:00",
+      "published": "Thu, 24 Sep 2026 23:16:00",
       "source": "MarketWatch",
-      "title": "Is gridlock in Washington actually good for stocks? Here\u2019s what historical market data says.",
-      "url": "https://www.marketwatch.com/story/is-gridlock-in-washington-actually-good-for-stocks-heres-what-historical-market-data-says-ea20746d?mod=mw_rss_topstories"
+      "title": "I spend my time and money caring for my aging mother \u2014 yet she gave my brother $100,000. Should I pull back?",
+      "url": "https://www.marketwatch.com/story/i-spend-my-time-and-money-caring-for-my-aging-mother-yet-she-gave-my-brother-100-000-should-i-pull-back-7e4a3185?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 23 2026",
-      "change": 0.04,
-      "rate": 6.87
+      "asof_label": "Sep 24 2026",
+      "change": 0.23,
+      "rate": 7.1
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 23 2026",
-      "change": 0.09,
+      "asof_label": "Sep 24 2026",
+      "change": 0.19,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 3.99
+      "yield": 4.01
     },
     {
       "tenor": "3M",
-      "yield": 4.19
+      "yield": 4.24
     },
     {
       "tenor": "6M",
-      "yield": 4.31
+      "yield": 4.34
     },
     {
       "tenor": "1Y",
-      "yield": 4.49
+      "yield": 4.51
     },
     {
       "tenor": "2Y",
-      "yield": 4.85
+      "yield": 4.87
     },
     {
       "tenor": "5Y",
-      "yield": 4.99
+      "yield": 5.03
     },
     {
       "tenor": "7Y",
-      "yield": 5.05
+      "yield": 5.1
     },
     {
       "tenor": "10Y",
-      "yield": 5.11
+      "yield": 5.18
     },
     {
       "tenor": "20Y",
-      "yield": 5.45
+      "yield": 5.53
     },
     {
       "tenor": "30Y",
-      "yield": 5.4
+      "yield": 5.47
     }
   ],
   "warnings": []
