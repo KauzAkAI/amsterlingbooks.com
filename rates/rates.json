@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4117
+      "rate": 1.4143
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7126
+      "rate": 6.7132
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.87974
+      "rate": 0.87696
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75645
+      "rate": 0.75458
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.96
+      "rate": 95.82
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.85
+      "rate": 157.59
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1368.6
+      "rate": 1355.05
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.5841
+      "rate": 17.6989
     }
   },
-  "generated_at": "2026-09-24T23:50:22+00:00",
+  "generated_at": "2026-09-25T17:53:03+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-09-17",
-        "rate": 7.19
-      },
-      {
-        "date": "2026-09-17",
         "rate": 6.95
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-24",
         "rate": 7.03
+      },
+      {
+        "date": "2026-09-25",
+        "rate": 7.49
       }
     ]
   },
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Thu, 24 Sep 2026 21:40:19",
+      "published": "Fri, 25 Sep 2026 10:25:01",
+      "source": "CNBC",
+      "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
+      "url": "https://www.cnbc.com/2026/09/25/china-exports-surplus-trade-tariffs-.html"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 11:08:05",
       "source": "CNBC",
       "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
       "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html"
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html"
     },
     {
-      "published": "Thu, 24 Sep 2026 04:02:26",
-      "source": "CNBC",
-      "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
-      "url": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html"
-    },
-    {
-      "published": "Thu, 24 Sep 2026 23:35:00",
+      "published": "Fri, 25 Sep 2026 17:45:00",
       "source": "MarketWatch",
-      "title": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
-      "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories"
+      "title": "\u2018We made a bad, bad decision\u2019: I learned the hard way how to manage my aging father\u2019s money",
+      "url": "https://www.marketwatch.com/story/we-made-a-bad-bad-decision-i-learned-the-hard-way-how-to-manage-my-aging-fathers-money-c87cabed?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 24 Sep 2026 23:28:00",
-      "source": "MarketWatch",
-      "title": "3 things Micron investors need to watch as the stakes get higher",
-      "url": "https://www.marketwatch.com/story/3-things-micron-investors-need-to-watch-as-the-stakes-get-higher-e53fde7e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 24 Sep 2026 23:26:00",
-      "source": "MarketWatch",
-      "title": "The S&P 500\u2019s newest tech stock is now its best performer",
-      "url": "https://www.marketwatch.com/story/the-s-p-500s-newest-tech-stock-is-now-its-best-performer-5bfeb6e2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 24 Sep 2026 23:23:00",
-      "source": "MarketWatch",
-      "title": "Costco\u2019s results beat expectations. Here\u2019s why investors are still cautious.",
-      "url": "https://www.marketwatch.com/story/costco-earnings-beat-expectations-thanks-to-tariff-refunds-e7270cfa?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 24 Sep 2026 23:16:00",
+      "published": "Fri, 25 Sep 2026 17:30:00",
       "source": "MarketWatch",
       "title": "I spend my time and money caring for my aging mother \u2014 yet she gave my brother $100,000. Should I pull back?",
       "url": "https://www.marketwatch.com/story/i-spend-my-time-and-money-caring-for-my-aging-mother-yet-she-gave-my-brother-100-000-should-i-pull-back-7e4a3185?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 17:20:00",
+      "source": "MarketWatch",
+      "title": "This is why you might see 8% mortgage rates soon",
+      "url": "https://www.marketwatch.com/story/this-is-why-you-might-see-8-mortgage-rates-soon-6a2e24dd?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 17:11:00",
+      "source": "MarketWatch",
+      "title": "Choosing these AI-exposed college majors could dent your job prospects \u2014 and lower your pay",
+      "url": "https://www.marketwatch.com/story/choosing-these-ai-exposed-college-majors-could-dent-your-job-prospects-and-lower-your-pay-b80576cb?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 16:48:00",
+      "source": "MarketWatch",
+      "title": "How do I know when to ask someone out? I\u2019m 21 and I don\u2019t want to waste my money or my time.",
+      "url": "https://www.marketwatch.com/story/when-is-it-the-right-time-to-ask-someone-out-im-21-and-my-finances-and-identity-still-feel-like-works-in-progress-4bce4fa5?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 24 2026",
-      "change": 0.23,
-      "rate": 7.1
+      "asof_label": "Sep 25 2026",
+      "change": 0.02,
+      "rate": 7.12
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 24 2026",
-      "change": 0.19,
+      "asof_label": "Sep 25 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
