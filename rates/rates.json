@@ -135,7 +135,7 @@
       "rate": 17.6989
     }
   },
-  "generated_at": "2026-09-25T17:53:03+00:00",
+  "generated_at": "2026-09-25T21:11:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html"
     },
     {
-      "published": "Fri, 25 Sep 2026 17:45:00",
+      "published": "Fri, 25 Sep 2026 21:04:00",
       "source": "MarketWatch",
-      "title": "\u2018We made a bad, bad decision\u2019: I learned the hard way how to manage my aging father\u2019s money",
-      "url": "https://www.marketwatch.com/story/we-made-a-bad-bad-decision-i-learned-the-hard-way-how-to-manage-my-aging-fathers-money-c87cabed?mod=mw_rss_topstories"
+      "title": "Microsoft\u2019s stock has roared back to life, closing at its highest level of the year",
+      "url": "https://www.marketwatch.com/story/microsofts-stock-has-roared-back-to-life-and-is-now-headed-for-its-highest-close-of-the-year-89e4d596?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 25 Sep 2026 17:30:00",
+      "published": "Fri, 25 Sep 2026 20:37:00",
       "source": "MarketWatch",
-      "title": "I spend my time and money caring for my aging mother \u2014 yet she gave my brother $100,000. Should I pull back?",
-      "url": "https://www.marketwatch.com/story/i-spend-my-time-and-money-caring-for-my-aging-mother-yet-she-gave-my-brother-100-000-should-i-pull-back-7e4a3185?mod=mw_rss_topstories"
+      "title": "Apple\u2019s expensive new iPhones could be a double-edged sword for the company",
+      "url": "https://www.marketwatch.com/story/apples-expensive-new-iphones-could-be-a-double-edged-sword-for-the-company-21c4fefb?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 25 Sep 2026 17:20:00",
+      "published": "Fri, 25 Sep 2026 20:36:00",
       "source": "MarketWatch",
-      "title": "This is why you might see 8% mortgage rates soon",
-      "url": "https://www.marketwatch.com/story/this-is-why-you-might-see-8-mortgage-rates-soon-6a2e24dd?mod=mw_rss_topstories"
+      "title": "Micron investors should get ready for a seesaw ride, analyst says",
+      "url": "https://www.marketwatch.com/story/micron-investors-should-get-ready-for-a-seesaw-ride-analyst-says-1c0cc651?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 25 Sep 2026 17:11:00",
+      "published": "Fri, 25 Sep 2026 20:34:00",
       "source": "MarketWatch",
-      "title": "Choosing these AI-exposed college majors could dent your job prospects \u2014 and lower your pay",
-      "url": "https://www.marketwatch.com/story/choosing-these-ai-exposed-college-majors-could-dent-your-job-prospects-and-lower-your-pay-b80576cb?mod=mw_rss_topstories"
+      "title": "Tesla\u2019s stock falls as launch of Semi truck fails to excite investors",
+      "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-semi-launch-fails-to-excite-investors-5b216e59?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 25 Sep 2026 16:48:00",
+      "published": "Fri, 25 Sep 2026 20:32:00",
       "source": "MarketWatch",
-      "title": "How do I know when to ask someone out? I\u2019m 21 and I don\u2019t want to waste my money or my time.",
-      "url": "https://www.marketwatch.com/story/when-is-it-the-right-time-to-ask-someone-out-im-21-and-my-finances-and-identity-still-feel-like-works-in-progress-4bce4fa5?mod=mw_rss_topstories"
+      "title": "A 10% risk-free yield? For some, yes.",
+      "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.01
+      "yield": 4.04
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.34
+      "yield": 4.33
     },
     {
       "tenor": "1Y",
-      "yield": 4.51
+      "yield": 4.5
     },
     {
       "tenor": "2Y",
-      "yield": 4.87
+      "yield": 4.81
     },
     {
       "tenor": "5Y",
-      "yield": 5.03
+      "yield": 4.98
     },
     {
       "tenor": "7Y",
-      "yield": 5.1
+      "yield": 5.06
     },
     {
       "tenor": "10Y",
-      "yield": 5.18
+      "yield": 5.17
     },
     {
       "tenor": "20Y",
-      "yield": 5.53
+      "yield": 5.54
     },
     {
       "tenor": "30Y",
-      "yield": 5.47
+      "yield": 5.49
     }
   ],
   "warnings": []
