@@ -135,7 +135,7 @@
       "rate": 17.6989
     }
   },
-  "generated_at": "2026-09-25T21:11:14+00:00",
+  "generated_at": "2026-09-25T23:57:43+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-09-25",
-        "rate": 7.49
+        "rate": 7.43
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html"
     },
     {
+      "published": "Fri, 25 Sep 2026 23:30:00",
+      "source": "MarketWatch",
+      "title": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
+      "url": "https://www.marketwatch.com/story/my-friend-is-terminally-ill-should-she-sell-her-rental-home-and-pay-100-000-in-capital-gains-8568aada?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 22:00:00",
+      "source": "MarketWatch",
+      "title": "\u2018She says it\u2019s just money\u2019: My friend pays for everything. I should be grateful, but I can\u2019t stand her anymore.",
+      "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 21:57:00",
+      "source": "MarketWatch",
+      "title": "A \u2018death cross\u2019 is coming for the dollar. Why Trump will be happy.",
+      "url": "https://www.marketwatch.com/story/a-death-cross-is-coming-for-the-dollar-why-trump-will-be-happy-0766303d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 25 Sep 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
+      "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 25 Sep 2026 21:04:00",
       "source": "MarketWatch",
       "title": "Microsoft\u2019s stock has roared back to life, closing at its highest level of the year",
       "url": "https://www.marketwatch.com/story/microsofts-stock-has-roared-back-to-life-and-is-now-headed-for-its-highest-close-of-the-year-89e4d596?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 25 Sep 2026 20:37:00",
-      "source": "MarketWatch",
-      "title": "Apple\u2019s expensive new iPhones could be a double-edged sword for the company",
-      "url": "https://www.marketwatch.com/story/apples-expensive-new-iphones-could-be-a-double-edged-sword-for-the-company-21c4fefb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 25 Sep 2026 20:36:00",
-      "source": "MarketWatch",
-      "title": "Micron investors should get ready for a seesaw ride, analyst says",
-      "url": "https://www.marketwatch.com/story/micron-investors-should-get-ready-for-a-seesaw-ride-analyst-says-1c0cc651?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 25 Sep 2026 20:34:00",
-      "source": "MarketWatch",
-      "title": "Tesla\u2019s stock falls as launch of Semi truck fails to excite investors",
-      "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-semi-launch-fails-to-excite-investors-5b216e59?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 25 Sep 2026 20:32:00",
-      "source": "MarketWatch",
-      "title": "A 10% risk-free yield? For some, yes.",
-      "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Sep 25 2026",
-      "change": 0.02,
-      "rate": 7.12
+      "change": 0.0,
+      "rate": 7.1
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Sep 25 2026",
-      "change": 0.04,
+      "change": -0.02,
       "rate": 6.52
     }
   },
