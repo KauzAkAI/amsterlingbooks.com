@@ -135,7 +135,7 @@
       "rate": 17.897
     }
   },
-  "generated_at": "2026-09-29T18:33:27+00:00",
+  "generated_at": "2026-09-29T22:34:51+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
     },
     {
-      "published": "Tue, 29 Sep 2026 18:28:00",
+      "published": "Tue, 29 Sep 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "Good news for OpenAI is great news for Oracle\u2019s stock \u2014 here\u2019s why",
-      "url": "https://www.marketwatch.com/story/good-news-for-openai-is-great-news-for-oracles-stock-heres-why-993b6a5f?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019d rather be on a beach in Bali\u2019: My husband resents my $8 million net worth. Should I pay for his retirement?",
+      "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 29 Sep 2026 17:45:00",
+      "published": "Tue, 29 Sep 2026 21:56:00",
       "source": "MarketWatch",
-      "title": "Medicare Advantage plans will be cheaper next year. Here\u2019s the new cost.",
-      "url": "https://www.marketwatch.com/story/medicare-advantage-plans-will-be-cheaper-next-year-heres-the-new-cost-2f7ab55b?mod=mw_rss_topstories"
+      "title": "Hollywood\u2019s big debt deal hits a wall of higher yields as Paramount finances Warner Bros. buyout",
+      "url": "https://www.marketwatch.com/story/hollywoods-big-debt-deal-hits-a-wall-of-higher-yields-as-paramount-finances-warner-bros-buyout-6ee6e3b8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 29 Sep 2026 17:30:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
-      "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 29 Sep 2026 16:59:00",
+      "published": "Tue, 29 Sep 2026 21:53:00",
       "source": "MarketWatch",
       "title": "Could SpaceX be worth $12 trillion one day? Citi says Starship gets it a step closer.",
       "url": "https://www.marketwatch.com/story/could-spacex-be-worth-12-trillion-one-day-citi-says-starship-gets-it-a-step-closer-6ce44961?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 29 Sep 2026 16:45:00",
+      "published": "Tue, 29 Sep 2026 21:52:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s what Netflix skeptics are getting wrong about the stock, according to an analyst",
-      "url": "https://www.marketwatch.com/story/heres-what-netflix-skeptics-are-getting-wrong-about-the-stock-according-to-an-analyst-40436696?mod=mw_rss_topstories"
+      "title": "The real prize in AMD\u2019s $8 billion World Labs acquisition isn\u2019t what you\u2019d think",
+      "url": "https://www.marketwatch.com/story/the-real-prize-in-amds-8-billion-world-labs-acquisition-isnt-what-youd-think-6f609d0f?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 29 Sep 2026 21:33:00",
+      "source": "MarketWatch",
+      "title": "Target\u2019s price cuts are a sign of strength, some analysts say. Investors disagree.",
+      "url": "https://www.marketwatch.com/story/targets-price-cuts-are-a-sign-of-strength-some-analysts-say-investors-disagree-6a6f0717?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -398,19 +398,19 @@
     },
     {
       "tenor": "3M",
-      "yield": 4.28
+      "yield": 4.25
     },
     {
       "tenor": "6M",
-      "yield": 4.41
+      "yield": 4.36
     },
     {
       "tenor": "1Y",
-      "yield": 4.59
+      "yield": 4.58
     },
     {
       "tenor": "2Y",
-      "yield": 4.92
+      "yield": 4.89
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 5.15
+      "yield": 5.16
     },
     {
       "tenor": "10Y",
-      "yield": 5.24
+      "yield": 5.26
     },
     {
       "tenor": "20Y",
-      "yield": 5.6
+      "yield": 5.64
     },
     {
       "tenor": "30Y",
-      "yield": 5.56
+      "yield": 5.59
     }
   ],
   "warnings": []
