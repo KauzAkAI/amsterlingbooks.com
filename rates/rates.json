@@ -90,13 +90,13 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.418
+      "rate": 1.4183
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7034
+      "rate": 6.7045
     },
     "EUR": {
       "change_pct": 0,
@@ -108,34 +108,34 @@
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75489
+      "rate": 0.75265
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.98
+      "rate": 95.83
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.12
+      "rate": 157.0
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1353.36
+      "rate": 1355.4
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 17.897
+      "rate": 18.1259
     }
   },
-  "generated_at": "2026-09-30T01:33:46+00:00",
+  "generated_at": "2026-09-30T18:21:25+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 6.95
       },
       {
-        "date": "2026-09-22",
-        "rate": 7.17
-      },
-      {
         "date": "2026-09-23",
         "rate": 7.26
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-09-29",
         "rate": 7.58
+      },
+      {
+        "date": "2026-09-30",
+        "rate": 7.54
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
     },
     {
-      "published": "Wed, 30 Sep 2026 01:00:00",
-      "source": "MarketWatch",
-      "title": "\u2018I have $400,000 in equity\u2019: I\u2019m 80. Should I sell my house because of dangerous stairs \u2014 or spend thousands renovating?",
-      "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 30 Sep 2026 00:30:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m never selling\u2019: I\u2019m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
-      "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 29 Sep 2026 23:30:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
-      "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 29 Sep 2026 23:03:00",
-      "source": "MarketWatch",
-      "title": "\u2018We lived within our means\u2019: I earned $30,000 as a pastor and still retired comfortably. Why don\u2019t you tell people that?",
-      "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 29 Sep 2026 22:00:00",
+      "published": "Wed, 30 Sep 2026 18:15:00",
       "source": "MarketWatch",
       "title": "\u2018I\u2019d rather be on a beach in Bali\u2019: My husband resents my $8 million net worth. Should I pay for his retirement?",
       "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 18:03:00",
+      "source": "MarketWatch",
+      "title": "Medicare Advantage plans will be cheaper next year. Here\u2019s the new cost.",
+      "url": "https://www.marketwatch.com/story/medicare-advantage-plans-will-be-cheaper-next-year-heres-the-new-cost-2f7ab55b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 17:40:00",
+      "source": "MarketWatch",
+      "title": "Why the \u2018Halloween Indicator\u2019 isn\u2019t working \u2014 and what smart investors are doing instead",
+      "url": "https://www.marketwatch.com/story/why-the-halloween-indicator-isnt-working-and-what-smart-investors-are-doing-instead-6d758662?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 17:38:00",
+      "source": "MarketWatch",
+      "title": "These bond strategies can help you get a safe 5% return on your cash",
+      "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 17:37:00",
+      "source": "MarketWatch",
+      "title": "Trump touts economic wins in battleground states \u2014 like a $54 billion Alaskan pipeline \u2014 as the midterms draw closer",
+      "url": "https://www.marketwatch.com/story/trump-touts-economic-wins-in-battleground-states-like-a-54-billion-alaskan-pipeline-as-the-midterms-draw-closer-46db0149?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 29 2026",
-      "change": 0.08,
-      "rate": 7.2
+      "asof_label": "Sep 30 2026",
+      "change": -0.02,
+      "rate": 7.18
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 29 2026",
-      "change": 0.08,
+      "asof_label": "Sep 30 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
