@@ -135,7 +135,7 @@
       "rate": 18.1259
     }
   },
-  "generated_at": "2026-09-30T18:21:25+00:00",
+  "generated_at": "2026-09-30T22:27:38+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-09-09",
-        "rate": 6.85
-      },
-      {
         "date": "2026-09-10",
         "rate": 6.76
       },
@@ -226,7 +222,11 @@
       },
       {
         "date": "2026-09-30",
-        "rate": 7.54
+        "rate": 7.6
+      },
+      {
+        "date": "2026-09-30",
+        "rate": 7.3
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
     },
     {
-      "published": "Wed, 30 Sep 2026 18:15:00",
+      "published": "Wed, 30 Sep 2026 21:22:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019d rather be on a beach in Bali\u2019: My husband resents my $8 million net worth. Should I pay for his retirement?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories"
+      "title": "The 15 worst-performing S&P 500 stocks during a dismal September",
+      "url": "https://www.marketwatch.com/story/the-15-worst-performing-s-p-500-stocks-during-a-dismal-september-991f8a07?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 30 Sep 2026 18:03:00",
-      "source": "MarketWatch",
-      "title": "Medicare Advantage plans will be cheaper next year. Here\u2019s the new cost.",
-      "url": "https://www.marketwatch.com/story/medicare-advantage-plans-will-be-cheaper-next-year-heres-the-new-cost-2f7ab55b?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 30 Sep 2026 17:40:00",
-      "source": "MarketWatch",
-      "title": "Why the \u2018Halloween Indicator\u2019 isn\u2019t working \u2014 and what smart investors are doing instead",
-      "url": "https://www.marketwatch.com/story/why-the-halloween-indicator-isnt-working-and-what-smart-investors-are-doing-instead-6d758662?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 30 Sep 2026 17:38:00",
-      "source": "MarketWatch",
-      "title": "These bond strategies can help you get a safe 5% return on your cash",
-      "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 30 Sep 2026 17:37:00",
+      "published": "Wed, 30 Sep 2026 21:16:00",
       "source": "MarketWatch",
       "title": "Trump touts economic wins in battleground states \u2014 like a $54 billion Alaskan pipeline \u2014 as the midterms draw closer",
       "url": "https://www.marketwatch.com/story/trump-touts-economic-wins-in-battleground-states-like-a-54-billion-alaskan-pipeline-as-the-midterms-draw-closer-46db0149?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 20:59:00",
+      "source": "MarketWatch",
+      "title": "How the \u2018AI put\u2019 has become the only thing that matters for stocks",
+      "url": "https://www.marketwatch.com/story/this-is-the-big-risk-that-stock-investors-should-be-watching-as-rising-bond-yields-menace-markets-904cae0a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 20:56:00",
+      "source": "MarketWatch",
+      "title": "A brutal September for bonds points to an even darker October",
+      "url": "https://www.marketwatch.com/story/a-brutal-september-for-bonds-points-to-an-even-darker-october-239d0fb5?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 30 Sep 2026 20:45:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Sep 30 2026",
-      "change": -0.02,
-      "rate": 7.18
+      "change": 0.02,
+      "rate": 7.22
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Sep 30 2026",
-      "change": -0.04,
+      "change": 0.02,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.04
+      "yield": 4.02
     },
     {
       "tenor": "3M",
-      "yield": 4.25
+      "yield": 4.2
     },
     {
       "tenor": "6M",
-      "yield": 4.36
+      "yield": 4.33
     },
     {
       "tenor": "1Y",
-      "yield": 4.58
+      "yield": 4.54
     },
     {
       "tenor": "2Y",
-      "yield": 4.89
+      "yield": 4.88
     },
     {
       "tenor": "5Y",
-      "yield": 5.06
+      "yield": 5.09
     },
     {
       "tenor": "7Y",
-      "yield": 5.16
+      "yield": 5.19
     },
     {
       "tenor": "10Y",
-      "yield": 5.26
+      "yield": 5.29
     },
     {
       "tenor": "20Y",
-      "yield": 5.64
+      "yield": 5.68
     },
     {
       "tenor": "30Y",
-      "yield": 5.59
+      "yield": 5.64
     }
   ],
   "warnings": []
