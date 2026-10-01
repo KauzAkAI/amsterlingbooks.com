@@ -90,7 +90,7 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4183
+      "rate": 1.4246
     },
     "CNY": {
       "change_pct": 0,
@@ -102,40 +102,40 @@
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.88067
+      "rate": 0.88511
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75265
+      "rate": 0.75565
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.83
+      "rate": 96.33
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.0
+      "rate": 157.98
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1355.4
+      "rate": 1361.27
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.1259
+      "rate": 18.1669
     }
   },
-  "generated_at": "2026-10-01T01:29:02+00:00",
+  "generated_at": "2026-10-01T22:56:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,20 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-09-10",
-        "rate": 6.76
-      },
-      {
         "date": "2026-09-16",
         "rate": 6.97
       },
       {
         "date": "2026-09-17",
         "rate": 6.95
-      },
-      {
-        "date": "2026-09-23",
-        "rate": 7.26
       },
       {
         "date": "2026-09-24",
@@ -227,6 +219,14 @@
       {
         "date": "2026-09-30",
         "rate": 7.3
+      },
+      {
+        "date": "2026-10-01",
+        "rate": 7.54
+      },
+      {
+        "date": "2026-10-01",
+        "rate": 7.28
       }
     ]
   },
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
     },
     {
-      "published": "Thu, 01 Oct 2026 00:45:00",
+      "published": "Thu, 01 Oct 2026 21:27:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019m never selling\u2019: I\u2019m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
-      "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories"
+      "title": "The hidden silver lining of high interest rates: safer, cheaper retirement income",
+      "url": "https://www.marketwatch.com/story/the-hidden-silver-lining-of-high-interest-rates-safer-cheaper-retirement-income-36e2e077?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 00:20:00",
+      "published": "Thu, 01 Oct 2026 21:09:00",
       "source": "MarketWatch",
-      "title": "\u2018I have $400,000 in equity\u2019: I\u2019m 80. Should I sell my house because of dangerous stairs \u2014 or spend thousands renovating?",
-      "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories"
+      "title": "Nike\u2019s troubles are mounting, and sales could fall further",
+      "url": "https://www.marketwatch.com/story/nikes-troubles-are-mounting-and-sales-could-fall-further-2c19699d?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 00:11:00",
+      "published": "Thu, 01 Oct 2026 21:01:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories"
+      "title": "The stock market is anything but normal right now \u2014 and these charts show it",
+      "url": "https://www.marketwatch.com/story/the-stock-market-is-anything-but-normal-right-now-and-these-charts-show-it-91ea187d?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 30 Sep 2026 22:51:00",
+      "published": "Thu, 01 Oct 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "Google shows it\u2019s not out of the AI race just yet",
-      "url": "https://www.marketwatch.com/story/google-shows-its-not-out-of-the-ai-race-just-yet-75e19860?mod=mw_rss_topstories"
+      "title": "Here\u2019s how much more groceries, clothing and household appliances could cost as diesel prices keep surging",
+      "url": "https://www.marketwatch.com/story/heres-how-much-more-groceries-clothing-and-household-appliances-could-cost-as-diesel-prices-keep-surging-771c9247?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 30 Sep 2026 21:22:00",
+      "published": "Thu, 01 Oct 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "The 15 worst-performing S&P 500 stocks during a dismal September",
-      "url": "https://www.marketwatch.com/story/the-15-worst-performing-s-p-500-stocks-during-a-dismal-september-991f8a07?mod=mw_rss_topstories"
+      "title": "Republicans sabotaged their own bill to prevent people in Congress from trading stocks. Why?",
+      "url": "https://www.marketwatch.com/story/republicans-sabotaged-their-own-bill-to-prevent-people-in-congress-from-trading-stocks-why-828ef40d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Sep 30 2026",
-      "change": 0.02,
-      "rate": 7.22
+      "asof_label": "Oct 01 2026",
+      "change": -0.04,
+      "rate": 7.18
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Sep 30 2026",
-      "change": 0.02,
+      "asof_label": "Oct 01 2026",
+      "change": -0.06,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.02
+      "yield": 4.06
     },
     {
       "tenor": "3M",
-      "yield": 4.2
+      "yield": 4.17
     },
     {
       "tenor": "6M",
-      "yield": 4.33
+      "yield": 4.27
     },
     {
       "tenor": "1Y",
-      "yield": 4.54
+      "yield": 4.44
     },
     {
       "tenor": "2Y",
-      "yield": 4.88
+      "yield": 4.78
     },
     {
       "tenor": "5Y",
-      "yield": 5.09
+      "yield": 5.01
     },
     {
       "tenor": "7Y",
-      "yield": 5.19
+      "yield": 5.12
     },
     {
       "tenor": "10Y",
-      "yield": 5.29
+      "yield": 5.24
     },
     {
       "tenor": "20Y",
-      "yield": 5.68
+      "yield": 5.64
     },
     {
       "tenor": "30Y",
-      "yield": 5.64
+      "yield": 5.61
     }
   ],
   "warnings": []
