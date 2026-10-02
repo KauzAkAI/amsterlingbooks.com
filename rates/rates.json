@@ -135,7 +135,7 @@
       "rate": 18.335
     }
   },
-  "generated_at": "2026-10-02T18:19:29+00:00",
+  "generated_at": "2026-10-02T22:24:05+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-10-02",
-        "rate": 7.49
+        "rate": 7.57
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html"
     },
     {
-      "published": "Fri, 02 Oct 2026 17:48:00",
+      "published": "Fri, 02 Oct 2026 22:10:00",
       "source": "MarketWatch",
-      "title": "How much higher can bond yields rise \u2014 and what does it mean for stocks?",
-      "url": "https://www.marketwatch.com/story/how-much-higher-can-bond-yields-rise-and-what-does-it-mean-for-stocks-12883d6c?mod=mw_rss_topstories"
+      "title": "I\u2019m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 17:48:00",
+      "published": "Fri, 02 Oct 2026 21:54:00",
       "source": "MarketWatch",
-      "title": "Europe\u2019s leaders rush to release diesel from stockpiles as fuel shock hangs over U.S. midterms",
-      "url": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories"
+      "title": "Falling wages, soaring energy prices and inflation: It\u2019s beginning to look a lot like the 1970s",
+      "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 17:38:00",
+      "published": "Fri, 02 Oct 2026 20:43:00",
       "source": "MarketWatch",
-      "title": "Why bond investors quickly lost their enthusiasm for weak jobs figures",
-      "url": "https://www.marketwatch.com/story/why-bond-investors-quickly-lost-their-enthusiasm-for-weak-labor-figures-7a9727da?mod=mw_rss_topstories"
+      "title": "Why mixing politics with your stock portfolio might be costing you money",
+      "url": "https://www.marketwatch.com/story/why-mixing-politics-with-your-stock-portfolio-might-be-costing-you-money-5b4aabfb?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 17:30:00",
+      "published": "Fri, 02 Oct 2026 20:40:00",
+      "source": "MarketWatch",
+      "title": "Does AI have a soul? Pope Leo and Anthropic clash.",
+      "url": "https://www.marketwatch.com/story/does-ai-have-a-soul-pope-leo-and-anthropic-clash-0c1669fb?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 02 Oct 2026 20:30:00",
       "source": "MarketWatch",
       "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
       "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 02 Oct 2026 17:29:00",
-      "source": "MarketWatch",
-      "title": "The U.S. can\u2019t find enough of this critical machine component to win the humanoid-robots race",
-      "url": "https://www.marketwatch.com/story/to-win-the-humanoid-robots-race-the-u-s-needs-this-critical-machine-component-thats-hard-to-find-ca244571?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Oct 02 2026",
-      "change": -0.06,
-      "rate": 7.12
+      "change": 0.01,
+      "rate": 7.19
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Oct 02 2026",
-      "change": -0.05,
+      "change": 0.03,
       "rate": 6.52
     }
   },
@@ -394,11 +394,11 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.06
+      "yield": 4.04
     },
     {
       "tenor": "3M",
-      "yield": 4.17
+      "yield": 4.19
     },
     {
       "tenor": "6M",
@@ -406,31 +406,31 @@
     },
     {
       "tenor": "1Y",
-      "yield": 4.44
+      "yield": 4.46
     },
     {
       "tenor": "2Y",
-      "yield": 4.78
+      "yield": 4.83
     },
     {
       "tenor": "5Y",
-      "yield": 5.01
+      "yield": 5.06
     },
     {
       "tenor": "7Y",
-      "yield": 5.12
+      "yield": 5.17
     },
     {
       "tenor": "10Y",
-      "yield": 5.24
+      "yield": 5.28
     },
     {
       "tenor": "20Y",
-      "yield": 5.64
+      "yield": 5.67
     },
     {
       "tenor": "30Y",
-      "yield": 5.61
+      "yield": 5.63
     }
   ],
   "warnings": []
