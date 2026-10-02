@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4246
+      "rate": 1.424
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7045
+      "rate": 6.7046
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.88511
+      "rate": 0.89087
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75565
+      "rate": 0.75753
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.33
+      "rate": 96.32
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.98
+      "rate": 157.67
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1361.27
+      "rate": 1348.28
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.1669
+      "rate": 18.335
     }
   },
-  "generated_at": "2026-10-01T22:56:17+00:00",
+  "generated_at": "2026-10-02T18:19:29+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -190,10 +190,6 @@
       },
       {
         "date": "2026-09-24",
-        "rate": 7.45
-      },
-      {
-        "date": "2026-09-24",
         "rate": 7.12
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-01",
         "rate": 7.28
+      },
+      {
+        "date": "2026-10-02",
+        "rate": 7.49
       }
     ]
   },
@@ -291,79 +291,79 @@
   },
   "news": [
     {
-      "published": "Mon, 28 Sep 2026 04:04:16",
+      "published": "Fri, 02 Oct 2026 17:38:59",
       "source": "CNBC",
-      "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
-      "url": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html"
+      "title": "Men are losing ground in the labor market. Here's why",
+      "url": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html"
     },
     {
-      "published": "Fri, 25 Sep 2026 10:25:01",
+      "published": "Fri, 02 Oct 2026 13:45:58",
       "source": "CNBC",
-      "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
-      "url": "https://www.cnbc.com/2026/09/25/china-exports-surplus-trade-tariffs-.html"
+      "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+      "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
     },
     {
-      "published": "Fri, 25 Sep 2026 11:08:05",
+      "published": "Thu, 01 Oct 2026 18:55:02",
       "source": "CNBC",
-      "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
-      "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html"
+      "title": "The September jobs report will be released Friday. Here's what to expect",
+      "url": "https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html"
     },
     {
-      "published": "Thu, 24 Sep 2026 08:13:01",
+      "published": "Wed, 30 Sep 2026 15:14:57",
       "source": "CNBC",
-      "title": "Global debt tops $365 trillion as economists sound alarm over 'vicious cycle'",
-      "url": "https://www.cnbc.com/2026/09/24/global-debt-bond-yields-inflation.html"
+      "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected",
+      "url": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html"
     },
     {
-      "published": "Thu, 24 Sep 2026 11:34:56",
+      "published": "Wed, 30 Sep 2026 14:42:04",
       "source": "CNBC",
-      "title": "Switzerland is keeping rates at 0% \u2014 for now",
-      "url": "https://www.cnbc.com/2026/09/24/swiss-national-bank-interest-rates-inflation.html"
+      "title": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
+      "url": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html"
     },
     {
-      "published": "Thu, 01 Oct 2026 21:27:00",
+      "published": "Fri, 02 Oct 2026 17:48:00",
       "source": "MarketWatch",
-      "title": "The hidden silver lining of high interest rates: safer, cheaper retirement income",
-      "url": "https://www.marketwatch.com/story/the-hidden-silver-lining-of-high-interest-rates-safer-cheaper-retirement-income-36e2e077?mod=mw_rss_topstories"
+      "title": "How much higher can bond yields rise \u2014 and what does it mean for stocks?",
+      "url": "https://www.marketwatch.com/story/how-much-higher-can-bond-yields-rise-and-what-does-it-mean-for-stocks-12883d6c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 21:09:00",
+      "published": "Fri, 02 Oct 2026 17:48:00",
       "source": "MarketWatch",
-      "title": "Nike\u2019s troubles are mounting, and sales could fall further",
-      "url": "https://www.marketwatch.com/story/nikes-troubles-are-mounting-and-sales-could-fall-further-2c19699d?mod=mw_rss_topstories"
+      "title": "Europe\u2019s leaders rush to release diesel from stockpiles as fuel shock hangs over U.S. midterms",
+      "url": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 21:01:00",
+      "published": "Fri, 02 Oct 2026 17:38:00",
       "source": "MarketWatch",
-      "title": "The stock market is anything but normal right now \u2014 and these charts show it",
-      "url": "https://www.marketwatch.com/story/the-stock-market-is-anything-but-normal-right-now-and-these-charts-show-it-91ea187d?mod=mw_rss_topstories"
+      "title": "Why bond investors quickly lost their enthusiasm for weak jobs figures",
+      "url": "https://www.marketwatch.com/story/why-bond-investors-quickly-lost-their-enthusiasm-for-weak-labor-figures-7a9727da?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 20:58:00",
+      "published": "Fri, 02 Oct 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s how much more groceries, clothing and household appliances could cost as diesel prices keep surging",
-      "url": "https://www.marketwatch.com/story/heres-how-much-more-groceries-clothing-and-household-appliances-could-cost-as-diesel-prices-keep-surging-771c9247?mod=mw_rss_topstories"
+      "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 01 Oct 2026 20:58:00",
+      "published": "Fri, 02 Oct 2026 17:29:00",
       "source": "MarketWatch",
-      "title": "Republicans sabotaged their own bill to prevent people in Congress from trading stocks. Why?",
-      "url": "https://www.marketwatch.com/story/republicans-sabotaged-their-own-bill-to-prevent-people-in-congress-from-trading-stocks-why-828ef40d?mod=mw_rss_topstories"
+      "title": "The U.S. can\u2019t find enough of this critical machine component to win the humanoid-robots race",
+      "url": "https://www.marketwatch.com/story/to-win-the-humanoid-robots-race-the-u-s-needs-this-critical-machine-component-thats-hard-to-find-ca244571?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 01 2026",
-      "change": -0.04,
-      "rate": 7.18
+      "asof_label": "Oct 02 2026",
+      "change": -0.06,
+      "rate": 7.12
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 01 2026",
-      "change": -0.06,
+      "asof_label": "Oct 02 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
