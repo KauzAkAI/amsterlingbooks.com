@@ -135,7 +135,7 @@
       "rate": 18.335
     }
   },
-  "generated_at": "2026-10-02T22:24:05+00:00",
+  "generated_at": "2026-10-03T01:19:35+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,18 @@
       "url": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html"
     },
     {
+      "published": "Fri, 02 Oct 2026 22:42:00",
+      "source": "MarketWatch",
+      "title": "Why Western Digital and Seagate are seeing big stock drops today",
+      "url": "https://www.marketwatch.com/story/why-western-digital-and-seagate-are-seeing-big-stock-drops-today-6b16d95e?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 02 Oct 2026 22:29:00",
+      "source": "MarketWatch",
+      "title": "Tesla sold a lot more EVs than Wall Street expected, and the stock is surging",
+      "url": "https://www.marketwatch.com/story/tesla-ev-sales-beat-wall-streets-expectations-again-and-the-stock-jumps-294a4f53?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 02 Oct 2026 22:10:00",
       "source": "MarketWatch",
       "title": "I\u2019m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
@@ -337,18 +349,6 @@
       "source": "MarketWatch",
       "title": "Why mixing politics with your stock portfolio might be costing you money",
       "url": "https://www.marketwatch.com/story/why-mixing-politics-with-your-stock-portfolio-might-be-costing-you-money-5b4aabfb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 02 Oct 2026 20:40:00",
-      "source": "MarketWatch",
-      "title": "Does AI have a soul? Pope Leo and Anthropic clash.",
-      "url": "https://www.marketwatch.com/story/does-ai-have-a-soul-pope-leo-and-anthropic-clash-0c1669fb?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 02 Oct 2026 20:30:00",
-      "source": "MarketWatch",
-      "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories"
     }
   ],
   "rates": {
