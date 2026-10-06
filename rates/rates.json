@@ -90,7 +90,7 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4253
+      "rate": 1.425
     },
     "CNY": {
       "change_pct": 0,
@@ -102,40 +102,40 @@
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89254
+      "rate": 0.88739
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75616
+      "rate": 0.75322
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.3
+      "rate": 96.42
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.23
+      "rate": 158.09
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1343.98
+      "rate": 1338.78
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.1498
+      "rate": 17.9448
     }
   },
-  "generated_at": "2026-10-06T01:44:34+00:00",
+  "generated_at": "2026-10-06T18:52:02+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.03
       },
       {
-        "date": "2026-09-28",
-        "rate": 7.5
-      },
-      {
         "date": "2026-09-29",
         "rate": 7.58
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-05",
         "rate": 7.61
+      },
+      {
+        "date": "2026-10-06",
+        "rate": 7.56
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 06 Oct 2026 15:52:22",
+      "source": "CNBC",
+      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+      "url": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+    },
+    {
+      "published": "Tue, 06 Oct 2026 04:07:24",
+      "source": "CNBC",
+      "title": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
+      "url": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html"
+    },
+    {
       "published": "Mon, 05 Oct 2026 05:00:01",
       "source": "CNBC",
       "title": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
     },
     {
-      "published": "Thu, 01 Oct 2026 18:55:02",
-      "source": "CNBC",
-      "title": "The September jobs report will be released Friday. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html"
-    },
-    {
-      "published": "Wed, 30 Sep 2026 15:14:57",
-      "source": "CNBC",
-      "title": "Fed\u2019s preferred gauge showed core inflation at 3.0% in August, much lighter than expected",
-      "url": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html"
-    },
-    {
-      "published": "Mon, 05 Oct 2026 23:30:00",
+      "published": "Tue, 06 Oct 2026 18:39:00",
       "source": "MarketWatch",
-      "title": "\u2018People in the U.S. need to wake up\u2019: As a mortgage loan officer, I rejected wealthy couples due to overspending. We\u2019re all heading for trouble.",
-      "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories"
+      "title": "\u2018Trump accounts\u2019 could force MAGA children to own New York Times stock",
+      "url": "https://www.marketwatch.com/story/trump-accounts-could-force-maga-children-to-own-new-york-times-stock-46177c96?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 05 Oct 2026 23:00:00",
+      "published": "Tue, 06 Oct 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "\u2018The pain was excruciating\u2019: A friend in her 80s fell down her basement stairs. Could it have been avoided?",
-      "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories"
+      "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 05 Oct 2026 21:52:00",
+      "published": "Tue, 06 Oct 2026 18:25:00",
       "source": "MarketWatch",
-      "title": "The case for Nvidia\u2019s stock to march even higher after clinching its first record high in months",
-      "url": "https://www.marketwatch.com/story/the-case-for-nvidias-stock-to-march-even-higher-after-clinching-its-first-record-high-in-months-2bb5a937?mod=mw_rss_topstories"
+      "title": "Marvell just impressed Wall Street with \u2018good numbers plus a better story\u2019",
+      "url": "https://www.marketwatch.com/story/marvell-just-impressed-wall-street-with-good-numbers-plus-a-better-story-57fbbf23?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 05 Oct 2026 21:43:00",
+      "published": "Tue, 06 Oct 2026 18:20:00",
       "source": "MarketWatch",
-      "title": "This new AI model could help America close a technological gap with China",
-      "url": "https://www.marketwatch.com/story/this-new-ai-model-could-help-america-close-a-technological-gap-with-china-c1d74492?mod=mw_rss_topstories"
+      "title": "How Meta\u2019s stock can surge to $1,000, according to the biggest bull on Wall Street",
+      "url": "https://www.marketwatch.com/story/how-metas-stock-can-surge-to-1-000-according-to-the-biggest-bull-on-wall-street-a91afff3?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 05 Oct 2026 21:27:00",
+      "published": "Tue, 06 Oct 2026 18:01:00",
       "source": "MarketWatch",
-      "title": "Microsoft\u2019s blazing stock comeback isn\u2019t even close to being over, analyst says",
-      "url": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories"
+      "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
+      "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 05 2026",
-      "change": 0.04,
-      "rate": 7.23
+      "asof_label": "Oct 06 2026",
+      "change": -0.01,
+      "rate": 7.22
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 05 2026",
-      "change": 0.04,
+      "asof_label": "Oct 06 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
