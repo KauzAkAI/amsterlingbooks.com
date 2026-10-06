@@ -135,7 +135,7 @@
       "rate": 17.9448
     }
   },
-  "generated_at": "2026-10-06T18:52:02+00:00",
+  "generated_at": "2026-10-06T22:52:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
     },
     {
-      "published": "Tue, 06 Oct 2026 18:39:00",
+      "published": "Tue, 06 Oct 2026 21:52:00",
       "source": "MarketWatch",
-      "title": "\u2018Trump accounts\u2019 could force MAGA children to own New York Times stock",
-      "url": "https://www.marketwatch.com/story/trump-accounts-could-force-maga-children-to-own-new-york-times-stock-46177c96?mod=mw_rss_topstories"
+      "title": "The S&P 500 is back in record territory as the \u2018Magnificent Seven\u2019 ride to the rescue",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-is-back-in-record-territory-as-the-magnificent-seven-ride-to-the-rescue-e062724d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 06 Oct 2026 18:30:00",
-      "source": "MarketWatch",
-      "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 06 Oct 2026 18:25:00",
-      "source": "MarketWatch",
-      "title": "Marvell just impressed Wall Street with \u2018good numbers plus a better story\u2019",
-      "url": "https://www.marketwatch.com/story/marvell-just-impressed-wall-street-with-good-numbers-plus-a-better-story-57fbbf23?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 06 Oct 2026 18:20:00",
-      "source": "MarketWatch",
-      "title": "How Meta\u2019s stock can surge to $1,000, according to the biggest bull on Wall Street",
-      "url": "https://www.marketwatch.com/story/how-metas-stock-can-surge-to-1-000-according-to-the-biggest-bull-on-wall-street-a91afff3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 06 Oct 2026 18:01:00",
+      "published": "Tue, 06 Oct 2026 21:15:00",
       "source": "MarketWatch",
       "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
       "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 06 Oct 2026 20:37:00",
+      "source": "MarketWatch",
+      "title": "Oct. 9 has loomed large in stock-market history. Why investors still shouldn\u2019t buy into an October jinx.",
+      "url": "https://www.marketwatch.com/story/oct-9-has-loomed-large-in-stock-market-history-why-investors-still-shouldnt-buy-into-an-october-jinx-81d7149b?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 06 Oct 2026 20:24:00",
+      "source": "MarketWatch",
+      "title": "Google makes a fresh bet on nuclear power as the AI energy crunch intensifies",
+      "url": "https://www.marketwatch.com/story/google-makes-a-fresh-bet-on-nuclear-power-as-the-ai-energy-crunch-intensifies-a757c296?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 06 Oct 2026 20:21:00",
+      "source": "MarketWatch",
+      "title": "Marvell just impressed Wall Street with \u2018good numbers plus a better story\u2019",
+      "url": "https://www.marketwatch.com/story/marvell-just-impressed-wall-street-with-good-numbers-plus-a-better-story-57fbbf23?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.05
+      "yield": 4.06
     },
     {
       "tenor": "3M",
-      "yield": 4.22
+      "yield": 4.21
     },
     {
       "tenor": "6M",
-      "yield": 4.3
+      "yield": 4.28
     },
     {
       "tenor": "1Y",
-      "yield": 4.47
+      "yield": 4.46
     },
     {
       "tenor": "2Y",
-      "yield": 4.84
+      "yield": 4.79
     },
     {
       "tenor": "5Y",
-      "yield": 5.06
+      "yield": 5.03
     },
     {
       "tenor": "7Y",
-      "yield": 5.19
+      "yield": 5.15
     },
     {
       "tenor": "10Y",
-      "yield": 5.31
+      "yield": 5.27
     },
     {
       "tenor": "20Y",
-      "yield": 5.7
+      "yield": 5.68
     },
     {
       "tenor": "30Y",
-      "yield": 5.66
+      "yield": 5.64
     }
   ],
   "warnings": []
