@@ -90,7 +90,7 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.424
+      "rate": 1.4253
     },
     "CNY": {
       "change_pct": 0,
@@ -102,40 +102,40 @@
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89087
+      "rate": 0.89254
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75753
+      "rate": 0.75616
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.32
+      "rate": 96.3
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.67
+      "rate": 158.23
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1348.28
+      "rate": 1343.98
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.335
+      "rate": 18.1498
     }
   },
-  "generated_at": "2026-10-03T01:19:35+00:00",
+  "generated_at": "2026-10-06T01:44:34+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.03
       },
       {
-        "date": "2026-09-25",
-        "rate": 7.43
-      },
-      {
         "date": "2026-09-28",
         "rate": 7.5
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-02",
         "rate": 7.57
+      },
+      {
+        "date": "2026-10-05",
+        "rate": 7.61
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 05 Oct 2026 05:00:01",
+      "source": "CNBC",
+      "title": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
+      "url": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html"
+    },
+    {
       "published": "Fri, 02 Oct 2026 17:38:59",
       "source": "CNBC",
       "title": "Men are losing ground in the labor market. Here's why",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html"
     },
     {
-      "published": "Wed, 30 Sep 2026 14:42:04",
-      "source": "CNBC",
-      "title": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
-      "url": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html"
+      "published": "Mon, 05 Oct 2026 23:30:00",
+      "source": "MarketWatch",
+      "title": "\u2018People in the U.S. need to wake up\u2019: As a mortgage loan officer, I rejected wealthy couples due to overspending. We\u2019re all heading for trouble.",
+      "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 22:42:00",
+      "published": "Mon, 05 Oct 2026 23:00:00",
       "source": "MarketWatch",
-      "title": "Why Western Digital and Seagate are seeing big stock drops today",
-      "url": "https://www.marketwatch.com/story/why-western-digital-and-seagate-are-seeing-big-stock-drops-today-6b16d95e?mod=mw_rss_topstories"
+      "title": "\u2018The pain was excruciating\u2019: A friend in her 80s fell down her basement stairs. Could it have been avoided?",
+      "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 22:29:00",
+      "published": "Mon, 05 Oct 2026 21:52:00",
       "source": "MarketWatch",
-      "title": "Tesla sold a lot more EVs than Wall Street expected, and the stock is surging",
-      "url": "https://www.marketwatch.com/story/tesla-ev-sales-beat-wall-streets-expectations-again-and-the-stock-jumps-294a4f53?mod=mw_rss_topstories"
+      "title": "The case for Nvidia\u2019s stock to march even higher after clinching its first record high in months",
+      "url": "https://www.marketwatch.com/story/the-case-for-nvidias-stock-to-march-even-higher-after-clinching-its-first-record-high-in-months-2bb5a937?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 22:10:00",
+      "published": "Mon, 05 Oct 2026 21:43:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories"
+      "title": "This new AI model could help America close a technological gap with China",
+      "url": "https://www.marketwatch.com/story/this-new-ai-model-could-help-america-close-a-technological-gap-with-china-c1d74492?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 02 Oct 2026 21:54:00",
+      "published": "Mon, 05 Oct 2026 21:27:00",
       "source": "MarketWatch",
-      "title": "Falling wages, soaring energy prices and inflation: It\u2019s beginning to look a lot like the 1970s",
-      "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 02 Oct 2026 20:43:00",
-      "source": "MarketWatch",
-      "title": "Why mixing politics with your stock portfolio might be costing you money",
-      "url": "https://www.marketwatch.com/story/why-mixing-politics-with-your-stock-portfolio-might-be-costing-you-money-5b4aabfb?mod=mw_rss_topstories"
+      "title": "Microsoft\u2019s blazing stock comeback isn\u2019t even close to being over, analyst says",
+      "url": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 02 2026",
-      "change": 0.01,
-      "rate": 7.19
+      "asof_label": "Oct 05 2026",
+      "change": 0.04,
+      "rate": 7.23
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 02 2026",
-      "change": 0.03,
+      "asof_label": "Oct 05 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.04
+      "yield": 4.05
     },
     {
       "tenor": "3M",
-      "yield": 4.19
+      "yield": 4.22
     },
     {
       "tenor": "6M",
-      "yield": 4.27
+      "yield": 4.3
     },
     {
       "tenor": "1Y",
-      "yield": 4.46
+      "yield": 4.47
     },
     {
       "tenor": "2Y",
-      "yield": 4.83
+      "yield": 4.84
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 5.17
+      "yield": 5.19
     },
     {
       "tenor": "10Y",
-      "yield": 5.28
+      "yield": 5.31
     },
     {
       "tenor": "20Y",
-      "yield": 5.67
+      "yield": 5.7
     },
     {
       "tenor": "30Y",
-      "yield": 5.63
+      "yield": 5.66
     }
   ],
   "warnings": []
