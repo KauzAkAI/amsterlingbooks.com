@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4253
+      "rate": 1.4262
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7046
+      "rate": 6.7023
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89469
+      "rate": 0.89397
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75731
+      "rate": 0.75718
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.73
+      "rate": 96.78
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.23
+      "rate": 158.28
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1338.69
+      "rate": 1343.46
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.0943
+      "rate": 18.0127
     }
   },
-  "generated_at": "2026-10-07T23:37:32+00:00",
+  "generated_at": "2026-10-08T19:13:32+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 6.97
       },
       {
-        "date": "2026-09-17",
-        "rate": 6.95
-      },
-      {
         "date": "2026-09-24",
         "rate": 7.12
       },
       {
         "date": "2026-09-24",
         "rate": 7.03
-      },
-      {
-        "date": "2026-09-30",
-        "rate": 7.6
       },
       {
         "date": "2026-09-30",
@@ -227,6 +219,14 @@
       {
         "date": "2026-10-07",
         "rate": 7.59
+      },
+      {
+        "date": "2026-10-08",
+        "rate": 7.55
+      },
+      {
+        "date": "2026-10-08",
+        "rate": 7.4
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Thu, 08 Oct 2026 17:31:03",
+      "source": "CNBC",
+      "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+      "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
+    },
+    {
       "published": "Wed, 07 Oct 2026 18:44:36",
       "source": "CNBC",
       "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html"
     },
     {
-      "published": "Tue, 06 Oct 2026 15:52:22",
-      "source": "CNBC",
-      "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
-      "url": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+      "published": "Thu, 08 Oct 2026 19:00:00",
+      "source": "MarketWatch",
+      "title": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who\u2019s right?",
+      "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 07 Oct 2026 22:32:00",
+      "published": "Thu, 08 Oct 2026 18:51:00",
       "source": "MarketWatch",
-      "title": "Rising yields are quietly crashing the stock market\u2019s earlier winners of 2026",
-      "url": "https://www.marketwatch.com/story/rising-yields-are-quietly-crashing-the-stock-markets-earlier-winners-of-2026-a29f2863?mod=mw_rss_topstories"
+      "title": "The options market is reminding investors there\u2019s a cure for rising bond yields \u2014 higher yields",
+      "url": "https://www.marketwatch.com/story/the-options-market-is-reminding-investors-theres-a-cure-for-rising-bond-yields-higher-yields-2dcac640?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 07 Oct 2026 20:58:00",
+      "published": "Thu, 08 Oct 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Higher yields are taking their toll on all areas of the stock market, except the one that matters",
-      "url": "https://www.marketwatch.com/story/higher-yields-are-taking-their-toll-on-all-areas-of-the-stock-market-except-the-one-that-matters-69a90322?mod=mw_rss_topstories"
+      "title": "I\u2019m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
+      "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 07 Oct 2026 20:36:00",
+      "published": "Thu, 08 Oct 2026 18:19:00",
       "source": "MarketWatch",
-      "title": "Options traders are betting on a dramatic drop in interest rates",
-      "url": "https://www.marketwatch.com/story/options-traders-are-betting-on-a-dramatic-drop-in-interest-rates-141066fb?mod=mw_rss_topstories"
+      "title": "Bond yields fell, as the Treasury market passed a crucial test of investor confidence",
+      "url": "https://www.marketwatch.com/story/the-treasury-market-is-facing-a-crucial-vote-of-investor-confidence-31fa8d41?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 07 Oct 2026 19:35:00",
+      "published": "Thu, 08 Oct 2026 18:08:00",
       "source": "MarketWatch",
-      "title": "Fed\u2019s minutes show no appetite for a series of interest-rate hikes",
-      "url": "https://www.marketwatch.com/story/fed-minutes-show-no-appetite-for-a-series-of-interest-rate-hikes-8b1c6436?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 07 Oct 2026 19:12:00",
-      "source": "MarketWatch",
-      "title": "Microsoft and Nvidia are teaming up on a supercharged AI laptop",
-      "url": "https://www.marketwatch.com/story/microsoft-and-nvidia-are-teaming-up-on-a-supercharged-ai-laptop-f58b28d8?mod=mw_rss_topstories"
+      "title": "Ken Paxton is right. Tax cuts will mean Social Security and Medicare cuts.",
+      "url": "https://www.marketwatch.com/story/ken-paxton-is-right-tax-cuts-will-mean-social-security-and-medicare-cuts-2befed72?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 07 2026",
-      "change": 0.0,
-      "rate": 7.22
+      "asof_label": "Oct 08 2026",
+      "change": -0.02,
+      "rate": 7.2
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 07 2026",
-      "change": 0.03,
+      "asof_label": "Oct 08 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
