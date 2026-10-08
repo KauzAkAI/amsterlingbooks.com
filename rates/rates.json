@@ -135,7 +135,7 @@
       "rate": 18.0127
     }
   },
-  "generated_at": "2026-10-08T19:13:32+00:00",
+  "generated_at": "2026-10-08T23:46:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -222,7 +222,7 @@
       },
       {
         "date": "2026-10-08",
-        "rate": 7.55
+        "rate": 7.5
       },
       {
         "date": "2026-10-08",
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html"
     },
     {
-      "published": "Thu, 08 Oct 2026 19:00:00",
+      "published": "Thu, 08 Oct 2026 23:14:00",
+      "source": "MarketWatch",
+      "title": "Feel like a pumpkin-spice burrito? Analysts try to wrap their heads around a possible Starbucks-Chipotle tie-up.",
+      "url": "https://www.marketwatch.com/story/feel-like-a-pumpkin-spice-burrito-analysts-try-to-wrap-their-heads-around-a-possible-starbucks-chipotle-tie-up-5b8519fd?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 08 Oct 2026 22:08:00",
+      "source": "MarketWatch",
+      "title": "Micron, Nvidia and AI chip stocks fall as report on OpenAI\u2019s revenue causes \u2018undue concern\u2019",
+      "url": "https://www.marketwatch.com/story/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern-2a2bcf53?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 08 Oct 2026 22:00:00",
       "source": "MarketWatch",
       "title": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who\u2019s right?",
       "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 18:51:00",
+      "published": "Thu, 08 Oct 2026 21:56:00",
       "source": "MarketWatch",
-      "title": "The options market is reminding investors there\u2019s a cure for rising bond yields \u2014 higher yields",
-      "url": "https://www.marketwatch.com/story/the-options-market-is-reminding-investors-theres-a-cure-for-rising-bond-yields-higher-yields-2dcac640?mod=mw_rss_topstories"
+      "title": "Why a longtime skeptic of Palantir\u2019s stock is finally saying it\u2019s time to buy",
+      "url": "https://www.marketwatch.com/story/why-a-longtime-skeptic-of-palantirs-stock-is-finally-saying-its-time-to-buy-60cdeede?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 18:30:00",
+      "published": "Thu, 08 Oct 2026 21:45:00",
       "source": "MarketWatch",
-      "title": "I\u2019m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
-      "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 08 Oct 2026 18:19:00",
-      "source": "MarketWatch",
-      "title": "Bond yields fell, as the Treasury market passed a crucial test of investor confidence",
-      "url": "https://www.marketwatch.com/story/the-treasury-market-is-facing-a-crucial-vote-of-investor-confidence-31fa8d41?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 08 Oct 2026 18:08:00",
-      "source": "MarketWatch",
-      "title": "Ken Paxton is right. Tax cuts will mean Social Security and Medicare cuts.",
-      "url": "https://www.marketwatch.com/story/ken-paxton-is-right-tax-cuts-will-mean-social-security-and-medicare-cuts-2befed72?mod=mw_rss_topstories"
+      "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
+      "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Oct 08 2026",
-      "change": -0.02,
-      "rate": 7.2
+      "change": -0.05,
+      "rate": 7.17
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Oct 08 2026",
-      "change": -0.04,
+      "change": -0.09,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.07
+      "yield": 4.14
     },
     {
       "tenor": "3M",
-      "yield": 4.22
+      "yield": 4.23
     },
     {
       "tenor": "6M",
-      "yield": 4.28
+      "yield": 4.3
     },
     {
       "tenor": "1Y",
-      "yield": 4.42
+      "yield": 4.44
     },
     {
       "tenor": "2Y",
-      "yield": 4.77
+      "yield": 4.75
     },
     {
       "tenor": "5Y",
-      "yield": 5.03
+      "yield": 4.99
     },
     {
       "tenor": "7Y",
-      "yield": 5.15
+      "yield": 5.11
     },
     {
       "tenor": "10Y",
-      "yield": 5.28
+      "yield": 5.22
     },
     {
       "tenor": "20Y",
-      "yield": 5.71
+      "yield": 5.64
     },
     {
       "tenor": "30Y",
-      "yield": 5.67
+      "yield": 5.6
     }
   ],
   "warnings": []
