@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4262
+      "rate": 1.4226
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.7023
+      "rate": 6.6921
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89397
+      "rate": 0.89238
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75718
+      "rate": 0.75641
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.78
+      "rate": 96.73
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.28
+      "rate": 158.25
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1343.46
+      "rate": 1341.49
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.0127
+      "rate": 18.2001
     }
   },
-  "generated_at": "2026-10-08T23:46:59+00:00",
+  "generated_at": "2026-10-09T18:44:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -198,10 +198,6 @@
       },
       {
         "date": "2026-10-01",
-        "rate": 7.54
-      },
-      {
-        "date": "2026-10-01",
         "rate": 7.28
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-08",
         "rate": 7.4
+      },
+      {
+        "date": "2026-10-09",
+        "rate": 7.48
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Fri, 09 Oct 2026 16:10:41",
+      "source": "CNBC",
+      "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+      "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
+    },
+    {
+      "published": "Fri, 09 Oct 2026 13:09:19",
+      "source": "CNBC",
+      "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+      "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html"
+    },
+    {
       "published": "Thu, 08 Oct 2026 17:31:03",
       "source": "CNBC",
       "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
@@ -309,43 +321,31 @@
       "url": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html"
     },
     {
-      "published": "Wed, 07 Oct 2026 06:16:39",
-      "source": "CNBC",
-      "title": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
-      "url": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html"
-    },
-    {
-      "published": "Wed, 07 Oct 2026 11:55:36",
-      "source": "CNBC",
-      "title": "India\u2019s central bank hikes rates for the first time since 2023 as inflation risks build",
-      "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html"
-    },
-    {
-      "published": "Thu, 08 Oct 2026 23:14:00",
+      "published": "Fri, 09 Oct 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Feel like a pumpkin-spice burrito? Analysts try to wrap their heads around a possible Starbucks-Chipotle tie-up.",
-      "url": "https://www.marketwatch.com/story/feel-like-a-pumpkin-spice-burrito-analysts-try-to-wrap-their-heads-around-a-possible-starbucks-chipotle-tie-up-5b8519fd?mod=mw_rss_topstories"
+      "title": "\u2018I feel like a loser\u2019: I check my ETFs every day. They\u2019re up one minute, down the next. Should I be worried?",
+      "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 22:08:00",
+      "published": "Fri, 09 Oct 2026 18:16:00",
       "source": "MarketWatch",
-      "title": "Micron, Nvidia and AI chip stocks fall as report on OpenAI\u2019s revenue causes \u2018undue concern\u2019",
-      "url": "https://www.marketwatch.com/story/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern-2a2bcf53?mod=mw_rss_topstories"
+      "title": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
+      "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 22:00:00",
+      "published": "Fri, 09 Oct 2026 18:06:00",
       "source": "MarketWatch",
-      "title": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who\u2019s right?",
-      "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories"
+      "title": "Microsoft is nearing a big milestone that solidifies its revival",
+      "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 21:56:00",
+      "published": "Fri, 09 Oct 2026 18:04:00",
       "source": "MarketWatch",
-      "title": "Why a longtime skeptic of Palantir\u2019s stock is finally saying it\u2019s time to buy",
-      "url": "https://www.marketwatch.com/story/why-a-longtime-skeptic-of-palantirs-stock-is-finally-saying-its-time-to-buy-60cdeede?mod=mw_rss_topstories"
+      "title": "Why you need to take a closer look at your favorite stock index",
+      "url": "https://www.marketwatch.com/story/why-you-need-to-take-a-closer-look-at-your-favorite-stock-index-479fb494?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 08 Oct 2026 21:45:00",
+      "published": "Fri, 09 Oct 2026 18:00:00",
       "source": "MarketWatch",
       "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
       "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories"
@@ -353,17 +353,17 @@
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 08 2026",
-      "change": -0.05,
-      "rate": 7.17
+      "asof_label": "Oct 09 2026",
+      "change": -0.02,
+      "rate": 7.15
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 08 2026",
-      "change": -0.09,
+      "asof_label": "Oct 09 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
