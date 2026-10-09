@@ -135,7 +135,7 @@
       "rate": 18.2001
     }
   },
-  "generated_at": "2026-10-09T18:44:04+00:00",
+  "generated_at": "2026-10-09T22:56:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-09-16",
-        "rate": 6.97
-      },
-      {
         "date": "2026-09-24",
         "rate": 7.12
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-10-07",
         "rate": 7.59
+      },
+      {
+        "date": "2026-10-07",
+        "rate": 7.49
       },
       {
         "date": "2026-10-08",
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Fri, 09 Oct 2026 16:10:41",
+      "published": "Fri, 09 Oct 2026 19:18:24",
       "source": "CNBC",
       "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
       "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html"
     },
     {
-      "published": "Fri, 09 Oct 2026 18:30:00",
+      "published": "Fri, 09 Oct 2026 22:41:00",
       "source": "MarketWatch",
-      "title": "\u2018I feel like a loser\u2019: I check my ETFs every day. They\u2019re up one minute, down the next. Should I be worried?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories"
+      "title": "How to provide guaranteed retirement income while paying no commissions",
+      "url": "https://www.marketwatch.com/story/how-to-provide-guaranteed-retirement-income-while-paying-no-commissions-b2085511?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 18:16:00",
+      "published": "Fri, 09 Oct 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
-      "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories"
+      "title": "Trump taps Russia to boost global diesel supplies ahead of midterms. It may be \u2018too little, too late,\u2019 says strategist.",
+      "url": "https://www.marketwatch.com/story/trump-taps-russia-to-boost-global-diesel-supplies-ahead-of-midterms-it-may-be-too-little-too-late-says-strategist-8c789030?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 18:06:00",
+      "published": "Fri, 09 Oct 2026 21:30:00",
+      "source": "MarketWatch",
+      "title": "Is iPhone 18 demand cooling off? Here\u2019s how deep Apple reportedly is cutting component orders.",
+      "url": "https://www.marketwatch.com/story/is-iphone-18-demand-cooling-off-heres-how-deep-apple-reportedly-is-cutting-component-orders-a44244ee?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 09 Oct 2026 21:27:00",
+      "source": "MarketWatch",
+      "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
+      "url": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 09 Oct 2026 21:24:00",
       "source": "MarketWatch",
       "title": "Microsoft is nearing a big milestone that solidifies its revival",
       "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 09 Oct 2026 18:04:00",
-      "source": "MarketWatch",
-      "title": "Why you need to take a closer look at your favorite stock index",
-      "url": "https://www.marketwatch.com/story/why-you-need-to-take-a-closer-look-at-your-favorite-stock-index-479fb494?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 09 Oct 2026 18:00:00",
-      "source": "MarketWatch",
-      "title": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
-      "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,39 +394,39 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.14
+      "yield": 4.13
     },
     {
       "tenor": "3M",
-      "yield": 4.23
+      "yield": 4.25
     },
     {
       "tenor": "6M",
-      "yield": 4.3
+      "yield": 4.32
     },
     {
       "tenor": "1Y",
-      "yield": 4.44
+      "yield": 4.47
     },
     {
       "tenor": "2Y",
-      "yield": 4.75
+      "yield": 4.8
     },
     {
       "tenor": "5Y",
-      "yield": 4.99
+      "yield": 5.02
     },
     {
       "tenor": "7Y",
-      "yield": 5.11
+      "yield": 5.13
     },
     {
       "tenor": "10Y",
-      "yield": 5.22
+      "yield": 5.24
     },
     {
       "tenor": "20Y",
-      "yield": 5.64
+      "yield": 5.65
     },
     {
       "tenor": "30Y",
