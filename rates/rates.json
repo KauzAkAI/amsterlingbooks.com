@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4226
+      "rate": 1.4262
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6921
+      "rate": 6.6928
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89238
+      "rate": 0.89437
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75641
+      "rate": 0.75555
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 96.73
+      "rate": 95.78
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.25
+      "rate": 158.6
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1341.49
+      "rate": 1333.09
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.2001
+      "rate": 18.3418
     }
   },
-  "generated_at": "2026-10-09T22:56:08+00:00",
+  "generated_at": "2026-10-13T02:43:48+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,64 +291,64 @@
   },
   "news": [
     {
+      "published": "Tue, 13 Oct 2026 02:09:34",
+      "source": "CNBC",
+      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html"
+    },
+    {
+      "published": "Mon, 12 Oct 2026 10:49:24",
+      "source": "CNBC",
+      "title": "India\u2019s retail inflation jumps to 5.54% in September, above estimates",
+      "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html"
+    },
+    {
+      "published": "Mon, 12 Oct 2026 14:09:02",
+      "source": "CNBC",
+      "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+      "url": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html"
+    },
+    {
+      "published": "Mon, 12 Oct 2026 08:58:54",
+      "source": "CNBC",
+      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html"
+    },
+    {
       "published": "Fri, 09 Oct 2026 19:18:24",
       "source": "CNBC",
       "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
       "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
     },
     {
-      "published": "Fri, 09 Oct 2026 13:09:19",
-      "source": "CNBC",
-      "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
-      "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html"
-    },
-    {
-      "published": "Thu, 08 Oct 2026 17:31:03",
-      "source": "CNBC",
-      "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
-      "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
-    },
-    {
-      "published": "Wed, 07 Oct 2026 18:44:36",
-      "source": "CNBC",
-      "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
-      "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"
-    },
-    {
-      "published": "Wed, 07 Oct 2026 12:24:32",
-      "source": "CNBC",
-      "title": "ICE came to town and left behind weakened economies",
-      "url": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html"
-    },
-    {
-      "published": "Fri, 09 Oct 2026 22:41:00",
+      "published": "Tue, 13 Oct 2026 02:00:00",
       "source": "MarketWatch",
-      "title": "How to provide guaranteed retirement income while paying no commissions",
-      "url": "https://www.marketwatch.com/story/how-to-provide-guaranteed-retirement-income-while-paying-no-commissions-b2085511?mod=mw_rss_topstories"
+      "title": "The global economy is starting to look K-shaped. Here are the winners and losers, and where the U.S. fits.",
+      "url": "https://www.marketwatch.com/story/the-global-economy-is-starting-to-look-k-shaped-here-are-the-winners-and-losers-and-where-the-u-s-fits-4ad93ea7?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 22:00:00",
+      "published": "Tue, 13 Oct 2026 00:18:00",
       "source": "MarketWatch",
-      "title": "Trump taps Russia to boost global diesel supplies ahead of midterms. It may be \u2018too little, too late,\u2019 says strategist.",
-      "url": "https://www.marketwatch.com/story/trump-taps-russia-to-boost-global-diesel-supplies-ahead-of-midterms-it-may-be-too-little-too-late-says-strategist-8c789030?mod=mw_rss_topstories"
+      "title": "The SpaceX threat could loom over AT&T\u2019s stock for a prolonged stretch, analyst cautions",
+      "url": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 21:30:00",
+      "published": "Mon, 12 Oct 2026 23:31:00",
       "source": "MarketWatch",
-      "title": "Is iPhone 18 demand cooling off? Here\u2019s how deep Apple reportedly is cutting component orders.",
-      "url": "https://www.marketwatch.com/story/is-iphone-18-demand-cooling-off-heres-how-deep-apple-reportedly-is-cutting-component-orders-a44244ee?mod=mw_rss_topstories"
+      "title": "\u2018The house is worth $925,000\u2019: My sister moved in with our mother, 78, and says she deserves the family home. Is she right?",
+      "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 21:27:00",
+      "published": "Mon, 12 Oct 2026 23:15:00",
       "source": "MarketWatch",
-      "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
-      "url": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories"
+      "title": "\u2018The prospectus looks impressive\u2019: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
+      "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 09 Oct 2026 21:24:00",
+      "published": "Mon, 12 Oct 2026 22:27:00",
       "source": "MarketWatch",
-      "title": "Microsoft is nearing a big milestone that solidifies its revival",
-      "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories"
+      "title": "Investors worry the bull market is getting old. But history shows it can continue to age gracefully.",
+      "url": "https://www.marketwatch.com/story/investors-worry-the-bull-market-is-getting-old-but-history-shows-it-can-continue-to-age-gracefully-0402e69c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
