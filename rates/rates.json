@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4262
+      "rate": 1.4241
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6928
+      "rate": 6.6938
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89437
+      "rate": 0.89381
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75555
+      "rate": 0.75492
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.78
+      "rate": 95.28
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.6
+      "rate": 158.12
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1333.09
+      "rate": 1341.45
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.3418
+      "rate": 18.3348
     }
   },
-  "generated_at": "2026-10-13T02:43:48+00:00",
+  "generated_at": "2026-10-13T19:49:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.28
       },
       {
-        "date": "2026-10-02",
-        "rate": 7.57
-      },
-      {
         "date": "2026-10-05",
         "rate": 7.61
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-09",
         "rate": 7.48
+      },
+      {
+        "date": "2026-10-13",
+        "rate": 7.46
       }
     ]
   },
@@ -291,9 +291,27 @@
   },
   "news": [
     {
-      "published": "Tue, 13 Oct 2026 02:09:34",
+      "published": "Tue, 13 Oct 2026 18:05:57",
       "source": "CNBC",
-      "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
+      "title": "The latest inflation data is expected to show price increases are accelerating",
+      "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html"
+    },
+    {
+      "published": "Tue, 13 Oct 2026 15:52:24",
+      "source": "CNBC",
+      "title": "In charts: How one of the world's biggest economies got trapped by debt",
+      "url": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html"
+    },
+    {
+      "published": "Tue, 13 Oct 2026 04:54:07",
+      "source": "CNBC",
+      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+      "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html"
+    },
+    {
+      "published": "Tue, 13 Oct 2026 04:10:49",
+      "source": "CNBC",
+      "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
       "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html"
     },
     {
@@ -303,66 +321,48 @@
       "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html"
     },
     {
-      "published": "Mon, 12 Oct 2026 14:09:02",
-      "source": "CNBC",
-      "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
-      "url": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html"
-    },
-    {
-      "published": "Mon, 12 Oct 2026 08:58:54",
-      "source": "CNBC",
-      "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI \u2018tsunami\u2019",
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html"
-    },
-    {
-      "published": "Fri, 09 Oct 2026 19:18:24",
-      "source": "CNBC",
-      "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
-      "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
-    },
-    {
-      "published": "Tue, 13 Oct 2026 02:00:00",
+      "published": "Tue, 13 Oct 2026 18:44:00",
       "source": "MarketWatch",
-      "title": "The global economy is starting to look K-shaped. Here are the winners and losers, and where the U.S. fits.",
-      "url": "https://www.marketwatch.com/story/the-global-economy-is-starting-to-look-k-shaped-here-are-the-winners-and-losers-and-where-the-u-s-fits-4ad93ea7?mod=mw_rss_topstories"
+      "title": "Fake shopping sprees and \u2018happiness insurance\u2019: The latest fintech apps reveal our financial anxieties",
+      "url": "https://www.marketwatch.com/story/fake-shopping-sprees-and-happiness-insurance-the-latest-fintech-apps-reveal-our-financial-anxieties-77770a46?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 13 Oct 2026 00:18:00",
+      "published": "Tue, 13 Oct 2026 18:11:00",
       "source": "MarketWatch",
-      "title": "The SpaceX threat could loom over AT&T\u2019s stock for a prolonged stretch, analyst cautions",
-      "url": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories"
+      "title": "Gen Z renters are the only group more likely to feel successful by investing than buying a house",
+      "url": "https://www.marketwatch.com/story/gen-z-renters-are-the-only-group-more-likely-to-feel-successful-by-investing-than-buying-a-house-30ac5344?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 12 Oct 2026 23:31:00",
+      "published": "Tue, 13 Oct 2026 17:54:00",
       "source": "MarketWatch",
-      "title": "\u2018The house is worth $925,000\u2019: My sister moved in with our mother, 78, and says she deserves the family home. Is she right?",
-      "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories"
+      "title": "New SEC rules would fleece everyday investors to enrich Wall Street",
+      "url": "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 12 Oct 2026 23:15:00",
+      "published": "Tue, 13 Oct 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "\u2018The prospectus looks impressive\u2019: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
+      "title": "\u2018I am a pretty cautious person\u2019: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
       "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 12 Oct 2026 22:27:00",
+      "published": "Tue, 13 Oct 2026 17:30:00",
       "source": "MarketWatch",
-      "title": "Investors worry the bull market is getting old. But history shows it can continue to age gracefully.",
-      "url": "https://www.marketwatch.com/story/investors-worry-the-bull-market-is-getting-old-but-history-shows-it-can-continue-to-age-gracefully-0402e69c?mod=mw_rss_topstories"
+      "title": "My wife says we can\u2019t afford to retire, yet she wants to take an $8,000 trip to Italy. We have $4 million. Do I keep working?",
+      "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 09 2026",
-      "change": -0.02,
-      "rate": 7.15
+      "asof_label": "Oct 13 2026",
+      "change": -0.01,
+      "rate": 7.14
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 09 2026",
+      "asof_label": "Oct 13 2026",
       "change": -0.02,
       "rate": 6.52
     }
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.13
+      "yield": 4.1
     },
     {
       "tenor": "3M",
-      "yield": 4.25
+      "yield": 4.26
     },
     {
       "tenor": "6M",
-      "yield": 4.32
+      "yield": 4.34
     },
     {
       "tenor": "1Y",
-      "yield": 4.47
+      "yield": 4.48
     },
     {
       "tenor": "2Y",
-      "yield": 4.8
+      "yield": 4.79
     },
     {
       "tenor": "5Y",
-      "yield": 5.02
+      "yield": 5.0
     },
     {
       "tenor": "7Y",
-      "yield": 5.13
+      "yield": 5.11
     },
     {
       "tenor": "10Y",
-      "yield": 5.24
+      "yield": 5.21
     },
     {
       "tenor": "20Y",
-      "yield": 5.65
+      "yield": 5.6
     },
     {
       "tenor": "30Y",
-      "yield": 5.6
+      "yield": 5.56
     }
   ],
   "warnings": []
