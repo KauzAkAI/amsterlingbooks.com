@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4241
+      "rate": 1.4219
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6938
+      "rate": 6.6927
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89381
+      "rate": 0.89326
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75492
+      "rate": 0.75377
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.28
+      "rate": 95.16
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.12
+      "rate": 158.45
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1341.45
+      "rate": 1336.79
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.3348
+      "rate": 18.3653
     }
   },
-  "generated_at": "2026-10-13T23:31:01+00:00",
+  "generated_at": "2026-10-14T17:54:54+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.28
       },
       {
-        "date": "2026-10-05",
-        "rate": 7.61
-      },
-      {
         "date": "2026-10-06",
         "rate": 7.56
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-13",
         "rate": 7.46
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 7.56
       }
     ]
   },
@@ -291,6 +291,24 @@
   },
   "news": [
     {
+      "published": "Wed, 14 Oct 2026 17:20:23",
+      "source": "CNBC",
+      "title": "How high inflation became a 'fact of life' in the U.S.",
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html"
+    },
+    {
+      "published": "Wed, 14 Oct 2026 13:53:28",
+      "source": "CNBC",
+      "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+      "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+    },
+    {
+      "published": "Wed, 14 Oct 2026 04:24:28",
+      "source": "CNBC",
+      "title": "'Godzilla El Ni\u00f1o' is wreaking havoc with Philippine central bank's inflation forecasts",
+      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html"
+    },
+    {
       "published": "Tue, 13 Oct 2026 18:05:57",
       "source": "CNBC",
       "title": "The latest inflation data is expected to show price increases are accelerating",
@@ -303,67 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html"
     },
     {
-      "published": "Tue, 13 Oct 2026 04:54:07",
-      "source": "CNBC",
-      "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-      "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html"
-    },
-    {
-      "published": "Tue, 13 Oct 2026 04:10:49",
-      "source": "CNBC",
-      "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html"
-    },
-    {
-      "published": "Mon, 12 Oct 2026 10:49:24",
-      "source": "CNBC",
-      "title": "India\u2019s retail inflation jumps to 5.54% in September, above estimates",
-      "url": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html"
-    },
-    {
-      "published": "Tue, 13 Oct 2026 21:02:00",
+      "published": "Wed, 14 Oct 2026 16:50:00",
       "source": "MarketWatch",
-      "title": "Chip stocks suffer worst stretch in 16 months as AI fatigue grips the market",
-      "url": "https://www.marketwatch.com/story/ai-fatigue-is-gripping-the-market-and-driving-chip-stocks-toward-their-worst-stretch-in-16-months-6dc78ece?mod=mw_rss_topstories"
+      "title": "3 things that are driving inflation higher",
+      "url": "https://www.marketwatch.com/story/3-things-that-are-driving-inflation-higher-26bda9a9?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 13 Oct 2026 21:01:00",
+      "published": "Wed, 14 Oct 2026 16:27:00",
       "source": "MarketWatch",
-      "title": "\u2018I am a pretty cautious person\u2019: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
-      "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories"
+      "title": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
+      "url": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 13 Oct 2026 20:42:00",
+      "published": "Wed, 14 Oct 2026 16:20:00",
       "source": "MarketWatch",
-      "title": "The SpaceX threat could loom over AT&T\u2019s stock for a prolonged stretch, analyst cautions",
-      "url": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories"
+      "title": "Your Social Security check will rise an average of $75 a month \u2014 will it be able to keep up with inflation?",
+      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 13 Oct 2026 20:41:00",
+      "published": "Wed, 14 Oct 2026 16:07:00",
       "source": "MarketWatch",
-      "title": "Six Flags\u2019 stock slumps near 17-year low after fatal incident",
-      "url": "https://www.marketwatch.com/story/six-flags-stock-slumps-near-52-week-lows-after-fatal-accident-3f938112?mod=mw_rss_topstories"
+      "title": "Rising diesel prices have helped fuel inflation \u2014 and we\u2019re about to see how much worse it could get",
+      "url": "https://www.marketwatch.com/story/rising-diesel-prices-have-helped-fuel-inflation-and-were-about-to-see-how-much-worse-it-could-get-430f36d1?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 13 Oct 2026 20:32:00",
+      "published": "Wed, 14 Oct 2026 16:05:00",
       "source": "MarketWatch",
-      "title": "AST SpaceMobile\u2019s stock is feeling the heat from SpaceX\u2019s wireless plans",
-      "url": "https://www.marketwatch.com/story/ast-spacemobiles-stock-is-feeling-the-heat-from-spacexs-wireless-plans-7e2fafb4?mod=mw_rss_topstories"
+      "title": "The truth about being a landlord in retirement",
+      "url": "https://www.marketwatch.com/story/the-truth-about-being-a-landlord-in-retirement-5d1daf4c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 13 2026",
-      "change": -0.01,
-      "rate": 7.14
+      "asof_label": "Oct 14 2026",
+      "change": 0.04,
+      "rate": 7.18
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 13 2026",
-      "change": -0.02,
+      "asof_label": "Oct 14 2026",
+      "change": 0.1,
       "rate": 6.52
     }
   },
