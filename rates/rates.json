@@ -135,7 +135,7 @@
       "rate": 18.3653
     }
   },
-  "generated_at": "2026-10-14T17:54:54+00:00",
+  "generated_at": "2026-10-14T21:28:36+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-10-14",
-        "rate": 7.56
+        "rate": 7.45
       }
     ]
   },
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html"
     },
     {
-      "published": "Wed, 14 Oct 2026 16:50:00",
+      "published": "Wed, 14 Oct 2026 21:19:00",
       "source": "MarketWatch",
-      "title": "3 things that are driving inflation higher",
-      "url": "https://www.marketwatch.com/story/3-things-that-are-driving-inflation-higher-26bda9a9?mod=mw_rss_topstories"
+      "title": "The COLA wars are coming for Social Security",
+      "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 14 Oct 2026 16:27:00",
+      "published": "Wed, 14 Oct 2026 21:18:00",
       "source": "MarketWatch",
-      "title": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
-      "url": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories"
+      "title": "CoreWeave\u2019s AI bonds tumble, raising red flags for the wider market",
+      "url": "https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 14 Oct 2026 16:20:00",
+      "published": "Wed, 14 Oct 2026 21:03:00",
       "source": "MarketWatch",
-      "title": "Your Social Security check will rise an average of $75 a month \u2014 will it be able to keep up with inflation?",
-      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories"
+      "title": "Bank of America adds a profit miss to the misery of a $1.2 billion government fine",
+      "url": "https://www.marketwatch.com/story/bank-of-america-adds-a-profit-miss-to-the-misery-of-a-1-2-billion-government-fine-d4420bfa?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 14 Oct 2026 16:07:00",
+      "published": "Wed, 14 Oct 2026 20:57:00",
       "source": "MarketWatch",
-      "title": "Rising diesel prices have helped fuel inflation \u2014 and we\u2019re about to see how much worse it could get",
-      "url": "https://www.marketwatch.com/story/rising-diesel-prices-have-helped-fuel-inflation-and-were-about-to-see-how-much-worse-it-could-get-430f36d1?mod=mw_rss_topstories"
+      "title": "BlackRock now manages assets equal to half the size of the U.S. economy after 15% growth",
+      "url": "https://www.marketwatch.com/story/blackrock-now-has-assets-equal-to-half-the-size-of-the-u-s-economy-after-15-growth-c382b289?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 14 Oct 2026 16:05:00",
+      "published": "Wed, 14 Oct 2026 20:39:00",
       "source": "MarketWatch",
-      "title": "The truth about being a landlord in retirement",
-      "url": "https://www.marketwatch.com/story/the-truth-about-being-a-landlord-in-retirement-5d1daf4c?mod=mw_rss_topstories"
+      "title": "Meet the baby chasers \u2014 they\u2019re transforming the housing market and solving the childcare crisis",
+      "url": "https://www.marketwatch.com/story/meet-the-baby-chasers-theyre-transforming-the-housing-market-and-solving-the-childcare-crisis-574b5bcc?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Oct 14 2026",
-      "change": 0.04,
-      "rate": 7.18
+      "change": 0.0,
+      "rate": 7.14
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Oct 14 2026",
-      "change": 0.1,
+      "change": -0.01,
       "rate": 6.52
     }
   },
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.1
+      "yield": 4.11
     },
     {
       "tenor": "3M",
-      "yield": 4.26
+      "yield": 4.28
     },
     {
       "tenor": "6M",
-      "yield": 4.34
+      "yield": 4.37
     },
     {
       "tenor": "1Y",
-      "yield": 4.48
+      "yield": 4.53
     },
     {
       "tenor": "2Y",
-      "yield": 4.79
+      "yield": 4.82
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 5.11
+      "yield": 5.09
     },
     {
       "tenor": "10Y",
-      "yield": 5.21
+      "yield": 5.19
     },
     {
       "tenor": "20Y",
-      "yield": 5.6
+      "yield": 5.57
     },
     {
       "tenor": "30Y",
-      "yield": 5.56
+      "yield": 5.52
     }
   ],
   "warnings": []
