@@ -135,7 +135,7 @@
       "rate": 18.3835
     }
   },
-  "generated_at": "2026-10-16T17:17:55+00:00",
+  "generated_at": "2026-10-16T19:59:42+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 16 Oct 2026 18:00:15",
+      "source": "CNBC",
+      "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html"
+    },
+    {
       "published": "Fri, 16 Oct 2026 16:27:31",
       "source": "CNBC",
       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
     },
     {
-      "published": "Thu, 15 Oct 2026 12:11:15",
-      "source": "CNBC",
-      "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-      "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
-    },
-    {
-      "published": "Fri, 16 Oct 2026 17:07:00",
-      "source": "MarketWatch",
-      "title": "Here\u2019s how the Fed should reveal its outlook for the economy",
-      "url": "https://www.marketwatch.com/story/heres-how-the-fed-should-reveal-its-outlook-for-the-economy-79629f25?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 16 Oct 2026 16:39:00",
+      "published": "Fri, 16 Oct 2026 19:46:00",
       "source": "MarketWatch",
       "title": "Are we spending our retirement money in the right order? Our plan is: Social Security, annuities, cash \u2014 then IRA.",
       "url": "https://www.marketwatch.com/story/are-we-spending-our-retirement-money-in-the-right-order-our-plan-is-social-security-annuities-cash-then-ira-02cec336?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 16 Oct 2026 16:39:00",
+      "published": "Fri, 16 Oct 2026 19:45:00",
       "source": "MarketWatch",
-      "title": "Elon Musk may have just taken a major step toward consolidating his empire",
-      "url": "https://www.marketwatch.com/story/elon-musk-may-have-just-taken-a-major-step-toward-consolidating-his-empire-7d82dea6?mod=mw_rss_topstories"
+      "title": "Your Social Security check will rise an average of $75 a month \u2014 will it be able to keep up with inflation?",
+      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 16 Oct 2026 16:09:00",
+      "published": "Fri, 16 Oct 2026 19:45:00",
       "source": "MarketWatch",
-      "title": "Many of 2026\u2019s hottest stocks have seen dramatic comedowns this week",
-      "url": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories"
+      "title": "Did this year\u2019s COLA beat inflation? Here\u2019s how spending by American seniors stacks up so far in 2026.",
+      "url": "https://www.marketwatch.com/story/did-this-years-cola-beat-inflation-heres-how-spending-by-american-seniors-stacks-up-so-far-in-2026-917c400c?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 16 Oct 2026 16:05:00",
+      "published": "Fri, 16 Oct 2026 19:45:00",
       "source": "MarketWatch",
-      "title": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
-      "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories"
+      "title": "The COLA wars are coming for Social Security",
+      "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 16 Oct 2026 19:35:00",
+      "source": "MarketWatch",
+      "title": "Microsoft wants to make AI cheaper. Will investors actually see the savings?",
+      "url": "https://www.marketwatch.com/story/microsoft-wants-to-make-ai-cheaper-will-investors-actually-see-the-savings-0a3c3ac0?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,39 +394,39 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.17
+      "yield": 4.12
     },
     {
       "tenor": "3M",
-      "yield": 4.28
+      "yield": 4.26
     },
     {
       "tenor": "6M",
-      "yield": 4.35
+      "yield": 4.34
     },
     {
       "tenor": "1Y",
-      "yield": 4.49
+      "yield": 4.46
     },
     {
       "tenor": "2Y",
-      "yield": 4.77
+      "yield": 4.74
     },
     {
       "tenor": "5Y",
-      "yield": 4.91
+      "yield": 4.89
     },
     {
       "tenor": "7Y",
-      "yield": 5.0
+      "yield": 4.98
     },
     {
       "tenor": "10Y",
-      "yield": 5.1
+      "yield": 5.09
     },
     {
       "tenor": "20Y",
-      "yield": 5.48
+      "yield": 5.47
     },
     {
       "tenor": "30Y",
