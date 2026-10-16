@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4207
+      "rate": 1.4161
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.691
+      "rate": 6.6862
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89222
+      "rate": 0.88865
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75491
+      "rate": 0.74989
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.06
+      "rate": 94.96
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.98
+      "rate": 158.02
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1345.9
+      "rate": 1332.1
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.5225
+      "rate": 18.3835
     }
   },
-  "generated_at": "2026-10-15T23:16:52+00:00",
+  "generated_at": "2026-10-16T17:17:55+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -190,10 +190,6 @@
       },
       {
         "date": "2026-10-07",
-        "rate": 7.59
-      },
-      {
-        "date": "2026-10-07",
         "rate": 7.49
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-15",
         "rate": 7.4
+      },
+      {
+        "date": "2026-10-16",
+        "rate": 7.37
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 16 Oct 2026 16:27:31",
+      "source": "CNBC",
+      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+      "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
+    },
+    {
       "published": "Thu, 15 Oct 2026 15:37:59",
       "source": "CNBC",
       "title": "Economists: Hot PPI shows Fed's work is not done",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
     },
     {
-      "published": "Thu, 15 Oct 2026 09:02:31",
-      "source": "CNBC",
-      "title": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
-      "url": "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html"
+      "published": "Fri, 16 Oct 2026 17:07:00",
+      "source": "MarketWatch",
+      "title": "Here\u2019s how the Fed should reveal its outlook for the economy",
+      "url": "https://www.marketwatch.com/story/heres-how-the-fed-should-reveal-its-outlook-for-the-economy-79629f25?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 15 Oct 2026 22:31:00",
+      "published": "Fri, 16 Oct 2026 16:39:00",
       "source": "MarketWatch",
-      "title": "\u2018Some people did everything right\u2019: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-      "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories"
+      "title": "Are we spending our retirement money in the right order? Our plan is: Social Security, annuities, cash \u2014 then IRA.",
+      "url": "https://www.marketwatch.com/story/are-we-spending-our-retirement-money-in-the-right-order-our-plan-is-social-security-annuities-cash-then-ira-02cec336?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 15 Oct 2026 22:15:00",
+      "published": "Fri, 16 Oct 2026 16:39:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 64 years old, with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
-      "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories"
+      "title": "Elon Musk may have just taken a major step toward consolidating his empire",
+      "url": "https://www.marketwatch.com/story/elon-musk-may-have-just-taken-a-major-step-toward-consolidating-his-empire-7d82dea6?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 15 Oct 2026 21:56:00",
+      "published": "Fri, 16 Oct 2026 16:09:00",
       "source": "MarketWatch",
-      "title": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
-      "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories"
+      "title": "Many of 2026\u2019s hottest stocks have seen dramatic comedowns this week",
+      "url": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 15 Oct 2026 21:23:00",
+      "published": "Fri, 16 Oct 2026 16:05:00",
       "source": "MarketWatch",
-      "title": "Nvidia and other chip stocks face renewed pressure as AI fears swell",
-      "url": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 15 Oct 2026 21:21:00",
-      "source": "MarketWatch",
-      "title": "Don\u2019t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
-      "url": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories"
+      "title": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
+      "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 15 2026",
-      "change": -0.16,
-      "rate": 6.98
+      "asof_label": "Oct 16 2026",
+      "change": 0.06,
+      "rate": 7.04
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 15 2026",
-      "change": -0.12,
+      "asof_label": "Oct 16 2026",
+      "change": 0.04,
       "rate": 6.52
     }
   },
