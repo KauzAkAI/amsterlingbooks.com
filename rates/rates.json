@@ -135,7 +135,7 @@
       "rate": 18.5216
     }
   },
-  "generated_at": "2026-10-20T17:52:49+00:00",
+  "generated_at": "2026-10-20T21:19:04+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Tue, 20 Oct 2026 19:28:43",
+      "source": "CNBC",
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+      "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
+    },
+    {
       "published": "Mon, 19 Oct 2026 18:36:21",
       "source": "CNBC",
       "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
     },
     {
-      "published": "Thu, 15 Oct 2026 15:37:59",
-      "source": "CNBC",
-      "title": "Economists: Hot PPI shows Fed's work is not done",
-      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html"
+      "published": "Tue, 20 Oct 2026 20:57:00",
+      "source": "MarketWatch",
+      "title": "It\u2019s no secret what the best financial advice for retirement is \u2014 but most people ignore it anyway",
+      "url": "https://www.marketwatch.com/story/its-no-secret-what-the-best-financial-advice-for-retirement-is-but-most-people-ignore-it-anyway-7c9075c8?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 20 Oct 2026 17:38:00",
+      "published": "Tue, 20 Oct 2026 20:54:00",
       "source": "MarketWatch",
-      "title": "Investors\u2019 search for safety has made toothpaste stocks more expensive than tech",
-      "url": "https://www.marketwatch.com/story/investors-search-for-safety-has-made-toothpaste-stocks-more-expensive-than-tech-57a75e56?mod=mw_rss_topstories"
+      "title": "Netflix vows to revive viewership trends, but investors hit \u2018sell\u2019 on the stock",
+      "url": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 20 Oct 2026 17:15:00",
+      "published": "Tue, 20 Oct 2026 20:45:00",
       "source": "MarketWatch",
-      "title": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
-      "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories"
+      "title": "Bull markets tend to peak with a whimper, not a bang \u2014 but a 15% correction for the S&P 500 may be next",
+      "url": "https://www.marketwatch.com/story/bull-markets-tend-to-peak-with-a-whimper-not-a-bang-but-a-15-correction-for-the-s-p-500-may-be-next-dab40e2c?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 20 Oct 2026 17:00:00",
+      "published": "Tue, 20 Oct 2026 20:26:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t feel sorry for myself\u2019: I\u2019m 64 and will be renting for the rest of my life \u2014 but here\u2019s why I\u2019m still hopeful",
-      "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories"
+      "title": "The Social Security Administration corrected millions of records, and says there\u2019s more to fix",
+      "url": "https://www.marketwatch.com/story/the-social-security-administration-corrected-millions-of-records-and-says-theres-more-to-fix-e57185bd?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 20 Oct 2026 16:55:00",
+      "published": "Tue, 20 Oct 2026 19:35:00",
       "source": "MarketWatch",
-      "title": "It\u2019s not just California\u2019s billionaire tax. Wealth is on the ballot in the midterm elections.",
-      "url": "https://www.marketwatch.com/story/its-not-just-californias-billionaire-tax-wealth-is-on-the-ballot-in-the-midterm-elections-a50fc12c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 20 Oct 2026 16:25:00",
-      "source": "MarketWatch",
-      "title": "\u2018I\u2019m naturally skeptical\u2019: I receive 10 calls a day offering me $15,000 loans at 8% interest. Is this a scam?",
-      "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories"
+      "title": "Wall Street researchers just used Claude to design a drug. The experiment has spawned a new investment thesis.",
+      "url": "https://www.marketwatch.com/story/wall-street-researchers-just-used-claude-to-design-a-drug-the-experiment-has-spawned-a-new-investment-thesis-6a5c3710?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,23 +394,23 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.11
+      "yield": 4.1
     },
     {
       "tenor": "3M",
-      "yield": 4.27
+      "yield": 4.26
     },
     {
       "tenor": "6M",
-      "yield": 4.37
+      "yield": 4.36
     },
     {
       "tenor": "1Y",
-      "yield": 4.5
+      "yield": 4.51
     },
     {
       "tenor": "2Y",
-      "yield": 4.77
+      "yield": 4.79
     },
     {
       "tenor": "5Y",
@@ -418,19 +418,19 @@
     },
     {
       "tenor": "7Y",
-      "yield": 5.04
+      "yield": 5.02
     },
     {
       "tenor": "10Y",
-      "yield": 5.15
+      "yield": 5.12
     },
     {
       "tenor": "20Y",
-      "yield": 5.53
+      "yield": 5.47
     },
     {
       "tenor": "30Y",
-      "yield": 5.48
+      "yield": 5.42
     }
   ],
   "warnings": []
