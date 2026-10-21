@@ -135,7 +135,7 @@
       "rate": 18.4823
     }
   },
-  "generated_at": "2026-10-21T17:57:52+00:00",
+  "generated_at": "2026-10-21T21:33:34+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-10-21",
-        "rate": 7.38
+        "rate": 7.4
       }
     ]
   },
@@ -321,31 +321,31 @@
       "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html"
     },
     {
-      "published": "Wed, 21 Oct 2026 16:34:00",
+      "published": "Wed, 21 Oct 2026 21:31:00",
       "source": "MarketWatch",
-      "title": "Medicare is a bargain. What America can\u2019t afford is private health insurance.",
-      "url": "https://www.marketwatch.com/story/medicare-is-a-bargain-what-america-cant-afford-is-private-health-insurance-8a834023?mod=mw_rss_topstories"
+      "title": "Trump says data centers should generate their own electricity \u2014 but experts say only states can mandate that",
+      "url": "https://www.marketwatch.com/story/trump-says-data-centers-should-generate-their-own-electricity-but-experts-say-only-states-can-mandate-that-415dcaad?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 15:59:00",
+      "published": "Wed, 21 Oct 2026 21:14:00",
       "source": "MarketWatch",
-      "title": "Polymarket traders see a 10% chance the AI bubble bursts before New Year\u2019s Day",
-      "url": "https://www.marketwatch.com/story/polymarket-traders-see-a-10-chance-the-ai-bubble-bursts-before-new-years-day-ad33258b?mod=mw_rss_topstories"
+      "title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+      "url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 15:50:00",
+      "published": "Wed, 21 Oct 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "Elon Musk promised a SpaceX share to every kid in America \u2014 don\u2019t hold your breath",
-      "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories"
+      "title": "\u2018I don\u2019t feel sorry for myself\u2019: I\u2019m 64 and will be renting for the rest of my life. Is that so bad?",
+      "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 15:27:00",
+      "published": "Wed, 21 Oct 2026 20:59:00",
       "source": "MarketWatch",
-      "title": "AI stocks are probably in a bubble \u2014 but might be worth holding on to, says Citadel\u2019s Ken Griffin",
-      "url": "https://www.marketwatch.com/story/ai-stocks-are-probably-in-a-bubble-but-might-be-worth-holding-onto-says-citadels-ken-griffin-87f535ce?mod=mw_rss_topstories"
+      "title": "7 healthcare stocks that stand out as investors pay up for the sector",
+      "url": "https://www.marketwatch.com/story/7-healthcare-stocks-that-stand-out-as-investors-pay-up-for-the-sector-d9b0c173?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 15:15:00",
+      "published": "Wed, 21 Oct 2026 20:31:00",
       "source": "MarketWatch",
       "title": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
       "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories"
@@ -354,8 +354,8 @@
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Oct 21 2026",
-      "change": -0.02,
-      "rate": 7.03
+      "change": -0.01,
+      "rate": 7.04
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Oct 21 2026",
-      "change": -0.02,
+      "change": 0.0,
       "rate": 6.52
     }
   },
@@ -394,35 +394,35 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.1
+      "yield": 4.09
     },
     {
       "tenor": "3M",
-      "yield": 4.26
+      "yield": 4.25
     },
     {
       "tenor": "6M",
-      "yield": 4.36
+      "yield": 4.35
     },
     {
       "tenor": "1Y",
-      "yield": 4.51
+      "yield": 4.52
     },
     {
       "tenor": "2Y",
-      "yield": 4.79
+      "yield": 4.81
     },
     {
       "tenor": "5Y",
-      "yield": 4.94
+      "yield": 4.95
     },
     {
       "tenor": "7Y",
-      "yield": 5.02
+      "yield": 5.03
     },
     {
       "tenor": "10Y",
-      "yield": 5.12
+      "yield": 5.13
     },
     {
       "tenor": "20Y",
