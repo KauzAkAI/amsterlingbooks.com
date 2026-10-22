@@ -135,7 +135,7 @@
       "rate": 18.7613
     }
   },
-  "generated_at": "2026-10-22T17:55:03+00:00",
+  "generated_at": "2026-10-22T21:24:17+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -222,7 +222,7 @@
       },
       {
         "date": "2026-10-22",
-        "rate": 7.36
+        "rate": 7.3
       },
       {
         "date": "2026-10-22",
@@ -321,41 +321,41 @@
       "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
     },
     {
+      "published": "Thu, 22 Oct 2026 21:19:00",
+      "source": "MarketWatch",
+      "title": "3 big reasons Micron and other chip stocks fell hard on Thursday",
+      "url": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 22 Oct 2026 20:46:00",
+      "source": "MarketWatch",
+      "title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
+      "url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 22 Oct 2026 20:14:00",
+      "source": "MarketWatch",
+      "title": "Moderna\u2019s cancer vaccine hits its targets, but a data leak rattled investors and the stock tumbled",
+      "url": "https://www.marketwatch.com/story/modernas-stock-tumbles-after-reported-leak-of-data-for-cancer-vaccine-dcc897c1?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 22 Oct 2026 19:25:00",
+      "source": "MarketWatch",
+      "title": "Is getting a wedding band from Quince a bad idea? \u2018It\u2019s a third of the price.\u2019",
+      "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Thu, 22 Oct 2026 17:29:00",
       "source": "MarketWatch",
       "title": "Elon Musk promised a SpaceX share to every kid in America \u2014 don\u2019t hold your breath",
       "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 22 Oct 2026 17:24:00",
-      "source": "MarketWatch",
-      "title": "The Social Security Administration wants more babies signed up for \u2018Trump accounts.\u2019 But there\u2019s still a catch.",
-      "url": "https://www.marketwatch.com/story/the-social-security-administration-wants-more-babies-signed-up-for-trump-accounts-but-theres-still-a-catch-4096f16e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 22 Oct 2026 17:21:00",
-      "source": "MarketWatch",
-      "title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
-      "url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 22 Oct 2026 17:16:00",
-      "source": "MarketWatch",
-      "title": "\u2018AI is on trial\u2019: Bond yields sink below 5% as investors look for safety",
-      "url": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 22 Oct 2026 16:48:00",
-      "source": "MarketWatch",
-      "title": "Young Americans are giving up their cars. It\u2019s a path to financial freedom, for some.",
-      "url": "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Oct 22 2026",
-      "change": -0.04,
-      "rate": 7.0
+      "change": -0.08,
+      "rate": 6.96
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Oct 22 2026",
-      "change": -0.04,
+      "change": -0.1,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.09
+      "yield": 4.11
     },
     {
       "tenor": "3M",
-      "yield": 4.25
+      "yield": 4.22
     },
     {
       "tenor": "6M",
-      "yield": 4.35
+      "yield": 4.29
     },
     {
       "tenor": "1Y",
-      "yield": 4.52
+      "yield": 4.41
     },
     {
       "tenor": "2Y",
-      "yield": 4.81
+      "yield": 4.65
     },
     {
       "tenor": "5Y",
-      "yield": 4.95
+      "yield": 4.78
     },
     {
       "tenor": "7Y",
-      "yield": 5.03
+      "yield": 4.86
     },
     {
       "tenor": "10Y",
-      "yield": 5.13
+      "yield": 4.96
     },
     {
       "tenor": "20Y",
-      "yield": 5.47
+      "yield": 5.32
     },
     {
       "tenor": "30Y",
-      "yield": 5.42
+      "yield": 5.29
     }
   ],
   "warnings": []
