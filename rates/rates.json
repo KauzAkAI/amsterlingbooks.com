@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4046
+      "rate": 1.4034
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6761
+      "rate": 6.6743
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89015
+      "rate": 0.89246
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74617
+      "rate": 0.74761
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.47
+      "rate": 94.82
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.88
+      "rate": 157.05
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1325.57
+      "rate": 1324.63
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.4823
+      "rate": 18.7613
     }
   },
-  "generated_at": "2026-10-21T21:33:34+00:00",
+  "generated_at": "2026-10-22T17:55:03+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 7.3
       },
       {
-        "date": "2026-10-01",
-        "rate": 7.28
-      },
-      {
         "date": "2026-10-07",
         "rate": 7.49
       },
       {
         "date": "2026-10-08",
         "rate": 7.4
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 7.45
       },
       {
         "date": "2026-10-14",
@@ -227,6 +219,14 @@
       {
         "date": "2026-10-21",
         "rate": 7.4
+      },
+      {
+        "date": "2026-10-22",
+        "rate": 7.36
+      },
+      {
+        "date": "2026-10-22",
+        "rate": 7.32
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Thu, 22 Oct 2026 16:40:09",
+      "source": "CNBC",
+      "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+      "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
+    },
+    {
+      "published": "Thu, 22 Oct 2026 13:18:36",
+      "source": "CNBC",
+      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+      "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
+    },
+    {
       "published": "Wed, 21 Oct 2026 07:50:10",
       "source": "CNBC",
       "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
     },
     {
-      "published": "Mon, 19 Oct 2026 18:36:21",
-      "source": "CNBC",
-      "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
-      "url": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
-    },
-    {
-      "published": "Mon, 19 Oct 2026 08:23:33",
-      "source": "CNBC",
-      "title": "India\u2019s finance minister says market liquidity makes it easier for investors to exit",
-      "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html"
-    },
-    {
-      "published": "Wed, 21 Oct 2026 21:31:00",
+      "published": "Thu, 22 Oct 2026 17:29:00",
       "source": "MarketWatch",
-      "title": "Trump says data centers should generate their own electricity \u2014 but experts say only states can mandate that",
-      "url": "https://www.marketwatch.com/story/trump-says-data-centers-should-generate-their-own-electricity-but-experts-say-only-states-can-mandate-that-415dcaad?mod=mw_rss_topstories"
+      "title": "Elon Musk promised a SpaceX share to every kid in America \u2014 don\u2019t hold your breath",
+      "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 21:14:00",
+      "published": "Thu, 22 Oct 2026 17:24:00",
       "source": "MarketWatch",
-      "title": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
-      "url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories"
+      "title": "The Social Security Administration wants more babies signed up for \u2018Trump accounts.\u2019 But there\u2019s still a catch.",
+      "url": "https://www.marketwatch.com/story/the-social-security-administration-wants-more-babies-signed-up-for-trump-accounts-but-theres-still-a-catch-4096f16e?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 21:00:00",
+      "published": "Thu, 22 Oct 2026 17:21:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t feel sorry for myself\u2019: I\u2019m 64 and will be renting for the rest of my life. Is that so bad?",
-      "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories"
+      "title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
+      "url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 20:59:00",
+      "published": "Thu, 22 Oct 2026 17:16:00",
       "source": "MarketWatch",
-      "title": "7 healthcare stocks that stand out as investors pay up for the sector",
-      "url": "https://www.marketwatch.com/story/7-healthcare-stocks-that-stand-out-as-investors-pay-up-for-the-sector-d9b0c173?mod=mw_rss_topstories"
+      "title": "\u2018AI is on trial\u2019: Bond yields sink below 5% as investors look for safety",
+      "url": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 21 Oct 2026 20:31:00",
+      "published": "Thu, 22 Oct 2026 16:48:00",
       "source": "MarketWatch",
-      "title": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
-      "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories"
+      "title": "Young Americans are giving up their cars. It\u2019s a path to financial freedom, for some.",
+      "url": "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 21 2026",
-      "change": -0.01,
-      "rate": 7.04
+      "asof_label": "Oct 22 2026",
+      "change": -0.04,
+      "rate": 7.0
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 21 2026",
-      "change": 0.0,
+      "asof_label": "Oct 22 2026",
+      "change": -0.04,
       "rate": 6.52
     }
   },
