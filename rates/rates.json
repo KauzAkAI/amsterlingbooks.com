@@ -135,7 +135,7 @@
       "rate": 18.7823
     }
   },
-  "generated_at": "2026-10-23T17:49:31+00:00",
+  "generated_at": "2026-10-23T20:49:14+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-09-30",
-        "rate": 7.3
-      },
-      {
         "date": "2026-10-07",
         "rate": 7.49
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-10-21",
         "rate": 7.4
+      },
+      {
+        "date": "2026-10-21",
+        "rate": 7.41
       },
       {
         "date": "2026-10-22",
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
     },
     {
-      "published": "Fri, 23 Oct 2026 17:00:00",
+      "published": "Fri, 23 Oct 2026 20:19:00",
       "source": "MarketWatch",
-      "title": "\u2018Some people did everything right\u2019: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-      "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories"
+      "title": "The U.S. economy is great by this measure, and the good times aren\u2019t over. So why are Americans so sour?",
+      "url": "https://www.marketwatch.com/story/the-u-s-economy-is-great-by-this-measure-and-the-good-times-arent-over-so-why-are-americans-so-sour-4be897db?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 16:41:00",
+      "published": "Fri, 23 Oct 2026 20:19:00",
       "source": "MarketWatch",
-      "title": "Walmart, Best Buy and other stores now use digital price tags. Critics say they could lead to different prices for different shoppers.",
-      "url": "https://www.marketwatch.com/story/walmart-best-buy-and-other-stores-now-use-digital-price-tags-critics-say-they-could-lead-to-different-prices-for-different-shoppers-19e2f4da?mod=mw_rss_topstories"
+      "title": "Oil markets are on edge ahead of the weekend, as midterm elections near and fresh U.S. strikes on Iran are predicted",
+      "url": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 15:56:00",
+      "published": "Fri, 23 Oct 2026 20:02:00",
       "source": "MarketWatch",
-      "title": "Retire on 8% a year with little or no risk? How to use annuities the right way.",
-      "url": "https://www.marketwatch.com/story/retire-on-8-a-year-with-little-or-no-risk-how-to-use-annuities-the-right-way-06ababc5?mod=mw_rss_topstories"
+      "title": "I want to pay off $4,500 in credit-card debt in 2 months. Is this possible?",
+      "url": "https://www.marketwatch.com/story/i-want-to-pay-off-4-500-in-credit-card-debt-in-2-months-is-this-possible-059d9a21?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 15:31:00",
+      "published": "Fri, 23 Oct 2026 20:00:00",
       "source": "MarketWatch",
       "title": "My spouse was awarded $90,000 from my 401(k) in our divorce. How is that fair?",
       "url": "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 15:00:00",
+      "published": "Fri, 23 Oct 2026 19:49:00",
       "source": "MarketWatch",
-      "title": "Everyone\u2019s talking about Roth conversions, but here\u2019s how few people really do them \u2014 and why you shouldn\u2019t have FOMO about it",
-      "url": "https://www.marketwatch.com/story/everyones-talking-about-roth-conversions-but-heres-how-few-people-really-do-them-and-why-you-shouldnt-have-fomo-about-it-1b50db07?mod=mw_rss_topstories"
+      "title": "Even the wealthy increasingly want all-inclusive resorts",
+      "url": "https://www.marketwatch.com/story/even-the-wealthy-increasingly-want-all-inclusive-resorts-118caa9b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.29
+      "yield": 4.3
     },
     {
       "tenor": "1Y",
-      "yield": 4.41
+      "yield": 4.44
     },
     {
       "tenor": "2Y",
-      "yield": 4.65
+      "yield": 4.69
     },
     {
       "tenor": "5Y",
-      "yield": 4.78
+      "yield": 4.82
     },
     {
       "tenor": "7Y",
-      "yield": 4.86
+      "yield": 4.89
     },
     {
       "tenor": "10Y",
-      "yield": 4.96
+      "yield": 5.0
     },
     {
       "tenor": "20Y",
-      "yield": 5.32
+      "yield": 5.37
     },
     {
       "tenor": "30Y",
-      "yield": 5.29
+      "yield": 5.33
     }
   ],
   "warnings": []
