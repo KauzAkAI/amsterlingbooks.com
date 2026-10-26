@@ -135,7 +135,7 @@
       "rate": 18.6155
     }
   },
-  "generated_at": "2026-10-26T19:07:55+00:00",
+  "generated_at": "2026-10-26T23:07:01+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
     },
     {
-      "published": "Mon, 26 Oct 2026 18:24:00",
+      "published": "Mon, 26 Oct 2026 22:30:00",
       "source": "MarketWatch",
-      "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
-      "url": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories"
+      "title": "\u2018You need only watch episodes of Judge Judy\u2019: I\u2019m in my 70s. Why do people keep making the same avoidable financial mistakes?",
+      "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 18:15:00",
+      "published": "Mon, 26 Oct 2026 22:10:00",
       "source": "MarketWatch",
-      "title": "My wife has only $80,000 saved for retirement. I have $2.2 million. Am I wrong to be shocked?",
-      "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories"
+      "title": "Dividend stocks are having an excellent October as tech sector struggles",
+      "url": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 18:10:00",
+      "published": "Mon, 26 Oct 2026 22:03:00",
       "source": "MarketWatch",
-      "title": "These energy stocks are poised to profit from an imminent AI power crunch",
-      "url": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories"
+      "title": "Options traders are seizing control of the S&P 500",
+      "url": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 17:32:00",
+      "published": "Mon, 26 Oct 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "Meet the financial-literacy teacher who helps high-school students open their own Roth IRAs",
-      "url": "https://www.marketwatch.com/story/meet-the-financial-literacy-teacher-who-helps-high-school-students-open-their-own-roth-iras-652d56a8?mod=mw_rss_topstories"
+      "title": "TikTok parent ByteDance\u2019s chatbot is now giving travel-booking sites a run for their money. And yours.",
+      "url": "https://www.marketwatch.com/story/tiktok-parent-bytedances-chatbot-is-now-giving-travel-booking-sites-a-run-for-their-money-and-yours-028e4aa0?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 17:19:00",
+      "published": "Mon, 26 Oct 2026 21:55:00",
       "source": "MarketWatch",
-      "title": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
-      "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories"
+      "title": "Over 40% of Americans are heading toward retirement \u2018blind\u2019 \u2014 with no plan",
+      "url": "https://www.marketwatch.com/story/over-40-of-americans-are-heading-toward-retirement-blind-with-no-plan-e49b502f?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -402,23 +402,23 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.3
+      "yield": 4.35
     },
     {
       "tenor": "1Y",
-      "yield": 4.44
+      "yield": 4.47
     },
     {
       "tenor": "2Y",
-      "yield": 4.69
+      "yield": 4.68
     },
     {
       "tenor": "5Y",
-      "yield": 4.82
+      "yield": 4.84
     },
     {
       "tenor": "7Y",
-      "yield": 4.89
+      "yield": 4.91
     },
     {
       "tenor": "10Y",
@@ -426,11 +426,11 @@
     },
     {
       "tenor": "20Y",
-      "yield": 5.37
+      "yield": 5.35
     },
     {
       "tenor": "30Y",
-      "yield": 5.33
+      "yield": 5.31
     }
   ],
   "warnings": []
