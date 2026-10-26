@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3995
+      "rate": 1.4028
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6702
+      "rate": 6.6681
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89342
+      "rate": 0.89381
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74804
+      "rate": 0.7492
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.94
+      "rate": 95.18
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 156.8
+      "rate": 157.45
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1324.45
+      "rate": 1325.28
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.7823
+      "rate": 18.6155
     }
   },
-  "generated_at": "2026-10-23T23:40:40+00:00",
+  "generated_at": "2026-10-26T19:07:55+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.4
       },
       {
-        "date": "2026-10-16",
-        "rate": 7.37
-      },
-      {
         "date": "2026-10-19",
         "rate": 7.43
       },
@@ -226,6 +222,10 @@
       },
       {
         "date": "2026-10-23",
+        "rate": 7.33
+      },
+      {
+        "date": "2026-10-26",
         "rate": 7.33
       }
     ]
@@ -321,49 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
     },
     {
-      "published": "Fri, 23 Oct 2026 22:49:00",
+      "published": "Mon, 26 Oct 2026 18:24:00",
       "source": "MarketWatch",
-      "title": "\u2018I don\u2019t feel sorry for myself\u2019: I\u2019m 64 and will be renting for the rest of my life. Is that so bad?",
-      "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories"
+      "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
+      "url": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 22:00:00",
+      "published": "Mon, 26 Oct 2026 18:15:00",
       "source": "MarketWatch",
-      "title": "Will Anthropic pull off a November IPO? Time is running out to file key paperwork.",
-      "url": "https://www.marketwatch.com/story/will-anthropic-pull-off-a-november-ipo-time-is-running-out-to-file-key-paperwork-52677343?mod=mw_rss_topstories"
+      "title": "My wife has only $80,000 saved for retirement. I have $2.2 million. Am I wrong to be shocked?",
+      "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 21:46:00",
+      "published": "Mon, 26 Oct 2026 18:10:00",
       "source": "MarketWatch",
-      "title": "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn\u2019t work out.",
-      "url": "https://www.marketwatch.com/story/investors-piled-a-record-sum-into-a-leveraged-semiconductor-etf-last-week-things-didnt-work-out-4680b2f3?mod=mw_rss_topstories"
+      "title": "These energy stocks are poised to profit from an imminent AI power crunch",
+      "url": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 21:13:00",
+      "published": "Mon, 26 Oct 2026 17:32:00",
       "source": "MarketWatch",
-      "title": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
-      "url": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories"
+      "title": "Meet the financial-literacy teacher who helps high-school students open their own Roth IRAs",
+      "url": "https://www.marketwatch.com/story/meet-the-financial-literacy-teacher-who-helps-high-school-students-open-their-own-roth-iras-652d56a8?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 23 Oct 2026 21:11:00",
+      "published": "Mon, 26 Oct 2026 17:19:00",
       "source": "MarketWatch",
-      "title": "The mobile ambitions of SpaceX are hitting telecom stocks again. Here\u2019s what the latest developments mean.",
-      "url": "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories"
+      "title": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
+      "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 23 2026",
-      "change": 0.02,
-      "rate": 6.98
+      "asof_label": "Oct 26 2026",
+      "change": 0.01,
+      "rate": 6.99
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 23 2026",
-      "change": 0.03,
+      "asof_label": "Oct 26 2026",
+      "change": 0.0,
       "rate": 6.52
     }
   },
