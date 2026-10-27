@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4028
+      "rate": 1.4023
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6681
+      "rate": 6.6675
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89381
+      "rate": 0.89686
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7492
+      "rate": 0.7503
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.18
+      "rate": 95.12
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.45
+      "rate": 157.82
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1325.28
+      "rate": 1327.75
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6155
+      "rate": 18.6368
     }
   },
-  "generated_at": "2026-10-26T23:07:01+00:00",
+  "generated_at": "2026-10-27T18:37:51+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.4
       },
       {
-        "date": "2026-10-19",
-        "rate": 7.43
-      },
-      {
         "date": "2026-10-20",
         "rate": 7.4
       },
@@ -226,6 +222,10 @@
       },
       {
         "date": "2026-10-26",
+        "rate": 7.33
+      },
+      {
+        "date": "2026-10-27",
         "rate": 7.33
       }
     ]
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 27 Oct 2026 16:15:35",
+      "source": "CNBC",
+      "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
+      "url": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html"
+    },
+    {
+      "published": "Tue, 27 Oct 2026 15:51:00",
+      "source": "CNBC",
+      "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+      "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html"
+    },
+    {
       "published": "Thu, 22 Oct 2026 16:40:09",
       "source": "CNBC",
       "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
@@ -309,60 +321,48 @@
       "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
     },
     {
-      "published": "Wed, 21 Oct 2026 01:01:01",
-      "source": "CNBC",
-      "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
-      "url": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html"
-    },
-    {
-      "published": "Wed, 21 Oct 2026 11:20:58",
-      "source": "CNBC",
-      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-      "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
-    },
-    {
-      "published": "Mon, 26 Oct 2026 22:30:00",
+      "published": "Tue, 27 Oct 2026 17:59:00",
       "source": "MarketWatch",
-      "title": "\u2018You need only watch episodes of Judge Judy\u2019: I\u2019m in my 70s. Why do people keep making the same avoidable financial mistakes?",
-      "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories"
+      "title": "The big reason Boeing\u2019s stock is falling so hard after earnings",
+      "url": "https://www.marketwatch.com/story/the-big-reason-boeings-stock-is-falling-so-hard-after-earnings-d31b400d?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 22:10:00",
+      "published": "Tue, 27 Oct 2026 17:53:00",
       "source": "MarketWatch",
-      "title": "Dividend stocks are having an excellent October as tech sector struggles",
-      "url": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories"
+      "title": "\u2018CryptoDad\u2019 on stablecoins, bitcoin\u2019s role in a portfolio and why he does not directly own any crypto",
+      "url": "https://www.marketwatch.com/story/cryptodad-on-stablecoins-bitcoins-role-in-a-portfolio-and-why-he-does-not-directly-own-any-crypto-72472bc1?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 22:03:00",
+      "published": "Tue, 27 Oct 2026 16:52:00",
       "source": "MarketWatch",
-      "title": "Options traders are seizing control of the S&P 500",
-      "url": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories"
+      "title": "JetBlue has been losing money for years. It just charted a path to profitability.",
+      "url": "https://www.marketwatch.com/story/jetblue-has-been-losing-money-for-years-it-just-charted-a-path-to-profitability-03be75c8?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 22:00:00",
+      "published": "Tue, 27 Oct 2026 16:38:00",
       "source": "MarketWatch",
-      "title": "TikTok parent ByteDance\u2019s chatbot is now giving travel-booking sites a run for their money. And yours.",
-      "url": "https://www.marketwatch.com/story/tiktok-parent-bytedances-chatbot-is-now-giving-travel-booking-sites-a-run-for-their-money-and-yours-028e4aa0?mod=mw_rss_topstories"
+      "title": "When will Anthropic go public? Here\u2019s what to know about the IPO timeline.",
+      "url": "https://www.marketwatch.com/story/when-will-anthropic-go-public-heres-what-to-know-about-the-ipo-timeline-431eca78?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 26 Oct 2026 21:55:00",
+      "published": "Tue, 27 Oct 2026 16:24:00",
       "source": "MarketWatch",
-      "title": "Over 40% of Americans are heading toward retirement \u2018blind\u2019 \u2014 with no plan",
-      "url": "https://www.marketwatch.com/story/over-40-of-americans-are-heading-toward-retirement-blind-with-no-plan-e49b502f?mod=mw_rss_topstories"
+      "title": "Bond investors are starting to say \u2018anything but tech.\u2019 What that means for the AI boom.",
+      "url": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 26 2026",
-      "change": 0.01,
-      "rate": 6.99
+      "asof_label": "Oct 27 2026",
+      "change": 0.02,
+      "rate": 7.01
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 26 2026",
+      "asof_label": "Oct 27 2026",
       "change": 0.0,
       "rate": 6.52
     }
