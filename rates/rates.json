@@ -135,7 +135,7 @@
       "rate": 18.6368
     }
   },
-  "generated_at": "2026-10-27T18:37:51+00:00",
+  "generated_at": "2026-10-27T22:37:56+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
     },
     {
-      "published": "Tue, 27 Oct 2026 17:59:00",
+      "published": "Tue, 27 Oct 2026 22:18:00",
       "source": "MarketWatch",
-      "title": "The big reason Boeing\u2019s stock is falling so hard after earnings",
-      "url": "https://www.marketwatch.com/story/the-big-reason-boeings-stock-is-falling-so-hard-after-earnings-d31b400d?mod=mw_rss_topstories"
+      "title": "\u2018She\u2019s living the dream\u2019: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
+      "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 17:53:00",
+      "published": "Tue, 27 Oct 2026 21:41:00",
       "source": "MarketWatch",
-      "title": "\u2018CryptoDad\u2019 on stablecoins, bitcoin\u2019s role in a portfolio and why he does not directly own any crypto",
-      "url": "https://www.marketwatch.com/story/cryptodad-on-stablecoins-bitcoins-role-in-a-portfolio-and-why-he-does-not-directly-own-any-crypto-72472bc1?mod=mw_rss_topstories"
+      "title": "CoreWeave and other AI stocks rise as Anthropic restores the market\u2019s faith in sustained spending",
+      "url": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 16:52:00",
+      "published": "Tue, 27 Oct 2026 21:29:00",
       "source": "MarketWatch",
-      "title": "JetBlue has been losing money for years. It just charted a path to profitability.",
-      "url": "https://www.marketwatch.com/story/jetblue-has-been-losing-money-for-years-it-just-charted-a-path-to-profitability-03be75c8?mod=mw_rss_topstories"
+      "title": "As Trump touts energy companies\u2019 fortunes, U.S. consumers face the most expensive year for gas prices ever",
+      "url": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 16:38:00",
+      "published": "Tue, 27 Oct 2026 21:28:00",
       "source": "MarketWatch",
-      "title": "When will Anthropic go public? Here\u2019s what to know about the IPO timeline.",
-      "url": "https://www.marketwatch.com/story/when-will-anthropic-go-public-heres-what-to-know-about-the-ipo-timeline-431eca78?mod=mw_rss_topstories"
+      "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
+      "url": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 16:24:00",
+      "published": "Tue, 27 Oct 2026 21:20:00",
       "source": "MarketWatch",
-      "title": "Bond investors are starting to say \u2018anything but tech.\u2019 What that means for the AI boom.",
-      "url": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories"
+      "title": "Retail traders buy the dip on chip stocks \u2014 but Robinhood gets burned by the crypto market",
+      "url": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.11
+      "yield": 4.1
     },
     {
       "tenor": "3M",
@@ -402,19 +402,19 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.35
+      "yield": 4.34
     },
     {
       "tenor": "1Y",
-      "yield": 4.47
+      "yield": 4.5
     },
     {
       "tenor": "2Y",
-      "yield": 4.68
+      "yield": 4.7
     },
     {
       "tenor": "5Y",
-      "yield": 4.84
+      "yield": 4.82
     },
     {
       "tenor": "7Y",
@@ -422,15 +422,15 @@
     },
     {
       "tenor": "10Y",
-      "yield": 5.0
+      "yield": 4.99
     },
     {
       "tenor": "20Y",
-      "yield": 5.35
+      "yield": 5.34
     },
     {
       "tenor": "30Y",
-      "yield": 5.31
+      "yield": 5.3
     }
   ],
   "warnings": []
