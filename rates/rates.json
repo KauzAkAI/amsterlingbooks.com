@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4023
+      "rate": 1.4047
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6675
+      "rate": 6.6664
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89686
+      "rate": 0.89823
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7503
+      "rate": 0.75258
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.12
+      "rate": 95.22
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.82
+      "rate": 157.96
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1327.75
+      "rate": 1340.47
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6368
+      "rate": 18.6311
     }
   },
-  "generated_at": "2026-10-28T01:43:46+00:00",
+  "generated_at": "2026-10-28T18:45:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.4
       },
       {
-        "date": "2026-10-20",
-        "rate": 7.4
-      },
-      {
         "date": "2026-10-21",
         "rate": 7.4
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-10-27",
         "rate": 7.33
+      },
+      {
+        "date": "2026-10-28",
+        "rate": 7.35
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Wed, 28 Oct 2026 15:39:14",
+      "source": "CNBC",
+      "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+      "url": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html"
+    },
+    {
       "published": "Tue, 27 Oct 2026 16:15:35",
       "source": "CNBC",
       "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
     },
     {
-      "published": "Wed, 21 Oct 2026 07:50:10",
-      "source": "CNBC",
-      "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
-      "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
+      "published": "Wed, 28 Oct 2026 18:30:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m planning a trip to Europe. Is it dumb to take travel advice from influencers?",
+      "url": "https://www.marketwatch.com/story/im-planning-a-trip-to-europe-is-it-dumb-to-take-travel-advice-from-influencers-f25ae756?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 22:51:00",
+      "published": "Wed, 28 Oct 2026 17:44:00",
       "source": "MarketWatch",
-      "title": "Retail traders buy the dip on chip stocks \u2014 but Robinhood gets burned by the crypto market",
-      "url": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories"
+      "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
+      "url": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 22:18:00",
+      "published": "Wed, 28 Oct 2026 17:24:00",
       "source": "MarketWatch",
-      "title": "\u2018She\u2019s living the dream\u2019: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
-      "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories"
+      "title": "Wendy\u2019s buyout offer suggests the burger chain\u2019s overhaul could be very expensive",
+      "url": "https://www.marketwatch.com/story/wendys-buyout-offer-suggests-the-burger-chains-overhaul-could-be-very-expensive-ff2c92bb?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 21:41:00",
+      "published": "Wed, 28 Oct 2026 16:57:00",
       "source": "MarketWatch",
-      "title": "CoreWeave and other AI stocks rise as Anthropic restores the market\u2019s faith in sustained spending",
-      "url": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories"
+      "title": "The U.S. government will no longer penalize American companies for making six popular peptides",
+      "url": "https://www.marketwatch.com/story/trump-administration-clears-the-way-for-production-of-peptides-like-bpc-157-and-tb-500-28ac2d11?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 27 Oct 2026 21:29:00",
+      "published": "Wed, 28 Oct 2026 16:49:00",
       "source": "MarketWatch",
-      "title": "As Trump touts energy companies\u2019 fortunes, U.S. consumers face the most expensive year for gas prices ever",
-      "url": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 27 Oct 2026 21:28:00",
-      "source": "MarketWatch",
-      "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
-      "url": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories"
+      "title": "Healthcare stocks are on their biggest hot streak in a generation. Think twice before chasing the rally.",
+      "url": "https://www.marketwatch.com/story/healthcare-stocks-are-on-their-biggest-hot-streak-in-a-generation-think-twice-before-chasing-the-rally-a043adfe?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 27 2026",
-      "change": 0.02,
-      "rate": 7.01
+      "asof_label": "Oct 28 2026",
+      "change": -0.01,
+      "rate": 7.0
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 27 2026",
-      "change": 0.0,
+      "asof_label": "Oct 28 2026",
+      "change": 0.02,
       "rate": 6.52
     }
   },
