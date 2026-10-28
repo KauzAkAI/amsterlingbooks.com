@@ -135,7 +135,7 @@
       "rate": 18.6311
     }
   },
-  "generated_at": "2026-10-28T18:45:06+00:00",
+  "generated_at": "2026-10-28T22:53:51+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Wed, 28 Oct 2026 21:31:46",
+      "source": "CNBC",
+      "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+      "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
+    },
+    {
+      "published": "Wed, 28 Oct 2026 21:06:37",
+      "source": "CNBC",
+      "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+      "url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html"
+    },
+    {
       "published": "Wed, 28 Oct 2026 15:39:14",
       "source": "CNBC",
       "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
@@ -309,46 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html"
     },
     {
-      "published": "Thu, 22 Oct 2026 16:40:09",
-      "source": "CNBC",
-      "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
-      "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
-    },
-    {
-      "published": "Fri, 23 Oct 2026 20:49:42",
-      "source": "CNBC",
-      "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-      "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
-    },
-    {
-      "published": "Wed, 28 Oct 2026 18:30:00",
+      "published": "Wed, 28 Oct 2026 22:41:00",
       "source": "MarketWatch",
-      "title": "I\u2019m planning a trip to Europe. Is it dumb to take travel advice from influencers?",
-      "url": "https://www.marketwatch.com/story/im-planning-a-trip-to-europe-is-it-dumb-to-take-travel-advice-from-influencers-f25ae756?mod=mw_rss_topstories"
+      "title": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
+      "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 28 Oct 2026 17:44:00",
+      "published": "Wed, 28 Oct 2026 22:25:00",
       "source": "MarketWatch",
-      "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
-      "url": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories"
+      "title": "Chipotle now has more demand from lower-income diners than higher-income ones",
+      "url": "https://www.marketwatch.com/story/chipotle-expects-modestly-higher-sales-this-year-as-drive-thru-chipotlanes-come-to-more-stores-4f255bbc?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 28 Oct 2026 17:24:00",
+      "published": "Wed, 28 Oct 2026 22:08:00",
       "source": "MarketWatch",
-      "title": "Wendy\u2019s buyout offer suggests the burger chain\u2019s overhaul could be very expensive",
-      "url": "https://www.marketwatch.com/story/wendys-buyout-offer-suggests-the-burger-chains-overhaul-could-be-very-expensive-ff2c92bb?mod=mw_rss_topstories"
+      "title": "Lumentum\u2019s stock pops as investors cheer a possible sale to Marvell",
+      "url": "https://www.marketwatch.com/story/lumentums-stock-pops-as-investors-cheer-a-possible-sale-to-marvell-07c1d0e8?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 28 Oct 2026 16:57:00",
+      "published": "Wed, 28 Oct 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "The U.S. government will no longer penalize American companies for making six popular peptides",
-      "url": "https://www.marketwatch.com/story/trump-administration-clears-the-way-for-production-of-peptides-like-bpc-157-and-tb-500-28ac2d11?mod=mw_rss_topstories"
+      "title": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who\u2019s to blame?",
+      "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 28 Oct 2026 16:49:00",
+      "published": "Wed, 28 Oct 2026 21:45:00",
       "source": "MarketWatch",
-      "title": "Healthcare stocks are on their biggest hot streak in a generation. Think twice before chasing the rally.",
-      "url": "https://www.marketwatch.com/story/healthcare-stocks-are-on-their-biggest-hot-streak-in-a-generation-think-twice-before-chasing-the-rally-a043adfe?mod=mw_rss_topstories"
+      "title": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
+      "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.1
+      "yield": 4.07
     },
     {
       "tenor": "3M",
-      "yield": 4.22
+      "yield": 4.18
     },
     {
       "tenor": "6M",
-      "yield": 4.34
+      "yield": 4.32
     },
     {
       "tenor": "1Y",
-      "yield": 4.5
+      "yield": 4.47
     },
     {
       "tenor": "2Y",
-      "yield": 4.7
+      "yield": 4.67
     },
     {
       "tenor": "5Y",
-      "yield": 4.82
+      "yield": 4.85
     },
     {
       "tenor": "7Y",
-      "yield": 4.91
+      "yield": 4.95
     },
     {
       "tenor": "10Y",
-      "yield": 4.99
+      "yield": 5.05
     },
     {
       "tenor": "20Y",
-      "yield": 5.34
+      "yield": 5.41
     },
     {
       "tenor": "30Y",
-      "yield": 5.3
+      "yield": 5.37
     }
   ],
   "warnings": []
