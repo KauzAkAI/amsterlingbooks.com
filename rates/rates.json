@@ -135,7 +135,7 @@
       "rate": 18.6368
     }
   },
-  "generated_at": "2026-10-27T22:37:56+00:00",
+  "generated_at": "2026-10-28T01:43:46+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
     },
     {
+      "published": "Tue, 27 Oct 2026 22:51:00",
+      "source": "MarketWatch",
+      "title": "Retail traders buy the dip on chip stocks \u2014 but Robinhood gets burned by the crypto market",
+      "url": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories"
+    },
+    {
       "published": "Tue, 27 Oct 2026 22:18:00",
       "source": "MarketWatch",
       "title": "\u2018She\u2019s living the dream\u2019: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
       "url": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 27 Oct 2026 21:20:00",
-      "source": "MarketWatch",
-      "title": "Retail traders buy the dip on chip stocks \u2014 but Robinhood gets burned by the crypto market",
-      "url": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories"
     }
   ],
   "rates": {
