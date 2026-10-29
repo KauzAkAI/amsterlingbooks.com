@@ -135,7 +135,7 @@
       "rate": 18.7475
     }
   },
-  "generated_at": "2026-10-29T18:54:19+00:00",
+  "generated_at": "2026-10-29T23:08:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
     },
     {
-      "published": "Thu, 29 Oct 2026 18:50:00",
+      "published": "Thu, 29 Oct 2026 22:45:00",
       "source": "MarketWatch",
-      "title": "Why Alphabet\u2019s stock is on track for its worst day ever after the latest results",
-      "url": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories"
+      "title": "My abusive ex-husband promised $20,000 for our kids\u2019 education. Now he refuses to pay. Is he legally obligated?",
+      "url": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 18:42:00",
+      "published": "Thu, 29 Oct 2026 22:01:00",
       "source": "MarketWatch",
-      "title": "It\u2019s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
-      "url": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories"
+      "title": "The midterms are crucial to the future of Social Security \u2014 no matter how old you are",
+      "url": "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 18:30:00",
+      "published": "Thu, 29 Oct 2026 22:00:00",
       "source": "MarketWatch",
       "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
       "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 18:16:00",
+      "published": "Thu, 29 Oct 2026 21:52:00",
       "source": "MarketWatch",
-      "title": "\u2018Fancy cars hold no appeal\u2019: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
-      "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories"
+      "title": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
+      "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 17:59:00",
+      "published": "Thu, 29 Oct 2026 21:36:00",
       "source": "MarketWatch",
-      "title": "Did the Fed make a mistake with its October rate pause? The Treasury could help save the day.",
-      "url": "https://www.marketwatch.com/story/did-the-fed-make-a-mistake-with-its-october-rate-pause-the-treasury-could-help-save-the-day-77d84993?mod=mw_rss_topstories"
+      "title": "A Starbucks turnaround is brewing \u2014\u00a0but perhaps not quickly enough",
+      "url": "https://www.marketwatch.com/story/a-starbucks-turnaround-is-brewing-but-perhaps-not-quickly-enough-3b5f57ac?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.07
+      "yield": 4.06
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.32
+      "yield": 4.28
     },
     {
       "tenor": "1Y",
-      "yield": 4.47
+      "yield": 4.42
     },
     {
       "tenor": "2Y",
-      "yield": 4.67
+      "yield": 4.61
     },
     {
       "tenor": "5Y",
-      "yield": 4.85
+      "yield": 4.78
     },
     {
       "tenor": "7Y",
-      "yield": 4.95
+      "yield": 4.87
     },
     {
       "tenor": "10Y",
-      "yield": 5.05
+      "yield": 4.98
     },
     {
       "tenor": "20Y",
-      "yield": 5.41
+      "yield": 5.35
     },
     {
       "tenor": "30Y",
-      "yield": 5.37
+      "yield": 5.32
     }
   ],
   "warnings": []
