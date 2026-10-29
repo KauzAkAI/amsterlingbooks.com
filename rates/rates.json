@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4047
+      "rate": 1.3996
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6664
+      "rate": 6.6616
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89823
+      "rate": 0.89847
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75258
+      "rate": 0.75093
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 95.22
+      "rate": 95.27
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.96
+      "rate": 158.06
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1340.47
+      "rate": 1337.29
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6311
+      "rate": 18.7475
     }
   },
-  "generated_at": "2026-10-29T02:13:33+00:00",
+  "generated_at": "2026-10-29T18:54:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,19 +185,11 @@
         "rate": 7.49
       },
       {
-        "date": "2026-10-08",
-        "rate": 7.4
-      },
-      {
         "date": "2026-10-14",
         "rate": 7.5
       },
       {
         "date": "2026-10-15",
-        "rate": 7.4
-      },
-      {
-        "date": "2026-10-21",
         "rate": 7.4
       },
       {
@@ -227,6 +219,14 @@
       {
         "date": "2026-10-28",
         "rate": 7.35
+      },
+      {
+        "date": "2026-10-29",
+        "rate": 7.29
+      },
+      {
+        "date": "2026-10-29",
+        "rate": 7.24
       }
     ]
   },
@@ -291,79 +291,79 @@
   },
   "news": [
     {
+      "published": "Thu, 29 Oct 2026 14:48:01",
+      "source": "CNBC",
+      "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
+    },
+    {
+      "published": "Thu, 29 Oct 2026 18:06:31",
+      "source": "CNBC",
+      "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+      "url": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+    },
+    {
+      "published": "Thu, 29 Oct 2026 14:53:06",
+      "source": "CNBC",
+      "title": "The politics of President Lagarde's European Central Bank early exit  \u2014 and who could replace her",
+      "url": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html"
+    },
+    {
+      "published": "Thu, 29 Oct 2026 17:32:34",
+      "source": "CNBC",
+      "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+      "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
+    },
+    {
       "published": "Wed, 28 Oct 2026 21:31:46",
       "source": "CNBC",
       "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
       "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
     },
     {
-      "published": "Wed, 28 Oct 2026 21:06:37",
-      "source": "CNBC",
-      "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
-      "url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html"
-    },
-    {
-      "published": "Wed, 28 Oct 2026 15:39:14",
-      "source": "CNBC",
-      "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
-      "url": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html"
-    },
-    {
-      "published": "Tue, 27 Oct 2026 16:15:35",
-      "source": "CNBC",
-      "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
-      "url": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html"
-    },
-    {
-      "published": "Tue, 27 Oct 2026 15:51:00",
-      "source": "CNBC",
-      "title": "Fed rate hikes are coming, but not this week: CNBC survey",
-      "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html"
-    },
-    {
-      "published": "Thu, 29 Oct 2026 01:58:00",
+      "published": "Thu, 29 Oct 2026 18:50:00",
       "source": "MarketWatch",
-      "title": "Why Alphabet\u2019s stock could see its worst drop in years after the latest results",
+      "title": "Why Alphabet\u2019s stock is on track for its worst day ever after the latest results",
       "url": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 00:20:00",
+      "published": "Thu, 29 Oct 2026 18:42:00",
       "source": "MarketWatch",
-      "title": "Lumentum\u2019s stock pops as investors cheer a possible sale to Marvell",
-      "url": "https://www.marketwatch.com/story/lumentums-stock-pops-as-investors-cheer-a-possible-sale-to-marvell-07c1d0e8?mod=mw_rss_topstories"
+      "title": "It\u2019s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
+      "url": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 00:15:00",
+      "published": "Thu, 29 Oct 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "\u2018Just watch Judge Judy\u2019: I\u2019m in my 70s. Why do people keep making the same avoidable financial mistakes?",
-      "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories"
+      "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
+      "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 29 Oct 2026 00:10:00",
+      "published": "Thu, 29 Oct 2026 18:16:00",
       "source": "MarketWatch",
-      "title": "The major reason Microsoft\u2019s stock is heading higher after earnings",
-      "url": "https://www.marketwatch.com/story/the-major-reason-microsofts-stock-is-heading-higher-after-earnings-c019a036?mod=mw_rss_topstories"
+      "title": "\u2018Fancy cars hold no appeal\u2019: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
+      "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 28 Oct 2026 23:18:00",
+      "published": "Thu, 29 Oct 2026 17:59:00",
       "source": "MarketWatch",
-      "title": "Fortinet\u2019s stock is taking a dive after earnings. Here\u2019s why.",
-      "url": "https://www.marketwatch.com/story/fortinets-stock-is-taking-a-dive-after-earnings-heres-why-d407896e?mod=mw_rss_topstories"
+      "title": "Did the Fed make a mistake with its October rate pause? The Treasury could help save the day.",
+      "url": "https://www.marketwatch.com/story/did-the-fed-make-a-mistake-with-its-october-rate-pause-the-treasury-could-help-save-the-day-77d84993?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Oct 28 2026",
-      "change": -0.01,
-      "rate": 7.0
+      "asof_label": "Oct 29 2026",
+      "change": -0.05,
+      "rate": 6.95
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Oct 28 2026",
-      "change": 0.02,
+      "asof_label": "Oct 29 2026",
+      "change": -0.06,
       "rate": 6.52
     }
   },
