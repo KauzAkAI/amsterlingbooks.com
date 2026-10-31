@@ -135,7 +135,7 @@
       "rate": 18.908
     }
   },
-  "generated_at": "2026-10-30T22:37:48+00:00",
+  "generated_at": "2026-10-31T01:50:18+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -321,6 +321,12 @@
       "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
     },
     {
+      "published": "Fri, 30 Oct 2026 23:14:00",
+      "source": "MarketWatch",
+      "title": "Has the tech bubble burst? Why the Nasdaq\u2019s rough ride looks eerily like 2000.",
+      "url": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories"
+    },
+    {
       "published": "Fri, 30 Oct 2026 22:20:00",
       "source": "MarketWatch",
       "title": "This cybersecurity stock will be the next to join the S&P 500",
@@ -343,12 +349,6 @@
       "source": "MarketWatch",
       "title": "In a wild October for markets, these stocks were the biggest winners and losers",
       "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 30 Oct 2026 20:48:00",
-      "source": "MarketWatch",
-      "title": "Why Intel\u2019s stock saw its worst day in decades \u2014 and a $140 billion wipeout",
-      "url": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories"
     }
   ],
   "rates": {
