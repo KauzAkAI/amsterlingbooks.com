@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3974
+      "rate": 1.3975
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6483
+      "rate": 6.6723
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89158
+      "rate": 0.89453
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74519
+      "rate": 0.74567
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.91
+      "rate": 94.75
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 157.9
+      "rate": 158.29
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1342.9
+      "rate": 1344.59
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.7197
+      "rate": 18.5974
     }
   },
-  "generated_at": "2026-11-03T03:30:56+00:00",
+  "generated_at": "2026-11-03T20:02:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.32
       },
       {
-        "date": "2026-10-26",
-        "rate": 7.33
-      },
-      {
         "date": "2026-10-27",
         "rate": 7.33
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-02",
         "rate": 7.27
+      },
+      {
+        "date": "2026-11-03",
+        "rate": 7.3
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 03 Nov 2026 19:15:21",
+      "source": "CNBC",
+      "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+      "url": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html"
+    },
+    {
+      "published": "Tue, 03 Nov 2026 03:46:20",
+      "source": "CNBC",
+      "title": "Australia hikes rates to 18-year high to fight inflation",
+      "url": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html"
+    },
+    {
       "published": "Mon, 02 Nov 2026 06:02:03",
       "source": "CNBC",
       "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
     },
     {
-      "published": "Thu, 29 Oct 2026 18:06:31",
-      "source": "CNBC",
-      "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
-      "url": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
-    },
-    {
-      "published": "Thu, 29 Oct 2026 14:53:06",
-      "source": "CNBC",
-      "title": "The politics of President Lagarde's European Central Bank early exit  \u2014 and who could replace her",
-      "url": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html"
-    },
-    {
-      "published": "Tue, 03 Nov 2026 00:59:00",
+      "published": "Tue, 03 Nov 2026 19:57:00",
       "source": "MarketWatch",
-      "title": "Here\u2019s why Palantir\u2019s stock is down despite a \u2018bombastic\u2019 quarter",
-      "url": "https://www.marketwatch.com/story/heres-why-palantirs-stock-is-down-despite-a-bombastic-quarter-42c9fdb8?mod=mw_rss_topstories"
+      "title": "An overlooked energy source could solve AI\u2019s power crunch \u2014 and these 2 stocks are prime plays",
+      "url": "https://www.marketwatch.com/story/an-overlooked-energy-source-could-solve-ais-power-crunch-and-these-2-stocks-are-prime-plays-bc5d988a?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 03 Nov 2026 00:52:00",
+      "published": "Tue, 03 Nov 2026 19:23:00",
       "source": "MarketWatch",
-      "title": "Apple\u2019s iPhone business is booming. Here\u2019s why the stock is falling anyway.",
-      "url": "https://www.marketwatch.com/story/apples-iphone-business-is-booming-heres-why-the-stock-is-falling-anyway-07de9fff?mod=mw_rss_topstories"
+      "title": "Medicare prescription drug costs will jump 50% in 2027.\u00a0Doing nothing could cost you.",
+      "url": "https://www.marketwatch.com/story/medicare-prescription-drug-costs-will-jump-50-in-2027-doing-nothing-could-cost-you-b701dfb7?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 03 Nov 2026 00:03:00",
+      "published": "Tue, 03 Nov 2026 19:00:00",
       "source": "MarketWatch",
-      "title": "Nasdaq-100 tumbles into its third correction this year as AI worries mount",
-      "url": "https://www.marketwatch.com/story/nasdaq-100-tumbles-into-its-third-correction-this-year-as-ai-worries-mount-abee4c0d?mod=mw_rss_topstories"
+      "title": "My wife and I have no kids and a 99% chance of outliving our life savings. Why not spend it all?",
+      "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 02 Nov 2026 23:39:00",
+      "published": "Tue, 03 Nov 2026 18:30:00",
       "source": "MarketWatch",
-      "title": "Marvell and Lumentum shareholders unite in panning merger deal: \u2018It\u2019s a trash offer\u2019",
-      "url": "https://www.marketwatch.com/story/marvell-and-lumentum-shareholders-unite-in-panning-merger-deal-its-a-trash-offer-53a9f307?mod=mw_rss_topstories"
+      "title": "\u2018It seems bizarre\u2019: We\u2019re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+      "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 02 Nov 2026 22:03:00",
+      "published": "Tue, 03 Nov 2026 18:27:00",
       "source": "MarketWatch",
-      "title": "Traders rushing into a leveraged ETF to make a bullish bet on the Nasdaq-100 just got burned",
-      "url": "https://www.marketwatch.com/story/traders-rushing-into-a-leveraged-etf-to-make-a-bullish-bet-on-the-nasdaq-100-just-got-burned-d6775191?mod=mw_rss_topstories"
+      "title": "Once election results are in, here\u2019s what investors should focus on next",
+      "url": "https://www.marketwatch.com/story/once-election-results-are-in-heres-what-investors-should-focus-on-next-75c5ac5d?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 02 2026",
-      "change": 0.0,
-      "rate": 6.92
+      "asof_label": "Nov 03 2026",
+      "change": -0.01,
+      "rate": 6.91
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 02 2026",
-      "change": 0.0,
+      "asof_label": "Nov 03 2026",
+      "change": 0.03,
       "rate": 6.52
     }
   },
