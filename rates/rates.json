@@ -135,7 +135,7 @@
       "rate": 18.6465
     }
   },
-  "generated_at": "2026-11-04T20:22:33+00:00",
+  "generated_at": "2026-11-05T00:58:50+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -226,7 +226,7 @@
       },
       {
         "date": "2026-11-04",
-        "rate": 7.25
+        "rate": 7.22
       }
     ]
   },
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Wed, 04 Nov 2026 17:32:26",
+      "published": "Wed, 04 Nov 2026 22:59:27",
+      "source": "CNBC",
+      "title": "The economy brought Trump back to power. Now it's his downfall",
+      "url": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html"
+    },
+    {
+      "published": "Wed, 04 Nov 2026 22:46:43",
       "source": "CNBC",
       "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
       "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html"
@@ -315,47 +321,41 @@
       "url": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html"
     },
     {
-      "published": "Tue, 03 Nov 2026 03:46:20",
-      "source": "CNBC",
-      "title": "Australia hikes rates to 18-year high to fight inflation",
-      "url": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html"
-    },
-    {
-      "published": "Wed, 04 Nov 2026 20:17:00",
+      "published": "Thu, 05 Nov 2026 00:38:00",
       "source": "MarketWatch",
       "title": "As Vistra and other energy stocks slide, some analysts warn of an \u2018excessive knee-jerk\u2019 reaction",
       "url": "https://www.marketwatch.com/story/as-vistra-and-other-energy-stocks-slide-some-analysts-warn-of-an-excessive-knee-jerk-reaction-aece0737?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 20:04:00",
+      "published": "Wed, 04 Nov 2026 23:45:00",
       "source": "MarketWatch",
-      "title": "Microsoft and Amazon combine for a $400 billion market-cap boost \u2014\u00a0and these factors show why",
-      "url": "https://www.marketwatch.com/story/microsoft-and-amazon-combine-for-a-400-billion-market-cap-boost-and-these-factors-show-why-6655d1a9?mod=mw_rss_topstories"
+      "title": "\u2018My life could be cut short\u2019: I\u2019m 55, married with $4.3 million and have a brain tumor. Should I buy a $210,000 custom Porsche?",
+      "url": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 19:12:00",
+      "published": "Wed, 04 Nov 2026 22:46:00",
       "source": "MarketWatch",
-      "title": "4 market-moving issues investors should watch now that the midterms are over",
-      "url": "https://www.marketwatch.com/story/4-market-moving-issues-investors-should-watch-now-that-the-midterms-are-over-9a77b3de?mod=mw_rss_topstories"
+      "title": "This year\u2019s worst-performing S&P 500 stock is finally seeing some major relief",
+      "url": "https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 18:57:00",
+      "published": "Wed, 04 Nov 2026 22:15:00",
       "source": "MarketWatch",
-      "title": "SpaceX\u2019s Qualcomm deal could be a precursor to a telecom takeover",
-      "url": "https://www.marketwatch.com/story/qualcomm-sat-out-the-semiconductor-rally-can-a-spacex-partnership-change-that-5bb4c0b2?mod=mw_rss_topstories"
+      "title": "\u2018It seems bizarre\u2019: We\u2019re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+      "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 18:37:00",
+      "published": "Wed, 04 Nov 2026 22:06:00",
       "source": "MarketWatch",
-      "title": "\u2018I have no financial safety net\u2019: I\u2019m 66, rely on Social Security and have $500 in savings. What politician speaks for me?",
-      "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories"
+      "title": "How do Americans feel about the midterm results? It depends on how much money they make.",
+      "url": "https://www.marketwatch.com/story/how-do-americans-feel-about-the-midterm-results-it-depends-on-how-much-money-they-make-e2a43f08?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
       "asof_label": "Nov 04 2026",
-      "change": -0.05,
-      "rate": 6.86
+      "change": -0.06,
+      "rate": 6.85
     },
     "ten_year_treasury": {
       "change": 0.075,
@@ -363,7 +363,7 @@
     },
     "thirty_year_fixed": {
       "asof_label": "Nov 04 2026",
-      "change": -0.05,
+      "change": -0.08,
       "rate": 6.52
     }
   },
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.03
+      "yield": 4.01
     },
     {
       "tenor": "3M",
@@ -402,35 +402,35 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.26
+      "yield": 4.25
     },
     {
       "tenor": "1Y",
-      "yield": 4.4
+      "yield": 4.39
     },
     {
       "tenor": "2Y",
-      "yield": 4.61
+      "yield": 4.58
     },
     {
       "tenor": "5Y",
-      "yield": 4.74
+      "yield": 4.69
     },
     {
       "tenor": "7Y",
-      "yield": 4.83
+      "yield": 4.77
     },
     {
       "tenor": "10Y",
-      "yield": 4.95
+      "yield": 4.9
     },
     {
       "tenor": "20Y",
-      "yield": 5.35
+      "yield": 5.3
     },
     {
       "tenor": "30Y",
-      "yield": 5.32
+      "yield": 5.28
     }
   ],
   "warnings": []
