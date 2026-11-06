@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.3935
+      "rate": 1.3966
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6723
+      "rate": 6.6684
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.88755
+      "rate": 0.89095
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.74075
+      "rate": 0.74299
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.64
+      "rate": 94.48
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.25
+      "rate": 158.46
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1338.58
+      "rate": 1344.69
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6465
+      "rate": 18.5905
     }
   },
-  "generated_at": "2026-11-05T00:58:50+00:00",
+  "generated_at": "2026-11-06T01:06:49+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 7.5
       },
       {
-        "date": "2026-10-15",
-        "rate": 7.4
-      },
-      {
         "date": "2026-10-21",
         "rate": 7.41
       },
       {
         "date": "2026-10-22",
         "rate": 7.32
-      },
-      {
-        "date": "2026-10-28",
-        "rate": 7.35
       },
       {
         "date": "2026-10-28",
@@ -227,6 +219,14 @@
       {
         "date": "2026-11-04",
         "rate": 7.22
+      },
+      {
+        "date": "2026-11-05",
+        "rate": 7.17
+      },
+      {
+        "date": "2026-11-05",
+        "rate": 7.18
       }
     ]
   },
@@ -291,9 +291,27 @@
   },
   "news": [
     {
-      "published": "Wed, 04 Nov 2026 22:59:27",
+      "published": "Thu, 05 Nov 2026 21:32:52",
       "source": "CNBC",
-      "title": "The economy brought Trump back to power. Now it's his downfall",
+      "title": "The October jobs report is out Friday. Here's everything to expect",
+      "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+    },
+    {
+      "published": "Thu, 05 Nov 2026 14:33:32",
+      "source": "CNBC",
+      "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+      "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html"
+    },
+    {
+      "published": "Thu, 05 Nov 2026 16:01:47",
+      "source": "CNBC",
+      "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+      "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html"
+    },
+    {
+      "published": "Thu, 05 Nov 2026 16:07:59",
+      "source": "CNBC",
+      "title": "Voters say the economy drove them to the polls \u2014 and blame Trump for their troubles",
       "url": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html"
     },
     {
@@ -303,67 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html"
     },
     {
-      "published": "Wed, 04 Nov 2026 13:49:48",
-      "source": "CNBC",
-      "title": "Private companies added 86,000 jobs in October, slightly higher than expected, ADP says",
-      "url": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html"
-    },
-    {
-      "published": "Wed, 04 Nov 2026 10:47:30",
-      "source": "CNBC",
-      "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
-      "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html"
-    },
-    {
-      "published": "Tue, 03 Nov 2026 19:15:21",
-      "source": "CNBC",
-      "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
-      "url": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html"
-    },
-    {
-      "published": "Thu, 05 Nov 2026 00:38:00",
+      "published": "Thu, 05 Nov 2026 23:50:00",
       "source": "MarketWatch",
-      "title": "As Vistra and other energy stocks slide, some analysts warn of an \u2018excessive knee-jerk\u2019 reaction",
-      "url": "https://www.marketwatch.com/story/as-vistra-and-other-energy-stocks-slide-some-analysts-warn-of-an-excessive-knee-jerk-reaction-aece0737?mod=mw_rss_topstories"
+      "title": "Cloudflare\u2019s stock mounts a big comeback after fastest sales surge in nearly 4 years",
+      "url": "https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 23:45:00",
+      "published": "Thu, 05 Nov 2026 23:48:00",
       "source": "MarketWatch",
-      "title": "\u2018My life could be cut short\u2019: I\u2019m 55, married with $4.3 million and have a brain tumor. Should I buy a $210,000 custom Porsche?",
-      "url": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories"
+      "title": "Here are the 2027 capital-gains tax rates for each income level",
+      "url": "https://www.marketwatch.com/story/here-are-the-2027-capital-gains-tax-rates-for-each-income-level-166fc306?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 22:46:00",
+      "published": "Thu, 05 Nov 2026 22:48:00",
       "source": "MarketWatch",
-      "title": "This year\u2019s worst-performing S&P 500 stock is finally seeing some major relief",
-      "url": "https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories"
+      "title": "Tech stocks log worst day since 2020 as carnage comes to the AI trade",
+      "url": "https://www.marketwatch.com/story/tech-stocks-log-worst-day-since-2020-as-carnage-comes-to-the-ai-trade-56109845?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 22:15:00",
+      "published": "Thu, 05 Nov 2026 22:40:00",
       "source": "MarketWatch",
-      "title": "\u2018It seems bizarre\u2019: We\u2019re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-      "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories"
+      "title": "The 2027 tax brackets are out. See what the standard deduction and SALT tax breaks will be.",
+      "url": "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 04 Nov 2026 22:06:00",
+      "published": "Thu, 05 Nov 2026 22:24:00",
       "source": "MarketWatch",
-      "title": "How do Americans feel about the midterm results? It depends on how much money they make.",
-      "url": "https://www.marketwatch.com/story/how-do-americans-feel-about-the-midterm-results-it-depends-on-how-much-money-they-make-e2a43f08?mod=mw_rss_topstories"
+      "title": "How much in Roth conversions can you do in 2027 with the new tax brackets?",
+      "url": "https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 04 2026",
-      "change": -0.06,
-      "rate": 6.85
+      "asof_label": "Nov 05 2026",
+      "change": -0.05,
+      "rate": 6.8
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 04 2026",
-      "change": -0.08,
+      "asof_label": "Nov 05 2026",
+      "change": -0.05,
       "rate": 6.52
     }
   },
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.01
+      "yield": 4.03
     },
     {
       "tenor": "3M",
-      "yield": 4.21
+      "yield": 4.17
     },
     {
       "tenor": "6M",
-      "yield": 4.25
+      "yield": 4.19
     },
     {
       "tenor": "1Y",
-      "yield": 4.39
+      "yield": 4.28
     },
     {
       "tenor": "2Y",
-      "yield": 4.58
+      "yield": 4.46
     },
     {
       "tenor": "5Y",
-      "yield": 4.69
+      "yield": 4.59
     },
     {
       "tenor": "7Y",
-      "yield": 4.77
+      "yield": 4.7
     },
     {
       "tenor": "10Y",
-      "yield": 4.9
+      "yield": 4.84
     },
     {
       "tenor": "20Y",
-      "yield": 5.3
+      "yield": 5.27
     },
     {
       "tenor": "30Y",
-      "yield": 5.28
+      "yield": 5.25
     }
   ],
   "warnings": []
