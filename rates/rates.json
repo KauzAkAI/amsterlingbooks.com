@@ -135,7 +135,7 @@
       "rate": 18.704
     }
   },
-  "generated_at": "2026-11-06T19:54:57+00:00",
+  "generated_at": "2026-11-07T00:01:32+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-10-14",
-        "rate": 7.5
-      },
-      {
         "date": "2026-10-21",
         "rate": 7.41
       },
@@ -215,6 +211,10 @@
       {
         "date": "2026-11-04",
         "rate": 7.22
+      },
+      {
+        "date": "2026-11-04",
+        "rate": 7.3
       },
       {
         "date": "2026-11-05",
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Fri, 06 Nov 2026 19:49:09",
+      "published": "Fri, 06 Nov 2026 20:11:17",
       "source": "CNBC",
       "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
       "url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html"
     },
     {
-      "published": "Fri, 06 Nov 2026 19:52:00",
+      "published": "Fri, 06 Nov 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "\u2018I have no financial safety net\u2019: I\u2019m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
+      "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 06 Nov 2026 21:45:00",
+      "source": "MarketWatch",
+      "title": "Elon Musk opens the door for a big SpaceX acquisition",
+      "url": "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 06 Nov 2026 21:37:00",
+      "source": "MarketWatch",
+      "title": "Data centers run on debt. That was a problem for bonds this year \u2014 and it\u2019s only going to get worse.",
+      "url": "https://www.marketwatch.com/story/data-centers-run-on-debt-that-was-a-problem-for-bonds-this-year-and-its-only-going-to-get-worse-09c03be6?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 06 Nov 2026 21:24:00",
       "source": "MarketWatch",
       "title": "Nvidia, AMD and other chip stocks rebound \u2014 but is relief from the \u2018violent\u2019 selloff only temporary?",
       "url": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 06 Nov 2026 18:54:00",
+      "published": "Fri, 06 Nov 2026 21:15:00",
       "source": "MarketWatch",
-      "title": "Cybertruck\u2019s run comes to an end as Musk kills off pricey pet project",
-      "url": "https://www.marketwatch.com/story/is-it-the-end-of-the-cybertruck-elon-musk-announces-factory-will-shift-production-3e33cafd?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 06 Nov 2026 18:53:00",
-      "source": "MarketWatch",
-      "title": "My adviser recommended an annuity. Is it the right move in this market environment?",
-      "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 06 Nov 2026 18:15:00",
-      "source": "MarketWatch",
-      "title": "\u2018It feels like he\u2019s quietly building a separate life\u2019: My husband inherited $500,000, but he refuses to spend it on our home",
-      "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 06 Nov 2026 18:03:00",
-      "source": "MarketWatch",
-      "title": "You\u2019re fired! But you can keep the laptop and insurance. And here\u2019s $10,000.",
-      "url": "https://www.marketwatch.com/story/layoffs-with-dignity-why-these-tech-firms-are-offering-free-laptops-and-linkedin-premium-28750d39?mod=mw_rss_topstories"
+      "title": "\u2018It seems bizarre\u2019: We\u2019re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+      "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.03
+      "yield": 4.02
     },
     {
       "tenor": "3M",
-      "yield": 4.17
-    },
-    {
-      "tenor": "6M",
       "yield": 4.19
     },
     {
+      "tenor": "6M",
+      "yield": 4.23
+    },
+    {
       "tenor": "1Y",
-      "yield": 4.28
+      "yield": 4.33
     },
     {
       "tenor": "2Y",
-      "yield": 4.46
+      "yield": 4.51
     },
     {
       "tenor": "5Y",
-      "yield": 4.59
+      "yield": 4.64
     },
     {
       "tenor": "7Y",
-      "yield": 4.7
+      "yield": 4.74
     },
     {
       "tenor": "10Y",
-      "yield": 4.84
+      "yield": 4.86
     },
     {
       "tenor": "20Y",
-      "yield": 5.27
+      "yield": 5.29
     },
     {
       "tenor": "30Y",
-      "yield": 5.25
+      "yield": 5.26
     }
   ],
   "warnings": []
