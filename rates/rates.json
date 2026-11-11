@@ -135,7 +135,7 @@
       "rate": 18.5536
     }
   },
-  "generated_at": "2026-11-10T20:23:59+00:00",
+  "generated_at": "2026-11-11T00:47:32+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Tue, 10 Nov 2026 16:47:05",
+      "published": "Tue, 10 Nov 2026 23:53:58",
       "source": "CNBC",
       "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
       "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html"
     },
     {
-      "published": "Tue, 10 Nov 2026 19:52:00",
+      "published": "Wed, 11 Nov 2026 00:30:00",
       "source": "MarketWatch",
-      "title": "An overzealous Fed is quickly becoming the biggest risk to stocks in 2027",
-      "url": "https://www.marketwatch.com/story/an-overzealous-fed-is-quickly-becoming-the-biggest-risk-to-stocks-in-2027-ba28e51d?mod=mw_rss_topstories"
+      "title": "\u2018We had the worst fight\u2019: I want my husband to retire at 65, but I don\u2019t want to lose his $280,000 salary. Is that unreasonable?",
+      "url": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 10 Nov 2026 19:47:00",
-      "source": "MarketWatch",
-      "title": "Anthropic officially sets the stage for an IPO valuing the company north of $1 trillion",
-      "url": "https://www.marketwatch.com/story/anthropic-reportedly-retracts-ipo-terms-sent-to-banks-by-mistake-exposing-jitters-over-ai-investments-6116578d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Tue, 10 Nov 2026 19:30:00",
+      "published": "Wed, 11 Nov 2026 00:00:00",
       "source": "MarketWatch",
       "title": "Should a widow leave her late partner\u2019s home to her stepkids \u2014 or cut off contact with them?",
       "url": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 10 Nov 2026 19:29:00",
+      "published": "Tue, 10 Nov 2026 23:30:00",
       "source": "MarketWatch",
-      "title": "Corporate America is making a trillion-dollar mistake about retirement",
-      "url": "https://www.marketwatch.com/story/corporate-america-is-making-a-trillion-dollar-mistake-about-retirement-234c8996?mod=mw_rss_topstories"
+      "title": "\u2018The thought of living to 100 terrifies me\u2019: Is Social Security a giant Ponzi scheme?",
+      "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 10 Nov 2026 19:17:00",
+      "published": "Tue, 10 Nov 2026 23:25:00",
       "source": "MarketWatch",
-      "title": "AMD\u2019s stock fades as investors weigh whether Nvidia\u2019s turmoil will mean lasting wins",
-      "url": "https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019m sick of flying\u2019: I paid for priority boarding, but the overhead bins were full. Was I duped?",
+      "url": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Tue, 10 Nov 2026 22:56:00",
+      "source": "MarketWatch",
+      "title": "One reason Children\u2019s Place is filing for bankruptcy? Not enough children.",
+      "url": "https://www.marketwatch.com/story/one-reason-the-childrens-place-is-going-bankrupt-not-enough-children-b275eab0?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.04
+      "yield": 4.05
     },
     {
       "tenor": "3M",
-      "yield": 4.24
+      "yield": 4.3
     },
     {
       "tenor": "6M",
-      "yield": 4.26
-    },
-    {
-      "tenor": "1Y",
       "yield": 4.38
     },
     {
-      "tenor": "2Y",
+      "tenor": "1Y",
       "yield": 4.56
     },
     {
+      "tenor": "2Y",
+      "yield": 4.73
+    },
+    {
       "tenor": "5Y",
-      "yield": 4.67
+      "yield": 4.81
     },
     {
       "tenor": "7Y",
-      "yield": 4.76
+      "yield": 4.89
     },
     {
       "tenor": "10Y",
-      "yield": 4.88
+      "yield": 4.98
     },
     {
       "tenor": "20Y",
-      "yield": 5.29
+      "yield": 5.39
     },
     {
       "tenor": "30Y",
-      "yield": 5.26
+      "yield": 5.35
     }
   ],
   "warnings": []
