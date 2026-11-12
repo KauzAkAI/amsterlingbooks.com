@@ -135,7 +135,7 @@
       "rate": 18.6591
     }
   },
-  "generated_at": "2026-11-11T20:06:12+00:00",
+  "generated_at": "2026-11-12T01:53:39+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,7 +291,7 @@
   },
   "news": [
     {
-      "published": "Wed, 11 Nov 2026 19:17:19",
+      "published": "Wed, 11 Nov 2026 22:59:33",
       "source": "CNBC",
       "title": "Analysis: Is Nvidia too big to fail?\u00a0Its AI financing web raises the stakes",
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html"
     },
     {
-      "published": "Wed, 11 Nov 2026 20:00:00",
+      "published": "Thu, 12 Nov 2026 01:35:00",
       "source": "MarketWatch",
-      "title": "Should a widow leave her late partner\u2019s home to her stepkids \u2014 or cut off contact with them?",
-      "url": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 11 Nov 2026 19:41:00",
+      "published": "Thu, 12 Nov 2026 01:12:00",
+      "source": "MarketWatch",
+      "title": "Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang",
+      "url": "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 11 Nov 2026 23:30:00",
+      "source": "MarketWatch",
+      "title": "Your holiday credit-card bills are going up. What you can do to ease the pain.",
+      "url": "https://www.marketwatch.com/story/your-holiday-credit-card-bills-are-going-up-what-you-can-do-to-ease-the-pain-5ddeb446?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Wed, 11 Nov 2026 22:30:00",
       "source": "MarketWatch",
       "title": "I\u2019m 63 and spending $95,000 on a roof deck for my $500,000 home. Am I being extravagant?",
       "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 11 Nov 2026 18:48:00",
+      "published": "Wed, 11 Nov 2026 22:05:00",
       "source": "MarketWatch",
-      "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
-      "url": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 11 Nov 2026 18:13:00",
-      "source": "MarketWatch",
-      "title": "Oracle\u2019s stock is totally misunderstood and should be a \u2018go-to\u2019 AI play, says this analyst",
-      "url": "https://www.marketwatch.com/story/oracles-stock-is-totally-misunderstood-and-should-be-a-go-to-ai-play-says-this-analyst-2a87e80d?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 11 Nov 2026 17:13:00",
-      "source": "MarketWatch",
-      "title": "Has Nvidia flown too close to the sun? One analyst warns of major scrutiny ahead.",
-      "url": "https://www.marketwatch.com/story/has-nvidia-flown-too-close-to-the-sun-one-analyst-warns-of-major-scrutiny-ahead-a323c4dd?mod=mw_rss_topstories"
+      "title": "CoreWeave just gave a shot in the arm to Micron, Lumentum and the rest of the AI trade",
+      "url": "https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories"
     }
   ],
   "rates": {
