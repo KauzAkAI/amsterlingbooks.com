@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4235
+      "rate": 1.4249
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6707
+      "rate": 6.6683
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.89871
+      "rate": 0.90245
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75149
+      "rate": 0.7544
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 93.69
+      "rate": 94.04
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.23
+      "rate": 159.7
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1336.9
+      "rate": 1334.1
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6591
+      "rate": 18.6906
     }
   },
-  "generated_at": "2026-11-12T01:53:39+00:00",
+  "generated_at": "2026-11-12T20:44:13+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,20 +185,12 @@
         "rate": 7.41
       },
       {
-        "date": "2026-10-22",
-        "rate": 7.32
-      },
-      {
         "date": "2026-10-28",
         "rate": 7.37
       },
       {
         "date": "2026-10-29",
         "rate": 7.24
-      },
-      {
-        "date": "2026-11-03",
-        "rate": 7.3
       },
       {
         "date": "2026-11-04",
@@ -227,6 +219,14 @@
       {
         "date": "2026-11-10",
         "rate": 7.3
+      },
+      {
+        "date": "2026-11-12",
+        "rate": 7.42
+      },
+      {
+        "date": "2026-11-12",
+        "rate": 7.11
       }
     ]
   },
@@ -291,9 +291,15 @@
   },
   "news": [
     {
-      "published": "Wed, 11 Nov 2026 22:59:33",
+      "published": "Thu, 12 Nov 2026 08:02:15",
       "source": "CNBC",
-      "title": "Analysis: Is Nvidia too big to fail?\u00a0Its AI financing web raises the stakes",
+      "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
+      "url": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html"
+    },
+    {
+      "published": "Thu, 12 Nov 2026 17:39:54",
+      "source": "CNBC",
+      "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
     },
     {
@@ -315,54 +321,48 @@
       "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html"
     },
     {
-      "published": "Mon, 09 Nov 2026 22:23:56",
-      "source": "CNBC",
-      "title": "3 unexpected reasons the October jobs report was so strong",
-      "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html"
+      "published": "Thu, 12 Nov 2026 20:17:00",
+      "source": "MarketWatch",
+      "title": "I\u2019m 17 and will be a first-generation college student. Is law school worth being $200,000 in debt?",
+      "url": "https://www.marketwatch.com/story/im-17-and-will-be-a-first-generation-college-student-is-law-school-worth-being-200-000-in-debt-df9b23c3?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 01:35:00",
+      "published": "Thu, 12 Nov 2026 19:52:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories"
+      "title": "The S&P 500 is shrugging off Nvidia\u2019s selloff. Here\u2019s what\u2019s keeping the rest of the market afloat.",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 01:12:00",
+      "published": "Thu, 12 Nov 2026 19:46:00",
       "source": "MarketWatch",
-      "title": "Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang",
-      "url": "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories"
+      "title": "Trump administration is hiring debt collectors to go after defaulted student-loan borrowers for first time in 6 years",
+      "url": "https://www.marketwatch.com/story/trump-administration-is-hiring-debt-collectors-for-first-time-in-6-years-to-go-after-defaulted-student-loan-borrowers-8bae13ad?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 11 Nov 2026 23:30:00",
+      "published": "Thu, 12 Nov 2026 19:29:00",
       "source": "MarketWatch",
-      "title": "Your holiday credit-card bills are going up. What you can do to ease the pain.",
-      "url": "https://www.marketwatch.com/story/your-holiday-credit-card-bills-are-going-up-what-you-can-do-to-ease-the-pain-5ddeb446?mod=mw_rss_topstories"
+      "title": "The bond market now has an even bigger fear than AI fallout",
+      "url": "https://www.marketwatch.com/story/the-bond-market-now-has-an-even-bigger-fear-than-the-ai-fallout-b6401b54?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 11 Nov 2026 22:30:00",
+      "published": "Thu, 12 Nov 2026 19:15:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 63 and spending $95,000 on a roof deck for my $500,000 home. Am I being extravagant?",
-      "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 11 Nov 2026 22:05:00",
-      "source": "MarketWatch",
-      "title": "CoreWeave just gave a shot in the arm to Micron, Lumentum and the rest of the AI trade",
-      "url": "https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock selloff may be just beginning, even after shedding 30% from its peak",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-is-on-sale-after-jensen-huangs-exit-but-is-the-selloff-just-beginning-84121513?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 10 2026",
-      "change": 0.09,
-      "rate": 6.92
+      "asof_label": "Nov 12 2026",
+      "change": 0.08,
+      "rate": 7.0
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 10 2026",
+      "asof_label": "Nov 12 2026",
       "change": 0.12,
       "rate": 6.52
     }
