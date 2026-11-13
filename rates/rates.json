@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4249
+      "rate": 1.4258
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6683
+      "rate": 6.6719
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.90245
+      "rate": 0.90481
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.7544
+      "rate": 0.75605
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.04
+      "rate": 94.25
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.7
+      "rate": 160.0
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1334.1
+      "rate": 1337.13
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.6906
+      "rate": 18.593
     }
   },
-  "generated_at": "2026-11-13T01:31:15+00:00",
+  "generated_at": "2026-11-13T20:25:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,20 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-10-21",
-        "rate": 7.41
-      },
-      {
         "date": "2026-10-28",
         "rate": 7.37
       },
       {
         "date": "2026-10-29",
         "rate": 7.24
-      },
-      {
-        "date": "2026-11-04",
-        "rate": 7.22
       },
       {
         "date": "2026-11-04",
@@ -221,12 +213,20 @@
         "rate": 7.3
       },
       {
+        "date": "2026-11-11",
+        "rate": 7.21
+      },
+      {
         "date": "2026-11-12",
         "rate": 7.42
       },
       {
         "date": "2026-11-12",
         "rate": 7.11
+      },
+      {
+        "date": "2026-11-13",
+        "rate": 7.5
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Fri, 13 Nov 2026 15:44:16",
+      "source": "CNBC",
+      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+      "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
+    },
+    {
+      "published": "Fri, 13 Nov 2026 17:06:57",
+      "source": "CNBC",
+      "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
+      "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+    },
+    {
       "published": "Thu, 12 Nov 2026 08:02:15",
       "source": "CNBC",
       "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html"
     },
     {
-      "published": "Tue, 10 Nov 2026 23:53:58",
-      "source": "CNBC",
-      "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-      "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
-    },
-    {
-      "published": "Tue, 10 Nov 2026 10:24:13",
-      "source": "CNBC",
-      "title": "China's goods surplus tops $1 trillion for a second year amid calls for Beijing to rebalance trade",
-      "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html"
-    },
-    {
-      "published": "Thu, 12 Nov 2026 22:57:00",
+      "published": "Fri, 13 Nov 2026 20:19:00",
       "source": "MarketWatch",
-      "title": "Who can replace Jensen Huang as Nvidia CEO? These four names are buzzing in AI circles.",
-      "url": "https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories"
+      "title": "Jensen Huang was a \u2018China salesman\u2019 for Nvidia. His exit is weighing on Chinese tech stocks.",
+      "url": "https://www.marketwatch.com/story/jensen-huang-was-a-china-salesman-for-nvidia-his-exit-is-weighing-on-chinese-tech-stocks-e46351e4?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 22:38:00",
+      "published": "Fri, 13 Nov 2026 20:02:00",
       "source": "MarketWatch",
-      "title": "Opening trading-card packs has become a $2 billion market",
-      "url": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories"
+      "title": "Retirees should be big beneficiaries of the midterms: \u2018Democrats will hold every gavel that matters for aging and public policy\u2019",
+      "url": "https://www.marketwatch.com/story/retirees-should-be-big-beneficiaries-of-the-midterms-democrats-will-hold-every-gavel-that-matters-for-aging-and-public-policy-71e966f0?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 22:16:00",
+      "published": "Fri, 13 Nov 2026 20:00:00",
       "source": "MarketWatch",
-      "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
-      "url": "https://www.marketwatch.com/story/bond-yields-just-saw-their-biggest-surge-since-2022-as-expectations-grow-for-more-fed-rate-hikes-d0a4f195?mod=mw_rss_topstories"
+      "title": "My husband inherited $500,000, but he refuses to spend it on our home. Should I be worried?",
+      "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 22:00:00",
+      "published": "Fri, 13 Nov 2026 19:40:00",
       "source": "MarketWatch",
-      "title": "\u2018He calls my plans a fantasy\u2019: My husband says we can\u2019t afford our $200,000-a-year dream retirement. I think he\u2019s cheap.",
-      "url": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories"
+      "title": "Budget airlines are going upscale with first-class seats and faster wifi",
+      "url": "https://www.marketwatch.com/story/budget-airlines-are-going-upscale-with-first-class-seats-and-faster-wifi-999868ab?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 21:55:00",
+      "published": "Fri, 13 Nov 2026 19:26:00",
       "source": "MarketWatch",
-      "title": "Am I overpaying for health insurance? How to answer the key question this open-enrollment season.",
-      "url": "https://www.marketwatch.com/story/am-i-overpaying-for-health-insurance-how-to-answer-the-key-question-this-open-enrollment-season-2d00ed55?mod=mw_rss_topstories"
+      "title": "Medicare at age 50? What \u2018Medicare for more\u2019 could mean for American workers.",
+      "url": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 12 2026",
-      "change": 0.08,
-      "rate": 7.0
+      "asof_label": "Nov 13 2026",
+      "change": 0.03,
+      "rate": 7.03
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 12 2026",
-      "change": 0.12,
+      "asof_label": "Nov 13 2026",
+      "change": 0.08,
       "rate": 6.52
     }
   },
