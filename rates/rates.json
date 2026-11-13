@@ -135,7 +135,7 @@
       "rate": 18.6906
     }
   },
-  "generated_at": "2026-11-12T20:44:13+00:00",
+  "generated_at": "2026-11-13T01:31:15+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -297,7 +297,7 @@
       "url": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html"
     },
     {
-      "published": "Thu, 12 Nov 2026 17:39:54",
+      "published": "Thu, 12 Nov 2026 23:08:50",
       "source": "CNBC",
       "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
@@ -321,34 +321,34 @@
       "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html"
     },
     {
-      "published": "Thu, 12 Nov 2026 20:17:00",
+      "published": "Thu, 12 Nov 2026 22:57:00",
       "source": "MarketWatch",
-      "title": "I\u2019m 17 and will be a first-generation college student. Is law school worth being $200,000 in debt?",
-      "url": "https://www.marketwatch.com/story/im-17-and-will-be-a-first-generation-college-student-is-law-school-worth-being-200-000-in-debt-df9b23c3?mod=mw_rss_topstories"
+      "title": "Who can replace Jensen Huang as Nvidia CEO? These four names are buzzing in AI circles.",
+      "url": "https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 19:52:00",
+      "published": "Thu, 12 Nov 2026 22:38:00",
       "source": "MarketWatch",
-      "title": "The S&P 500 is shrugging off Nvidia\u2019s selloff. Here\u2019s what\u2019s keeping the rest of the market afloat.",
-      "url": "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories"
+      "title": "Opening trading-card packs has become a $2 billion market",
+      "url": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 19:46:00",
+      "published": "Thu, 12 Nov 2026 22:16:00",
       "source": "MarketWatch",
-      "title": "Trump administration is hiring debt collectors to go after defaulted student-loan borrowers for first time in 6 years",
-      "url": "https://www.marketwatch.com/story/trump-administration-is-hiring-debt-collectors-for-first-time-in-6-years-to-go-after-defaulted-student-loan-borrowers-8bae13ad?mod=mw_rss_topstories"
+      "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
+      "url": "https://www.marketwatch.com/story/bond-yields-just-saw-their-biggest-surge-since-2022-as-expectations-grow-for-more-fed-rate-hikes-d0a4f195?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 19:29:00",
+      "published": "Thu, 12 Nov 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "The bond market now has an even bigger fear than AI fallout",
-      "url": "https://www.marketwatch.com/story/the-bond-market-now-has-an-even-bigger-fear-than-the-ai-fallout-b6401b54?mod=mw_rss_topstories"
+      "title": "\u2018He calls my plans a fantasy\u2019: My husband says we can\u2019t afford our $200,000-a-year dream retirement. I think he\u2019s cheap.",
+      "url": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 12 Nov 2026 19:15:00",
+      "published": "Thu, 12 Nov 2026 21:55:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock selloff may be just beginning, even after shedding 30% from its peak",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-on-sale-after-jensen-huangs-exit-but-is-the-selloff-just-beginning-84121513?mod=mw_rss_topstories"
+      "title": "Am I overpaying for health insurance? How to answer the key question this open-enrollment season.",
+      "url": "https://www.marketwatch.com/story/am-i-overpaying-for-health-insurance-how-to-answer-the-key-question-this-open-enrollment-season-2d00ed55?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.05
+      "yield": 4.12
     },
     {
       "tenor": "3M",
-      "yield": 4.3
+      "yield": 4.32
     },
     {
       "tenor": "6M",
-      "yield": 4.38
+      "yield": 4.42
     },
     {
       "tenor": "1Y",
-      "yield": 4.56
+      "yield": 4.65
     },
     {
       "tenor": "2Y",
-      "yield": 4.73
+      "yield": 4.86
     },
     {
       "tenor": "5Y",
-      "yield": 4.81
+      "yield": 4.95
     },
     {
       "tenor": "7Y",
-      "yield": 4.89
+      "yield": 5.02
     },
     {
       "tenor": "10Y",
-      "yield": 4.98
+      "yield": 5.1
     },
     {
       "tenor": "20Y",
-      "yield": 5.39
+      "yield": 5.48
     },
     {
       "tenor": "30Y",
-      "yield": 5.35
+      "yield": 5.43
     }
   ],
   "warnings": []
