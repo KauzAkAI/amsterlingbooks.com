@@ -135,7 +135,7 @@
       "rate": 18.593
     }
   },
-  "generated_at": "2026-11-13T20:25:19+00:00",
+  "generated_at": "2026-11-14T00:59:06+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 13 Nov 2026 21:18:30",
+      "source": "CNBC",
+      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+      "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
+    },
+    {
       "published": "Fri, 13 Nov 2026 15:44:16",
       "source": "CNBC",
       "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
@@ -315,40 +321,34 @@
       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
     },
     {
-      "published": "Wed, 11 Nov 2026 12:27:47",
-      "source": "CNBC",
-      "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
-      "url": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html"
+      "published": "Sat, 14 Nov 2026 00:40:00",
+      "source": "MarketWatch",
+      "title": "FAA declares rare nationwide ground stop on flights, with more than 10,000 delayed so far",
+      "url": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 20:19:00",
+      "published": "Fri, 13 Nov 2026 23:12:00",
       "source": "MarketWatch",
-      "title": "Jensen Huang was a \u2018China salesman\u2019 for Nvidia. His exit is weighing on Chinese tech stocks.",
-      "url": "https://www.marketwatch.com/story/jensen-huang-was-a-china-salesman-for-nvidia-his-exit-is-weighing-on-chinese-tech-stocks-e46351e4?mod=mw_rss_topstories"
+      "title": "\u2018The thought of living to 100 terrifies me\u2019: Is Social Security a giant Ponzi scheme?",
+      "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 20:02:00",
+      "published": "Fri, 13 Nov 2026 22:45:00",
       "source": "MarketWatch",
-      "title": "Retirees should be big beneficiaries of the midterms: \u2018Democrats will hold every gavel that matters for aging and public policy\u2019",
-      "url": "https://www.marketwatch.com/story/retirees-should-be-big-beneficiaries-of-the-midterms-democrats-will-hold-every-gavel-that-matters-for-aging-and-public-policy-71e966f0?mod=mw_rss_topstories"
+      "title": "4 expert tips for signing up for Medicare",
+      "url": "https://www.marketwatch.com/story/what-really-happens-during-medicare-counseling-6a4f618e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 20:00:00",
+      "published": "Fri, 13 Nov 2026 22:21:00",
       "source": "MarketWatch",
-      "title": "My husband inherited $500,000, but he refuses to spend it on our home. Should I be worried?",
-      "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock is on a losing streak not seen in 14 years. What comes next?",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-losing-streak-not-seen-in-14-years-what-comes-next-a07e801e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 19:40:00",
+      "published": "Fri, 13 Nov 2026 22:04:00",
       "source": "MarketWatch",
-      "title": "Budget airlines are going upscale with first-class seats and faster wifi",
-      "url": "https://www.marketwatch.com/story/budget-airlines-are-going-upscale-with-first-class-seats-and-faster-wifi-999868ab?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 13 Nov 2026 19:26:00",
-      "source": "MarketWatch",
-      "title": "Medicare at age 50? What \u2018Medicare for more\u2019 could mean for American workers.",
-      "url": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories"
+      "title": "Global oil supplies are suddenly flowing. Why a crude glut won\u2019t mean cheaper diesel.",
+      "url": "https://www.marketwatch.com/story/global-oil-supplies-are-suddenly-flowing-why-a-crude-glut-wont-mean-cheaper-diesel-a5fa80c8?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.12
+      "yield": 4.1
     },
     {
       "tenor": "3M",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.86
+      "yield": 4.88
     },
     {
       "tenor": "5Y",
-      "yield": 4.95
+      "yield": 4.98
     },
     {
       "tenor": "7Y",
-      "yield": 5.02
+      "yield": 5.05
     },
     {
       "tenor": "10Y",
-      "yield": 5.1
+      "yield": 5.15
     },
     {
       "tenor": "20Y",
-      "yield": 5.48
+      "yield": 5.52
     },
     {
       "tenor": "30Y",
-      "yield": 5.43
+      "yield": 5.47
     }
   ],
   "warnings": []
