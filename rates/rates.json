@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4258
+      "rate": 1.4285
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6719
+      "rate": 6.6665
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.90481
+      "rate": 0.90794
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75605
+      "rate": 0.75767
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 94.25
+      "rate": 93.93
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 160.0
+      "rate": 159.6
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1337.13
+      "rate": 1334.87
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.593
+      "rate": 18.5609
     }
   },
-  "generated_at": "2026-11-14T00:59:06+00:00",
+  "generated_at": "2026-11-16T22:49:12+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-11-05",
-        "rate": 7.17
-      },
-      {
-        "date": "2026-11-05",
         "rate": 7.18
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-13",
         "rate": 7.5
+      },
+      {
+        "date": "2026-11-16",
+        "rate": 7.51
       }
     ]
   },
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Mon, 16 Nov 2026 02:56:24",
+      "source": "CNBC",
+      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+      "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html"
+    },
+    {
       "published": "Fri, 13 Nov 2026 21:18:30",
       "source": "CNBC",
       "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html"
     },
     {
-      "published": "Thu, 12 Nov 2026 23:08:50",
-      "source": "CNBC",
-      "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
-      "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
+      "published": "Mon, 16 Nov 2026 22:46:00",
+      "source": "MarketWatch",
+      "title": "U.S. dollar\u2019s AI-driven breakout could become a stock-market wrecking ball",
+      "url": "https://www.marketwatch.com/story/u-s-dollars-ai-driven-breakout-could-become-a-stock-market-wrecking-ball-18199b95?mod=mw_rss_topstories"
     },
     {
-      "published": "Sat, 14 Nov 2026 00:40:00",
+      "published": "Mon, 16 Nov 2026 22:33:00",
       "source": "MarketWatch",
-      "title": "FAA declares rare nationwide ground stop on flights, with more than 10,000 delayed so far",
-      "url": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories"
+      "title": "Berkshire upped its bet on a beleaguered U.S. housing market, while souring on these bank stocks",
+      "url": "https://www.marketwatch.com/story/berkshire-upped-its-bet-on-a-beleaguered-u-s-housing-market-while-souring-on-these-bank-stocks-2e8de402?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 23:12:00",
+      "published": "Mon, 16 Nov 2026 22:30:00",
       "source": "MarketWatch",
-      "title": "\u2018The thought of living to 100 terrifies me\u2019: Is Social Security a giant Ponzi scheme?",
-      "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories"
+      "title": "\u2018He calls my plans a fantasy\u2019: My husband says we can\u2019t afford a $200,000-a-year retirement. Is he being cheap?",
+      "url": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 22:45:00",
+      "published": "Mon, 16 Nov 2026 22:21:00",
       "source": "MarketWatch",
-      "title": "4 expert tips for signing up for Medicare",
-      "url": "https://www.marketwatch.com/story/what-really-happens-during-medicare-counseling-6a4f618e?mod=mw_rss_topstories"
+      "title": "The FDA declined to approve one of biotech\u2019s most closely watched cancer drugs. The company\u2019s stock tumbled.",
+      "url": "https://www.marketwatch.com/story/the-fda-declined-to-approve-one-of-biotechs-most-closely-watched-cancer-drugs-d7c6a0a3?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 13 Nov 2026 22:21:00",
+      "published": "Mon, 16 Nov 2026 22:08:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock is on a losing streak not seen in 14 years. What comes next?",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-losing-streak-not-seen-in-14-years-what-comes-next-a07e801e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Fri, 13 Nov 2026 22:04:00",
-      "source": "MarketWatch",
-      "title": "Global oil supplies are suddenly flowing. Why a crude glut won\u2019t mean cheaper diesel.",
-      "url": "https://www.marketwatch.com/story/global-oil-supplies-are-suddenly-flowing-why-a-crude-glut-wont-mean-cheaper-diesel-a5fa80c8?mod=mw_rss_topstories"
+      "title": "\u2018It leaves me with a sour taste\u2019: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
+      "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 13 2026",
-      "change": 0.03,
-      "rate": 7.03
+      "asof_label": "Nov 16 2026",
+      "change": 0.01,
+      "rate": 7.04
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 13 2026",
-      "change": 0.08,
+      "asof_label": "Nov 16 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
@@ -398,7 +398,7 @@
     },
     {
       "tenor": "3M",
-      "yield": 4.32
+      "yield": 4.34
     },
     {
       "tenor": "6M",
@@ -406,31 +406,31 @@
     },
     {
       "tenor": "1Y",
-      "yield": 4.65
+      "yield": 4.62
     },
     {
       "tenor": "2Y",
-      "yield": 4.88
+      "yield": 4.83
     },
     {
       "tenor": "5Y",
-      "yield": 4.98
+      "yield": 4.93
     },
     {
       "tenor": "7Y",
-      "yield": 5.05
+      "yield": 5.01
     },
     {
       "tenor": "10Y",
-      "yield": 5.15
+      "yield": 5.12
     },
     {
       "tenor": "20Y",
-      "yield": 5.52
+      "yield": 5.51
     },
     {
       "tenor": "30Y",
-      "yield": 5.47
+      "yield": 5.46
     }
   ],
   "warnings": []
