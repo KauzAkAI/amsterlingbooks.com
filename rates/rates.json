@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4285
+      "rate": 1.4291
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6665
+      "rate": 6.6661
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.90794
+      "rate": 0.91
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75767
+      "rate": 0.75808
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 93.93
+      "rate": 93.48
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.6
+      "rate": 159.3
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1334.87
+      "rate": 1336.21
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.5609
+      "rate": 18.4639
     }
   },
-  "generated_at": "2026-11-17T04:52:42+00:00",
+  "generated_at": "2026-11-17T21:38:51+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.18
       },
       {
-        "date": "2026-11-06",
-        "rate": 7.17
-      },
-      {
         "date": "2026-11-09",
         "rate": 7.18
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-16",
         "rate": 7.51
+      },
+      {
+        "date": "2026-11-17",
+        "rate": 7.48
       }
     ]
   },
@@ -291,7 +291,13 @@
   },
   "news": [
     {
-      "published": "Tue, 17 Nov 2026 00:42:33",
+      "published": "Tue, 17 Nov 2026 13:40:54",
+      "source": "CNBC",
+      "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
+    },
+    {
+      "published": "Tue, 17 Nov 2026 15:35:13",
       "source": "CNBC",
       "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
       "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html"
@@ -315,55 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
     },
     {
-      "published": "Fri, 13 Nov 2026 17:06:57",
-      "source": "CNBC",
-      "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
-      "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+      "published": "Tue, 17 Nov 2026 21:30:00",
+      "source": "MarketWatch",
+      "title": "My older brother, who has no children, cut our only sister out of his will. I\u2019ll get everything instead. Do I tell her?",
+      "url": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 17 Nov 2026 02:30:00",
+      "published": "Tue, 17 Nov 2026 21:12:00",
       "source": "MarketWatch",
-      "title": "I\u2019m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
-      "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories"
+      "title": "Why Salesforce\u2019s stock led the S&P 500\u2019s decliners amid tech jitters",
+      "url": "https://www.marketwatch.com/story/why-salesforces-stock-is-leading-s-p-500-decliners-amid-tech-jitters-17510caf?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 16 Nov 2026 23:42:00",
+      "published": "Tue, 17 Nov 2026 21:11:00",
       "source": "MarketWatch",
-      "title": "United Airlines resolves system outage that delayed flights Monday",
-      "url": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories"
+      "title": "\u2018Can I pick your brain?\u2019 and other terrible things to say in a networking email",
+      "url": "https://www.marketwatch.com/story/nows-the-perfect-time-for-networking-heres-how-to-send-a-cringe-free-email-73ad34ea?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 16 Nov 2026 23:28:00",
+      "published": "Tue, 17 Nov 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "Stanley Druckenmiller dumped these chip stocks while buying into SpaceX and Palantir",
-      "url": "https://www.marketwatch.com/story/stanley-druckenmiller-dumped-these-chip-stocks-while-buying-into-spacex-and-palantir-9ae1f078?mod=mw_rss_topstories"
+      "title": "\u2018It leaves me with a sour taste\u2019: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
+      "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 16 Nov 2026 23:04:00",
+      "published": "Tue, 17 Nov 2026 20:58:00",
       "source": "MarketWatch",
-      "title": "Do Amazon\u2019s Black Friday deals really save you money? A new report casts doubt.",
-      "url": "https://www.marketwatch.com/story/do-amazons-black-friday-deals-really-save-you-money-03859cf3?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Mon, 16 Nov 2026 23:00:00",
-      "source": "MarketWatch",
-      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-      "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories"
+      "title": "Summit Therapeutics\u2019 stock tumbles again as FDA recommends new trial for lung-cancer drug",
+      "url": "https://www.marketwatch.com/story/summit-therapeutics-stock-tumbles-again-as-fda-recommends-new-trial-for-lung-cancer-drug-dcb8ff55?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 16 2026",
-      "change": 0.01,
-      "rate": 7.04
+      "asof_label": "Nov 17 2026",
+      "change": -0.02,
+      "rate": 7.02
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 16 2026",
-      "change": 0.01,
+      "asof_label": "Nov 17 2026",
+      "change": -0.03,
       "rate": 6.52
     }
   },
@@ -394,39 +394,39 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.1
+      "yield": 4.09
     },
     {
       "tenor": "3M",
-      "yield": 4.34
+      "yield": 4.33
     },
     {
       "tenor": "6M",
-      "yield": 4.42
+      "yield": 4.41
     },
     {
       "tenor": "1Y",
-      "yield": 4.62
+      "yield": 4.6
     },
     {
       "tenor": "2Y",
-      "yield": 4.83
+      "yield": 4.8
     },
     {
       "tenor": "5Y",
-      "yield": 4.93
+      "yield": 4.9
     },
     {
       "tenor": "7Y",
-      "yield": 5.01
+      "yield": 4.99
     },
     {
       "tenor": "10Y",
-      "yield": 5.12
+      "yield": 5.1
     },
     {
       "tenor": "20Y",
-      "yield": 5.51
+      "yield": 5.5
     },
     {
       "tenor": "30Y",
