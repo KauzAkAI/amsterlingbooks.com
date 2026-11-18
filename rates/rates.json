@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4291
+      "rate": 1.4305
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6661
+      "rate": 6.6672
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.91
+      "rate": 0.91174
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75808
+      "rate": 0.75939
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 93.48
+      "rate": 93.44
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.3
+      "rate": 159.42
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1336.21
+      "rate": 1332.33
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.4639
+      "rate": 18.5759
     }
   },
-  "generated_at": "2026-11-18T03:08:26+00:00",
+  "generated_at": "2026-11-18T21:17:31+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,10 +181,6 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-10-28",
-        "rate": 7.37
-      },
-      {
         "date": "2026-10-29",
         "rate": 7.24
       },
@@ -194,10 +190,6 @@
       },
       {
         "date": "2026-11-05",
-        "rate": 7.18
-      },
-      {
-        "date": "2026-11-09",
         "rate": 7.18
       },
       {
@@ -227,6 +219,14 @@
       {
         "date": "2026-11-17",
         "rate": 7.48
+      },
+      {
+        "date": "2026-11-18",
+        "rate": 7.46
+      },
+      {
+        "date": "2026-11-18",
+        "rate": 7.35
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Wed, 18 Nov 2026 14:09:26",
+      "source": "CNBC",
+      "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+      "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html"
+    },
+    {
+      "published": "Wed, 18 Nov 2026 07:57:37",
+      "source": "CNBC",
+      "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
+      "url": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html"
+    },
+    {
       "published": "Wed, 18 Nov 2026 00:35:31",
       "source": "CNBC",
       "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html"
     },
     {
-      "published": "Mon, 16 Nov 2026 02:56:24",
-      "source": "CNBC",
-      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
-      "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html"
-    },
-    {
-      "published": "Fri, 13 Nov 2026 21:18:30",
-      "source": "CNBC",
-      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
-      "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
-    },
-    {
-      "published": "Wed, 18 Nov 2026 01:59:00",
+      "published": "Wed, 18 Nov 2026 21:01:00",
       "source": "MarketWatch",
-      "title": "CoreWeave\u2019s stock pops \u2014 even as Nvidia talks up a \u2018disciplined\u2019 approach to financing",
-      "url": "https://www.marketwatch.com/story/coreweaves-stock-pops-even-as-nvidia-talks-up-a-disciplined-approach-to-financing-e7f00876?mod=mw_rss_topstories"
+      "title": "Google turns to a volcano and rock-melting technology in a wild new bid to power AI",
+      "url": "https://www.marketwatch.com/story/google-turns-to-a-volcano-and-rock-melting-technology-in-a-wild-new-bid-to-power-ai-fbbe57ef?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 18 Nov 2026 01:45:00",
+      "published": "Wed, 18 Nov 2026 21:00:00",
       "source": "MarketWatch",
-      "title": "Medicare Part B premiums rise due higher healthcare spending",
-      "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories"
+      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Should I sell my stocks and buy real estate \u2014 or ride out the storm?",
+      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 18 Nov 2026 01:28:00",
+      "published": "Wed, 18 Nov 2026 20:51:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock rises as blowout numbers help ease CEO transition fears",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-rises-as-blowout-numbers-help-ease-ceo-transition-fears-2f20d38a?mod=mw_rss_topstories"
+      "title": "Fed minutes show growing unease about the outlook for inflation",
+      "url": "https://www.marketwatch.com/story/fed-minutes-show-growing-unease-about-the-outlook-for-inflation-59e3c13d?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 17 Nov 2026 23:30:00",
+      "published": "Wed, 18 Nov 2026 20:29:00",
       "source": "MarketWatch",
-      "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-      "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories"
+      "title": "Grand Theft Callout: \u2018GTA 6\u2019 fans are missing work to play \u2014 and some companies are making the game\u2019s release a holiday",
+      "url": "https://www.marketwatch.com/story/grand-theft-callout-gta-6-fans-are-missing-work-on-the-games-release-day-because-they-dont-want-to-wait-anymore-5f2fa2e3?mod=mw_rss_topstories"
     },
     {
-      "published": "Tue, 17 Nov 2026 23:15:00",
+      "published": "Wed, 18 Nov 2026 19:39:00",
       "source": "MarketWatch",
-      "title": "I\u2019m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
-      "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories"
+      "title": "Washington is scrambling to get to the bottom of the growing number of tech outages across America",
+      "url": "https://www.marketwatch.com/story/washington-is-scrambling-to-get-to-the-bottom-of-the-growing-number-of-tech-outages-across-america-66fbf299?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 17 2026",
-      "change": -0.02,
-      "rate": 7.02
+      "asof_label": "Nov 18 2026",
+      "change": -0.04,
+      "rate": 6.98
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 17 2026",
-      "change": -0.03,
+      "asof_label": "Nov 18 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.09
+      "yield": 4.1
     },
     {
       "tenor": "3M",
-      "yield": 4.33
+      "yield": 4.34
     },
     {
       "tenor": "6M",
-      "yield": 4.41
+      "yield": 4.43
     },
     {
       "tenor": "1Y",
-      "yield": 4.6
+      "yield": 4.62
     },
     {
       "tenor": "2Y",
@@ -414,23 +414,23 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.9
+      "yield": 4.89
     },
     {
       "tenor": "7Y",
-      "yield": 4.99
+      "yield": 4.96
     },
     {
       "tenor": "10Y",
-      "yield": 5.1
+      "yield": 5.07
     },
     {
       "tenor": "20Y",
-      "yield": 5.5
+      "yield": 5.44
     },
     {
       "tenor": "30Y",
-      "yield": 5.46
+      "yield": 5.41
     }
   ],
   "warnings": []
