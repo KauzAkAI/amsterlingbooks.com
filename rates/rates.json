@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4305
+      "rate": 1.43
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6672
+      "rate": 6.6667
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.91174
+      "rate": 0.90975
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.75939
+      "rate": 0.76038
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 93.44
+      "rate": 93.3
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.42
+      "rate": 159.97
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1332.33
+      "rate": 1328.45
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.5759
+      "rate": 18.9183
     }
   },
-  "generated_at": "2026-11-19T02:40:17+00:00",
+  "generated_at": "2026-11-19T21:19:19+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,20 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-10-29",
-        "rate": 7.24
-      },
-      {
         "date": "2026-11-04",
         "rate": 7.3
       },
       {
         "date": "2026-11-05",
         "rate": 7.18
-      },
-      {
-        "date": "2026-11-10",
-        "rate": 7.3
       },
       {
         "date": "2026-11-11",
@@ -227,6 +219,14 @@
       {
         "date": "2026-11-18",
         "rate": 7.35
+      },
+      {
+        "date": "2026-11-19",
+        "rate": 7.45
+      },
+      {
+        "date": "2026-11-19",
+        "rate": 7.28
       }
     ]
   },
@@ -315,55 +315,55 @@
       "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
     },
     {
-      "published": "Tue, 17 Nov 2026 15:35:13",
+      "published": "Thu, 19 Nov 2026 20:18:47",
       "source": "CNBC",
-      "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
       "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html"
     },
     {
-      "published": "Thu, 19 Nov 2026 01:02:00",
+      "published": "Thu, 19 Nov 2026 21:13:00",
       "source": "MarketWatch",
-      "title": "Palo Alto Networks\u2019 stock gets a fresh AI-fueled boost from earnings",
-      "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories"
+      "title": "Why Walmart is making a bigger bet on fast-food delivery",
+      "url": "https://www.marketwatch.com/story/why-walmart-is-making-a-bigger-bet-on-fast-food-delivery-27263735?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 19 Nov 2026 01:00:00",
+      "published": "Thu, 19 Nov 2026 21:06:00",
       "source": "MarketWatch",
-      "title": "\u2018I\u2019ve been a stay-at-home mom\u2019: I\u2019m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
-      "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories"
+      "title": "\u2018I felt so seen\u2019: Why families across America are laughing \u2014 and crying \u2014 over SNL\u2019s \u2018Sister\u2019 sketch",
+      "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 19 Nov 2026 00:30:00",
+      "published": "Thu, 19 Nov 2026 21:05:00",
+      "source": "MarketWatch",
+      "title": "Rising healthcare costs push Medicare Part B premiums higher",
+      "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 19 Nov 2026 20:50:00",
       "source": "MarketWatch",
       "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Should I sell my stocks and buy real estate \u2014 or ride out the storm?",
       "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 18 Nov 2026 23:12:00",
+      "published": "Thu, 19 Nov 2026 20:33:00",
       "source": "MarketWatch",
-      "title": "What the \u2018death cross\u2019 in small-cap stocks means for the rest of the market",
-      "url": "https://www.marketwatch.com/story/what-the-death-cross-in-small-cap-stocks-means-for-the-rest-of-the-stock-market-edd8e86e?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 18 Nov 2026 23:02:00",
-      "source": "MarketWatch",
-      "title": "How copper\u2019s plunge could hurt the AI buildout",
-      "url": "https://www.marketwatch.com/story/coppers-plunge-could-make-the-ai-data-center-buildout-more-painful-7057f41c?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock falls further. It has lost $611 billion in six trading days.",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 18 2026",
-      "change": -0.04,
-      "rate": 6.98
+      "asof_label": "Nov 19 2026",
+      "change": 0.01,
+      "rate": 6.99
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 18 2026",
-      "change": -0.02,
+      "asof_label": "Nov 19 2026",
+      "change": -0.01,
       "rate": 6.52
     }
   },
@@ -394,7 +394,7 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.1
+      "yield": 4.2
     },
     {
       "tenor": "3M",
@@ -402,7 +402,7 @@
     },
     {
       "tenor": "6M",
-      "yield": 4.43
+      "yield": 4.42
     },
     {
       "tenor": "1Y",
@@ -410,27 +410,27 @@
     },
     {
       "tenor": "2Y",
-      "yield": 4.8
+      "yield": 4.76
     },
     {
       "tenor": "5Y",
-      "yield": 4.89
+      "yield": 4.86
     },
     {
       "tenor": "7Y",
-      "yield": 4.96
+      "yield": 4.94
     },
     {
       "tenor": "10Y",
-      "yield": 5.07
+      "yield": 5.04
     },
     {
       "tenor": "20Y",
-      "yield": 5.44
+      "yield": 5.43
     },
     {
       "tenor": "30Y",
-      "yield": 5.41
+      "yield": 5.4
     }
   ],
   "warnings": []
