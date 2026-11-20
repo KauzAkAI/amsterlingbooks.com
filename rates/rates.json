@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.43
+      "rate": 1.4307
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6667
+      "rate": 6.6777
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.90975
+      "rate": 0.90992
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.76038
+      "rate": 0.76192
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 93.3
+      "rate": 92.68
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.97
+      "rate": 158.64
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1328.45
+      "rate": 1339.44
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 18.9183
+      "rate": 19.0673
     }
   },
-  "generated_at": "2026-11-20T02:27:10+00:00",
+  "generated_at": "2026-11-20T20:59:22+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -194,10 +194,6 @@
       },
       {
         "date": "2026-11-12",
-        "rate": 7.42
-      },
-      {
-        "date": "2026-11-12",
         "rate": 7.11
       },
       {
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-19",
         "rate": 7.28
+      },
+      {
+        "date": "2026-11-20",
+        "rate": 7.33
       }
     ]
   },
@@ -323,17 +323,17 @@
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 19 2026",
-      "change": 0.01,
-      "rate": 6.99
+      "asof_label": "Nov 20 2026",
+      "change": -0.1,
+      "rate": 6.89
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 19 2026",
-      "change": -0.01,
+      "asof_label": "Nov 20 2026",
+      "change": -0.12,
       "rate": 6.52
     }
   },
