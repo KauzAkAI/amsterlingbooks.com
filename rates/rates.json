@@ -135,7 +135,7 @@
       "rate": 18.9183
     }
   },
-  "generated_at": "2026-11-19T21:19:19+00:00",
+  "generated_at": "2026-11-20T02:27:10+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -291,6 +291,12 @@
   },
   "news": [
     {
+      "published": "Fri, 20 Nov 2026 01:49:03",
+      "source": "CNBC",
+      "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
+      "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
+    },
+    {
       "published": "Wed, 18 Nov 2026 14:09:26",
       "source": "CNBC",
       "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
@@ -313,42 +319,6 @@
       "source": "CNBC",
       "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
       "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 20:18:47",
-      "source": "CNBC",
-      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
-      "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 21:13:00",
-      "source": "MarketWatch",
-      "title": "Why Walmart is making a bigger bet on fast-food delivery",
-      "url": "https://www.marketwatch.com/story/why-walmart-is-making-a-bigger-bet-on-fast-food-delivery-27263735?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 21:06:00",
-      "source": "MarketWatch",
-      "title": "\u2018I felt so seen\u2019: Why families across America are laughing \u2014 and crying \u2014 over SNL\u2019s \u2018Sister\u2019 sketch",
-      "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 21:05:00",
-      "source": "MarketWatch",
-      "title": "Rising healthcare costs push Medicare Part B premiums higher",
-      "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 20:50:00",
-      "source": "MarketWatch",
-      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Should I sell my stocks and buy real estate \u2014 or ride out the storm?",
-      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Thu, 19 Nov 2026 20:33:00",
-      "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock falls further. It has lost $611 billion in six trading days.",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231?mod=mw_rss_topstories"
     }
   ],
   "rates": {
