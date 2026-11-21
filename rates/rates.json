@@ -135,7 +135,7 @@
       "rate": 19.0673
     }
   },
-  "generated_at": "2026-11-20T20:59:22+00:00",
+  "generated_at": "2026-11-21T02:06:59+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -319,6 +319,36 @@
       "source": "CNBC",
       "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
       "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
+    },
+    {
+      "published": "Fri, 20 Nov 2026 22:46:00",
+      "source": "MarketWatch",
+      "title": "Dow, S&P 500 enter correction as Nasdaq suffers worst week since 2020",
+      "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 20 Nov 2026 22:44:00",
+      "source": "MarketWatch",
+      "title": "Chip stocks see $2.3 trillion weekly wipeout as panic grips the AI trade",
+      "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 20 Nov 2026 22:44:00",
+      "source": "MarketWatch",
+      "title": "These stocks were crushed the most this week as the tech wreck accelerated",
+      "url": "https://www.marketwatch.com/story/these-stocks-were-crushed-the-most-this-week-as-the-tech-wreck-accelerated-8d6f7323?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 20 Nov 2026 21:58:00",
+      "source": "MarketWatch",
+      "title": "Nvidia\u2019s stock clinches a stretch of weekly losses not seen since 2008",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-heads-for-a-stretch-of-weekly-losses-unseen-since-2008-91aba9a6?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 20 Nov 2026 21:39:00",
+      "source": "MarketWatch",
+      "title": "Everyone\u2019s making money off \u2018GTA 6\u2019 this week \u2014 except investors in Take-Two\u2019s stock",
+      "url": "https://www.marketwatch.com/story/everyones-making-money-off-gta-6-this-week-except-investors-in-take-twos-stock-489ee01b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
@@ -364,43 +394,43 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.2
+      "yield": 4.19
     },
     {
       "tenor": "3M",
-      "yield": 4.34
+      "yield": 4.32
     },
     {
       "tenor": "6M",
-      "yield": 4.42
+      "yield": 4.38
     },
     {
       "tenor": "1Y",
-      "yield": 4.62
+      "yield": 4.51
     },
     {
       "tenor": "2Y",
-      "yield": 4.76
+      "yield": 4.63
     },
     {
       "tenor": "5Y",
-      "yield": 4.86
+      "yield": 4.71
     },
     {
       "tenor": "7Y",
-      "yield": 4.94
+      "yield": 4.8
     },
     {
       "tenor": "10Y",
-      "yield": 5.04
+      "yield": 4.92
     },
     {
       "tenor": "20Y",
-      "yield": 5.43
+      "yield": 5.34
     },
     {
       "tenor": "30Y",
-      "yield": 5.4
+      "yield": 5.31
     }
   ],
   "warnings": []
