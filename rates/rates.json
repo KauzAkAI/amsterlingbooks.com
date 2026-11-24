@@ -90,25 +90,25 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4362
+      "rate": 1.4327
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6647
+      "rate": 6.6645
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.91416
+      "rate": 0.91216
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.76491
+      "rate": 0.76348
     },
     "INR": {
       "change_pct": 0,
@@ -126,16 +126,16 @@
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1348.85
+      "rate": 1344.51
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 19.2458
+      "rate": 19.2684
     }
   },
-  "generated_at": "2026-11-24T00:41:52+00:00",
+  "generated_at": "2026-11-24T22:58:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.11
       },
       {
-        "date": "2026-11-16",
-        "rate": 7.51
-      },
-      {
         "date": "2026-11-17",
         "rate": 7.48
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-23",
         "rate": 7.34
+      },
+      {
+        "date": "2026-11-24",
+        "rate": 7.32
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Tue, 24 Nov 2026 18:34:43",
+      "source": "CNBC",
+      "title": "Consumer confidence shoots up after Democrats' midterm victories \u2014 though inflation worries persist",
+      "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html"
+    },
+    {
+      "published": "Tue, 24 Nov 2026 11:15:30",
+      "source": "CNBC",
+      "title": "Why France is at risk of recession \u2014 and what could keep it out of one",
+      "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html"
+    },
+    {
       "published": "Mon, 23 Nov 2026 21:00:59",
       "source": "CNBC",
       "title": "Peterson: Here\u2019s what Bessent\u2019s about-face on Jensen Huang reveals about Trump and China",
@@ -309,61 +321,49 @@
       "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
     },
     {
-      "published": "Wed, 18 Nov 2026 14:09:26",
-      "source": "CNBC",
-      "title": "Southeast Asia\u2019s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
-      "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html"
-    },
-    {
-      "published": "Wed, 18 Nov 2026 07:57:37",
-      "source": "CNBC",
-      "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
-      "url": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html"
-    },
-    {
-      "published": "Mon, 23 Nov 2026 23:18:00",
+      "published": "Tue, 24 Nov 2026 22:43:00",
       "source": "MarketWatch",
-      "title": "The newest addition to the S&P 500 is a maker of viral ice-cream machines",
-      "url": "https://www.marketwatch.com/story/the-newest-addition-to-the-s-p-500-is-a-maker-of-viral-ice-cream-machines-5c6e209a?mod=mw_rss_topstories"
+      "title": "Micron boosted CEO Sanjay Mehrotra\u2019s security budget by 2,000%, new filing shows",
+      "url": "https://www.marketwatch.com/story/micron-boosted-ceo-sanjay-mehrotras-security-budget-by-2-000-new-filing-shows-d6202acc?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 23 Nov 2026 22:04:00",
+      "published": "Tue, 24 Nov 2026 21:53:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock is surging again. What to know before chasing the AI rally.",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-is-surging-again-what-to-know-before-chasing-the-ai-rally-226688d7?mod=mw_rss_topstories"
+      "title": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
+      "url": "https://www.marketwatch.com/story/12-days-of-sardines-and-croc-charms-are-advent-calendars-getting-out-of-control-81f24548?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 23 Nov 2026 21:51:00",
+      "published": "Tue, 24 Nov 2026 21:46:00",
       "source": "MarketWatch",
-      "title": "U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm",
-      "url": "https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories"
+      "title": "Anthropic\u2019s stock just broke below its IPO price for the first time",
+      "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 23 Nov 2026 21:45:00",
+      "published": "Tue, 24 Nov 2026 21:45:00",
       "source": "MarketWatch",
-      "title": "Consumer stocks, seen as safe bet amid cracks in AI trade, were among the S&P 500\u2019s biggest losers Monday",
-      "url": "https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories"
+      "title": "HPE just posted its strongest growth ever \u2014 but its stock is sinking",
+      "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories"
     },
     {
-      "published": "Mon, 23 Nov 2026 21:36:00",
+      "published": "Tue, 24 Nov 2026 21:31:00",
       "source": "MarketWatch",
-      "title": "These stocks are the biggest gainers after Jensen Huang\u2019s return to Nvidia",
-      "url": "https://www.marketwatch.com/story/these-stocks-are-the-biggest-gainers-after-jensen-huangs-return-to-nvidia-bb886140?mod=mw_rss_topstories"
+      "title": "How much more are richest Americans spending on the holidays compared to everyone else?",
+      "url": "https://www.marketwatch.com/story/see-how-much-more-money-the-richest-americans-are-spending-on-the-holidays-compared-to-everyone-else-f0ff3f4b?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 23 2026",
-      "change": 0.0,
-      "rate": 6.89
+      "asof_label": "Nov 24 2026",
+      "change": -0.02,
+      "rate": 6.87
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 23 2026",
-      "change": 0.01,
+      "asof_label": "Nov 24 2026",
+      "change": -0.02,
       "rate": 6.52
     }
   },
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.2
+      "yield": 4.21
     },
     {
       "tenor": "3M",
-      "yield": 4.37
+      "yield": 4.36
     },
     {
       "tenor": "6M",
-      "yield": 4.45
+      "yield": 4.46
     },
     {
       "tenor": "1Y",
-      "yield": 4.57
+      "yield": 4.59
     },
     {
       "tenor": "2Y",
@@ -414,15 +414,15 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.74
+      "yield": 4.69
     },
     {
       "tenor": "7Y",
-      "yield": 4.81
+      "yield": 4.79
     },
     {
       "tenor": "10Y",
-      "yield": 4.92
+      "yield": 4.91
     },
     {
       "tenor": "20Y",
@@ -430,7 +430,7 @@
     },
     {
       "tenor": "30Y",
-      "yield": 5.29
+      "yield": 5.3
     }
   ],
   "warnings": []
