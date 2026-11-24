@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4307
+      "rate": 1.4362
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6777
+      "rate": 6.6647
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.90992
+      "rate": 0.91416
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.76192
+      "rate": 0.76491
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 92.68
+      "rate": 92.92
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 158.64
+      "rate": 159.07
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1339.44
+      "rate": 1348.85
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 19.0673
+      "rate": 19.2458
     }
   },
-  "generated_at": "2026-11-21T02:06:59+00:00",
+  "generated_at": "2026-11-24T00:41:52+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -197,10 +197,6 @@
         "rate": 7.11
       },
       {
-        "date": "2026-11-13",
-        "rate": 7.5
-      },
-      {
         "date": "2026-11-16",
         "rate": 7.51
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-20",
         "rate": 7.33
+      },
+      {
+        "date": "2026-11-23",
+        "rate": 7.34
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Mon, 23 Nov 2026 21:00:59",
+      "source": "CNBC",
+      "title": "Peterson: Here\u2019s what Bessent\u2019s about-face on Jensen Huang reveals about Trump and China",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html"
+    },
+    {
+      "published": "Sat, 21 Nov 2026 15:04:56",
+      "source": "CNBC",
+      "title": "Tech outages are fueling a new doomsday economy",
+      "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html"
+    },
+    {
       "published": "Fri, 20 Nov 2026 01:49:03",
       "source": "CNBC",
       "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
@@ -309,52 +321,40 @@
       "url": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html"
     },
     {
-      "published": "Wed, 18 Nov 2026 00:35:31",
-      "source": "CNBC",
-      "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
-      "url": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html"
-    },
-    {
-      "published": "Tue, 17 Nov 2026 13:40:54",
-      "source": "CNBC",
-      "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
-    },
-    {
-      "published": "Fri, 20 Nov 2026 22:46:00",
+      "published": "Mon, 23 Nov 2026 23:18:00",
       "source": "MarketWatch",
-      "title": "Dow, S&P 500 enter correction as Nasdaq suffers worst week since 2020",
-      "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf?mod=mw_rss_topstories"
+      "title": "The newest addition to the S&P 500 is a maker of viral ice-cream machines",
+      "url": "https://www.marketwatch.com/story/the-newest-addition-to-the-s-p-500-is-a-maker-of-viral-ice-cream-machines-5c6e209a?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 20 Nov 2026 22:44:00",
+      "published": "Mon, 23 Nov 2026 22:04:00",
       "source": "MarketWatch",
-      "title": "Chip stocks see $2.3 trillion weekly wipeout as panic grips the AI trade",
-      "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03?mod=mw_rss_topstories"
+      "title": "Nvidia\u2019s stock is surging again. What to know before chasing the AI rally.",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-is-surging-again-what-to-know-before-chasing-the-ai-rally-226688d7?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 20 Nov 2026 22:44:00",
+      "published": "Mon, 23 Nov 2026 21:51:00",
       "source": "MarketWatch",
-      "title": "These stocks were crushed the most this week as the tech wreck accelerated",
-      "url": "https://www.marketwatch.com/story/these-stocks-were-crushed-the-most-this-week-as-the-tech-wreck-accelerated-8d6f7323?mod=mw_rss_topstories"
+      "title": "U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm",
+      "url": "https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 20 Nov 2026 21:58:00",
+      "published": "Mon, 23 Nov 2026 21:45:00",
       "source": "MarketWatch",
-      "title": "Nvidia\u2019s stock clinches a stretch of weekly losses not seen since 2008",
-      "url": "https://www.marketwatch.com/story/nvidias-stock-heads-for-a-stretch-of-weekly-losses-unseen-since-2008-91aba9a6?mod=mw_rss_topstories"
+      "title": "Consumer stocks, seen as safe bet amid cracks in AI trade, were among the S&P 500\u2019s biggest losers Monday",
+      "url": "https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories"
     },
     {
-      "published": "Fri, 20 Nov 2026 21:39:00",
+      "published": "Mon, 23 Nov 2026 21:36:00",
       "source": "MarketWatch",
-      "title": "Everyone\u2019s making money off \u2018GTA 6\u2019 this week \u2014 except investors in Take-Two\u2019s stock",
-      "url": "https://www.marketwatch.com/story/everyones-making-money-off-gta-6-this-week-except-investors-in-take-twos-stock-489ee01b?mod=mw_rss_topstories"
+      "title": "These stocks are the biggest gainers after Jensen Huang\u2019s return to Nvidia",
+      "url": "https://www.marketwatch.com/story/these-stocks-are-the-biggest-gainers-after-jensen-huangs-return-to-nvidia-bb886140?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 20 2026",
-      "change": -0.1,
+      "asof_label": "Nov 23 2026",
+      "change": 0.0,
       "rate": 6.89
     },
     "ten_year_treasury": {
@@ -362,8 +362,8 @@
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 20 2026",
-      "change": -0.12,
+      "asof_label": "Nov 23 2026",
+      "change": 0.01,
       "rate": 6.52
     }
   },
@@ -394,19 +394,19 @@
   "treasury_curve": [
     {
       "tenor": "1M",
-      "yield": 4.19
+      "yield": 4.2
     },
     {
       "tenor": "3M",
-      "yield": 4.32
+      "yield": 4.37
     },
     {
       "tenor": "6M",
-      "yield": 4.38
+      "yield": 4.45
     },
     {
       "tenor": "1Y",
-      "yield": 4.51
+      "yield": 4.57
     },
     {
       "tenor": "2Y",
@@ -414,11 +414,11 @@
     },
     {
       "tenor": "5Y",
-      "yield": 4.71
+      "yield": 4.74
     },
     {
       "tenor": "7Y",
-      "yield": 4.8
+      "yield": 4.81
     },
     {
       "tenor": "10Y",
@@ -426,11 +426,11 @@
     },
     {
       "tenor": "20Y",
-      "yield": 5.34
+      "yield": 5.33
     },
     {
       "tenor": "30Y",
-      "yield": 5.31
+      "yield": 5.29
     }
   ],
   "warnings": []
