@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.4258
+      "rate": 1.423
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6757
+      "rate": 6.6602
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.91449
+      "rate": 0.91116
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.76571
+      "rate": 0.76314
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 92.24
+      "rate": 92.45
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.32
+      "rate": 159.26
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1345.4
+      "rate": 1344.65
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 19.7
+      "rate": 19.6711
     }
   },
-  "generated_at": "2026-11-26T04:13:57+00:00",
+  "generated_at": "2026-11-26T22:13:00+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -185,10 +185,6 @@
         "rate": 7.3
       },
       {
-        "date": "2026-11-05",
-        "rate": 7.18
-      },
-      {
         "date": "2026-11-11",
         "rate": 7.21
       },
@@ -227,6 +223,10 @@
       {
         "date": "2026-11-25",
         "rate": 7.26
+      },
+      {
+        "date": "2026-11-25",
+        "rate": 7.21
       }
     ]
   },
@@ -291,6 +291,18 @@
   },
   "news": [
     {
+      "published": "Thu, 26 Nov 2026 15:28:26",
+      "source": "CNBC",
+      "title": "Spain\u2019s Pablo Hern\u00e1ndez de Cos set to lead European Central Bank",
+      "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html"
+    },
+    {
+      "published": "Thu, 26 Nov 2026 12:46:55",
+      "source": "CNBC",
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
+    },
+    {
       "published": "Wed, 25 Nov 2026 21:56:43",
       "source": "CNBC",
       "title": "Liesman: Why Greenspan could bet on productivity \u2014 and Warsh needs to hike",
@@ -309,43 +321,31 @@
       "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html"
     },
     {
-      "published": "Wed, 25 Nov 2026 04:06:01",
-      "source": "CNBC",
-      "title": "\u2018Ready for any storm\u2019: UAE minister optimistic on economy as IMF lifts forecast",
-      "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html"
-    },
-    {
-      "published": "Tue, 24 Nov 2026 18:34:43",
-      "source": "CNBC",
-      "title": "Consumer confidence shoots up after Democrats' midterm victories \u2014 though inflation worries persist",
-      "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html"
-    },
-    {
-      "published": "Thu, 26 Nov 2026 01:15:00",
+      "published": "Thu, 26 Nov 2026 22:00:00",
       "source": "MarketWatch",
-      "title": "We are living in perilous times if Nvidia\u2019s Jensen Huang dictates your 401(k) balance",
-      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories"
+      "title": "\u2018I\u2019ve been a stay-at-home mom\u2019: I\u2019m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
+      "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories"
     },
     {
-      "published": "Thu, 26 Nov 2026 00:33:00",
+      "published": "Thu, 26 Nov 2026 21:45:00",
       "source": "MarketWatch",
-      "title": "Why this stock-market selloff is probably going to get worse before it gets better",
-      "url": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories"
+      "title": "I\u2019m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+      "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 25 Nov 2026 23:30:00",
+      "published": "Thu, 26 Nov 2026 21:30:00",
+      "source": "MarketWatch",
+      "title": "I hate that Jensen Huang is back at Nvidia, but I love what it\u2019s done for my 401(k). Am I a hypocrite?",
+      "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Thu, 26 Nov 2026 19:00:00",
       "source": "MarketWatch",
       "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who\u2019s to blame?",
       "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories"
     },
     {
-      "published": "Wed, 25 Nov 2026 23:30:00",
-      "source": "MarketWatch",
-      "title": "I\u2019m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories"
-    },
-    {
-      "published": "Wed, 25 Nov 2026 23:00:00",
+      "published": "Thu, 26 Nov 2026 18:30:00",
       "source": "MarketWatch",
       "title": "I\u2019ve been married for 58 years. It\u2019s \u2018our\u2019 money, not \u2018his\u2019 and \u2018hers.\u2019 Why do so many couples keep their finances separate?",
       "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories"
