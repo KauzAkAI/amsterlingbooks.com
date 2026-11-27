@@ -90,52 +90,52 @@
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\udde6",
       "name": "Canadian Dollar",
-      "rate": 1.423
+      "rate": 1.4245
     },
     "CNY": {
       "change_pct": 0,
       "flag": "\ud83c\udde8\ud83c\uddf3",
       "name": "Chinese Yuan",
-      "rate": 6.6602
+      "rate": 6.6544
     },
     "EUR": {
       "change_pct": 0,
       "flag": "\ud83c\uddea\ud83c\uddfa",
       "name": "Euro",
-      "rate": 0.91116
+      "rate": 0.91266
     },
     "GBP": {
       "change_pct": 0,
       "flag": "\ud83c\uddec\ud83c\udde7",
       "name": "British Pound",
-      "rate": 0.76314
+      "rate": 0.76211
     },
     "INR": {
       "change_pct": 0,
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "name": "Indian Rupee",
-      "rate": 92.45
+      "rate": 93.0
     },
     "JPY": {
       "change_pct": 0,
       "flag": "\ud83c\uddef\ud83c\uddf5",
       "name": "Japanese Yen",
-      "rate": 159.26
+      "rate": 159.54
     },
     "KRW": {
       "change_pct": 0,
       "flag": "\ud83c\uddf0\ud83c\uddf7",
       "name": "Korean Won",
-      "rate": 1344.65
+      "rate": 1334.9
     },
     "MXN": {
       "change_pct": 0,
       "flag": "\ud83c\uddf2\ud83c\uddfd",
       "name": "Mexican Peso",
-      "rate": 19.6711
+      "rate": 19.5117
     }
   },
-  "generated_at": "2026-11-27T04:18:58+00:00",
+  "generated_at": "2026-11-27T21:53:08+00:00",
   "global_bonds_10y": {
     "Canada": {
       "change": 0.04,
@@ -181,20 +181,12 @@
   "history": {
     "thirty_year_fixed_daily": [
       {
-        "date": "2026-11-04",
-        "rate": 7.3
-      },
-      {
         "date": "2026-11-11",
         "rate": 7.21
       },
       {
         "date": "2026-11-12",
         "rate": 7.11
-      },
-      {
-        "date": "2026-11-18",
-        "rate": 7.46
       },
       {
         "date": "2026-11-18",
@@ -226,7 +218,15 @@
       },
       {
         "date": "2026-11-25",
+        "rate": 7.38
+      },
+      {
+        "date": "2026-11-25",
         "rate": 7.21
+      },
+      {
+        "date": "2026-11-27",
+        "rate": 7.29
       }
     ]
   },
@@ -291,13 +291,13 @@
   },
   "news": [
     {
-      "published": "Fri, 27 Nov 2026 02:04:09",
+      "published": "Fri, 27 Nov 2026 06:09:51",
       "source": "CNBC",
-      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "title": "China\u2019s factories are growing profits again, but the AI boom is picking the winners",
       "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html"
     },
     {
-      "published": "Thu, 26 Nov 2026 15:28:26",
+      "published": "Fri, 27 Nov 2026 06:50:38",
       "source": "CNBC",
       "title": "Spain\u2019s Pablo Hern\u00e1ndez de Cos set to lead European Central Bank",
       "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html"
@@ -319,21 +319,51 @@
       "source": "CNBC",
       "title": "Fed\u2019s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
       "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+    },
+    {
+      "published": "Fri, 27 Nov 2026 20:16:00",
+      "source": "MarketWatch",
+      "title": "These stocks soared the most during a wild week highlighted by Huang\u2019s return to Nvidia",
+      "url": "https://www.marketwatch.com/story/these-stocks-soared-the-most-during-a-wild-week-highlighted-by-huangs-return-to-nvidia-578b3f9a?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 27 Nov 2026 19:55:00",
+      "source": "MarketWatch",
+      "title": "Coming next year: Medicare Advantage plans without drug coverage for almost 640,000 people and fewer choices for the rest",
+      "url": "https://www.marketwatch.com/story/coming-next-year-medicare-advantage-plans-without-drug-coverage-for-almost-640-000-people-and-fewer-choices-for-the-rest-25242d69?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 27 Nov 2026 18:40:00",
+      "source": "MarketWatch",
+      "title": "The warnings behind this week\u2019s stock-market rally",
+      "url": "https://www.marketwatch.com/story/the-warnings-behind-this-weeks-stock-market-rally-86e5319c?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 27 Nov 2026 17:31:00",
+      "source": "MarketWatch",
+      "title": "Clearing out my parents\u2019 house was a legal nightmare. How can I downsize without putting my kids through the same ordeal?",
+      "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories"
+    },
+    {
+      "published": "Fri, 27 Nov 2026 17:04:00",
+      "source": "MarketWatch",
+      "title": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
+      "url": "https://www.marketwatch.com/story/12-days-of-sardines-and-croc-charms-are-advent-calendars-getting-out-of-control-81f24548?mod=mw_rss_topstories"
     }
   ],
   "rates": {
     "fifteen_year_fixed": {
-      "asof_label": "Nov 25 2026",
-      "change": -0.05,
-      "rate": 6.82
+      "asof_label": "Nov 27 2026",
+      "change": 0.11,
+      "rate": 6.93
     },
     "ten_year_treasury": {
       "change": 0.075,
       "rate": 4.56
     },
     "thirty_year_fixed": {
-      "asof_label": "Nov 25 2026",
-      "change": -0.06,
+      "asof_label": "Nov 27 2026",
+      "change": 0.03,
       "rate": 6.52
     }
   },
@@ -368,39 +398,39 @@
     },
     {
       "tenor": "3M",
-      "yield": 4.34
+      "yield": 4.35
     },
     {
       "tenor": "6M",
-      "yield": 4.44
+      "yield": 4.46
     },
     {
       "tenor": "1Y",
-      "yield": 4.56
-    },
-    {
-      "tenor": "2Y",
       "yield": 4.61
     },
     {
-      "tenor": "5Y",
-      "yield": 4.65
+      "tenor": "2Y",
+      "yield": 4.69
     },
     {
-      "tenor": "7Y",
+      "tenor": "5Y",
       "yield": 4.74
     },
     {
+      "tenor": "7Y",
+      "yield": 4.82
+    },
+    {
       "tenor": "10Y",
-      "yield": 4.85
+      "yield": 4.94
     },
     {
       "tenor": "20Y",
-      "yield": 5.28
+      "yield": 5.36
     },
     {
       "tenor": "30Y",
-      "yield": 5.24
+      "yield": 5.33
     }
   ],
   "warnings": []
